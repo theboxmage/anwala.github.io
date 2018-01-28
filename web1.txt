@@ -1,0 +1,57 @@
+Given URL: 
+http://www.cs.odu.edu/~mln/teaching/cs532-s17/test/pdfs.html
+URL: 
+http://www.cs.odu.edu/~mln/pubs/ht-2015/hypertext-2015-temporal-violations.pdf
+Length in bytes: 
+2184076
+
+URL: 
+http://www.cs.odu.edu/~mln/pubs/tpdl-2015/tpdl-2015-annotations.pdf
+Length in bytes: 
+622981
+
+URL: 
+https://arxiv.org/pdf/1512.06195.pdf
+Length in bytes: 
+1748961
+
+URL: 
+http://www.cs.odu.edu/~mln/pubs/tpdl-2015/tpdl-2015-off-topic.pdf
+Length in bytes: 
+4308768
+
+URL: 
+http://www.cs.odu.edu/~mln/pubs/tpdl-2015/tpdl-2015-stories.pdf
+Length in bytes: 
+1274604
+
+URL: 
+http://www.cs.odu.edu/~mln/pubs/tpdl-2015/tpdl-2015-profiling.pdf
+Length in bytes: 
+639001
+
+URL: 
+http://www.cs.odu.edu/~mln/pubs/jcdl-2014/jcdl-2014-brunelle-damage.pdf
+Length in bytes: 
+2205546
+
+URL: 
+http://www.cs.odu.edu/~mln/pubs/jcdl-2015/jcdl-2015-temporal-intention.pdf
+Length in bytes: 
+720476
+
+URL: 
+http://www.cs.odu.edu/~mln/pubs/jcdl-2015/jcdl-2015-mink.pdf
+Length in bytes: 
+1254605
+
+URL: 
+http://www.cs.odu.edu/~mln/pubs/jcdl-2015/jcdl-2015-arabic-sites.pdf
+Length in bytes: 
+709420
+
+URL: 
+http://www.cs.odu.edu/~mln/pubs/jcdl-2015/jcdl-2015-dictionary.pdf
+Length in bytes: 
+2350603
+

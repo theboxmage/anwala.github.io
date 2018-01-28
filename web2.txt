@@ -1,0 +1,79 @@
+Given URL: 
+http://www.doe.virginia.gov/testing/sol/practice_items/testnav8.shtml
+
+URL: 
+https://staff.spsk12.net/files/2018/01/2017-2018-Elementary-Schools-Testing-Calendar-1-19-18.pdf
+Length in bytes: 
+128150
+
+URL: 
+https://staff.spsk12.net/files/2018/01/2017-2018-Middle-Schools-Testing-Calendar-1-19-18.pdf
+Length in bytes: 
+93668
+
+URL: 
+https://staff.spsk12.net/files/2018/01/2017-2018-High-Schools-Testing-Calendar-1-19-18.pdf
+Length in bytes: 
+163622
+
+URL: 
+https://www.spsk12.net/files/2016/08/2016-2017-Calendar.pdf
+Length in bytes: 
+25136
+
+URL: 
+https://www.spsk12.net/files/2017/02/SCHOOL-Calendar-2017-2018-REVISED.pdf
+Length in bytes: 
+24620
+
+URL: 
+http://staff.spsk12.net/download/forms/Dir-Deposit-Req.pdf
+Length in bytes: 
+278065
+
+URL: 
+http://staff.spsk12.net/download/forms/DropChangeForm.pdf
+Length in bytes: 
+108284
+
+URL: 
+http://staff.spsk12.net/download/forms/Med_Other_Ins_%20Claim_Form.pdf
+Length in bytes: 
+475586
+
+URL: 
+http://staff.spsk12.net/files/2013/07/Record-Retention-Requirements-for-School-Finance-Records.pdf
+Length in bytes: 
+10884
+
+URL: 
+https://staff.spsk12.net/files/2016/01/MileageChart2016.pdf
+Length in bytes: 
+6554
+
+URL: 
+http://www.doe.virginia.gov/teaching/licensure/licensure_renewal_manual.pdf
+Length in bytes: 
+481940
+
+URL: 
+https://staff.spsk12.net/download/GoalSettingForm.pdf
+Length in bytes: 
+42672
+
+URL: 
+http://staff.spsk12.net/download/forms/StaffAUPForm.pdf
+Length in bytes: 
+69651
+
+URL: 
+http://students.spsk12.net/download/documents/Regulation%206-4.1.pdf
+Length in bytes: 
+211965
+
+URL: 
+http://staff.spsk12.net/download/forms/AUP%20Staff%20Policy.pdf
+Length in bytes: 
+144726
+
+
