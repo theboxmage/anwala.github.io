@@ -1,0 +1,73 @@
+{
+  "self": "",
+  "uri": "http://PEOPLE.com/",
+  "estimated-creation-date": "1999-01-17T00:21:38",
+  "earliest-sources": [
+    "web.archive.org"
+  ],
+  "sources": {
+    "bing.com": {
+      "earliest": ""
+    },
+    "twitter.com": {
+      "earliest": "2009-02-23T14:32:19"
+    },
+    "web.archive.org": {
+      "uri-m": "http://web.archive.org/web/19981205031318/http://www.people.com:80/",
+      "memento-datetime": "1999-01-17T00:21:38",
+      "memento-pubdate": "",
+      "earliest": "1999-01-17T00:21:38"
+    },
+    "webarchive.loc.gov": {
+      "uri-m": "http://webarchive.loc.gov/all/20020808082509/http://www.people.com/",
+      "memento-datetime": "2002-08-08T08:25:09",
+      "memento-pubdate": "",
+      "earliest": "2002-08-08T08:25:09"
+    },
+    "wayback.vefsafn.is": {
+      "uri-m": "http://wayback.vefsafn.is/wayback/20070504110757/http://www.people.com/",
+      "memento-datetime": "2007-05-04T11:07:57",
+      "memento-pubdate": "",
+      "earliest": "2007-05-04T11:07:57"
+    },
+    "wayback.archive-it.org": {
+      "uri-m": "http://wayback.archive-it.org/all/20071031001437/http://www.people.com/",
+      "memento-datetime": "2007-10-31T00:14:37",
+      "memento-pubdate": "",
+      "earliest": "2007-10-31T00:14:37"
+    },
+    "arquivo.pt": {
+      "uri-m": "http://arquivo.pt/wayback/20080219104237/http://www.people.com/",
+      "memento-datetime": "2008-02-19T10:42:37",
+      "memento-pubdate": "",
+      "earliest": "2008-02-19T10:42:37"
+    },
+    "swap.stanford.edu": {
+      "uri-m": "https://swap.stanford.edu/20090412074112/http://www.people.com/",
+      "memento-datetime": "2009-04-12T07:41:12",
+      "memento-pubdate": "",
+      "earliest": "2009-04-12T07:41:12"
+    },
+    "archive.is": {
+      "uri-m": "http://archive.is/20130105084747/http://people.com/",
+      "memento-datetime": "2013-01-05T08:47:47",
+      "memento-pubdate": "2013-01-05T08:47:47",
+      "earliest": "2013-01-05T08:47:47"
+    },
+    "backlinks": {
+      "earliest": ""
+    },
+    "pubdate": {
+      "earliest": ""
+    },
+    "bitly.com": {
+      "earliest": ""
+    },
+    "google.com": {
+      "earliest": ""
+    },
+    "last-modified": {
+      "earliest": ""
+    }
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "self": "",
+  "uri": "https://www.economist.com/news/asia/21736585-generation-cherishes-idea-reunification-dying-south-koreans-want-north",
+  "estimated-creation-date": "2018-02-08T16:52:16",
+  "earliest-sources": [
+    "twitter.com"
+  ],
+  "sources": {
+    "bing.com": {
+      "earliest": ""
+    },
+    "twitter.com": {
+      "earliest": "2018-02-08T16:52:16"
+    },
+    "web.archive.org": {
+      "uri-m": "http://web.archive.org/web/20180208205910/https://www.economist.com/news/asia/21736585-generation-cherishes-idea-reunification-dying-south-koreans-want-north",
+      "memento-datetime": "2018-02-08T20:59:10",
+      "memento-pubdate": "2018-02-08T23:59:59",
+      "earliest": "2018-02-08T20:59:10"
+    },
+    "backlinks": {
+      "earliest": "2018-02-08T20:59:10"
+    },
+    "pubdate": {
+      "earliest": "2018-02-09T00:00:00"
+    },
+    "bitly.com": {
+      "earliest": ""
+    },
+    "google.com": {
+      "earliest": ""
+    },
+    "last-modified": {
+      "earliest": ""
+    }
+  }
+}

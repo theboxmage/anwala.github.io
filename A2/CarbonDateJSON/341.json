@@ -1,0 +1,38 @@
+{
+  "self": "",
+  "uri": "http://time.com/5142774/winter-olympics-south-korea-kim-yo-jong-meeting/",
+  "estimated-creation-date": "2018-02-10T03:30:52",
+  "earliest-sources": [
+    "web.archive.org",
+    "backlinks"
+  ],
+  "sources": {
+    "bing.com": {
+      "earliest": ""
+    },
+    "twitter.com": {
+      "earliest": ""
+    },
+    "web.archive.org": {
+      "uri-m": "http://web.archive.org/web/20180210033052/http://time.com/5142774/winter-olympics-south-korea-kim-yo-jong-meeting/",
+      "memento-datetime": "2018-02-10T03:30:52",
+      "memento-pubdate": "",
+      "earliest": "2018-02-10T03:30:52"
+    },
+    "backlinks": {
+      "earliest": "2018-02-10T03:30:52"
+    },
+    "pubdate": {
+      "earliest": ""
+    },
+    "bitly.com": {
+      "earliest": ""
+    },
+    "google.com": {
+      "earliest": ""
+    },
+    "last-modified": {
+      "earliest": ""
+    }
+  }
+}

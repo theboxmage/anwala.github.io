@@ -1,0 +1,37 @@
+{
+  "self": "",
+  "uri": "https://talkingpointsmemo.com/livewire/fox-yanks-moodys-offensive-column",
+  "estimated-creation-date": "2018-02-09T19:50:26",
+  "earliest-sources": [
+    "twitter.com"
+  ],
+  "sources": {
+    "bing.com": {
+      "earliest": ""
+    },
+    "twitter.com": {
+      "earliest": "2018-02-09T19:50:26"
+    },
+    "web.archive.org": {
+      "uri-m": "http://web.archive.org/web/20180209205355/https://talkingpointsmemo.com/livewire/fox-yanks-moodys-offensive-column",
+      "memento-datetime": "2018-02-09T20:53:55",
+      "memento-pubdate": "",
+      "earliest": "2018-02-09T20:53:55"
+    },
+    "backlinks": {
+      "earliest": ""
+    },
+    "pubdate": {
+      "earliest": ""
+    },
+    "bitly.com": {
+      "earliest": ""
+    },
+    "google.com": {
+      "earliest": ""
+    },
+    "last-modified": {
+      "earliest": ""
+    }
+  }
+}

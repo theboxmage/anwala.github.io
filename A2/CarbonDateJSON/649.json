@@ -1,0 +1,67 @@
+{
+  "self": "",
+  "uri": "http://www.nbcolympics.com/",
+  "estimated-creation-date": "1999-11-15T16:36:30",
+  "earliest-sources": [
+    "web.archive.org"
+  ],
+  "sources": {
+    "bing.com": {
+      "earliest": ""
+    },
+    "twitter.com": {
+      "earliest": "2007-06-21T16:40:16"
+    },
+    "web.archive.org": {
+      "uri-m": "http://web.archive.org/web/19991013042952/http://nbcolympics.com:80/",
+      "memento-datetime": "1999-11-15T16:36:30",
+      "memento-pubdate": "",
+      "earliest": "1999-11-15T16:36:30"
+    },
+    "webarchive.loc.gov": {
+      "uri-m": "http://webarchive.loc.gov/all/20011014232028/http://www.nbcolympics.com/",
+      "memento-datetime": "2001-10-14T23:20:31",
+      "memento-pubdate": "",
+      "earliest": "2001-10-14T23:20:31"
+    },
+    "wayback.archive-it.org": {
+      "uri-m": "http://wayback.archive-it.org/all/20060418184356/http://www.nbcolympics.com/",
+      "memento-datetime": "2006-06-11T20:54:12",
+      "memento-pubdate": "",
+      "earliest": "2006-06-11T20:54:12"
+    },
+    "arquivo.pt": {
+      "uri-m": "http://arquivo.pt/wayback/20081025131401/http://www.nbcolympics.com//",
+      "memento-datetime": "2008-10-25T13:14:01",
+      "memento-pubdate": "",
+      "earliest": "2008-10-25T13:14:01"
+    },
+    "wayback.vefsafn.is": {
+      "uri-m": "http://wayback.vefsafn.is/wayback/20100206075855/http://www.nbcolympics.com/",
+      "memento-datetime": "2010-02-06T07:58:55",
+      "memento-pubdate": "",
+      "earliest": "2010-02-06T07:58:55"
+    },
+    "archive.is": {
+      "uri-m": "http://archive.is/20110605124610/http://www.nbcolympics.com/",
+      "memento-datetime": "2011-06-05T12:46:10",
+      "memento-pubdate": "2011-06-05T12:46:10",
+      "earliest": "2011-06-05T12:46:10"
+    },
+    "backlinks": {
+      "earliest": "2006-06-11T20:54:12"
+    },
+    "pubdate": {
+      "earliest": ""
+    },
+    "bitly.com": {
+      "earliest": ""
+    },
+    "google.com": {
+      "earliest": ""
+    },
+    "last-modified": {
+      "earliest": "2018-02-10T11:47:15"
+    }
+  }
+}

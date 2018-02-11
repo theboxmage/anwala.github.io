@@ -1,0 +1,38 @@
+{
+  "self": "",
+  "uri": "https://www.thecut.com/2018/02/olympics-bob-costas-pink-eye-sochi-memories.html",
+  "estimated-creation-date": "2018-02-09T11:43:50",
+  "earliest-sources": [
+    "web.archive.org",
+    "pubdate"
+  ],
+  "sources": {
+    "bing.com": {
+      "earliest": ""
+    },
+    "twitter.com": {
+      "earliest": "2018-02-09T17:00:54"
+    },
+    "web.archive.org": {
+      "uri-m": "http://web.archive.org/web/20180209183444/https://www.thecut.com/2018/02/olympics-bob-costas-pink-eye-sochi-memories.html",
+      "memento-datetime": "2018-02-09T18:34:44",
+      "memento-pubdate": "2018-02-09T11:43:50",
+      "earliest": "2018-02-09T11:43:50"
+    },
+    "backlinks": {
+      "earliest": "2018-02-09T18:34:44"
+    },
+    "pubdate": {
+      "earliest": "2018-02-09T11:43:50"
+    },
+    "bitly.com": {
+      "earliest": ""
+    },
+    "google.com": {
+      "earliest": ""
+    },
+    "last-modified": {
+      "earliest": ""
+    }
+  }
+}

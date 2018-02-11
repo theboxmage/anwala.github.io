@@ -1,0 +1,31 @@
+{
+  "self": "",
+  "uri": "https://m.newspicks.us/news/571997/",
+  "estimated-creation-date": "2018-02-10T02:29:41",
+  "earliest-sources": [
+    "pubdate"
+  ],
+  "sources": {
+    "bing.com": {
+      "earliest": ""
+    },
+    "twitter.com": {
+      "earliest": ""
+    },
+    "backlinks": {
+      "earliest": ""
+    },
+    "pubdate": {
+      "earliest": "2018-02-10T02:29:41"
+    },
+    "bitly.com": {
+      "earliest": ""
+    },
+    "google.com": {
+      "earliest": ""
+    },
+    "last-modified": {
+      "earliest": ""
+    }
+  }
+}

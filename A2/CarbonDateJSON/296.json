@@ -1,0 +1,31 @@
+{
+  "self": "",
+  "uri": "https://www.youtube.com/watch?v=qYscemhnf88&sns=tw",
+  "estimated-creation-date": "2010-02-05T00:00:00",
+  "earliest-sources": [
+    "pubdate"
+  ],
+  "sources": {
+    "bing.com": {
+      "earliest": ""
+    },
+    "twitter.com": {
+      "earliest": "2015-02-22T15:38:37"
+    },
+    "backlinks": {
+      "earliest": ""
+    },
+    "pubdate": {
+      "earliest": "2010-02-05T00:00:00"
+    },
+    "bitly.com": {
+      "earliest": ""
+    },
+    "google.com": {
+      "earliest": ""
+    },
+    "last-modified": {
+      "earliest": ""
+    }
+  }
+}

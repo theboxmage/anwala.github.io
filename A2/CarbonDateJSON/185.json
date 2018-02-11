@@ -1,0 +1,43 @@
+{
+  "self": "",
+  "uri": "https://www.thestar.com/sports/2018/02/02/canada-sending-its-largest-ever-winter-olympics-delegation-to-pyeongchang-2018.html",
+  "estimated-creation-date": "2018-02-02T16:40:48",
+  "earliest-sources": [
+    "twitter.com"
+  ],
+  "sources": {
+    "bing.com": {
+      "earliest": ""
+    },
+    "twitter.com": {
+      "earliest": "2018-02-02T16:40:48"
+    },
+    "web.archive.org": {
+      "uri-m": "http://web.archive.org/web/20180202191855/https://www.thestar.com/sports/2018/02/02/canada-sending-its-largest-ever-winter-olympics-delegation-to-pyeongchang-2018.html",
+      "memento-datetime": "2018-02-02T19:18:55",
+      "memento-pubdate": "",
+      "earliest": "2018-02-02T19:18:55"
+    },
+    "wayback.archive-it.org": {
+      "uri-m": "http://wayback.archive-it.org/all/20180204070243/https://www.thestar.com/sports/2018/02/02/canada-sending-its-largest-ever-winter-olympics-delegation-to-pyeongchang-2018.html",
+      "memento-datetime": "2018-02-04T07:02:43",
+      "memento-pubdate": "",
+      "earliest": "2018-02-04T07:02:43"
+    },
+    "backlinks": {
+      "earliest": "2018-02-03T00:52:23"
+    },
+    "pubdate": {
+      "earliest": ""
+    },
+    "bitly.com": {
+      "earliest": ""
+    },
+    "google.com": {
+      "earliest": ""
+    },
+    "last-modified": {
+      "earliest": ""
+    }
+  }
+}

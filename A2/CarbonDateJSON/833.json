@@ -1,0 +1,37 @@
+{
+  "self": "",
+  "uri": "http://www.wusa9.com/olympics",
+  "estimated-creation-date": "2016-08-07T20:00:14",
+  "earliest-sources": [
+    "web.archive.org"
+  ],
+  "sources": {
+    "bing.com": {
+      "earliest": ""
+    },
+    "twitter.com": {
+      "earliest": ""
+    },
+    "web.archive.org": {
+      "uri-m": "http://web.archive.org/web/20160807200056/http://www.wusa9.com:80/olympics",
+      "memento-datetime": "2016-08-07T20:00:14",
+      "memento-pubdate": "",
+      "earliest": "2016-08-07T20:00:14"
+    },
+    "backlinks": {
+      "earliest": "2017-06-01T05:11:51"
+    },
+    "pubdate": {
+      "earliest": ""
+    },
+    "bitly.com": {
+      "earliest": ""
+    },
+    "google.com": {
+      "earliest": ""
+    },
+    "last-modified": {
+      "earliest": "2018-02-10T12:52:44"
+    }
+  }
+}

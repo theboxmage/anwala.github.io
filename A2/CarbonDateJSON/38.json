@@ -1,0 +1,31 @@
+{
+  "self": "",
+  "uri": "https://www.ncaa.org/about/paving-path-pyeongchang",
+  "estimated-creation-date": "2018-02-05T10:31:56",
+  "earliest-sources": [
+    "pubdate"
+  ],
+  "sources": {
+    "bing.com": {
+      "earliest": ""
+    },
+    "twitter.com": {
+      "earliest": "2018-02-09T22:57:36"
+    },
+    "backlinks": {
+      "earliest": ""
+    },
+    "pubdate": {
+      "earliest": "2018-02-05T10:31:56"
+    },
+    "bitly.com": {
+      "earliest": ""
+    },
+    "google.com": {
+      "earliest": ""
+    },
+    "last-modified": {
+      "earliest": "2018-02-10T08:38:24"
+    }
+  }
+}

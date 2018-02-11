@@ -1,0 +1,38 @@
+{
+  "self": "",
+  "uri": "https://www.billboard.com/biz/articles/8098943/google-doodle-celebrates-opening-ceremony-of-2018-winter-olympics-in",
+  "estimated-creation-date": "2018-02-09T11:09:05",
+  "earliest-sources": [
+    "web.archive.org",
+    "pubdate"
+  ],
+  "sources": {
+    "bing.com": {
+      "earliest": ""
+    },
+    "twitter.com": {
+      "earliest": "2018-02-09T18:25:11"
+    },
+    "web.archive.org": {
+      "uri-m": "http://web.archive.org/web/20180210010038/https://www.billboard.com/biz/articles/8098943/google-doodle-celebrates-opening-ceremony-of-2018-winter-olympics-in",
+      "memento-datetime": "2018-02-10T00:37:59",
+      "memento-pubdate": "2018-02-09T11:09:05",
+      "earliest": "2018-02-09T11:09:05"
+    },
+    "backlinks": {
+      "earliest": ""
+    },
+    "pubdate": {
+      "earliest": "2018-02-09T11:09:05"
+    },
+    "bitly.com": {
+      "earliest": ""
+    },
+    "google.com": {
+      "earliest": ""
+    },
+    "last-modified": {
+      "earliest": "2018-02-10T12:27:02"
+    }
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "self": "",
+  "uri": "https://pitchfork.com/news/justin-timberlake-made-branded-merch-for-every-song-on-man-of-the-woods/",
+  "estimated-creation-date": "2018-02-08T16:20:34",
+  "earliest-sources": [
+    "twitter.com"
+  ],
+  "sources": {
+    "bing.com": {
+      "earliest": ""
+    },
+    "twitter.com": {
+      "earliest": "2018-02-08T16:20:34"
+    },
+    "web.archive.org": {
+      "uri-m": "http://web.archive.org/web/20180208190609/https://pitchfork.com/news/justin-timberlake-made-branded-merch-for-every-song-on-man-of-the-woods/",
+      "memento-datetime": "2018-02-08T19:06:09",
+      "memento-pubdate": "",
+      "earliest": "2018-02-08T19:06:09"
+    },
+    "backlinks": {
+      "earliest": ""
+    },
+    "pubdate": {
+      "earliest": ""
+    },
+    "bitly.com": {
+      "earliest": ""
+    },
+    "google.com": {
+      "earliest": ""
+    },
+    "last-modified": {
+      "earliest": ""
+    }
+  }
+}

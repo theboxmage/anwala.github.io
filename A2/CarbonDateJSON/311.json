@@ -1,0 +1,45 @@
+{
+  "self": "",
+  "uri": "https://www.intellihub.com/norovirus-spread-quickly-at-2018-winter-olympics/",
+  "estimated-creation-date": "2018-02-09T08:36:31",
+  "earliest-sources": [
+    "wayback.archive-it.org",
+    "web.archive.org",
+    "pubdate"
+  ],
+  "sources": {
+    "bing.com": {
+      "earliest": ""
+    },
+    "twitter.com": {
+      "earliest": "2018-02-09T13:37:21"
+    },
+    "wayback.archive-it.org": {
+      "uri-m": "http://wayback.archive-it.org/all/20180209143759/https://www.intellihub.com/norovirus-spread-quickly-at-2018-winter-olympics/",
+      "memento-datetime": "2018-02-09T14:37:59",
+      "memento-pubdate": "2018-02-09T08:36:31",
+      "earliest": "2018-02-09T08:36:31"
+    },
+    "web.archive.org": {
+      "uri-m": "http://web.archive.org/web/20180209143759/https://www.intellihub.com/norovirus-spread-quickly-at-2018-winter-olympics/",
+      "memento-datetime": "2018-02-09T14:37:59",
+      "memento-pubdate": "2018-02-09T08:36:31",
+      "earliest": "2018-02-09T08:36:31"
+    },
+    "backlinks": {
+      "earliest": ""
+    },
+    "pubdate": {
+      "earliest": "2018-02-09T08:36:31"
+    },
+    "bitly.com": {
+      "earliest": ""
+    },
+    "google.com": {
+      "earliest": ""
+    },
+    "last-modified": {
+      "earliest": ""
+    }
+  }
+}

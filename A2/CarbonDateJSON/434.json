@@ -1,0 +1,37 @@
+{
+  "self": "",
+  "uri": "https://www.asahi.com/olympics/2018/photo/kaikai/",
+  "estimated-creation-date": "2018-02-09T17:35:22",
+  "earliest-sources": [
+    "web.archive.org"
+  ],
+  "sources": {
+    "bing.com": {
+      "earliest": ""
+    },
+    "twitter.com": {
+      "earliest": "2018-02-09T23:30:23"
+    },
+    "web.archive.org": {
+      "uri-m": "http://web.archive.org/web/20180209173522/https://www.asahi.com/olympics/2018/photo/kaikai/",
+      "memento-datetime": "2018-02-09T17:35:22",
+      "memento-pubdate": "",
+      "earliest": "2018-02-09T17:35:22"
+    },
+    "backlinks": {
+      "earliest": ""
+    },
+    "pubdate": {
+      "earliest": ""
+    },
+    "bitly.com": {
+      "earliest": ""
+    },
+    "google.com": {
+      "earliest": ""
+    },
+    "last-modified": {
+      "earliest": ""
+    }
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "self": "",
+  "uri": "http://abcnews.go.com/GMA/Wellness/2018-winter-olympics-athletes-eat-3000-4000-calories/story?id=52682280",
+  "estimated-creation-date": "2018-01-31T00:00:00",
+  "earliest-sources": [
+    "pubdate"
+  ],
+  "sources": {
+    "bing.com": {
+      "earliest": ""
+    },
+    "twitter.com": {
+      "earliest": "2018-01-31T16:45:37"
+    },
+    "web.archive.org": {
+      "uri-m": "http://web.archive.org/web/20180131192754/http://abcnews.go.com/GMA/Wellness/2018-winter-olympics-athletes-eat-3000-4000-calories/story?id=52682280",
+      "memento-datetime": "2018-01-31T19:27:54",
+      "memento-pubdate": "2018-01-31T23:59:59",
+      "earliest": "2018-01-31T19:27:54"
+    },
+    "wayback.archive-it.org": {
+      "uri-m": "http://wayback.archive-it.org/all/20180204070027/http://abcnews.go.com/GMA/Wellness/2018-winter-olympics-athletes-eat-3000-4000-calories/story?id=52682280",
+      "memento-datetime": "2018-02-04T07:00:27",
+      "memento-pubdate": "2018-01-31T23:59:59",
+      "earliest": "2018-01-31T23:59:59"
+    },
+    "backlinks": {
+      "earliest": "2018-01-31T19:27:55"
+    },
+    "pubdate": {
+      "earliest": "2018-01-31T00:00:00"
+    },
+    "bitly.com": {
+      "earliest": ""
+    },
+    "google.com": {
+      "earliest": ""
+    },
+    "last-modified": {
+      "earliest": ""
+    }
+  }
+}

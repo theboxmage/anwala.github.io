@@ -1,0 +1,49 @@
+{
+  "self": "",
+  "uri": "http://playerpress.com/",
+  "estimated-creation-date": "2001-03-02T16:13:27",
+  "earliest-sources": [
+    "web.archive.org"
+  ],
+  "sources": {
+    "bing.com": {
+      "earliest": ""
+    },
+    "twitter.com": {
+      "earliest": "2009-01-20T00:42:15"
+    },
+    "web.archive.org": {
+      "uri-m": "http://web.archive.org/web/20010302161327/http://www.playerpress.com:80/",
+      "memento-datetime": "2001-03-02T16:13:27",
+      "memento-pubdate": "",
+      "earliest": "2001-03-02T16:13:27"
+    },
+    "wayback.archive-it.org": {
+      "uri-m": "http://wayback.archive-it.org/all/20100422032504/http://www.playerpress.com/",
+      "memento-datetime": "2010-04-22T03:25:04",
+      "memento-pubdate": "",
+      "earliest": "2010-04-22T03:25:04"
+    },
+    "webarchive.loc.gov": {
+      "uri-m": "http://webarchive.loc.gov/all/20131025110458/http://playerpress.com/",
+      "memento-datetime": "2013-10-25T11:04:58",
+      "memento-pubdate": "",
+      "earliest": "2013-10-25T11:04:58"
+    },
+    "backlinks": {
+      "earliest": ""
+    },
+    "pubdate": {
+      "earliest": ""
+    },
+    "bitly.com": {
+      "earliest": ""
+    },
+    "google.com": {
+      "earliest": ""
+    },
+    "last-modified": {
+      "earliest": ""
+    }
+  }
+}

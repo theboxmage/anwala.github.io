@@ -1,0 +1,31 @@
+{
+  "self": "",
+  "uri": "http://mainichi.jp/graphs/20180209/hpj/00m/050/006000g/1",
+  "estimated-creation-date": "2018-02-09T13:37:35",
+  "earliest-sources": [
+    "twitter.com"
+  ],
+  "sources": {
+    "bing.com": {
+      "earliest": ""
+    },
+    "twitter.com": {
+      "earliest": "2018-02-09T13:37:35"
+    },
+    "backlinks": {
+      "earliest": ""
+    },
+    "pubdate": {
+      "earliest": "2018-02-09T22:30:47"
+    },
+    "bitly.com": {
+      "earliest": ""
+    },
+    "google.com": {
+      "earliest": ""
+    },
+    "last-modified": {
+      "earliest": ""
+    }
+  }
+}

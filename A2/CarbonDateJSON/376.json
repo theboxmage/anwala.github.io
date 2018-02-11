@@ -1,0 +1,43 @@
+{
+  "self": "",
+  "uri": "http://time.com/4947041/nhl-players-2018-winter-olympics/",
+  "estimated-creation-date": "2017-09-20T17:54:40",
+  "earliest-sources": [
+    "twitter.com"
+  ],
+  "sources": {
+    "bing.com": {
+      "earliest": ""
+    },
+    "twitter.com": {
+      "earliest": "2017-09-20T17:54:40"
+    },
+    "web.archive.org": {
+      "uri-m": "http://web.archive.org/web/20170920180654/http://time.com/4947041/nhl-players-2018-winter-olympics/",
+      "memento-datetime": "2017-09-20T18:06:54",
+      "memento-pubdate": "",
+      "earliest": "2017-09-20T18:06:54"
+    },
+    "wayback.archive-it.org": {
+      "uri-m": "http://wayback.archive-it.org/all/20170924071135/http://time.com/4947041/nhl-players-2018-winter-olympics/",
+      "memento-datetime": "2017-09-24T07:11:35",
+      "memento-pubdate": "",
+      "earliest": "2017-09-24T07:11:35"
+    },
+    "backlinks": {
+      "earliest": "2017-09-20T18:00:03"
+    },
+    "pubdate": {
+      "earliest": ""
+    },
+    "bitly.com": {
+      "earliest": ""
+    },
+    "google.com": {
+      "earliest": ""
+    },
+    "last-modified": {
+      "earliest": ""
+    }
+  }
+}

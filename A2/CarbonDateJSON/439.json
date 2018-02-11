@@ -1,0 +1,31 @@
+{
+  "self": "",
+  "uri": "http://host.madison.com/wsj/sports/olympics/meet-the-wisconsin-athletes-competing-in-the-winter-olympics/collection_b20267c6-6c3c-5eb5-a882-ab55948fb8ae.html",
+  "estimated-creation-date": "2018-02-09T16:00:00",
+  "earliest-sources": [
+    "pubdate"
+  ],
+  "sources": {
+    "bing.com": {
+      "earliest": ""
+    },
+    "twitter.com": {
+      "earliest": ""
+    },
+    "backlinks": {
+      "earliest": ""
+    },
+    "pubdate": {
+      "earliest": "2018-02-09T16:00:00"
+    },
+    "bitly.com": {
+      "earliest": ""
+    },
+    "google.com": {
+      "earliest": ""
+    },
+    "last-modified": {
+      "earliest": "2018-02-09T22:06:20"
+    }
+  }
+}

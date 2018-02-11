@@ -1,0 +1,31 @@
+{
+  "self": "",
+  "uri": "https://mobile.nytimes.com/2018/02/01/sports/olympics/russia-olympics-doping.html?smid=tw-nytimes&smtyp=cur&referer=https://t.co/Kxrm8yc1Xx",
+  "estimated-creation-date": "2018-02-01T20:03:14",
+  "earliest-sources": [
+    "pubdate"
+  ],
+  "sources": {
+    "bing.com": {
+      "earliest": ""
+    },
+    "twitter.com": {
+      "earliest": ""
+    },
+    "backlinks": {
+      "earliest": ""
+    },
+    "pubdate": {
+      "earliest": "2018-02-01T20:03:14"
+    },
+    "bitly.com": {
+      "earliest": ""
+    },
+    "google.com": {
+      "earliest": ""
+    },
+    "last-modified": {
+      "earliest": ""
+    }
+  }
+}

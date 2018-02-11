@@ -1,0 +1,37 @@
+{
+  "self": "",
+  "uri": "http://olympteka.ru/olymp/pyeongchang2018.html",
+  "estimated-creation-date": "2016-09-26T05:01:12",
+  "earliest-sources": [
+    "web.archive.org"
+  ],
+  "sources": {
+    "bing.com": {
+      "earliest": ""
+    },
+    "twitter.com": {
+      "earliest": "2018-02-08T12:12:39"
+    },
+    "web.archive.org": {
+      "uri-m": "http://web.archive.org/web/20160926050112/http://olympteka.ru:80/olymp/pyeongchang2018.html",
+      "memento-datetime": "2016-09-26T05:01:12",
+      "memento-pubdate": "",
+      "earliest": "2016-09-26T05:01:12"
+    },
+    "backlinks": {
+      "earliest": ""
+    },
+    "pubdate": {
+      "earliest": ""
+    },
+    "bitly.com": {
+      "earliest": ""
+    },
+    "google.com": {
+      "earliest": ""
+    },
+    "last-modified": {
+      "earliest": ""
+    }
+  }
+}

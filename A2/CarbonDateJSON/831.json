@@ -1,0 +1,38 @@
+{
+  "self": "",
+  "uri": "https://www.military.com/undertheradar/2018/02/08/meet-military-athletes-competing-team-usa-winter-olympics.html",
+  "estimated-creation-date": "2018-02-08T04:00:00",
+  "earliest-sources": [
+    "web.archive.org",
+    "pubdate"
+  ],
+  "sources": {
+    "bing.com": {
+      "earliest": ""
+    },
+    "twitter.com": {
+      "earliest": "2018-02-09T01:21:03"
+    },
+    "web.archive.org": {
+      "uri-m": "http://web.archive.org/web/20180208235503/https://www.military.com/undertheradar/2018/02/08/meet-military-athletes-competing-team-usa-winter-olympics.html",
+      "memento-datetime": "2018-02-08T23:12:43",
+      "memento-pubdate": "2018-02-08T04:00:00",
+      "earliest": "2018-02-08T04:00:00"
+    },
+    "backlinks": {
+      "earliest": "2018-02-08T23:12:43"
+    },
+    "pubdate": {
+      "earliest": "2018-02-08T04:00:00"
+    },
+    "bitly.com": {
+      "earliest": ""
+    },
+    "google.com": {
+      "earliest": ""
+    },
+    "last-modified": {
+      "earliest": "2018-02-10T12:49:53"
+    }
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "self": "",
+  "uri": "http://www.nielsenkorea.co.kr/tv_terrestrial_day.asp?menu=tit_1&sub_menu=1_1&area=00",
+  "estimated-creation-date": "2016-02-11T21:51:50",
+  "earliest-sources": [
+    "web.archive.org"
+  ],
+  "sources": {
+    "bing.com": {
+      "earliest": ""
+    },
+    "twitter.com": {
+      "earliest": ""
+    },
+    "web.archive.org": {
+      "uri-m": "http://web.archive.org/web/20160211215150/http://www.nielsenkorea.co.kr:80/tv_terrestrial_day.asp?menu=Tit_1&sub_menu=1_1&area=00",
+      "memento-datetime": "2016-02-11T21:51:50",
+      "memento-pubdate": "",
+      "earliest": "2016-02-11T21:51:50"
+    },
+    "backlinks": {
+      "earliest": ""
+    },
+    "pubdate": {
+      "earliest": ""
+    },
+    "bitly.com": {
+      "earliest": ""
+    },
+    "google.com": {
+      "earliest": ""
+    },
+    "last-modified": {
+      "earliest": ""
+    }
+  }
+}

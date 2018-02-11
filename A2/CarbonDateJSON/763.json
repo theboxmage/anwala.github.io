@@ -1,0 +1,37 @@
+{
+  "self": "",
+  "uri": "http://www.reformer.com/stories/vermont-athletes-are-ready-for-pyeongchang,531556",
+  "estimated-creation-date": "2018-02-09T01:47:07",
+  "earliest-sources": [
+    "twitter.com"
+  ],
+  "sources": {
+    "bing.com": {
+      "earliest": ""
+    },
+    "twitter.com": {
+      "earliest": "2018-02-09T01:47:07"
+    },
+    "web.archive.org": {
+      "uri-m": "http://web.archive.org/web/20180209032524/http://www.reformer.com/stories/vermont-athletes-are-ready-for-pyeongchang,531556",
+      "memento-datetime": "2018-02-09T03:25:24",
+      "memento-pubdate": "",
+      "earliest": "2018-02-09T03:25:24"
+    },
+    "backlinks": {
+      "earliest": ""
+    },
+    "pubdate": {
+      "earliest": ""
+    },
+    "bitly.com": {
+      "earliest": ""
+    },
+    "google.com": {
+      "earliest": ""
+    },
+    "last-modified": {
+      "earliest": ""
+    }
+  }
+}

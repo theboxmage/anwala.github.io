@@ -1,0 +1,79 @@
+{
+  "self": "",
+  "uri": "https://www.ancestry.com/",
+  "estimated-creation-date": "1996-10-28T05:59:25",
+  "earliest-sources": [
+    "web.archive.org"
+  ],
+  "sources": {
+    "bing.com": {
+      "earliest": ""
+    },
+    "twitter.com": {
+      "earliest": "2018-01-31T21:07:24"
+    },
+    "web.archive.org": {
+      "uri-m": "http://web.archive.org/web/19961028055925/http://www.ancestry.com:80/",
+      "memento-datetime": "1996-10-28T05:59:25",
+      "memento-pubdate": "",
+      "earliest": "1996-10-28T05:59:25"
+    },
+    "webarchive.loc.gov": {
+      "uri-m": "http://webarchive.loc.gov/all/20020808063328/http://www.ancestry.com/",
+      "memento-datetime": "2002-08-08T06:33:28",
+      "memento-pubdate": "",
+      "earliest": "2002-08-08T06:33:28"
+    },
+    "wayback.archive-it.org": {
+      "uri-m": "http://wayback.archive-it.org/all/20060208001004/http://www.ancestry.com/",
+      "memento-datetime": "2006-02-08T00:10:04",
+      "memento-pubdate": "",
+      "earliest": "2006-02-08T00:10:04"
+    },
+    "archive.is": {
+      "uri-m": "http://archive.is/20080717085046/http://www.ancestry.com/",
+      "memento-datetime": "2008-07-17T08:50:46",
+      "memento-pubdate": "2008-07-17T08:50:46",
+      "earliest": "2008-07-17T08:50:46"
+    },
+    "swap.stanford.edu": {
+      "uri-m": "https://swap.stanford.edu/20090614164950/http://www.ancestry.com/",
+      "memento-datetime": "2009-06-14T16:49:50",
+      "memento-pubdate": "",
+      "earliest": "2009-06-14T16:49:50"
+    },
+    "arquivo.pt": {
+      "uri-m": "http://arquivo.pt/wayback/20100807195204/http://www.ancestry.com/",
+      "memento-datetime": "2010-08-07T19:52:04",
+      "memento-pubdate": "",
+      "earliest": "2010-08-07T19:52:04"
+    },
+    "wayback.vefsafn.is": {
+      "uri-m": "http://wayback.vefsafn.is/wayback/20120811094702/http://www.ancestry.com/",
+      "memento-datetime": "2012-08-11T09:47:02",
+      "memento-pubdate": "",
+      "earliest": "2012-08-11T09:47:02"
+    },
+    "perma-archives.org": {
+      "uri-m": "http://perma-archives.org/warc/20160629161619/http://www.ancestry.com/",
+      "memento-datetime": "2016-06-29T16:16:19",
+      "memento-pubdate": "",
+      "earliest": "2016-06-29T16:16:19"
+    },
+    "backlinks": {
+      "earliest": "2017-02-21T16:01:12"
+    },
+    "pubdate": {
+      "earliest": ""
+    },
+    "bitly.com": {
+      "earliest": ""
+    },
+    "google.com": {
+      "earliest": ""
+    },
+    "last-modified": {
+      "earliest": ""
+    }
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "self": "",
+  "uri": "https://mydivein.com/",
+  "estimated-creation-date": "2018-01-09T17:51:38",
+  "earliest-sources": [
+    "web.archive.org"
+  ],
+  "sources": {
+    "bing.com": {
+      "earliest": ""
+    },
+    "twitter.com": {
+      "earliest": "2018-01-31T23:05:55"
+    },
+    "web.archive.org": {
+      "uri-m": "http://web.archive.org/web/20180109175138/http://mydivein.com/",
+      "memento-datetime": "2018-01-09T17:51:38",
+      "memento-pubdate": "",
+      "earliest": "2018-01-09T17:51:38"
+    },
+    "backlinks": {
+      "earliest": ""
+    },
+    "pubdate": {
+      "earliest": ""
+    },
+    "bitly.com": {
+      "earliest": ""
+    },
+    "google.com": {
+      "earliest": ""
+    },
+    "last-modified": {
+      "earliest": ""
+    }
+  }
+}

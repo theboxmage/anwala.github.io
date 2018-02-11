@@ -1,0 +1,38 @@
+{
+  "self": "",
+  "uri": "https://www.thedailybeast.com/the-russian-mobster-who-fixed-the-winter-olympics?via=twitter_page",
+  "estimated-creation-date": "2018-02-07T09:50:53",
+  "earliest-sources": [
+    "web.archive.org",
+    "pubdate"
+  ],
+  "sources": {
+    "bing.com": {
+      "earliest": ""
+    },
+    "twitter.com": {
+      "earliest": "2018-02-07T15:00:32"
+    },
+    "web.archive.org": {
+      "uri-m": "http://web.archive.org/web/20180208052810/https://www.thedailybeast.com/the-russian-mobster-who-fixed-the-winter-olympics?via=twitter_page",
+      "memento-datetime": "2018-02-08T05:28:10",
+      "memento-pubdate": "2018-02-07T09:50:53",
+      "earliest": "2018-02-07T09:50:53"
+    },
+    "backlinks": {
+      "earliest": ""
+    },
+    "pubdate": {
+      "earliest": "2018-02-07T09:50:53"
+    },
+    "bitly.com": {
+      "earliest": ""
+    },
+    "google.com": {
+      "earliest": ""
+    },
+    "last-modified": {
+      "earliest": ""
+    }
+  }
+}

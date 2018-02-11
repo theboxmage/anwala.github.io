@@ -1,0 +1,43 @@
+{
+  "self": "",
+  "uri": "https://www.newsatw.com/",
+  "estimated-creation-date": "2013-10-19T22:54:12",
+  "earliest-sources": [
+    "web.archive.org"
+  ],
+  "sources": {
+    "bing.com": {
+      "earliest": ""
+    },
+    "twitter.com": {
+      "earliest": ""
+    },
+    "web.archive.org": {
+      "uri-m": "http://web.archive.org/web/20131019225412/http://newsatw.com",
+      "memento-datetime": "2013-10-19T22:54:12",
+      "memento-pubdate": "",
+      "earliest": "2013-10-19T22:54:12"
+    },
+    "wayback.archive-it.org": {
+      "uri-m": "http://wayback.archive-it.org/all/20180124215030/http://newsatw.com/",
+      "memento-datetime": "2018-01-24T21:50:30",
+      "memento-pubdate": "2016-11-23T20:10:29",
+      "earliest": "2016-11-23T20:10:29"
+    },
+    "backlinks": {
+      "earliest": ""
+    },
+    "pubdate": {
+      "earliest": "2018-01-30T19:56:18"
+    },
+    "bitly.com": {
+      "earliest": ""
+    },
+    "google.com": {
+      "earliest": ""
+    },
+    "last-modified": {
+      "earliest": ""
+    }
+  }
+}

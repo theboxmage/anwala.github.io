@@ -1,0 +1,37 @@
+{
+  "self": "",
+  "uri": "https://oldies1037.iheart.com/content/2018-02-08-snapchat-to-live-stream-highlights-from-the-winter-olympics/",
+  "estimated-creation-date": "2018-02-08T00:00:00",
+  "earliest-sources": [
+    "pubdate"
+  ],
+  "sources": {
+    "bing.com": {
+      "earliest": ""
+    },
+    "twitter.com": {
+      "earliest": ""
+    },
+    "web.archive.org": {
+      "uri-m": "http://web.archive.org/web/20180209195050/https://oldies1037.iheart.com/content/2018-02-08-snapchat-to-live-stream-highlights-from-the-winter-olympics/",
+      "memento-datetime": "2018-02-09T19:50:50",
+      "memento-pubdate": "",
+      "earliest": "2018-02-09T19:50:50"
+    },
+    "backlinks": {
+      "earliest": ""
+    },
+    "pubdate": {
+      "earliest": "2018-02-08T00:00:00"
+    },
+    "bitly.com": {
+      "earliest": ""
+    },
+    "google.com": {
+      "earliest": ""
+    },
+    "last-modified": {
+      "earliest": ""
+    }
+  }
+}

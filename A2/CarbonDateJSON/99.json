@@ -1,0 +1,43 @@
+{
+  "self": "",
+  "uri": "https://www.youtube.com/watch?v=V2hlQkVJZhE&feature=youtu.be",
+  "estimated-creation-date": "2017-10-30T00:00:00",
+  "earliest-sources": [
+    "pubdate"
+  ],
+  "sources": {
+    "bing.com": {
+      "earliest": ""
+    },
+    "twitter.com": {
+      "earliest": "2017-10-30T12:31:56"
+    },
+    "wayback.archive-it.org": {
+      "uri-m": "http://wayback.archive-it.org/all/20171124114514/https://www.youtube.com/watch?v=V2hlQkVJZhE&feature=youtu.be",
+      "memento-datetime": "2017-11-24T11:45:14",
+      "memento-pubdate": "2017-10-30T23:59:59",
+      "earliest": "2017-10-30T23:59:59"
+    },
+    "web.archive.org": {
+      "uri-m": "http://web.archive.org/web/20171124114514/https://www.youtube.com/watch?v=V2hlQkVJZhE&feature=youtu.be",
+      "memento-datetime": "2017-11-24T11:45:14",
+      "memento-pubdate": "2017-10-30T23:59:59",
+      "earliest": "2017-10-30T23:59:59"
+    },
+    "backlinks": {
+      "earliest": ""
+    },
+    "pubdate": {
+      "earliest": "2017-10-30T00:00:00"
+    },
+    "bitly.com": {
+      "earliest": ""
+    },
+    "google.com": {
+      "earliest": ""
+    },
+    "last-modified": {
+      "earliest": ""
+    }
+  }
+}

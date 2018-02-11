@@ -1,0 +1,49 @@
+{
+  "self": "",
+  "uri": "https://www.youtube.com/watch?v=tuAPPeRg3Nw&app=desktop",
+  "estimated-creation-date": "2012-07-17T00:00:00",
+  "earliest-sources": [
+    "pubdate"
+  ],
+  "sources": {
+    "bing.com": {
+      "earliest": ""
+    },
+    "twitter.com": {
+      "earliest": "2015-07-01T13:41:10"
+    },
+    "web.archive.org": {
+      "uri-m": "http://web.archive.org/web/20131130232105/http://www.youtube.com/watch?v=tuAPPeRg3Nw&app=desktop",
+      "memento-datetime": "2013-11-30T23:21:05",
+      "memento-pubdate": "",
+      "earliest": "2013-11-30T23:21:05"
+    },
+    "wayback.archive-it.org": {
+      "uri-m": "http://wayback.archive-it.org/all/20140103153247/http://www.youtube.com/watch?v=tuAPPeRg3Nw&app=desktop",
+      "memento-datetime": "2014-01-03T15:32:47",
+      "memento-pubdate": "",
+      "earliest": "2014-01-03T15:32:47"
+    },
+    "webarchive.loc.gov": {
+      "uri-m": "http://webarchive.loc.gov/all/20140214142156/http://www.youtube.com/watch?v=tuAPPeRg3Nw&app=desktop",
+      "memento-datetime": "2014-02-14T14:21:56",
+      "memento-pubdate": "",
+      "earliest": "2014-02-14T14:21:56"
+    },
+    "backlinks": {
+      "earliest": ""
+    },
+    "pubdate": {
+      "earliest": "2012-07-17T00:00:00"
+    },
+    "bitly.com": {
+      "earliest": ""
+    },
+    "google.com": {
+      "earliest": ""
+    },
+    "last-modified": {
+      "earliest": ""
+    }
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "self": "",
+  "uri": "http://time.com/5141396/harley-windsor-skater-2018-winter-olympics/",
+  "estimated-creation-date": "2018-02-09T16:50:04",
+  "earliest-sources": [
+    "twitter.com"
+  ],
+  "sources": {
+    "bing.com": {
+      "earliest": ""
+    },
+    "twitter.com": {
+      "earliest": "2018-02-09T16:50:04"
+    },
+    "web.archive.org": {
+      "uri-m": "http://web.archive.org/web/20180210040943/http://time.com/5141396/harley-windsor-skater-2018-winter-olympics/",
+      "memento-datetime": "2018-02-10T04:09:43",
+      "memento-pubdate": "",
+      "earliest": "2018-02-10T04:09:43"
+    },
+    "backlinks": {
+      "earliest": "2018-02-10T04:09:43"
+    },
+    "pubdate": {
+      "earliest": ""
+    },
+    "bitly.com": {
+      "earliest": ""
+    },
+    "google.com": {
+      "earliest": ""
+    },
+    "last-modified": {
+      "earliest": ""
+    }
+  }
+}

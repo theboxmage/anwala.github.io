@@ -1,0 +1,37 @@
+{
+  "self": "",
+  "uri": "http://www.wcvb.com/article/spoiler-alert-what-to-expect-when-you-watch-the-winter-olympics-opening-ceremony/16803144",
+  "estimated-creation-date": "2018-02-09T13:12:34",
+  "earliest-sources": [
+    "twitter.com"
+  ],
+  "sources": {
+    "bing.com": {
+      "earliest": ""
+    },
+    "twitter.com": {
+      "earliest": "2018-02-09T13:12:34"
+    },
+    "web.archive.org": {
+      "uri-m": "http://web.archive.org/web/20180209162953/http://www.wcvb.com/article/spoiler-alert-what-to-expect-when-you-watch-the-winter-olympics-opening-ceremony/16803144",
+      "memento-datetime": "2018-02-09T16:29:53",
+      "memento-pubdate": "2018-02-09T13:32:00",
+      "earliest": "2018-02-09T13:32:00"
+    },
+    "backlinks": {
+      "earliest": ""
+    },
+    "pubdate": {
+      "earliest": "2018-02-10T05:06:00"
+    },
+    "bitly.com": {
+      "earliest": ""
+    },
+    "google.com": {
+      "earliest": ""
+    },
+    "last-modified": {
+      "earliest": ""
+    }
+  }
+}

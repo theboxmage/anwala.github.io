@@ -1,0 +1,37 @@
+{
+  "self": "",
+  "uri": "http://tweetedtimes.com/v/1384",
+  "estimated-creation-date": "2015-02-28T18:00:32",
+  "earliest-sources": [
+    "twitter.com"
+  ],
+  "sources": {
+    "bing.com": {
+      "earliest": ""
+    },
+    "twitter.com": {
+      "earliest": "2015-02-28T18:00:32"
+    },
+    "web.archive.org": {
+      "uri-m": "http://web.archive.org/web/20170911041230/http://tweetedtimes.com/v/1384",
+      "memento-datetime": "2017-09-11T04:12:30",
+      "memento-pubdate": "",
+      "earliest": "2017-09-11T04:12:30"
+    },
+    "backlinks": {
+      "earliest": ""
+    },
+    "pubdate": {
+      "earliest": ""
+    },
+    "bitly.com": {
+      "earliest": ""
+    },
+    "google.com": {
+      "earliest": ""
+    },
+    "last-modified": {
+      "earliest": ""
+    }
+  }
+}

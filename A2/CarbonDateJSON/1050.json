@@ -1,0 +1,73 @@
+{
+  "self": "",
+  "uri": "https://www.cbssports.com/",
+  "estimated-creation-date": "1997-04-01T16:51:19",
+  "earliest-sources": [
+    "web.archive.org"
+  ],
+  "sources": {
+    "bing.com": {
+      "earliest": ""
+    },
+    "twitter.com": {
+      "earliest": "2018-01-31T21:38:26"
+    },
+    "web.archive.org": {
+      "uri-m": "http://web.archive.org/web/19970401165119/http://cbssports.com:80/",
+      "memento-datetime": "1997-04-01T16:51:19",
+      "memento-pubdate": "",
+      "earliest": "1997-04-01T16:51:19"
+    },
+    "webarchive.loc.gov": {
+      "uri-m": "http://webarchive.loc.gov/all/20080703073517/http://www.cbssports.com/",
+      "memento-datetime": "2008-07-03T07:35:17",
+      "memento-pubdate": "",
+      "earliest": "2008-07-03T07:35:17"
+    },
+    "wayback.vefsafn.is": {
+      "uri-m": "http://wayback.vefsafn.is/wayback/20080716021547/http://www.cbssports.com/",
+      "memento-datetime": "2008-07-16T02:15:47",
+      "memento-pubdate": "",
+      "earliest": "2008-07-16T02:15:47"
+    },
+    "wayback.archive-it.org": {
+      "uri-m": "http://wayback.archive-it.org/all/20080912200757/http://www.cbssports.com/",
+      "memento-datetime": "2008-09-12T20:07:57",
+      "memento-pubdate": "",
+      "earliest": "2008-09-12T20:07:57"
+    },
+    "swap.stanford.edu": {
+      "uri-m": "https://swap.stanford.edu/20080913063538/http://www.cbssports.com/",
+      "memento-datetime": "2008-09-13T06:35:38",
+      "memento-pubdate": "",
+      "earliest": "2008-09-13T06:35:38"
+    },
+    "arquivo.pt": {
+      "uri-m": "http://arquivo.pt/wayback/20081023072359/http://www.cbssports.com/",
+      "memento-datetime": "2008-10-23T07:23:59",
+      "memento-pubdate": "",
+      "earliest": "2008-10-23T07:23:59"
+    },
+    "archive.is": {
+      "uri-m": "http://archive.is/20110202195148/http://www.cbssports.com/",
+      "memento-datetime": "2011-02-02T19:51:48",
+      "memento-pubdate": "2011-02-02T19:51:48",
+      "earliest": "2011-02-02T19:51:48"
+    },
+    "backlinks": {
+      "earliest": "2016-02-26T05:38:12"
+    },
+    "pubdate": {
+      "earliest": ""
+    },
+    "bitly.com": {
+      "earliest": ""
+    },
+    "google.com": {
+      "earliest": ""
+    },
+    "last-modified": {
+      "earliest": ""
+    }
+  }
+}

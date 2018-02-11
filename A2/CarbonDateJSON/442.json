@@ -1,0 +1,37 @@
+{
+  "self": "",
+  "uri": "https://www.washingtonpost.com/news/the-fix/wp/2017/12/10/why-mike-tiricos-history-of-alleged-sexual-harassment-hasnt-led-him-to-matt-lauers-fate/",
+  "estimated-creation-date": "2017-12-10T00:00:00",
+  "earliest-sources": [
+    "pubdate"
+  ],
+  "sources": {
+    "bing.com": {
+      "earliest": ""
+    },
+    "twitter.com": {
+      "earliest": "2017-12-10T15:20:10"
+    },
+    "web.archive.org": {
+      "uri-m": "http://web.archive.org/web/20171210163001/https://www.washingtonpost.com/news/the-fix/wp/2017/12/10/why-mike-tiricos-history-of-alleged-sexual-harassment-hasnt-led-him-to-matt-lauers-fate/",
+      "memento-datetime": "2017-12-10T16:30:01",
+      "memento-pubdate": "2017-12-10T23:59:59",
+      "earliest": "2017-12-10T16:30:01"
+    },
+    "backlinks": {
+      "earliest": "2017-12-10T16:30:01"
+    },
+    "pubdate": {
+      "earliest": "2017-12-10T00:00:00"
+    },
+    "bitly.com": {
+      "earliest": ""
+    },
+    "google.com": {
+      "earliest": ""
+    },
+    "last-modified": {
+      "earliest": ""
+    }
+  }
+}

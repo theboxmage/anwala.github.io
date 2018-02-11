@@ -1,0 +1,38 @@
+{
+  "self": "",
+  "uri": "https://projects.fivethirtyeight.com/winter-olympics-quiz/?ex_cid=story-twitter-results-section",
+  "estimated-creation-date": "2018-02-09T01:00:00",
+  "earliest-sources": [
+    "web.archive.org",
+    "pubdate"
+  ],
+  "sources": {
+    "bing.com": {
+      "earliest": ""
+    },
+    "twitter.com": {
+      "earliest": "2018-02-09T20:41:54"
+    },
+    "web.archive.org": {
+      "uri-m": "http://web.archive.org/web/20180209132408/https://projects.fivethirtyeight.com/winter-olympics-quiz/?ex_cid=story-twitter-results-section",
+      "memento-datetime": "2018-02-09T12:23:05",
+      "memento-pubdate": "2018-02-09T01:00:00",
+      "earliest": "2018-02-09T01:00:00"
+    },
+    "backlinks": {
+      "earliest": ""
+    },
+    "pubdate": {
+      "earliest": "2018-02-09T01:00:00"
+    },
+    "bitly.com": {
+      "earliest": ""
+    },
+    "google.com": {
+      "earliest": ""
+    },
+    "last-modified": {
+      "earliest": "2018-02-09T19:45:25"
+    }
+  }
+}

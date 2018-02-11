@@ -1,0 +1,37 @@
+{
+  "self": "",
+  "uri": "http://www.espn.com/espnw/feature/22331122/broken-bones-torn-knees-us-skier-lindsey-vonn-fearless-heading-pyeongchang-winter-olympics",
+  "estimated-creation-date": "2018-02-09T16:46:37",
+  "earliest-sources": [
+    "twitter.com"
+  ],
+  "sources": {
+    "bing.com": {
+      "earliest": ""
+    },
+    "twitter.com": {
+      "earliest": "2018-02-09T16:46:37"
+    },
+    "web.archive.org": {
+      "uri-m": "http://web.archive.org/web/20180209200543/http://www.espn.com/espnw/feature/22331122/broken-bones-torn-knees-us-skier-lindsey-vonn-fearless-heading-pyeongchang-winter-olympics",
+      "memento-datetime": "2018-02-09T20:05:43",
+      "memento-pubdate": "",
+      "earliest": "2018-02-09T20:05:43"
+    },
+    "backlinks": {
+      "earliest": ""
+    },
+    "pubdate": {
+      "earliest": ""
+    },
+    "bitly.com": {
+      "earliest": ""
+    },
+    "google.com": {
+      "earliest": ""
+    },
+    "last-modified": {
+      "earliest": ""
+    }
+  }
+}

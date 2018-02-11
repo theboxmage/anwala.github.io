@@ -1,0 +1,38 @@
+{
+  "self": "",
+  "uri": "http://www.alizila.com/alibaba-launches-first-global-ad-campaign-for-the-olympics/",
+  "estimated-creation-date": "2018-01-29T10:32:25",
+  "earliest-sources": [
+    "web.archive.org",
+    "pubdate"
+  ],
+  "sources": {
+    "bing.com": {
+      "earliest": ""
+    },
+    "twitter.com": {
+      "earliest": "2018-01-29T15:46:30"
+    },
+    "web.archive.org": {
+      "uri-m": "http://web.archive.org/web/20180130205247/http://www.alizila.com/alibaba-launches-first-global-ad-campaign-for-the-olympics/",
+      "memento-datetime": "2018-01-30T20:37:47",
+      "memento-pubdate": "2018-01-29T10:32:25",
+      "earliest": "2018-01-29T10:32:25"
+    },
+    "backlinks": {
+      "earliest": ""
+    },
+    "pubdate": {
+      "earliest": "2018-01-29T10:32:25"
+    },
+    "bitly.com": {
+      "earliest": ""
+    },
+    "google.com": {
+      "earliest": ""
+    },
+    "last-modified": {
+      "earliest": "2018-02-10T12:30:36"
+    }
+  }
+}

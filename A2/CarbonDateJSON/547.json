@@ -1,0 +1,38 @@
+{
+  "self": "",
+  "uri": "http://collider.com/olympics-movies-to-get-you-ready-for-the-games/",
+  "estimated-creation-date": "2018-02-06T07:35:51",
+  "earliest-sources": [
+    "web.archive.org",
+    "pubdate"
+  ],
+  "sources": {
+    "bing.com": {
+      "earliest": ""
+    },
+    "twitter.com": {
+      "earliest": "2018-02-06T15:35:54"
+    },
+    "web.archive.org": {
+      "uri-m": "http://web.archive.org/web/20180206180159/http://collider.com/olympics-movies-to-get-you-ready-for-the-games/",
+      "memento-datetime": "2018-02-06T18:01:59",
+      "memento-pubdate": "2018-02-06T07:35:51",
+      "earliest": "2018-02-06T07:35:51"
+    },
+    "backlinks": {
+      "earliest": "2018-02-06T17:47:31"
+    },
+    "pubdate": {
+      "earliest": "2018-02-06T07:35:51"
+    },
+    "bitly.com": {
+      "earliest": ""
+    },
+    "google.com": {
+      "earliest": ""
+    },
+    "last-modified": {
+      "earliest": ""
+    }
+  }
+}

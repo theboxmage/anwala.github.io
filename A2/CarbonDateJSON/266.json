@@ -1,0 +1,38 @@
+{
+  "self": "",
+  "uri": "https://www.gq.com/story/ralph-lauren-2018-olympics-uniforms",
+  "estimated-creation-date": "2018-02-08T13:00:00",
+  "earliest-sources": [
+    "web.archive.org",
+    "pubdate"
+  ],
+  "sources": {
+    "bing.com": {
+      "earliest": ""
+    },
+    "twitter.com": {
+      "earliest": "2018-02-08T13:14:17"
+    },
+    "web.archive.org": {
+      "uri-m": "http://web.archive.org/web/20180208214902/https://www.gq.com/story/ralph-lauren-2018-olympics-uniforms",
+      "memento-datetime": "2018-02-08T21:49:02",
+      "memento-pubdate": "2018-02-08T13:00:00",
+      "earliest": "2018-02-08T13:00:00"
+    },
+    "backlinks": {
+      "earliest": "2018-02-08T21:49:03"
+    },
+    "pubdate": {
+      "earliest": "2018-02-08T13:00:00"
+    },
+    "bitly.com": {
+      "earliest": ""
+    },
+    "google.com": {
+      "earliest": ""
+    },
+    "last-modified": {
+      "earliest": ""
+    }
+  }
+}

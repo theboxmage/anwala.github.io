@@ -1,0 +1,38 @@
+{
+  "self": "",
+  "uri": "https://patch.com/illinois/across-il/illinois-olympians-team-usa-members-competing-winter-olympics",
+  "estimated-creation-date": "2018-01-08T18:10:53",
+  "earliest-sources": [
+    "web.archive.org",
+    "pubdate"
+  ],
+  "sources": {
+    "bing.com": {
+      "earliest": ""
+    },
+    "twitter.com": {
+      "earliest": "2018-02-08T00:08:10"
+    },
+    "web.archive.org": {
+      "uri-m": "http://web.archive.org/web/20180109012613/https://patch.com/illinois/across-il/illinois-olympians-team-usa-members-competing-winter-olympics",
+      "memento-datetime": "2018-01-09T01:26:13",
+      "memento-pubdate": "2018-01-08T18:10:53",
+      "earliest": "2018-01-08T18:10:53"
+    },
+    "backlinks": {
+      "earliest": ""
+    },
+    "pubdate": {
+      "earliest": "2018-01-08T18:10:53"
+    },
+    "bitly.com": {
+      "earliest": ""
+    },
+    "google.com": {
+      "earliest": ""
+    },
+    "last-modified": {
+      "earliest": ""
+    }
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "self": "",
+  "uri": "https://www.usatoday.com/story/life/2018/01/22/exclusive-ralph-laurens-olympic-opening-ceremony-uniforms-wearable-mini-heaters/1045189001/",
+  "estimated-creation-date": "2018-01-22T00:00:00",
+  "earliest-sources": [
+    "pubdate"
+  ],
+  "sources": {
+    "bing.com": {
+      "earliest": ""
+    },
+    "twitter.com": {
+      "earliest": "2018-01-22T17:46:13"
+    },
+    "web.archive.org": {
+      "uri-m": "http://web.archive.org/web/20180122184630/https://www.usatoday.com/story/life/2018/01/22/exclusive-ralph-laurens-olympic-opening-ceremony-uniforms-wearable-mini-heaters/1045189001/",
+      "memento-datetime": "2018-01-22T17:37:42",
+      "memento-pubdate": "2018-01-22T23:59:59",
+      "earliest": "2018-01-22T17:37:42"
+    },
+    "archive.is": {
+      "uri-m": "http://archive.is/20180125102031/https://www.usatoday.com/story/life/2018/01/22/exclusive-ralph-laurens-olympic-opening-ceremony-uniforms-wearable-mini-heaters/1045189001/",
+      "memento-datetime": "2018-01-25T10:20:31",
+      "memento-pubdate": "2018-01-25T10:20:31",
+      "earliest": "2018-01-25T10:20:31"
+    },
+    "backlinks": {
+      "earliest": "2018-01-22T17:37:42"
+    },
+    "pubdate": {
+      "earliest": "2018-01-22T00:00:00"
+    },
+    "bitly.com": {
+      "earliest": ""
+    },
+    "google.com": {
+      "earliest": ""
+    },
+    "last-modified": {
+      "earliest": "2018-02-10T11:06:13"
+    }
+  }
+}

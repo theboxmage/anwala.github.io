@@ -1,0 +1,37 @@
+{
+  "self": "",
+  "uri": "http://www.bbc.co.uk/news/blogs-trending-43003630",
+  "estimated-creation-date": "2018-02-09T15:51:06",
+  "earliest-sources": [
+    "web.archive.org"
+  ],
+  "sources": {
+    "bing.com": {
+      "earliest": ""
+    },
+    "twitter.com": {
+      "earliest": "2018-02-09T19:08:18"
+    },
+    "web.archive.org": {
+      "uri-m": "http://web.archive.org/web/20180209155106/http://www.bbc.co.uk/news/blogs-trending-43003630",
+      "memento-datetime": "2018-02-09T15:51:06",
+      "memento-pubdate": "",
+      "earliest": "2018-02-09T15:51:06"
+    },
+    "backlinks": {
+      "earliest": "2018-02-09T15:51:07"
+    },
+    "pubdate": {
+      "earliest": ""
+    },
+    "bitly.com": {
+      "earliest": ""
+    },
+    "google.com": {
+      "earliest": ""
+    },
+    "last-modified": {
+      "earliest": ""
+    }
+  }
+}

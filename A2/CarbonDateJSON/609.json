@@ -1,0 +1,31 @@
+{
+  "self": "",
+  "uri": "http://comicbook.com/gaming/2018/02/09/olympics-games-mario-sonic-ranked/",
+  "estimated-creation-date": "2018-02-09T00:00:00",
+  "earliest-sources": [
+    "pubdate"
+  ],
+  "sources": {
+    "bing.com": {
+      "earliest": ""
+    },
+    "twitter.com": {
+      "earliest": "2018-02-09T01:56:30"
+    },
+    "backlinks": {
+      "earliest": "2018-02-09T04:53:51"
+    },
+    "pubdate": {
+      "earliest": "2018-02-09T00:00:00"
+    },
+    "bitly.com": {
+      "earliest": ""
+    },
+    "google.com": {
+      "earliest": ""
+    },
+    "last-modified": {
+      "earliest": ""
+    }
+  }
+}

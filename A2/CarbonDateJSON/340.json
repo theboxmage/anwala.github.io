@@ -1,0 +1,38 @@
+{
+  "self": "",
+  "uri": "https://cpianalysis.org/2018/02/08/social-image-construction-and-the-olympic-civilisation-process-at-beijings-2008-olympics/",
+  "estimated-creation-date": "2018-02-08T08:00:00",
+  "earliest-sources": [
+    "web.archive.org",
+    "pubdate"
+  ],
+  "sources": {
+    "bing.com": {
+      "earliest": ""
+    },
+    "twitter.com": {
+      "earliest": "2018-02-08T08:56:25"
+    },
+    "web.archive.org": {
+      "uri-m": "http://web.archive.org/web/20180208100145/https://cpianalysis.org/2018/02/08/social-image-construction-and-the-olympic-civilisation-process-at-beijings-2008-olympics/",
+      "memento-datetime": "2018-02-08T10:01:01",
+      "memento-pubdate": "2018-02-08T08:00:00",
+      "earliest": "2018-02-08T08:00:00"
+    },
+    "backlinks": {
+      "earliest": ""
+    },
+    "pubdate": {
+      "earliest": "2018-02-08T08:00:00"
+    },
+    "bitly.com": {
+      "earliest": ""
+    },
+    "google.com": {
+      "earliest": ""
+    },
+    "last-modified": {
+      "earliest": ""
+    }
+  }
+}

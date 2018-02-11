@@ -1,0 +1,31 @@
+{
+  "self": "",
+  "uri": "https://www.nytimes.com/2018/02/07/watching/winter-olympics-guide-how-to-watch.html?smid=tw-nytimes&smtyp=cur",
+  "estimated-creation-date": "2018-02-07T00:00:00",
+  "earliest-sources": [
+    "pubdate"
+  ],
+  "sources": {
+    "bing.com": {
+      "earliest": ""
+    },
+    "twitter.com": {
+      "earliest": ""
+    },
+    "backlinks": {
+      "earliest": ""
+    },
+    "pubdate": {
+      "earliest": "2018-02-07T00:00:00"
+    },
+    "bitly.com": {
+      "earliest": ""
+    },
+    "google.com": {
+      "earliest": ""
+    },
+    "last-modified": {
+      "earliest": ""
+    }
+  }
+}

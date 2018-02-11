@@ -1,0 +1,43 @@
+{
+  "self": "",
+  "uri": "http://atlantamobilevet.com/",
+  "estimated-creation-date": "2008-07-16T18:48:55",
+  "earliest-sources": [
+    "web.archive.org"
+  ],
+  "sources": {
+    "bing.com": {
+      "earliest": ""
+    },
+    "twitter.com": {
+      "earliest": ""
+    },
+    "web.archive.org": {
+      "uri-m": "http://web.archive.org/web/20081006180946/http://atlantamobilevet.com/",
+      "memento-datetime": "2008-07-16T18:48:55",
+      "memento-pubdate": "",
+      "earliest": "2008-07-16T18:48:55"
+    },
+    "webarchive.loc.gov": {
+      "uri-m": "http://webarchive.loc.gov/all/20160729124306/http://atlantamobilevet.com/",
+      "memento-datetime": "2013-11-11T21:46:39",
+      "memento-pubdate": "",
+      "earliest": "2013-11-11T21:46:39"
+    },
+    "backlinks": {
+      "earliest": ""
+    },
+    "pubdate": {
+      "earliest": ""
+    },
+    "bitly.com": {
+      "earliest": ""
+    },
+    "google.com": {
+      "earliest": ""
+    },
+    "last-modified": {
+      "earliest": "2017-07-10T14:58:31"
+    }
+  }
+}

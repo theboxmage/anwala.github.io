@@ -1,0 +1,31 @@
+{
+  "self": "",
+  "uri": "https://media.giphy.com/media/3o7WIyuhqlp5o2HTeU/giphy.gif",
+  "estimated-creation-date": "2018-02-05T23:55:22",
+  "earliest-sources": [
+    "last-modified"
+  ],
+  "sources": {
+    "bing.com": {
+      "earliest": ""
+    },
+    "twitter.com": {
+      "earliest": ""
+    },
+    "backlinks": {
+      "earliest": ""
+    },
+    "pubdate": {
+      "earliest": ""
+    },
+    "bitly.com": {
+      "earliest": ""
+    },
+    "google.com": {
+      "earliest": ""
+    },
+    "last-modified": {
+      "earliest": "2018-02-05T23:55:22"
+    }
+  }
+}

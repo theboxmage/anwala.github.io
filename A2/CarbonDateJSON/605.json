@@ -1,0 +1,45 @@
+{
+  "self": "",
+  "uri": "https://www.cnn.com/2018/02/07/politics/adam-rippon-mike-pence-winter-olympics/index.html",
+  "estimated-creation-date": "2018-02-07T18:22:37",
+  "earliest-sources": [
+    "web.archive.org",
+    "wayback.archive-it.org",
+    "pubdate"
+  ],
+  "sources": {
+    "bing.com": {
+      "earliest": ""
+    },
+    "twitter.com": {
+      "earliest": "2018-02-07T19:45:57"
+    },
+    "web.archive.org": {
+      "uri-m": "http://web.archive.org/web/20180207214840/http://www.cnn.com/2018/02/07/politics/adam-rippon-mike-pence-winter-olympics/index.html",
+      "memento-datetime": "2018-02-07T21:48:40",
+      "memento-pubdate": "2018-02-07T18:22:37",
+      "earliest": "2018-02-07T18:22:37"
+    },
+    "wayback.archive-it.org": {
+      "uri-m": "http://wayback.archive-it.org/all/20180208025329/https://www.cnn.com/2018/02/07/politics/adam-rippon-mike-pence-winter-olympics/index.html",
+      "memento-datetime": "2018-02-08T02:53:29",
+      "memento-pubdate": "2018-02-07T18:22:37",
+      "earliest": "2018-02-07T18:22:37"
+    },
+    "backlinks": {
+      "earliest": "2018-02-07T21:48:40"
+    },
+    "pubdate": {
+      "earliest": "2018-02-07T18:22:37"
+    },
+    "bitly.com": {
+      "earliest": ""
+    },
+    "google.com": {
+      "earliest": ""
+    },
+    "last-modified": {
+      "earliest": ""
+    }
+  }
+}

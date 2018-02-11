@@ -1,0 +1,38 @@
+{
+  "self": "",
+  "uri": "https://www.dezeen.com/2018/02/07/asif-khan-coats-pavilion-super-dark-vantablack-vbx2-pyeongchang-winter-olympics-2018-worlds-darkest-material/",
+  "estimated-creation-date": "2018-02-07T09:00:01",
+  "earliest-sources": [
+    "web.archive.org",
+    "pubdate"
+  ],
+  "sources": {
+    "bing.com": {
+      "earliest": ""
+    },
+    "twitter.com": {
+      "earliest": "2018-02-07T14:25:04"
+    },
+    "web.archive.org": {
+      "uri-m": "http://web.archive.org/web/20180207113646/https://www.dezeen.com/2018/02/07/asif-khan-coats-pavilion-super-dark-vantablack-vbx2-pyeongchang-winter-olympics-2018-worlds-darkest-material/",
+      "memento-datetime": "2018-02-07T11:36:46",
+      "memento-pubdate": "2018-02-07T09:00:01",
+      "earliest": "2018-02-07T09:00:01"
+    },
+    "backlinks": {
+      "earliest": "2018-02-07T11:36:47"
+    },
+    "pubdate": {
+      "earliest": "2018-02-07T09:00:01"
+    },
+    "bitly.com": {
+      "earliest": ""
+    },
+    "google.com": {
+      "earliest": ""
+    },
+    "last-modified": {
+      "earliest": ""
+    }
+  }
+}

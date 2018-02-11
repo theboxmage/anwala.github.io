@@ -1,0 +1,49 @@
+{
+  "self": "",
+  "uri": "https://brea.improv.com/",
+  "estimated-creation-date": "2012-04-06T06:10:32",
+  "earliest-sources": [
+    "web.archive.org"
+  ],
+  "sources": {
+    "bing.com": {
+      "earliest": ""
+    },
+    "twitter.com": {
+      "earliest": "2018-02-01T18:08:36"
+    },
+    "web.archive.org": {
+      "uri-m": "http://web.archive.org/web/20120406061032/http://brea.improv.com:80/",
+      "memento-datetime": "2012-04-06T06:10:32",
+      "memento-pubdate": "",
+      "earliest": "2012-04-06T06:10:32"
+    },
+    "webarchive.loc.gov": {
+      "uri-m": "http://webarchive.loc.gov/all/20120816192707/http://brea.improv.com/",
+      "memento-datetime": "2012-08-16T19:27:07",
+      "memento-pubdate": "",
+      "earliest": "2012-08-16T19:27:07"
+    },
+    "archive.is": {
+      "uri-m": "http://archive.is/20150418220454/http://brea.improv.com/",
+      "memento-datetime": "2015-04-18T22:04:54",
+      "memento-pubdate": "2015-04-18T22:04:54",
+      "earliest": "2015-04-18T22:04:54"
+    },
+    "backlinks": {
+      "earliest": ""
+    },
+    "pubdate": {
+      "earliest": ""
+    },
+    "bitly.com": {
+      "earliest": ""
+    },
+    "google.com": {
+      "earliest": ""
+    },
+    "last-modified": {
+      "earliest": ""
+    }
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "self": "",
+  "uri": "https://sports.vice.com/en_us/article/d3wpxq/team-usas-hilary-knight-on-the-fight-for-equality-in-womens-hockey",
+  "estimated-creation-date": "2018-02-09T14:30:00",
+  "earliest-sources": [
+    "web.archive.org",
+    "pubdate"
+  ],
+  "sources": {
+    "bing.com": {
+      "earliest": ""
+    },
+    "twitter.com": {
+      "earliest": "2018-02-09T14:57:32"
+    },
+    "web.archive.org": {
+      "uri-m": "http://web.archive.org/web/20180209211923/https://sports.vice.com/en_us/article/d3wpxq/team-usas-hilary-knight-on-the-fight-for-equality-in-womens-hockey",
+      "memento-datetime": "2018-02-09T21:19:23",
+      "memento-pubdate": "2018-02-09T14:30:00",
+      "earliest": "2018-02-09T14:30:00"
+    },
+    "backlinks": {
+      "earliest": ""
+    },
+    "pubdate": {
+      "earliest": "2018-02-09T14:30:00"
+    },
+    "bitly.com": {
+      "earliest": ""
+    },
+    "google.com": {
+      "earliest": ""
+    },
+    "last-modified": {
+      "earliest": ""
+    }
+  }
+}

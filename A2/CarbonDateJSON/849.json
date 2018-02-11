@@ -1,0 +1,43 @@
+{
+  "self": "",
+  "uri": "https://www.rt.com/news/418323-russia-doping-winter-olympics-cas/",
+  "estimated-creation-date": "2018-02-09T13:15:38",
+  "earliest-sources": [
+    "twitter.com"
+  ],
+  "sources": {
+    "bing.com": {
+      "earliest": ""
+    },
+    "twitter.com": {
+      "earliest": "2018-02-09T13:15:38"
+    },
+    "web.archive.org": {
+      "uri-m": "http://web.archive.org/web/20180209133814/https://www.rt.com/news/418323-russia-doping-winter-olympics-cas/",
+      "memento-datetime": "2018-02-09T13:38:14",
+      "memento-pubdate": "",
+      "earliest": "2018-02-09T13:38:14"
+    },
+    "archive.is": {
+      "uri-m": "http://archive.is/20180210014605/https://www.rt.com/news/418323-russia-doping-winter-olympics-cas/",
+      "memento-datetime": "2018-02-10T01:46:05",
+      "memento-pubdate": "2018-02-10T01:46:05",
+      "earliest": "2018-02-10T01:46:05"
+    },
+    "backlinks": {
+      "earliest": "2018-02-09T13:38:14"
+    },
+    "pubdate": {
+      "earliest": ""
+    },
+    "bitly.com": {
+      "earliest": ""
+    },
+    "google.com": {
+      "earliest": ""
+    },
+    "last-modified": {
+      "earliest": ""
+    }
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "self": "",
+  "uri": "https://www.nytimes.com/2018/02/09/sports/olympics/opening-ceremony.html?smid=tw-share",
+  "estimated-creation-date": "2018-02-09T03:00:12",
+  "earliest-sources": [
+    "web.archive.org",
+    "pubdate"
+  ],
+  "sources": {
+    "bing.com": {
+      "earliest": ""
+    },
+    "twitter.com": {
+      "earliest": ""
+    },
+    "web.archive.org": {
+      "uri-m": "http://web.archive.org/web/20180209102934/https://www.nytimes.com/2018/02/09/sports/olympics/opening-ceremony.html?smid=tw-share",
+      "memento-datetime": "2018-02-09T10:29:34",
+      "memento-pubdate": "2018-02-09T03:00:12",
+      "earliest": "2018-02-09T03:00:12"
+    },
+    "backlinks": {
+      "earliest": ""
+    },
+    "pubdate": {
+      "earliest": "2018-02-09T03:00:12"
+    },
+    "bitly.com": {
+      "earliest": ""
+    },
+    "google.com": {
+      "earliest": ""
+    },
+    "last-modified": {
+      "earliest": ""
+    }
+  }
+}

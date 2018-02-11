@@ -1,0 +1,37 @@
+{
+  "self": "",
+  "uri": "http://www.bbc.co.uk/sport/live/winter-olympics/42433318",
+  "estimated-creation-date": "2018-02-09T02:54:03",
+  "earliest-sources": [
+    "backlinks"
+  ],
+  "sources": {
+    "bing.com": {
+      "earliest": ""
+    },
+    "twitter.com": {
+      "earliest": "2018-02-09T14:53:14"
+    },
+    "web.archive.org": {
+      "uri-m": "http://web.archive.org/web/20180209130552/http://www.bbc.co.uk/sport/live/winter-olympics/42433318",
+      "memento-datetime": "2018-02-09T13:05:52",
+      "memento-pubdate": "",
+      "earliest": "2018-02-09T13:05:52"
+    },
+    "backlinks": {
+      "earliest": "2018-02-09T02:54:03"
+    },
+    "pubdate": {
+      "earliest": ""
+    },
+    "bitly.com": {
+      "earliest": ""
+    },
+    "google.com": {
+      "earliest": ""
+    },
+    "last-modified": {
+      "earliest": ""
+    }
+  }
+}

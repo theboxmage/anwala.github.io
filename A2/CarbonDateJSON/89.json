@@ -1,0 +1,37 @@
+{
+  "self": "",
+  "uri": "http://www.businessinsider.com/winter-olympics-figure-skating-arena-empty-nbc-time-zone-2018-2",
+  "estimated-creation-date": "2018-02-08T23:59:59",
+  "earliest-sources": [
+    "web.archive.org"
+  ],
+  "sources": {
+    "bing.com": {
+      "earliest": ""
+    },
+    "twitter.com": {
+      "earliest": "2018-02-09T03:40:36"
+    },
+    "web.archive.org": {
+      "uri-m": "http://web.archive.org/web/20180209032626/http://www.businessinsider.com/winter-olympics-figure-skating-arena-empty-nbc-time-zone-2018-2",
+      "memento-datetime": "2018-02-09T03:26:26",
+      "memento-pubdate": "2018-02-08T23:59:59",
+      "earliest": "2018-02-08T23:59:59"
+    },
+    "backlinks": {
+      "earliest": "2018-02-09T03:26:26"
+    },
+    "pubdate": {
+      "earliest": "2018-02-09T00:00:00"
+    },
+    "bitly.com": {
+      "earliest": ""
+    },
+    "google.com": {
+      "earliest": ""
+    },
+    "last-modified": {
+      "earliest": ""
+    }
+  }
+}

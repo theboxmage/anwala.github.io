@@ -1,0 +1,37 @@
+{
+  "self": "",
+  "uri": "http://www.younghollywood.com/videos/yhstudio/april/alpine-skier-lindsey-vonn-conquers-the-world.html",
+  "estimated-creation-date": "2012-04-18T20:32:26",
+  "earliest-sources": [
+    "twitter.com"
+  ],
+  "sources": {
+    "bing.com": {
+      "earliest": ""
+    },
+    "twitter.com": {
+      "earliest": "2012-04-18T20:32:26"
+    },
+    "web.archive.org": {
+      "uri-m": "http://web.archive.org/web/20120506010421/http://www.younghollywood.com:80/videos/yhstudio/april/alpine-skier-lindsey-vonn-conquers-the-world.html",
+      "memento-datetime": "2012-05-06T01:04:21",
+      "memento-pubdate": "",
+      "earliest": "2012-05-06T01:04:21"
+    },
+    "backlinks": {
+      "earliest": ""
+    },
+    "pubdate": {
+      "earliest": ""
+    },
+    "bitly.com": {
+      "earliest": ""
+    },
+    "google.com": {
+      "earliest": ""
+    },
+    "last-modified": {
+      "earliest": "2018-02-10T13:06:18"
+    }
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "self": "",
+  "uri": "https://www.atlasobscura.com/articles/google-translate-mistake-olympics-norway-eggs",
+  "estimated-creation-date": "2018-02-08T14:03:00",
+  "earliest-sources": [
+    "web.archive.org",
+    "pubdate"
+  ],
+  "sources": {
+    "bing.com": {
+      "earliest": ""
+    },
+    "twitter.com": {
+      "earliest": "2018-02-08T19:41:34"
+    },
+    "web.archive.org": {
+      "uri-m": "http://web.archive.org/web/20180208235915/https://www.atlasobscura.com/articles/google-translate-mistake-olympics-norway-eggs",
+      "memento-datetime": "2018-02-08T23:59:15",
+      "memento-pubdate": "2018-02-08T14:03:00",
+      "earliest": "2018-02-08T14:03:00"
+    },
+    "backlinks": {
+      "earliest": ""
+    },
+    "pubdate": {
+      "earliest": "2018-02-08T14:03:00"
+    },
+    "bitly.com": {
+      "earliest": ""
+    },
+    "google.com": {
+      "earliest": ""
+    },
+    "last-modified": {
+      "earliest": ""
+    }
+  }
+}

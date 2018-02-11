@@ -1,0 +1,37 @@
+{
+  "self": "",
+  "uri": "https://www.wired.com/story/olympic-support/",
+  "estimated-creation-date": "2018-02-06T21:00:43",
+  "earliest-sources": [
+    "twitter.com"
+  ],
+  "sources": {
+    "bing.com": {
+      "earliest": ""
+    },
+    "twitter.com": {
+      "earliest": "2018-02-06T21:00:43"
+    },
+    "web.archive.org": {
+      "uri-m": "http://web.archive.org/web/20180206212205/https://www.wired.com/story/olympic-support/",
+      "memento-datetime": "2018-02-06T21:22:05",
+      "memento-pubdate": "",
+      "earliest": "2018-02-06T21:22:05"
+    },
+    "backlinks": {
+      "earliest": "2018-02-06T21:22:05"
+    },
+    "pubdate": {
+      "earliest": ""
+    },
+    "bitly.com": {
+      "earliest": ""
+    },
+    "google.com": {
+      "earliest": ""
+    },
+    "last-modified": {
+      "earliest": ""
+    }
+  }
+}

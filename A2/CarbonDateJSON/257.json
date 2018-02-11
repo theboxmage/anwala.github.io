@@ -1,0 +1,44 @@
+{
+  "self": "",
+  "uri": "https://www.google.com/url?sa=D&q=http://www.twitob.com/%3Fut&usg=AFQjCNETISeE4eIPqLwMthTsn1SOe-8vog",
+  "estimated-creation-date": "2017-08-31T03:50:29",
+  "earliest-sources": [
+    "web.archive.org",
+    "wayback.archive-it.org"
+  ],
+  "sources": {
+    "bing.com": {
+      "earliest": ""
+    },
+    "twitter.com": {
+      "earliest": ""
+    },
+    "web.archive.org": {
+      "uri-m": "http://web.archive.org/web/20170831035029/https://www.google.com/url?sa=D&q=http://www.twitob.com/%3Fut&usg=AFQjCNETISeE4eIPqLwMthTsn1SOe-8vog",
+      "memento-datetime": "2017-08-31T03:50:29",
+      "memento-pubdate": "",
+      "earliest": "2017-08-31T03:50:29"
+    },
+    "wayback.archive-it.org": {
+      "uri-m": "http://wayback.archive-it.org/all/20170831035029/https://www.google.com/url?sa=D&q=http://www.twitob.com/%3Fut&usg=AFQjCNETISeE4eIPqLwMthTsn1SOe-8vog",
+      "memento-datetime": "2017-08-31T03:50:29",
+      "memento-pubdate": "",
+      "earliest": "2017-08-31T03:50:29"
+    },
+    "backlinks": {
+      "earliest": ""
+    },
+    "pubdate": {
+      "earliest": ""
+    },
+    "bitly.com": {
+      "earliest": ""
+    },
+    "google.com": {
+      "earliest": ""
+    },
+    "last-modified": {
+      "earliest": ""
+    }
+  }
+}

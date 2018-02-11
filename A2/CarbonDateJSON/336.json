@@ -1,0 +1,38 @@
+{
+  "self": "",
+  "uri": "https://www.hollywoodreporter.com/news/tim-goodman-winter-olympics-is-yay-1083442",
+  "estimated-creation-date": "2018-02-09T13:37:41",
+  "earliest-sources": [
+    "web.archive.org",
+    "pubdate"
+  ],
+  "sources": {
+    "bing.com": {
+      "earliest": ""
+    },
+    "twitter.com": {
+      "earliest": "2018-02-09T21:38:45"
+    },
+    "web.archive.org": {
+      "uri-m": "http://web.archive.org/web/20180210013547/https://www.hollywoodreporter.com/news/tim-goodman-winter-olympics-is-yay-1083442",
+      "memento-datetime": "2018-02-09T22:55:09",
+      "memento-pubdate": "2018-02-09T13:37:41",
+      "earliest": "2018-02-09T13:37:41"
+    },
+    "backlinks": {
+      "earliest": ""
+    },
+    "pubdate": {
+      "earliest": "2018-02-09T13:37:41"
+    },
+    "bitly.com": {
+      "earliest": ""
+    },
+    "google.com": {
+      "earliest": ""
+    },
+    "last-modified": {
+      "earliest": "2018-02-09T22:55:09"
+    }
+  }
+}

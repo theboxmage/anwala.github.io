@@ -1,0 +1,31 @@
+{
+  "self": "",
+  "uri": "https://www.cnn.com/videos/world/2018/02/09/pence-sits-by-kim-jong-un-sister-olympics-ripley-newday.cnn/video/playlists/winter-olympics-2018/",
+  "estimated-creation-date": "2018-02-09T13:20:44",
+  "earliest-sources": [
+    "pubdate"
+  ],
+  "sources": {
+    "bing.com": {
+      "earliest": ""
+    },
+    "twitter.com": {
+      "earliest": "2018-02-09T23:06:25"
+    },
+    "backlinks": {
+      "earliest": ""
+    },
+    "pubdate": {
+      "earliest": "2018-02-09T13:20:44"
+    },
+    "bitly.com": {
+      "earliest": ""
+    },
+    "google.com": {
+      "earliest": ""
+    },
+    "last-modified": {
+      "earliest": ""
+    }
+  }
+}

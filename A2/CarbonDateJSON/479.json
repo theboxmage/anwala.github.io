@@ -1,0 +1,37 @@
+{
+  "self": "",
+  "uri": "http://time.com/4993522/first-winter-olympics-1924-chamonix-france/",
+  "estimated-creation-date": "2017-10-31T12:52:21",
+  "earliest-sources": [
+    "twitter.com"
+  ],
+  "sources": {
+    "bing.com": {
+      "earliest": ""
+    },
+    "twitter.com": {
+      "earliest": "2017-10-31T12:52:21"
+    },
+    "web.archive.org": {
+      "uri-m": "http://web.archive.org/web/20171031144727/http://time.com/4993522/first-winter-olympics-1924-chamonix-france/",
+      "memento-datetime": "2017-10-31T14:47:27",
+      "memento-pubdate": "",
+      "earliest": "2017-10-31T14:47:27"
+    },
+    "backlinks": {
+      "earliest": "2017-10-31T14:45:35"
+    },
+    "pubdate": {
+      "earliest": ""
+    },
+    "bitly.com": {
+      "earliest": ""
+    },
+    "google.com": {
+      "earliest": ""
+    },
+    "last-modified": {
+      "earliest": ""
+    }
+  }
+}

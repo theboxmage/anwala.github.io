@@ -1,0 +1,45 @@
+{
+  "self": "",
+  "uri": "https://www.nytimes.com/interactive/2018/02/01/magazine/winter-olympics-luge-india.html",
+  "estimated-creation-date": "2018-02-01T06:00:49",
+  "earliest-sources": [
+    "web.archive.org",
+    "wayback.archive-it.org",
+    "pubdate"
+  ],
+  "sources": {
+    "bing.com": {
+      "earliest": ""
+    },
+    "twitter.com": {
+      "earliest": "2018-02-01T13:04:35"
+    },
+    "web.archive.org": {
+      "uri-m": "http://web.archive.org/web/20180201111129/http://www.nytimes.com/interactive/2018/02/01/magazine/winter-olympics-luge-india.html",
+      "memento-datetime": "2018-02-01T11:11:29",
+      "memento-pubdate": "2018-02-01T06:00:49",
+      "earliest": "2018-02-01T06:00:49"
+    },
+    "wayback.archive-it.org": {
+      "uri-m": "http://wayback.archive-it.org/all/20180202040835/http://www.nytimes.com/interactive/2018/02/01/magazine/winter-olympics-luge-india.html",
+      "memento-datetime": "2018-02-02T04:08:35",
+      "memento-pubdate": "2018-02-01T06:00:49",
+      "earliest": "2018-02-01T06:00:49"
+    },
+    "backlinks": {
+      "earliest": ""
+    },
+    "pubdate": {
+      "earliest": "2018-02-01T06:00:49"
+    },
+    "bitly.com": {
+      "earliest": ""
+    },
+    "google.com": {
+      "earliest": ""
+    },
+    "last-modified": {
+      "earliest": ""
+    }
+  }
+}

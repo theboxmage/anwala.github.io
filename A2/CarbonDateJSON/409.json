@@ -1,0 +1,37 @@
+{
+  "self": "",
+  "uri": "http://www.foxnews.com/world/2018/02/09/trump-kim-jong-un-impersonators-tossed-from-olympics-opening-ceremony.html",
+  "estimated-creation-date": "2018-02-09T00:00:00",
+  "earliest-sources": [
+    "pubdate"
+  ],
+  "sources": {
+    "bing.com": {
+      "earliest": ""
+    },
+    "twitter.com": {
+      "earliest": "2018-02-09T21:15:22"
+    },
+    "web.archive.org": {
+      "uri-m": "http://web.archive.org/web/20180209192209/http://www.foxnews.com/world/2018/02/09/trump-kim-jong-un-impersonators-tossed-from-olympics-opening-ceremony.html",
+      "memento-datetime": "2018-02-09T19:22:09",
+      "memento-pubdate": "",
+      "earliest": "2018-02-09T19:22:09"
+    },
+    "backlinks": {
+      "earliest": "2018-02-09T19:22:10"
+    },
+    "pubdate": {
+      "earliest": "2018-02-09T00:00:00"
+    },
+    "bitly.com": {
+      "earliest": ""
+    },
+    "google.com": {
+      "earliest": ""
+    },
+    "last-modified": {
+      "earliest": ""
+    }
+  }
+}

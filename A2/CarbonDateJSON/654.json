@@ -1,0 +1,37 @@
+{
+  "self": "",
+  "uri": "https://www.reuters.com/article/us-olympics-2018-opening-reception/at-games-reception-a-hopeful-dessert-and-a-hasty-exit-idUSKBN1FT20M",
+  "estimated-creation-date": "2018-02-09T14:34:45",
+  "earliest-sources": [
+    "twitter.com"
+  ],
+  "sources": {
+    "bing.com": {
+      "earliest": ""
+    },
+    "twitter.com": {
+      "earliest": "2018-02-09T14:34:45"
+    },
+    "web.archive.org": {
+      "uri-m": "http://web.archive.org/web/20180210021349/https://www.reuters.com/article/us-olympics-2018-opening-reception/at-games-reception-a-hopeful-dessert-and-a-hasty-exit-idUSKBN1FT20M",
+      "memento-datetime": "2018-02-10T02:13:49",
+      "memento-pubdate": "2018-02-10T00:56:38",
+      "earliest": "2018-02-10T00:56:38"
+    },
+    "backlinks": {
+      "earliest": "2018-02-10T02:13:19"
+    },
+    "pubdate": {
+      "earliest": "2018-02-10T00:56:38"
+    },
+    "bitly.com": {
+      "earliest": ""
+    },
+    "google.com": {
+      "earliest": ""
+    },
+    "last-modified": {
+      "earliest": ""
+    }
+  }
+}

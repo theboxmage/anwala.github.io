@@ -1,0 +1,67 @@
+{
+  "self": "",
+  "uri": "https://www.salon.com/",
+  "estimated-creation-date": "1997-04-03T01:34:41",
+  "earliest-sources": [
+    "web.archive.org"
+  ],
+  "sources": {
+    "bing.com": {
+      "earliest": ""
+    },
+    "twitter.com": {
+      "earliest": "2018-01-31T15:03:38"
+    },
+    "web.archive.org": {
+      "uri-m": "http://web.archive.org/web/19970403013441/http://www.salon.com:80/",
+      "memento-datetime": "1997-04-03T01:34:41",
+      "memento-pubdate": "",
+      "earliest": "1997-04-03T01:34:41"
+    },
+    "wayback.archive-it.org": {
+      "uri-m": "http://wayback.archive-it.org/all/20050908034439/http://www.salon.com/",
+      "memento-datetime": "2005-09-08T03:44:40",
+      "memento-pubdate": "",
+      "earliest": "2005-09-08T03:44:40"
+    },
+    "wayback.vefsafn.is": {
+      "uri-m": "http://wayback.vefsafn.is/wayback/20070503182201/http://www.salon.com/",
+      "memento-datetime": "2007-05-03T18:22:01",
+      "memento-pubdate": "",
+      "earliest": "2007-05-03T18:22:01"
+    },
+    "swap.stanford.edu": {
+      "uri-m": "https://swap.stanford.edu/20081209061519/http://www.salon.com/",
+      "memento-datetime": "2008-12-09T06:15:19",
+      "memento-pubdate": "",
+      "earliest": "2008-12-09T06:15:19"
+    },
+    "arquivo.pt": {
+      "uri-m": "http://arquivo.pt/wayback/20090626113508/http://www.salon.com/",
+      "memento-datetime": "2009-06-26T11:35:08",
+      "memento-pubdate": "",
+      "earliest": "2009-06-26T11:35:08"
+    },
+    "archive.is": {
+      "uri-m": "http://archive.is/20120525055654/http://www.salon.com/",
+      "memento-datetime": "2012-05-25T05:56:54",
+      "memento-pubdate": "2012-05-25T05:56:54",
+      "earliest": "2012-05-25T05:56:54"
+    },
+    "backlinks": {
+      "earliest": ""
+    },
+    "pubdate": {
+      "earliest": ""
+    },
+    "bitly.com": {
+      "earliest": ""
+    },
+    "google.com": {
+      "earliest": ""
+    },
+    "last-modified": {
+      "earliest": ""
+    }
+  }
+}

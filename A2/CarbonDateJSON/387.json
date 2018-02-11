@@ -1,0 +1,43 @@
+{
+  "self": "",
+  "uri": "https://www.youtube.com/watch?v=KSH-FVVtTf0&feature=youtu.be",
+  "estimated-creation-date": "2016-06-08T00:00:00",
+  "earliest-sources": [
+    "pubdate"
+  ],
+  "sources": {
+    "bing.com": {
+      "earliest": ""
+    },
+    "twitter.com": {
+      "earliest": ""
+    },
+    "webarchive.loc.gov": {
+      "uri-m": "http://webarchive.loc.gov/all/20160619171531/https://www.youtube.com/watch?v=KSH-FVVtTf0&feature=youtu.be",
+      "memento-datetime": "2016-06-19T17:15:31",
+      "memento-pubdate": "2016-06-08T23:59:59",
+      "earliest": "2016-06-08T23:59:59"
+    },
+    "web.archive.org": {
+      "uri-m": "http://web.archive.org/web/20170307144357/https://www.youtube.com/watch?v=KSH-FVVtTf0&feature=youtu.be",
+      "memento-datetime": "2017-03-07T14:43:57",
+      "memento-pubdate": "2016-06-08T23:59:59",
+      "earliest": "2016-06-08T23:59:59"
+    },
+    "backlinks": {
+      "earliest": ""
+    },
+    "pubdate": {
+      "earliest": "2016-06-08T00:00:00"
+    },
+    "bitly.com": {
+      "earliest": ""
+    },
+    "google.com": {
+      "earliest": ""
+    },
+    "last-modified": {
+      "earliest": ""
+    }
+  }
+}

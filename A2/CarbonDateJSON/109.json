@@ -1,0 +1,31 @@
+{
+  "self": "",
+  "uri": "http://cfile6.uf.tistory.com/image/99A965475A7DAB011951A1",
+  "estimated-creation-date": "2018-02-09T14:06:57",
+  "earliest-sources": [
+    "last-modified"
+  ],
+  "sources": {
+    "bing.com": {
+      "earliest": ""
+    },
+    "twitter.com": {
+      "earliest": "2018-02-09T14:09:44"
+    },
+    "backlinks": {
+      "earliest": ""
+    },
+    "pubdate": {
+      "earliest": ""
+    },
+    "bitly.com": {
+      "earliest": ""
+    },
+    "google.com": {
+      "earliest": ""
+    },
+    "last-modified": {
+      "earliest": "2018-02-09T14:06:57"
+    }
+  }
+}

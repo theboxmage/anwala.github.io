@@ -1,0 +1,55 @@
+{
+  "self": "",
+  "uri": "http://www.nbcolympics.com/live-stream-schedule#/",
+  "estimated-creation-date": "2016-04-09T15:30:23",
+  "earliest-sources": [
+    "web.archive.org"
+  ],
+  "sources": {
+    "bing.com": {
+      "earliest": ""
+    },
+    "twitter.com": {
+      "earliest": "2016-04-21T12:37:07"
+    },
+    "web.archive.org": {
+      "uri-m": "http://web.archive.org/web/20160409153024/http://www.nbcolympics.com:80/live-stream-schedule",
+      "memento-datetime": "2016-04-09T15:30:23",
+      "memento-pubdate": "",
+      "earliest": "2016-04-09T15:30:23"
+    },
+    "wayback.archive-it.org": {
+      "uri-m": "http://wayback.archive-it.org/all/20160802201459/http://www.nbcolympics.com/live-stream-schedule",
+      "memento-datetime": "2016-08-02T20:13:21",
+      "memento-pubdate": "",
+      "earliest": "2016-08-02T20:13:21"
+    },
+    "webarchive.loc.gov": {
+      "uri-m": "http://webarchive.loc.gov/all/20160805184844/http://www.nbcolympics.com/live-stream-schedule",
+      "memento-datetime": "2016-08-05T17:45:05",
+      "memento-pubdate": "",
+      "earliest": "2016-08-05T17:45:05"
+    },
+    "arquivo.pt": {
+      "uri-m": "http://arquivo.pt/wayback/20161031164708/http://www.nbcolympics.com/live-stream-schedule",
+      "memento-datetime": "2016-10-31T04:02:13",
+      "memento-pubdate": "",
+      "earliest": "2016-10-31T04:02:13"
+    },
+    "backlinks": {
+      "earliest": "2018-02-05T01:25:34"
+    },
+    "pubdate": {
+      "earliest": ""
+    },
+    "bitly.com": {
+      "earliest": ""
+    },
+    "google.com": {
+      "earliest": ""
+    },
+    "last-modified": {
+      "earliest": "2018-02-10T12:50:12"
+    }
+  }
+}

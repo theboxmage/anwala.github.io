@@ -1,0 +1,31 @@
+{
+  "self": "",
+  "uri": "https://www.wsj.com/livecoverage/2018-winter-olympics-pyeongchang?mod=e2twph",
+  "estimated-creation-date": "2018-02-09T17:22:34",
+  "earliest-sources": [
+    "twitter.com"
+  ],
+  "sources": {
+    "bing.com": {
+      "earliest": ""
+    },
+    "twitter.com": {
+      "earliest": "2018-02-09T17:22:34"
+    },
+    "backlinks": {
+      "earliest": ""
+    },
+    "pubdate": {
+      "earliest": ""
+    },
+    "bitly.com": {
+      "earliest": ""
+    },
+    "google.com": {
+      "earliest": ""
+    },
+    "last-modified": {
+      "earliest": ""
+    }
+  }
+}

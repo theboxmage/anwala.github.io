@@ -1,0 +1,43 @@
+{
+  "self": "",
+  "uri": "http://www.bbc.com/news/world-asia-43003564",
+  "estimated-creation-date": "2018-02-09T13:06:30",
+  "earliest-sources": [
+    "web.archive.org"
+  ],
+  "sources": {
+    "bing.com": {
+      "earliest": ""
+    },
+    "twitter.com": {
+      "earliest": "2018-02-09T21:05:43"
+    },
+    "web.archive.org": {
+      "uri-m": "http://web.archive.org/web/20180209130630/http://www.bbc.com/news/world-asia-43003564",
+      "memento-datetime": "2018-02-09T13:06:30",
+      "memento-pubdate": "",
+      "earliest": "2018-02-09T13:06:30"
+    },
+    "archive.is": {
+      "uri-m": "http://archive.is/20180209180010/http://www.bbc.com/news/world-asia-43003564",
+      "memento-datetime": "2018-02-09T18:00:10",
+      "memento-pubdate": "2018-02-09T18:00:10",
+      "earliest": "2018-02-09T18:00:10"
+    },
+    "backlinks": {
+      "earliest": "2018-02-09T13:06:31"
+    },
+    "pubdate": {
+      "earliest": ""
+    },
+    "bitly.com": {
+      "earliest": ""
+    },
+    "google.com": {
+      "earliest": ""
+    },
+    "last-modified": {
+      "earliest": ""
+    }
+  }
+}

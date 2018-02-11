@@ -1,0 +1,45 @@
+{
+  "self": "",
+  "uri": "http://www.cnn.com/2018/01/30/entertainment/leslie-jones-olympics/index.html",
+  "estimated-creation-date": "2018-01-30T23:45:25",
+  "earliest-sources": [
+    "web.archive.org",
+    "wayback.archive-it.org",
+    "pubdate"
+  ],
+  "sources": {
+    "bing.com": {
+      "earliest": ""
+    },
+    "twitter.com": {
+      "earliest": "2018-01-30T23:58:00"
+    },
+    "web.archive.org": {
+      "uri-m": "http://web.archive.org/web/20180131024833/http://www.cnn.com/2018/01/30/entertainment/leslie-jones-olympics/index.html",
+      "memento-datetime": "2018-01-31T02:48:33",
+      "memento-pubdate": "2018-01-30T23:45:25",
+      "earliest": "2018-01-30T23:45:25"
+    },
+    "wayback.archive-it.org": {
+      "uri-m": "http://wayback.archive-it.org/all/20180131223504/http://www.cnn.com/2018/01/30/entertainment/leslie-jones-olympics/index.html",
+      "memento-datetime": "2018-01-31T22:35:04",
+      "memento-pubdate": "2018-01-30T23:45:25",
+      "earliest": "2018-01-30T23:45:25"
+    },
+    "backlinks": {
+      "earliest": "2018-01-31T02:48:33"
+    },
+    "pubdate": {
+      "earliest": "2018-01-30T23:45:25"
+    },
+    "bitly.com": {
+      "earliest": ""
+    },
+    "google.com": {
+      "earliest": ""
+    },
+    "last-modified": {
+      "earliest": ""
+    }
+  }
+}

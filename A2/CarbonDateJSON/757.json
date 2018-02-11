@@ -1,0 +1,38 @@
+{
+  "self": "",
+  "uri": "https://edition.cnn.com/2018/02/09/sport/pita-taufatofua-tonga-flag-bearer-skiing-winter-olympics/index.html",
+  "estimated-creation-date": "2018-02-09T12:53:24",
+  "earliest-sources": [
+    "web.archive.org",
+    "pubdate"
+  ],
+  "sources": {
+    "bing.com": {
+      "earliest": ""
+    },
+    "twitter.com": {
+      "earliest": "2018-02-09T14:54:19"
+    },
+    "web.archive.org": {
+      "uri-m": "http://web.archive.org/web/20180209203713/https://edition.cnn.com/2018/02/09/sport/pita-taufatofua-tonga-flag-bearer-skiing-winter-olympics/index.html",
+      "memento-datetime": "2018-02-09T20:37:13",
+      "memento-pubdate": "2018-02-09T12:53:24",
+      "earliest": "2018-02-09T12:53:24"
+    },
+    "backlinks": {
+      "earliest": "2018-02-09T21:13:41"
+    },
+    "pubdate": {
+      "earliest": "2018-02-09T12:53:24"
+    },
+    "bitly.com": {
+      "earliest": ""
+    },
+    "google.com": {
+      "earliest": ""
+    },
+    "last-modified": {
+      "earliest": ""
+    }
+  }
+}

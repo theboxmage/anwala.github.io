@@ -1,0 +1,38 @@
+{
+  "self": "",
+  "uri": "http://chicago.cbslocal.com/2018/02/09/pretend-care-olympic-winter-games/",
+  "estimated-creation-date": "2018-02-09T09:37:30",
+  "earliest-sources": [
+    "web.archive.org",
+    "pubdate"
+  ],
+  "sources": {
+    "bing.com": {
+      "earliest": ""
+    },
+    "twitter.com": {
+      "earliest": "2018-02-09T15:40:15"
+    },
+    "web.archive.org": {
+      "uri-m": "http://web.archive.org/web/20180209184256/http://chicago.cbslocal.com/2018/02/09/pretend-care-olympic-winter-games/",
+      "memento-datetime": "2018-02-09T18:42:56",
+      "memento-pubdate": "2018-02-09T09:37:30",
+      "earliest": "2018-02-09T09:37:30"
+    },
+    "backlinks": {
+      "earliest": "2018-02-09T18:42:56"
+    },
+    "pubdate": {
+      "earliest": "2018-02-09T09:37:30"
+    },
+    "bitly.com": {
+      "earliest": ""
+    },
+    "google.com": {
+      "earliest": ""
+    },
+    "last-modified": {
+      "earliest": ""
+    }
+  }
+}

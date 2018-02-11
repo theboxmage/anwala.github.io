@@ -1,0 +1,44 @@
+{
+  "self": "",
+  "uri": "https://www.hollywoodreporter.com/news/gay-rights-organizations-criticize-fox-news-executives-olympics-column-1083300",
+  "estimated-creation-date": "2018-02-09T09:43:37",
+  "earliest-sources": [
+    "web.archive.org",
+    "pubdate"
+  ],
+  "sources": {
+    "bing.com": {
+      "earliest": ""
+    },
+    "twitter.com": {
+      "earliest": "2018-02-09T20:10:20"
+    },
+    "web.archive.org": {
+      "uri-m": "http://web.archive.org/web/20180209190331/https://www.hollywoodreporter.com/news/gay-rights-organizations-criticize-fox-news-executives-olympics-column-1083300",
+      "memento-datetime": "2018-02-09T18:56:53",
+      "memento-pubdate": "2018-02-09T09:43:37",
+      "earliest": "2018-02-09T09:43:37"
+    },
+    "archive.is": {
+      "uri-m": "http://archive.is/20180210023752/https://www.hollywoodreporter.com/news/gay-rights-organizations-criticize-fox-news-executives-olympics-column-1083300",
+      "memento-datetime": "2018-02-10T02:37:52",
+      "memento-pubdate": "2018-02-10T02:37:52",
+      "earliest": "2018-02-10T02:37:52"
+    },
+    "backlinks": {
+      "earliest": "2018-02-09T18:56:53"
+    },
+    "pubdate": {
+      "earliest": "2018-02-09T09:43:37"
+    },
+    "bitly.com": {
+      "earliest": ""
+    },
+    "google.com": {
+      "earliest": ""
+    },
+    "last-modified": {
+      "earliest": "2018-02-09T23:34:49"
+    }
+  }
+}

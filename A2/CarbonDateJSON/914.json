@@ -1,0 +1,43 @@
+{
+  "self": "",
+  "uri": "http://www.smutcore.com/",
+  "estimated-creation-date": "2003-07-24T11:37:51",
+  "earliest-sources": [
+    "web.archive.org"
+  ],
+  "sources": {
+    "bing.com": {
+      "earliest": ""
+    },
+    "twitter.com": {
+      "earliest": "2016-03-06T03:49:26"
+    },
+    "web.archive.org": {
+      "uri-m": "http://web.archive.org/web/20030724113751/http://www.smutcore.com:80/",
+      "memento-datetime": "2003-07-24T11:37:51",
+      "memento-pubdate": "",
+      "earliest": "2003-07-24T11:37:51"
+    },
+    "wayback.archive-it.org": {
+      "uri-m": "http://wayback.archive-it.org/all/20180124214612/http://www.smutcore.com/",
+      "memento-datetime": "2018-01-24T21:46:12",
+      "memento-pubdate": "",
+      "earliest": "2018-01-24T21:46:12"
+    },
+    "backlinks": {
+      "earliest": "2018-01-24T21:46:14"
+    },
+    "pubdate": {
+      "earliest": ""
+    },
+    "bitly.com": {
+      "earliest": ""
+    },
+    "google.com": {
+      "earliest": ""
+    },
+    "last-modified": {
+      "earliest": ""
+    }
+  }
+}

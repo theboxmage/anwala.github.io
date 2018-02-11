@@ -1,0 +1,43 @@
+{
+  "self": "",
+  "uri": "https://www.theguardian.com/world/2018/feb/09/kim-jong-uns-sister-arrives-in-south-korea-for-winter-olympics",
+  "estimated-creation-date": "2018-02-09T08:41:11",
+  "earliest-sources": [
+    "archive.is"
+  ],
+  "sources": {
+    "bing.com": {
+      "earliest": ""
+    },
+    "twitter.com": {
+      "earliest": "2018-02-09T16:21:04"
+    },
+    "archive.is": {
+      "uri-m": "http://archive.is/20180209084111/https://www.theguardian.com/world/2018/feb/09/kim-jong-uns-sister-arrives-in-south-korea-for-winter-olympics",
+      "memento-datetime": "2018-02-09T08:41:11",
+      "memento-pubdate": "2018-02-09T08:41:11",
+      "earliest": "2018-02-09T08:41:11"
+    },
+    "web.archive.org": {
+      "uri-m": "http://web.archive.org/web/20180209161430/https://www.theguardian.com/world/2018/feb/09/kim-jong-uns-sister-arrives-in-south-korea-for-winter-olympics",
+      "memento-datetime": "2018-02-09T16:14:30",
+      "memento-pubdate": "2018-02-09T15:53:33",
+      "earliest": "2018-02-09T15:53:33"
+    },
+    "backlinks": {
+      "earliest": "2018-02-09T16:14:31"
+    },
+    "pubdate": {
+      "earliest": "2018-02-09T15:53:33"
+    },
+    "bitly.com": {
+      "earliest": ""
+    },
+    "google.com": {
+      "earliest": ""
+    },
+    "last-modified": {
+      "earliest": ""
+    }
+  }
+}

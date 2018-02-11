@@ -1,0 +1,44 @@
+{
+  "self": "",
+  "uri": "http://thehill.com/blogs/blog-briefing-room/373201-gay-us-olympians-continue-feud-with-vice-president-eat-your-heart",
+  "estimated-creation-date": "2018-02-09T17:10:00",
+  "earliest-sources": [
+    "web.archive.org",
+    "pubdate"
+  ],
+  "sources": {
+    "bing.com": {
+      "earliest": ""
+    },
+    "twitter.com": {
+      "earliest": "2018-02-09T22:18:05"
+    },
+    "web.archive.org": {
+      "uri-m": "http://web.archive.org/web/20180210002459/http://thehill.com/blogs/blog-briefing-room/373201-gay-us-olympians-continue-feud-with-vice-president-eat-your-heart",
+      "memento-datetime": "2018-02-10T00:24:59",
+      "memento-pubdate": "2018-02-09T17:10:00",
+      "earliest": "2018-02-09T17:10:00"
+    },
+    "archive.is": {
+      "uri-m": "http://archive.is/20180210023346/http://thehill.com/blogs/blog-briefing-room/373201-gay-us-olympians-continue-feud-with-vice-president-eat-your-heart",
+      "memento-datetime": "2018-02-10T02:33:46",
+      "memento-pubdate": "2018-02-10T02:33:46",
+      "earliest": "2018-02-10T02:33:46"
+    },
+    "backlinks": {
+      "earliest": "2018-02-10T00:24:59"
+    },
+    "pubdate": {
+      "earliest": "2018-02-09T17:10:00"
+    },
+    "bitly.com": {
+      "earliest": ""
+    },
+    "google.com": {
+      "earliest": ""
+    },
+    "last-modified": {
+      "earliest": ""
+    }
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "self": "",
+  "uri": "https://www.usatoday.com/story/sports/winter-olympics-2018/2018/02/08/opening-ceremonies-pyeongchang-2018-winter-olympics/322389002/",
+  "estimated-creation-date": "2018-02-09T12:36:02",
+  "earliest-sources": [
+    "twitter.com"
+  ],
+  "sources": {
+    "bing.com": {
+      "earliest": ""
+    },
+    "twitter.com": {
+      "earliest": "2018-02-09T12:36:02"
+    },
+    "web.archive.org": {
+      "uri-m": "http://web.archive.org/web/20180209222247/https://www.usatoday.com/story/sports/winter-olympics-2018/2018/02/08/opening-ceremonies-pyeongchang-2018-winter-olympics/322389002/",
+      "memento-datetime": "2018-02-09T22:22:47",
+      "memento-pubdate": "",
+      "earliest": "2018-02-09T22:22:47"
+    },
+    "backlinks": {
+      "earliest": "2018-02-09T22:22:49"
+    },
+    "pubdate": {
+      "earliest": ""
+    },
+    "bitly.com": {
+      "earliest": ""
+    },
+    "google.com": {
+      "earliest": ""
+    },
+    "last-modified": {
+      "earliest": ""
+    }
+  }
+}

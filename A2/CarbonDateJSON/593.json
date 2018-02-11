@@ -1,0 +1,37 @@
+{
+  "self": "",
+  "uri": "http://BClanBeauty.com/",
+  "estimated-creation-date": "2014-06-15T16:20:09",
+  "earliest-sources": [
+    "twitter.com"
+  ],
+  "sources": {
+    "bing.com": {
+      "earliest": ""
+    },
+    "twitter.com": {
+      "earliest": "2014-06-15T16:20:09"
+    },
+    "web.archive.org": {
+      "uri-m": "http://web.archive.org/web/20140712052627/http://bclanbeauty.com:80/",
+      "memento-datetime": "2014-07-12T05:26:27",
+      "memento-pubdate": "",
+      "earliest": "2014-07-12T05:26:27"
+    },
+    "backlinks": {
+      "earliest": ""
+    },
+    "pubdate": {
+      "earliest": ""
+    },
+    "bitly.com": {
+      "earliest": ""
+    },
+    "google.com": {
+      "earliest": ""
+    },
+    "last-modified": {
+      "earliest": ""
+    }
+  }
+}

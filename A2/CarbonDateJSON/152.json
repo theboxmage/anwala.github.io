@@ -1,0 +1,38 @@
+{
+  "self": "",
+  "uri": "http://people.com/sports/winter-olympics-2018-charles-flaherty-puerto-rico-skier/amp/",
+  "estimated-creation-date": "2018-02-08T22:59:50",
+  "earliest-sources": [
+    "web.archive.org",
+    "last-modified"
+  ],
+  "sources": {
+    "bing.com": {
+      "earliest": ""
+    },
+    "twitter.com": {
+      "earliest": "2018-02-09T14:35:12"
+    },
+    "web.archive.org": {
+      "uri-m": "http://web.archive.org/web/20180209171005/http://people.com/sports/winter-olympics-2018-charles-flaherty-puerto-rico-skier/amp/",
+      "memento-datetime": "2018-02-08T22:59:50",
+      "memento-pubdate": "2018-02-09T12:45:28",
+      "earliest": "2018-02-08T22:59:50"
+    },
+    "backlinks": {
+      "earliest": ""
+    },
+    "pubdate": {
+      "earliest": "2018-02-09T12:45:28"
+    },
+    "bitly.com": {
+      "earliest": ""
+    },
+    "google.com": {
+      "earliest": ""
+    },
+    "last-modified": {
+      "earliest": "2018-02-08T22:59:50"
+    }
+  }
+}

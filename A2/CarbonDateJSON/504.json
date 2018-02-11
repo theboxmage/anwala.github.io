@@ -1,0 +1,55 @@
+{
+  "self": "",
+  "uri": "https://www.politico.com/magazine/story/2016/08/donald-trump-olympics-twitter-214176",
+  "estimated-creation-date": "2016-08-19T01:05:28",
+  "earliest-sources": [
+    "web.archive.org"
+  ],
+  "sources": {
+    "bing.com": {
+      "earliest": ""
+    },
+    "twitter.com": {
+      "earliest": ""
+    },
+    "web.archive.org": {
+      "uri-m": "http://web.archive.org/web/20160819010528/http://www.politico.com/magazine/story/2016/08/donald-trump-olympics-twitter-214176",
+      "memento-datetime": "2016-08-19T01:05:28",
+      "memento-pubdate": "1901-05-28T23:59:59",
+      "earliest": "2016-08-19T01:05:28"
+    },
+    "webarchive.loc.gov": {
+      "uri-m": "http://webarchive.loc.gov/all/20160819111844/http://www.politico.com/magazine/story/2016/08/donald-trump-olympics-twitter-214176",
+      "memento-datetime": "2016-08-19T11:18:44",
+      "memento-pubdate": "",
+      "earliest": "2016-08-19T11:18:44"
+    },
+    "archive.is": {
+      "uri-m": "http://archive.is/20160819204321/http://www.politico.com/magazine/story/2016/08/donald-trump-olympics-twitter-214176",
+      "memento-datetime": "2016-08-19T20:43:21",
+      "memento-pubdate": "2016-08-19T20:43:21",
+      "earliest": "2016-08-19T20:43:21"
+    },
+    "wayback.archive-it.org": {
+      "uri-m": "http://wayback.archive-it.org/all/20160821220244/http://www.politico.com/magazine/story/2016/08/donald-trump-olympics-twitter-214176",
+      "memento-datetime": "2016-08-21T22:02:44",
+      "memento-pubdate": "",
+      "earliest": "2016-08-21T22:02:44"
+    },
+    "backlinks": {
+      "earliest": ""
+    },
+    "pubdate": {
+      "earliest": ""
+    },
+    "bitly.com": {
+      "earliest": ""
+    },
+    "google.com": {
+      "earliest": ""
+    },
+    "last-modified": {
+      "earliest": ""
+    }
+  }
+}

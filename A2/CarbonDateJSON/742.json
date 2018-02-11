@@ -1,0 +1,31 @@
+{
+  "self": "",
+  "uri": "http://www.dailymail.co.uk/news/article-5341621/Brooklyn-super-Besnik-Sokoli-heading-Winter-Olympics.html",
+  "estimated-creation-date": "2018-02-01T19:43:19",
+  "earliest-sources": [
+    "pubdate"
+  ],
+  "sources": {
+    "bing.com": {
+      "earliest": ""
+    },
+    "twitter.com": {
+      "earliest": "2018-02-01T21:14:09"
+    },
+    "backlinks": {
+      "earliest": ""
+    },
+    "pubdate": {
+      "earliest": "2018-02-01T19:43:19"
+    },
+    "bitly.com": {
+      "earliest": ""
+    },
+    "google.com": {
+      "earliest": ""
+    },
+    "last-modified": {
+      "earliest": ""
+    }
+  }
+}

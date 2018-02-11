@@ -1,0 +1,43 @@
+{
+  "self": "",
+  "uri": "http://www.aljazeera.com/news/2018/02/winter-olympics-ceremony-sees-historic-handshake-180209101326498.html",
+  "estimated-creation-date": "2018-02-09T14:50:02",
+  "earliest-sources": [
+    "twitter.com"
+  ],
+  "sources": {
+    "bing.com": {
+      "earliest": ""
+    },
+    "twitter.com": {
+      "earliest": "2018-02-09T14:50:02"
+    },
+    "web.archive.org": {
+      "uri-m": "http://web.archive.org/web/20180209154438/http://www.aljazeera.com/news/2018/02/winter-olympics-ceremony-sees-historic-handshake-180209101326498.html",
+      "memento-datetime": "2018-02-09T15:44:38",
+      "memento-pubdate": "",
+      "earliest": "2018-02-09T15:44:38"
+    },
+    "wayback.archive-it.org": {
+      "uri-m": "http://wayback.archive-it.org/all/20180209211611/http://www.aljazeera.com/news/2018/02/winter-olympics-ceremony-sees-historic-handshake-180209101326498.html",
+      "memento-datetime": "2018-02-09T21:16:11",
+      "memento-pubdate": "",
+      "earliest": "2018-02-09T21:16:11"
+    },
+    "backlinks": {
+      "earliest": "2018-02-09T15:44:38"
+    },
+    "pubdate": {
+      "earliest": ""
+    },
+    "bitly.com": {
+      "earliest": ""
+    },
+    "google.com": {
+      "earliest": ""
+    },
+    "last-modified": {
+      "earliest": ""
+    }
+  }
+}

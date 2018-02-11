@@ -1,0 +1,37 @@
+{
+  "self": "",
+  "uri": "http://stream.nbcolympics.com/2018-winter-olympics-primetime-show-feb-9?cid=NBCNews",
+  "estimated-creation-date": "2018-02-08T23:14:28",
+  "earliest-sources": [
+    "web.archive.org"
+  ],
+  "sources": {
+    "bing.com": {
+      "earliest": ""
+    },
+    "twitter.com": {
+      "earliest": ""
+    },
+    "web.archive.org": {
+      "uri-m": "http://web.archive.org/web/20180210012107/http://stream.nbcolympics.com/2018-winter-olympics-primetime-show-feb-9?cid=NBCNews",
+      "memento-datetime": "2018-02-08T23:14:28",
+      "memento-pubdate": "",
+      "earliest": "2018-02-08T23:14:28"
+    },
+    "backlinks": {
+      "earliest": ""
+    },
+    "pubdate": {
+      "earliest": ""
+    },
+    "bitly.com": {
+      "earliest": ""
+    },
+    "google.com": {
+      "earliest": ""
+    },
+    "last-modified": {
+      "earliest": "2018-02-10T06:57:53"
+    }
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "self": "",
+  "uri": "https://uk.reuters.com/article/uk-olympics-2018-northkorea-un/u-n-chief-met-briefly-with-north-korean-president-in-south-korea-u-n-idUKKBN1FT2HZ",
+  "estimated-creation-date": "2018-02-09T17:42:03",
+  "earliest-sources": [
+    "twitter.com"
+  ],
+  "sources": {
+    "bing.com": {
+      "earliest": ""
+    },
+    "twitter.com": {
+      "earliest": "2018-02-09T17:42:03"
+    },
+    "web.archive.org": {
+      "uri-m": "http://web.archive.org/web/20180209200442/https://uk.reuters.com/article/uk-olympics-2018-northkorea-un/u-n-chief-met-briefly-with-north-korean-president-in-south-korea-u-n-idUKKBN1FT2HZ",
+      "memento-datetime": "2018-02-09T20:04:42",
+      "memento-pubdate": "2018-02-09T18:39:31",
+      "earliest": "2018-02-09T18:39:31"
+    },
+    "backlinks": {
+      "earliest": ""
+    },
+    "pubdate": {
+      "earliest": "2018-02-09T18:39:31"
+    },
+    "bitly.com": {
+      "earliest": ""
+    },
+    "google.com": {
+      "earliest": ""
+    },
+    "last-modified": {
+      "earliest": ""
+    }
+  }
+}

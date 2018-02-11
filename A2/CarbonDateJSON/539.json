@@ -1,0 +1,31 @@
+{
+  "self": "",
+  "uri": "http://route.overnewser.com/politicsnewz/?url=https://www.nytimes.com/2018/02/09/us/politics/pence-north-korea-olympics.html&utm_source=OverNewser&utm_medium=PoliticsNewz&utm_campaign=article",
+  "estimated-creation-date": "2018-02-09T00:00:00",
+  "earliest-sources": [
+    "pubdate"
+  ],
+  "sources": {
+    "bing.com": {
+      "earliest": ""
+    },
+    "twitter.com": {
+      "earliest": ""
+    },
+    "backlinks": {
+      "earliest": ""
+    },
+    "pubdate": {
+      "earliest": "2018-02-09T00:00:00"
+    },
+    "bitly.com": {
+      "earliest": ""
+    },
+    "google.com": {
+      "earliest": ""
+    },
+    "last-modified": {
+      "earliest": ""
+    }
+  }
+}

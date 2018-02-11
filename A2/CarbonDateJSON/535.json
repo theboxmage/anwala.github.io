@@ -1,0 +1,38 @@
+{
+  "self": "",
+  "uri": "http://money.cnn.com/2018/02/09/technology/pyeongchang-olympics-cyberattacks-south-korea/index.html",
+  "estimated-creation-date": "2018-02-09T04:44:21",
+  "earliest-sources": [
+    "web.archive.org",
+    "pubdate"
+  ],
+  "sources": {
+    "bing.com": {
+      "earliest": ""
+    },
+    "twitter.com": {
+      "earliest": "2018-02-09T11:14:22"
+    },
+    "web.archive.org": {
+      "uri-m": "http://web.archive.org/web/20180209122737/http://money.cnn.com/2018/02/09/technology/pyeongchang-olympics-cyberattacks-south-korea/index.html",
+      "memento-datetime": "2018-02-09T12:27:37",
+      "memento-pubdate": "2018-02-09T04:44:21",
+      "earliest": "2018-02-09T04:44:21"
+    },
+    "backlinks": {
+      "earliest": ""
+    },
+    "pubdate": {
+      "earliest": "2018-02-09T04:44:21"
+    },
+    "bitly.com": {
+      "earliest": ""
+    },
+    "google.com": {
+      "earliest": ""
+    },
+    "last-modified": {
+      "earliest": ""
+    }
+  }
+}

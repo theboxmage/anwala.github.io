@@ -1,0 +1,37 @@
+{
+  "self": "",
+  "uri": "http://toplocalnow.com/us/charlotte/topics",
+  "estimated-creation-date": "2017-01-30T23:31:40",
+  "earliest-sources": [
+    "twitter.com"
+  ],
+  "sources": {
+    "bing.com": {
+      "earliest": ""
+    },
+    "twitter.com": {
+      "earliest": "2017-01-30T23:31:40"
+    },
+    "web.archive.org": {
+      "uri-m": "http://web.archive.org/web/20170714094356/http://toplocalnow.com:80/us/charlotte/topics",
+      "memento-datetime": "2017-07-14T09:43:56",
+      "memento-pubdate": "",
+      "earliest": "2017-07-14T09:43:56"
+    },
+    "backlinks": {
+      "earliest": ""
+    },
+    "pubdate": {
+      "earliest": ""
+    },
+    "bitly.com": {
+      "earliest": ""
+    },
+    "google.com": {
+      "earliest": ""
+    },
+    "last-modified": {
+      "earliest": ""
+    }
+  }
+}

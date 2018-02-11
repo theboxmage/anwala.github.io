@@ -1,0 +1,37 @@
+{
+  "self": "",
+  "uri": "http://beforeitsnews.com/alternative/2018/02/alert-norovirus-spreads-quickly-at-2018-winter-olympics-video-3594141.html",
+  "estimated-creation-date": "2018-02-10T01:46:32",
+  "earliest-sources": [
+    "web.archive.org"
+  ],
+  "sources": {
+    "bing.com": {
+      "earliest": ""
+    },
+    "twitter.com": {
+      "earliest": ""
+    },
+    "web.archive.org": {
+      "uri-m": "http://web.archive.org/web/20180210014632/http://beforeitsnews.com/alternative/2018/02/alert-norovirus-spreads-quickly-at-2018-winter-olympics-video-3594141.html",
+      "memento-datetime": "2018-02-10T01:46:32",
+      "memento-pubdate": "",
+      "earliest": "2018-02-10T01:46:32"
+    },
+    "backlinks": {
+      "earliest": ""
+    },
+    "pubdate": {
+      "earliest": ""
+    },
+    "bitly.com": {
+      "earliest": ""
+    },
+    "google.com": {
+      "earliest": ""
+    },
+    "last-modified": {
+      "earliest": ""
+    }
+  }
+}

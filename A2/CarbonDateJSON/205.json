@@ -1,0 +1,37 @@
+{
+  "self": "",
+  "uri": "http://www.cbc.ca/news/world/pyeongchang-olympics-opening-ceremony-north-korea-protest-1.4528198",
+  "estimated-creation-date": "2018-02-09T16:57:11",
+  "earliest-sources": [
+    "twitter.com"
+  ],
+  "sources": {
+    "bing.com": {
+      "earliest": ""
+    },
+    "twitter.com": {
+      "earliest": "2018-02-09T16:57:11"
+    },
+    "web.archive.org": {
+      "uri-m": "http://web.archive.org/web/20180210002640/http://www.cbc.ca/news/world/pyeongchang-olympics-opening-ceremony-north-korea-protest-1.4528198",
+      "memento-datetime": "2018-02-10T00:26:40",
+      "memento-pubdate": "2018-02-09T23:59:59",
+      "earliest": "2018-02-09T23:59:59"
+    },
+    "backlinks": {
+      "earliest": ""
+    },
+    "pubdate": {
+      "earliest": ""
+    },
+    "bitly.com": {
+      "earliest": ""
+    },
+    "google.com": {
+      "earliest": ""
+    },
+    "last-modified": {
+      "earliest": ""
+    }
+  }
+}

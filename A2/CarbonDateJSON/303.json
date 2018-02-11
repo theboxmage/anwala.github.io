@@ -1,0 +1,37 @@
+{
+  "self": "",
+  "uri": "http://abcnews.go.com/International/thousands-drones-light-show-olympics-opening-ceremony/story?id=52941985",
+  "estimated-creation-date": "2018-02-09T00:00:00",
+  "earliest-sources": [
+    "pubdate"
+  ],
+  "sources": {
+    "bing.com": {
+      "earliest": ""
+    },
+    "twitter.com": {
+      "earliest": "2018-02-09T13:50:21"
+    },
+    "web.archive.org": {
+      "uri-m": "http://web.archive.org/web/20180209155716/http://abcnews.go.com/International/thousands-drones-light-show-olympics-opening-ceremony/story?id=52941985",
+      "memento-datetime": "2018-02-09T15:57:16",
+      "memento-pubdate": "2018-02-09T23:59:59",
+      "earliest": "2018-02-09T15:57:16"
+    },
+    "backlinks": {
+      "earliest": "2018-02-09T15:57:16"
+    },
+    "pubdate": {
+      "earliest": "2018-02-09T00:00:00"
+    },
+    "bitly.com": {
+      "earliest": ""
+    },
+    "google.com": {
+      "earliest": ""
+    },
+    "last-modified": {
+      "earliest": ""
+    }
+  }
+}

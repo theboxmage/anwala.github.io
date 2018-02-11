@@ -1,0 +1,38 @@
+{
+  "self": "",
+  "uri": "http://thehill.com/homenews/media/373175-fox-removes-darker-gayer-different-olympic-column",
+  "estimated-creation-date": "2018-02-09T14:43:13",
+  "earliest-sources": [
+    "web.archive.org",
+    "pubdate"
+  ],
+  "sources": {
+    "bing.com": {
+      "earliest": ""
+    },
+    "twitter.com": {
+      "earliest": "2018-02-09T21:56:30"
+    },
+    "web.archive.org": {
+      "uri-m": "http://web.archive.org/web/20180209213546/http://thehill.com/homenews/media/373175-fox-removes-darker-gayer-different-olympic-column",
+      "memento-datetime": "2018-02-09T21:35:46",
+      "memento-pubdate": "2018-02-09T14:43:13",
+      "earliest": "2018-02-09T14:43:13"
+    },
+    "backlinks": {
+      "earliest": ""
+    },
+    "pubdate": {
+      "earliest": "2018-02-09T14:43:13"
+    },
+    "bitly.com": {
+      "earliest": ""
+    },
+    "google.com": {
+      "earliest": ""
+    },
+    "last-modified": {
+      "earliest": ""
+    }
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "self": "",
+  "uri": "https://townhall.com/tipsheet/laurettabrown/",
+  "estimated-creation-date": "2017-03-31T03:21:30",
+  "earliest-sources": [
+    "web.archive.org"
+  ],
+  "sources": {
+    "bing.com": {
+      "earliest": ""
+    },
+    "twitter.com": {
+      "earliest": "2018-02-02T03:39:59"
+    },
+    "web.archive.org": {
+      "uri-m": "http://web.archive.org/web/20170331032130/https://townhall.com/tipsheet/laurettabrown/",
+      "memento-datetime": "2017-03-31T03:21:30",
+      "memento-pubdate": "",
+      "earliest": "2017-03-31T03:21:30"
+    },
+    "wayback.vefsafn.is": {
+      "uri-m": "http://wayback.vefsafn.is/wayback/20171004184729/https://townhall.com/tipsheet/laurettabrown/",
+      "memento-datetime": "2017-10-04T18:47:29",
+      "memento-pubdate": "",
+      "earliest": "2017-10-04T18:47:29"
+    },
+    "wayback.archive-it.org": {
+      "uri-m": "http://wayback.archive-it.org/all/20171222195908/https://townhall.com/tipsheet/laurettabrown/",
+      "memento-datetime": "2017-12-22T19:59:08",
+      "memento-pubdate": "",
+      "earliest": "2017-12-22T19:59:08"
+    },
+    "backlinks": {
+      "earliest": "2017-03-31T03:21:31"
+    },
+    "pubdate": {
+      "earliest": ""
+    },
+    "bitly.com": {
+      "earliest": ""
+    },
+    "google.com": {
+      "earliest": ""
+    },
+    "last-modified": {
+      "earliest": ""
+    }
+  }
+}

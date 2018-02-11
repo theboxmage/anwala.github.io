@@ -1,0 +1,38 @@
+{
+  "self": "",
+  "uri": "http://www.latimes.com/sports/olympics/la-sp-olympics-live-updates-skier-gus-kenworthy-to-mike-pence-eat-1518210319-htmlstory.html",
+  "estimated-creation-date": "2018-02-09T21:29:00",
+  "earliest-sources": [
+    "web.archive.org",
+    "pubdate"
+  ],
+  "sources": {
+    "bing.com": {
+      "earliest": ""
+    },
+    "twitter.com": {
+      "earliest": "2018-02-09T21:45:12"
+    },
+    "web.archive.org": {
+      "uri-m": "http://web.archive.org/web/20180209223536/http://www.latimes.com/sports/olympics/la-sp-olympics-live-updates-skier-gus-kenworthy-to-mike-pence-eat-1518210319-htmlstory.html",
+      "memento-datetime": "2018-02-09T22:35:36",
+      "memento-pubdate": "2018-02-09T21:29:00",
+      "earliest": "2018-02-09T21:29:00"
+    },
+    "backlinks": {
+      "earliest": ""
+    },
+    "pubdate": {
+      "earliest": "2018-02-09T21:29:00"
+    },
+    "bitly.com": {
+      "earliest": ""
+    },
+    "google.com": {
+      "earliest": ""
+    },
+    "last-modified": {
+      "earliest": ""
+    }
+  }
+}

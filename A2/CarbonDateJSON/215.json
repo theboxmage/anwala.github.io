@@ -1,0 +1,43 @@
+{
+  "self": "",
+  "uri": "http://tnspokes.info/",
+  "estimated-creation-date": "2011-08-29T23:32:48",
+  "earliest-sources": [
+    "twitter.com"
+  ],
+  "sources": {
+    "bing.com": {
+      "earliest": ""
+    },
+    "twitter.com": {
+      "earliest": "2011-08-29T23:32:48"
+    },
+    "webarchive.loc.gov": {
+      "uri-m": "http://webarchive.loc.gov/all/20111024082155/http://tnspokes.info/",
+      "memento-datetime": "2011-10-24T08:21:55",
+      "memento-pubdate": "",
+      "earliest": "2011-10-24T08:21:55"
+    },
+    "web.archive.org": {
+      "uri-m": "http://web.archive.org/web/20120419002716/http://tnspokes.info:80/",
+      "memento-datetime": "2012-04-19T00:27:16",
+      "memento-pubdate": "",
+      "earliest": "2012-04-19T00:27:16"
+    },
+    "backlinks": {
+      "earliest": ""
+    },
+    "pubdate": {
+      "earliest": ""
+    },
+    "bitly.com": {
+      "earliest": ""
+    },
+    "google.com": {
+      "earliest": ""
+    },
+    "last-modified": {
+      "earliest": ""
+    }
+  }
+}

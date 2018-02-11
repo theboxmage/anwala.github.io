@@ -1,0 +1,37 @@
+{
+  "self": "",
+  "uri": "http://time.com/5140381/winter-olympics-climate-change/",
+  "estimated-creation-date": "2018-02-09T20:38:17",
+  "earliest-sources": [
+    "twitter.com"
+  ],
+  "sources": {
+    "bing.com": {
+      "earliest": ""
+    },
+    "twitter.com": {
+      "earliest": "2018-02-09T20:38:17"
+    },
+    "web.archive.org": {
+      "uri-m": "http://web.archive.org/web/20180210040229/http://time.com/5140381/winter-olympics-climate-change/",
+      "memento-datetime": "2018-02-10T04:02:29",
+      "memento-pubdate": "",
+      "earliest": "2018-02-10T04:02:29"
+    },
+    "backlinks": {
+      "earliest": "2018-02-10T04:02:30"
+    },
+    "pubdate": {
+      "earliest": ""
+    },
+    "bitly.com": {
+      "earliest": ""
+    },
+    "google.com": {
+      "earliest": ""
+    },
+    "last-modified": {
+      "earliest": ""
+    }
+  }
+}

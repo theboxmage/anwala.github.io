@@ -1,0 +1,37 @@
+{
+  "self": "",
+  "uri": "http://toplocalnow.com/us/louisville/at/17#t12650755",
+  "estimated-creation-date": "2017-09-04T16:48:25",
+  "earliest-sources": [
+    "web.archive.org"
+  ],
+  "sources": {
+    "bing.com": {
+      "earliest": ""
+    },
+    "twitter.com": {
+      "earliest": ""
+    },
+    "web.archive.org": {
+      "uri-m": "http://web.archive.org/web/20170904164825/http://toplocalnow.com/us/louisville/at/17",
+      "memento-datetime": "2017-09-04T16:48:25",
+      "memento-pubdate": "",
+      "earliest": "2017-09-04T16:48:25"
+    },
+    "backlinks": {
+      "earliest": ""
+    },
+    "pubdate": {
+      "earliest": ""
+    },
+    "bitly.com": {
+      "earliest": ""
+    },
+    "google.com": {
+      "earliest": ""
+    },
+    "last-modified": {
+      "earliest": ""
+    }
+  }
+}

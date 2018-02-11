@@ -1,0 +1,37 @@
+{
+  "self": "",
+  "uri": "https://www.usatoday.com/story/sports/winter-olympics-2018/2018/02/08/snowboarding-story-outcast-olympic-darling-20-years/317370002/",
+  "estimated-creation-date": "2018-02-08T17:35:12",
+  "earliest-sources": [
+    "twitter.com"
+  ],
+  "sources": {
+    "bing.com": {
+      "earliest": ""
+    },
+    "twitter.com": {
+      "earliest": "2018-02-08T17:35:12"
+    },
+    "web.archive.org": {
+      "uri-m": "http://web.archive.org/web/20180209005940/http://www.usatoday.com/story/sports/winter-olympics-2018/2018/02/08/snowboarding-story-outcast-olympic-darling-20-years/317370002/",
+      "memento-datetime": "2018-02-09T00:59:40",
+      "memento-pubdate": "",
+      "earliest": "2018-02-09T00:59:40"
+    },
+    "backlinks": {
+      "earliest": "2018-02-09T01:00:18"
+    },
+    "pubdate": {
+      "earliest": ""
+    },
+    "bitly.com": {
+      "earliest": ""
+    },
+    "google.com": {
+      "earliest": ""
+    },
+    "last-modified": {
+      "earliest": ""
+    }
+  }
+}

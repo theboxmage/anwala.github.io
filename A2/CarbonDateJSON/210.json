@@ -1,0 +1,43 @@
+{
+  "self": "",
+  "uri": "https://www.reuters.com/article/us-olympics-2018-opening-impersonators/trump-and-kim-thrown-out-of-opening-ceremony-idUSKBN1FT1XJ",
+  "estimated-creation-date": "2018-02-09T17:12:02",
+  "earliest-sources": [
+    "archive.is"
+  ],
+  "sources": {
+    "bing.com": {
+      "earliest": ""
+    },
+    "twitter.com": {
+      "earliest": ""
+    },
+    "archive.is": {
+      "uri-m": "http://archive.is/20180209171202/https://www.reuters.com/article/us-olympics-2018-opening-impersonators/trump-and-kim-thrown-out-of-opening-ceremony-idUSKBN1FT1XJ",
+      "memento-datetime": "2018-02-09T17:12:02",
+      "memento-pubdate": "2018-02-09T17:12:02",
+      "earliest": "2018-02-09T17:12:02"
+    },
+    "web.archive.org": {
+      "uri-m": "http://web.archive.org/web/20180209191916/https://www.reuters.com/article/us-olympics-2018-opening-impersonators/trump-and-kim-thrown-out-of-opening-ceremony-idUSKBN1FT1XJ",
+      "memento-datetime": "2018-02-09T19:19:16",
+      "memento-pubdate": "2018-02-09T18:40:55",
+      "earliest": "2018-02-09T18:40:55"
+    },
+    "backlinks": {
+      "earliest": ""
+    },
+    "pubdate": {
+      "earliest": "2018-02-10T00:56:38"
+    },
+    "bitly.com": {
+      "earliest": ""
+    },
+    "google.com": {
+      "earliest": ""
+    },
+    "last-modified": {
+      "earliest": ""
+    }
+  }
+}

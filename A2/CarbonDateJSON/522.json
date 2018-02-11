@@ -1,0 +1,55 @@
+{
+  "self": "",
+  "uri": "https://www.reuters.tv/",
+  "estimated-creation-date": "2012-10-15T23:40:56",
+  "earliest-sources": [
+    "web.archive.org"
+  ],
+  "sources": {
+    "bing.com": {
+      "earliest": ""
+    },
+    "twitter.com": {
+      "earliest": "2018-01-31T16:36:42"
+    },
+    "web.archive.org": {
+      "uri-m": "http://web.archive.org/web/20121015234056/http://www.reuters.tv:80/",
+      "memento-datetime": "2012-10-15T23:40:56",
+      "memento-pubdate": "",
+      "earliest": "2012-10-15T23:40:56"
+    },
+    "archive.is": {
+      "uri-m": "http://archive.is/20150407030539/http://www.reuters.tv/",
+      "memento-datetime": "2015-04-07T03:05:39",
+      "memento-pubdate": "2015-04-07T03:05:39",
+      "earliest": "2015-04-07T03:05:39"
+    },
+    "wayback.archive-it.org": {
+      "uri-m": "http://wayback.archive-it.org/all/20150416153616/http://reuters.tv/",
+      "memento-datetime": "2015-03-24T14:40:21",
+      "memento-pubdate": "",
+      "earliest": "2015-03-24T14:40:21"
+    },
+    "wayback.vefsafn.is": {
+      "uri-m": "http://wayback.vefsafn.is/wayback/20160604174015/http://www.reuters.tv/",
+      "memento-datetime": "2016-06-04T17:40:15",
+      "memento-pubdate": "",
+      "earliest": "2016-06-04T17:40:15"
+    },
+    "backlinks": {
+      "earliest": "2016-06-04T17:43:05"
+    },
+    "pubdate": {
+      "earliest": ""
+    },
+    "bitly.com": {
+      "earliest": ""
+    },
+    "google.com": {
+      "earliest": ""
+    },
+    "last-modified": {
+      "earliest": ""
+    }
+  }
+}

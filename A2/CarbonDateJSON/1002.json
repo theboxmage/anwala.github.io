@@ -1,0 +1,31 @@
+{
+  "self": "",
+  "uri": "https://www.olympic.org/news/today-at-pyeongchang-2018-saturday-10-february",
+  "estimated-creation-date": "2018-02-10T01:20:35",
+  "earliest-sources": [
+    "pubdate"
+  ],
+  "sources": {
+    "bing.com": {
+      "earliest": ""
+    },
+    "twitter.com": {
+      "earliest": ""
+    },
+    "backlinks": {
+      "earliest": ""
+    },
+    "pubdate": {
+      "earliest": "2018-02-10T01:20:35"
+    },
+    "bitly.com": {
+      "earliest": ""
+    },
+    "google.com": {
+      "earliest": ""
+    },
+    "last-modified": {
+      "earliest": ""
+    }
+  }
+}

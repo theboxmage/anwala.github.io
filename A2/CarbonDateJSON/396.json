@@ -1,0 +1,79 @@
+{
+  "self": "",
+  "uri": "http://www.foxnews.com/",
+  "estimated-creation-date": "1996-10-22T17:51:32",
+  "earliest-sources": [
+    "web.archive.org"
+  ],
+  "sources": {
+    "bing.com": {
+      "earliest": ""
+    },
+    "twitter.com": {
+      "earliest": "2007-01-19T15:58:09"
+    },
+    "web.archive.org": {
+      "uri-m": "http://web.archive.org/web/19961022175132/http://www.foxnews.com:80/",
+      "memento-datetime": "1996-10-22T17:51:32",
+      "memento-pubdate": "",
+      "earliest": "1996-10-22T17:51:32"
+    },
+    "webarchive.loc.gov": {
+      "uri-m": "http://webarchive.loc.gov/all/20010911230656/http://foxnews.com/",
+      "memento-datetime": "2001-09-11T23:06:56",
+      "memento-pubdate": "",
+      "earliest": "2001-09-11T23:06:56"
+    },
+    "wayback.vefsafn.is": {
+      "uri-m": "http://wayback.vefsafn.is/wayback/20060518135938/http://www.foxnews.com/",
+      "memento-datetime": "2006-05-18T13:59:38",
+      "memento-pubdate": "",
+      "earliest": "2006-05-18T13:59:38"
+    },
+    "wayback.archive-it.org": {
+      "uri-m": "http://wayback.archive-it.org/all/20060521002328/http://www.foxnews.com/",
+      "memento-datetime": "2006-05-21T00:23:28",
+      "memento-pubdate": "",
+      "earliest": "2006-05-21T00:23:28"
+    },
+    "swap.stanford.edu": {
+      "uri-m": "https://swap.stanford.edu/20070921180132/http://www.foxnews.com/",
+      "memento-datetime": "2007-09-21T18:01:32",
+      "memento-pubdate": "",
+      "earliest": "2007-09-21T18:01:32"
+    },
+    "arquivo.pt": {
+      "uri-m": "http://arquivo.pt/wayback/20080215054850/http://www.foxnews.com/",
+      "memento-datetime": "2008-02-15T05:48:50",
+      "memento-pubdate": "",
+      "earliest": "2008-02-15T05:48:50"
+    },
+    "archive.is": {
+      "uri-m": "http://archive.is/20100522002343/http://www.foxnews.com/",
+      "memento-datetime": "2010-05-22T00:23:43",
+      "memento-pubdate": "",
+      "earliest": "2010-05-22T00:23:43"
+    },
+    "perma-archives.org": {
+      "uri-m": "http://perma-archives.org/warc/20160106234510/http://www.foxnews.com/",
+      "memento-datetime": "2016-01-06T23:45:10",
+      "memento-pubdate": "",
+      "earliest": "2016-01-06T23:45:10"
+    },
+    "backlinks": {
+      "earliest": "2001-09-11T23:06:59"
+    },
+    "pubdate": {
+      "earliest": ""
+    },
+    "bitly.com": {
+      "earliest": ""
+    },
+    "google.com": {
+      "earliest": ""
+    },
+    "last-modified": {
+      "earliest": "2018-02-10T10:15:28"
+    }
+  }
+}

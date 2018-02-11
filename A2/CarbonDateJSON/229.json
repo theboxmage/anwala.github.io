@@ -1,0 +1,43 @@
+{
+  "self": "",
+  "uri": "https://www.theatlantic.com/international/archive/2018/02/olympics-opening-ceremony/552722/",
+  "estimated-creation-date": "2018-02-09T06:00:00",
+  "earliest-sources": [
+    "web.archive.org"
+  ],
+  "sources": {
+    "bing.com": {
+      "earliest": ""
+    },
+    "twitter.com": {
+      "earliest": "2018-02-09T20:39:20"
+    },
+    "web.archive.org": {
+      "uri-m": "http://web.archive.org/web/20180210013233/https://www.theatlantic.com/international/archive/2018/02/olympics-opening-ceremony/552722/",
+      "memento-datetime": "2018-02-10T01:32:33",
+      "memento-pubdate": "2018-02-09T06:00:00",
+      "earliest": "2018-02-09T06:00:00"
+    },
+    "archive.is": {
+      "uri-m": "http://archive.is/20180210055634/https://www.theatlantic.com/international/archive/2018/02/olympics-opening-ceremony/552722/",
+      "memento-datetime": "2018-02-10T05:56:34",
+      "memento-pubdate": "2018-02-10T05:56:34",
+      "earliest": "2018-02-10T05:56:34"
+    },
+    "backlinks": {
+      "earliest": "2018-02-10T01:30:27"
+    },
+    "pubdate": {
+      "earliest": "2018-02-09T11:12:00"
+    },
+    "bitly.com": {
+      "earliest": ""
+    },
+    "google.com": {
+      "earliest": ""
+    },
+    "last-modified": {
+      "earliest": ""
+    }
+  }
+}

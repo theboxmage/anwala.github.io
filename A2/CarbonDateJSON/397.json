@@ -1,0 +1,37 @@
+{
+  "self": "",
+  "uri": "https://www.rt.com/news/418243-norovirus-outbreak-olympics-korea/",
+  "estimated-creation-date": "2018-02-08T17:11:37",
+  "earliest-sources": [
+    "twitter.com"
+  ],
+  "sources": {
+    "bing.com": {
+      "earliest": ""
+    },
+    "twitter.com": {
+      "earliest": "2018-02-08T17:11:37"
+    },
+    "web.archive.org": {
+      "uri-m": "http://web.archive.org/web/20180208173725/https://www.rt.com/news/418243-norovirus-outbreak-olympics-korea/",
+      "memento-datetime": "2018-02-08T17:37:25",
+      "memento-pubdate": "",
+      "earliest": "2018-02-08T17:37:25"
+    },
+    "backlinks": {
+      "earliest": "2018-02-08T17:37:25"
+    },
+    "pubdate": {
+      "earliest": ""
+    },
+    "bitly.com": {
+      "earliest": ""
+    },
+    "google.com": {
+      "earliest": ""
+    },
+    "last-modified": {
+      "earliest": ""
+    }
+  }
+}

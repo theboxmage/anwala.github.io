@@ -1,0 +1,37 @@
+{
+  "self": "",
+  "uri": "https://www.usatoday.com/story/sports/winter-olympics-2018/2018/02/07/winter-olympics-north-korea-south-korea-tensions/318338002/",
+  "estimated-creation-date": "2018-02-08T03:41:27",
+  "earliest-sources": [
+    "twitter.com"
+  ],
+  "sources": {
+    "bing.com": {
+      "earliest": ""
+    },
+    "twitter.com": {
+      "earliest": "2018-02-08T03:41:27"
+    },
+    "web.archive.org": {
+      "uri-m": "http://web.archive.org/web/20180208193527/http://www.usatoday.com/story/sports/winter-olympics-2018/2018/02/07/winter-olympics-north-korea-south-korea-tensions/318338002/",
+      "memento-datetime": "2018-02-08T19:35:27",
+      "memento-pubdate": "",
+      "earliest": "2018-02-08T19:35:27"
+    },
+    "backlinks": {
+      "earliest": "2018-02-08T19:35:28"
+    },
+    "pubdate": {
+      "earliest": ""
+    },
+    "bitly.com": {
+      "earliest": ""
+    },
+    "google.com": {
+      "earliest": ""
+    },
+    "last-modified": {
+      "earliest": ""
+    }
+  }
+}

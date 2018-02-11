@@ -1,0 +1,45 @@
+{
+  "self": "",
+  "uri": "https://media0.giphy.com/media/10tIjpzIu8fe0/giphy.gif",
+  "estimated-creation-date": "2015-09-28T18:31:39",
+  "earliest-sources": [
+    "webarchive.loc.gov",
+    "web.archive.org",
+    "last-modified"
+  ],
+  "sources": {
+    "bing.com": {
+      "earliest": ""
+    },
+    "twitter.com": {
+      "earliest": "2018-01-31T20:54:19"
+    },
+    "webarchive.loc.gov": {
+      "uri-m": "http://webarchive.loc.gov/all/20160307145111/https://media0.giphy.com/media/10tIjpzIu8fe0/giphy.gif",
+      "memento-datetime": "2015-09-28T18:31:39",
+      "memento-pubdate": "",
+      "earliest": "2015-09-28T18:31:39"
+    },
+    "web.archive.org": {
+      "uri-m": "http://web.archive.org/web/20160926192939/https://media0.giphy.com/media/10tIjpzIu8fe0/giphy.gif",
+      "memento-datetime": "2015-09-28T18:31:39",
+      "memento-pubdate": "",
+      "earliest": "2015-09-28T18:31:39"
+    },
+    "backlinks": {
+      "earliest": ""
+    },
+    "pubdate": {
+      "earliest": ""
+    },
+    "bitly.com": {
+      "earliest": ""
+    },
+    "google.com": {
+      "earliest": ""
+    },
+    "last-modified": {
+      "earliest": "2015-09-28T18:31:39"
+    }
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "self": "",
+  "uri": "http://english.yonhapnews.co.kr/news/2018/02/10/0200000000AEN20180210000500320.html",
+  "estimated-creation-date": "2018-02-10T00:00:00",
+  "earliest-sources": [
+    "pubdate"
+  ],
+  "sources": {
+    "bing.com": {
+      "earliest": ""
+    },
+    "twitter.com": {
+      "earliest": ""
+    },
+    "backlinks": {
+      "earliest": ""
+    },
+    "pubdate": {
+      "earliest": "2018-02-10T00:00:00"
+    },
+    "bitly.com": {
+      "earliest": ""
+    },
+    "google.com": {
+      "earliest": ""
+    },
+    "last-modified": {
+      "earliest": "2018-02-10T00:13:27"
+    }
+  }
+}

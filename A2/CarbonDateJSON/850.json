@@ -1,0 +1,38 @@
+{
+  "self": "",
+  "uri": "http://variety.com/2018/digital/news/watch-2018-winter-olympics-pyeongchang-live-stream-online-1202689603/",
+  "estimated-creation-date": "2018-02-08T18:00:04",
+  "earliest-sources": [
+    "web.archive.org",
+    "pubdate"
+  ],
+  "sources": {
+    "bing.com": {
+      "earliest": ""
+    },
+    "twitter.com": {
+      "earliest": "2018-02-08T18:00:12"
+    },
+    "web.archive.org": {
+      "uri-m": "http://web.archive.org/web/20180208190806/http://variety.com/2018/digital/news/watch-2018-winter-olympics-pyeongchang-live-stream-online-1202689603/",
+      "memento-datetime": "2018-02-08T19:08:06",
+      "memento-pubdate": "2018-02-08T18:00:04",
+      "earliest": "2018-02-08T18:00:04"
+    },
+    "backlinks": {
+      "earliest": ""
+    },
+    "pubdate": {
+      "earliest": "2018-02-08T18:00:04"
+    },
+    "bitly.com": {
+      "earliest": ""
+    },
+    "google.com": {
+      "earliest": ""
+    },
+    "last-modified": {
+      "earliest": ""
+    }
+  }
+}
