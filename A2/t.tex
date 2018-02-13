@@ -27,7 +27,7 @@ Beyond that, one of the issues I ran into, was when given a link from google, so
 
 It is important to note that I generated slightly above 1000 links. I'm not entirely sure why my program stopped at 1052, but I decided to leave all the links in there regardless. I felt that chooseing 52 links by hand to throw out would be micromanging the data too much. For a class, it probably wouldn't have been an issue, I'm just not sure the morality of choosing which data to post, so I left the extra 52 in.
 
-The links can be found in the A2/ directory, under the file links.txt.
+The links can be found in the A2/ directory, under the file links.txt. They were generated with the python file twt.py, found in the the A2 directory.
 \pagebreak
 \section{Question 2}
 
@@ -39,7 +39,7 @@ Below is the graph for the number of sites vs the number of mementos.
 
 My only complaint with the graph is that I cannot get the bottom axis to show up. I can tell, through trial and error, that it goes up by one each iteration to the right. It is also missing a few far outside of the scope of the bars. I have one link with over 80,000 memetos, and it isn't shown. Anything outside of the range of the graph only has 1 site with that many mementos. 
 
-This is roughly when I regnereated the links, as I felt the results were skewed due to links the process could not follow. Below is data1023.json. It is the 1023rd link in the list. The rest can be found in the directory A2/Mementos/. This one wasn't as hard, and in the long run, was the least time consuming of the three questions. The only part that troubled me was not throwing out links that 404'd. After I asked on Slack, and started assuming links that 404 had 0 mementos, the question was easy again.
+This is roughly when I regnereated the links, as I felt the results were skewed due to links the process could not follow. Below is data1023.json. It is the 1023rd link in the list. The rest can be found in the directory A2/Mementos/. This one wasn't as hard, and in the long run, was the least time consuming of the three questions. The only part that troubled me was not throwing out links that 404'd. After I asked on Slack, and started assuming links that 404 had 0 mementos, the question was easy again. This question was done with Memtos.py, which requires links.txt to be in the same directory.
 \begin{lstlisting}
 {
   "mementos": {
@@ -83,7 +83,7 @@ hold=0; for line in $(cat links.txt); do hold=$((hold+1)); echo -n $hold; echo "
 
 To break it down, I looped through each line in the links.txt, incrementing hold each time, setting the current links to line. I ran docker as the super user on the line variable, then saved the output to the current number represented by hold, followed by the json extension. This, however, even on my home machine, took hours. I set it going at 10pm and it finished at 8am. I'm glad I didn't wait until the last day to do this.
 
-I could not get the docker deamon to work correctly on my system without running as the super user. I'll have this fixed by the next assignment, I just need time to sit down and fix it. Below is 528.json, the rest can be found in the CarbonDateJson/ directory.
+I could not get the docker deamon to work correctly on my system without running as the super user. I'll have this fixed by the next assignment, I just need time to sit down and fix it. Below is 528.json, the rest can be found in the CarbonDateJson/ directory. This was done with agevmem.py, which can be found in the A2/ directory.
 \begin{lstlisting}
 {
   "self": "",
