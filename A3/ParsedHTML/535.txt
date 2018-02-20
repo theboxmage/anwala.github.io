@@ -1,0 +1,51 @@
+The Olympics are an irresistible target for cybercriminals
+by Sherisse Pham   @Sherisse February 9, 2018: 8:55 AM ET
+Russia banned from 2018 Winter Olympics
+The Olympic Games are a massive draw, not only for sports fans, but also for cybercriminals.
+It's a high-profile event taking place in a concentrated location that attracts large numbers of visitors, many of whom will be spending a lot of money.
+The Winter Games kicking off Friday in Pyeongchang, South Korea, are no exception.
+Billed as a sports extravaganza, the Olympics are also infused with politics as governments and activists seek to take advantage of the global stage. That's especially true in Pyeongchang, where tensions have built up over North Korea's involvement.
+All of this makes the Games a prime target for cyberattacks -- from thieves or spies.
+Here's what hackers are going after -- and how fans can protect themselves:
+Hacking the Games themselves
+Computer systems connected to the Olympics have been compromised in the past.
+In 2016, Russian hackers broke into a World-Anti Doping Agency database through an account created by the International Olympic Committee (IOC) for the Summer Games in Rio. The group stole information about star American athletes like Simone Biles and Venus Williams.
+"Some attackers have a political intent -- they can attack the organization," said Seongsu Park, a researcher with cybersecurity firm Kaspersky.
+They would be trying to get hold of confidential information, he said. That could include details on athletes and doping tests like those stolen by the Russian hackers.
+The IOC declined provide details on the steps it takes to protect the Games from hackers, but said in a statement that cybersecurity has long been "a top priority."
+Related: Team USA's Olympic uniforms are wearable heaters
+In recent years, the IOC and host countries have ramped up cybersecurity efforts, as the range of threats against the Games have expanded.
+A nightmare possibility for athletes and organizers would be hackers manipulating computers to mess with scoring systems, but cybersecurity experts say that's an unlikely scenario.
+"Those timing systems are generally run independently," said Nick Savvides, chief technology officer for Asia with cybersecurity firm Symantec. "It's generally difficult to manipulate results."
+Watch out for cyber-pickpockets
+The Olympics are a "fantastic opportunity for cybercriminals to steal people's identification, take money out of their wallets," Savvides said.
+There are plenty of scams on social media offering free tickets or tickets to fake competitions, targeting fans before they even set foot on a plane to attend the Games.
+Over the years, most people have become tech savvy enough to ignore scams sent via email. But many are still tricked by links that friends might share on Twitter ( TWTR ) or Instagram.
+Those links will often be sharing malware, according to Savvides.
+"More than likely those scams, they'll harvest information -- 'register for our site to get behind the scenes action' -- those sorts of scams will hit social media, be careful of those," he said.
+Social media obsessed spectators may be tempted to post photos of their Olympics tickets on Instagram or Snapchat ( SNAP ). Don't do that, particularly if those tickets have barcodes or other scannable features.
+"Those barcodes have a lot of information about you as a person and traveler," Savvides warned.
+Once people are at the Olympics, the knee-jerk reaction, especially for international visitors, is to look for free WiFi.
+At Pyeongcheong, there will be plenty of wireless spots available. South Korea is a well-connected country with some of the fastest internet speeds in the world.
+That means going online will basically be like using the shared WiFi network at a coffee shop -- but in this case, it's the equivalent of the world's biggest coffee shop.
+"Any attacker can make fake internet access points," said Kaspersky's Park.
+He advises anyone interacting with Olympics-related websites to make sure they have installed or updated antivirus software on their laptops and smartphones.
+Related: The first controversy of the Winter Olympics -- and it's over a coin toss
+The U.S. Department of Homeland Security advises Americans traveling to the Games to switch off WiFi and Bluetooth connections when they're not in use.
+"When using a public or unsecured wireless connection, avoid using sites and applications that require personal information like log-ins," the department says.
+Savvides also suggests getting a virtual private network, or VPN.
+A VPN "sets up a protected tunnel and a trusted end point somewhere else in the world, and anyone snooping on that network will see encrypted text, not what you're actually doing," he said.
+Spy games
+Cybersecurity firm McAfee uncovered a cyberattack last month that was targeting organizations affiliated with the Pyeongchang Games.
+Hackers used a phishing campaign to try and trick victims with Korean language emails, suggesting South Korean organizations were the targets.
+Messages containing infected documents were sent to "icehockey@pyeongchang2018.com," with hundreds of other Olympics-related targets blind copied on the emails.
+The attack was a success, said Raj Samani, chief scientist and fellow at McAfee.
+"We were able to confirm that connections from compromised systems were made -- indicating that some of the targets fell for the attack," he said.
+Related: Samsung caught in storm over phones for Iran's Olympic team
+While McAfee didn't identify the origin or the goal of the campaign, Samani didn't rule out a potential link to North Korea, which has been accused of a long list of cyberattacks in recent years, many of them in South Korea.
+"We are not confirming the specific source because using technical indicators alone is not conclusive. However, we believe this was a nation state actor with Korean language skills," he said.
+North Korea has repeatedly denied involvement in international cyberattacks.
+McAfee said earlier this week that it expects more Olympics-themed phishing in which hackers can potentially gain "access to customer and employee financial or personal data, Winter Games related details, trade secrets, and more."
+To guard against such espionage attacks, the best defense is for organizations to know their enemy.
+"It is imperative to review the latest techniques being adopted by potential adversaries," Samani said.
+CNNMoney (Hong Kong) First published February 9, 2018: 4:44 AM ET

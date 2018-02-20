@@ -1,0 +1,1272 @@
+<!doctype html><!-- start coded_template: id:3696723349 path:generated_layouts/3696723329.html --><!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en-us" > <![endif]--><!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en-us" >        <![endif]--><!--[if IE 8]>    <html class="no-js lt-ie9" lang="en-us" >               <![endif]--><!--[if gt IE 8]><!--><html class="no-js" lang="en-us"><!--<![endif]--><head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="author" content="Stu Sjouwerman">
+    <meta name="description" content="A new malware campaign is targeting organizations associated with the upcoming 2018 Winter Olympics in Pyeongchang, South Korea.">
+    <meta name="generator" content="HubSpot">
+    <title>2018 Winter Olympics Phishing Campaign Hides Evil PowerShell Script In Image</title>
+    <link rel="shortcut icon" href="https://blog.knowbe4.com/hubfs/x.png?t=1518798795189">
+    
+
+    <link rel="stylesheet" href="/hs-fs/hub/241394/hub_generated/template_assets/1518557681047/combined-css-b0b510fe29c3d94e7b9dc3f7f60abb9d.css"><script src="https://static.hsstatic.net/jquery-libs/static-1.4/jquery/jquery-1.11.2.js"></script>
+    <script type="text/javascript">hsjQuery = window['jQuery']</script>
+    
+    <meta property="og:description" content="A new malware campaign is targeting organizations associated with the upcoming 2018 Winter Olympics in Pyeongchang, South Korea.">
+    <meta property="og:title" content="2018 Winter Olympics Phishing Campaign Hides Evil PowerShell Script In Image">
+    <meta name="twitter:description" content="A new malware campaign is targeting organizations associated with the upcoming 2018 Winter Olympics in Pyeongchang, South Korea.">
+    <meta name="twitter:title" content="2018 Winter Olympics Phishing Campaign Hides Evil PowerShell Script In Image">
+
+
+    
+    
+
+    
+    
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="keywords" content="phishing,social engineering,ransomware,kevin mitnick,spear phishing,security awareness training,cryptolocker,phish-prone,hackers,hacking,on-line training,training,anti-phishing training,stu sjouwerman,knowbe4,tampa bay,florida">
+
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-N7W93L8');</script>
+<!-- End Google Tag Manager -->
+
+
+<meta property="og:image" content="https://blog.knowbe4.com/hubfs/2018-winter-olympics-malware-campaign.jpg?t=1518798795189#keepProtocol">
+<meta property="og:image:width" content="714">
+<meta property="og:image:height" content="450">
+<meta name="twitter:image" content="https://blog.knowbe4.com/hubfs/2018-winter-olympics-malware-campaign.jpg?t=1518798795189#keepProtocol">
+
+<meta property="og:url" content="https://blog.knowbe4.com/2018-winter-olympics-malware-campaign-hides-malicious-powershell-script-in-image">
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-21999915-2', 'knowbe4.com');
+  ga('send', 'pageview');
+
+</script>
+<meta property="og:type" content="article">
+<link rel="alternate" type="application/rss+xml" href="https://blog.knowbe4.com/rss.xml">
+<meta name="twitter:domain" content="blog.knowbe4.com">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="@KnowBe4">
+<script src="//platform.linkedin.com/in.js" type="text/javascript">
+    lang: en_US
+</script>
+
+<meta http-equiv="content-language" content="en-us">
+
+
+
+
+
+
+
+
+    <!-- The style tag has been deprecated. Attached stylesheets are included in the required_head_tags page variable. -->
+    
+
+
+
+    
+
+</head>
+<body class="   hs-content-id-5568742135 hs-blog-post hs-content-path-2018-winter-olympics-malware-campaign-hides-malici hs-content-name-2018-winter-olympics-phishing-campaign-hides-evil- hs-blog-name-knowbe4-security-awareness-training-blog hs-blog-id-2065724514" style="">
+    <div class="header-container-wrapper">
+    <div class="header-container container-fluid">
+
+<div class="row-fluid-wrapper row-depth-1 row-number-1 ">
+<div class="row-fluid ">
+<div class="span12 widget-span widget-type-global_group " style="" data-widget-type="global_group" data-x="0" data-w="12">
+<!-- start coded_template: id:3746347338 path:generated_global_groups/3746347323.html -->
+<div class="" data-global-widget-path="generated_global_groups/3746347323.html"><div class="row-fluid-wrapper row-depth-1 row-number-1 ">
+<div class="row-fluid ">
+<div id="subheader" class="fullwidth-bg mobile-display-none"><div class="page-center">
+<div class="span12 widget-span widget-type-cell " style="" data-widget-type="cell" data-x="0" data-w="12">
+
+<div class="row-fluid-wrapper row-depth-1 row-number-2 ">
+<div class="row-fluid ">
+<div class="span1 widget-span widget-type-raw_html " style="" data-widget-type="raw_html" data-x="0" data-w="1">
+<div class="cell-wrapper layout-widget-wrapper">
+<span id="hs_cos_wrapper_module_1513635085394162" class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_raw_html" style="" data-hs-cos-general-type="widget" data-hs-cos-type="raw_html"><!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-N7W93L8" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) --></span>
+</div><!--end layout-widget-wrapper -->
+</div><!--end widget-span -->
+<div class="span11 widget-span widget-type-menu subheader-nav" style="" data-widget-type="menu" data-x="1" data-w="11">
+<div class="cell-wrapper layout-widget-wrapper">
+<span id="hs_cos_wrapper_module_14520161873432" class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_menu" style="" data-hs-cos-general-type="widget" data-hs-cos-type="menu"><div id="hs_menu_wrapper_module_14520161873432" class="hs-menu-wrapper active-branch flyouts hs-menu-flow-horizontal" role="navigation" data-sitemap-name="Knowbe4_Dec2015_Sub Header">
+ <ul>
+  <li class="hs-menu-item hs-menu-depth-1"><a href="https://www.knowbe4.com/contact-us"><i class="fa fa-phone"></i> 855-KnowBe4</a></li>
+  <li class="hs-menu-item hs-menu-depth-1"><a href="https://blog.knowbe4.com"><i class="fa fa-rss"></i> Blog</a></li>
+  <li class="hs-menu-item hs-menu-depth-1"><a href="https://knowbe4.zendesk.com/hc/en-us" target="_blank"><i class="fa fa-info-circle"></i> Support</a></li>
+  <li class="hs-menu-item hs-menu-depth-1"><a href="https://www.knowbe4.com/partnering"><i class="fa fa-thumbs-up"></i> Partnering</a></li>
+  <li class="hs-menu-item hs-menu-depth-1"><a href="https://info.knowbe4.com/kmsat-request-a-demo"><i class="fa fa-desktop"></i> Request A Demo</a></li>
+  <li class="hs-menu-item hs-menu-depth-1"><a href="https://training.knowbe4.com/login" target="_blank"><strong>Account Login <i class="fa fa-angle-double-right"></i></strong></a></li>
+ </ul>
+</div></span></div><!--end layout-widget-wrapper -->
+</div><!--end widget-span -->
+</div><!--end row-->
+</div><!--end row-wrapper -->
+
+</div><!--end widget-span -->
+</div></div>
+</div><!--end row-->
+</div><!--end row-wrapper -->
+
+<div class="row-fluid-wrapper row-depth-1 row-number-3 ">
+<div class="row-fluid ">
+<div id="header" class="fullwidth-bg"><div class="page-center">
+<div class="span12 widget-span widget-type-cell " style="" data-widget-type="cell" data-x="0" data-w="12">
+
+<div class="row-fluid-wrapper row-depth-1 row-number-4 ">
+<div class="row-fluid ">
+<div class="span3 widget-span widget-type-rich_text " style="" data-widget-type="rich_text" data-x="0" data-w="3">
+<div class="cell-wrapper layout-widget-wrapper">
+<span id="hs_cos_wrapper_module_1502717673922147" class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_rich_text" style="" data-hs-cos-general-type="widget" data-hs-cos-type="rich_text"><a href="https://www.knowbe4.com/"><img src="https://blog.knowbe4.com/hs-fs/hubfs/html_file/files/img/KB4-logo.png?noresize&amp;t=1518798795189&amp;width=200&amp;height=75&amp;name=KB4-logo.png" alt="KnowBe4" title="KnowBe4" width="200" height="75" style="margin: 15px 0px 0px;"></a></span>
+</div><!--end layout-widget-wrapper -->
+</div><!--end widget-span -->
+<div class="span9 widget-span widget-type-menu main-nav text-alignright custom-menu-primary" style="" data-widget-type="menu" data-x="3" data-w="9">
+<div class="cell-wrapper layout-widget-wrapper">
+<span id="hs_cos_wrapper_module_14520161873435" class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_menu" style="" data-hs-cos-general-type="widget" data-hs-cos-type="menu"><div id="hs_menu_wrapper_module_14520161873435" class="hs-menu-wrapper active-branch flyouts hs-menu-flow-horizontal" role="navigation" data-sitemap-name="Knowbe4_Dec2015_Main Nav">
+ <ul>
+  <li class="hs-menu-item hs-menu-depth-1 hs-item-has-children"><a href="/#">Products &amp; Services <i class="fa fa-caret-down"></i></a>
+   <ul class="hs-menu-children-wrapper">
+    <li class="hs-menu-item hs-menu-depth-2"><a href="https://www.knowbe4.com/products/kevin-mitnick-security-awareness-training/">Kevin Mitnick Security Awareness Training</a></li>
+    <li class="hs-menu-item hs-menu-depth-2"><a href="https://www.knowbe4.com/products/enterprise-security-awareness-training/">KnowBe4 Enterprise Awareness Training Program</a></li>
+    <li class="hs-menu-item hs-menu-depth-2"><a href="https://www.knowbe4.com/knowbe4-training-modules-overview/">Security Awareness Training Modules Overview</a></li>
+    <li class="hs-menu-item hs-menu-depth-2"><a href="https://www.knowbe4.com/security-awareness-training-features/">Security Awareness Training Features</a></li>
+    <li class="hs-menu-item hs-menu-depth-2"><a href="https://www.knowbe4.com/products/knowbe4-customer-awareness-program/">Customer Awareness Program</a></li>
+    <li class="hs-menu-item hs-menu-depth-2"><a href="https://www.knowbe4.com/products/knowbe4-compliance-manager">KnowBe4 Compliance Manager</a></li>
+   </ul></li>
+  <li class="hs-menu-item hs-menu-depth-1 hs-item-has-children"><a href="/#">Free Tools <i class="fa fa-caret-down"></i></a>
+   <ul class="hs-menu-children-wrapper">
+    <li class="hs-menu-item hs-menu-depth-2"><a href="https://www.knowbe4.com/phishing-security-test-offer">Phishing Security Test</a></li>
+    <li class="hs-menu-item hs-menu-depth-2"><a href="https://www.knowbe4.com/automated-security-awareness-program">Automated Security Awareness Program</a></li>
+    <li class="hs-menu-item hs-menu-depth-2"><a href="https://www.knowbe4.com/free-phish-alert">Phish Alert Button</a></li>
+    <li class="hs-menu-item hs-menu-depth-2"><a href="https://www.knowbe4.com/email-exposure-check/">Email Exposure Check Pro</a></li>
+    <li class="hs-menu-item hs-menu-depth-2"><a href="https://www.knowbe4.com/domain-spoof-test/">Domain Spoof Test</a></li>
+    <li class="hs-menu-item hs-menu-depth-2"><a href="https://www.knowbe4.com/ransomware-simulator">Ransomware Simulator</a></li>
+    <li class="hs-menu-item hs-menu-depth-2"><a href="https://www.knowbe4.com/second-chance">Second Chance</a></li>
+    <li class="hs-menu-item hs-menu-depth-2"><a href="https://www.knowbe4.com/usb-security-test">USB Security Test</a></li>
+    <li class="hs-menu-item hs-menu-depth-2"><a href="https://www.knowbe4.com/weak-password-test">Weak Password Test</a></li>
+    <li class="hs-menu-item hs-menu-depth-2"><a href="https://www.knowbe4.com/training-preview">Training Preview</a></li>
+   </ul></li>
+  <li class="hs-menu-item hs-menu-depth-1 hs-item-has-children"><a href="/#">Pricing <i class="fa fa-caret-down"></i></a>
+   <ul class="hs-menu-children-wrapper">
+    <li class="hs-menu-item hs-menu-depth-2"><a href="https://www.knowbe4.com/pricing-kevin-mitnick-security-awareness-training/">Security Awareness Training</a></li>
+    <li class="hs-menu-item hs-menu-depth-2"><a href="https://www.knowbe4.com/kcm-price-list">KnowBe4 Compliance Manager</a></li>
+    <li class="hs-menu-item hs-menu-depth-2"><a href="https://www.knowbe4.com/why-choose-knowbe4">Why Choose KnowBe4</a></li>
+   </ul></li>
+  <li class="hs-menu-item hs-menu-depth-1 hs-item-has-children"><a href="/#">Resources <i class="fa fa-caret-down"></i></a>
+   <ul class="hs-menu-children-wrapper">
+    <li class="hs-menu-item hs-menu-depth-2"><a href="https://www.knowbe4.com/resources">Whitepapers &amp; Resources</a></li>
+    <li class="hs-menu-item hs-menu-depth-2"><a href="https://www.knowbe4.com/webinar-library">Webinars</a></li>
+    <li class="hs-menu-item hs-menu-depth-2"><a href="https://www.knowbe4.com/free-e-book/">Free Cyberheist E-book</a></li>
+    <li class="hs-menu-item hs-menu-depth-2"><a href="https://www.knowbe4.com/case-studies/">Case Studies</a></li>
+    <li class="hs-menu-item hs-menu-depth-2"><a href="https://www.knowbe4.com/what-is-social-engineering/">Social Engineering</a></li>
+    <li class="hs-menu-item hs-menu-depth-2"><a href="https://www.knowbe4.com/phishing">Phishing</a></li>
+    <li class="hs-menu-item hs-menu-depth-2"><a href="https://www.knowbe4.com/spear-phishing/">Spear Phishing</a></li>
+    <li class="hs-menu-item hs-menu-depth-2"><a href="https://www.knowbe4.com/ceo-fraud">CEO Fraud</a></li>
+    <li class="hs-menu-item hs-menu-depth-2"><a href="https://www.knowbe4.com/ransomware">Ransomware</a></li>
+    <li class="hs-menu-item hs-menu-depth-2"><a href="https://www.knowbe4.com/resources/frequently-asked-questions/">Frequently Asked Questions</a></li>
+   </ul></li>
+  <li class="hs-menu-item hs-menu-depth-1 hs-item-has-children"><a href="/#">About Us <i class="fa fa-caret-down"></i></a>
+   <ul class="hs-menu-children-wrapper">
+    <li class="hs-menu-item hs-menu-depth-2"><a href="https://www.knowbe4.com/about-us/">Who We Are</a></li>
+    <li class="hs-menu-item hs-menu-depth-2"><a href="https://www.knowbe4.com/events">Events</a></li>
+    <li class="hs-menu-item hs-menu-depth-2"><a href="https://www.knowbe4.com/partnering">Partner With Us</a></li>
+    <li class="hs-menu-item hs-menu-depth-2"><a href="https://www.knowbe4.com/press">Press Releases</a></li>
+    <li class="hs-menu-item hs-menu-depth-2"><a href="https://www.knowbe4.com/knowbe4-in-the-news/">KnowBe4 In The News</a></li>
+    <li class="hs-menu-item hs-menu-depth-2"><a href="https://www.knowbe4.com/knowbe4-timeline/">KnowBe4 Timeline</a></li>
+    <li class="hs-menu-item hs-menu-depth-2"><a href="https://www.knowbe4.com/ransomware-guarantee">KnowBe4 Ransomware Guarantee</a></li>
+    <li class="hs-menu-item hs-menu-depth-2"><a href="https://www.knowbe4.com/products/who-is-kevin-mitnick/">Who Is Kevin Mitnick?</a></li>
+    <li class="hs-menu-item hs-menu-depth-2"><a href="https://www.knowbe4.com/investors/">Investors</a></li>
+    <li class="hs-menu-item hs-menu-depth-2"><a href="https://www.knowbe4.com/jobs">Jobs</a></li>
+   </ul></li>
+  <li class="hs-menu-item hs-menu-depth-1 hs-item-has-children"><a href="/#">Contact Us <i class="fa fa-caret-down"></i></a>
+   <ul class="hs-menu-children-wrapper">
+    <li class="hs-menu-item hs-menu-depth-2"><a href="https://www.knowbe4.com/contact-us">Contact Sales</a></li>
+    <li class="hs-menu-item hs-menu-depth-2"><a href="http://knowbe4.zendesk.com/hc/en-us" target="_blank">Tech Support</a></li>
+   </ul></li>
+ </ul>
+</div></span></div><!--end layout-widget-wrapper -->
+</div><!--end widget-span -->
+</div><!--end row-->
+</div><!--end row-wrapper -->
+
+</div><!--end widget-span -->
+</div></div>
+</div><!--end row-->
+</div><!--end row-wrapper -->
+</div><!-- end coded_template: id:3746347338 path:generated_global_groups/3746347323.html -->
+
+</div><!--end widget-span -->
+</div><!--end row-->
+</div><!--end row-wrapper -->
+
+    </div><!--end header -->
+</div><!--end header wrapper -->
+
+<div class="body-container-wrapper">
+    <div class="body-container container-fluid">
+
+<div class="row-fluid-wrapper row-depth-1 row-number-1 ">
+<div class="row-fluid ">
+<div id="page-header" class="fullwidth-bg"><div class="page-center">
+<div class="span12 widget-span widget-type-cell " style="" data-widget-type="cell" data-x="0" data-w="12">
+
+<div class="row-fluid-wrapper row-depth-1 row-number-2 ">
+<div class="row-fluid ">
+<div class="span12 widget-span widget-type-menu " style="" data-widget-type="menu" data-x="0" data-w="12">
+<div class="cell-wrapper layout-widget-wrapper">
+<span id="hs_cos_wrapper_module_145218488965858970" class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_menu" style="" data-hs-cos-general-type="widget" data-hs-cos-type="menu"><ul></ul></span></div><!--end layout-widget-wrapper -->
+</div><!--end widget-span -->
+</div><!--end row-->
+</div><!--end row-wrapper -->
+
+<div class="row-fluid-wrapper row-depth-1 row-number-3 ">
+<div class="row-fluid ">
+<div class="span12 widget-span widget-type-header color-white m-none" style="" data-widget-type="header" data-x="0" data-w="12">
+<div class="cell-wrapper layout-widget-wrapper">
+<span id="hs_cos_wrapper_module_145217512160218582" class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_header" style="" data-hs-cos-general-type="widget" data-hs-cos-type="header"><h1>Security Awareness Training Blog</h1></span></div><!--end layout-widget-wrapper -->
+</div><!--end widget-span -->
+</div><!--end row-->
+</div><!--end row-wrapper -->
+
+</div><!--end widget-span -->
+</div></div>
+</div><!--end row-->
+</div><!--end row-wrapper -->
+
+<div class="row-fluid-wrapper row-depth-1 row-number-4 ">
+<div class="row-fluid ">
+<div class="fullwidth-bg"><div class="page-center">
+<div class="span12 widget-span widget-type-text " style="" data-widget-type="text" data-x="0" data-w="12">
+<div class="cell-wrapper layout-widget-wrapper">
+<span id="hs_cos_wrapper_module_145217555211424176" class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_text" style="" data-hs-cos-general-type="widget" data-hs-cos-type="text"><hr class="invisibleshort"></span></div><!--end layout-widget-wrapper -->
+</div><!--end widget-span -->
+</div></div>
+</div><!--end row-->
+</div><!--end row-wrapper -->
+
+<div class="row-fluid-wrapper row-depth-1 row-number-5 ">
+<div class="row-fluid ">
+<div class="fullwidth-bg"><div class="page-center">
+<div class="span12 widget-span widget-type-cell " style="" data-widget-type="cell" data-x="0" data-w="12">
+
+<div class="row-fluid-wrapper row-depth-1 row-number-6 ">
+<div class="row-fluid ">
+<div class="span9 widget-span widget-type-cell blog-listing-maincontent" style="" data-widget-type="cell" data-x="0" data-w="9">
+
+<div class="row-fluid-wrapper row-depth-1 row-number-7 ">
+<div class="row-fluid ">
+<div class="span12 widget-span widget-type-blog_content " style="margin-left:2px;" data-widget-type="blog_content" data-x="0" data-w="12">
+<div class="blog-section">
+    <div class="blog-post-wrapper cell-wrapper">
+                <div class="blog-section">
+            <div class="blog-post-wrapper cell-wrapper">
+                
+                <div class="section post-header">
+                    <h1><span id="hs_cos_wrapper_name" class="hs_cos_wrapper hs_cos_wrapper_meta_field hs_cos_wrapper_type_text" style="" data-hs-cos-general-type="meta_field" data-hs-cos-type="text">2018 Winter Olympics Phishing Campaign Hides Evil PowerShell Script In Image</span></h1>
+                    <div id="hubspot-author_data" class="hubspot-editable" data-hubspot-form-id="author_data" data-hubspot-name="Blog Author">
+                        
+                            <a class="author-link" href="https://blog.knowbe4.com/author/stu-sjouwerman"><i class="fa fa-user"></i> Stu Sjouwerman</a>
+                            <div class="post-date left-post-date">
+                                <span class="day">9 </span>
+                                <span class="month">Feb </span>
+                            </div>
+                        
+                    </div>
+                </div>
+                <hr class="m-sm">
+                <span id="hs_cos_wrapper_blog_social_sharing" class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_blog_social_sharing" style="" data-hs-cos-general-type="widget" data-hs-cos-type="blog_social_sharing">
+<div class="hs-blog-social-share">
+    <ul class="hs-blog-social-share-list">
+        
+        <li class="hs-blog-social-share-item hs-blog-social-share-item-twitter">
+            <!-- Twitter social share -->
+            <a href="https://twitter.com/share" class="twitter-share-button" data-lang="en" data-url="https://blog.knowbe4.com/2018-winter-olympics-malware-campaign-hides-malicious-powershell-script-in-image" data-size="medium" data-text="2018 Winter Olympics Phishing Campaign Hides Evil PowerShell Script In Image">Tweet</a>
+        </li>
+        
+
+        
+        <li class="hs-blog-social-share-item hs-blog-social-share-item-linkedin">
+            <!-- LinkedIn social share -->
+            <script type="IN/Share" data-url="https://blog.knowbe4.com/2018-winter-olympics-malware-campaign-hides-malicious-powershell-script-in-image" data-showzero="true" data-counter="right"></script>
+        </li>
+        
+
+        
+        <li class="hs-blog-social-share-item hs-blog-social-share-item-facebook">
+            <!-- Facebook share -->
+            <div class="fb-like" data-href="https://blog.knowbe4.com/2018-winter-olympics-malware-campaign-hides-malicious-powershell-script-in-image" data-layout="button_count" data-action="like" data-show-faces="false" data-share="true" data-width="120"></div>
+        </li>
+        
+
+        
+        <li class="hs-blog-social-share-item hs-blog-social-share-item-google-plus">
+            <!-- Google +1 -->
+            <div class="g-plusone" data-size="medium" data-href="https://blog.knowbe4.com/2018-winter-olympics-malware-campaign-hides-malicious-powershell-script-in-image"></div>
+        </li>
+        
+    </ul>
+ </div>
+
+</span>
+                <hr class="m-sm">
+                <div class="section post-body">
+                    <span id="hs_cos_wrapper_post_body" class="hs_cos_wrapper hs_cos_wrapper_meta_field hs_cos_wrapper_type_rich_text" style="" data-hs-cos-general-type="meta_field" data-hs-cos-type="rich_text"><div><img src="https://blog.knowbe4.com/hs-fs/hubfs/2018-winter-olympics-malware-campaign.jpg?t=1518798795189&amp;width=320&amp;name=2018-winter-olympics-malware-campaign.jpg" alt="2018-winter-olympics-malware-campaign" width="320" style="width: 320px; margin: 0px 0px 20px 20px; float: right;" title="2018-winter-olympics-malware-campaign" caption="false" data-constrained="true" srcset="https://blog.knowbe4.com/hs-fs/hubfs/2018-winter-olympics-malware-campaign.jpg?t=1518798795189&amp;width=160&amp;name=2018-winter-olympics-malware-campaign.jpg 160w, https://blog.knowbe4.com/hs-fs/hubfs/2018-winter-olympics-malware-campaign.jpg?t=1518798795189&amp;width=320&amp;name=2018-winter-olympics-malware-campaign.jpg 320w, https://blog.knowbe4.com/hs-fs/hubfs/2018-winter-olympics-malware-campaign.jpg?t=1518798795189&amp;width=480&amp;name=2018-winter-olympics-malware-campaign.jpg 480w, https://blog.knowbe4.com/hs-fs/hubfs/2018-winter-olympics-malware-campaign.jpg?t=1518798795189&amp;width=640&amp;name=2018-winter-olympics-malware-campaign.jpg 640w, https://blog.knowbe4.com/hs-fs/hubfs/2018-winter-olympics-malware-campaign.jpg?t=1518798795189&amp;width=800&amp;name=2018-winter-olympics-malware-campaign.jpg 800w, https://blog.knowbe4.com/hs-fs/hubfs/2018-winter-olympics-malware-campaign.jpg?t=1518798795189&amp;width=960&amp;name=2018-winter-olympics-malware-campaign.jpg 960w" sizes="(max-width: 320px) 100vw, 320px"></div>
+<p>Jonathan, at our friends at Barkly wrote: "Hi all, <a href="https://securingtomorrow.mcafee.com/mcafee-labs/malicious-document-targets-pyeongchang-olympics/" target="_blank">according to researchers at McAfee</a>, a new malware campaign is targeting organizations associated with the upcoming 2018 Winter Olympics in Pyeongchang, South Korea.</p>
+<p>The attack is being delivered via <a href="https://www.knowbe4.com/phishing/" target="_blank">phishing</a> emails disguised as alerts from country's National Counter-Terrorism Center, with malicious Word documents attached.</p>
+<p>Once opened, the Word doc encourages readers to enable content. If they do, that triggers an embedded macro to launch PowerShell. Up to this point, this is nothing really new.&nbsp;</p>
+<p><em>But here's where things get interesting...</em></p>
+<!--more-->
+<p><strong>Why this attack is different:</strong> What truly makes this campaign notable is its use of a brand new PowerShell tool called <a href="https://github.com/peewpw/Invoke-PSImage" target="_blank">Invoke-PSImage</a> that allows attackers to hide malicious scripts in the pixels of otherwise benign-looking image files, and later execute them directly from memory.</p>
+<p><strong>Why that's dangerous:</strong> Not only does hiding the script inside an image file help it evade detection, executing it directly from memory is <a href="https://www.barkly.com/what-are-fileless-attack-techniques" target="_blank">a fileless technique</a> that generally won't get picked up by traditional antivirus solutions.</p>
+<p><strong>No download necessary:</strong> Invoke-PSImage can be used to extract scripts from downloaded images <em>or images hosted on the web.</em> That means an attacker doesn't necessarily need to download an image onto a machine in order to get a script embedded inside it to run on that machine.</p>
+<p>In the case of this particular malware campaign, the image file is downloaded to the victim machine. Once extracted, the embedded script is passed to the Windows command line and executed via PowerShell.</p>
+<p><strong>This attack is another troubling example of how attacks are evolving away from using malicious .exe's.</strong></p>
+<p>In the past, we've seen many attacks abusing PowerShell follow a tried-and-true pattern:</p>
+<p>Spam email with Word attachment &gt; Word attachment with embedded macro &gt; Macro launches PowerShell script &gt; PowerShell script downloads and executes malware .exe payload</p>
+<p>In these scenarios, traditional antivirus solutions have a chance of scanning and blocking the attack, but not until the very last step. Once the malware payload has been downloaded onto the device the AV might be able to block it, but only if the malware has been seen before and the AV has a signature it can refer to in order to identify it. In these scenarios, we've seen plenty of instances where the AV misses and the infection is successful.</p>
+<p><strong>This malware campaign presents an even worse scenario in which the AV doesn't have that opportunity:</strong></p>
+<p>Spam email with Word attachment &gt; Word attachment with embedded macro &gt; Macro launches PowerShell script &gt; PowerShell script extracts 2nd PowerShell script from image and executes it from memory &gt; In-memory executed script gives attacker remote access and control</p>
+<p>With no malicious executable file to scan, this attack can easily succeed unless other protections are in place.&nbsp;<span>Barkly has put together a handy security checklist for <a href="https://blog.barkly.com/2018-winter-olympics-it-security-checklist" target="_blank">staying safe during the Olympics</a>.&nbsp;</span>You can also learn more about <a href="https://www.barkly.com/" target="_blank">how Barkly works here</a>.&nbsp; But in the meantime, here are a few other things you can do to reduce your risk of attacks like this:</p>
+<ul>
+<li><strong><a href="https://www.knowbe4.com/products/kevin-mitnick-security-awareness-training/" target="_blank">Remind employees</a> not to open email attachments from senders they don't know:</strong> They should be especially wary of Word documents that ask them to enable content/macros.&nbsp;</li>
+<li><strong>Enforce stricter macro controls:</strong> For starters, consider blocking macros in Office files downloaded from the Internet.</li>
+<li><strong>Disable or restrict PowerShell:</strong> If PowerShell isn't being used for something vital on a machine, disable it. If it is being used for something vital, consider using <a href="https://blogs.msdn.microsoft.com/powershell/2017/11/02/powershell-constrained-language-mode/" target="_blank">PowerShell Constrained Language Mode</a>. That will limit PowerShell to its most basic functionality and make many fileless attack techniques unusable.&nbsp;</li>
+</ul>
+<p>We could not agree more! You need to create a security culture in your organization and these suggestions are important controls.</p>
+<hr>
+<h3 style="text-align: center;">So, How To Create A Security Culture?</h3>
+<p><img src="https://blog.knowbe4.com/hs-fs/hubfs/ASAP_Calendar.png?t=1518798795189&amp;width=320&amp;name=ASAP_Calendar.png" alt="ASAP_Calendar.png" width="320" style="width: 320px; margin: 0px 0px 20px 20px; float: right;" srcset="https://blog.knowbe4.com/hs-fs/hubfs/ASAP_Calendar.png?t=1518798795189&amp;width=160&amp;name=ASAP_Calendar.png 160w, https://blog.knowbe4.com/hs-fs/hubfs/ASAP_Calendar.png?t=1518798795189&amp;width=320&amp;name=ASAP_Calendar.png 320w, https://blog.knowbe4.com/hs-fs/hubfs/ASAP_Calendar.png?t=1518798795189&amp;width=480&amp;name=ASAP_Calendar.png 480w, https://blog.knowbe4.com/hs-fs/hubfs/ASAP_Calendar.png?t=1518798795189&amp;width=640&amp;name=ASAP_Calendar.png 640w, https://blog.knowbe4.com/hs-fs/hubfs/ASAP_Calendar.png?t=1518798795189&amp;width=800&amp;name=ASAP_Calendar.png 800w, https://blog.knowbe4.com/hs-fs/hubfs/ASAP_Calendar.png?t=1518798795189&amp;width=960&amp;name=ASAP_Calendar.png 960w" sizes="(max-width: 320px) 100vw, 320px"></p>
+<p>IT pros don’t exactly know where to start when it comes to creating a mature security awareness program that will work for their organization. We’ve taken away all the guesswork with our <em>new</em> <strong>Automated Security Awareness Program (ASAP).</strong></p>
+<p><strong>Includes:</strong></p>
+<ul>
+<li>15-25 questions depending upon answers</li>
+<li>Suggested training materials based on answers</li>
+<li>Choose and change your program start date and tasks</li>
+<li>Calendar and list view of tasks</li>
+<li>Dashboard with program status, % complete, tasks overdue, etc.</li>
+<li>Detailed and summary exportable PDF versions of your program</li>
+<li>Fully mature awareness program ready in 10 minutes</li>
+</ul>
+<p>If you do not have a KnowBe4 account yet, (free or paid) find out what <em>YOUR</em> program will look like. There is no cost… Start ASAP!</p>
+<p><!--HubSpot Call-to-Action Code --><span class="hs-cta-wrapper" id="hs-cta-wrapper-0a82691e-d266-47ec-9ea0-29f736311ee5"><span class="hs-cta-node hs-cta-0a82691e-d266-47ec-9ea0-29f736311ee5" id="hs-cta-0a82691e-d266-47ec-9ea0-29f736311ee5"><!--[if lte IE 8]><div id="hs-cta-ie-element"></div><![endif]--><a href="https://cta-redirect.hubspot.com/cta/redirect/241394/0a82691e-d266-47ec-9ea0-29f736311ee5"><img class="hs-cta-img" id="hs-cta-img-0a82691e-d266-47ec-9ea0-29f736311ee5" style="border-width:0px;margin: 0 auto; display: block; margin-top: 20px; margin-bottom: 20px" src="https://no-cache.hubspot.com/cta/default/241394/0a82691e-d266-47ec-9ea0-29f736311ee5.png" alt="Get Started Now" align="middle"></a></span><script charset="utf-8" src="https://js.hscta.net/cta/current.js"></script><script type="text/javascript"> hbspt.cta.load(241394, '0a82691e-d266-47ec-9ea0-29f736311ee5', {}); </script></span><!-- end HubSpot Call-to-Action Code --></p>
+<p style="text-align: center;">Don't like to click on redirected buttons? Cut &amp; paste this link in your browser:</p>
+<p style="text-align: center;"><a href="https://info.knowbe4.com/asap">https://info.knowbe4.com/asap</a></p>
+<p style="text-align: center;">PS: If you’re a current KnowBe4 customer, just login to your console, click on ASAP at the top right and get started!</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p></span>
+                </div>
+                
+                     <p id="hubspot-topic_data"> Topics:
+                        
+                            <a class="topic-link" href="https://blog.knowbe4.com/topic/phishing">Phishing</a>
+                        
+                     </p>
+                
+            </div>
+        </div>
+
+
+        <!-- Optional: Blog Author Bio Box -->
+        
+
+    </div>
+</div></div>
+
+</div><!--end row-->
+</div><!--end row-wrapper -->
+
+<div class="row-fluid-wrapper row-depth-1 row-number-8 ">
+<div class="row-fluid ">
+<div class="span12 widget-span widget-type-rich_text " style="" data-widget-type="rich_text" data-x="0" data-w="12">
+<div class="cell-wrapper layout-widget-wrapper">
+<span id="hs_cos_wrapper_module_14542630135022901" class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_rich_text" style="" data-hs-cos-general-type="widget" data-hs-cos-type="rich_text"><p>&nbsp;</p>
+<hr>
+<p><a href="https://blog.knowbe4.com/"><i class="fa fa-angle-double-left"></i> Return To KnowBe4 Security Blog</a></p></span>
+</div><!--end layout-widget-wrapper -->
+</div><!--end widget-span -->
+</div><!--end row-->
+</div><!--end row-wrapper -->
+
+</div><!--end widget-span -->
+<div class="span3 widget-span widget-type-cell blog-sidebar" style="background: #efefef; padding: 0px 20px 20px 20px; border-radius: 5px;" data-widget-type="cell" data-x="9" data-w="3">
+
+<div class="row-fluid-wrapper row-depth-1 row-number-9 ">
+<div class="row-fluid ">
+<div class="span12 widget-span widget-type-blog_subscribe " style="" data-widget-type="blog_subscribe" data-x="0" data-w="12">
+<div class="cell-wrapper layout-widget-wrapper">
+<span id="hs_cos_wrapper_module_145426365370811179" class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_blog_subscribe" style="" data-hs-cos-general-type="widget" data-hs-cos-type="blog_subscribe"><h3 id="hs_cos_wrapper_module_145426365370811179_title" class="hs_cos_wrapper form-title" data-hs-cos-general-type="widget_field" data-hs-cos-type="text"></h3><h4>Subscribe To Our Blog</h4>
+
+<div id="hs_form_target_module_145426365370811179"></div>
+
+  
+ 
+
+
+</span></div><!--end layout-widget-wrapper -->
+</div><!--end widget-span -->
+</div><!--end row-->
+</div><!--end row-wrapper -->
+
+<div class="row-fluid-wrapper row-depth-1 row-number-10 ">
+<div class="row-fluid ">
+<div class="span12 widget-span widget-type-rich_text " style="" data-widget-type="rich_text" data-x="0" data-w="12">
+<div class="cell-wrapper layout-widget-wrapper">
+<span id="hs_cos_wrapper_module_14564367981702623" class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_rich_text" style="" data-hs-cos-general-type="widget" data-hs-cos-type="rich_text"><br>
+<p style="text-align: center;"><a href="https://blog.knowbe4.com/rss.xml" target="_blank">Security Awareness Training<br>Blog RSS Feed</a></p></span>
+</div><!--end layout-widget-wrapper -->
+</div><!--end widget-span -->
+</div><!--end row-->
+</div><!--end row-wrapper -->
+
+<div class="row-fluid-wrapper row-depth-1 row-number-11 ">
+<div class="row-fluid ">
+<div class="span12 widget-span widget-type-text " style="" data-widget-type="text" data-x="0" data-w="12">
+<div class="cell-wrapper layout-widget-wrapper">
+<span id="hs_cos_wrapper_module_145426364697110613" class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_text" style="" data-hs-cos-general-type="widget" data-hs-cos-type="text"><hr></span></div><!--end layout-widget-wrapper -->
+</div><!--end widget-span -->
+</div><!--end row-->
+</div><!--end row-wrapper -->
+
+<div class="row-fluid-wrapper row-depth-1 row-number-12 ">
+<div class="row-fluid ">
+<div class="span12 widget-span widget-type-post_listing " style="" data-widget-type="post_listing" data-x="0" data-w="12">
+<div class="cell-wrapper layout-widget-wrapper">
+<span id="hs_cos_wrapper_top_posts" class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_post_listing" style="" data-hs-cos-general-type="widget" data-hs-cos-type="post_listing"><div class="block">
+  <h3></h3><h4>Recent Posts</h4>
+  <div class="widget-module">
+    <ul class="hs-hash-1739530031">
+    </ul>
+  </div>
+</div>
+</span></div><!--end layout-widget-wrapper -->
+</div><!--end widget-span -->
+</div><!--end row-->
+</div><!--end row-wrapper -->
+
+<div class="row-fluid-wrapper row-depth-1 row-number-13 ">
+<div class="row-fluid ">
+<div class="span12 widget-span widget-type-rich_text " style="" data-widget-type="rich_text" data-x="0" data-w="12">
+<div class="cell-wrapper layout-widget-wrapper">
+<span id="hs_cos_wrapper_module_14542858566507843" class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_rich_text" style="" data-hs-cos-general-type="widget" data-hs-cos-type="rich_text"><div class="blog-pagination"><a class="all-posts-link" href="https://blog.knowbe4.com/all">All Posts <i class="fa fa-angle-double-right"></i></a></div></span>
+</div><!--end layout-widget-wrapper -->
+</div><!--end widget-span -->
+</div><!--end row-->
+</div><!--end row-wrapper -->
+
+<div class="row-fluid-wrapper row-depth-1 row-number-14 ">
+<div class="row-fluid ">
+<div class="span12 widget-span widget-type-text " style="" data-widget-type="text" data-x="0" data-w="12">
+<div class="cell-wrapper layout-widget-wrapper">
+<span id="hs_cos_wrapper_module_145217667708640937" class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_text" style="" data-hs-cos-general-type="widget" data-hs-cos-type="text"><hr></span></div><!--end layout-widget-wrapper -->
+</div><!--end widget-span -->
+</div><!--end row-->
+</div><!--end row-wrapper -->
+
+<div class="row-fluid-wrapper row-depth-1 row-number-15 ">
+<div class="row-fluid ">
+<div class="span12 widget-span widget-type-post_filter " style="" data-widget-type="post_filter" data-x="0" data-w="12">
+<div class="cell-wrapper layout-widget-wrapper">
+<span id="hs_cos_wrapper_module_14618776636272483" class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_post_filter" style="" data-hs-cos-general-type="widget" data-hs-cos-type="post_filter"><div class="block">
+  <h3></h3><h4>Posts By Topic</h4>
+  <div class="widget-module">
+    <ul>
+      
+        <li>
+          <a href="https://blog.knowbe4.com/topic/security-awareness-training">Security Awareness Training <span class="filter-link-count" dir="ltr">(547)</span></a>
+        </li>
+      
+        <li>
+          <a href="https://blog.knowbe4.com/topic/phishing">Phishing <span class="filter-link-count" dir="ltr">(517)</span></a>
+        </li>
+      
+        <li>
+          <a href="https://blog.knowbe4.com/topic/cybercrime">Cybercrime <span class="filter-link-count" dir="ltr">(492)</span></a>
+        </li>
+      
+        <li>
+          <a href="https://blog.knowbe4.com/topic/social-engineering">Social Engineering <span class="filter-link-count" dir="ltr">(346)</span></a>
+        </li>
+      
+        <li>
+          <a href="https://blog.knowbe4.com/topic/ransomware">Ransomware <span class="filter-link-count" dir="ltr">(330)</span></a>
+        </li>
+      
+        <li>
+          <a href="https://blog.knowbe4.com/topic/knowbe4">KnowBe4 <span class="filter-link-count" dir="ltr">(236)</span></a>
+        </li>
+      
+        <li style="display:none;">
+          <a href="https://blog.knowbe4.com/topic/it-security">IT Security <span class="filter-link-count" dir="ltr">(167)</span></a>
+        </li>
+      
+        <li style="display:none;">
+          <a href="https://blog.knowbe4.com/topic/spear-phishing">Spear Phishing <span class="filter-link-count" dir="ltr">(157)</span></a>
+        </li>
+      
+        <li style="display:none;">
+          <a href="https://blog.knowbe4.com/topic/cybersecurity">Cybersecurity <span class="filter-link-count" dir="ltr">(77)</span></a>
+        </li>
+      
+        <li style="display:none;">
+          <a href="https://blog.knowbe4.com/topic/malware">Malware <span class="filter-link-count" dir="ltr">(74)</span></a>
+        </li>
+      
+        <li style="display:none;">
+          <a href="https://blog.knowbe4.com/topic/scam-of-the-week">Scam Of The Week <span class="filter-link-count" dir="ltr">(74)</span></a>
+        </li>
+      
+        <li style="display:none;">
+          <a href="https://blog.knowbe4.com/topic/hacking">Hacking <span class="filter-link-count" dir="ltr">(65)</span></a>
+        </li>
+      
+        <li style="display:none;">
+          <a href="https://blog.knowbe4.com/topic/ceo-fraud">CEO Fraud <span class="filter-link-count" dir="ltr">(46)</span></a>
+        </li>
+      
+        <li style="display:none;">
+          <a href="https://blog.knowbe4.com/topic/data-breach">Data Breach <span class="filter-link-count" dir="ltr">(38)</span></a>
+        </li>
+      
+        <li style="display:none;">
+          <a href="https://blog.knowbe4.com/topic/compliance">Compliance <span class="filter-link-count" dir="ltr">(27)</span></a>
+        </li>
+      
+        <li style="display:none;">
+          <a href="https://blog.knowbe4.com/topic/kevin-mitnick">Kevin Mitnick <span class="filter-link-count" dir="ltr">(19)</span></a>
+        </li>
+      
+        <li style="display:none;">
+          <a href="https://blog.knowbe4.com/topic/russia">Russia <span class="filter-link-count" dir="ltr">(11)</span></a>
+        </li>
+      
+        <li style="display:none;">
+          <a href="https://blog.knowbe4.com/topic/passwords">passwords <span class="filter-link-count" dir="ltr">(9)</span></a>
+        </li>
+      
+        <li style="display:none;">
+          <a href="https://blog.knowbe4.com/topic/cyber-security">cyber security <span class="filter-link-count" dir="ltr">(6)</span></a>
+        </li>
+      
+        <li style="display:none;">
+          <a href="https://blog.knowbe4.com/topic/hackers">hackers <span class="filter-link-count" dir="ltr">(5)</span></a>
+        </li>
+      
+        <li style="display:none;">
+          <a href="https://blog.knowbe4.com/topic/artificial-intelligence">Artificial Intelligence <span class="filter-link-count" dir="ltr">(4)</span></a>
+        </li>
+      
+        <li style="display:none;">
+          <a href="https://blog.knowbe4.com/topic/top-clicked-phishing-email-subjects">Top Clicked Phishing Email Subjects <span class="filter-link-count" dir="ltr">(4)</span></a>
+        </li>
+      
+        <li style="display:none;">
+          <a href="https://blog.knowbe4.com/topic/cyber-attacks">cyber attacks <span class="filter-link-count" dir="ltr">(4)</span></a>
+        </li>
+      
+        <li style="display:none;">
+          <a href="https://blog.knowbe4.com/topic/cryptomining">cryptomining <span class="filter-link-count" dir="ltr">(3)</span></a>
+        </li>
+      
+        <li style="display:none;">
+          <a href="https://blog.knowbe4.com/topic/cyber-warfare">cyber warfare <span class="filter-link-count" dir="ltr">(3)</span></a>
+        </li>
+      
+        <li style="display:none;">
+          <a href="https://blog.knowbe4.com/topic/gdpr">GDPR <span class="filter-link-count" dir="ltr">(2)</span></a>
+        </li>
+      
+        <li style="display:none;">
+          <a href="https://blog.knowbe4.com/topic/antivirus">antivirus <span class="filter-link-count" dir="ltr">(2)</span></a>
+        </li>
+      
+        <li style="display:none;">
+          <a href="https://blog.knowbe4.com/topic/fake-tortion">Fake-tortion <span class="filter-link-count" dir="ltr">(1)</span></a>
+        </li>
+      
+        <li style="display:none;">
+          <a href="https://blog.knowbe4.com/topic/phishme-free">PhishMe Free <span class="filter-link-count" dir="ltr">(1)</span></a>
+        </li>
+      
+        <li style="display:none;">
+          <a href="https://blog.knowbe4.com/topic/cyberattack">cyberattack <span class="filter-link-count" dir="ltr">(1)</span></a>
+        </li>
+      
+        <li style="display:none;">
+          <a href="https://blog.knowbe4.com/topic/cyberinsurance">cyberinsurance <span class="filter-link-count" dir="ltr">(1)</span></a>
+        </li>
+      
+        <li style="display:none;">
+          <a href="https://blog.knowbe4.com/topic/email-scam">email scam <span class="filter-link-count" dir="ltr">(1)</span></a>
+        </li>
+      
+        <li style="display:none;">
+          <a href="https://blog.knowbe4.com/topic/email-security">email security <span class="filter-link-count" dir="ltr">(1)</span></a>
+        </li>
+      
+        <li style="display:none;">
+          <a href="https://blog.knowbe4.com/topic/hackbusters">hackbusters <span class="filter-link-count" dir="ltr">(1)</span></a>
+        </li>
+      
+        <li style="display:none;">
+          <a href="https://blog.knowbe4.com/topic/smishing">smishing <span class="filter-link-count" dir="ltr">(1)</span></a>
+        </li>
+      
+        <li style="display:none;">
+          <a href="https://blog.knowbe4.com/topic/stu-sjouwerman">stu sjouwerman <span class="filter-link-count" dir="ltr">(1)</span></a>
+        </li>
+      
+    </ul>
+    
+      <a class="filter-expand-link" href="#">View All <i class="fa fa-angle-double-down"></i></a>
+    
+  </div>
+</div>
+</span></div><!--end layout-widget-wrapper -->
+</div><!--end widget-span -->
+</div><!--end row-->
+</div><!--end row-wrapper -->
+
+<div class="row-fluid-wrapper row-depth-1 row-number-16 ">
+<div class="row-fluid ">
+<div class="span12 widget-span widget-type-text " style="" data-widget-type="text" data-x="0" data-w="12">
+<div class="cell-wrapper layout-widget-wrapper">
+<span id="hs_cos_wrapper_module_14618776277471305" class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_text" style="" data-hs-cos-general-type="widget" data-hs-cos-type="text"><hr></span></div><!--end layout-widget-wrapper -->
+</div><!--end widget-span -->
+</div><!--end row-->
+</div><!--end row-wrapper -->
+
+<div class="row-fluid-wrapper row-depth-1 row-number-17 ">
+<div class="row-fluid ">
+<div class="span12 widget-span widget-type-google_search google-search-widget" style="" data-widget-type="google_search" data-x="0" data-w="12">
+<div class="cell-wrapper layout-widget-wrapper">
+<span id="hs_cos_wrapper_module_145217479845813048" class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_google_search" style="" data-hs-cos-general-type="widget" data-hs-cos-type="google_search">        <div id="hs-search-module" class="hs-search-module a5d3cf8d-0bab-436f-b54b-38cde9b9fe08">
+            <form class="hs-form">
+                <div class="field" role="search">
+                    <label for="hs-search-a5d3cf8d-0bab-436f-b54b-38cde9b9fe08">Search Our Blog</label>
+                    <div class="input">
+                        <input type="text" id="hs-search-a5d3cf8d-0bab-436f-b54b-38cde9b9fe08" class="hs-input" value="">
+                        <a class="hs-button primary"><i class="fa fa-search"></i></a>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <script>
+  jQuery(function(){
+      var $             = jQuery;
+      var url           = 'http://google.com/search?q=site:' + location.protocol + '//' + location.hostname + ' ';
+      var $searchModule = $('.hs-search-module.a5d3cf8d-0bab-436f-b54b-38cde9b9fe08');
+      var $input        = $searchModule.find('input');
+      var $button       = $searchModule.find('.hs-button.primary');
+      if (false) {
+          $input.val(decodeURIComponent(location.pathname.split('/').join(' ').split('.').join(' ').split('-').join(' ').split('_').join('')));
+      }
+      $button.click(function(){
+          var newUrl = url + $input.val();
+          var win = window.open(newUrl, '_blank');
+          if (win) {
+              //Browser has allowed it to be opened
+              win.focus();
+          } else {
+              //Browser has blocked it
+              location.href = newUrl;
+          }
+      });
+      $input.keypress(function(e){
+          if (e.keyCode !== 13) return;
+          e.preventDefault();
+          $button.click();
+      });
+  });
+</script>
+
+</span></div><!--end layout-widget-wrapper -->
+</div><!--end widget-span -->
+</div><!--end row-->
+</div><!--end row-wrapper -->
+
+</div><!--end widget-span -->
+</div><!--end row-->
+</div><!--end row-wrapper -->
+
+</div><!--end widget-span -->
+</div></div>
+</div><!--end row-->
+</div><!--end row-wrapper -->
+
+<div class="row-fluid-wrapper row-depth-1 row-number-18 ">
+<div class="row-fluid ">
+<div class="fullwidth-bg"><div class="page-center">
+<div class="span12 widget-span widget-type-text " style="" data-widget-type="text" data-x="0" data-w="12">
+<div class="cell-wrapper layout-widget-wrapper">
+<span id="hs_cos_wrapper_module_145217636290736673" class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_text" style="" data-hs-cos-general-type="widget" data-hs-cos-type="text"><hr class="invisibleshort"></span></div><!--end layout-widget-wrapper -->
+</div><!--end widget-span -->
+</div></div>
+</div><!--end row-->
+</div><!--end row-wrapper -->
+
+<div class="row-fluid-wrapper row-depth-1 row-number-19 ">
+<div class="row-fluid ">
+<div class="span12 widget-span widget-type-global_group " style="" data-widget-type="global_group" data-x="0" data-w="12">
+<!-- start coded_template: id:3746651423 path:generated_global_groups/3746651408.html -->
+<div class="" data-global-widget-path="generated_global_groups/3746651408.html">        <div class="row-fluid-wrapper row-depth-1 row-number-1 ">
+        <div class="row-fluid ">
+            <div id="subscribe-section" class="fullwidth-bg"><div class="page-center">
+            <div class="span12 widget-span widget-type-cell text-aligncenter" style="" data-widget-type="cell" data-x="0" data-w="12">
+
+                <div class="row-fluid-wrapper row-depth-1 row-number-2 ">
+                <div class="row-fluid ">
+                    <div class="span3 widget-span widget-type-space " style="" data-widget-type="space" data-x="0" data-w="3">
+                        <div class="cell-wrapper layout-widget-wrapper">
+                            <span id="hs_cos_wrapper_module_14539091443857180" class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_space" style="" data-hs-cos-general-type="widget" data-hs-cos-type="space"></span>
+                        </div><!--end layout-widget-wrapper -->
+                    </div><!--end widget-span -->
+                    <div class="span6 widget-span widget-type-rich_text " style="" data-widget-type="rich_text" data-x="3" data-w="6">
+                        <div class="cell-wrapper layout-widget-wrapper">
+                            <span id="hs_cos_wrapper_module_14539091205885880" class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_rich_text" style="" data-hs-cos-general-type="widget" data-hs-cos-type="rich_text"><h3 id="hs_cos_wrapper_module_14520165797262_title" class="hs_cos_wrapper form-title" data-hs-cos-general-type="widget_field" data-hs-cos-type="text">Get the latest about social engineering</h3>
+<h4>Subscribe to CyberheistNews</h4></span>
+                        </div><!--end layout-widget-wrapper -->
+                    </div><!--end widget-span -->
+                    <div class="span3 widget-span widget-type-space " style="" data-widget-type="space" data-x="9" data-w="3">
+                        <div class="cell-wrapper layout-widget-wrapper">
+                            <span id="hs_cos_wrapper_module_14539091382326848" class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_space" style="" data-hs-cos-general-type="widget" data-hs-cos-type="space"></span>
+                        </div><!--end layout-widget-wrapper -->
+                    </div><!--end widget-span -->
+                </div><!--end row-->
+                </div><!--end row-wrapper -->
+                <div class="row-fluid-wrapper row-depth-1 row-number-3 ">
+                <div class="row-fluid ">
+                    <div class="span3 widget-span widget-type-space " style="" data-widget-type="space" data-x="0" data-w="3">
+                        <div class="cell-wrapper layout-widget-wrapper">
+                            <span id="hs_cos_wrapper_module_145234420548814522" class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_space" style="" data-hs-cos-general-type="widget" data-hs-cos-type="space"></span>
+                        </div><!--end layout-widget-wrapper -->
+                    </div><!--end widget-span -->
+                    <div class="span6 widget-span widget-type-form " style="" data-widget-type="form" data-x="3" data-w="6">
+                        <div class="cell-wrapper layout-widget-wrapper">
+                            <span id="hs_cos_wrapper_module_14539090397543847" class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_form" style="" data-hs-cos-general-type="widget" data-hs-cos-type="form"><h3 id="hs_cos_wrapper_module_14539090397543847_title" class="hs_cos_wrapper form-title" data-hs-cos-general-type="widget_field" data-hs-cos-type="text"></h3>
+
+<div id="hs_form_target_module_14539090397543847"></div>
+
+    
+     
+
+
+
+
+
+
+
+</span>
+                        </div><!--end layout-widget-wrapper -->
+                    </div><!--end widget-span -->
+                    <div class="span3 widget-span widget-type-space " style="" data-widget-type="space" data-x="9" data-w="3">
+                        <div class="cell-wrapper layout-widget-wrapper">
+                            <span id="hs_cos_wrapper_module_145234420187514212" class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_space" style="" data-hs-cos-general-type="widget" data-hs-cos-type="space"></span>
+                        </div><!--end layout-widget-wrapper -->
+                    </div><!--end widget-span -->
+                </div><!--end row-->
+                </div><!--end row-wrapper -->
+            </div><!--end widget-span -->
+            </div></div>
+    </div><!--end row-->
+    </div><!--end row-wrapper -->
+</div><!-- end coded_template: id:3746651423 path:generated_global_groups/3746651408.html -->
+
+</div><!--end widget-span -->
+</div><!--end row-->
+</div><!--end row-wrapper -->
+
+    </div><!--end body -->
+</div><!--end body wrapper -->
+
+<div class="footer-container-wrapper">
+    <div class="footer-container container-fluid">
+
+<div class="row-fluid-wrapper row-depth-1 row-number-1 ">
+<div class="row-fluid ">
+<div class="span12 widget-span widget-type-global_group " style="" data-widget-type="global_group" data-x="0" data-w="12">
+<!-- start coded_template: id:3746596193 path:generated_global_groups/3746596158.html -->
+<div class="" data-global-widget-path="generated_global_groups/3746596158.html"><div class="row-fluid-wrapper row-depth-1 row-number-1 ">
+<div class="row-fluid ">
+<div id="sitefooter" class="fullwidth-bg"><div class="page-center">
+<div class="span12 widget-span widget-type-cell " style="" data-widget-type="cell" data-x="0" data-w="12">
+
+<div class="row-fluid-wrapper row-depth-1 row-number-2 ">
+<div class="row-fluid ">
+<div class="span9 widget-span widget-type-cell " style="" data-widget-type="cell" data-x="0" data-w="9">
+
+<div class="row-fluid-wrapper row-depth-1 row-number-3 ">
+<div class="row-fluid ">
+<div class="span5 widget-span widget-type-cell " style="" data-widget-type="cell" data-x="0" data-w="5">
+
+<div class="row-fluid-wrapper row-depth-1 row-number-4 ">
+<div class="row-fluid ">
+<div class="span12 widget-span widget-type-header " style="" data-widget-type="header" data-x="0" data-w="12">
+<div class="cell-wrapper layout-widget-wrapper">
+<span id="hs_cos_wrapper_module_14520162079299" class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_header" style="" data-hs-cos-general-type="widget" data-hs-cos-type="header"><h4>Products &amp; Services</h4></span></div><!--end layout-widget-wrapper -->
+</div><!--end widget-span -->
+</div><!--end row-->
+</div><!--end row-wrapper -->
+
+<div class="row-fluid-wrapper row-depth-1 row-number-5 ">
+<div class="row-fluid ">
+<div class="span12 widget-span widget-type-simple_menu " style="" data-widget-type="simple_menu" data-x="0" data-w="12">
+<div class="cell-wrapper layout-widget-wrapper">
+<span id="hs_cos_wrapper_module_145201620792910" class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_simple_menu" style="" data-hs-cos-general-type="widget" data-hs-cos-type="simple_menu"><div id="hs_menu_wrapper_module_145201620792910" class="hs-menu-wrapper active-branch flyouts hs-menu-flow-vertical" role="navigation" data-sitemap-name="">
+ <ul>
+  <li class="hs-menu-item hs-menu-depth-1"><a href="//www.knowbe4.com/products/kevin-mitnick-security-awareness-training/" target="_self">Kevin Mitnick Security Awareness Training</a></li>
+  <li class="hs-menu-item hs-menu-depth-1"><a href="//www.knowbe4.com/products/enterprise-security-awareness-training/" target="_self">KnowBe4 Enterprise Awareness Training Program</a></li>
+  <li class="hs-menu-item hs-menu-depth-1"><a href="//www.knowbe4.com/knowbe4-training-modules-overview/" target="_self">Security Awareness Training Modules Overview</a></li>
+  <li class="hs-menu-item hs-menu-depth-1"><a href="//www.knowbe4.com/security-awareness-training-2016-features/" target="_self">Security Awareness Training Features</a></li>
+  <li class="hs-menu-item hs-menu-depth-1"><a href="//www.knowbe4.com/products/knowbe4-customer-awareness-program/" target="_self">Customer Awareness Program</a></li>
+  <li class="hs-menu-item hs-menu-depth-1"><a href="//www.knowbe4.com/products/knowbe4-compliance-manager" target="_self">KnowBe4 Compliance Manager</a></li>
+ </ul>
+</div></span>
+</div><!--end layout-widget-wrapper -->
+</div><!--end widget-span -->
+</div><!--end row-->
+</div><!--end row-wrapper -->
+
+</div><!--end widget-span -->
+<div class="span3 widget-span widget-type-cell " style="" data-widget-type="cell" data-x="5" data-w="3">
+
+<div class="row-fluid-wrapper row-depth-1 row-number-6 ">
+<div class="row-fluid ">
+<div class="span12 widget-span widget-type-header " style="" data-widget-type="header" data-x="0" data-w="12">
+<div class="cell-wrapper layout-widget-wrapper">
+<span id="hs_cos_wrapper_module_145201620792912" class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_header" style="" data-hs-cos-general-type="widget" data-hs-cos-type="header"><h4>Free Tools</h4></span></div><!--end layout-widget-wrapper -->
+</div><!--end widget-span -->
+</div><!--end row-->
+</div><!--end row-wrapper -->
+
+<div class="row-fluid-wrapper row-depth-1 row-number-7 ">
+<div class="row-fluid ">
+<div class="span12 widget-span widget-type-simple_menu " style="" data-widget-type="simple_menu" data-x="0" data-w="12">
+<div class="cell-wrapper layout-widget-wrapper">
+<span id="hs_cos_wrapper_module_145201620792913" class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_simple_menu" style="" data-hs-cos-general-type="widget" data-hs-cos-type="simple_menu"><div id="hs_menu_wrapper_module_145201620792913" class="hs-menu-wrapper active-branch flyouts hs-menu-flow-vertical" role="navigation" data-sitemap-name="">
+ <ul>
+  <li class="hs-menu-item hs-menu-depth-1"><a href="//www.knowbe4.com/phishing-security-test-offer" target="_self">Phishing Security Test</a></li>
+  <li class="hs-menu-item hs-menu-depth-1"><a href="https://www.knowbe4.com/automated-security-awareness-program" target="_self">Awareness Program Builder</a></li>
+  <li class="hs-menu-item hs-menu-depth-1"><a href="//www.knowbe4.com/free-phish-alert" target="_self">Phish Alert Button</a></li>
+  <li class="hs-menu-item hs-menu-depth-1"><a href="//www.knowbe4.com/email-exposure-check/" target="_self">Email Exposure Check Pro</a></li>
+  <li class="hs-menu-item hs-menu-depth-1"><a href="//www.knowbe4.com/domain-spoof-test/" target="_self">Domain Spoof Test</a></li>
+  <li class="hs-menu-item hs-menu-depth-1"><a href="https://www.knowbe4.com/ransomware-simulator" target="_self">Ransomware Simulator</a></li>
+  <li class="hs-menu-item hs-menu-depth-1"><a href="https://www.knowbe4.com/second-chance" target="_self">Second Chance</a></li>
+  <li class="hs-menu-item hs-menu-depth-1"><a href="https://www.knowbe4.com/usb-security-test" target="_self">USB Security Test</a></li>
+  <li class="hs-menu-item hs-menu-depth-1"><a href="https://www.knowbe4.com/weak-password-test" target="_self">Weak Password Test</a></li>
+  <li class="hs-menu-item hs-menu-depth-1"><a href="https://www.knowbe4.com/training-preview" target="_self">Training Preview</a></li>
+ </ul>
+</div></span>
+</div><!--end layout-widget-wrapper -->
+</div><!--end widget-span -->
+</div><!--end row-->
+</div><!--end row-wrapper -->
+
+</div><!--end widget-span -->
+<div class="span4 widget-span widget-type-cell " style="" data-widget-type="cell" data-x="8" data-w="4">
+
+<div class="row-fluid-wrapper row-depth-1 row-number-8 ">
+<div class="row-fluid ">
+<div class="span12 widget-span widget-type-header " style="" data-widget-type="header" data-x="0" data-w="12">
+<div class="cell-wrapper layout-widget-wrapper">
+<span id="hs_cos_wrapper_module_145201620792915" class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_header" style="" data-hs-cos-general-type="widget" data-hs-cos-type="header"><h4>About Us</h4></span></div><!--end layout-widget-wrapper -->
+</div><!--end widget-span -->
+</div><!--end row-->
+</div><!--end row-wrapper -->
+
+<div class="row-fluid-wrapper row-depth-1 row-number-9 ">
+<div class="row-fluid ">
+<div class="span12 widget-span widget-type-simple_menu " style="" data-widget-type="simple_menu" data-x="0" data-w="12">
+<div class="cell-wrapper layout-widget-wrapper">
+<span id="hs_cos_wrapper_module_145201620792916" class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_simple_menu" style="" data-hs-cos-general-type="widget" data-hs-cos-type="simple_menu"><div id="hs_menu_wrapper_module_145201620792916" class="hs-menu-wrapper active-branch flyouts hs-menu-flow-vertical" role="navigation" data-sitemap-name="">
+ <ul>
+  <li class="hs-menu-item hs-menu-depth-1"><a href="//www.knowbe4.com/about-us/" target="_self">Who We Are</a></li>
+  <li class="hs-menu-item hs-menu-depth-1"><a href="//www.knowbe4.com/partnering" target="_self">Partner With Us</a></li>
+  <li class="hs-menu-item hs-menu-depth-1"><a href="//www.knowbe4.com/press" target="_self">Press Releases</a></li>
+  <li class="hs-menu-item hs-menu-depth-1"><a href="//www.knowbe4.com/knowbe4-in-the-news/" target="_self">KnowBe4 In The News</a></li>
+  <li class="hs-menu-item hs-menu-depth-1"><a href="https://blog.knowbe4.com" target="_self">KnowBe4 Blog</a></li>
+  <li class="hs-menu-item hs-menu-depth-1"><a href="https://www.knowbe4.com/jobs" target="_self">Jobs At KnowBe4</a></li>
+ </ul>
+</div></span>
+</div><!--end layout-widget-wrapper -->
+</div><!--end widget-span -->
+</div><!--end row-->
+</div><!--end row-wrapper -->
+
+</div><!--end widget-span -->
+</div><!--end row-->
+</div><!--end row-wrapper -->
+
+</div><!--end widget-span -->
+<div class="span3 widget-span widget-type-cell sitefooter-column-04" style="" data-widget-type="cell" data-x="9" data-w="3">
+
+<div class="row-fluid-wrapper row-depth-1 row-number-10 ">
+<div class="row-fluid ">
+<div class="span12 widget-span widget-type-rich_text " style="" data-widget-type="rich_text" data-x="0" data-w="12">
+<div class="cell-wrapper layout-widget-wrapper">
+<span id="hs_cos_wrapper_module_145201620792918" class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_rich_text" style="" data-hs-cos-general-type="widget" data-hs-cos-type="rich_text"><h5 class="mb-sm">Contact Us</h5>
+<ul class="list list-icons list-icons-sm">
+<li style="color: #cccccc;"><i class="fa fa-phone" style="color: #cccccc;"></i> <strong>Phone:</strong> <a href="tel:+18555669234">855-566-9234</a></li>
+<li style="color: #cccccc;"><i class="fa fa-envelope" style="color: #cccccc;"></i> <strong>Email:</strong> <a href="https://www.knowbe4.com/contact-us">sales@knowbe4.com</a></li>
+</ul>
+<br>
+<h5 class="mb-sm">Contact Support</h5>
+<ul class="list list-icons list-icons-sm">
+<li style="color: #cccccc;"><i class="fa fa-phone" style="color: #cccccc;"></i> <strong>Phone:</strong> <a href="tel:+18558159494">855-815-9494</a></li>
+<li style="color: #cccccc;"><i class="fa fa-envelope" style="color: #cccccc;"></i> <strong>Email:</strong> <a href="https://knowbe4.zendesk.com/hc/en-us" target="_blank">support@knowbe4.com</a></li>
+</ul></span>
+</div><!--end layout-widget-wrapper -->
+</div><!--end widget-span -->
+</div><!--end row-->
+</div><!--end row-wrapper -->
+
+</div><!--end widget-span -->
+</div><!--end row-->
+</div><!--end row-wrapper -->
+
+</div><!--end widget-span -->
+</div></div>
+</div><!--end row-->
+</div><!--end row-wrapper -->
+
+<div class="row-fluid-wrapper row-depth-1 row-number-11 ">
+<div class="row-fluid ">
+<div id="footer" class="fullwidth-bg"><div class="page-center">
+<div class="span12 widget-span widget-type-cell " style="" data-widget-type="cell" data-x="0" data-w="12">
+
+<div class="row-fluid-wrapper row-depth-1 row-number-12 ">
+<div class="row-fluid ">
+<div class="span3 widget-span widget-type-rich_text " style="" data-widget-type="rich_text" data-x="0" data-w="3">
+<div class="cell-wrapper layout-widget-wrapper">
+<span id="hs_cos_wrapper_module_1459370059641899" class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_rich_text" style="" data-hs-cos-general-type="widget" data-hs-cos-type="rich_text"><div><a href="http://www.inc.com/profile/knowbe4" target="_blank" data-mce-target="_blank"><img src="https://blog.knowbe4.com/hs-fs/hubfs/INC500-SMALL.png?t=1518798795189&amp;width=130&amp;name=INC500-SMALL.png" alt="INC500" title="INC500" width="130" style="padding-top: 25px; width: 130px; display: block; margin-left: auto; margin-right: auto;" caption="false" data-constrained="true" srcset="https://blog.knowbe4.com/hs-fs/hubfs/INC500-SMALL.png?t=1518798795189&amp;width=65&amp;name=INC500-SMALL.png 65w, https://blog.knowbe4.com/hs-fs/hubfs/INC500-SMALL.png?t=1518798795189&amp;width=130&amp;name=INC500-SMALL.png 130w, https://blog.knowbe4.com/hs-fs/hubfs/INC500-SMALL.png?t=1518798795189&amp;width=195&amp;name=INC500-SMALL.png 195w, https://blog.knowbe4.com/hs-fs/hubfs/INC500-SMALL.png?t=1518798795189&amp;width=260&amp;name=INC500-SMALL.png 260w, https://blog.knowbe4.com/hs-fs/hubfs/INC500-SMALL.png?t=1518798795189&amp;width=325&amp;name=INC500-SMALL.png 325w, https://blog.knowbe4.com/hs-fs/hubfs/INC500-SMALL.png?t=1518798795189&amp;width=390&amp;name=INC500-SMALL.png 390w" sizes="(max-width: 130px) 100vw, 130px"></a></div></span>
+</div><!--end layout-widget-wrapper -->
+</div><!--end widget-span -->
+<div class="span2 widget-span widget-type-rich_text " style="" data-widget-type="rich_text" data-x="3" data-w="2">
+<div class="cell-wrapper layout-widget-wrapper">
+<span id="hs_cos_wrapper_module_14677534356911174" class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_rich_text" style="" data-hs-cos-general-type="widget" data-hs-cos-type="rich_text"><div><a href="https://www.gartner.com/reviews/market/security-awareness-computer-based-training/vendor/knowbe4?pid=7460" target="_blank" data-mce-target="_blank"><img src="https://blog.knowbe4.com/hs-fs/hubfs/Gartner_Peer_Insights_Logo.png?t=1518798795189&amp;width=143&amp;name=Gartner_Peer_Insights_Logo.png" alt="CyberSecurity500" title="CyberSecurity500" width="143" style="padding-top: 15px; display: block; margin-left: auto; margin-right: auto; width: 143px;" caption="false" data-constrained="true" srcset="https://blog.knowbe4.com/hs-fs/hubfs/Gartner_Peer_Insights_Logo.png?t=1518798795189&amp;width=72&amp;name=Gartner_Peer_Insights_Logo.png 72w, https://blog.knowbe4.com/hs-fs/hubfs/Gartner_Peer_Insights_Logo.png?t=1518798795189&amp;width=143&amp;name=Gartner_Peer_Insights_Logo.png 143w, https://blog.knowbe4.com/hs-fs/hubfs/Gartner_Peer_Insights_Logo.png?t=1518798795189&amp;width=215&amp;name=Gartner_Peer_Insights_Logo.png 215w, https://blog.knowbe4.com/hs-fs/hubfs/Gartner_Peer_Insights_Logo.png?t=1518798795189&amp;width=286&amp;name=Gartner_Peer_Insights_Logo.png 286w, https://blog.knowbe4.com/hs-fs/hubfs/Gartner_Peer_Insights_Logo.png?t=1518798795189&amp;width=358&amp;name=Gartner_Peer_Insights_Logo.png 358w, https://blog.knowbe4.com/hs-fs/hubfs/Gartner_Peer_Insights_Logo.png?t=1518798795189&amp;width=429&amp;name=Gartner_Peer_Insights_Logo.png 429w" sizes="(max-width: 143px) 100vw, 143px"></a></div></span>
+</div><!--end layout-widget-wrapper -->
+</div><!--end widget-span -->
+<div class="span2 widget-span widget-type-rich_text " style="" data-widget-type="rich_text" data-x="5" data-w="2">
+<div class="cell-wrapper layout-widget-wrapper">
+<span id="hs_cos_wrapper_module_1479395623742873" class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_rich_text" style="" data-hs-cos-general-type="widget" data-hs-cos-type="rich_text"><div><img src="https://blog.knowbe4.com/hs-fs/hubfs/Deloitte500-2.png?t=1518798795189&amp;width=120&amp;name=Deloitte500-2.png" alt="Deloitte 500" title="Deloitte 500" width="120" style="padding-top: 15px; display: block; margin-left: auto; margin-right: auto; width: 120px;" caption="false" data-constrained="true" srcset="https://blog.knowbe4.com/hs-fs/hubfs/Deloitte500-2.png?t=1518798795189&amp;width=60&amp;name=Deloitte500-2.png 60w, https://blog.knowbe4.com/hs-fs/hubfs/Deloitte500-2.png?t=1518798795189&amp;width=120&amp;name=Deloitte500-2.png 120w, https://blog.knowbe4.com/hs-fs/hubfs/Deloitte500-2.png?t=1518798795189&amp;width=180&amp;name=Deloitte500-2.png 180w, https://blog.knowbe4.com/hs-fs/hubfs/Deloitte500-2.png?t=1518798795189&amp;width=240&amp;name=Deloitte500-2.png 240w, https://blog.knowbe4.com/hs-fs/hubfs/Deloitte500-2.png?t=1518798795189&amp;width=300&amp;name=Deloitte500-2.png 300w, https://blog.knowbe4.com/hs-fs/hubfs/Deloitte500-2.png?t=1518798795189&amp;width=360&amp;name=Deloitte500-2.png 360w" sizes="(max-width: 120px) 100vw, 120px"></div></span>
+</div><!--end layout-widget-wrapper -->
+</div><!--end widget-span -->
+<div class="span2 widget-span widget-type-rich_text " style="" data-widget-type="rich_text" data-x="7" data-w="2">
+<div class="cell-wrapper layout-widget-wrapper">
+<span id="hs_cos_wrapper_module_14714428696611591" class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_rich_text" style="" data-hs-cos-general-type="widget" data-hs-cos-type="rich_text"><div><a href="http://cybersecurityventures.com/cybersecurity-500/#home/?view_1_page=3" target="_blank" data-mce-target="_blank"><img src="https://blog.knowbe4.com/hs-fs/hubfs/CyberSecurity500Logo.jpg?t=1518798795189&amp;width=143&amp;name=CyberSecurity500Logo.jpg" alt="CyberSecurity500" title="CyberSecurity500" width="143" style="padding-top: 25px; display: block; margin-left: auto; margin-right: auto; width: 143px;" caption="false" data-constrained="true" srcset="https://blog.knowbe4.com/hs-fs/hubfs/CyberSecurity500Logo.jpg?t=1518798795189&amp;width=72&amp;name=CyberSecurity500Logo.jpg 72w, https://blog.knowbe4.com/hs-fs/hubfs/CyberSecurity500Logo.jpg?t=1518798795189&amp;width=143&amp;name=CyberSecurity500Logo.jpg 143w, https://blog.knowbe4.com/hs-fs/hubfs/CyberSecurity500Logo.jpg?t=1518798795189&amp;width=215&amp;name=CyberSecurity500Logo.jpg 215w, https://blog.knowbe4.com/hs-fs/hubfs/CyberSecurity500Logo.jpg?t=1518798795189&amp;width=286&amp;name=CyberSecurity500Logo.jpg 286w, https://blog.knowbe4.com/hs-fs/hubfs/CyberSecurity500Logo.jpg?t=1518798795189&amp;width=358&amp;name=CyberSecurity500Logo.jpg 358w, https://blog.knowbe4.com/hs-fs/hubfs/CyberSecurity500Logo.jpg?t=1518798795189&amp;width=429&amp;name=CyberSecurity500Logo.jpg 429w" sizes="(max-width: 143px) 100vw, 143px"></a></div></span>
+</div><!--end layout-widget-wrapper -->
+</div><!--end widget-span -->
+<div class="span3 widget-span widget-type-google_search google-search-widget" style="" data-widget-type="google_search" data-x="9" data-w="3">
+<div class="cell-wrapper layout-widget-wrapper">
+<span id="hs_cos_wrapper_module_14749036936911217" class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_google_search" style="" data-hs-cos-general-type="widget" data-hs-cos-type="google_search">        <div id="hs-search-module" class="hs-search-module 1bafd325-4275-4338-8677-db6f959dcdef">
+            <form class="hs-form">
+                <div class="field" role="search">
+                    <label for="hs-search-1bafd325-4275-4338-8677-db6f959dcdef"><br><h4 style="color:white; line-height: 50%;">Search</h4></label>
+                    <div class="input">
+                        <input type="text" id="hs-search-1bafd325-4275-4338-8677-db6f959dcdef" class="hs-input" value="">
+                        <a class="hs-button primary"><h6 style="color:#676767;">Search</h6></a>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <script>
+  jQuery(function(){
+      var $             = jQuery;
+      var url           = 'http://google.com/search?q=site:' + location.protocol + '//' + location.hostname + ' ';
+      var $searchModule = $('.hs-search-module.1bafd325-4275-4338-8677-db6f959dcdef');
+      var $input        = $searchModule.find('input');
+      var $button       = $searchModule.find('.hs-button.primary');
+      if (false) {
+          $input.val(decodeURIComponent(location.pathname.split('/').join(' ').split('.').join(' ').split('-').join(' ').split('_').join('')));
+      }
+      $button.click(function(){
+          var newUrl = url + $input.val();
+          var win = window.open(newUrl, '_blank');
+          if (win) {
+              //Browser has allowed it to be opened
+              win.focus();
+          } else {
+              //Browser has blocked it
+              location.href = newUrl;
+          }
+      });
+      $input.keypress(function(e){
+          if (e.keyCode !== 13) return;
+          e.preventDefault();
+          $button.click();
+      });
+  });
+</script>
+
+</span></div><!--end layout-widget-wrapper -->
+</div><!--end widget-span -->
+</div><!--end row-->
+</div><!--end row-wrapper -->
+
+<div class="row-fluid-wrapper row-depth-1 row-number-13 ">
+<div class="row-fluid ">
+<div class="span9 widget-span widget-type-text " style="" data-widget-type="text" data-x="0" data-w="9">
+<div class="cell-wrapper layout-widget-wrapper">
+<span id="hs_cos_wrapper_module_145201620792920" class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_text" style="" data-hs-cos-general-type="widget" data-hs-cos-type="text"><br><br><p style="font-size: 12px; color: #cccccc;">© KnowBe4, Inc. All rights reserved. | <a href="https://www.knowbe4.com/privacy-policy/">Privacy Policy &amp; Terms Of Service</a> | <a href="https://www.knowbe4.com/security/">Security</a></p></span></div><!--end layout-widget-wrapper -->
+</div><!--end widget-span -->
+<div class="span3 widget-span widget-type-raw_html " style="" data-widget-type="raw_html" data-x="9" data-w="3">
+<div class="cell-wrapper layout-widget-wrapper">
+<span id="hs_cos_wrapper_module_145201620792921" class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_raw_html" style="" data-hs-cos-general-type="widget" data-hs-cos-type="raw_html"><br><br>
+<ul class="social-icons">
+<li><a href="https://twitter.com/knowbe4" target="_blank" data-placement="bottom" data-tooltip="" title="" data-original-title="Twitter"><img src="https://blog.knowbe4.com/hubfs/icn-twi-color.png?t=1518798795189"></a></li>
+<li><a href="https://www.facebook.com/knowbe4" target="_blank" data-placement="bottom" data-tooltip="" title="" data-original-title="Facebook"><img src="https://blog.knowbe4.com/hubfs/icn-fab-color.png?t=1518798795189"></a></li>
+<li><a href="http://www.linkedin.com/company/knowbe4" target="_blank" data-placement="bottom" data-tooltip="" title="" data-original-title="Linkedin"><img src="https://blog.knowbe4.com/hubfs/icn-lin-color.png?t=1518798795189"></a></li>
+<li><a href="https://blog.knowbe4.com" target="_blank" data-placement="bottom" data-tooltip="" title="" data-original-title="KnowBe4 Blog"><img src="https://blog.knowbe4.com/hubfs/icn-blg-color.png?t=1518798795189"></a></li>
+<li><a href="http://www.youtube.com/knowbe4" target="_blank" data-placement="bottom" data-tooltip="" title="" data-original-title="YouTube"><img src="https://blog.knowbe4.com/hubfs/icn-yt-color.png?t=1518798795189"></a></li>
+<li><a href="https://community.spiceworks.com/products/36089-knowbe4/reviews" target="_blank" data-placement="bottom" data-tooltip="" title="" data-original-title="SpiceWorks"><img src="https://blog.knowbe4.com/hubfs/icn-sw-color.png?t=1518798795189"></a></li>
+</ul></span>
+</div><!--end layout-widget-wrapper -->
+</div><!--end widget-span -->
+</div><!--end row-->
+</div><!--end row-wrapper -->
+
+<div class="row-fluid-wrapper row-depth-1 row-number-14 ">
+<div class="row-fluid ">
+<div class="span12 widget-span widget-type-raw_html " style="" data-widget-type="raw_html" data-x="0" data-w="12">
+<div class="cell-wrapper layout-widget-wrapper">
+<span id="hs_cos_wrapper_module_145201620792922" class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_raw_html" style="" data-hs-cos-general-type="widget" data-hs-cos-type="raw_html"><a class="scroll-to-top" href="#"><i class="fa fa-chevron-up"></i></a></span>
+</div><!--end layout-widget-wrapper -->
+</div><!--end widget-span -->
+</div><!--end row-->
+</div><!--end row-wrapper -->
+
+</div><!--end widget-span -->
+</div></div>
+</div><!--end row-->
+</div><!--end row-wrapper -->
+
+<div class="row-fluid-wrapper row-depth-1 row-number-15 ">
+<div class="row-fluid ">
+<div class="display-none">
+<div class="span12 widget-span widget-type-raw_html " style="" data-widget-type="raw_html" data-x="0" data-w="12">
+<div class="cell-wrapper layout-widget-wrapper">
+<span id="hs_cos_wrapper_module_145201620792923" class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_raw_html" style="" data-hs-cos-general-type="widget" data-hs-cos-type="raw_html"><!-- Third Party Plugins -->
+<script src="https://blog.knowbe4.com/hs-fs/hub/241394/hub_generated/template_assets/1452342067395/custom/page/Knowbe4_Dec2015/jquery.sticky.min.js"></script>
+<script src="https://blog.knowbe4.com/hs-fs/hub/241394/hub_generated/template_assets/1451993409718/custom/page/Knowbe4_Dec2015/jquery.magnific-popup.min.js"></script>
+<script src="https://blog.knowbe4.com/hs-fs/hub/241394/hub_generated/template_assets/1462457953768/custom/page/Knowbe4_Dec2015/jquery.owl-carousel.min.js"></script>
+<script src="https://blog.knowbe4.com/hs-fs/hub/241394/hub_generated/template_assets/1452170975242/custom/page/Knowbe4_Dec2015/jquery.bootstrap.min.js"></script>
+<script src="https://blog.knowbe4.com/hs-fs/hub/241394/hub_generated/template_assets/1452172330601/custom/page/Knowbe4_Dec2015/jquery.lightboxes.min.js"></script>
+<script src="https://blog.knowbe4.com/hs-fs/hub/241394/hub_generated/template_assets/1452510949752/custom/page/Knowbe4_Dec2015/jquery.scrollspeed.min.js"></script>
+<script src="https://blog.knowbe4.com/hs-fs/hub/241394/hub_generated/template_assets/1452442139217/custom/page/Knowbe4_Dec2015/jquery.wow.min.js"></script>
+<script src="https://blog.knowbe4.com/hs-fs/hub/241394/hub_generated/template_assets/1495152252715/custom/page/Knowbe4_Dec2015/jquery.morphtext.js"></script>
+<script src="https://blog.knowbe4.com/hubfs/html_file/files/vendor/rs-plugin/js/jquery.themepunch.tools.min.js?t=1518798795189"></script>
+<script src="https://blog.knowbe4.com/hubfs/html_file/files/vendor/rs-plugin/js/jquery.themepunch.revolution.min.js?t=1518798795189"></script>
+<!-- Main Script -->
+<script src="https://blog.knowbe4.com/hs-fs/hub/241394/hub_generated/template_assets/1452848014318/custom/page/Knowbe4_Dec2015/Knowbe4-Dec2015-scripts.min.js"></script></span>
+</div><!--end layout-widget-wrapper -->
+</div><!--end widget-span -->
+  </div>
+</div><!--end row-->
+</div><!--end row-wrapper -->
+</div><!-- end coded_template: id:3746596193 path:generated_global_groups/3746596158.html -->
+
+</div><!--end widget-span -->
+</div><!--end row-->
+</div><!--end row-wrapper -->
+
+    </div><!--end footer -->
+</div><!--end footer wrapper -->
+
+    
+<script type="text/javascript" src="https://static.hsstatic.net/content_shared_assets/static-1.4049/js/public_common.js"></script>
+
+    <!--[if lte IE 8]>
+    <script charset="utf-8" src="https://js.hsforms.net/forms/v2-legacy.js"></script>
+    <![endif]-->
+ 
+<script src="https://js.hsforms.net/forms/v2.js"></script>
+
+  <script>
+      hbspt.forms.create({
+          portalId: '241394',
+          formId: '1ddbcef7-1a24-48ec-a334-7e3e4b7a03fe',
+          formInstanceId: '9492',
+          pageId: 5568742135,
+          
+          pageName: '2018 Winter Olympics Phishing Campaign Hides Evil PowerShell Script In Image',
+          
+          contentType: 'blog-post',
+          
+          
+          inlineMessage: "<strong>Thanks for Subscribing!</strong>",
+          
+          css: '',
+          target: '#hs_form_target_module_145426365370811179',
+          
+          formData: {
+            cssClass: 'hs-form stacked'
+          }
+      });
+  </script>
+
+<script src="https://static.hsstatic.net/AsyncSupport/static-1.20/js/post_listing_asset.js"></script>
+<script>
+  hsjQuery(document).ready(function () {
+    var options = {
+      'id': "1739530031",
+      'listing_url': "/_hcms/postlisting?blogId=2065724514&maxLinks=2&listingType=recent&orderByViews=false&hs-expires=1519514816&hs-version=2&hs-signature=AJ2IBuHBXejlPgspuLV_L1Gb09o3LJtjkA",
+      'include_featured_image': false
+    };
+    window.hsPopulateListingFeed(options);
+  });
+</script>
+
+
+        <!--[if lte IE 8]>
+        <script charset="utf-8" src="https://js.hsforms.net/forms/v2-legacy.js"></script>
+        <![endif]-->
+     
+
+    <script>
+        hbspt.forms.create({
+            portalId: '241394',
+            formId: '875e5922-03bf-483f-8d9c-1482d5c07ed0',
+            formInstanceId: '4829',
+            pageId: 5568742135,
+            
+            
+            
+            
+            pageName: "2018 Winter Olympics Phishing Campaign Hides Evil PowerShell Script In Image",
+            
+            
+            redirectUrl: "http:\/\/www.knowbe4.com\/thank-you-for-contacting-knowbe4\/thank-you-newsletter\/",
+            
+            
+            
+            
+            
+            css: '',
+            target: '#hs_form_target_module_14539090397543847',
+            
+            
+            sfdcCampaignId: "None",
+            
+            
+            
+            
+            contentType: "blog-post",
+            
+            formData: {
+            cssClass: 'hs-form stacked hs-custom-form'
+            }
+        });
+    </script>
+
+
+<!-- Start of HubSpot Analytics Code -->
+<script type="text/javascript">
+var _hsq = _hsq || [];
+_hsq.push(["setContentType", "blog-post"]);
+_hsq.push(["setCanonicalUrl", "https:\/\/blog.knowbe4.com\/2018-winter-olympics-malware-campaign-hides-malicious-powershell-script-in-image"]);
+_hsq.push(["setPageId", "5568742135"]);
+_hsq.push(["setContentMetadata", {
+    "contentPageId": 5568742135,
+    "legacyPageId": "5568742135",
+    "contentGroupId": 2065724514,
+    "abTestId": null,
+    "languageVariantId": 5568742135,
+    "languageCode": null
+}]);
+_hsq.push(["setTargetedContentMetadata", []]);
+</script>
+
+<script type="text/javascript" id="hs-script-loader" async defer src="//js.hs-scripts.com/241394.js"></script>
+<!-- End of HubSpot Analytics Code -->
+
+
+<script type="text/javascript">
+var hsVars = {
+    ticks: 1518909956178,
+    page_id: 5568742135,
+    content_group_id: 2065724514,
+    portal_id: 241394,
+    app_hs_base_url: "https://app.hubspot.com",
+    language: "en",
+    analytics_page_type: "blog-post"
+}
+</script>
+
+
+
+<!-- Start Alexa Certify Javascript -->
+<script type="text/javascript">
+_atrk_opts = { atrk_acct:"kYPdn1aMp410O7", domain:"knowbe4.com",dynamic: true};
+(function() { var as = document.createElement('script'); as.type = 'text/javascript'; as.async = true; as.src = "https://d31qbv1cthcecs.cloudfront.net/atrk.js"; var s = document.getElementsByTagName('script')[0];s.parentNode.insertBefore(as, s); })();
+</script>
+<noscript><img src="https://d5nxst8fruw4z.cloudfront.net/atrk.gif?account=kYPdn1aMp410O7" style="display:none" height="1" width="1" alt=""></noscript>
+<!-- End Alexa Certify Javascript -->  
+
+<script type="text/javascript">
+_linkedin_data_partner_id = "21322";
+</script><script type="text/javascript">
+(function(){var s = document.getElementsByTagName("script")[0];
+var b = document.createElement("script");
+b.type = "text/javascript";b.async = true;
+b.src = "https://snap.licdn.com/li.lms-analytics/insight.min.js";
+s.parentNode.insertBefore(b, s);})();
+</script>
+
+<!-- Start Google Code for Remarketing Tag -->
+<!--
+Remarketing tags may not be associated with personally identifiable information or placed on pages related to sensitive categories. See more information and instructions on how to setup the tag on: http://google.com/ads/remarketingsetup
+--------------------------------------------------->
+<script type="text/javascript">
+/* <![CDATA[ */
+var google_conversion_id = 978904139;
+var google_custom_params = window.google_tag_params;
+var google_remarketing_only = true;
+/* ]]> */
+</script>
+<script type="text/javascript" src="//www.googleadservices.com/pagead/conversion.js">
+</script>
+<noscript>
+<div style="display:inline;">
+<img height="1" width="1" style="border-style:none;" alt="" src="//googleads.g.doubleclick.net/pagead/viewthroughconversion/978904139/?guid=ON&amp;script=0">
+</div>
+</noscript>
+<!-- End Google Code for Remarketing Tag -->
+
+<div id="fb-root"></div>
+ <script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&status=0";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+<script type="text/javascript">
+  window.___gcfg = {
+    lang: 'en-US',
+    parsetags: 'onload'
+  };
+  (function() {
+    var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+    po.src = 'https://apis.google.com/js/platform.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+  })();
+</script>
+ <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="https://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+ 
+
+
+    <!-- Generated by the HubSpot Template Builder - template version 1.03 -->
+
+<!-- end coded_template: id:3696723349 path:generated_layouts/3696723329.html -->
+</body></html>

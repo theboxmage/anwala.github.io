@@ -1,0 +1,34 @@
+Tweet
+Jonathan, at our friends at Barkly wrote: "Hi all, according to researchers at McAfee , a new malware campaign is targeting organizations associated with the upcoming 2018 Winter Olympics in Pyeongchang, South Korea.
+The attack is being delivered via phishing emails disguised as alerts from country's National Counter-Terrorism Center, with malicious Word documents attached.
+Once opened, the Word doc encourages readers to enable content. If they do, that triggers an embedded macro to launch PowerShell. Up to this point, this is nothing really new. 
+But here's where things get interesting...
+Why this attack is different: What truly makes this campaign notable is its use of a brand new PowerShell tool called Invoke-PSImage that allows attackers to hide malicious scripts in the pixels of otherwise benign-looking image files, and later execute them directly from memory.
+Why that's dangerous: Not only does hiding the script inside an image file help it evade detection, executing it directly from memory is a fileless technique that generally won't get picked up by traditional antivirus solutions.
+No download necessary: Invoke-PSImage can be used to extract scripts from downloaded images or images hosted on the web. That means an attacker doesn't necessarily need to download an image onto a machine in order to get a script embedded inside it to run on that machine.
+In the case of this particular malware campaign, the image file is downloaded to the victim machine. Once extracted, the embedded script is passed to the Windows command line and executed via PowerShell.
+This attack is another troubling example of how attacks are evolving away from using malicious .exe's.
+In the past, we've seen many attacks abusing PowerShell follow a tried-and-true pattern:
+Spam email with Word attachment > Word attachment with embedded macro > Macro launches PowerShell script > PowerShell script downloads and executes malware .exe payload
+In these scenarios, traditional antivirus solutions have a chance of scanning and blocking the attack, but not until the very last step. Once the malware payload has been downloaded onto the device the AV might be able to block it, but only if the malware has been seen before and the AV has a signature it can refer to in order to identify it. In these scenarios, we've seen plenty of instances where the AV misses and the infection is successful.
+This malware campaign presents an even worse scenario in which the AV doesn't have that opportunity:
+Spam email with Word attachment > Word attachment with embedded macro > Macro launches PowerShell script > PowerShell script extracts 2nd PowerShell script from image and executes it from memory > In-memory executed script gives attacker remote access and control
+With no malicious executable file to scan, this attack can easily succeed unless other protections are in place. Barkly has put together a handy security checklist for staying safe during the Olympics . You can also learn more about how Barkly works here .  But in the meantime, here are a few other things you can do to reduce your risk of attacks like this:
+Remind employees not to open email attachments from senders they don't know: They should be especially wary of Word documents that ask them to enable content/macros. 
+Enforce stricter macro controls: For starters, consider blocking macros in Office files downloaded from the Internet.
+Disable or restrict PowerShell: If PowerShell isn't being used for something vital on a machine, disable it. If it is being used for something vital, consider using PowerShell Constrained Language Mode . That will limit PowerShell to its most basic functionality and make many fileless attack techniques unusable. 
+We could not agree more! You need to create a security culture in your organization and these suggestions are important controls.
+So, How To Create A Security Culture?
+IT pros don’t exactly know where to start when it comes to creating a mature security awareness program that will work for their organization. We’ve taken away all the guesswork with our new Automated Security Awareness Program (ASAP).
+Includes:
+15-25 questions depending upon answers
+Suggested training materials based on answers
+Choose and change your program start date and tasks
+Calendar and list view of tasks
+Dashboard with program status, % complete, tasks overdue, etc.
+Detailed and summary exportable PDF versions of your program
+Fully mature awareness program ready in 10 minutes
+If you do not have a KnowBe4 account yet, (free or paid) find out what YOUR program will look like. There is no cost… Start ASAP!
+Don't like to click on redirected buttons? Cut & paste this link in your browser:
+PS: If you’re a current KnowBe4 customer, just login to your console, click on ASAP at the top right and get started!
+ 

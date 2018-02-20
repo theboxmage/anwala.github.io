@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html class="js no-touch svg no-oldie no-ie" xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-US" lang="en-US" prefix="og: http://ogp.me/ns#">
+<head>
+  <meta charset="UTF-8" />
+  <script type="text/javascript">
+      
+      if (window.self === window.top) {
+          window.onload = function() {
+              
+              if (!String.prototype.includes) {
+                  String.prototype.includes = function(search, start) {
+                      'use strict';
+                      if (typeof start !== 'number') {
+                          start = 0;
+                      }
+                      if (start + search.length > this.length) {
+                          return false;
+                      } else {
+                          return this.indexOf(search, start) !== -1;
+                      }
+                  };
+              }
+              var curUserAgent = navigator.userAgent;
+              curUserAgent = curUserAgent.toLocaleLowerCase();
+              var iosPattern = /os (\d+)_(\d+)(_(\d+))? like mac os x/g;
+              var ios9Version = getVersionNumber(9, 0, 0);
+              var iosDevice = isIOS();
+              var socialMediaBot = isSocialMediaBot();
+              
+              if (iosDevice && curUserAgent.includes("fbav")) {
+                  var openAppInFrame = function (location) {
+                      var iframe = document.createElement("iframe");
+                      document.body.appendChild(iframe);
+                      iframe.style.display = "none";
+                      iframe.contentDocument.write("\<script\>top.location.replace(\"" + location + "\");\<\/script\>");
+                  };
+                  openAppInFrame("applenews:///Ak9MONZQJQR2snODLAPS4jA");
+                  
+                  redirectToUrlAfterTimeout("http://people.com/sports/winter-olympics-2018-south-korea-best-photos", 0);
+              } else if (!socialMediaBot) {
+                  
+                  redirectToUrl("http://people.com/sports/winter-olympics-2018-south-korea-best-photos")
+              }
+              function getVersionNumber(majorVersion, minorVersion, pointVersion) {
+                  return (majorVersion * (1000 * 1000)) + (minorVersion * 1000) + pointVersion;
+              }
+              function isIOS() {
+                  var isIos = false;
+                  
+                  if (curUserAgent.includes("ipad") || curUserAgent.includes("ipod") || curUserAgent.includes("iphone")) {
+                      
+                      var match = iosPattern.exec(curUserAgent);
+                      var majorVersion = match[1] != null ? parseInt(match[1]) : 0;
+                      var minorVersion = match[2] != null ? parseInt(match[2]) : 0;
+                      var pointVersion = match[3] != null ? parseInt(match[3].substring(1)) : 0;
+                      var result = getVersionNumber(majorVersion, minorVersion, pointVersion);
+                      isIos = (result >= ios9Version);
+                  }
+                  return isIos;
+              }
+              
+              function isSocialMediaBot() {
+                  return curUserAgent.includes("twitterbot") || curUserAgent.includes("facebookexternalhit") || curUserAgent.includes("facebot") || curUserAgent.includes("linkedinbot") || false;
+              }
+              function redirectToUrl(url) {
+                  top.location.replace(url);
+              }
+              function redirectToUrlAfterTimeout(url, timeout) {
+                  setTimeout(function() { redirectToUrl(url) }, timeout);
+              }
+          };
+      }
+  </script>
+  <meta name="Author" content="People" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7, IE=9" />
+  <meta name="apple-itunes-app" content="app-id=1066498020, app-argument=https://apple.news/Ak9MONZQJQR2snODLAPS4jA" />
+      <title>All the Best Photos from the 2018 PyeongChang Winter Olympics Opening Ceremony</title>
+      <meta property="og:type" content="article" />
+      <meta property="og:title" content="All the Best Photos from the 2018 PyeongChang Winter Olympics Opening Ceremony — People" />
+      <meta property="og:description" content="Meet Soohorang the White Tiger The colorful, culture-filled ceremony featured a group of young kids who appeared to embark on a journey through South Korea’s rugged mountains with Pyeongchang’s official Olympic mascot, Soohorang, a white tiger. Welcome to Pyeonchang! In frigid temperatures and under the watch of spectators around the world, South Korea opened the 2018 Winter Olympics in Pyeongchang Friday night — or Friday morning here in the U.S. — with a joyous ceremony centered on peace." />
+      <meta property="og:image" content="https://c.apple.news/AgEXQWs5TU9OWlFKUVIyc25PRExBUFM0akEAMA" />
+      <meta name="twitter:card" content="summary" />
+      <meta name="twitter:title" content="All the Best Photos from the 2018 PyeongChang Winter Olympics Opening Ceremony" />
+      <meta name="twitter:description" content="Meet Soohorang the White Tiger The colorful, culture-filled ceremony featured a group of young kids who appeared to embark on a journey through South Korea’s rugged mountains with Pyeongchang’s official Olympic mascot, Soohorang, a white tiger. Welcome to Pyeonchang! In frigid temperatures and under the watch of spectators around the world, South Korea opened the 2018 Winter Olympics in Pyeongchang Friday night — or Friday morning here in the U.S. — with a joyous ceremony centered on peace." />
+      <meta name="twitter:image" content="https://c.apple.news/AgEXQWs5TU9OWlFKUVIyc25PRExBUFM0akEAMA" />
+  <link rel="shortcut icon" href="/images/favicon.ico" />
+  <link rel="apple-touch-icon" href="/images/apple-touch-icon.png" />
+  <link rel="stylesheet" href="https://www.apple.com/wss/fonts?family=Myriad+Set+Pro&amp;v=1" type="text/css" />
+  <link rel="stylesheet" href="/css/index.css" type="text/css" />
+</head>
+<body>
+<div id="main">
+        <div class="content">
+<div class="middle_column">
+
+    <img src="/images/Appicon_v3.png" srcset="/images/Appicon_v3.png 1x,
+  /images/Appicon_v3@2x.png 2x,
+  /images/Appicon_v3@3x.png 3x"/>
+<br /><h1>
+    Opening story…</nobr>
+  </h1>
+  <p>
+    <a href="http://people.com/sports/winter-olympics-2018-south-korea-best-photos">Click here</a> if the story doesn&#39;t open after a few seconds.
+  </p>
+  <p><a class="more" href="https://www.apple.com/news"><nobr>Learn more about Apple News</nobr></a></p></div>
+    </div>
+    <div class="footer">
+      <div class="policies">
+      <div class="first_logo"><img src="/images/applelogo.png" srcset="/images/applelogo.png 1x,
+      /images/applelogo@2x.png 2x, /images/applelogo@3x.png 3x" width="19" height="23"/></div>
+        <a href="https://www.apple.com/privacy/">Privacy Policy</a>
+        <span class="separator">|</span>
+        <a href="https://www.apple.com/legal/internet-services/terms/site.html">Terms and Conditions</a>
+      </div>
+      <div class="copyright">Copyright &copy; 2018 Apple Inc. All Rights Reserved.</div>
+      <div class="second_logo"><img src="/images/applelogo.png" srcset="/images/applelogo.png 1x,
+      /images/applelogo@2x.png 2x, /images/applelogo@3x.png 3x"/></div>
+    </div>
+  </div>
+</body>
+</html>
+

@@ -1,0 +1,792 @@
+<!DOCTYPE html>
+<html lang="en-us" xmlns:fb="http://ogp.me/ns/fb#" xmlns:fb="http://www.facebook.com/2008/fbml">
+    <head>
+        <script>var _sf_startpt=(new Date()).getTime()</script>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="IE=9; IE=8; IE=7; IE=EDGE; chrome=1"><script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,t,n){function r(n){if(!t[n]){var o=t[n]={exports:{}};e[n][0].call(o.exports,function(t){var o=e[n][1][t];return r(o||t)},o,o.exports)}return t[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({1:[function(e,t,n){function r(){}function o(e,t,n){return function(){return i(e,[f.now()].concat(u(arguments)),t?null:this,n),t?void 0:this}}var i=e("handle"),a=e(2),u=e(3),c=e("ee").get("tracer"),f=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],d="api-",l=d+"ixn-";a(p,function(e,t){s[t]=o(d+t,!0,"api")}),s.addPageAction=o(d+"addPageAction",!0),s.setCurrentRouteName=o(d+"routeName",!0),t.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,t){var n={},r=this,o="function"==typeof t;return i(l+"tracer",[f.now(),e,n],r),function(){if(c.emit((o?"":"no-")+"fn-start",[f.now(),r,o],n),o)try{return t.apply(this,arguments)}catch(e){throw c.emit("fn-err",[arguments,this,e],n),e}finally{c.emit("fn-end",[f.now()],n)}}}};a("setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,t){m[t]=o(l+t)}),newrelic.noticeError=function(e){"string"==typeof e&&(e=new Error(e)),i("err",[e,f.now()])}},{}],2:[function(e,t,n){function r(e,t){var n=[],r="",i=0;for(r in e)o.call(e,r)&&(n[i]=t(r,e[r]),i+=1);return n}var o=Object.prototype.hasOwnProperty;t.exports=r},{}],3:[function(e,t,n){function r(e,t,n){t||(t=0),"undefined"==typeof n&&(n=e?e.length:0);for(var r=-1,o=n-t||0,i=Array(o<0?0:o);++r<o;)i[r]=e[t+r];return i}t.exports=r},{}],4:[function(e,t,n){t.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,t,n){function r(){}function o(e){function t(e){return e&&e instanceof r?e:e?c(e,u,i):i()}function n(n,r,o,i){if(!d.aborted||i){e&&e(n,r,o);for(var a=t(o),u=m(n),c=u.length,f=0;f<c;f++)u[f].apply(a,r);var p=s[y[n]];return p&&p.push([b,n,r,a]),a}}function l(e,t){v[e]=m(e).concat(t)}function m(e){return v[e]||[]}function w(e){return p[e]=p[e]||o(n)}function g(e,t){f(e,function(e,n){t=t||"feature",y[n]=t,t in s||(s[t]=[])})}var v={},y={},b={on:l,emit:n,get:w,listeners:m,context:t,buffer:g,abort:a,aborted:!1};return b}function i(){return new r}function a(){(s.api||s.feature)&&(d.aborted=!0,s=d.backlog={})}var u="nr@context",c=e("gos"),f=e(2),s={},p={},d=t.exports=o();d.backlog=s},{}],gos:[function(e,t,n){function r(e,t,n){if(o.call(e,t))return e[t];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,t,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return e[t]=r,r}var o=Object.prototype.hasOwnProperty;t.exports=r},{}],handle:[function(e,t,n){function r(e,t,n,r){o.buffer([e],r),o.emit(e,t,n)}var o=e("ee").get("handle");t.exports=r,r.ee=o},{}],id:[function(e,t,n){function r(e){var t=typeof e;return!e||"object"!==t&&"function"!==t?-1:e===window?0:a(e,i,function(){return o++})}var o=1,i="nr@id",a=e("gos");t.exports=r},{}],loader:[function(e,t,n){function r(){if(!x++){var e=h.info=NREUM.info,t=d.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&t))return s.abort();f(y,function(t,n){e[t]||(e[t]=n)}),c("mark",["onload",a()+h.offset],null,"api");var n=d.createElement("script");n.src="https://"+e.agent,t.parentNode.insertBefore(n,t)}}function o(){"complete"===d.readyState&&i()}function i(){c("mark",["domContent",a()+h.offset],null,"api")}function a(){return E.exists&&performance.now?Math.round(performance.now()):(u=Math.max((new Date).getTime(),u))-h.offset}var u=(new Date).getTime(),c=e("handle"),f=e(2),s=e("ee"),p=window,d=p.document,l="addEventListener",m="attachEvent",w=p.XMLHttpRequest,g=w&&w.prototype;NREUM.o={ST:setTimeout,SI:p.setImmediate,CT:clearTimeout,XHR:w,REQ:p.Request,EV:p.Event,PR:p.Promise,MO:p.MutationObserver};var v=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1071.min.js"},b=w&&g&&g[l]&&!/CriOS/.test(navigator.userAgent),h=t.exports={offset:u,now:a,origin:v,features:{},xhrWrappable:b};e(1),d[l]?(d[l]("DOMContentLoaded",i,!1),p[l]("load",r,!1)):(d[m]("onreadystatechange",o),p[m]("onload",r)),c("mark",["firstbyte",u],null,"api");var x=0,E=e(4)},{}]},{},["loader"]);</script><script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,t,n){function r(n){if(!t[n]){var o=t[n]={exports:{}};e[n][0].call(o.exports,function(t){var o=e[n][1][t];return r(o||t)},o,o.exports)}return t[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({1:[function(e,t,n){function r(){}function o(e,t,n){return function(){return i(e,[f.now()].concat(u(arguments)),t?null:this,n),t?void 0:this}}var i=e("handle"),a=e(2),u=e(3),c=e("ee").get("tracer"),f=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],d="api-",l=d+"ixn-";a(p,function(e,t){s[t]=o(d+t,!0,"api")}),s.addPageAction=o(d+"addPageAction",!0),s.setCurrentRouteName=o(d+"routeName",!0),t.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,t){var n={},r=this,o="function"==typeof t;return i(l+"tracer",[f.now(),e,n],r),function(){if(c.emit((o?"":"no-")+"fn-start",[f.now(),r,o],n),o)try{return t.apply(this,arguments)}catch(e){throw c.emit("fn-err",[arguments,this,e],n),e}finally{c.emit("fn-end",[f.now()],n)}}}};a("setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,t){m[t]=o(l+t)}),newrelic.noticeError=function(e){"string"==typeof e&&(e=new Error(e)),i("err",[e,f.now()])}},{}],2:[function(e,t,n){function r(e,t){var n=[],r="",i=0;for(r in e)o.call(e,r)&&(n[i]=t(r,e[r]),i+=1);return n}var o=Object.prototype.hasOwnProperty;t.exports=r},{}],3:[function(e,t,n){function r(e,t,n){t||(t=0),"undefined"==typeof n&&(n=e?e.length:0);for(var r=-1,o=n-t||0,i=Array(o<0?0:o);++r<o;)i[r]=e[t+r];return i}t.exports=r},{}],4:[function(e,t,n){t.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,t,n){function r(){}function o(e){function t(e){return e&&e instanceof r?e:e?c(e,u,i):i()}function n(n,r,o,i){if(!d.aborted||i){e&&e(n,r,o);for(var a=t(o),u=m(n),c=u.length,f=0;f<c;f++)u[f].apply(a,r);var p=s[y[n]];return p&&p.push([b,n,r,a]),a}}function l(e,t){v[e]=m(e).concat(t)}function m(e){return v[e]||[]}function w(e){return p[e]=p[e]||o(n)}function g(e,t){f(e,function(e,n){t=t||"feature",y[n]=t,t in s||(s[t]=[])})}var v={},y={},b={on:l,emit:n,get:w,listeners:m,context:t,buffer:g,abort:a,aborted:!1};return b}function i(){return new r}function a(){(s.api||s.feature)&&(d.aborted=!0,s=d.backlog={})}var u="nr@context",c=e("gos"),f=e(2),s={},p={},d=t.exports=o();d.backlog=s},{}],gos:[function(e,t,n){function r(e,t,n){if(o.call(e,t))return e[t];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,t,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return e[t]=r,r}var o=Object.prototype.hasOwnProperty;t.exports=r},{}],handle:[function(e,t,n){function r(e,t,n,r){o.buffer([e],r),o.emit(e,t,n)}var o=e("ee").get("handle");t.exports=r,r.ee=o},{}],id:[function(e,t,n){function r(e){var t=typeof e;return!e||"object"!==t&&"function"!==t?-1:e===window?0:a(e,i,function(){return o++})}var o=1,i="nr@id",a=e("gos");t.exports=r},{}],loader:[function(e,t,n){function r(){if(!x++){var e=h.info=NREUM.info,t=d.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&t))return s.abort();f(y,function(t,n){e[t]||(e[t]=n)}),c("mark",["onload",a()+h.offset],null,"api");var n=d.createElement("script");n.src="https://"+e.agent,t.parentNode.insertBefore(n,t)}}function o(){"complete"===d.readyState&&i()}function i(){c("mark",["domContent",a()+h.offset],null,"api")}function a(){return E.exists&&performance.now?Math.round(performance.now()):(u=Math.max((new Date).getTime(),u))-h.offset}var u=(new Date).getTime(),c=e("handle"),f=e(2),s=e("ee"),p=window,d=p.document,l="addEventListener",m="attachEvent",w=p.XMLHttpRequest,g=w&&w.prototype;NREUM.o={ST:setTimeout,SI:p.setImmediate,CT:clearTimeout,XHR:w,REQ:p.Request,EV:p.Event,PR:p.Promise,MO:p.MutationObserver};var v=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1071.min.js"},b=w&&g&&g[l]&&!/CriOS/.test(navigator.userAgent),h=t.exports={offset:u,now:a,origin:v,features:{},xhrWrappable:b};e(1),d[l]?(d[l]("DOMContentLoaded",i,!1),p[l]("load",r,!1)):(d[m]("onreadystatechange",o),p[m]("onload",r)),c("mark",["firstbyte",u],null,"api");var x=0,E=e(4)},{}]},{},["loader"]);</script>
+        <meta name="description" content="{meta_description}">
+
+        <!-- DNS prefetching  -->
+        <link rel="dns-prefetch" href="//s3.amazonaws.com">
+
+        <!-- Twitter card -->
+        <meta name="twitter:card" value="'The losers will, of course, be women, and women’s sports, and, in fact, all women lose.'">
+
+        <!-- Facebook -->
+        <meta property="og:title" content="Shame: 2018 Winter Olympics allows men claiming to be ‘women’ to compete against real women">
+        <meta property="og:type" content="article">
+        <meta property="og:locale" content="en_US">
+        <meta property="og:description" content="'The losers will, of course, be women, and women’s sports, and, in fact, all women lose.'">
+        <meta property="og:image" content="https://s3.amazonaws.com/lifesite/Women_being_puntched_in_face.jpg">
+        <meta property="og:url" content="https://www.lifesitenews.com/blogs/shame-2018-winter-olympics-allows-men-claiming-to-be-women-to-compete-again">
+        <meta property="og:site_name" content="LifeSiteNews">
+        <meta property="fb:admins" content="1477213784">
+        <meta property="fb:app_id" content="132010293551131">
+        <meta property="fb:pages" content="112623813202">
+
+        <!-- Twitter -->
+        <meta name="twitter:site" content="@LifeSite">
+        <meta name="twitter:url" content="https://www.lifesitenews.com/blogs/shame-2018-winter-olympics-allows-men-claiming-to-be-women-to-compete-again">
+        <meta name="twitter:description" content="'The losers will, of course, be women, and women’s sports, and, in fact, all women lose.'">
+        <meta name="twitter:image" content="https://s3.amazonaws.com/lifesite/Women_being_puntched_in_face.jpg">
+        <meta name="twitter:title" content="Shame: 2018 Winter Olympics allows men claiming to be ‘women’ to compete against real women">
+        <meta name="twitter:card" content="summary_large_image">
+
+        <!-- Canonical URL -->
+        <link rel="canonical" href="https://www.lifesitenews.com/blogs/shame-2018-winter-olympics-allows-men-claiming-to-be-women-to-compete-again">
+
+        
+            <!-- AMP version -->
+            <link rel="amphtml" href="https://www.lifesitenews.com/mobile/blogs/shame-2018-winter-olympics-allows-men-claiming-to-be-women-to-compete-again">
+        
+
+        <!-- Title -->
+        <title>Shame: 2018 Winter Olympics allows men claiming to be ‘women’ to compete against real women | Blogs | LifeSite</title>
+
+        <!--[if lt IE 9]>
+  <script src="/assets/js/ie/html5shiv.js"></script>
+  <script src="/assets/js/ie/respond.min.js"></script>
+<![endif]-->
+
+        <!-- CSS  -->
+        <link rel="stylesheet" href="/assets/css/lifesitenews.css?v=1516877314">
+
+        <!-- RSS -->
+                
+
+        <!-- Facebook Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+  n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+  n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+  t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
+  document,'script','https://connect.facebook.net/en_US/fbevents.js');
+  fbq('init', '722911401152529');
+</script>
+<noscript>
+<img height="1" width="1" style="display:none"
+  src="https://www.facebook.com/tr?id=722911401152529&ev=PageView&noscript=1" />
+</noscript>
+<!-- DO NOT MODIFY -->
+<!-- End Facebook Pixel Code -->
+
+
+    <script type="application/ld+json">
+        {
+          "@context": "http://schema.org",
+          "@type": "BlogPosting",
+          "mainEntityOfPage":{
+            "@type":"WebPage",
+            "@id":"https://www.lifesitenews.com/blogs/shame-2018-winter-olympics-allows-men-claiming-to-be-women-to-compete-again"
+          },
+          "headline": "Shame: 2018 Winter Olympics allows men claiming to be ‘women’ to compete against real women",
+          "image": {
+            "@type": "ImageObject",
+            "url": "
+                                    
+                        https://s3.amazonaws.com/lifesite/Women_being_puntched_in_face.jpg
+                    
+                            ",
+            "width": 810,
+            "height": 500
+          },
+          "datePublished": "2018-02-09T16:13:00Z",
+          "dateModified": "2018-02-09T16:53:43Z",
+          "author": {
+            "@type": "Person",
+            "name": "Dorothy Cummings McLean"
+          },
+           "publisher": {
+                "@type": "Organization",
+                "name": "LifeSite",
+                "logo": {
+                "@type": "ImageObject",
+                "url": "https://www.lifesitenews.com/assets/images/ui/lsn-logo-amp.png",
+                "width": 115,
+                "height": 60
+            }
+          },
+          "description": "'The losers will, of course, be women, and women’s sports, and, in fact, all women lose.'"
+        }
+    </script>
+
+    </head>
+
+    <body>
+
+        
+
+            <header id="header">
+
+    <div class="container">
+
+        <a class="logo" href="/">
+            <img src="/assets/images/ui/lsn-logo.png" alt="LifeSiteNews" class="img-responsive" id="logo-expanded">
+        </a>
+
+        <nav id="main-nav" class="hidden-xs">
+            <ul>
+                
+                <li class="news">
+                
+                    <a href="/news">News</a>
+                    <ul>
+                        <li><a href="/topics/abortion">Abortion</a></li>
+                        <li><a href="/topics/faith">Faith</a></li>
+                        <li><a href="/topics/family">Family</a></li>
+                        <li><a href="/topics">More &nbsp; <i class="fa fa-caret-right"></i></a></li>
+                        <li class="nav-divider"></li>
+                        <li><a href="/news/usa">USA</a></li>
+                        <li><a href="/news/canada">Canada</a></li>
+                        <li><a href="/news/world">World</a></li>
+                        <li class="nav-divider"></li>
+                        <li><a href="/all/today">All today's news</a></li>
+                        <li><a href="/all/last-ten-days">Last 10 days</a></li>
+                    </ul>
+                </li>
+                
+                <li class="opinion">
+                
+                    <a href="/opinion">Opinion</a>
+                    <ul>
+                        <li><a href="/opinion/usa">USA</a></li>
+                        <li><a href="/opinion/canada">Canada</a></li>
+                        <li><a href="/opinion/world">World</a></li>
+                        <li class="nav-divider"></li>
+                        <li><a href="/all/today">All today's opinion</a></li>
+                        <li><a href="/all/last-ten-days">Last 10 days</a></li>
+                    </ul>
+                </li>
+                
+                <li class="blogs active">
+                
+                    <a href="/blogs">Blogs</a>
+                    <ul>
+                        
+                        <li><a href="/blogs/author/john-henry-westen">John-Henry Westen</a></li>
+                        
+                        <li><a href="/blogs/author/steve-jalsevac">Steve Jalsevac</a></li>
+                        
+                        <li><a href="/blogs/author/jonathon-van-maren">Jonathon van Maren</a></li>
+                        
+                        <li><a href="/blogs/author/pete-baklinski">Pete Baklinski</a></li>
+                        
+                        <li><a href="/blogs/author/claire-chretien">Claire Chretien</a></li>
+                        
+                        <li><a href="/blogs/author/doug-mainwaring">Doug Mainwaring</a></li>
+                        
+                        <li><a href="/blogs/author/peter-kwasniewski">Peter Kwasniewski</a></li>
+                        
+                        <li><a href="/blogs/author/dorothy-cummings-mclean">Dorothy Cummings McLean</a></li>
+                        
+                    </ul>
+                </li>
+                
+                <li class="pulse"><a href="/pulse">The Pulse</a></li>
+                <li><a href="/resources">Resources</a></li>
+                <li><a href="/petitions">Petitions</a></li>
+                <li class="search-icon visible-sm"><a href="/archives"><i class="fa fa-search"></i></a></li>
+                
+            </ul>
+        </nav>
+
+        
+        <nav id="user-nav">
+            <ul>
+                                    <li><a id="user-login" class="has-modal" href="/ajax/login">Login</a></li>
+                    <li><a id="user-create-account" class="has-modal" href="/ajax/create">Create an Account</a></li>
+                                                <li class="important"><a id="user-subscribe" class="has-modal" href="/ajax/subscribe">Subscribe</a></li>
+                <li class="important"><a href="/give?utm_source=website&amp;utm_medium=main-nav&amp;utm_campaign=general_donations_2018">Donate</a></li>
+            </ul>
+        </nav>
+        
+
+        <nav class="utility-nav">
+            <ul>
+                <li class="search icon"><a href="/archives"><i class="fa fa-search"></i> <span class="hidden-xs hidden-sm hidden-md">Search</span></a></li>
+                <li class="facebook icon"><a href="https://www.facebook.com/LifeSiteNews"><i class="fa fa-facebook"></i></a></li>
+                <li class="twitter icon"><a href="https://twitter.com/LifeSite"><i class="fa fa-twitter"></i></a></li>
+            </ul>
+        </nav>
+
+        <nav id="mobile-nav">
+            <ul>
+                <li class="hamburger icon"><a href="#"><i class="fa fa-bars"></i></a></li>
+                <li class="search icon"><a href="/archives"><i class="fa fa-search"></i></a></li>
+            </ul>
+        </nav>
+
+        
+                            <nav class="btn-group" id="editions-nav">
+                    <button type="button" class="btn btn-link dropdown-toggle" data-toggle="dropdown">
+                        <span class="country-name">
+                                                            USA
+                                                    </span>
+                        <span class="caret"></span>
+                    </button>
+                    <ul class="dropdown-menu" role="menu">
+                        <li><a data-country-name="USA" data-country-code="US" data-country-id="4" href="#">USA</a></li>
+                        <li><a data-country-name="Canada" data-country-code="CA" data-country-id="2" href="#">Canada</a></li>
+                        <li><a data-country-name="World" data-country-code="WORLD" data-country-id="3" href="#">World</a></li>
+                    </ul>
+                </nav>
+                    
+
+    </div>
+
+    
+                
+
+</header>
+
+            
+
+        
+
+        <div id="content" role="main">
+
+            <div id="article-container">
+
+                <article class="article-wrapper" data-channel-id="15" data-entry-id="187676" data-entry-urltitle="shame-2018-winter-olympics-allows-men-claiming-to-be-women-to-compete-again" data-entry-channel="blogs" data-entry-title="Shame: 2018 Winter Olympics allows men claiming to be ‘women’ to compete against real women | Blogs">
+
+                    <header id="blogger-header">
+
+                        <h1 class="name">
+                            Dorothy Cummings McLean
+                                                    </h1>
+
+                        
+                                                    
+
+                    </header>
+
+<!--                         <div class="ad mobile top full-width">
+                            <div class="adunit" data-dimensions="300x250"></div>
+                        </div>
+ -->
+                                            
+                            <figure class="article-featured-image">
+                                
+                                    <img class="img-responsive" src="https://lifesite-cache.s3.amazonaws.com/images/made/images/remote/https_s3.amazonaws.com/lifesite/Women_being_puntched_in_face_810_500_55_s_c1.jpg" alt="Featured Image">
+                                
+                                                                    <figcaption><span class="credit">Shutterstock.com</span></figcaption>
+                                                            </figure>
+                        
+                    
+                    
+                    <div class="article-engagement col-sm-2">
+
+                        <nav class="article-sharing-nav">
+                            <ul>
+                                <li class="facebook" data-url="https://www.lifesitenews.com/blogs/shame-2018-winter-olympics-allows-men-claiming-to-be-women-to-compete-again">
+                                    <a class="fb-share" href="#">
+                                        <i class="fa fa-facebook"></i><span class="sr-only">Share on Facebook</span>
+                                    </a>
+                                    <span class="badge-icon hide"></span>
+                                </li>
+                                <li class="twitter" data-url="https://www.lifesitenews.com/blogs/shame-2018-winter-olympics-allows-men-claiming-to-be-women-to-compete-again">
+                                    <a class="twitter-share" href="#">
+                                        <i class="fa fa-twitter"></i><span class="sr-only">Share on Twitter</span>
+                                    </a>
+                                    <span class="badge-icon hide"></span>
+                                </li>
+                                <li class="comment" data-url="https://www.lifesitenews.com/blogs/shame-2018-winter-olympics-allows-men-claiming-to-be-women-to-compete-again" data-identifer="187676">
+                                    <a href="#">
+                                        <i class="fa fa-comment"></i><span class="sr-only">Comment on this Article</span>
+                                    </a>
+                                <span class="badge-icon hide"></span>
+                                </li>
+                                <li class="email">
+                                    <a class="has-modal" href="/ajax/email-article/blogs/shame-2018-winter-olympics-allows-men-claiming-to-be-women-to-compete-again">
+                                        <i class="fa fa-envelope"></i><span class="sr-only">Share via Email</span>
+                                    </a>
+                                </li>
+                                <li class="print">
+                                    <a href="http://www.printfriendly.com/print/?url=https://www.lifesitenews.com/blogs/shame-2018-winter-olympics-allows-men-claiming-to-be-women-to-compete-again" target="_blank">
+                                        <i class="fa fa-print"></i><span class="sr-only">Print this Page</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+
+                    </div>
+
+                    <div class="article-content col-sm-10">
+
+                        <p>
+                            <a class="article-channel" href="/blogs">Blogs</a><a class="article-category-link" href="/topics/gender">Gender</a>
+                            <span class="article-date">Fri Feb 9, 2018 - 4:13 pm EST</span>
+                        </p>
+
+                        <h1 class="article-title">
+                            Shame: 2018 Winter Olympics allows men claiming to be ‘women’ to compete against real women
+                        </h1>
+
+                        <div class="article-inline-engagement">
+                            <div class="author">
+                                
+                                                                                                                        
+                                                
+                                                    <img class="author-image img-responsive img-circle" src="https://lifesite-cache.s3.amazonaws.com/images/made/images/remote/https_s3.amazonaws.com/lifesite/DSCN05062_100_100_55gray_s_c1.JPG" alt="Dorothy Cummings McLean">
+                                                
+                                            
+                                                                                <span class="author-name">
+                                            Dorothy Cummings McLean
+                                        </span>
+                                                                                    <a class="author-follow-link has-modal" href="/ajax/author-profile/dorothy-cummings-mclean">
+                                                Follow Dorothy
+                                            </a>
+                                                                                                                                                
+                                                            </div>
+                            <div class="social hide-print">
+                                <ul>
+                                    <li class="comment" data-url="https://www.lifesitenews.com/blogs/shame-2018-winter-olympics-allows-men-claiming-to-be-women-to-compete-again" data-identifer="187676">
+                                        <a class="" href="#"><i class="fa fa-comment"></i></a>
+                                    </li>
+                                    <li><a class="fb-share" href="#"><i class="fa fa-facebook"></i></a></li>
+                                    <li><a class="twitter-share" href="#"><i class="fa fa-twitter"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        
+                                                            <p class="article-tags hide-print"><i class="fa fa-tag white"></i> <a href="/tags/tag/2018+winter+olympics">2018 winter olympics</a>
+                            ,                         
+                            <a href="/tags/tag/olympics">olympics</a>
+                            ,                         
+                            <a href="/tags/tag/transgender+athletes">transgender athletes</a>
+                                                            </p>
+                                                  
+
+                        
+
+                        
+
+                        <div class="article-text-wrapper">
+                            
+                                <p>February 9, 2018 (<a href="https://www.lifesitenews.com/">LifeSiteNews</a>) &ndash; For the first time in Olympic history, men who identify as "women" are being allowed to compete against women during the Winter Games in South Korea.</p>
+
+<p>Reports Larry Brown Sports:&nbsp;</p>
+
+<blockquote>
+<p>For the first time, the IOC [International Olympic Committee] has ruled that transgender athletes can take part in the Olympics. Female-to-male athletes can compete &ldquo;without restriction,&rdquo; while male-to-female athletes must undergo hormone therapy. Previously, IOC guidelines called for athletes to have reassignment surgery followed by at least two years of hormone therapy in order to be eligible. The only remaining regulation is that male-to-female athletes must demonstrate that their testosterone levels have consistently been below the cutoff point for at least one full year prior to competition.</p>
+</blockquote>
+
+<p>It remains unclear if there are, in fact, any openly transgender athletes competing in the 2018 Winter Olympics.&nbsp;</p>
+
+<p>Speaking as a former amateur boxer, I am all agog at the thought of a female-to-male transsexual actually qualifying for an Olympic spot. &ldquo;Faster, higher, stronger&rdquo; is not only the motto of the Olympics, it sums up the relationship of elite male athletes to elite female athletes. For example, Florence Griffith Joyner of the USA ran 100 meters in 10.49 seconds. Usain Bolt of Jamaica did it in 9.58 seconds.</p>
+
+<p>In sports, that&rsquo;s a big margin.&nbsp;</p>
+
+<p>No woman has broken Flo-Jo&rsquo;s record since she set it in 1988, which underscores what an accomplishment it was for a woman to reach that speed. The first men recorded running the 100-meter dash in under 10 seconds did so in 1968. Scores of men have finished the Men&rsquo;s 100-meter faster than Flo-Jo finished the Women&rsquo;s. So, really, I am not expecting a female-to-male transsexual to give Usain Bolt a run for his money anytime soon.&nbsp;</p>
+
+<p>But neither am I expecting Flo-Jo&rsquo;s record for the women&rsquo;s 100-meter to stand much longer, especially when men who claim to be "women" are attempting to break the record.</p>
+
+<p>It will fall, perhaps by an impressive amount, but the victor won&rsquo;t inspire girls around the world. The victor, although identifying as a woman, will probably never have been a girl. The most likely athlete to break the women&rsquo;s record will be the athlete who has had the incomparable advantage of having once been a teenage boy. And when teenage girls see that, they may well wonder whether all the work and sacrifice that goes into an Olympian will be worth it.&nbsp;</p>
+
+<p>I can imagine a much, much different kind of Olympics in future, one that features elite male athletes and &ldquo;female&rdquo; athletes who, like eight <a href="http://www.telegraph.co.uk/news/worldnews/middleeast/iran/11903290/Eight-of-Irans-womens-football-team-are-men.html">members of Iran&rsquo;s women&rsquo;s football team</a>, were not born women.</p>
+
+<p>The International Olympics Committee is not insisting that &ldquo;Transgender&rdquo; athletes undergo what some call sex-reassignment surgery but what is more aptly called genital mutilation. However, &nbsp;it is insisting that athletes who participate in women&rsquo;s sports not have had over 10 nanomoles of testosterone per litre of blood in their bodies for a year before competing.&nbsp;</p>
+
+<p>This is supposed to make competition in women&rsquo;s sports fair for, you know, women &ndash; women who are just women, with women&rsquo;s standard physiology, not intersex, like South Africa&rsquo;s Caster Semenya, and not transsexual, like New Zealand&rsquo;s weightlifting Laurel Hubbard (born Gavin). However, it&rsquo;s not just the current, or very recent, ownership of testosterone that makes the difference between male and female athletic ability: it&rsquo;s also the presence of that testosterone as a teenager. The long-term effects of having high testosterone, and a male body, cannot be discounted.</p>
+
+<p>I&rsquo;m glad the IOC isn&rsquo;t insisting that biological-men-who-identify-as-women have themselves surgically altered to resemble biological women more closely, but at the same time, I wonder what is left to stop scores of cynical men hungry for fame and advertising contracts to enter women&rsquo;s sports.&nbsp;</p>
+
+<p>Recently I read a fascinating book about how the British Women&rsquo;s Olympic Team was transformed. Team GB recruited women who had only a nodding acquaintance with the sports they were ultimately to compete in but had superhuman levels of the will to win. I am sure there are no shortage of men who, lacking the ability to compete against elite men, nevertheless, have the will to win against women. &nbsp;</p>
+
+<p>The losers will, of course, be women, and women&rsquo;s sports, and, in fact, all women lose.&nbsp;</p>
+
+<p>I played hockey as a teenage girl, and nothing I experienced on the ice suggested that playing hockey against teenage boys would be wonderfully safe. And, as I mentioned above, I was an amateur boxer, and nothing I experienced in the ring led me to think I could fight any male boxer older than 12.</p>
+
+<p>What parent would want to encourage his or her daughters to enter into high-contact sports against teenage boys or men?</p>
+
+<p>And what parent would now support wholeheartedly a 10-year-old girl&rsquo;s dream of becoming an Olympic gold medallist, knowing that the awarding of the women&rsquo;s gold medal will now largely depend on whether or not a man, who says he&#39;s a "woman," wants to try for it?&nbsp;</p>
+
+<p>I love women&rsquo;s sports, which is to say, any sport done by women, in competition with other women. That there are any women&rsquo;s sports at all is thanks to women proving to men that athletic games and training wouldn&rsquo;t hurt our supposedly delicate insides.</p>
+
+<p>Being able to play at all, to play well and to win against each other was the point. Only rarely have we been that interested in besting the boys at their games.</p>
+
+<p>What a shame that some of the boys now want to best us at ours.</p>
+                            
+                        </div>
+
+                        <div class="article-more">
+
+                            
+                                
+
+                            
+
+                            
+                                <div class="inline-donation">
+        <h2>Can you donate just $10 for PRO-LIFE?</h2>
+        <h4>Every person you help reach becomes equipped to engage in the culture war</h4>
+        <form class="action" action="/give" method="get">
+            <input type="hidden" name="campaign-id" id="campaign-id" value="general_donations_2018">
+            <div class="amount-form input-group">
+                <span class="input-group-addon"><i class="fa fa-usd"></i></span>
+                <input id="amount" type="text" class="form-control" name="amount_user" value="35.00">
+            </div>
+            <button type="submit" id="submit-btn" class="btn btn-danger btn-lg" style="display: block;"><i class="fa fa-lock"></i> Donate Now</button>
+        </form>
+    </div>
+                            
+
+                            <hr>
+
+                            <script id="matched-content-template" type="text/template">
+    <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-6900635172202721" data-ad-slot="7440619053" data-ad-format="autorelaxed"></ins>
+    <script>
+    (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+</script>
+
+<div class="matched-content-wrapper">
+    <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-6900635172202721" data-ad-slot="7440619053" data-ad-format="autorelaxed"></ins>
+    <script>
+        (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+</div>
+
+                            <br>
+                            <a class="data-disqus-identifier hide" href="https://www.lifesitenews.com/blogs/shame-2018-winter-olympics-allows-men-claiming-to-be-women-to-compete-again#disqus_thread"></a>
+                            <a href="#" class="col-xs-12 col-md-12 btn comments" data-url="https://www.lifesitenews.com/blogs/shame-2018-winter-olympics-allows-men-claiming-to-be-women-to-compete-again" data-identifer="187676">
+                                <i class="fa fa-comment"></i>
+                                <span class="hidden-xs">View Comments<span class="lower">Click to view or comment.</span></span>
+                                <span class="badge-icon hide"></span>
+                            </a>
+
+                            
+                                    <h4>Share this article</h4>
+                                    <nav class="article-sharing-nav horizontal footer">
+                                        <ul>
+                                            <li class="facebook" data-url="https://www.lifesitenews.com/blogs/shame-2018-winter-olympics-allows-men-claiming-to-be-women-to-compete-again">
+                                                <a class="fb-share" href="#">
+                                                    <i class="fa fa-facebook"></i><span class="sr-only">Share on Facebook</span>
+                                                </a>
+                                                <span class="badge-icon hide"></span>
+                                            </li>
+                                            <li class="twitter" data-url="https://www.lifesitenews.com/blogs/shame-2018-winter-olympics-allows-men-claiming-to-be-women-to-compete-again">
+                                                <a class="twitter-share" href="#">
+                                                    <i class="fa fa-twitter"></i><span class="sr-only">Share on Twitter</span>
+                                                </a>
+                                                <span class="badge-icon hide"></span>
+                                            </li>
+                                            <li class="print" data-url="https://www.lifesitenews.com/blogs/shame-2018-winter-olympics-allows-men-claiming-to-be-women-to-compete-again">
+                                                <a class="print" href="http://www.printfriendly.com/print/?url=https://www.lifesitenews.com/blogs/shame-2018-winter-olympics-allows-men-claiming-to-be-women-to-compete-again" target="_blank">
+                                                    <i class="fa fa-print"></i><span class="sr-only">Print this Article</span>
+                                                </a>
+                                                <span class="badge-icon hide"></span>
+                                            </li>
+                                            <li class="email">
+                                                <a class="has-modal" href="/ajax/email-article/blogs/shame-2018-winter-olympics-allows-men-claiming-to-be-women-to-compete-again">
+                                                    <i class="fa fa-envelope"></i><span class="sr-only">Share via Email</span>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </nav>
+                                
+                        </div>
+
+                    </div>
+
+                </article>
+
+                <div class="ad responsive md">
+                    <span>Advertisement</span>
+                    <div class="adunit" data-dimensions="728x90,300x250"></div>
+                </div>
+
+                <!-- Load next article here... -->
+
+            </div>
+
+                            <div id="article-sidebar">
+
+    <div class="ad desktop top">
+        <div class="adunit" data-dimensions="300x250"></div>
+    </div>
+
+    
+
+    
+
+                    <div class="blogger-headshot">
+                
+                    
+                        <img class="img-responsive" src="https://lifesite-cache.s3.amazonaws.com/images/made/images/remote/https_s3.amazonaws.com/lifesite/DSCN05062_300_300_55gray_s_c1.JPG" alt="Dorothy Cummings McLean">
+                    
+                
+            </div>
+        
+        
+                    <div class="panel panel-default blogger-bio">
+                <div class="panel-body">
+                    <p>Dorothy Cummings McLean is a Canadian journalist, essayist, and novelist. She earned an M.A. in English Literature from the University of Toronto and an M.Div./S.T.B. from Toronto&rsquo;s Regis College. She was a columnist for the Toronto Catholic Register for nine years and regularly contributes to Catholic World Report.&nbsp; Her first book, <em>Seraphic Singles</em>,&nbsp; was published by Novalis (2010) in Canada, Liguori in the USA, and Homo Dei in Poland. Her second, <em>Ceremony of Innocence,</em> was published by Ignatius Press (2013). &nbsp;Dorothy lives near Edinburgh, Scotland with her husband.&nbsp;</p>
+                </div>
+            </div>
+        
+    
+
+        <div class="callout callout-sm callout-inverted">
+        <h4 class="callout-heading">Customize your experience.</h4>
+        <p class="callout-body text-muted"><a class="btn btn-xs btn-facebook has-modal" href="/ajax/create"><i class="fa fa-facebook"></i> Login with Facebook</a></p>
+    </div>
+    
+    <div id="fixed-sidebar-container">
+        <div id="fixed-sidebar-nav">
+
+            <nav class="nav-ordered" id="nav-must-reads">
+
+                <h4 class="nav-ordered-title">Dorothy's Recent Posts</h4>
+                <ol>
+
+                        <li data-channel-id="15" data-entry-id="187676">
+                            <span class="article-progress"></span>
+                            <span class="count"></span>
+                            <a href="/blogs/shame-2018-winter-olympics-allows-men-claiming-to-be-women-to-compete-again">
+                                <span class="title">
+                                    <span class="desktop hidden-xs hidden-sm">Shame: 2018 Winter Olympics allows men claiming to be ‘women’ to&hellip;</span>
+                                    <span class="mobile hidden-md hidden-lg hidden-xl">Shame: 2018 Winter Olympics allows men claiming to be ‘women’ to compete against real women</span>
+                                </span>
+                                <span class="by">Feb 9, 2018</span>
+                            </a>
+                        </li>
+
+                    
+
+                    
+
+                        
+
+                            
+                        
+
+                                                            <li data-channel-id="15" data-entry-id="187622">
+                                    <span class="article-progress"></span>
+                                    <span class="count"></span>
+                                    <a href="/blogs/a-miracle-cured-my-husband-now-what-do-i-do">
+                                        <span class="title">
+                                            <span class="desktop hidden-xs hidden-sm">Doctors called Mark’s brain-cancer healing ‘miraculous’: I never&hellip;</span>
+                                            <span class="mobile hidden-md hidden-lg hidden-xl">Doctors called Mark’s brain-cancer healing ‘miraculous’: I never told them who made it happen</span>
+                                         </span>
+                                        <span class="by">Feb 7, 2018</span>
+                                    </a>
+                                </li>
+                            
+                        
+
+                                                            <li data-channel-id="15" data-entry-id="187413">
+                                    <span class="article-progress"></span>
+                                    <span class="count"></span>
+                                    <a href="/blogs/the-heartbreaking-story-of-how-a-mentally-ill-girl-was-pressured-into-legal">
+                                        <span class="title">
+                                            <span class="desktop hidden-xs hidden-sm">The heartbreaking story of how a mentally ill girl was encouraged to&hellip;</span>
+                                            <span class="mobile hidden-md hidden-lg hidden-xl">The heartbreaking story of how a mentally ill girl was encouraged to legally kill herself</span>
+                                         </span>
+                                        <span class="by">Feb 2, 2018</span>
+                                    </a>
+                                </li>
+                            
+                        
+
+                                                            <li data-channel-id="15" data-entry-id="186413">
+                                    <span class="article-progress"></span>
+                                    <span class="count"></span>
+                                    <a href="/blogs/pro-abortion-college-student-argues-for-infanticide-of-2-year-olds">
+                                        <span class="title">
+                                            <span class="desktop hidden-xs hidden-sm">Pro-abortion college student argues for infanticide of 2-year-olds</span>
+                                            <span class="mobile hidden-md hidden-lg hidden-xl">Pro-abortion college student argues for infanticide of 2-year-olds</span>
+                                         </span>
+                                        <span class="by">Jan 5, 2018</span>
+                                    </a>
+                                </li>
+                            
+                        
+
+                    
+
+                </ol>
+
+            </nav>
+
+            <div class="ad desktop bottom">
+                <div class="adunit" data-dimensions="300x250"></div>
+            </div>
+
+        </div>
+    </div>
+
+</div>
+
+            
+        </div>
+        <div class="share-story-mobile">
+    <nav class="share-story-mobile__engagement">
+        <ul>
+            <li class="facebook">
+                <a class="fb-share" href="#">
+                    <i class="fa fa-facebook"></i>
+                </a>
+            </li>
+            <li class="twitter">
+                <a class="twitter-share" href="#">
+                    <i class="fa fa-twitter"></i>
+                </a>
+            </li>
+            <li class="email">
+                <a class="has-modal" href="/ajax/email-article/{channel_short_name}/{url_title}">
+                    <i class="fa fa-envelope"></i>
+                </a>
+            </li>
+            <li class="comments">
+                <a class="comments" data-url="https://www.data.lifesitenews.com/blogs/shame-2018-winter-olympics-allows-men-claiming-to-be-women-to-compete-again" data-identifer="187676">
+                    <i class="fa fa-comment"></i>
+                </a>
+            </li>
+        </ul>
+        <a class="mobile-must-reads" href="#"><i></i></a>
+    </nav>
+</div>
+
+        <footer id="footer">
+    <div class="container">
+  <nav class="nav-footer">
+     <ul>
+       <li><a href="/about">About</a></li>
+       <li><a href="/archives">Archive</a></li>
+       <li><a href="/advertise">Advertise</a></li>
+       <li><a href="/reprint-permissions">Reprint Permissions</a></li>
+       <li><a href="/contact">Contact</a></li>
+       <li><a href="/give">Donate</a></li>
+     </ul>
+  </nav>
+  <nav class="nav-sections">
+    <ul>
+       <li><a href="/news">News</a></li>
+       <li><a href="/opinion">Opinion</a></li>
+       <li><a href="/blogs">Blogs</a></li>
+       <li><a href="/pulse">The Pulse</a></li>
+       <li><a href="/resources">Resources</a></li>
+       <li><a href="https://lifepetitions.com">Petitions</a></li>
+       <!-- <li><a href="/media">Media</a></li> -->
+    </ul>
+  </nav>
+</div>
+</footer>
+
+<footer id="copyright">
+  <div class="container">
+    <p>All Content Copyright 1997-2018 LifeSiteNews.com. All Rights Reserved.  |  <a href="/legal">Legal Information</a>  |  <a href="/privacy">Privacy Policy</a></p>
+   </div>
+</footer>
+
+<div class="overlay mobile-nav-overlay">
+    <div class="container">
+        <a title="Close" class="overlay-close fancybox-close inverted" href="#"></a>
+        <div class="overlay-content">
+
+            <nav id="mobile-overlay-nav">
+                <ul>
+
+                </ul>
+            </nav>
+
+        </div>
+    </div>
+</div>
+
+<a title="Close" class="overlay-close overlay-close-comments fancybox-close" href="#"></a>
+<div class="overlay disqus-overlay">
+    <h4 class="title">Comments</h4>
+    <div class="commenting-guidelines">
+        <h5>Commenting Guidelines</h5>
+        <p>
+            LifeSiteNews welcomes thoughtful, respectful comments that add useful information or insights. Demeaning,
+            hostile or propagandistic comments, and streams not related to the storyline, will be removed.
+        </p>
+        <p>
+            LSN commenting is not for frequent personal blogging, on-going debates or theological or other disputes
+            between commenters.
+        </p>
+        <p>
+            Multiple comments from one person under a story are discouraged (suggested maximum of three). Capitalized
+            sentences or comments will be removed (Internet shouting).
+        </p>
+        <p>
+            LifeSiteNews gives priority to pro-life, pro-family commenters and reserves the right to edit or
+            remove comments.
+        </p>
+        <p>
+            Comments under LifeSiteNews stories do not necessarily represent the views of LifeSiteNews.
+        </p>
+    </div>
+    <div class="comments">
+        <div id="disqus_thread"></div>
+        <div id="disqus_loader"></div>
+    </div>
+</div>
+
+<script>
+    var donateDisplay = false,
+        donateTime = 24,
+        modalDelay = 45;
+</script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="/assets/js/jquery.min.js"><\/script>')</script>
+<script async src="/assets/js/global.min.js?v=1516874151"></script>
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<script async id="dsq-count-scr" src="/assets/js/count.js"></script>
+
+
+
+<script>
+var _sf_async_config={uid:25978,domain:"lifesitenews.com",useCanonical:true};(function(){function loadChartbeat() {window._sf_endpt=(new Date()).getTime();var e = document.createElement('script');e.setAttribute('language', 'javascript');e.setAttribute('type', 'text/javascript');e.setAttribute('src', '//static.chartbeat.com/js/chartbeat.js');
+document.body.appendChild(e);}var oldonload = window.onload;
+window.onload = (typeof window.onload != 'function') ?
+loadChartbeat : function() { oldonload(); loadChartbeat(); };
+})();
+
+</script>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-698266-2', 'auto');
+  ga('require', 'displayfeatures');
+  ga('require', 'linkid', 'linkid.js');
+  ga('send', 'pageview');
+
+</script>
+
+<div id="fb-root"></div>
+<script>
+window.fbAsyncInit = function() {
+  FB._https = (window.location.protocol == "https:"); // Required because FB Javascript SDK tries to submit https to http
+  FB.init({appId:"132010293551131", cookie:true, status:true, xfbml:true, oauth:true});
+  };
+(function(d){
+  var js, id = 'facebook-jssdk'; if (d.getElementById(id)) {return;}
+  js = d.createElement('script'); js.id = id; js.async = true;
+  js.src = "//connect.facebook.net/en_US/all.js";
+  d.getElementsByTagName('head')[0].appendChild(js);
+}(document));
+</script>
+
+
+    <script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"9db8f62662","applicationID":"106458858","transactionName":"Z1cDYRFSX0RWUEFQX14dIkAQR15aGFFZVldDHRJdAl5UGgUDBAEdR1sPQQZBHFhbSlhJWVNBTFQPX15ARB5YXF4dUQ1UCl5YWVAeQVYdUldMQgxeVFkaR1oUU19fEVAXVhxWUFJcVw==","queueTime":0,"applicationTime":1831,"atts":"SxAAF1lITEo=","errorBeacon":"bam.nr-data.net","agent":""}</script>
+<!--
+Cached: 1 1 200
+Size: 47877
+Page load: 6.5088272094727 msec
+Real path: blogs/shame-2018-winter-olympics-allows-men-claiming-to-be-women-to-compete-again
+Cache path: blogs/shame-2018-winter-olympics-allows-men-claiming-to-be-women-to-compete-again
+Cached at: Sat, 17 Feb 2018 16:43:32 -0600
+Expires in: 9284 seconds
+-->
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"9db8f62662","applicationID":"109300511","transactionName":"Z1cDYRFSX0RWUEFQX14dNEcKHEJDVkdcWh1CVwZcDF1QWxlDXUk=","queueTime":0,"applicationTime":2,"atts":"SxAAF1lITEo=","errorBeacon":"bam.nr-data.net","agent":""}</script></body>
+</html>

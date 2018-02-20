@@ -1,0 +1,28 @@
+Continue reading the main story
+Who was doing it and why they were doing it could take several months to figure out. Ryan Sherstobitoff, a senior analyst at McAfee, said the hacks had appeared to be well organized and backed by substantial resources, with “the hallmarks of a nation state.” What that nation state planned to do with the stolen data and its foothold in victims’ machines, Mr. Sherstobitoff said, was still anyone’s guess.
+A spokesman for the International Olympic Committee declined to comment on how the organization was addressing the heightened threats.
+Security researchers often discuss risks with a level of informed paranoia. Some of their warnings are based on what is possible but has not actually occurred in the real world. On other occasions, their warnings are based on what has already happened, and where those incidents could lead.
+Photo
+Curling mixed doubles matches at the Gangneung Curling Center in Pyeongchang, South Korea, on Thursday, the day before the opening ceremony for the 2018 Winter Olympics. Credit Hilary Swift for The New York Times
+But cyberattacks on international events have become common. The 2015 nuclear negotiations in Geneva and the 2009 climate talks in Copenhagen, for example, were plagued by hackers from various nation states. The Olympics are another alluring target — but with wall-to-wall television coverage.
+“The Olympics involve so many countries, and so many sports, many of which have their own infrastructure, that it has become a rich target environment for many adversaries,” said John Hultquist, director of threat intelligence at the security firm FireEye.
+He has been tracking the activities of Russian hackers and other groups as they lay the groundwork for attacks on Olympic organizations. In the past few months, Mr. Hultquist said, his team at FireEye has seen several examples of Russian groups tampering with the computers of Olympic-related organizations. The activity is “obviously meant to drag Olympics-related organizations through the mud and discredit them,” he said.
+The Russian cyberespionage group known as Fancy Bear , which has been tied to the 2016 hack of the Democratic National Committee and has links to Russia’s main military intelligence unit, has already started posting hacked emails intended to highlight discord among global sports officials and investigators who exposed systemic Russian doping.
+Advertisement
+Continue reading the main story
+Last month, the group posted emails and other documents online from the International Luge Federation, claiming they demonstrated violations of antidoping rules. And earlier in January, the group released hacked emails and documents from the International Olympic Committee, which it advertised as proof “the Europeans and the Anglo-Saxons are fighting for power and cash in the sports world.”
+Trend Micro, the Tokyo-based security company, said its researchers had also witnessed Fancy Bear attacks on the International Ice Hockey Federation, the International Ski Federation, the International Biathlon Union, and the International Bobsleigh and Skeleton Federation in the final months of 2017. The attacks occurred while an International Olympic Committee disciplinary panel was preparing bans for dozens of Russian athletes caught doping in the 2014 Winter Olympics in Sochi, Russia.
+“The Kremlin has its fingerprints on cyberattacks that were retribution for exposing the Russians’ Sochi games doping scheme, which was a fraud on the purity of sport,” said Doug DePeppe, a founder of Sports ISAO, a nonprofit cybersecurity organization in Colorado Springs. The group is trying to help sports associations, including Olympic organizations, combat threats.
+“Their goal is to say, ‘No one is following the rules, and Russia shouldn’t be singled out,’” Mr. DePeppe said.
+FireEye, McAfee and other security companies said that over the past few months they had seen attack groups from Russia, and others of unknown origin, dispatch hundreds of “spearphishing” emails, laced with malicious links and attachments, to target Olympic-related groups.
+Newsletter Sign Up
+Interested in All Things Tech?
+The Bits newsletter will keep you updated on the latest from Silicon Valley and the technology industry.
+Please verify you're not a robot by clicking the box.
+Invalid email address. Please re-enter.
+You must select a newsletter to subscribe to.
+Sign Up
+You agree to receive occasional updates and special offers for The New York Times's products and services.
+Thank you for subscribing.
+An error has occurred. Please try again later.
+You are already subscribed to this email.

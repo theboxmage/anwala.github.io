@@ -1,0 +1,619 @@
+
+<!DOCTYPE html>
+<!--[if lt IE 7]><html class="no-js ie lt-ie9 lt-ie8 lt-ie7" lang="en"><![endif]--><!--[if IE 7]><html class="no-js ie lt-ie9 lt-ie8 ie7" lang="en"><![endif]--><!--[if IE 8]><html class="no-js ie lt-ie9 ie8" lang="en"><![endif]--><!--[if IE 9]><html class="no-js ie ie9" lang="en"><![endif]--><!--[if (gt IE 9)|!(IE)]><!--><html class="no-js" lang="en" ><!--<![endif]--><head><meta charset="UTF-8" /><meta http-equiv="X-UA-Compatible" content="IE=Edge" /><script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,t,n){function r(n){if(!t[n]){var o=t[n]={exports:{}};e[n][0].call(o.exports,function(t){var o=e[n][1][t];return r(o||t)},o,o.exports)}return t[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({1:[function(e,t,n){function r(){}function o(e,t,n){return function(){return i(e,[f.now()].concat(u(arguments)),t?null:this,n),t?void 0:this}}var i=e("handle"),a=e(2),u=e(3),c=e("ee").get("tracer"),f=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],d="api-",l=d+"ixn-";a(p,function(e,t){s[t]=o(d+t,!0,"api")}),s.addPageAction=o(d+"addPageAction",!0),s.setCurrentRouteName=o(d+"routeName",!0),t.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,t){var n={},r=this,o="function"==typeof t;return i(l+"tracer",[f.now(),e,n],r),function(){if(c.emit((o?"":"no-")+"fn-start",[f.now(),r,o],n),o)try{return t.apply(this,arguments)}catch(e){throw c.emit("fn-err",[arguments,this,e],n),e}finally{c.emit("fn-end",[f.now()],n)}}}};a("setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,t){m[t]=o(l+t)}),newrelic.noticeError=function(e){"string"==typeof e&&(e=new Error(e)),i("err",[e,f.now()])}},{}],2:[function(e,t,n){function r(e,t){var n=[],r="",i=0;for(r in e)o.call(e,r)&&(n[i]=t(r,e[r]),i+=1);return n}var o=Object.prototype.hasOwnProperty;t.exports=r},{}],3:[function(e,t,n){function r(e,t,n){t||(t=0),"undefined"==typeof n&&(n=e?e.length:0);for(var r=-1,o=n-t||0,i=Array(o<0?0:o);++r<o;)i[r]=e[t+r];return i}t.exports=r},{}],4:[function(e,t,n){t.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,t,n){function r(){}function o(e){function t(e){return e&&e instanceof r?e:e?c(e,u,i):i()}function n(n,r,o,i){if(!d.aborted||i){e&&e(n,r,o);for(var a=t(o),u=m(n),c=u.length,f=0;f<c;f++)u[f].apply(a,r);var p=s[y[n]];return p&&p.push([b,n,r,a]),a}}function l(e,t){v[e]=m(e).concat(t)}function m(e){return v[e]||[]}function w(e){return p[e]=p[e]||o(n)}function g(e,t){f(e,function(e,n){t=t||"feature",y[n]=t,t in s||(s[t]=[])})}var v={},y={},b={on:l,emit:n,get:w,listeners:m,context:t,buffer:g,abort:a,aborted:!1};return b}function i(){return new r}function a(){(s.api||s.feature)&&(d.aborted=!0,s=d.backlog={})}var u="nr@context",c=e("gos"),f=e(2),s={},p={},d=t.exports=o();d.backlog=s},{}],gos:[function(e,t,n){function r(e,t,n){if(o.call(e,t))return e[t];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,t,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return e[t]=r,r}var o=Object.prototype.hasOwnProperty;t.exports=r},{}],handle:[function(e,t,n){function r(e,t,n,r){o.buffer([e],r),o.emit(e,t,n)}var o=e("ee").get("handle");t.exports=r,r.ee=o},{}],id:[function(e,t,n){function r(e){var t=typeof e;return!e||"object"!==t&&"function"!==t?-1:e===window?0:a(e,i,function(){return o++})}var o=1,i="nr@id",a=e("gos");t.exports=r},{}],loader:[function(e,t,n){function r(){if(!x++){var e=h.info=NREUM.info,t=d.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&t))return s.abort();f(y,function(t,n){e[t]||(e[t]=n)}),c("mark",["onload",a()+h.offset],null,"api");var n=d.createElement("script");n.src="https://"+e.agent,t.parentNode.insertBefore(n,t)}}function o(){"complete"===d.readyState&&i()}function i(){c("mark",["domContent",a()+h.offset],null,"api")}function a(){return E.exists&&performance.now?Math.round(performance.now()):(u=Math.max((new Date).getTime(),u))-h.offset}var u=(new Date).getTime(),c=e("handle"),f=e(2),s=e("ee"),p=window,d=p.document,l="addEventListener",m="attachEvent",w=p.XMLHttpRequest,g=w&&w.prototype;NREUM.o={ST:setTimeout,SI:p.setImmediate,CT:clearTimeout,XHR:w,REQ:p.Request,EV:p.Event,PR:p.Promise,MO:p.MutationObserver};var v=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1071.min.js"},b=w&&g&&g[l]&&!/CriOS/.test(navigator.userAgent),h=t.exports={offset:u,now:a,origin:v,features:{},xhrWrappable:b};e(1),d[l]?(d[l]("DOMContentLoaded",i,!1),p[l]("load",r,!1)):(d[m]("onreadystatechange",o),p[m]("onload",r)),c("mark",["firstbyte",u],null,"api");var x=0,E=e(4)},{}]},{},["loader"]);</script><script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","queueTime":0,"licenseKey":"5f2a3546b2","agent":"","transactionName":"YlNRYksHDRVTVBcNClsZdUNXBRcPXVlMFxBPQ1hXFxUXCUBeBhdLQ19WQUpcEBJdRRo7AVBCUl9V","applicationID":"95399378","errorBeacon":"bam.nr-data.net","applicationTime":337}</script><meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0" /><title>Olympic Games begin with unexpected show of unity at opening ceremony | The Inverell Times</title><link rel="stylesheet" id="css-base" type="text/css" href="//nnstatic-a.akamaihd.net/s/1518562905/legolite/css/base.css" /><link rel="stylesheet" id="css-mobile" type="text/css" media="only screen and (max-width: 767px)" href="//nnstatic-a.akamaihd.net/s/1518562905/legolite/css/mobile.css" /><link rel="stylesheet" id="css-tablet" type="text/css" media="only screen and (min-width: 768px) and (max-width: 919px)" href="//nnstatic-a.akamaihd.net/s/1518562905/legolite/css/tablet.css" /><link rel="stylesheet" id="css-tablet-landscape" type="text/css" media="only screen and (min-width: 920px) and (max-width: 1199px)" href="//nnstatic-a.akamaihd.net/s/1518562905/legolite/css/tablet-landscape.css" /><link rel="stylesheet" id="css-desktop" type="text/css" media="only screen and (min-width: 1200px)" href="//nnstatic-a.akamaihd.net/s/1518562905/legolite/css/desktop.css" /><link rel="stylesheet" type="text/css" media="only screen and (max-width: 767px)" href="//nnstatic-a.akamaihd.net/s/1518562905/legolite/css/vendor/masthead-mobile.css" /><link rel="stylesheet" type="text/css" media="only screen and (max-width: 767px)" href="//nnstatic-a.akamaihd.net/s/1518562905/legolite/css/vendor/masthead-mobile-content.css" /><link rel="stylesheet" type="text/css" media="only screen and (min-width: 768px)" href="//nnstatic-a.akamaihd.net/s/1518562905/legolite/css/vendor/masthead-tablet.css" /><link rel="stylesheet" type="text/css" media="only screen and (min-width: 768px)" href="//nnstatic-a.akamaihd.net/s/1518562905/legolite/css/vendor/masthead-tablet-content.css" /><link rel="stylesheet" type="text/css" href="//nnstatic-a.akamaihd.net/s/1518562905/legolite/css/masthead/icons.css" /><link rel="stylesheet" type="text/css" href="//nnstatic-a.akamaihd.net/s/1518562905/legolite/css/vendor/masthead-skin-canberratimes.css" /><link rel="stylesheet" id="css-legolite" type="text/css" href="//nnstatic-a.akamaihd.net/s/1518562905/legolite/css/legolite.css" /><style class="webfont" data-webfont-name="merriweather" data-webfont-woff2="https://www.fairfaxstatic.com.au/resources/css/mastheads/1.10.28/fonts/merriweather-regular-woff2.css" data-webfont-woff="https://www.fairfaxstatic.com.au/resources/css/mastheads/1.10.28/fonts/merriweather-regular-woff.css"></style><style class="webfont" data-webfont-name="merriweather-bold" data-webfont-woff2="https://www.fairfaxstatic.com.au/resources/css/mastheads/1.10.28/fonts/merriweather-bold-woff2.css" data-webfont-woff="https://www.fairfaxstatic.com.au/resources/css/mastheads/1.10.28/fonts/merriweather-bold-woff.css"></style><style class="webfont" data-webfont-name="sourcesanspro" data-webfont-woff2="https://www.fairfaxstatic.com.au/resources/css/mastheads/1.10.28/fonts/sourcesanspro-regular-woff2.css" data-webfont-woff="https://www.fairfaxstatic.com.au/resources/css/mastheads/1.10.28/fonts/sourcesanspro-regular-woff.css"></style><style class="webfont" data-webfont-name="sourcesanspro-bold" data-webfont-woff2="https://www.fairfaxstatic.com.au/resources/css/mastheads/1.10.28/fonts/sourcesanspro-bold-woff2.css" data-webfont-woff="https://www.fairfaxstatic.com.au/resources/css/mastheads/1.10.28/fonts/sourcesanspro-bold-woff.css"></style><style class="webfont" data-webfont-name="montserrat-bold" data-webfont-woff2="https://www.fairfaxstatic.com.au/resources/css/mastheads/1.10.28/fonts/montserrat-bold-woff2.css" data-webfont-woff="https://www.fairfaxstatic.com.au/resources/css/mastheads/1.10.28/fonts/montserrat-bold-woff.css"></style><script>
+    window.dataLayer = window.dataLayer || [];
+    var author = 'Foster Klug, Glenn Cullen and Warren Barnsley' || '';
+    var datePublished = '10022018' || '';
+    var primaryPage = '' || '';
+    var secondaryPage = '' || '';
+
+    
+    window.dataLayer.push({
+        brand: 'The Inverell Times',
+        googleAnalyticsId: 'UA\u002D16730067\u002D50',
+        pageType: 'article',
+        author: author,
+        datePublished: datePublished,
+        primaryPage: primaryPage,
+        secondaryPage: secondaryPage,
+        version: 'lego1',
+        businessName: ''
+    });
+    </script><script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM\u002DKPMZ4JM');</script><meta name="title" content="Olympic Games begin with unexpected show of unity at opening ceremony" /><meta name="robots" content="noarchive" /><meta name="description" content="In an extraordinary show of unity, North and South Korea sat side by side under exploding fireworks." /><meta property="og:title" content="Olympic Games begin with unexpected show of unity at opening ceremony" /><meta property="og:url" content="http://www.inverelltimes.com.au/story/5220327/olympic-games-begin-with-unexpected-show-of-unity-at-opening-ceremony/" /><meta property="og:site_name" content="The Inverell Times" /><meta property="fb:pages" content="124483431015248" /><meta property="og:type" content="article" /><meta property="og:image" content="http://nnimgt-a.akamaihd.net/transform/v1/crop/frm/34dXacDR8RguBkyLHxYXLhN/51b4b296-0876-4ebb-9d15-509977b579ac.JPG/r2_218_4269_2629_w1200_h678_fmax.jpg" /><meta property="og:image:secure_url" content="https://nnimgt-a.akamaihd.net/transform/v1/crop/frm/34dXacDR8RguBkyLHxYXLhN/51b4b296-0876-4ebb-9d15-509977b579ac.JPG/r2_218_4269_2629_w1200_h678_fmax.jpg" /><meta property="og:image:type" content="image/jpeg" /><meta property="og:image:height" content="678" /><meta property="og:image:width" content="1200" /><meta property="og:description" content="In an extraordinary show of unity, North and South Korea sat side by side under exploding fireworks." /><meta property="article:publisher" content="https://www.facebook.com/InverellTimes" /><meta name="twitter:card" content="summary_large_image"><meta name="twitter:site" content="@inverelltimes"><meta name="twitter:title" content="Olympic Games begin with unexpected show of unity at opening ceremony"><meta name="twitter:description" content="In an extraordinary show of unity, North and South Korea sat side by side under exploding fireworks."><meta name="twitter:image" content="http://nnimgt-a.akamaihd.net/transform/v1/crop/frm/34dXacDR8RguBkyLHxYXLhN/51b4b296-0876-4ebb-9d15-509977b579ac.JPG/r2_218_4269_2629_w1200_h678_fmax.jpg"><meta property="article:published_time" content="2018-02-10T09:02:00+11:00" /><meta name="news_keywords" content=", " /><meta name="author" content="Foster Klug, Glenn Cullen and Warren Barnsley" /><meta itemprop="name" content="Olympic Games begin with unexpected show of unity at opening ceremony"><meta itemprop="description" content="In an extraordinary show of unity, North and South Korea sat side by side under exploding fireworks."><meta itemprop="image" content="http://nnimgt-a.akamaihd.net/transform/v1/crop/frm/34dXacDR8RguBkyLHxYXLhN/51b4b296-0876-4ebb-9d15-509977b579ac.JPG/r2_218_4269_2629_w1200_h678_fmax.jpg"><!--
+  <PageMap><DataObject type="document"><Attribute name="title">Olympic Games begin with unexpected show of unity at opening ceremony</Attribute><Attribute name="author">Foster Klug, Glenn Cullen and Warren Barnsley</Attribute><Attribute name="description">In an extraordinary show of unity, North and South Korea sat side by side under exploding fireworks.</Attribute><Attribute name="last_update">2018-02-10T09:02:00+11:00</Attribute></DataObject><DataObject type="thumbnail"><Attribute name="src" value="http://nnimgt-a.akamaihd.net/transform/v1/crop/frm/34dXacDR8RguBkyLHxYXLhN/51b4b296-0876-4ebb-9d15-509977b579ac.JPG/r2_218_4269_2629_w1200_h678_fmax.jpg" /><Attribute name="width" value="650" /><Attribute name="height" value="360" /></DataObject></PageMap>
+  --><meta name="apple-mobile-web-app-capable" content="yes" /><meta name="msvalidate.01" content="F29B95B17E7034DD0832B3DBEF37C0F2" /><link rel="shortcut icon" type="image/vnd.microsoft.icon" href="//nnstatic-a.akamaihd.net/s/1518562905/sites/the-inverell-times/ico/favicon.ico" /><link rel="apple-touch-icon-precomposed" href="//nnstatic-a.akamaihd.net/s/1518562905/sites/the-inverell-times/ico/main-fav.png" /><link rel="apple-touch-icon-precomposed" sizes="114x114" href="//nnstatic-a.akamaihd.net/s/1518562905/sites/the-inverell-times/ico/apple-touch-icon-114x114-precomposed.png" /><link rel="apple-touch-icon-precomposed" sizes="72x72" href="//nnstatic-a.akamaihd.net/s/1518562905/sites/the-inverell-times/ico/apple-touch-icon-72x72-precomposed.png" /><link rel="apple-touch-icon-precomposed" href="//nnstatic-a.akamaihd.net/s/1518562905/sites/the-inverell-times/ico/apple-touch-icon-precomposed.png" /><script>
+            !function(){function t(t,n,i){4===t.readyState&&200===t.status&&(r&&localStorage.setItem(e(i),t.responseText),o(n,i,t.responseText),t=null)}function e(t){return"masthead.fonts."+t}function n(){if(!("FontFace"in window))return"woff";var t=new FontFace("t",'url( "data:application/font-woff2;base64,d09GMgABAAAAAAIkAAoAAAAABVwAAAHcAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAABlYAgloKLEoBNgIkAxgLDgAEIAWDcgc1G7IEyB6SJAFID5YA3nAHC6h4+H7s27nP1kTyOoQkGuJWtNGIJKYznRI3VEL7IaHq985ZUuKryZKcAtJsi5eULwUybm9KzajBBhywZ5ZwoJNuwDX5C/xBjvz5DbsoNsvG1NGQiqp0NMLZ7JlnW+5MaM3HwcHheUQeiVokekHkn/FRdefvJaTp2PczN+I1Sc3k9VuX51Tb0Tqqf1deVXGdJsDOhz0/EffMOPOzHNH06pYkDDjs+P8fb/z/8n9Iq8ITzWywkP6PBMMN9L/O7vY2FNoTAkp5PpD6g1nV9WmyQnM5uPpAMHR2fe06jbfvzPriekVTQxC6lpKr43oDtRZfCATl5OVAUKykqwm9o8R/kg37cxa6eZikS7cjK4aIwoyh6jOFplhFrz2b833G3Jii9AjDUiAZ9AxZtxdEYV6imvRF0+0Nej3wu6nPZrTLh81AVcV3kmMVdQj6Qbe9qetzbuDZ7vXOlRrqooFSxCv6SfrDICA6rnHZXQPVcUHJYGcoqa3jVH7ATrjWBNYYkEqF3RFpVIl0q2JvMOJd7/TyjXHw2NyAuJpNaEbz8RTEVtCbSH7JrwQQOqwGl7sTUOtdBZIY2DKqKlvOmPvUxJaURAZZcviTT0SKHCXqzwc=" ) format( "woff2" )',{});return t.load()["catch"](function(){}),"loading"==t.status||"loaded"==t.status?"woff2":"woff"}function o(t,e,n){t.innerHTML=n,"undefined"!=typeof FontFaceObserver?c(e,n):document.documentElement.classList.remove("no-"+e)}function i(e,o){void 0===s&&(s=n());var i=e.getAttribute("data-webfont-"+s),a=new XMLHttpRequest;a.open("GET",i,!0),a.timeout=5e3,a.onreadystatechange=function(){t(a,e,o)},a.ontimeout=function(){a=null},a.send()}function a(t,n){var a=localStorage.getItem(e(n));null!==a?o(t,n,a):i(t,n)}function r(){try{return localStorage.setItem("storageTest","storageTest"),localStorage.removeItem("storageTest"),!0}catch(t){return!1}}function c(t,e){var n=e.match(/font-family:\s?['"]([a-zA-Z\s]*)['"]/im),o=e.match(/font-weight:\s?([a-zA-Z0-9]*)\;/im),i=new FontFaceObserver(n[1],{weight:o[1]});i.load().then(function(){document.documentElement.classList.remove("no-"+t)})}!function(){"use strict";function t(t){d.push(t),1==d.length&&u()}function e(){for(;d.length;)d[0](),d.shift()}function n(t){this.a=l,this.b=void 0,this.f=[];var e=this;try{t(function(t){a(e,t)},function(t){r(e,t)})}catch(n){r(e,n)}}function o(t){return new n(function(e,n){n(t)})}function i(t){return new n(function(e){e(t)})}function a(t,e){if(t.a==l){if(e==t)throw new TypeError;var n=!1;try{var o=e&&e.then;if(null!=e&&"object"==typeof e&&"function"==typeof o)return void o.call(e,function(e){n||a(t,e),n=!0},function(e){n||r(t,e),n=!0})}catch(i){return void(n||r(t,i))}t.a=0,t.b=e,c(t)}}function r(t,e){if(t.a==l){if(e==t)throw new TypeError;t.a=1,t.b=e,c(t)}}function c(e){t(function(){if(e.a!=l)for(;e.f.length;){var t=e.f.shift(),n=t[0],o=t[1],i=t[2],t=t[3];try{0==e.a?i("function"==typeof n?n.call(void 0,e.b):e.b):1==e.a&&("function"==typeof o?i(o.call(void 0,e.b)):t(e.b))}catch(a){t(a)}}})}function s(t){return new n(function(e,n){function o(n){return function(o){r[n]=o,a+=1,a==t.length&&e(r)}}var a=0,r=[];0==t.length&&e(r);for(var c=0;c<t.length;c+=1)i(t[c]).c(o(c),n)})}function f(t){return new n(function(e,n){for(var o=0;o<t.length;o+=1)i(t[o]).c(e,n)})}var u,d=[];u=function(){setTimeout(e)};var l=2;n.prototype.g=function(t){return this.c(void 0,t)},n.prototype.c=function(t,e){var o=this;return new n(function(n,i){o.f.push([t,e,n,i]),c(o)})},window.Promise||(window.Promise=n,window.Promise.resolve=i,window.Promise.reject=o,window.Promise.race=f,window.Promise.all=s,window.Promise.prototype.then=n.prototype.c,window.Promise.prototype["catch"]=n.prototype.g)}(),function(){function t(t,e){document.addEventListener?t.addEventListener("scroll",e,!1):t.attachEvent("scroll",e)}function e(t){document.body?t():document.addEventListener?document.addEventListener("DOMContentLoaded",function e(){document.removeEventListener("DOMContentLoaded",e),t()}):document.attachEvent("onreadystatechange",function n(){("interactive"==document.readyState||"complete"==document.readyState)&&(document.detachEvent("onreadystatechange",n),t())})}function n(t){this.a=document.createElement("div"),this.a.setAttribute("aria-hidden","true"),this.a.appendChild(document.createTextNode(t)),this.b=document.createElement("span"),this.c=document.createElement("span"),this.h=document.createElement("span"),this.f=document.createElement("span"),this.g=-1,this.b.style.cssText="max-width:none;display:inline-block;position:absolute;height:100%;width:100%;overflow:scroll;font-size:16px;",this.c.style.cssText="max-width:none;display:inline-block;position:absolute;height:100%;width:100%;overflow:scroll;font-size:16px;",this.f.style.cssText="max-width:none;display:inline-block;position:absolute;height:100%;width:100%;overflow:scroll;font-size:16px;",this.h.style.cssText="display:inline-block;width:200%;height:200%;font-size:16px;max-width:none;",this.b.appendChild(this.h),this.c.appendChild(this.f),this.a.appendChild(this.b),this.a.appendChild(this.c)}function o(t,e){t.a.style.cssText="max-width:none;min-width:20px;min-height:20px;display:inline-block;overflow:hidden;position:absolute;width:auto;margin:0;padding:0;top:-999px;left:-999px;white-space:nowrap;font-synthesis:none;font:"+e+";"}function i(t){var e=t.a.offsetWidth,n=e+100;return t.f.style.width=n+"px",t.c.scrollLeft=n,t.b.scrollLeft=t.b.scrollWidth+100,t.g!==e?(t.g=e,!0):!1}function a(e,n){function o(){var t=a;i(t)&&t.a.parentNode&&n(t.g)}var a=e;t(e.b,o),t(e.c,o),i(e)}function r(t,e){var n=e||{};this.family=t,this.style=n.style||"normal",this.weight=n.weight||"normal",this.stretch=n.stretch||"normal"}function c(){if(null===d){var t=document.createElement("div");try{t.style.font="condensed 100px sans-serif"}catch(e){}d=""!==t.style.font}return d}function s(t,e){return[t.style,t.weight,c()?t.stretch:"","100px",e].join(" ")}var f=null,u=null,d=null,l=null;r.prototype.load=function(t,i){var r=this,c=t||"BESbswy",d=0,h=i||3e3,m=(new Date).getTime();return new Promise(function(t,i){var p;if(null===l&&(l=!!document.fonts),(p=l)&&(null===u&&(u=/OS X.*Version\/10\.0.*Safari/.test(window.navigator.userAgent)&&/Apple/.test(window.navigator.vendor)),p=!u),p){p=new Promise(function(t,e){function n(){(new Date).getTime()-m<h?document.fonts.load(s(r,'"'+r.family+'"'),c).then(function(e){1>e.length?setTimeout(n,25):t()},function(){e()}):e()}n()});var w=new Promise(function(t,e){d=setTimeout(e,h)});Promise.race([w,p]).then(function(){clearTimeout(d),t(r)},function(){i(r)})}else e(function(){function e(){var e;(e=-1!=v&&-1!=A||-1!=v&&-1!=y||-1!=A&&-1!=y)&&((e=v!=A&&v!=y&&A!=y)||(null===f&&(e=/AppleWebKit\/([0-9]+)(?:\.([0-9]+))/.exec(window.navigator.userAgent),f=!!e&&(536>parseInt(e[1],10)||536===parseInt(e[1],10)&&11>=parseInt(e[2],10))),e=f&&(v==g&&A==g&&y==g||v==b&&A==b&&y==b||v==T&&A==T&&y==T)),e=!e),e&&(x.parentNode&&x.parentNode.removeChild(x),clearTimeout(d),t(r))}function u(){if((new Date).getTime()-m<h){var t=document.hidden;(!0===t||void 0===t)&&(v=l.a.offsetWidth,A=p.a.offsetWidth,y=w.a.offsetWidth,e()),d=setTimeout(u,50)}else x.parentNode&&x.parentNode.removeChild(x),i(r)}var l=new n(c),p=new n(c),w=new n(c),v=-1,A=-1,y=-1,g=-1,b=-1,T=-1,x=document.createElement("div");x.dir="ltr",o(l,s(r,"sans-serif")),o(p,s(r,"serif")),o(w,s(r,"monospace")),x.appendChild(l.a),x.appendChild(p.a),x.appendChild(w.a),document.body.appendChild(x),g=l.a.offsetWidth,b=p.a.offsetWidth,T=w.a.offsetWidth,u(),a(l,function(t){v=t,e()}),o(l,s(r,'"'+r.family+'",sans-serif')),a(p,function(t){A=t,e()}),o(p,s(r,'"'+r.family+'",serif')),a(w,function(t){y=t,e()}),o(w,s(r,'"'+r.family+'",monospace'))})})},"undefined"!=typeof module?module.exports=r:(window.FontFaceObserver=r,window.FontFaceObserver.prototype.load=r.prototype.load)}();for(var s,f=document.querySelectorAll(".webfont"),r=r(),u=0;u<f.length;u++){var d=f[u],l=d.getAttribute("data-webfont-name");document.documentElement.classList.add("no-"+l),r?a(d,l):i(d,l)}}();
+        </script><script>
+    var titan = window.titan || {};
+    titan.requestAd = titan.requestAd || [];
+    titan.requestConditionalAd = titan.requestConditionalAd || [];
+    window.Suzuka = {};
+    var suzukaAsync = window.suzukaAsync || {};
+    suzukaAsync.initApps = suzukaAsync.initApps || {};
+    Suzuka.config = {
+        tvguide_region: 69,
+        footer_story_list_id: '',
+        side_panel_story_list_id: '',
+        exclude_story_ids: [],
+        static_url: "//nnstatic-a.akamaihd.net/s/1518562905/",
+        static_site_url: "//nnstatic-a.akamaihd.net/s/1518562905/sites/the-inverell-times/",
+        site_domain: "",
+        site_name: "The Inverell Times",
+        domain_name: ".inverelltimes.com.au",
+        path: "/story/5220327/olympic-games-begin-with-unexpected-show-of-unity-at-opening-ceremony/",
+        media_host: "/static/media/",
+        transform_host: "//nnimgt-a.akamaihd.net/",
+        sochi_host: "https://sochi.fairfaxregional.com.au/",
+        tvgapi_url_prefix: "https://tvg-api.newsnow.io/",
+        time_segments: [
+            {startHour:5,finishHour:12, text:"Morning"},
+            {startHour:12,finishHour:18, text:"Afternoon"},
+            {startHour:18,finishHour:24, text: "Evening"}
+        ],
+        partners: {
+            default_partners: [],
+            solar_state: "nsw"
+        },
+        publication: "inverelltimes",
+        page_section: "",
+        services_loaded: {},
+        story_layout: "MULTIPLE",
+        location: "Inverell, NSW",
+        business_location: "Inverell, New South Wales, Australia",
+        comment_platform: "disqus",
+        cdn_domain: "cdn.fairfaxregional.com.au",
+        view_type: "story",
+        device_type: "desktop",
+        story_list: {},
+        dev_env: "prod"
+    }
+
+    var loadScript = function(script) {
+        var done = false;
+        var callback = null;
+        script.onload = script.onreadystatechange = function() {
+            if ( !done && (!this.readyState ||
+                this.readyState === "loaded" || this.readyState === "complete") ) {
+                done = true;
+                if (callback) {
+                    callback();
+                }
+
+                // Handle memory leak in IE
+                script.onload = script.onreadystatechange = null;
+            }
+        }
+        return function(_callback) {
+            if (done === true) {
+                _callback();
+            } else {
+                callback = _callback
+            }
+        }
+    }
+    window.iframeLoad = function(url){
+        var iframe = document.createElement('iframe');
+        (iframe.frameElement || iframe).style.cssText = "width: 0; height: 0; border: 0";
+        var where = document.getElementsByTagName('script');
+        where = where[where.length - 1];
+        where.parentNode.insertBefore(iframe, where);
+        var doc = iframe.contentWindow.document;
+        var loaded = false;
+        var callbacks = [];
+        window.__iframeCbs = [];
+        window.__iframeCbs.push(function(js) {
+            loadScript(js)(function() {
+                loaded = true;
+                for (var i = 0, l = callbacks.length; i < l; i ++) {
+                    callbacks[i]();
+                }
+            });
+        });
+        var index = window.__iframeCbs.length - 1;
+        var notifyScript = 'parent.window.__iframeCbs['+index+'](js);';
+        var iFrameBody = '<body onload="'+
+            'var js = document.createElement(\'script\');'+
+            'js.src = \''+ url +'\';'+
+            'document.body.appendChild(js);' +
+            notifyScript + '">';
+        doc.open().write(iFrameBody);
+        doc.close();
+        return function (callback) {
+            if (loaded === true) {
+                callback();
+            } else {
+                callbacks.push(callback);
+            }
+        }
+    };
+
+
+    window.asyncLoad = function(url, callback, loadImmediate) {
+        function async_load(){
+            var s = document.createElement('script');
+            s.type = 'text/javascript';
+            s.async = true;
+            s.src = url;
+            var x = document.getElementsByTagName('script')[0];
+            x.parentNode.insertBefore(s, x);
+            var onScript = loadScript(s);
+            if (callback)
+                onScript(callback)
+        }
+        if (loadImmediate) {
+            async_load();
+        } else {
+            if (window.attachEvent)
+                window.attachEvent('onload', async_load);
+            else
+                window.addEventListener('load', async_load, false);
+        }
+    };
+
+    
+    
+
+</script><script>var _sf_startpt=(new Date()).getTime()</script><script>var titanEnabled=false,digitalData={"page":{"pageInfo":{"author":"Foster Klug, Glenn Cullen and Warren Barnsley","pageID":"5220327","sysEnv":"desktop","pageName":"Olympic Games begin with unexpected show of unity at opening ceremony","brand":"theinverelltimes","generator":"newsnow","effectiveDate":"2018-02-09T22:23:52Z","issueDate":""},"category":{"primaryCategory":"","subCategory1":"","subCategory2":"","subCategory3":"","subCategory4":"","pageType":"Article"}},"titan":{"adSite":"inverelltimes","adZone":"","adKeyValues":{"region":"northern","ctype":"article","locstate":"nsw","tag":["domestic"]},"adSlots":[]},"user":[{"profile":[{"profileInfo":{"profileID":""},"membershipType":"visitor"}]}],"version":"1.0","vendor":{"Nielsen":{"apid":"P1637FD54-3D78-4B38-88BC-9B88D473E907"}}}</script></head><body class="desktop scriptable template--sidebar-right template--article" style=""><noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KPMZ4JM" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript><div class="offcanvas-wrapper"></div><div class="main "><div class="advertisement  conditional"><div id="adspot-1x11-pos1"
+         class="advertisement__1x11"
+         data-hide-platforms="mobile tablet tablet-landscape"><script class="titan-conditional" data-ad-id="adspot-1x11-pos1"></script></div></div><div class="zone zone-navigation zone-editable zone-danger"><a class="skip-link" href="#nav">Skip to navigation</a><a class="skip-link" href="#content">Skip to content</a><a class="skip-link" href="#footer">Skip to footer</a><header class="header-wrap lean-header"><div class="wrap container"><a href="/business/" target="_blank" class="hide-on-mobile"><img alt="Business Listings: Your Local Business Directory" class="business-listings-logo" src="//nnstatic-a.akamaihd.net/s/1518562905/images/business_solutions_promos.png"></a><button id="navigation-toggle" class="nav__toggle nav--primary__menu nav--primary__toggle icon">Menu</button><div class="logo-wrap"><a href="/" title="The Inverell Times"><span class="logo"><img src="//nnstatic-a.akamaihd.net/s/1518562905/sites/the-inverell-times/images/masthead/masthead-main.png" alt="The Inverell Times"></span></a></div><div class="headerright-wrap"><div class="headright-inner"><div id="nav-weather-widget"><div class="current-weather"><div class="weatherblock-wrap widget-weather__content is-hidden"><div class="weatherblock"><a href="/weather/"><span class="widget-weather__icon icon icon--large"></span><dl><dt class="weatherblock__now">Now</dt><dd class="weatherblock__now widget-weather__now"></dd></dl></a><a class="weatherblock__location" href="/weather/"></a></div><a class="weatherblock__details" href="/weather/"><dl><dt class="min">Min&nbsp;</dt><dd class="min widget-weather__low"></dd><dt class="max">Max&nbsp;</dt><dd class="max widget-weather__high"></dd></dl><p class="widget-weather__phrase"></p><span class="icon icon--chevron-right icon--small hide-on-desktop"></span></a></div></div></div></div></div></div><div class="navigation header-navigation"><div id="nav--primary__wrap" class="nav--primary__wrap"><div class="inner-wrap"><nav id="nav" class="nav nav--primary" tabindex="-1"><div class="cq-wrap"><div class="togglebox togglebox--mega-menu"><div class="mega-menu"><div class="mega-menu__section"><h3><a href="/news/">News</a></h3><ul></ul></div><div class="mega-menu__section"><h3><a href="/sport/">Sport</a></h3><ul></ul></div><div class="mega-menu__section"><h3><a href="/opinion/">Opinion</a></h3><ul></ul></div><div class="mega-menu__section"><h3><a href="/community/">Community</a></h3><ul></ul></div><div class="mega-menu__section"><h3><a href="/community/forms/">Send us your news</a></h3><ul></ul></div><div class="mega-menu__section"><h3><a href="/classifieds/notices/">Classifieds</a></h3><ul><li><a href="https://advertisers.com.au/?pub=IT">Place a Classifieds Ad</a></li><li><a href="http://www.legacy.com/obituaries/inverelltimes-au/">Tributes</a></li><li><a href="http://www.legacy.com/celebration/inverelltimes-au/">Celebrations</a></li><li><a href="/jobs/">Jobs</a></li><li><a href="http://www.countrycars.com.au/" target="_blank">Cars</a></li><li><a href="https://www.domain.com.au/sale/inverell-nsw-2360/" target="_blank">Real Estate</a></li><li><a href="https://www.agtrader.com.au/search/nsw-inverell?utm_source=inverelltimes.com.au&amp;utm_medium=classifieds&amp;utm_campaign=regionals">Ag and Rural</a></li></ul></div><div class="mega-menu__section"><h3><a href="/recommended/">Recommended</a></h3><ul></ul></div></div></div></div><div class="search-box-wrap"><div class="cq-search-box"><div class="search-box-wrap"><form action="/search" class="form search-box search-box--primary" id="site-search"><label for="site-search-placeholder" class="is-vishidden">Search Site</label><input type="search" class="search-box__text" name="text" id="site-search-placeholder" placeholder="Search the site" /><input type="submit" class="search-box__btn icon--search" value="Search" /></form></div></div></div><gcse:search gname="search" overlayResults="true"></gcse:search><div class="nav__menu_wrap"><ul class="nav__menu"><li class="nav__item hide-on-desktop"><a href="/">Home</a></li><li class="nav__item nav__item--home hide-on-mobile"><a href="/" class="icon--home">Home</a></li><li class="nav__item"><a href="/news/">News</a></li><li class="nav__item"><a href="/sport/">Sport</a></li><li class="nav__item"><a href="/opinion/">Opinion</a></li><li class="nav__item"><a href="/community/">Community</a></li><li class="nav__item"><a href="/community/forms/">Send us your news</a></li><li class="nav__item"><a href="/classifieds/notices/">Classifieds</a></li><li class="nav__item"><a href="/recommended/">Recommended</a></li></ul></div></nav></div></div></div></header></div><div class="zone zone-header zone-editable zone-danger"></div><section role="main" id="main"><div class="advertisement  conditional"><div id="adspot-996x120_970x250_940x250_940x120_728x90-pos1"
+         class="advertisement__996x120_970x250_940x250_940x120_728x90"
+         data-hide-platforms="mobile tablet"><script class="titan-conditional" data-ad-id="adspot-996x120_970x250_940x250_940x120_728x90-pos1"></script></div></div><div id="billboard-container"></div><div class="advertisement  conditional"><div id="adspot-320x120_320x60_320x50_300x50-pos1"
+         class="advertisement__320x120_320x60_320x50_300x50"
+         data-hide-platforms="tablet tablet-landscape desktop"><script class="titan-conditional" data-ad-id="adspot-320x120_320x60_320x50_300x50-pos1"></script></div></div><div class="container content-container"><div class="zone zone-story-header zone-editable zone-danger"></div><main class="main " role="region"><div id="article-5220327"><article class="article" itemscope itemtype="http://schema.org/Article" role="article"><header class="article__header"><div class="article__toolbar"><div class="article__datetime"><time class="signature__datetime" itemprop="datePublished" content="2018-02-10T09:02:00+11:00" datetime="2018-02-10T09:02:00+11:00">February 10 2018 - 9:02AM</time></div></div><h1 itemprop="headline" class="name headline">
+    
+    
+      Olympic Games begin with unexpected show of unity at opening ceremony
+    
+    
+  </h1><div class="article__information"><div class="signature"><div class="signature__info"><ul><li class="signature__name" itemprop="author creator" itemscope="" itemtype="http://schema.org/Person"><a class="story-header__author-name-link"><h5 itemprop="name" rel="author">Foster Klug, Glenn Cullen and Warren Barnsley</h5></a></li></ul></div></div><div class="article__activity"><div class="article__comments"><a class="story-section__link" href=""><span itemprop="articleSection"></span></a></div></div></div><div id="share-top" class="social--share-wrap"><ul class="social social--share social--horizontal"><li><a href="https://www.facebook.com/sharer/sharer.php?u=http://www.inverelltimes.com.au/story/5220327/olympic-games-begin-with-unexpected-show-of-unity-at-opening-ceremony/" class="facebook analytics--story--share--fb" target="_blank"><span class="icon--facebook">facebook</span><span class="social__text">SHARE</span></a></li><li><a href="http://twitter.com/share?url=http://www.inverelltimes.com.au/story/5220327/olympic-games-begin-with-unexpected-show-of-unity-at-opening-ceremony/&text=Olympic%20Games%20begin%20with%20unexpected%20show%20of%20unity%20at%20opening%20ceremony&via=inverelltimes" class="twitter analytics--story--share--twitter" target="_blank"><span class="icon--twitter">twitter</span><span class="social__text">TWEET</span></a></li><li><a href="mailto:?subject=Olympic%20Games%20begin%20with%20unexpected%20show%20of%20unity%20at%20opening%20ceremony&amp;body=I%20would%20like%20to%20share%20something%20with%20you%0A%0Dhttp%3A%2F%2Fwww.inverelltimes.com.au/story/5220327/olympic-games-begin-with-unexpected-show-of-unity-at-opening-ceremony/" class="email analytics--story--share--email"><span class="icon--email">email</span></a></li><li class="hide-on-desktop"><a href="whatsapp://send?text=Olympic%20Games%20begin%20with%20unexpected%20show%20of%20unity%20at%20opening%20ceremony&#10;http://www.inverelltimes.com.au/story/5220327/olympic-games-begin-with-unexpected-show-of-unity-at-opening-ceremony/" class="whatsapp analytics--story--share--whatsapp" target="_blank"><span class="icon--whatsapp">whatsapp</span></a></li></ul></div></header><div class="story"><div class="sticky-container"><div class="article__body news-article-body" itemprop="articleBody"><div class="assets"><div><div class="story-generic__iframe"><iframe src="http://www.smh.com.au/action/embeddedPlayer?id=8511091&width=500&height=349" width="100%" height="349"></iframe></div></div></div><div class="assets"><p>In an extraordinary show of unity, North and South Korea sat side by side under exploding fireworks that represented peace, not destruction, as the 2018 Winter Olympics opened on a Korean Peninsula riven by generations of anger and suspicion.</p></div><div class="assets"><p>The sister of North Korea's leader, Kim Jong-Un, shook hands with South Korean President Moon Jae-in while they watched an elaborate show which aimed to tell the epic story of Korea - not North, not South, but the entire land.</p></div><div class="advertisement  conditional"><div id="adspot-300x250-pos1"
+         class="advertisement__300x250"
+         data-hide-platforms="desktop tablet tablet-landscape"><script class="titan-conditional" data-ad-id="adspot-300x250-pos1"></script></div></div><div class="assets"><p>After years of frustration, billions of dollars and a nagging national debate about their worth, the opening ceremony took place before a world watching the moment not only for its spectacle but for clues about what the political future could hold. A delegation from North Korea, dressed in identical garb, watched from an upper deck of the stadium.</p></div><div class="assets"><p>For Australia it was a late entry to the arena.</p></div><div class="carousel-overlay-container carouselv1 full multiple-slides "><div class="overlay-background"></div><div class="carousel-container"><div class="leaderboardRefreshAd"><div class="advertisement advertisement--gallery conditional"><div id="adspot-728x90-pos"
+         class="advertisement__728x90"
+         data-hide-platforms="mobile"><script class="titan-conditional" data-ad-id="adspot-728x90-pos"></script></div><script type="load/lazy"><a href="/advertise/" class="news-place-ad-info">See your ad here</a></script></div></div><div class="miniLeaderboardRefreshAd "><div class="advertisement advertisement--gallery conditional"><div id="adspot-320x120_320x60_320x50_300x50-pos"
+         class="advertisement__320x120_320x60_320x50_300x50"
+         data-hide-platforms="desktop tablet tablet-landscape"><script class="titan-conditional" data-ad-id="adspot-320x120_320x60_320x50_300x50-pos"></script></div><script type="load/lazy"><a href="/advertise/" class="news-place-ad-info">See your ad here</a></script></div></div><div class="carousel-wrapper"><div class="carousel-wrapper-top"><h2>
+          Olympic Games begin with unexpected show of unity at opening ceremony
+        </h2></div><div class="flexslider photogallery-carousel full" data-title="Olympic Games begin with unexpected show of unity at opening ceremony"><div class="loading"><i class="fa fa-refresh fa-spin"></i></div><ul class="slides"><li><img class="responsive gallery-image"
+     src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+     
+     data-fixed-size="large"
+     data-src="//nnimgt-a.akamaihd.net/transform/v1/crop/frm/34dXacDR8RguBkyLHxYXLhN/51b4b296-0876-4ebb-9d15-509977b579ac.JPG/r0_218_4271_2629_w1200_h678_fmax.jpg"
+     alt="Olympic Games begin with unexpected show of unity at opening ceremony"
+     title="Olympic Games begin with unexpected show of unity at opening ceremony"
+     width="4271"
+     height="2411"
+     itemprop="image"></li><li><img class="responsive gallery-image"
+     src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+     
+     data-fixed-size="large"
+     data-src="//nnimgt-a.akamaihd.net/transform/v1/crop/frm/34dXacDR8RguBkyLHxYXLhN/705e4b80-4a73-463e-b667-6136f784810b.JPG/r0_85_1651_1014_w1200_h678_fmax.jpg"
+     alt="Olympic Games begin with unexpected show of unity at opening ceremony"
+     title="Olympic Games begin with unexpected show of unity at opening ceremony"
+     width="1651"
+     height="928.6875"
+     itemprop="image"></li><li><img class="responsive gallery-image"
+     src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+     
+     data-fixed-size="large"
+     data-src="//nnimgt-a.akamaihd.net/transform/v1/crop/frm/34dXacDR8RguBkyLHxYXLhN/51920967-8e92-43cd-b0da-802302ba7836.JPG/r0_281_5419_3330_w1200_h678_fmax.jpg"
+     alt="Olympic Games begin with unexpected show of unity at opening ceremony"
+     title="Olympic Games begin with unexpected show of unity at opening ceremony"
+     width="5419"
+     height="3048.1875"
+     itemprop="image"></li><li><img class="responsive gallery-image"
+     src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+     
+     data-fixed-size="large"
+     data-src="//nnimgt-a.akamaihd.net/transform/v1/crop/frm/34dXacDR8RguBkyLHxYXLhN/4d6425a5-5053-4fd6-827e-c04aabd4d398.JPG/r0_290_5568_3422_w1200_h678_fmax.jpg"
+     alt="Olympic Games begin with unexpected show of unity at opening ceremony"
+     title="Olympic Games begin with unexpected show of unity at opening ceremony"
+     width="5568"
+     height="3132"
+     itemprop="image"></li><li><img class="responsive gallery-image"
+     src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+     
+     data-fixed-size="large"
+     data-src="//nnimgt-a.akamaihd.net/transform/v1/crop/frm/34dXacDR8RguBkyLHxYXLhN/04005acc-984e-4d16-a7bf-7518fed4fdb2.jpg/r0_343_5264_3304_w1200_h678_fmax.jpg"
+     alt="Olympic Games begin with unexpected show of unity at opening ceremony"
+     title="Olympic Games begin with unexpected show of unity at opening ceremony"
+     width="5264"
+     height="2961"
+     itemprop="image"></li><li><img class="responsive gallery-image"
+     src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+     
+     data-fixed-size="large"
+     data-src="//nnimgt-a.akamaihd.net/transform/v1/crop/frm/34dXacDR8RguBkyLHxYXLhN/d8ba1fba-3060-4f22-a520-d51de0f7b806.jpg/r0_250_4233_2632_w1200_h678_fmax.jpg"
+     alt="Olympic Games begin with unexpected show of unity at opening ceremony"
+     title="Olympic Games begin with unexpected show of unity at opening ceremony"
+     width="4233"
+     height="2381.0625"
+     itemprop="image"></li><li><img class="responsive gallery-image"
+     src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+     
+     data-fixed-size="large"
+     data-src="//nnimgt-a.akamaihd.net/transform/v1/crop/frm/34dXacDR8RguBkyLHxYXLhN/5af27579-9746-4045-9764-e49418d7784c.jpg/r0_193_3756_2305_w1200_h678_fmax.jpg"
+     alt="Olympic Games begin with unexpected show of unity at opening ceremony"
+     title="Olympic Games begin with unexpected show of unity at opening ceremony"
+     width="3756"
+     height="2112.75"
+     itemprop="image"></li><li><img class="responsive gallery-image"
+     src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+     
+     data-fixed-size="large"
+     data-src="//nnimgt-a.akamaihd.net/transform/v1/crop/frm/34dXacDR8RguBkyLHxYXLhN/607cb7e2-069d-43be-829c-6f22e6ce1712.JPG/r0_262_5043_3099_w1200_h678_fmax.jpg"
+     alt="Olympic Games begin with unexpected show of unity at opening ceremony"
+     title="Olympic Games begin with unexpected show of unity at opening ceremony"
+     width="5043"
+     height="2836.6875"
+     itemprop="image"></li><li><img class="responsive gallery-image"
+     src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+     
+     data-fixed-size="large"
+     data-src="//nnimgt-a.akamaihd.net/transform/v1/crop/frm/34dXacDR8RguBkyLHxYXLhN/9166a8bc-689b-4e98-bacf-0b4487bbd33f.jpg/r0_177_4896_2931_w1200_h678_fmax.jpg"
+     alt="Olympic Games begin with unexpected show of unity at opening ceremony"
+     title="Olympic Games begin with unexpected show of unity at opening ceremony"
+     width="4896"
+     height="2754"
+     itemprop="image"></li><li><img class="responsive gallery-image"
+     src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+     
+     data-fixed-size="large"
+     data-src="//nnimgt-a.akamaihd.net/transform/v1/crop/frm/34dXacDR8RguBkyLHxYXLhN/32a379e4-ba56-42ae-b060-0ddd124934d6.jpg/r0_171_4990_2978_w1200_h678_fmax.jpg"
+     alt="Olympic Games begin with unexpected show of unity at opening ceremony"
+     title="Olympic Games begin with unexpected show of unity at opening ceremony"
+     width="4990"
+     height="2806.875"
+     itemprop="image"></li><li><img class="responsive gallery-image"
+     src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+     
+     data-fixed-size="large"
+     data-src="//nnimgt-a.akamaihd.net/transform/v1/crop/frm/34dXacDR8RguBkyLHxYXLhN/eaa83cf3-1b75-4dea-aaf6-50da45c2d877.JPG/r0_245_4724_2903_w1200_h678_fmax.jpg"
+     alt="Olympic Games begin with unexpected show of unity at opening ceremony"
+     title="Olympic Games begin with unexpected show of unity at opening ceremony"
+     width="4724"
+     height="2657.25"
+     itemprop="image"></li><li><img class="responsive gallery-image"
+     src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+     
+     data-fixed-size="large"
+     data-src="//nnimgt-a.akamaihd.net/transform/v1/crop/frm/34dXacDR8RguBkyLHxYXLhN/4105363f-9f49-4db2-8e1f-013cb0b92d18.jpg/r0_387_4644_3000_w1200_h678_fmax.jpg"
+     alt="Olympic Games begin with unexpected show of unity at opening ceremony"
+     title="Olympic Games begin with unexpected show of unity at opening ceremony"
+     width="4644"
+     height="2612.25"
+     itemprop="image"></li><li><img class="responsive gallery-image"
+     src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+     
+     data-fixed-size="large"
+     data-src="//nnimgt-a.akamaihd.net/transform/v1/crop/frm/34dXacDR8RguBkyLHxYXLhN/815be94a-3fd1-46f5-b86b-027eef48aad0.jpg/r0_233_3300_2090_w1200_h678_fmax.jpg"
+     alt="Olympic Games begin with unexpected show of unity at opening ceremony"
+     title="Olympic Games begin with unexpected show of unity at opening ceremony"
+     width="3300"
+     height="1856.25"
+     itemprop="image"></li><li><img class="responsive gallery-image"
+     src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+     
+     data-fixed-size="large"
+     data-src="//nnimgt-a.akamaihd.net/transform/v1/crop/frm/34dXacDR8RguBkyLHxYXLhN/77a4eeb9-a4fe-4e6d-9d01-643f0d5a797e.JPG/r0_275_5298_3256_w1200_h678_fmax.jpg"
+     alt="Olympic Games begin with unexpected show of unity at opening ceremony"
+     title="Olympic Games begin with unexpected show of unity at opening ceremony"
+     width="5298"
+     height="2980.125"
+     itemprop="image"></li><li><img class="responsive gallery-image"
+     src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+     
+     data-fixed-size="large"
+     data-src="//nnimgt-a.akamaihd.net/transform/v1/crop/frm/34dXacDR8RguBkyLHxYXLhN/9297c623-8cdc-43ae-83d0-82b7b5c41182.jpg/r0_189_3102_1934_w1200_h678_fmax.jpg"
+     alt="Olympic Games begin with unexpected show of unity at opening ceremony"
+     title="Olympic Games begin with unexpected show of unity at opening ceremony"
+     width="3102"
+     height="1744.875"
+     itemprop="image"></li><li><img class="responsive gallery-image"
+     src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+     
+     data-fixed-size="large"
+     data-src="//nnimgt-a.akamaihd.net/transform/v1/crop/frm/34dXacDR8RguBkyLHxYXLhN/7d4e44e4-8488-4870-910c-67ac9f0ecb20.JPG/r0_220_4232_2600_w1200_h678_fmax.jpg"
+     alt="Olympic Games begin with unexpected show of unity at opening ceremony"
+     title="Olympic Games begin with unexpected show of unity at opening ceremony"
+     width="4232"
+     height="2380.5"
+     itemprop="image"></li><li><img class="responsive gallery-image"
+     src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+     
+     data-fixed-size="large"
+     data-src="//nnimgt-a.akamaihd.net/transform/v1/crop/frm/34dXacDR8RguBkyLHxYXLhN/5b570462-da50-4559-aff3-1105fa395a0d.jpg/r0_388_3831_2543_w1200_h678_fmax.jpg"
+     alt="Olympic Games begin with unexpected show of unity at opening ceremony"
+     title="Olympic Games begin with unexpected show of unity at opening ceremony"
+     width="3831"
+     height="2154.9375"
+     itemprop="image"></li><li><img class="responsive gallery-image"
+     src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+     
+     data-fixed-size="large"
+     data-src="//nnimgt-a.akamaihd.net/transform/v1/crop/frm/34dXacDR8RguBkyLHxYXLhN/92dc339b-d97c-4291-8753-1be21798bd4d.jpg/r0_382_3523_2363_w1200_h678_fmax.jpg"
+     alt="Olympic Games begin with unexpected show of unity at opening ceremony"
+     title="Olympic Games begin with unexpected show of unity at opening ceremony"
+     width="3523"
+     height="1981.6875"
+     itemprop="image"></li><li><img class="responsive gallery-image"
+     src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+     
+     data-fixed-size="large"
+     data-src="//nnimgt-a.akamaihd.net/transform/v1/crop/frm/34dXacDR8RguBkyLHxYXLhN/d3d6aeb9-f8f6-4c13-a88d-b207f96c92bf.jpg/r0_314_4283_2724_w1200_h678_fmax.jpg"
+     alt="Olympic Games begin with unexpected show of unity at opening ceremony"
+     title="Olympic Games begin with unexpected show of unity at opening ceremony"
+     width="4283"
+     height="2409.1875"
+     itemprop="image"></li><li><img class="responsive gallery-image"
+     src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+     
+     data-fixed-size="large"
+     data-src="//nnimgt-a.akamaihd.net/transform/v1/crop/frm/34dXacDR8RguBkyLHxYXLhN/61a893bf-1c46-4830-8ebb-8dafdb467763.JPG/r0_243_4671_2870_w1200_h678_fmax.jpg"
+     alt="Olympic Games begin with unexpected show of unity at opening ceremony"
+     title="Olympic Games begin with unexpected show of unity at opening ceremony"
+     width="4671"
+     height="2627.4375"
+     itemprop="image"></li><li><img class="responsive gallery-image"
+     src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+     
+     data-fixed-size="large"
+     data-src="//nnimgt-a.akamaihd.net/transform/v1/crop/frm/34dXacDR8RguBkyLHxYXLhN/d51abeea-0e5b-4380-bbc1-e88af1b528e3.jpg/r0_285_5472_3363_w1200_h678_fmax.jpg"
+     alt="Olympic Games begin with unexpected show of unity at opening ceremony"
+     title="Olympic Games begin with unexpected show of unity at opening ceremony"
+     width="5472"
+     height="3078"
+     itemprop="image"></li><li><img class="responsive gallery-image"
+     src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+     
+     data-fixed-size="large"
+     data-src="//nnimgt-a.akamaihd.net/transform/v1/crop/frm/34dXacDR8RguBkyLHxYXLhN/b95e8300-947d-4534-93e6-682a1497e75f.JPG/r0_242_4664_2866_w1200_h678_fmax.jpg"
+     alt="Olympic Games begin with unexpected show of unity at opening ceremony"
+     title="Olympic Games begin with unexpected show of unity at opening ceremony"
+     width="4664"
+     height="2623.5"
+     itemprop="image"></li><li><img class="responsive gallery-image"
+     src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+     
+     data-fixed-size="large"
+     data-src="//nnimgt-a.akamaihd.net/transform/v1/crop/frm/34dXacDR8RguBkyLHxYXLhN/72e6d481-d623-44f2-9d95-935bbb58e54f.JPG/r0_228_4395_2701_w1200_h678_fmax.jpg"
+     alt="Olympic Games begin with unexpected show of unity at opening ceremony"
+     title="Olympic Games begin with unexpected show of unity at opening ceremony"
+     width="4395"
+     height="2472.1875"
+     itemprop="image"></li><li><img class="responsive gallery-image"
+     src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+     
+     data-fixed-size="large"
+     data-src="//nnimgt-a.akamaihd.net/transform/v1/crop/frm/34dXacDR8RguBkyLHxYXLhN/6a6020ac-93f9-426f-ae20-edfe5350a42e.jpg/r88_0_4823_2663_w1200_h678_fmax.jpg"
+     alt="Olympic Games begin with unexpected show of unity at opening ceremony"
+     title="Olympic Games begin with unexpected show of unity at opening ceremony"
+     width="4734.22222222"
+     height="2663"
+     itemprop="image"></li><li><img class="responsive gallery-image"
+     src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+     
+     data-fixed-size="large"
+     data-src="//nnimgt-a.akamaihd.net/transform/v1/crop/frm/34dXacDR8RguBkyLHxYXLhN/b0f0655c-9a10-4674-91d9-32cebfc51afc.jpg/r0_300_4016_2559_w1200_h678_fmax.jpg"
+     alt="Olympic Games begin with unexpected show of unity at opening ceremony"
+     title="Olympic Games begin with unexpected show of unity at opening ceremony"
+     width="4016"
+     height="2259"
+     itemprop="image"></li><li><img class="responsive gallery-image"
+     src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+     
+     data-fixed-size="large"
+     data-src="//nnimgt-a.akamaihd.net/transform/v1/crop/frm/34dXacDR8RguBkyLHxYXLhN/a82be613-c8ff-4c09-ad6a-a457cb86c295.JPG/r0_218_4198_2580_w1200_h678_fmax.jpg"
+     alt="Olympic Games begin with unexpected show of unity at opening ceremony"
+     title="Olympic Games begin with unexpected show of unity at opening ceremony"
+     width="4198"
+     height="2361.375"
+     itemprop="image"></li><li><img class="responsive gallery-image"
+     src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+     
+     data-fixed-size="large"
+     data-src="//nnimgt-a.akamaihd.net/transform/v1/crop/frm/34dXacDR8RguBkyLHxYXLhN/5dbc0c06-25e8-4128-9154-ac1f96ecfe59.jpg/r0_186_2631_1665_w1200_h678_fmax.jpg"
+     alt="Olympic Games begin with unexpected show of unity at opening ceremony"
+     title="Olympic Games begin with unexpected show of unity at opening ceremony"
+     width="2631"
+     height="1479.9375"
+     itemprop="image"></li><li><img class="responsive gallery-image"
+     src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+     
+     data-fixed-size="large"
+     data-src="//nnimgt-a.akamaihd.net/transform/v1/crop/frm/34dXacDR8RguBkyLHxYXLhN/92b4cebb-a4b8-454f-89bb-11d2ddb6924e.JPG/r0_228_4395_2701_w1200_h678_fmax.jpg"
+     alt="Olympic Games begin with unexpected show of unity at opening ceremony"
+     title="Olympic Games begin with unexpected show of unity at opening ceremony"
+     width="4395"
+     height="2472.1875"
+     itemprop="image"></li><li><img class="responsive gallery-image"
+     src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+     
+     data-fixed-size="large"
+     data-src="//nnimgt-a.akamaihd.net/transform/v1/crop/frm/34dXacDR8RguBkyLHxYXLhN/2ecae722-5752-454e-9d44-78a70dd40fdb.jpg/r0_99_3195_1896_w1200_h678_fmax.jpg"
+     alt="Olympic Games begin with unexpected show of unity at opening ceremony"
+     title="Olympic Games begin with unexpected show of unity at opening ceremony"
+     width="3195"
+     height="1797.1875"
+     itemprop="image"></li><li><img class="responsive gallery-image"
+     src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+     
+     data-fixed-size="large"
+     data-src="//nnimgt-a.akamaihd.net/transform/v1/crop/frm/34dXacDR8RguBkyLHxYXLhN/d79135f0-11bc-4f99-b60f-008b0a9386fa.JPG/r0_250_4817_2960_w1200_h678_fmax.jpg"
+     alt="Olympic Games begin with unexpected show of unity at opening ceremony"
+     title="Olympic Games begin with unexpected show of unity at opening ceremony"
+     width="4817"
+     height="2709.5625"
+     itemprop="image"></li><li><img class="responsive gallery-image"
+     src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+     
+     data-fixed-size="large"
+     data-src="//nnimgt-a.akamaihd.net/transform/v1/crop/frm/34dXacDR8RguBkyLHxYXLhN/0e7f06e1-aaeb-4381-8fdd-d4b90419e4d1.jpg/r0_130_3828_2284_w1200_h678_fmax.jpg"
+     alt="Olympic Games begin with unexpected show of unity at opening ceremony"
+     title="Olympic Games begin with unexpected show of unity at opening ceremony"
+     width="3828"
+     height="2153.25"
+     itemprop="image"></li><li><img class="responsive gallery-image"
+     src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+     
+     data-fixed-size="large"
+     data-src="//nnimgt-a.akamaihd.net/transform/v1/crop/frm/34dXacDR8RguBkyLHxYXLhN/1e4110ad-3ba9-444b-924d-27c90de8238e.jpg/r0_164_3806_2304_w1200_h678_fmax.jpg"
+     alt="Olympic Games begin with unexpected show of unity at opening ceremony"
+     title="Olympic Games begin with unexpected show of unity at opening ceremony"
+     width="3806"
+     height="2140.875"
+     itemprop="image"></li><li><img class="responsive gallery-image"
+     src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+     
+     data-fixed-size="large"
+     data-src="//nnimgt-a.akamaihd.net/transform/v1/crop/frm/34dXacDR8RguBkyLHxYXLhN/59150cc4-e3fc-442e-aef1-2d103d8bcf3d.JPG/r0_215_4137_2542_w1200_h678_fmax.jpg"
+     alt="Olympic Games begin with unexpected show of unity at opening ceremony"
+     title="Olympic Games begin with unexpected show of unity at opening ceremony"
+     width="4137"
+     height="2327.0625"
+     itemprop="image"></li><li><img class="responsive gallery-image"
+     src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+     
+     data-fixed-size="large"
+     data-src="//nnimgt-a.akamaihd.net/transform/v1/crop/frm/34dXacDR8RguBkyLHxYXLhN/59f19d1e-7319-49f4-9ba6-3cb8a6750caa.jpg/r0_286_2418_1646_w1200_h678_fmax.jpg"
+     alt="Olympic Games begin with unexpected show of unity at opening ceremony"
+     title="Olympic Games begin with unexpected show of unity at opening ceremony"
+     width="2418"
+     height="1360.125"
+     itemprop="image"></li><li><img class="responsive gallery-image"
+     src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+     
+     data-fixed-size="large"
+     data-src="//nnimgt-a.akamaihd.net/transform/v1/crop/frm/34dXacDR8RguBkyLHxYXLhN/35b4234a-2553-4ea3-9559-19c68e3db0e9.jpg/r0_204_3324_2074_w1200_h678_fmax.jpg"
+     alt="Olympic Games begin with unexpected show of unity at opening ceremony"
+     title="Olympic Games begin with unexpected show of unity at opening ceremony"
+     width="3324"
+     height="1869.75"
+     itemprop="image"></li><li><img class="responsive gallery-image"
+     src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+     
+     data-fixed-size="large"
+     data-src="//nnimgt-a.akamaihd.net/transform/v1/crop/frm/34dXacDR8RguBkyLHxYXLhN/f2257813-a9b9-4a89-aed3-6077fcc5575e.jpg/r0_231_2212_1476_w1200_h678_fmax.jpg"
+     alt="Olympic Games begin with unexpected show of unity at opening ceremony"
+     title="Olympic Games begin with unexpected show of unity at opening ceremony"
+     width="2212"
+     height="1244.25"
+     itemprop="image"></li><li><img class="responsive gallery-image"
+     src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+     
+     data-fixed-size="large"
+     data-src="//nnimgt-a.akamaihd.net/transform/v1/crop/frm/34dXacDR8RguBkyLHxYXLhN/8613434d-ee3a-4a49-8bee-d15e9907f3cb.jpg/r0_238_3033_1945_w1200_h678_fmax.jpg"
+     alt="Olympic Games begin with unexpected show of unity at opening ceremony"
+     title="Olympic Games begin with unexpected show of unity at opening ceremony"
+     width="3033"
+     height="1706.0625"
+     itemprop="image"></li></ul><div class="carousel-gallery-meta__overlay"><i class="fa fa-picture-o carousel-gallery-meta__icon--white"></i><span class="carousel-gallery-meta__total-images"></span></div></div></div><div class="carousel-col"><div class="carousel-details-wrapper"><div class="social-sharing"><div class="social-sharing-twitter"><a data-social-url="https://twitter.com/intent/tweet?&text=Olympic%20Games%20begin%20with%20unexpected%20show%20of%20unity%20at%20opening%20ceremony&via=inverelltimes&url=" class="carousel-icon interactive-icon btn-custom-tweet" href="#">Tweet<i data-icon-retina class="icons-twitter-white fa fa-twitter carousel-social__icon"></i></a></div><div class="social-sharing-facebook"><a data-social-url="https://www.facebook.com/sharer/sharer.php?u=" class="carousel-icon interactive-icon btn-custom-facebook" href="#">Facebook<i data-icon-retina class="icons-facebook-white fa fa-facebook-square carousel-social__icon"></i></a></div></div><div class="slideshow-controls"><button class="carousel-icon interactive-icon btn-carousel-previous"><i data-icon-retina class="icons-back fa fa-step-backward carousel-slideshow-controls__icon"></i></button><button class="carousel-icon interactive-icon btn-carousel-next"><i data-icon-retina class="icons-forward fa fa-step-forward carousel-slideshow-controls__icon"></i></button><button class="carousel-icon interactive-icon btn-carousel-play"><i data-icon-retina class="icons-play fa fa-play carousel-slideshow-controls__icon"></i></button></div><div class="slides-detail"><span class='current-slide'></span> of <span class='total-slides'></span></div><p class="caption small"></p></div><div class="refresh-advertisements mrecRefreshAd"><button class="carousel-ad-close-btn"></button><div class="advertisement advertisement--gallery conditional"><div id="adspot-300x250-pos"
+         class="advertisement__300x250"
+         data-hide-platforms="mobile"><script class="titan-conditional" data-ad-id="adspot-300x250-pos"></script></div><script type="load/lazy"><a href="/advertise/" class="news-place-ad-info">See your ad here</a></script></div></div></div><button class="carousel-icon close"><i class="fa fa-close carousel-close"></i></button></div><div class="carousel-gallery-meta" style="border-bottom-width: 1px; border-bottom-style:solid;"><div class="carousel-gallery-meta__heading"><i class="fa fa-picture-o story-gallery__icon"></i> Pyeongchang Olympics Opening Ceremony</div><div class="carousel-gallery-meta__caption">Photos: AP Photos.</div></div></div><div class="assets"></div><div class="assets"><p>Marching in order of the Korean alphabet, the Australians were forced to wait in the wings before snowboarding gold medal hope Scotty James led the team out.</p></div><div class="assets"><p>There was no dancing - as has been his wont in recent social media posts - but he waved the flag with vigour in front of another 26 Australian athletes.</p></div><div class="assets"><p>"It was absolutely amazing," James told Channel Seven.</p></div><div class="assets"><p>"It was everything I thought it would be. I will remember it forever."</p></div><div class="assets"><p>Told he looked sharper than American rival Shaun White he quipped: "hopefully that transitions into the halfpipe as well."</p></div><div class="assets"><p>The parade continued as winter giants Austria and China came out and girded themselves in the frigid Korean night.</p></div><div class="assets"><p>A huge crowd gathered in the freezing Olympics Stadium in an isolated, mountainous corner of South Korea, as performances displayed the sweep of Korean history and culture. After a chaotic year of nuclear war threats and missile tests from the North, it was a striking visual moment.</p></div><div class="assets"><p>There was a palpable excitement in this isolated, rugged mountain town, as one of the poorest, coldest and most disgruntled parts of an otherwise prosperous South Korea kicked off two weeks of winter sports, Olympic spectacle and, just maybe, a bit of inter-Korean reconciliation.</p></div><div class="assets"><p>The North has sent nearly 500 people to PyeongChang after the Koreas agreed to a series of conciliatory gestures to mark the Games. More than 2900 athletes from 92 countries will compete, making it the biggest Winter Olympics to date.</p></div><div class="assets"><p>And so, with a little help from a liberal South Korean president eager to engage the North Korean capital Pyongyang - and their star figure skater Kim Yuna who lit the Olympic Cauldron - the 2018 PyeongChang Games were opened.</p></div><div class="assets"><p>Could PyeongChang's initial pitch - that it could contribute to peace - actually become reality? The opening ceremony offered at least some hints about that, and maybe more. What's certain is that these Games, more so than any in recent memory, are about far more than sport.</p></div><div class="assets"><p>Turns out they're are also about shirtless Tongans.</p></div><div class="assets"><p>Cross-country skier Pita Taufatofua, whose flag-carrying, oiled torso appearance at the Rio 2016 opening ceremony made worldwide headlines, again shocked and delighted by bearing his chest in freezing temperatures.</p></div><div class="assets"><p>He wore a manafau, a traditional dancer's skirt, and jandals.</p></div><div class="assets"><p>"I won't freeze. I am from Tonga. We sailed across the Pacific. This is nothing," he said.</p></div><div data-widget="plista_widget_outstream"></div><div class="story-share--end"><ul class="social social--share social--horizontal"><li><a href="https://www.facebook.com/sharer/sharer.php?u=http://www.inverelltimes.com.au/story/5220327/olympic-games-begin-with-unexpected-show-of-unity-at-opening-ceremony/" class="facebook analytics--story--share--fb" target="_blank"><span class="icon--facebook">facebook</span><span class="social__text">SHARE</span></a></li><li><a href="http://twitter.com/share?url=http://www.inverelltimes.com.au/story/5220327/olympic-games-begin-with-unexpected-show-of-unity-at-opening-ceremony/&text=Olympic%20Games%20begin%20with%20unexpected%20show%20of%20unity%20at%20opening%20ceremony&via=inverelltimes" class="twitter analytics--story--share--twitter" target="_blank"><span class="icon--twitter">twitter</span><span class="social__text">TWEET</span></a></li><li><a href="mailto:?subject=Olympic%20Games%20begin%20with%20unexpected%20show%20of%20unity%20at%20opening%20ceremony&amp;body=I%20would%20like%20to%20share%20something%20with%20you%0A%0Dhttp%3A%2F%2Fwww.inverelltimes.com.au/story/5220327/olympic-games-begin-with-unexpected-show-of-unity-at-opening-ceremony/" class="email analytics--story--share--email"><span class="icon--email">email</span></a></li><li class="hide-on-desktop"><a href="whatsapp://send?text=Olympic%20Games%20begin%20with%20unexpected%20show%20of%20unity%20at%20opening%20ceremony&#10;http://www.inverelltimes.com.au/story/5220327/olympic-games-begin-with-unexpected-show-of-unity-at-opening-ceremony/" class="whatsapp analytics--story--share--whatsapp" target="_blank"><span class="icon--whatsapp">whatsapp</span></a></li></ul></div></div></div></div><div class="clear>"></div><script class="story-id">
+        Suzuka.config.exclude_story_ids.push('5220327');
+    </script><div id="mobile-indicator"></div><div data-widget="plista_widget_underArticle"></div></article></div><div class="advertisement overflow-hidden facebook-block hidden-phone"><div class="fb-page" data-href="https://www.facebook.com/InverellTimes" data-small-header=data_header data-adapt-container-width=data_width data-hide-cover=data_cover data-show-facepile=true data-show-posts=data_posts><div class="fb-xfbml-parse-ignore"></div></div><div class="clear"></div></div></main><aside class="aside aside--main" role="complementary"><div class="advertisement  conditional"><div id="adspot-300x250_300x600-pos1"
+         class="advertisement__300x250_300x600"
+         data-hide-platforms="mobile"><script class="titan-conditional" data-ad-id="adspot-300x250_300x600-pos1"></script></div></div><script id="story-list-template" type="text/x-handlebars-template"><li class="section-stories hide {{#if image }}{{else}}no-image{{/if}}"><a class="section-stories__link" title="{{ title }}" href="{{ href }}"><img class="section-stories__image" src="{{ image }}"><span class="section-stories__content"><span class="section-stories__title" title="{{ title }}">{{ short_title }}</span><span class="section-stories__timesince">{{ publish_from }} ago</span></span><span class="section-stories__progress"></span></a></li></script><div class="advertisement  conditional"><div id="adspot-300x250-pos2"
+         class="advertisement__300x250"
+         data-hide-platforms="desktop tablet tablet-landscape"><script class="titan-conditional" data-ad-id="adspot-300x250-pos2"></script></div></div><div class="grid"><div class="container"><div id="aside-promotion" class="strap businesspromotion story" data-num-items=""><div class="businesspromo hidden-phone hidden-tablet-narrow"><header class="header"><h2 class="heading show-mobile">
+                        Local Business
+                        <a href="/business/" target="_blank" class="view-more">View More</a></h2><h2 class="heading hide-mobile"><a href="/business/" target="_blank" class="view-more story-page">View More Local Businesses</a></h2></header><div class="businesspromo__loader show"><img src="//nnstatic-a.akamaihd.net/s/1518562905/images/spinner.gif" alt="Loading" /></div><div class="businesspromo__container"></div><h2 class="heading"><a href="/advertise/" target="_blank" class="list-more">List Your Business Here</a></h2></div></div></div><div class="container"><div id="footer-promotion" class="strap businesspromotion story" data-num-items=""><div class="businesspromo hidden-tablet-wide hidden-desktop"><header class="header"><h2 class="heading show-mobile">
+                        Local Business
+                        <a href="/business/" target="_blank" class="view-more">View More</a></h2><h2 class="heading hide-mobile"><a href="/business/" target="_blank" class="view-more story-page">View More Local Businesses</a></h2></header><div class="businesspromo__loader show"><img src="//nnstatic-a.akamaihd.net/s/1518562905/images/spinner.gif" alt="Loading" /></div><div class="businesspromo__container"></div><h2 class="heading"><a href="/advertise/" target="_blank" class="list-more">List Your Business Here</a></h2></div></div></div><div class="most_popular most-popular section"><div class="panel panel--popular"><header class="header"><h2 class="heading">Local News</h2></header><ol><li><article class="story"><div class="story__wof"><h3 class="story__headline"><a title="Five reasons the Murray Darling Basin changes matter to you" href="/story/5234354/five-reasons-the-murray-darling-basin-changes-matter-to-you/?cs=1523">Five reasons the Murray Darling Basin changes matter to you</a></h3></div></article></li><li><article class="story"><div class="story__wof"><h3 class="story__headline"><a title="Driver killed in early morning crash on Bannockburn Road, Inverell" href="/story/5234212/driver-killed-in-early-morning-crash-on-bannockburn-road-inverell/?cs=1523">Driver killed in early morning crash on Bannockburn Road, Inverell</a></h3></div></article></li><li><article class="story"><div class="story__wof"><h3 class="story__headline"><a title="Toilet tourism: What’s the best loo in Inverell?" href="/story/5228468/toilet-tourism-whats-the-best-loo-in-inverell/?cs=1523">Toilet tourism: What’s the best loo in Inverell?</a></h3></div></article></li><li><article class="story"><div class="story__wof"><h3 class="story__headline"><a title="Drivers warned of red and blue blitz in roads crackdown | Video" href="/story/5233219/drivers-warned-of-red-and-blue-blitz-in-roads-crackdown-video/?cs=1523">Drivers warned of red and blue blitz in roads crackdown | Video</a></h3></div></article></li><li><article class="story"><div class="story__wof"><h3 class="story__headline"><a title="Free Ashford playgroup returns" href="/story/5233010/free-ashford-playgroup-returns/?cs=1523">Free Ashford playgroup returns</a></h3></div></article></li><li><article class="story"><div class="story__wof"><h3 class="story__headline"><a title="Break-ins on the rise: How safe are we?" href="/story/5233186/break-ins-on-the-rise-how-safe-are-we/?cs=1523">Break-ins on the rise: How safe are we?</a></h3></div></article></li></ol></div></div></div><div class="sticky-wrap"><div class="advertisement  conditional"><div id="adspot-300x250-pos2"
+         class="advertisement__300x250"
+         data-hide-platforms="mobile"><script class="titan-conditional" data-ad-id="adspot-300x250-pos2"></script></div></div></div><div class="advertisement overflow-hidden facebook-block hidden-tablet-narrow hidden-tablet-wide hidden-desktop"><div class="fb-page" data-href="https://www.facebook.com/InverellTimes" data-small-header=data_header data-adapt-container-width=data_width data-hide-cover=data_cover data-show-facepile=true data-show-posts=data_posts><div class="fb-xfbml-parse-ignore"></div></div><div class="clear"></div></div></aside></div><div class="zone zone-story-bottom zone-editable zone-danger"></div><div class="zone zone-story-footer zone-editable zone-danger"></div><div class="advertisement  conditional"><div id="adspot-728x90-pos2"
+         class="advertisement__728x90"
+         data-hide-platforms="mobile"><script class="titan-conditional" data-ad-id="adspot-728x90-pos2"></script></div></div></section><footer class="footer" role="contentinfo"><div class="links_2d47 links section"><div class="footer__wrap"><div class="content container grid"><div class="grid__cell footer__top"><a class="logo logo--masthead" href="/" title="The Inverell Times"><img src="//nnstatic-a.akamaihd.net/s/1518562905/sites/the-inverell-times/images/masthead/masthead-alt.png" alt="The Inverell Times"></a><ul class="social social--horizontal social--tertiary"><li><a class="email" href="/contact/" target="_blank" title="Share via Email"><span class="icon--email">Share via Email</span></a></li><li><a class="facebook" href="https://www.facebook.com/InverellTimes" target="_blank" title="Share on Facebook"><span class="icon--facebook">Share on Facebook</span></a></li><li><a class="twitter" href="https://twitter.com/inverelltimes" target="_blank" title="Share on Twitter"><span class="icon--twitter">Share on Twitter</span></a></li><li><a class="rss" href="/rss.xml" title="RSS Feed"><span class="icon--rss">RSS Feed</span></a></li></ul></div><div class="zone-footer zone-editable zone-danger"><section class="footer__links grid"><nav class="grid__cell"><h3 class="icon--after--chevron-down">Australian Community Media</h3><ul><li><a href="/about-us/">About Us</a></li><li><a href="/advertise/">Advertising</a></li><li><a href="http://www.fairfaxmedia.com.au/company/privacy/privacy" target="_blank">Privacy Policy</a></li><li><a href="http://www.fairfaxmedia.com.au/company/conditions-of-use/conditions-of-use" target="_blank">Conditions of Use</a></li></ul></nav><nav class="grid__cell"><h3 class="icon--after--chevron-down">The Inverell Times</h3><ul><li><a href="/contact/">Contact Us</a></li><li><a href="/about-us/">About Us</a></li><li><a href="/advertise/">Advertise With Us</a></li><li><a href="https://eedition.fairfaxregional.com.au/default.aspx?productid=INVE">Digital Edition</a></li></ul></nav><nav class="grid__cell"><h3 class="icon--after--chevron-down">Classifieds</h3><ul><li><a href="https://www.oneflare.com.au/" target="_blank">OneFlare</a></li><li><a href="/business/">Business Listings</a></li><li><a href="https://advertisers.com.au/?pub=IT" target="_blank">Place an Ad</a></li><li><a href="/classifieds/notices/">Classifieds &amp; Notices</a></li><li><a href="http://www.countrycars.com.au/" target="_blank">Cars</a></li><li><a href="/jobs/">Jobs</a></li><li><a href="https://www.domain.com.au/" target="_blank">Domain</a></li><li><a href="https://www.nabo.com.au/" target="_blank">Nabo</a></li><li><a href="https://www.agtrader.com.au/search/nsw-inverell?utm_source=inverelltimes.com.au&amp;utm_medium=classifieds&amp;utm_campaign=regionals" target="_blank">AgTrader</a></li><li><a href="http://www.legacy.com/obituaries/inverelltimes-au/">Tributes</a></li><li><a href="http://www.legacy.com/celebration/inverelltimes-au/">Celebrations</a></li></ul></nav><nav class="grid__cell"><h3 class="icon--after--chevron-down">Submit</h3><ul><li><a href="/opinion/letters/send-a-letter-to-the-editor/">Letter to the Editor</a></li></ul></nav></section></div></div></div></div></footer><script src="//nnstatic-a.akamaihd.net/s/1518562905/legolite/js/vendor.js"></script><script src="//nnstatic-a.akamaihd.net/s/1518562905/legolite/js/app.js"></script><script>
+            
+            $(function () {
+                
+                    
+                    require('themes/legolite/js/homepage');
+                    require('themes/legolite/js/imageManager');
+                    require('themes/legolite/js/utils');
+                    require('themes/legolite/js/locationManager');
+                    require('themes/legolite/js/ads');
+                    require('themes/legolite/js/navigation2');
+                    require('themes/legolite/js/footer');
+                    require('themes/legolite/js/straps');
+                    require('themes/legolite/js/business_feature');
+                    require('themes/legolite/js/business_promo');
+                    $(window).load(function() {
+                        var cx = '012527284968046999840:ufb2mjhuztg';
+                        var gcse = document.createElement('script');
+                        gcse.type = 'text/javascript';
+                        gcse.async = true;
+                        gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+                        var s = document.getElementsByTagName('script')[0];
+                        s.parentNode.insertBefore(gcse, s);
+                    });
+                
+require('themes/legolite/js/analytics');
+require('themes/legolite/js/storyPage');
+require('themes/legolite/js/gallery');
+
+            });
+        </script><div id="fb-root"></div><script>
+        $(window).load(function() {
+            (function(d, s, id) {
+              var js, fjs = d.getElementsByTagName(s)[0];
+              if (d.getElementById(id)) return;
+              js = d.createElement(s); js.id = id;
+              js.src = "https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.3";
+              fjs.parentNode.insertBefore(js, fjs);
+            }(document, 'script', 'facebook-jssdk'));
+        });
+    </script><script id="twitter" async charset="utf-8">
+        $(document).ready(function() {
+            $.ajaxSetup({ cache: true });
+            $.getScript('//platform.twitter.com/widgets.js', function() {
+                Suzuka.config.services_loaded['twitter'] = true;
+                twttr.events.bind('loaded', function(){
+                    Waypoint.refreshAll();
+                });
+            });
+        });
+    </script><script>
+        Suzuka.config.side_panel_story_list_id = 'None';
+    </script><script>
+    (function(c){var g,s='script',w=window,n=c.name||'PLISTA';if(!w[n]){w[n]=c;g=w.document.getElementsByTagName(s)[0];s=w.document.createElement(s);s.async=true;s.type='text/javascript';s.src=(w.location.protocol==='https:'?'https:':'http:')+'//static'+(c.origin?'-'+c.origin:'')+'.plista.com/async'+(c.name?'/'+c.name:'')+'.js';g.parentNode.insertBefore(s,g);}
+    }({
+        "publickey": "eeb0b15a575ed7bdc0acafbd",
+        "item": {
+            "objectid": "5220327",
+            "title": "Olympic Games begin with unexpected show of unity at opening ceremony",
+            "text": "In an extraordinary show of unity, North and South Korea sat side by side under exploding fireworks.",
+            "url": "http://www.inverelltimes.com.au/story/5220327/olympic-games-begin-with-unexpected-show-of-unity-at-opening-ceremony/",
+            "img": 'http://nnimgt-a.akamaihd.net/transform/v1/crop/frm/34dXacDR8RguBkyLHxYXLhN/51b4b296-0876-4ebb-9d15-509977b579ac.JPG/r2_218_4269_2629_w1200_h678_fmax.jpg',
+            "category": "None",
+            "published_at": 1518213720,
+            "updated_at": 1518215032,
+            "kind": "article"
+        },
+        "origin": "au"
+    }));
+</script><div id="adspot-interstitial"><script>
+                titan.requestAd.push("adspot-interstitial");
+            </script></div></div><script>
+    var _sf_async_config={};
+    _sf_async_config.uid = 27223;
+    _sf_async_config.domain = 'inverelltimes.com.au';
+    _sf_async_config.path = '/story/5220327/';
+    _sf_async_config.title = 'Olympic Games begin with unexpected show of unity at opening ceremony';
+    _sf_async_config.authors = 'Foster Klug, Glenn Cullen and Warren Barnsley';
+    _sf_async_config.sections = 'story';
+    (function(){
+      window.addEventListener('load', function() {
+        window._sf_endpt=(new Date()).getTime();
+        var e = document.createElement('script');
+        e.setAttribute('language', 'javascript');
+        e.setAttribute('type', 'text/javascript');
+        e.setAttribute('src', 'https://static.chartbeat.com/js/chartbeat.js');
+        document.body.appendChild(e);
+      });
+    })();
+</script></body>
+</html>

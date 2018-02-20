@@ -1,0 +1,884 @@
+<!DOCTYPE html>
+<html lang="en-US" xmlns:fb="https://www.facebook.com/2008/fbml" xmlns:addthis="https://www.addthis.com/help/api-spec"  prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb#" class="no-js">
+<head>
+	<meta charset="UTF-8"><script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,t,n){function r(n){if(!t[n]){var o=t[n]={exports:{}};e[n][0].call(o.exports,function(t){var o=e[n][1][t];return r(o||t)},o,o.exports)}return t[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({1:[function(e,t,n){function r(){}function o(e,t,n){return function(){return i(e,[f.now()].concat(u(arguments)),t?null:this,n),t?void 0:this}}var i=e("handle"),a=e(2),u=e(3),c=e("ee").get("tracer"),f=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],d="api-",l=d+"ixn-";a(p,function(e,t){s[t]=o(d+t,!0,"api")}),s.addPageAction=o(d+"addPageAction",!0),s.setCurrentRouteName=o(d+"routeName",!0),t.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,t){var n={},r=this,o="function"==typeof t;return i(l+"tracer",[f.now(),e,n],r),function(){if(c.emit((o?"":"no-")+"fn-start",[f.now(),r,o],n),o)try{return t.apply(this,arguments)}catch(e){throw c.emit("fn-err",[arguments,this,e],n),e}finally{c.emit("fn-end",[f.now()],n)}}}};a("setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,t){m[t]=o(l+t)}),newrelic.noticeError=function(e){"string"==typeof e&&(e=new Error(e)),i("err",[e,f.now()])}},{}],2:[function(e,t,n){function r(e,t){var n=[],r="",i=0;for(r in e)o.call(e,r)&&(n[i]=t(r,e[r]),i+=1);return n}var o=Object.prototype.hasOwnProperty;t.exports=r},{}],3:[function(e,t,n){function r(e,t,n){t||(t=0),"undefined"==typeof n&&(n=e?e.length:0);for(var r=-1,o=n-t||0,i=Array(o<0?0:o);++r<o;)i[r]=e[t+r];return i}t.exports=r},{}],4:[function(e,t,n){t.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,t,n){function r(){}function o(e){function t(e){return e&&e instanceof r?e:e?c(e,u,i):i()}function n(n,r,o,i){if(!d.aborted||i){e&&e(n,r,o);for(var a=t(o),u=m(n),c=u.length,f=0;f<c;f++)u[f].apply(a,r);var p=s[y[n]];return p&&p.push([b,n,r,a]),a}}function l(e,t){v[e]=m(e).concat(t)}function m(e){return v[e]||[]}function w(e){return p[e]=p[e]||o(n)}function g(e,t){f(e,function(e,n){t=t||"feature",y[n]=t,t in s||(s[t]=[])})}var v={},y={},b={on:l,emit:n,get:w,listeners:m,context:t,buffer:g,abort:a,aborted:!1};return b}function i(){return new r}function a(){(s.api||s.feature)&&(d.aborted=!0,s=d.backlog={})}var u="nr@context",c=e("gos"),f=e(2),s={},p={},d=t.exports=o();d.backlog=s},{}],gos:[function(e,t,n){function r(e,t,n){if(o.call(e,t))return e[t];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,t,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return e[t]=r,r}var o=Object.prototype.hasOwnProperty;t.exports=r},{}],handle:[function(e,t,n){function r(e,t,n,r){o.buffer([e],r),o.emit(e,t,n)}var o=e("ee").get("handle");t.exports=r,r.ee=o},{}],id:[function(e,t,n){function r(e){var t=typeof e;return!e||"object"!==t&&"function"!==t?-1:e===window?0:a(e,i,function(){return o++})}var o=1,i="nr@id",a=e("gos");t.exports=r},{}],loader:[function(e,t,n){function r(){if(!x++){var e=h.info=NREUM.info,t=d.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&t))return s.abort();f(y,function(t,n){e[t]||(e[t]=n)}),c("mark",["onload",a()+h.offset],null,"api");var n=d.createElement("script");n.src="https://"+e.agent,t.parentNode.insertBefore(n,t)}}function o(){"complete"===d.readyState&&i()}function i(){c("mark",["domContent",a()+h.offset],null,"api")}function a(){return E.exists&&performance.now?Math.round(performance.now()):(u=Math.max((new Date).getTime(),u))-h.offset}var u=(new Date).getTime(),c=e("handle"),f=e(2),s=e("ee"),p=window,d=p.document,l="addEventListener",m="attachEvent",w=p.XMLHttpRequest,g=w&&w.prototype;NREUM.o={ST:setTimeout,SI:p.setImmediate,CT:clearTimeout,XHR:w,REQ:p.Request,EV:p.Event,PR:p.Promise,MO:p.MutationObserver};var v=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1071.min.js"},b=w&&g&&g[l]&&!/CriOS/.test(navigator.userAgent),h=t.exports={offset:u,now:a,origin:v,features:{},xhrWrappable:b};e(1),d[l]?(d[l]("DOMContentLoaded",i,!1),p[l]("load",r,!1)):(d[m]("onreadystatechange",o),p[m]("onload",r)),c("mark",["firstbyte",u],null,"api");var x=0,E=e(4)},{}]},{},["loader"]);</script>
+<!--	<meta name="viewport" content="width=device-width">-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes" />
+
+	<title>Home | Road to PyeongChang</title>
+	<link rel="profile" href="http://gmpg.org/xfn/11">
+	<link rel="pingback" href="https://pyeongchang.olympicchannel.com/xmlrpc.php">
+	<!--[if lt IE 9]>
+	<script src="https://pyeongchang.olympicchannel.com/wp-content/themes/gamestime/js/html5.js"></script>
+	<![endif]-->
+	<link rel="icon" href="favicon.ico" type="image/png" />
+	<link rel="stylesheet" type="text/css" href="https://pyeongchang.olympicchannel.com/wp-content/themes/gamestime/fonts/stylesheet.css" />
+	<style>
+		#wpadminbar {
+			display: none !important;
+		}
+	</style>
+	<link rel='dns-prefetch' href='//s0.wp.com' />
+<link rel='dns-prefetch' href='//s7.addthis.com' />
+<link rel='dns-prefetch' href='//secure.gravatar.com' />
+<link rel='dns-prefetch' href='//s.w.org' />
+<!-- This site uses the Google Analytics by MonsterInsights plugin v6.2.4 - Using Analytics tracking - https://www.monsterinsights.com/ -->
+<script type="text/javascript" data-cfasync="false">
+		var disableStr = 'ga-disable-UA-74597624-3';
+
+	/* Function to detect opted out users */
+	function __gaTrackerIsOptedOut() {
+		return document.cookie.indexOf(disableStr + '=true') > -1;
+	}
+
+	/* Disable tracking if the opt-out cookie exists. */
+	if ( __gaTrackerIsOptedOut() ) {
+		window[disableStr] = true;
+	}
+
+	/* Opt-out function */
+	function __gaTrackerOptout() {
+	  document.cookie = disableStr + '=true; expires=Thu, 31 Dec 2099 23:59:59 UTC; path=/';
+	  window[disableStr] = true;
+	}
+		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','//www.google-analytics.com/analytics.js','__gaTracker');
+
+	__gaTracker('create', 'UA-74597624-3', 'auto');
+	__gaTracker('set', 'forceSSL', true);
+	__gaTracker('require', 'displayfeatures');
+	__gaTracker('require', 'linkid', 'linkid.js');
+	__gaTracker('send','pageview');
+</script>
+<!-- / Google Analytics by MonsterInsights -->
+		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/2.4\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/2.4\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/pyeongchang.olympicchannel.com\/wp-includes\/js\/wp-emoji-release.min.js?ver=4.9.4"}};
+			!function(a,b,c){function d(a,b){var c=String.fromCharCode;l.clearRect(0,0,k.width,k.height),l.fillText(c.apply(this,a),0,0);var d=k.toDataURL();l.clearRect(0,0,k.width,k.height),l.fillText(c.apply(this,b),0,0);var e=k.toDataURL();return d===e}function e(a){var b;if(!l||!l.fillText)return!1;switch(l.textBaseline="top",l.font="600 32px Arial",a){case"flag":return!(b=d([55356,56826,55356,56819],[55356,56826,8203,55356,56819]))&&(b=d([55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447],[55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447]),!b);case"emoji":return b=d([55357,56692,8205,9792,65039],[55357,56692,8203,9792,65039]),!b}return!1}function f(a){var c=b.createElement("script");c.src=a,c.defer=c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var g,h,i,j,k=b.createElement("canvas"),l=k.getContext&&k.getContext("2d");for(j=Array("flag","emoji"),c.supports={everything:!0,everythingExceptFlag:!0},i=0;i<j.length;i++)c.supports[j[i]]=e(j[i]),c.supports.everything=c.supports.everything&&c.supports[j[i]],"flag"!==j[i]&&(c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&c.supports[j[i]]);c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&!c.supports.flag,c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.everything||(h=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",h,!1),a.addEventListener("load",h,!1)):(a.attachEvent("onload",h),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),g=c.source||{},g.concatemoji?f(g.concatemoji):g.wpemoji&&g.twemoji&&(f(g.twemoji),f(g.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+<link rel='stylesheet' id='all-css-0' href='https://pyeongchang.olympicchannel.com/_static/??-eJyNjlsKAjEMRTdkDYoD+iEuRWqT0WgfoUkZ3L3j4ICggj8hj3tuLgziQslG2UBiO3NWCE2tJGcDm1F1PRGqk1og6Hi03qndI+lyHBfwhU/RKSOJzxTBq5LphL7vf8JSpIlL/kb1nVU2WibOH5xdKJHC2Y/VONGkRup9i/afOJSWDcvw6T1n8oh2YYW+TgeEU+OI8/o4lIpSSfUo7RQ5fM2ZmpvtrmTiw216/uqf8kPar7rVdtN16+3uAW15mhw=' type='text/css' media='all' />
+<script type='text/javascript'>
+/* <![CDATA[ */
+var monsterinsights_frontend = {"js_events_tracking":"true","is_debug_mode":"false","download_extensions":"doc,exe,js,pdf,ppt,tgz,zip,xls","inbound_paths":"","home_url":"https:\/\/pyeongchang.olympicchannel.com","track_download_as":"event","internal_label":"int","hash_tracking":"false"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://pyeongchang.olympicchannel.com/_static/??-eJyNjusKwjAMRl/I2k2Z+Ed8FKltVjvSi03K2Ntbh8JQGUJIIJzzJXJMwgWNxQDJoda9QJ5eYzvQRq4BwjubFcPWu/CGdQwMgWXCYl0gaWO0CEIFhRM7TaKPWYwxm5SBSCoi4Dm5z7Np1sI8CnIGkgqAC3W5/lT5Br6+blXt7Dw8eR1LYBPHrzs/Ybygu/5DGuhVQa7o2Z/arj3umsO+6YYH7i2FqA=='></script>
+<script type="text/javascript">
+	!function(){var analytics=window.analytics=window.analytics||[];if(analytics.invoked)window.console&&console.error&&console.error("Segment snippet included twice.");else{analytics.invoked=!0;analytics.methods=["trackSubmit","trackClick","trackLink","trackForm","pageview","identify","group","track","ready","alias","page","once","off","on"];analytics.factory=function(t){return function(){var e=Array.prototype.slice.call(arguments);e.unshift(t);analytics.push(e);return analytics}};for(var t=0;t<analytics.methods.length;t++){var e=analytics.methods[t];analytics[e]=analytics.factory(e)}analytics.load=function(t){var e=document.createElement("script");e.type="text/javascript";e.async=!0;e.src=("https:"===document.location.protocol?"https://":"http://")+"cdn.segment.com/analytics.js/v1/"+t+"/analytics.min.js";var n=document.getElementsByTagName("script")[0];n.parentNode.insertBefore(e,n)};analytics.SNIPPET_VERSION="3.0.0";
+		window.analytics.load("8ca9shP6FwbX7o9XqO8oQpGLm0I3R8Ua");
+	window.analytics.page();
+	  }}();
+</script>
+<link rel='https://api.w.org/' href='https://pyeongchang.olympicchannel.com/wp-json/' />
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://pyeongchang.olympicchannel.com/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://pyeongchang.olympicchannel.com/wp-includes/wlwmanifest.xml" /> 
+<meta name="generator" content="WordPress 4.9.4" />
+<link rel="canonical" href="https://pyeongchang.olympicchannel.com/" />
+<link rel='shortlink' href='https://wp.me/P9ABym-4' />
+<link rel="alternate" type="application/json+oembed" href="https://pyeongchang.olympicchannel.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fpyeongchang.olympicchannel.com%2F" />
+<link rel="alternate" type="text/xml+oembed" href="https://pyeongchang.olympicchannel.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fpyeongchang.olympicchannel.com%2F&#038;format=xml" />
+
+<link rel='dns-prefetch' href='//v0.wordpress.com'/>
+<style type='text/css'>img#wpstats{display:none}</style><script type="text/javascript" src="//script.crazyegg.com/pages/scripts/0071/5104.js" async="async"></script>			<link rel="stylesheet" type="text/css" id="wp-custom-css" href="https://pyeongchang.olympicchannel.com/?custom-css=2f515db89b" />
+			<style id="pum-styles" type="text/css" media="all">
+	/* Popup Google Fonts */
+@import url('//fonts.googleapis.com/css?family=Acme|Montserrat');
+
+/* Popup Theme 3047: Framed Border */
+.pum-theme-3047, .pum-theme-framed-border { background-color: rgba( 255, 255, 255, 0.50 ) } 
+.pum-theme-3047 .pum-container, .pum-theme-framed-border .pum-container { padding: 18px; border-radius: 0px; border: 20px outset #dd3333; box-shadow: 1px 1px 3px 0px rgba( 2, 2, 2, 0.97 ) inset; background-color: rgba( 255, 251, 239, 1.00 ) } 
+.pum-theme-3047 .pum-title, .pum-theme-framed-border .pum-title { color: #000000; text-align: left; text-shadow: 0px 0px 0px rgba( 2, 2, 2, 0.23 ); font-family: inherit; font-size: 32px; line-height: 36px } 
+.pum-theme-3047 .pum-content, .pum-theme-framed-border .pum-content { color: #2d2d2d; font-family: inherit } 
+.pum-theme-3047 .pum-content + .pum-close, .pum-theme-framed-border .pum-content + .pum-close { height: 20px; width: 20px; left: auto; right: -20px; bottom: auto; top: -20px; padding: 0px; color: #ffffff; font-family: Acme; font-size: 20px; line-height: 20px; border: 1px none #ffffff; border-radius: 0px; box-shadow: 0px 0px 0px 0px rgba( 2, 2, 2, 0.23 ); text-shadow: 0px 0px 0px rgba( 0, 0, 0, 0.23 ); background-color: rgba( 0, 0, 0, 0.55 ) } 
+
+/* Popup Theme 3046: OlympicChannel */
+.pum-theme-3046, .pum-theme-cutting-edge { background-color: rgba( 0, 0, 0, 0.70 ) } 
+.pum-theme-3046 .pum-container, .pum-theme-cutting-edge .pum-container { padding: 0px; border-radius: 0px; border: 1px none #000000; box-shadow: 0px 10px 25px 0px rgba( 2, 2, 2, 0.50 ); background-color: rgba( 7, 69, 114, 1.00 ) } 
+.pum-theme-3046 .pum-title, .pum-theme-cutting-edge .pum-title { color: #ffffff; text-align: center; text-shadow: 0px 0px 0px rgba( 2, 2, 2, 0.23 ); font-family: inherit; font-size: 26px; line-height: 28px } 
+.pum-theme-3046 .pum-content, .pum-theme-cutting-edge .pum-content { color: #ffffff; font-family: inherit } 
+.pum-theme-3046 .pum-content + .pum-close, .pum-theme-cutting-edge .pum-content + .pum-close { height: 32px; width: 32px; left: auto; right: -16px; bottom: auto; top: -16px; padding: 0px; color: #074572; font-family: inherit; font-size: 24px; line-height: 32px; border: 1px solid #074572; border-radius: 28px; box-shadow: -1px 1px 1px 0px rgba( 2, 2, 2, 0.10 ); text-shadow: -1px 1px 1px rgba( 0, 0, 0, 0.10 ); background-color: rgba( 255, 255, 255, 1.00 ) } 
+
+/* Popup Theme 3045: Hello Box */
+.pum-theme-3045, .pum-theme-hello-box { background-color: rgba( 0, 0, 0, 0.75 ) } 
+.pum-theme-3045 .pum-container, .pum-theme-hello-box .pum-container { padding: 30px; border-radius: 80px; border: 14px solid #81d742; box-shadow: 0px 0px 0px 0px rgba( 2, 2, 2, 0.00 ); background-color: rgba( 255, 255, 255, 1.00 ) } 
+.pum-theme-3045 .pum-title, .pum-theme-hello-box .pum-title { color: #2d2d2d; text-align: left; text-shadow: 0px 0px 0px rgba( 2, 2, 2, 0.23 ); font-family: Montserrat; font-size: 32px; line-height: 36px } 
+.pum-theme-3045 .pum-content, .pum-theme-hello-box .pum-content { color: #2d2d2d; font-family: inherit } 
+.pum-theme-3045 .pum-content + .pum-close, .pum-theme-hello-box .pum-content + .pum-close { height: auto; width: auto; left: auto; right: -30px; bottom: auto; top: -30px; padding: 0px; color: #2d2d2d; font-family: inherit; font-size: 32px; line-height: 28px; border: 1px none #ffffff; border-radius: 28px; box-shadow: 0px 0px 0px 0px rgba( 2, 2, 2, 0.23 ); text-shadow: 0px 0px 0px rgba( 0, 0, 0, 0.23 ); background-color: rgba( 255, 255, 255, 1.00 ) } 
+
+/* Popup Theme 3044: Enterprise Blue */
+.pum-theme-3044, .pum-theme-enterprise-blue { background-color: rgba( 0, 0, 0, 0.70 ) } 
+.pum-theme-3044 .pum-container, .pum-theme-enterprise-blue .pum-container { padding: 28px; border-radius: 5px; border: 1px none #000000; box-shadow: 0px 10px 25px 4px rgba( 2, 2, 2, 0.50 ); background-color: rgba( 255, 255, 255, 1.00 ) } 
+.pum-theme-3044 .pum-title, .pum-theme-enterprise-blue .pum-title { color: #315b7c; text-align: left; text-shadow: 0px 0px 0px rgba( 2, 2, 2, 0.23 ); font-family: inherit; font-size: 34px; line-height: 36px } 
+.pum-theme-3044 .pum-content, .pum-theme-enterprise-blue .pum-content { color: #2d2d2d; font-family: inherit } 
+.pum-theme-3044 .pum-content + .pum-close, .pum-theme-enterprise-blue .pum-content + .pum-close { height: 28px; width: 28px; left: auto; right: 8px; bottom: auto; top: 8px; padding: 4px; color: #ffffff; font-family: inherit; font-size: 20px; line-height: 20px; border: 1px none #ffffff; border-radius: 42px; box-shadow: 0px 0px 0px 0px rgba( 2, 2, 2, 0.23 ); text-shadow: 0px 0px 0px rgba( 0, 0, 0, 0.23 ); background-color: rgba( 49, 91, 124, 1.00 ) } 
+
+/* Popup Theme 3043: Light Box */
+.pum-theme-3043, .pum-theme-lightbox { background-color: rgba( 0, 0, 0, 0.60 ) } 
+.pum-theme-3043 .pum-container, .pum-theme-lightbox .pum-container { padding: 18px; border-radius: 3px; border: 8px solid #000000; box-shadow: 0px 0px 30px 0px rgba( 2, 2, 2, 1.00 ); background-color: rgba( 255, 255, 255, 1.00 ) } 
+.pum-theme-3043 .pum-title, .pum-theme-lightbox .pum-title { color: #000000; text-align: left; text-shadow: 0px 0px 0px rgba( 2, 2, 2, 0.23 ); font-family: inherit; font-size: 32px; line-height: 36px } 
+.pum-theme-3043 .pum-content, .pum-theme-lightbox .pum-content { color: #000000; font-family: inherit } 
+.pum-theme-3043 .pum-content + .pum-close, .pum-theme-lightbox .pum-content + .pum-close { height: 30px; width: 30px; left: auto; right: -24px; bottom: auto; top: -24px; padding: 0px; color: #ffffff; font-family: inherit; font-size: 24px; line-height: 26px; border: 2px solid #ffffff; border-radius: 30px; box-shadow: 0px 0px 15px 1px rgba( 2, 2, 2, 0.75 ); text-shadow: 0px 0px 0px rgba( 0, 0, 0, 0.23 ); background-color: rgba( 0, 0, 0, 1.00 ) } 
+
+/* Popup Theme 3042: Default Theme */
+.pum-theme-3042, .pum-theme-default-theme { background-color: rgba( 255, 255, 255, 1.00 ) } 
+.pum-theme-3042 .pum-container, .pum-theme-default-theme .pum-container { padding: 18px; border-radius: 0px; border: 1px none #000000; box-shadow: 1px 1px 3px 0px rgba( 2, 2, 2, 0.23 ); background-color: rgba( 249, 249, 249, 1.00 ) } 
+.pum-theme-3042 .pum-title, .pum-theme-default-theme .pum-title { color: #000000; text-align: left; text-shadow: 0px 0px 0px rgba( 2, 2, 2, 0.23 ); font-family: inherit; font-weight: inherit; font-size: 32px; font-style: normal; line-height: 36px } 
+.pum-theme-3042 .pum-content, .pum-theme-default-theme .pum-content { color: #8c8c8c; font-family: inherit; font-weight: inherit; font-style: normal } 
+.pum-theme-3042 .pum-content + .pum-close, .pum-theme-default-theme .pum-content + .pum-close { height: auto; width: auto; left: auto; right: 0px; bottom: auto; top: 0px; padding: 8px; color: #ffffff; font-family: inherit; font-weight: inherit; font-size: 12px; font-style: normal; line-height: 14px; border: 1px none #ffffff; border-radius: 0px; box-shadow: 0px 0px 0px 0px rgba( 2, 2, 2, 0.23 ); text-shadow: 0px 0px 0px rgba( 0, 0, 0, 0.23 ); background-color: rgba( 0, 183, 205, 1.00 ) } 
+
+
+	
+		</style>
+<!-- START - Facebook Open Graph, Google+ and Twitter Card Tags 2.1.3 -->
+ <!-- Facebook Open Graph -->
+  <meta property="og:locale" content="en_US"/>
+  <meta property="og:site_name" content="Road to PyeongChang"/>
+  <meta property="og:title" content="Discover #PyeongChang2018 on the Olympic Channel."/>
+  <meta property="og:url" content="https://pyeongchang.olympicchannel.com"/>
+  <meta property="og:type" content="website"/>
+  <meta property="og:description" content="From the hottest curling pants to the latest medals."/>
+  <meta property="og:image" content="https://pyeongchang.olympicchannel.com/wp-content/uploads/2018/01/PC_share_image_v2-1.jpg"/>
+ <!-- Google+ / Schema.org -->
+  <meta itemprop="name" content="Discover #PyeongChang2018 on the Olympic Channel."/>
+  <meta itemprop="description" content="From the hottest curling pants to the latest medals."/>
+  <meta itemprop="image" content="https://pyeongchang.olympicchannel.com/wp-content/uploads/2018/01/PC_share_image_v2-1.jpg"/>
+ <!-- Twitter Cards -->
+  <meta name="twitter:title" content="Discover #PyeongChang2018 on the Olympic Channel."/>
+  <meta name="twitter:url" content="https://pyeongchang.olympicchannel.com"/>
+  <meta name="twitter:description" content="From the hottest curling pants to the latest medals."/>
+  <meta name="twitter:image" content="https://pyeongchang.olympicchannel.com/wp-content/uploads/2018/01/PC_share_image_v2-1.jpg"/>
+  <meta name="twitter:card" content="summary_large_image"/>
+ <!-- SEO -->
+ <!-- Misc. tags -->
+<!-- END - Facebook Open Graph, Google+ and Twitter Card Tags 2.1.3 -->
+	
+	<style>html { margin-top: 0px !important; }</style>
+
+	
+	
+					
+							<script async='async' src='https://www.googletagservices.com/tag/js/gpt.js'></script> <script>   var googletag = googletag || {};   googletag.cmd = googletag.cmd || []; </script>  <script>   googletag.cmd.push(function() {     googletag.defineSlot('/154962900/olympicchannel.interactive/pc2018', [[970, 250], [728, 90]], 'div-gpt-ad-1508853618436-0').addService(googletag.pubads());     googletag.enableServices();   }); </script>		
+
+			
+					
+							<script async='async' src='https://www.googletagservices.com/tag/js/gpt.js'></script> <script>   var googletag = googletag || {};   googletag.cmd = googletag.cmd || []; </script>  <script>   googletag.cmd.push(function() {     googletag.defineSlot('/154962900/olympicchannel.interactive/pc2018', [300, 250], 'div-gpt-ad-1508853563693-0').addService(googletag.pubads());     googletag.enableServices();   }); </script>		
+
+				
+
+
+</head>
+
+<body class="home page-template page-template-homepage-tw-template page-template-homepage-tw-template-php page page-id-4">
+	
+	<div id="header-white">
+		<div id="header-white-slogan"><h3><a href="https://pyeongchang.olympicchannel.com">Pyeongchang 2018</a></h3></div>
+		<a class="vilynx_disable desktop-only" href="https://www.olympicchannel.com/?utm_campaign=interactive-owned_&utm_medium=road_to_home_page&utm_source=interactive" id="header-white-logo"><img src="https://pyeongchang.olympicchannel.com/wp-content/themes/gamestime/assets/logo-pyeong.svg" alt="Winter Olympic Games Logo"/></a>
+		<a class="vilynx_disable mobile-only" href="https://www.olympicchannel.com/?utm_campaign=interactive-owned_&utm_medium=road_to_home_page&utm_source=interactive" id="header-white-logo"><img src="https://pyeongchang.olympicchannel.com/wp-content/themes/gamestime/assets/oc_logo_mobile.png" alt="Winter Olympic Games Logo"/></a>
+
+		<a href="#sidepanel-open" id="header-mobile-menu" class="mobile-only"><img src="https://pyeongchang.olympicchannel.com/wp-content/themes/gamestime/assets/hamburger.svg" alt="Menu Mobile"/></a>
+	</div>
+	<nav class="desktop-only">
+		
+
+		<div class="menu-header-menu-left-container"><ul id="menu-header-menu-left" class="menu"><li id="menu-item-6" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-4 current_page_item menu-item-6"><a href="https://pyeongchang.olympicchannel.com/">Home</a></li>
+<li id="menu-item-2744" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-2744"><a href="https://pyeongchang.olympicchannel.com/schedule/">Schedule</a></li>
+<li id="menu-item-2726" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-2726"><a href="https://pyeongchang.olympicchannel.com/results/">Results</a></li>
+<li id="menu-item-2736" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-2736"><a href="https://pyeongchang.olympicchannel.com/medals/">Medals</a></li>
+<li id="menu-item-1787" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1787"><a href="http://articles.olympicchannel.com/">Articles</a></li>
+<li id="menu-item-2748" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2748"><a href="https://www.olympicchannel.com/en/features/">Features</a></li>
+<li id="menu-item-148" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-148"><a href="https://www.olympicchannel.com/en/tv/">TV</a></li>
+</ul></div>		
+	</nav>
+	
+	<div id="primary" class="content-area">
+		<main id="main" class="site-main" role="main">
+		<div class="banner partners top">
+
+        <!-- location = us, only_in_usa_tag = , tags_not_in_filter = , $geo_excluded_posts = Array
+(
+)
+, $geo_excluded_post_ids = Array
+(
+    [0] => 3201
+)
+, $only_in_geofence_tags = Array
+(
+    [0] => WP_Term Object
+        (
+            [term_id] => 41
+            [name] => OnlyInBD
+            [slug] => onlyinbd
+            [term_group] => 0
+            [term_taxonomy_id] => 41
+            [taxonomy] => post_tag
+            [description] => 
+            [parent] => 0
+            [count] => 1
+            [filter] => raw
+        )
+
+    [1] => WP_Term Object
+        (
+            [term_id] => 40
+            [name] => OnlyInBT
+            [slug] => onlyinbt
+            [term_group] => 0
+            [term_taxonomy_id] => 40
+            [taxonomy] => post_tag
+            [description] => 
+            [parent] => 0
+            [count] => 1
+            [filter] => raw
+        )
+
+    [2] => WP_Term Object
+        (
+            [term_id] => 42
+            [name] => OnlyInIN
+            [slug] => onlyinin
+            [term_group] => 0
+            [term_taxonomy_id] => 42
+            [taxonomy] => post_tag
+            [description] => 
+            [parent] => 0
+            [count] => 1
+            [filter] => raw
+        )
+
+    [3] => WP_Term Object
+        (
+            [term_id] => 43
+            [name] => OnlyInLK
+            [slug] => onlyinlk
+            [term_group] => 0
+            [term_taxonomy_id] => 43
+            [taxonomy] => post_tag
+            [description] => 
+            [parent] => 0
+            [count] => 1
+            [filter] => raw
+        )
+
+    [4] => WP_Term Object
+        (
+            [term_id] => 45
+            [name] => OnlyInMV
+            [slug] => onlyinmv
+            [term_group] => 0
+            [term_taxonomy_id] => 45
+            [taxonomy] => post_tag
+            [description] => 
+            [parent] => 0
+            [count] => 1
+            [filter] => raw
+        )
+
+    [5] => WP_Term Object
+        (
+            [term_id] => 44
+            [name] => OnlyInNP
+            [slug] => onlyinnp
+            [term_group] => 0
+            [term_taxonomy_id] => 44
+            [taxonomy] => post_tag
+            [description] => 
+            [parent] => 0
+            [count] => 1
+            [filter] => raw
+        )
+
+    [6] => WP_Term Object
+        (
+            [term_id] => 46
+            [name] => OnlyInPK
+            [slug] => onlyinpk
+            [term_group] => 0
+            [term_taxonomy_id] => 46
+            [taxonomy] => post_tag
+            [description] => 
+            [parent] => 0
+            [count] => 1
+            [filter] => raw
+        )
+
+    [7] => WP_Term Object
+        (
+            [term_id] => 39
+            [name] => OnlyInUS
+            [slug] => onlyinus
+            [term_group] => 0
+            [term_taxonomy_id] => 39
+            [taxonomy] => post_tag
+            [description] => 
+            [parent] => 0
+            [count] => 1
+            [filter] => raw
+        )
+
+)
+, $geo_excluded_tag_ids = Array
+(
+    [0] => 41
+    [1] => 40
+    [2] => 42
+    [3] => 43
+    [4] => 45
+    [5] => 44
+    [6] => 46
+)
+, $geo_included_tag_id = 39, $tags_of_geo_excluded_posts = Array
+(
+    [3201] => Array
+        (
+            [0] => 41
+            [1] => 40
+            [2] => 42
+            [3] => 43
+            [4] => 45
+            [5] => 44
+            [6] => 46
+        )
+
+)
+ -->
+		
+						<div class="banner partners desktop-only" >
+		<img src="" alt="">
+				<div class="embeded_adds">
+		<!-- /154962900/olympicchannel.interactive/pc2018 --> <div id='div-gpt-ad-1508853618436-0'> <script> googletag.cmd.push(function() { googletag.display('div-gpt-ad-1508853618436-0'); }); </script> </div>		</div>
+		</div>									
+
+						
+		</div>
+		
+
+		<div class="section latest-news">
+			<div class="row">
+				
+									<div class="col-6 post-0">
+						<div class="news-container">
+			
+
+					
+			<a class="vilynx_disable" href="https://pyeongchang.olympicchannel.com/results/"><img src="https://pyeongchang.olympicchannel.com/wp-content/uploads/2009/02/results-v2.jpg?w=1024" class="attachment-retina-size size-retina-size wp-post-image" alt="" /></a>
+
+		
+
+		
+	<div class="description">
+	<h3>			
+			<a href="https://pyeongchang.olympicchannel.com/results/">PyeongChang 2018 Results &#8211; check who won your favorite discipline</a>
+
+		</h3>
+	
+	</div>
+	<div class="date-published"> </div>
+</div>											</div>
+					<!--0-->
+										<div class="col-6 banner partners top mobile-only">
+						
+									<div class="banner partners mobile-only" >
+		<img src="" alt="">
+				<div class="embeded_adds">
+		<!-- /154962900/olympicchannel.interactive/pc2018 --> <div id='div-gpt-ad-1508853563693-0' style='height:250px; width:300px;'> <script> googletag.cmd.push(function() { googletag.display('div-gpt-ad-1508853563693-0'); }); </script> </div>		</div>
+		</div>												
+
+									
+					</div>
+															<div class="col-3 post-1">
+						<div class="news-container">
+			
+
+					
+			<a class="vilynx_disable" href="https://pyeongchang.olympicchannel.com/schedule/"><img src="https://pyeongchang.olympicchannel.com/wp-content/uploads/2016/01/oc_liveschedule_1280x720.jpg?w=1024" class="attachment-retina-size size-retina-size wp-post-image" alt="" /></a>
+
+		
+
+		
+	<div class="description">
+	<h3>			
+			<a href="https://pyeongchang.olympicchannel.com/schedule/">When does your favourite Olympic event start?</a>
+
+		</h3>
+	
+	</div>
+	<div class="date-published"> </div>
+</div>											</div>
+					<!--1-->
+															<div class="col-3 post-2">
+						<div class="news-container">
+			
+
+					
+			<a class="vilynx_disable" href="https://pyeongchang.olympicchannel.com/medals/"><img src="https://pyeongchang.olympicchannel.com/wp-content/uploads/2009/02/medals-v1.jpg?w=1024" class="attachment-retina-size size-retina-size wp-post-image" alt="" /></a>
+
+		
+
+		
+	<div class="description">
+	<h3>			
+			<a href="https://pyeongchang.olympicchannel.com/medals/">Your Interactive Medal Table &#8211; which nation will claim the most?</a>
+
+		</h3>
+	
+	</div>
+	<div class="date-published"> </div>
+</div>											</div>
+					<!--2-->
+										
+					
+						 		</div>			
+			
+		</div>
+		
+		<div class="section featured">
+		<svg viewBox="0 0 1200 400" preserveAspectRatio="xMidYMid slice" class="rings rings-stagger">
+	      <circle class="ring outer lighten" r="55%" cx="50%" cy="50%"></circle>
+	      <circle class="ring mid lighten" r="30%" cx="50%" cy="50%"></circle>
+	      <circle class="ring inner lighten dasharray-rendered" data-dasharray="0 20 5 21 29 15 10" r="13%" cx="50%" cy="50%" stroke-dasharray="0px 147px 37px 154px 212px 110px 74px "></circle>
+	  </svg>
+			<div class="row">
+									
+												<div class="col-5">
+						<div class="featured-image">
+															<a  href="https://pyeongchang.olympicchannel.com/medal-quest/"><img src="https://pyeongchang.olympicchannel.com/wp-content/uploads/2018/02/2018-02-08.jpg?w=514" class="attachment-540x270 size-540x270 wp-post-image" alt="" /></a>
+							
+							
+							<h3>							<a href="https://pyeongchang.olympicchannel.com/medal-quest/">Build Your Own Olympian and  Play Olympic Sports</a>
+							</h3>
+							</div>
+						</div>
+						<div class="featured-description col-7">
+																					<a class="featured-button white" href="https://pyeongchang.olympicchannel.com/medal-quest/">View Feature</a>
+													</div>
+						
+								
+			</div>
+			
+		</div>
+		<div class="leaderboard"><div class="sponsor_logo_container" data-country="GB" ><a class="sponsor_logo vilynx_disable" href="" target="_blank"><div class="img-container"></div></a></div></div>
+
+		
+		<div class="section more-news">
+			<h2>More From Pyeongchang</h2>
+			<div class="row newss">
+				<div class="twitter-custom-plugin col-6">
+					<!-- Custom Twitter Feeds by Smash Balloon --><div id="ctf" class="ctf ctf-type-usertimeline  ctf-carousel ctf-styles ctf-fixed-height" style="width: 100%;height: 355px;background-color: #ffffff;" data-ctfshortcode="{}" data-ctflinktextcolor="color: #384959;" data-ctfneeded="0" data-ctf-loop="none" data-ctf-cols="1" data-ctf-mobilecols="1" data-ctf-arrows="hide" data-ctf-height="tallest" data-ctf-pag="true" data-ctfmaxmedia="1" data-ctfimagecols="1"><div class="ctf-header ctf-no-bio" style="background-color: #ffffff;color: #384959;"><a href="https://twitter.com/olympicchannel" target="_blank" title="@olympicchannel" class="ctf-header-link"><div class="ctf-header-text"><p class="ctf-header-user"><span class="ctf-header-name">@Olympic Channel</span><span class="ctf-verified"><svg class="svg-inline--fa fa-check-circle fa-w-16" aria-hidden="true" data-fa-processed="" data-prefix="fa" data-icon="check-circle" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M504 256c0 136.967-111.033 248-248 248S8 392.967 8 256 119.033 8 256 8s248 111.033 248 248zM227.314 387.314l184-184c6.248-6.248 6.248-16.379 0-22.627l-22.627-22.627c-6.248-6.249-16.379-6.249-22.628 0L216 308.118l-70.059-70.059c-6.248-6.248-16.379-6.248-22.628 0l-22.627 22.627c-6.248 6.248-6.248 16.379 0 22.627l104 104c6.249 6.249 16.379 6.249 22.628.001z"></path></svg></span><span class="ctf-header-follow"><svg class="svg-inline--fa fa-twitter fa-w-16" aria-hidden="true" data-fa-processed="" data-prefix="fab" data-icon="twitter" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"></path></svg>Follow</span><span class="ctf-header-counts"><span class="ctf-header-tweets-count" title="6,583 Tweets"><svg class="svg-inline--fa fa-twitter fa-w-16" aria-hidden="true" data-fa-processed="" data-prefix="fab" data-icon="twitter" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"></path></svg>6,583</span><span class="ctf-header-followers"  title="348,604 Followers"><svg class="svg-inline--fa fa-user fa-w-16" aria-hidden="true" data-fa-processed="" data-prefix="fa" data-icon="user" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M96 160C96 71.634 167.635 0 256 0s160 71.634 160 160-71.635 160-160 160S96 248.366 96 160zm304 192h-28.556c-71.006 42.713-159.912 42.695-230.888 0H112C50.144 352 0 402.144 0 464v24c0 13.255 10.745 24 24 24h464c13.255 0 24-10.745 24-24v-24c0-61.856-50.144-112-112-112z"></path></svg>348,604</span></span></p></div><div class="ctf-header-img"><div class="ctf-header-img-hover"><svg class="svg-inline--fa fa-twitter fa-w-16" aria-hidden="true" data-fa-processed="" data-prefix="fab" data-icon="twitter" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"></path></svg></div><img src="https://pbs.twimg.com/profile_images/758375159220805632/_Ykx56Hs_normal.jpg" alt="Olympic Channel" width="48" height="48"></div></a></div><div class="ctf-tweets"><div class="ctf-item ctf-author-olympicchannel ctf-new ctf-hide-avatar ctf-check-link" id="ctf_964975618914963457" style="" data-ctflinkurl="http://bit.ly/2EwD1ts"><div class="ctf-tweet-content"><p class="ctf-tweet-text" style="color: #384959;">🎧Ep.11 of #OlympicChannel #Podcast out now! Featuring Team USA skiers, @tedligety &amp; @guskenworthy on the impact of #ClimateChange on snow sports 🏔️⛷️<br />
+<br />
+https://t.co/Eyg6U3GSdi</p></div><div class="ctf-tweet-actions"><a href="https://twitter.com/intent/tweet?in_reply_to=964975618914963457&related=olympicchannel" class="ctf-reply" target="_blank" style=""><svg class="svg-inline--fa fa-reply fa-w-16" aria-hidden="true" data-fa-processed="" data-prefix="fa" data-icon="reply" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M8.309 189.836L184.313 37.851C199.719 24.546 224 35.347 224 56.015v80.053c160.629 1.839 288 34.032 288 186.258 0 61.441-39.581 122.309-83.333 154.132-13.653 9.931-33.111-2.533-28.077-18.631 45.344-145.012-21.507-183.51-176.59-185.742V360c0 20.7-24.3 31.453-39.687 18.164l-176.004-152c-11.071-9.562-11.086-26.753 0-36.328z"></path></svg><span class="ctf-screenreader">Reply on Twitter</span></a><a href="https://twitter.com/intent/retweet?tweet_id=964975618914963457&related=olympicchannel" class="ctf-retweet" target="_blank" style=""><svg class="svg-inline--fa fa-retweet fa-w-20" aria-hidden="true" data-fa-processed="" data-prefix="fa" data-icon="retweet" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><path fill="currentColor" d="M629.657 343.598L528.971 444.284c-9.373 9.372-24.568 9.372-33.941 0L394.343 343.598c-9.373-9.373-9.373-24.569 0-33.941l10.823-10.823c9.562-9.562 25.133-9.34 34.419.492L480 342.118V160H292.451a24.005 24.005 0 0 1-16.971-7.029l-16-16C244.361 121.851 255.069 96 276.451 96H520c13.255 0 24 10.745 24 24v222.118l40.416-42.792c9.285-9.831 24.856-10.054 34.419-.492l10.823 10.823c9.372 9.372 9.372 24.569-.001 33.941zm-265.138 15.431A23.999 23.999 0 0 0 347.548 352H160V169.881l40.416 42.792c9.286 9.831 24.856 10.054 34.419.491l10.822-10.822c9.373-9.373 9.373-24.569 0-33.941L144.971 67.716c-9.373-9.373-24.569-9.373-33.941 0L10.343 168.402c-9.373 9.373-9.373 24.569 0 33.941l10.822 10.822c9.562 9.562 25.133 9.34 34.419-.491L96 169.881V392c0 13.255 10.745 24 24 24h243.549c21.382 0 32.09-25.851 16.971-40.971l-16.001-16z"></path></svg><span class="ctf-screenreader">Retweet on Twitter</span><span class="ctf-action-count ctf-retweet-count">9</span></a><a href="https://twitter.com/intent/like?tweet_id=964975618914963457&related=olympicchannel" class="ctf-like" target="_blank" style=""><svg class="svg-inline--fa fa-heart fa-w-18" aria-hidden="true" data-fa-processed="" data-prefix="fa" data-icon="heart" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path fill="currentColor" d="M414.9 24C361.8 24 312 65.7 288 89.3 264 65.7 214.2 24 161.1 24 70.3 24 16 76.9 16 165.5c0 72.6 66.8 133.3 69.2 135.4l187 180.8c8.8 8.5 22.8 8.5 31.6 0l186.7-180.2c2.7-2.7 69.5-63.5 69.5-136C560 76.9 505.7 24 414.9 24z"></path></svg><span class="ctf-screenreader">Like on Twitter</span><span class="ctf-action-count ctf-favorite-count">17</span></a></div></div><div class="ctf-item ctf-author-olympicchannel ctf-new ctf-hide-avatar" id="ctf_964916917650771968" style=""><div class="ctf-tweet-content"><p class="ctf-tweet-text" style="color: #384959;">World champion SNOWBOARDER, Ester Ledecka shocked the world (and herself) securing the Super-G #Gold ‼️🥇<br />
+<br />
+@pyeongchang2018 @fisalpine </p><div class="ctf-tweet-media"><a href="https://pbs.twimg.com/media/DWQS0pFXUAIxpOb.jpg" data-ctf-lightbox="1" data-title="Image for the Tweet beginning: World champion SNOWBOARDER, Ester Ledecka" data-user="olympicchannel" data-name="Olympic Channel" data-id="964916917650771968" data-url="https://twitter.com/olympicchannel/status/964916917650771968" data-avatar="https://pbs.twimg.com/profile_images/758375159220805632/_Ykx56Hs_normal.jpg" data-date="6h" class="ctf-lightbox-link ctf-image" data-video="" data-iframe=""><svg style="color: rgba(255,255,255,1)" class="svg-inline--fa fa-play fa-w-14 ctf_playbtn" aria-hidden="true" data-fa-processed="" data-prefix="fa" data-icon="play" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M424.4 214.7L72.4 6.6C43.8-10.3 0 6.1 0 47.9V464c0 37.5 40.7 60.1 72.4 41.3l352-208c31.4-18.5 31.5-64.1 0-82.6z"></path></svg><div class="ctf-photo-hover"><svg class="svg-inline--fa fa-arrows-alt fa-w-16" aria-hidden="true" data-fa-processed="" data-prefix="fa" data-icon="arrows-alt" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M352.201 425.775l-79.196 79.196c-9.373 9.373-24.568 9.373-33.941 0l-79.196-79.196c-15.119-15.119-4.411-40.971 16.971-40.97h51.162L228 284H127.196v51.162c0 21.382-25.851 32.09-40.971 16.971L7.029 272.937c-9.373-9.373-9.373-24.569 0-33.941L86.225 159.8c15.119-15.119 40.971-4.411 40.971 16.971V228H228V127.196h-51.23c-21.382 0-32.09-25.851-16.971-40.971l79.196-79.196c9.373-9.373 24.568-9.373 33.941 0l79.196 79.196c15.119 15.119 4.411 40.971-16.971 40.971h-51.162V228h100.804v-51.162c0-21.382 25.851-32.09 40.97-16.971l79.196 79.196c9.373 9.373 9.373 24.569 0 33.941L425.773 352.2c-15.119 15.119-40.971 4.411-40.97-16.971V284H284v100.804h51.23c21.382 0 32.09 25.851 16.971 40.971z"></path></svg></div><img src="https://pbs.twimg.com/media/DWQS0pFXUAIxpOb.jpg:thumb" alt="Image for the Tweet beginning: World champion SNOWBOARDER, Ester Ledecka" data-ctfsizes="150,680,1080,1080"></a></div></div><div class="ctf-tweet-actions"><a href="https://twitter.com/intent/tweet?in_reply_to=964916917650771968&related=olympicchannel" class="ctf-reply" target="_blank" style=""><svg class="svg-inline--fa fa-reply fa-w-16" aria-hidden="true" data-fa-processed="" data-prefix="fa" data-icon="reply" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M8.309 189.836L184.313 37.851C199.719 24.546 224 35.347 224 56.015v80.053c160.629 1.839 288 34.032 288 186.258 0 61.441-39.581 122.309-83.333 154.132-13.653 9.931-33.111-2.533-28.077-18.631 45.344-145.012-21.507-183.51-176.59-185.742V360c0 20.7-24.3 31.453-39.687 18.164l-176.004-152c-11.071-9.562-11.086-26.753 0-36.328z"></path></svg><span class="ctf-screenreader">Reply on Twitter</span></a><a href="https://twitter.com/intent/retweet?tweet_id=964916917650771968&related=olympicchannel" class="ctf-retweet" target="_blank" style=""><svg class="svg-inline--fa fa-retweet fa-w-20" aria-hidden="true" data-fa-processed="" data-prefix="fa" data-icon="retweet" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><path fill="currentColor" d="M629.657 343.598L528.971 444.284c-9.373 9.372-24.568 9.372-33.941 0L394.343 343.598c-9.373-9.373-9.373-24.569 0-33.941l10.823-10.823c9.562-9.562 25.133-9.34 34.419.492L480 342.118V160H292.451a24.005 24.005 0 0 1-16.971-7.029l-16-16C244.361 121.851 255.069 96 276.451 96H520c13.255 0 24 10.745 24 24v222.118l40.416-42.792c9.285-9.831 24.856-10.054 34.419-.492l10.823 10.823c9.372 9.372 9.372 24.569-.001 33.941zm-265.138 15.431A23.999 23.999 0 0 0 347.548 352H160V169.881l40.416 42.792c9.286 9.831 24.856 10.054 34.419.491l10.822-10.822c9.373-9.373 9.373-24.569 0-33.941L144.971 67.716c-9.373-9.373-24.569-9.373-33.941 0L10.343 168.402c-9.373 9.373-9.373 24.569 0 33.941l10.822 10.822c9.562 9.562 25.133 9.34 34.419-.491L96 169.881V392c0 13.255 10.745 24 24 24h243.549c21.382 0 32.09-25.851 16.971-40.971l-16.001-16z"></path></svg><span class="ctf-screenreader">Retweet on Twitter</span><span class="ctf-action-count ctf-retweet-count">85</span></a><a href="https://twitter.com/intent/like?tweet_id=964916917650771968&related=olympicchannel" class="ctf-like" target="_blank" style=""><svg class="svg-inline--fa fa-heart fa-w-18" aria-hidden="true" data-fa-processed="" data-prefix="fa" data-icon="heart" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path fill="currentColor" d="M414.9 24C361.8 24 312 65.7 288 89.3 264 65.7 214.2 24 161.1 24 70.3 24 16 76.9 16 165.5c0 72.6 66.8 133.3 69.2 135.4l187 180.8c8.8 8.5 22.8 8.5 31.6 0l186.7-180.2c2.7-2.7 69.5-63.5 69.5-136C560 76.9 505.7 24 414.9 24z"></path></svg><span class="ctf-screenreader">Like on Twitter</span><span class="ctf-action-count ctf-favorite-count">401</span></a></div></div><div class="ctf-item ctf-author-olympicchannel ctf-new ctf-hide-avatar" id="ctf_964894226659110918" style=""><div class="ctf-tweet-content"><p class="ctf-tweet-text" style="color: #384959;">Yuzuru Hanyu took the 1000th gold medal in the history of the #WinterOlympics! 🏅#PyeongChang2018 </p><div class="ctf-tweet-media"><a href="https://pbs.twimg.com/media/DWP-L0TW0AIQmWE.jpg" data-ctf-lightbox="1" data-title="Image for the Tweet beginning: Yuzuru Hanyu took the 1000th" data-user="olympicchannel" data-name="Olympic Channel" data-id="964894226659110918" data-url="https://twitter.com/olympicchannel/status/964894226659110918" data-avatar="https://pbs.twimg.com/profile_images/758375159220805632/_Ykx56Hs_normal.jpg" data-date="7h" class="ctf-lightbox-link ctf-image" data-video="" data-iframe=""><svg style="color: rgba(255,255,255,1)" class="svg-inline--fa fa-play fa-w-14 ctf_playbtn" aria-hidden="true" data-fa-processed="" data-prefix="fa" data-icon="play" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M424.4 214.7L72.4 6.6C43.8-10.3 0 6.1 0 47.9V464c0 37.5 40.7 60.1 72.4 41.3l352-208c31.4-18.5 31.5-64.1 0-82.6z"></path></svg><div class="ctf-photo-hover"><svg class="svg-inline--fa fa-arrows-alt fa-w-16" aria-hidden="true" data-fa-processed="" data-prefix="fa" data-icon="arrows-alt" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M352.201 425.775l-79.196 79.196c-9.373 9.373-24.568 9.373-33.941 0l-79.196-79.196c-15.119-15.119-4.411-40.971 16.971-40.97h51.162L228 284H127.196v51.162c0 21.382-25.851 32.09-40.971 16.971L7.029 272.937c-9.373-9.373-9.373-24.569 0-33.941L86.225 159.8c15.119-15.119 40.971-4.411 40.971 16.971V228H228V127.196h-51.23c-21.382 0-32.09-25.851-16.971-40.971l79.196-79.196c9.373-9.373 24.568-9.373 33.941 0l79.196 79.196c15.119 15.119 4.411 40.971-16.971 40.971h-51.162V228h100.804v-51.162c0-21.382 25.851-32.09 40.97-16.971l79.196 79.196c9.373 9.373 9.373 24.569 0 33.941L425.773 352.2c-15.119 15.119-40.971 4.411-40.97-16.971V284H284v100.804h51.23c21.382 0 32.09 25.851 16.971 40.971z"></path></svg></div><img src="https://pbs.twimg.com/media/DWP-L0TW0AIQmWE.jpg:thumb" alt="Image for the Tweet beginning: Yuzuru Hanyu took the 1000th" data-ctfsizes="150,680,1080,1080"></a></div></div><div class="ctf-tweet-actions"><a href="https://twitter.com/intent/tweet?in_reply_to=964894226659110918&related=olympicchannel" class="ctf-reply" target="_blank" style=""><svg class="svg-inline--fa fa-reply fa-w-16" aria-hidden="true" data-fa-processed="" data-prefix="fa" data-icon="reply" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M8.309 189.836L184.313 37.851C199.719 24.546 224 35.347 224 56.015v80.053c160.629 1.839 288 34.032 288 186.258 0 61.441-39.581 122.309-83.333 154.132-13.653 9.931-33.111-2.533-28.077-18.631 45.344-145.012-21.507-183.51-176.59-185.742V360c0 20.7-24.3 31.453-39.687 18.164l-176.004-152c-11.071-9.562-11.086-26.753 0-36.328z"></path></svg><span class="ctf-screenreader">Reply on Twitter</span></a><a href="https://twitter.com/intent/retweet?tweet_id=964894226659110918&related=olympicchannel" class="ctf-retweet" target="_blank" style=""><svg class="svg-inline--fa fa-retweet fa-w-20" aria-hidden="true" data-fa-processed="" data-prefix="fa" data-icon="retweet" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><path fill="currentColor" d="M629.657 343.598L528.971 444.284c-9.373 9.372-24.568 9.372-33.941 0L394.343 343.598c-9.373-9.373-9.373-24.569 0-33.941l10.823-10.823c9.562-9.562 25.133-9.34 34.419.492L480 342.118V160H292.451a24.005 24.005 0 0 1-16.971-7.029l-16-16C244.361 121.851 255.069 96 276.451 96H520c13.255 0 24 10.745 24 24v222.118l40.416-42.792c9.285-9.831 24.856-10.054 34.419-.492l10.823 10.823c9.372 9.372 9.372 24.569-.001 33.941zm-265.138 15.431A23.999 23.999 0 0 0 347.548 352H160V169.881l40.416 42.792c9.286 9.831 24.856 10.054 34.419.491l10.822-10.822c9.373-9.373 9.373-24.569 0-33.941L144.971 67.716c-9.373-9.373-24.569-9.373-33.941 0L10.343 168.402c-9.373 9.373-9.373 24.569 0 33.941l10.822 10.822c9.562 9.562 25.133 9.34 34.419-.491L96 169.881V392c0 13.255 10.745 24 24 24h243.549c21.382 0 32.09-25.851 16.971-40.971l-16.001-16z"></path></svg><span class="ctf-screenreader">Retweet on Twitter</span><span class="ctf-action-count ctf-retweet-count">1473</span></a><a href="https://twitter.com/intent/like?tweet_id=964894226659110918&related=olympicchannel" class="ctf-like" target="_blank" style=""><svg class="svg-inline--fa fa-heart fa-w-18" aria-hidden="true" data-fa-processed="" data-prefix="fa" data-icon="heart" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path fill="currentColor" d="M414.9 24C361.8 24 312 65.7 288 89.3 264 65.7 214.2 24 161.1 24 70.3 24 16 76.9 16 165.5c0 72.6 66.8 133.3 69.2 135.4l187 180.8c8.8 8.5 22.8 8.5 31.6 0l186.7-180.2c2.7-2.7 69.5-63.5 69.5-136C560 76.9 505.7 24 414.9 24z"></path></svg><span class="ctf-screenreader">Like on Twitter</span><span class="ctf-action-count ctf-favorite-count">2523</span></a></div></div><div class="ctf-item ctf-author-olympicchannel ctf-new ctf-hide-avatar ctf-check-link" id="ctf_964877864112975872" style="" data-ctflinkurl="http://bit.ly/2CteMGI"><div class="ctf-tweet-content"><p class="ctf-tweet-text" style="color: #384959;">WOW! A snowboarder 🏂 who has won Olympic #Gold in #AlpineSkiing!  <br />
+Ester Ledecka has rewritten all the rules in #PyeongChang2018. #CZE <br />
+https://t.co/iInlE6OKGz</p></div><div class="ctf-tweet-actions"><a href="https://twitter.com/intent/tweet?in_reply_to=964877864112975872&related=olympicchannel" class="ctf-reply" target="_blank" style=""><svg class="svg-inline--fa fa-reply fa-w-16" aria-hidden="true" data-fa-processed="" data-prefix="fa" data-icon="reply" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M8.309 189.836L184.313 37.851C199.719 24.546 224 35.347 224 56.015v80.053c160.629 1.839 288 34.032 288 186.258 0 61.441-39.581 122.309-83.333 154.132-13.653 9.931-33.111-2.533-28.077-18.631 45.344-145.012-21.507-183.51-176.59-185.742V360c0 20.7-24.3 31.453-39.687 18.164l-176.004-152c-11.071-9.562-11.086-26.753 0-36.328z"></path></svg><span class="ctf-screenreader">Reply on Twitter</span></a><a href="https://twitter.com/intent/retweet?tweet_id=964877864112975872&related=olympicchannel" class="ctf-retweet" target="_blank" style=""><svg class="svg-inline--fa fa-retweet fa-w-20" aria-hidden="true" data-fa-processed="" data-prefix="fa" data-icon="retweet" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><path fill="currentColor" d="M629.657 343.598L528.971 444.284c-9.373 9.372-24.568 9.372-33.941 0L394.343 343.598c-9.373-9.373-9.373-24.569 0-33.941l10.823-10.823c9.562-9.562 25.133-9.34 34.419.492L480 342.118V160H292.451a24.005 24.005 0 0 1-16.971-7.029l-16-16C244.361 121.851 255.069 96 276.451 96H520c13.255 0 24 10.745 24 24v222.118l40.416-42.792c9.285-9.831 24.856-10.054 34.419-.492l10.823 10.823c9.372 9.372 9.372 24.569-.001 33.941zm-265.138 15.431A23.999 23.999 0 0 0 347.548 352H160V169.881l40.416 42.792c9.286 9.831 24.856 10.054 34.419.491l10.822-10.822c9.373-9.373 9.373-24.569 0-33.941L144.971 67.716c-9.373-9.373-24.569-9.373-33.941 0L10.343 168.402c-9.373 9.373-9.373 24.569 0 33.941l10.822 10.822c9.562 9.562 25.133 9.34 34.419-.491L96 169.881V392c0 13.255 10.745 24 24 24h243.549c21.382 0 32.09-25.851 16.971-40.971l-16.001-16z"></path></svg><span class="ctf-screenreader">Retweet on Twitter</span><span class="ctf-action-count ctf-retweet-count">64</span></a><a href="https://twitter.com/intent/like?tweet_id=964877864112975872&related=olympicchannel" class="ctf-like" target="_blank" style=""><svg class="svg-inline--fa fa-heart fa-w-18" aria-hidden="true" data-fa-processed="" data-prefix="fa" data-icon="heart" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path fill="currentColor" d="M414.9 24C361.8 24 312 65.7 288 89.3 264 65.7 214.2 24 161.1 24 70.3 24 16 76.9 16 165.5c0 72.6 66.8 133.3 69.2 135.4l187 180.8c8.8 8.5 22.8 8.5 31.6 0l186.7-180.2c2.7-2.7 69.5-63.5 69.5-136C560 76.9 505.7 24 414.9 24z"></path></svg><span class="ctf-screenreader">Like on Twitter</span><span class="ctf-action-count ctf-favorite-count">235</span></a></div></div><div class="ctf-item ctf-author-olympicchannel ctf-new ctf-hide-avatar" id="ctf_964867857409626113" style=""><div class="ctf-tweet-content"><p class="ctf-tweet-text" style="color: #384959;">It's #bronze for moustache man @RobertHJo #NOR in individual large hill #SkiJumping 👏<br />
+<br />
+More #PyeongChang2018 results here: https://t.co/Lsy57mrBYZ </p><div class="ctf-tweet-media"><a href="https://pbs.twimg.com/media/DWPmo8MXUAAIAT_.jpg" data-ctf-lightbox="1" data-title="Image for the Tweet beginning: It&#039;s #bronze for moustache man" data-user="olympicchannel" data-name="Olympic Channel" data-id="964867857409626113" data-url="https://twitter.com/olympicchannel/status/964867857409626113" data-avatar="https://pbs.twimg.com/profile_images/758375159220805632/_Ykx56Hs_normal.jpg" data-date="9h" class="ctf-lightbox-link ctf-video" data-video="https://video.twimg.com/amplify_video/964867734222729216/vid/720x720/wufkBcpwHHhs76zu.mp4" data-iframe=""><svg style="color: rgba(255,255,255,1)" class="svg-inline--fa fa-play fa-w-14 ctf_playbtn" aria-hidden="true" data-fa-processed="" data-prefix="fa" data-icon="play" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M424.4 214.7L72.4 6.6C43.8-10.3 0 6.1 0 47.9V464c0 37.5 40.7 60.1 72.4 41.3l352-208c31.4-18.5 31.5-64.1 0-82.6z"></path></svg><div class="ctf-photo-hover"><svg class="svg-inline--fa fa-arrows-alt fa-w-16" aria-hidden="true" data-fa-processed="" data-prefix="fa" data-icon="arrows-alt" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M352.201 425.775l-79.196 79.196c-9.373 9.373-24.568 9.373-33.941 0l-79.196-79.196c-15.119-15.119-4.411-40.971 16.971-40.97h51.162L228 284H127.196v51.162c0 21.382-25.851 32.09-40.971 16.971L7.029 272.937c-9.373-9.373-9.373-24.569 0-33.941L86.225 159.8c15.119-15.119 40.971-4.411 40.971 16.971V228H228V127.196h-51.23c-21.382 0-32.09-25.851-16.971-40.971l79.196-79.196c9.373-9.373 24.568-9.373 33.941 0l79.196 79.196c15.119 15.119 4.411 40.971-16.971 40.971h-51.162V228h100.804v-51.162c0-21.382 25.851-32.09 40.97-16.971l79.196 79.196c9.373 9.373 9.373 24.569 0 33.941L425.773 352.2c-15.119 15.119-40.971 4.411-40.97-16.971V284H284v100.804h51.23c21.382 0 32.09 25.851 16.971 40.971z"></path></svg></div><img src="https://pbs.twimg.com/media/DWPmo8MXUAAIAT_.jpg" alt="Image for the Tweet beginning: It&#039;s #bronze for moustache man" /></a></div></div><div class="ctf-tweet-actions"><a href="https://twitter.com/intent/tweet?in_reply_to=964867857409626113&related=olympicchannel" class="ctf-reply" target="_blank" style=""><svg class="svg-inline--fa fa-reply fa-w-16" aria-hidden="true" data-fa-processed="" data-prefix="fa" data-icon="reply" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M8.309 189.836L184.313 37.851C199.719 24.546 224 35.347 224 56.015v80.053c160.629 1.839 288 34.032 288 186.258 0 61.441-39.581 122.309-83.333 154.132-13.653 9.931-33.111-2.533-28.077-18.631 45.344-145.012-21.507-183.51-176.59-185.742V360c0 20.7-24.3 31.453-39.687 18.164l-176.004-152c-11.071-9.562-11.086-26.753 0-36.328z"></path></svg><span class="ctf-screenreader">Reply on Twitter</span></a><a href="https://twitter.com/intent/retweet?tweet_id=964867857409626113&related=olympicchannel" class="ctf-retweet" target="_blank" style=""><svg class="svg-inline--fa fa-retweet fa-w-20" aria-hidden="true" data-fa-processed="" data-prefix="fa" data-icon="retweet" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><path fill="currentColor" d="M629.657 343.598L528.971 444.284c-9.373 9.372-24.568 9.372-33.941 0L394.343 343.598c-9.373-9.373-9.373-24.569 0-33.941l10.823-10.823c9.562-9.562 25.133-9.34 34.419.492L480 342.118V160H292.451a24.005 24.005 0 0 1-16.971-7.029l-16-16C244.361 121.851 255.069 96 276.451 96H520c13.255 0 24 10.745 24 24v222.118l40.416-42.792c9.285-9.831 24.856-10.054 34.419-.492l10.823 10.823c9.372 9.372 9.372 24.569-.001 33.941zm-265.138 15.431A23.999 23.999 0 0 0 347.548 352H160V169.881l40.416 42.792c9.286 9.831 24.856 10.054 34.419.491l10.822-10.822c9.373-9.373 9.373-24.569 0-33.941L144.971 67.716c-9.373-9.373-24.569-9.373-33.941 0L10.343 168.402c-9.373 9.373-9.373 24.569 0 33.941l10.822 10.822c9.562 9.562 25.133 9.34 34.419-.491L96 169.881V392c0 13.255 10.745 24 24 24h243.549c21.382 0 32.09-25.851 16.971-40.971l-16.001-16z"></path></svg><span class="ctf-screenreader">Retweet on Twitter</span><span class="ctf-action-count ctf-retweet-count">67</span></a><a href="https://twitter.com/intent/like?tweet_id=964867857409626113&related=olympicchannel" class="ctf-like" target="_blank" style=""><svg class="svg-inline--fa fa-heart fa-w-18" aria-hidden="true" data-fa-processed="" data-prefix="fa" data-icon="heart" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path fill="currentColor" d="M414.9 24C361.8 24 312 65.7 288 89.3 264 65.7 214.2 24 161.1 24 70.3 24 16 76.9 16 165.5c0 72.6 66.8 133.3 69.2 135.4l187 180.8c8.8 8.5 22.8 8.5 31.6 0l186.7-180.2c2.7-2.7 69.5-63.5 69.5-136C560 76.9 505.7 24 414.9 24z"></path></svg><span class="ctf-screenreader">Like on Twitter</span><span class="ctf-action-count ctf-favorite-count">219</span></a></div></div></div></div><script type="text/javascript" src="https://pyeongchang.olympicchannel.com/wp-content/plugins/custom-twitter-feeds-pro/js/ctf-scripts.js?ver=1.5.2"></script>					<script>
+						jQuery('.ctf-header-img').empty().html('<img src="https://pyeongchang.olympicchannel.com/wp-content/themes/gamestime/assets/Olympic_Channel_logo.svg" width="55">');
+
+						jQuery('.ctf-tweet-text').each(function(){
+							if(jQuery(this).text().length > 190){
+								
+							jQuery(this).html(jQuery(this).text().substring(0,190) + ' ...');
+						}
+						});
+						jQuery('.ctf-tweet-content').each(function(){
+							jQuery('.ctf-tweet-media',this).after(jQuery('.ctf-tweet-text',this));
+						});
+						
+						
+					</script>
+										
+				</div>			
+									
+
+						<div class="col-3">
+						<div class="news-container">
+			
+
+					
+			<a class="vilynx_disable" href="https://pyeongchang.olympicchannel.com/news/doubling-up-mass-starts-and-big-tricks-four-new-events-get-games-time-in-pyeongchang/"><img src="https://pyeongchang.olympicchannel.com/wp-content/uploads/2017/11/GettyImages-643999138.jpg?w=1024" class="attachment-retina-size size-retina-size wp-post-image" alt="" srcset="https://pyeongchang.olympicchannel.com/wp-content/uploads/2017/11/GettyImages-643999138.jpg 3662w, https://pyeongchang.olympicchannel.com/wp-content/uploads/2017/11/GettyImages-643999138-300x200.jpg 300w, https://pyeongchang.olympicchannel.com/wp-content/uploads/2017/11/GettyImages-643999138-768x512.jpg 768w, https://pyeongchang.olympicchannel.com/wp-content/uploads/2017/11/GettyImages-643999138-1024x683.jpg 1024w" sizes="(max-width: 1024px) 100vw, 1024px" /></a>
+
+		
+
+		
+	<div class="description">
+	<h3>			
+			<a href="https://pyeongchang.olympicchannel.com/news/doubling-up-mass-starts-and-big-tricks-four-new-events-get-games-time-in-pyeongchang/">Doubling up, mass starts and big tricks &#8211; four new events get Games-time in PyeongChang</a>
+
+		</h3>
+	
+	</div>
+	<div class="date-published"> </div>
+</div>						</div>
+										
+
+						<div class="col-3">
+						<div class="news-container">
+			
+
+					
+			<a class="vilynx_disable" href="https://pyeongchang.olympicchannel.com/news/five-fantastic-venues-for-pyeongchang-2018/"><img src="https://pyeongchang.olympicchannel.com/wp-content/uploads/2017/11/GettyImages-635044062.jpg?w=1024" class="attachment-retina-size size-retina-size wp-post-image" alt="" srcset="https://pyeongchang.olympicchannel.com/wp-content/uploads/2017/11/GettyImages-635044062.jpg 4267w, https://pyeongchang.olympicchannel.com/wp-content/uploads/2017/11/GettyImages-635044062-300x200.jpg 300w, https://pyeongchang.olympicchannel.com/wp-content/uploads/2017/11/GettyImages-635044062-768x512.jpg 768w, https://pyeongchang.olympicchannel.com/wp-content/uploads/2017/11/GettyImages-635044062-1024x683.jpg 1024w" sizes="(max-width: 1024px) 100vw, 1024px" /></a>
+
+		
+
+		
+	<div class="description">
+	<h3>			
+			<a href="https://pyeongchang.olympicchannel.com/news/five-fantastic-venues-for-pyeongchang-2018/">Five fantastic venues for PyeongChang 2018</a>
+
+		</h3>
+	
+	</div>
+	<div class="date-published"> </div>
+</div>						</div>
+						
+			
+			
+			</div>
+			
+		</div>
+				
+
+		<div class="section featured-content">
+			<h2>Featured</h2>
+			<div class="row">
+			
+						<div class="col-6">
+							<div class="news-container">
+			
+
+					
+			<a class="vilynx_disable" href="https://pyeongchang.olympicchannel.com/watch-pyeongchang-daily-highlights/"><img src="https://pyeongchang.olympicchannel.com/wp-content/uploads/2018/02/nbc-com-pyeongchangwinterolympics2018-aboutimage-1920x1080_1.jpg?w=640" class="attachment-retina-size size-retina-size wp-post-image" alt="" /></a>
+
+		
+
+		
+	<div class="description">
+	<h3>			
+			<a href="https://pyeongchang.olympicchannel.com/watch-pyeongchang-daily-highlights/">NBC&#8217;s OLYMPIC WINTER GAMES HIGHLIGHTS</a>
+
+		</h3>
+	
+	</div>
+	<div class="date-published"> </div>
+</div>						</div>
+					
+						<div class="col-6">
+							<div class="news-container">
+			
+
+					
+			<a class="vilynx_disable" href="https://pyeongchang.olympicchannel.com/flagbearers/"><img src="https://pyeongchang.olympicchannel.com/wp-content/uploads/2012/02/flagbearer-thumbnail-v3.jpg?w=1024" class="attachment-retina-size size-retina-size wp-post-image" alt="" /></a>
+
+		
+
+		
+	<div class="description">
+	<h3>			
+			<a href="https://pyeongchang.olympicchannel.com/flagbearers/">The Olympic Flagbearers turn at your comand &#8211; give it a spin</a>
+
+		</h3>
+	
+	</div>
+	<div class="date-published"> </div>
+</div>						</div>
+					
+						<div class="col-3">
+							<div class="news-container">
+			
+
+					
+			<a class="vilynx_disable" href="https://pyeongchang.olympicchannel.com/shiffrin-on-fourth-i-wouldnt-change-it-for-the-world/"><img src="https://pyeongchang.olympicchannel.com/wp-content/uploads/2018/02/gettyimages-918840326.jpg?w=1024" class="attachment-retina-size size-retina-size wp-post-image" alt="shiffrin slalom" /></a>
+
+		
+
+		
+	<div class="description">
+	<h3>			
+			<a href="https://pyeongchang.olympicchannel.com/shiffrin-on-fourth-i-wouldnt-change-it-for-the-world/">Shiffrin on fourth: &#8220;I wouldn&#8217;t change it for the world&#8221;</a>
+
+		</h3>
+	
+	</div>
+	<div class="date-published"> </div>
+</div>						</div>
+					
+						<div class="col-3">
+							<div class="news-container">
+			
+
+					
+			<a class="vilynx_disable" href="https://pyeongchang.olympicchannel.com/pyeongchang-2018-marcel-hirscher-freestyle-skiing-and-more-to-watch-on-sunday/"><img src="https://pyeongchang.olympicchannel.com/wp-content/uploads/2018/02/gettyimages-917721382.jpg?w=1024" class="attachment-retina-size size-retina-size wp-post-image" alt="What to watch on Sunday" /></a>
+
+		
+
+		
+	<div class="description">
+	<h3>			
+			<a href="https://pyeongchang.olympicchannel.com/pyeongchang-2018-marcel-hirscher-freestyle-skiing-and-more-to-watch-on-sunday/">PyeongChang 2018: Marcel Hirscher, freestyle skiing, and more to watch on Sunday</a>
+
+		</h3>
+	
+	</div>
+	<div class="date-published"> </div>
+</div>						</div>
+					
+						<div class="col-3">
+							<div class="news-container">
+			
+
+					
+			<a class="vilynx_disable" href="https://pyeongchang.olympicchannel.com/choi-min-jeong-overcomes-early-disappointment-to-win-1500m-short-track-gold/"><img src="https://pyeongchang.olympicchannel.com/wp-content/uploads/2018/02/gettyimages-919256746.jpg?w=1024" class="attachment-retina-size size-retina-size wp-post-image" alt="Choi wins" /></a>
+
+		
+
+		
+	<div class="description">
+	<h3>			
+			<a href="https://pyeongchang.olympicchannel.com/choi-min-jeong-overcomes-early-disappointment-to-win-1500m-short-track-gold/">Choi Min-jeong overcomes early disappointment to win 1500m short-track gold</a>
+
+		</h3>
+	
+	</div>
+	<div class="date-published"> </div>
+</div>						</div>
+					
+						<div class="col-3">
+							<div class="news-container">
+			
+
+					
+			<a class="vilynx_disable" href="https://pyeongchang.olympicchannel.com/hanyus-painful-path-to-pyeongchang-glory/"><img src="https://pyeongchang.olympicchannel.com/wp-content/uploads/2018/02/hanyu-celeb.jpg?w=1024" class="attachment-retina-size size-retina-size wp-post-image" alt="Hanyu Victory" /></a>
+
+		
+
+		
+	<div class="description">
+	<h3>			
+			<a href="https://pyeongchang.olympicchannel.com/hanyus-painful-path-to-pyeongchang-glory/">Hanyu&#8217;s painful path to PyeongChang glory</a>
+
+		</h3>
+	
+	</div>
+	<div class="date-published"> </div>
+</div>						</div>
+											 
+			</div>
+			
+			<div id="ajax-posts" class="row">
+			
+			</div>
+			<a id="load-more" href="/">Load More</a>
+		</div>
+
+
+		<div class="section post-content">
+		
+			<div class="at-above-post-homepage addthis_tool" data-url="https://pyeongchang.olympicchannel.com/"></div><!-- AddThis Advanced Settings above via filter on the_content --><!-- AddThis Advanced Settings below via filter on the_content --><!-- AddThis Advanced Settings generic via filter on the_content --><!-- AddThis Share Buttons above via filter on the_content --><!-- AddThis Share Buttons below via filter on the_content --><div class="at-below-post-homepage addthis_tool" data-url="https://pyeongchang.olympicchannel.com/"></div><!-- AddThis Share Buttons generic via filter on the_content -->		</div>
+
+		</main><!-- .site-main -->
+	</div><!-- .content-area -->
+	
+<!-- exclude_post_to_string = 3201,2708,2329,2715,2658,1572,1545,2588,2672,3275,3272,3268,3259 -->
+<script type="text/javascript">
+var excluded_posts = "3201,2708,2329,2715,2658,1572,1545,2588,2672,3275,3272,3268,3259";
+var return_excluded_posts = '';
+
+jQuery('#load-more').click(function(e){
+
+	e.preventDefault();
+
+	if(jQuery('.next-run').length){
+				
+		
+		return_excluded_posts = jQuery('.next-run').data('exclude-posts');
+		loadPosts(return_excluded_posts);
+		jQuery('.next-run').detach();		
+	}
+	else{
+	loadPosts(excluded_posts);
+	
+	}
+});
+
+function loadPosts(excluded_posts){
+var ajaxurl = 'https://pyeongchang.olympicchannel.com/wp-admin/admin-ajax.php';
+
+var data = {
+		'action': 'ml_load_more_posts',
+		'excluded_posts': excluded_posts,
+		'security': '98d9bea61b'		
+	};
+		jQuery.post(
+	    ajaxurl, 
+	    data, 
+	    function(response){
+	        jQuery('#ajax-posts').append(response);
+	        var has_more_posts = jQuery('.next-run').data('no-more-posts');
+	       
+	        if(has_more_posts == true){
+				jQuery('#load-more').hide();
+			}
+	    }
+	);
+}
+
+  function resizeIframe(obj) {
+    obj.style.height = obj.contentWindow.document.body.scrollHeight + 'px';
+  }
+
+</script>
+<div class="section before-footer">
+	<img src="https://pyeongchang.olympicchannel.com/wp-content/themes/gamestime/assets/logo-pyeong.svg" alt="Winter Olympic Games Logo">
+</div>
+<div class="section founding-partners">
+	<h3><span>Founding Partners</span></h3>
+	<a href="http://www.bridgestone.com/olympics/index.html" target="_blank"><img src="https://pyeongchang.olympicchannel.com/wp-content/themes/gamestime/img-tmp/b2.png" alt="Bridgestone"></a>
+	<img src="https://pyeongchang.olympicchannel.com/wp-content/themes/gamestime/img-tmp/toyota.png" alt="">
+</div>
+<footer>
+	<div id="innerFooter">
+
+		<div class="menu-footer-menu-container"><ul id="menu-footer-menu" class="menu"><li id="menu-item-12" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-12"><a href="https://www.olympicchannel.com/en/about-us/">About Us</a></li>
+<li id="menu-item-13" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-13"><a href="https://www.olympicchannel.com/en/contact-us/">Contact Us</a></li>
+<li id="menu-item-14" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-14"><a href="https://www.olympicchannel.com/en/terms-of-service/">Terms of Service</a></li>
+<li id="menu-item-15" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-15"><a href="https://www.olympicchannel.com/en/cookie-policy/">Cookie Policy</a></li>
+<li id="menu-item-16" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-16"><a href="https://www.olympicchannel.com/en/privacy-policy/">Privacy Policy</a></li>
+</ul></div>
+		<p class="copyright">TM &copy; Olympic Channel Services S.L. 2016 - All rights reserved</p>
+	</div>
+
+	<!-- <div class="socialIcons noDesktop">
+		socialIcons
+	</div> -->
+</footer>
+
+<div id="pum-3048" class="pum pum-overlay pum-theme-3046 pum-theme-cutting-edge popmake-overlay auto_open click_open" data-popmake="{&quot;id&quot;:3048,&quot;slug&quot;:&quot;go-beyond&quot;,&quot;theme_id&quot;:3046,&quot;cookies&quot;:[{&quot;event&quot;:&quot;on_popup_close&quot;,&quot;settings&quot;:{&quot;name&quot;:&quot;popup-20181215&quot;,&quot;key&quot;:&quot;&quot;,&quot;time&quot;:&quot;1 month&quot;,&quot;path&quot;:1}}],&quot;triggers&quot;:[{&quot;type&quot;:&quot;auto_open&quot;,&quot;settings&quot;:{&quot;delay&quot;:&quot;4000&quot;,&quot;cookie&quot;:{&quot;name&quot;:[&quot;popup-20181215&quot;]}}},{&quot;type&quot;:&quot;click_open&quot;,&quot;settings&quot;:{&quot;extra_selectors&quot;:&quot;&quot;,&quot;cookie&quot;:{&quot;name&quot;:null}}}],&quot;mobile_disabled&quot;:null,&quot;tablet_disabled&quot;:null,&quot;meta&quot;:{&quot;display&quot;:{&quot;size&quot;:&quot;medium&quot;,&quot;responsive_min_width&quot;:&quot;&quot;,&quot;responsive_max_width&quot;:&quot;502&quot;,&quot;custom_width&quot;:&quot;640&quot;,&quot;custom_height&quot;:&quot;380&quot;,&quot;animation_type&quot;:&quot;fade&quot;,&quot;animation_speed&quot;:&quot;350&quot;,&quot;animation_origin&quot;:&quot;center top&quot;,&quot;location&quot;:&quot;center top&quot;,&quot;position_bottom&quot;:&quot;0&quot;,&quot;position_top&quot;:&quot;61&quot;,&quot;position_left&quot;:&quot;0&quot;,&quot;position_right&quot;:&quot;0&quot;,&quot;overlay_zindex&quot;:&quot;1999999998&quot;,&quot;zindex&quot;:&quot;1999999999&quot;,&quot;responsive_min_width_unit&quot;:&quot;px&quot;,&quot;responsive_max_width_unit&quot;:&quot;px&quot;,&quot;custom_width_unit&quot;:&quot;px&quot;,&quot;custom_height_unit&quot;:&quot;px&quot;},&quot;close&quot;:{&quot;text&quot;:&quot;&quot;,&quot;button_delay&quot;:&quot;0&quot;,&quot;overlay_click&quot;:&quot;true&quot;,&quot;esc_press&quot;:&quot;true&quot;,&quot;f4_press&quot;:&quot;true&quot;},&quot;click_open&quot;:{&quot;extra_selectors&quot;:&quot;&quot;}}}" role="dialog" aria-hidden="true" aria-labelledby="pum_popup_title_3048">
+
+	<div id="popmake-3048" class="pum-container popmake theme-3046 pum-responsive pum-responsive-medium responsive size-medium">
+
+				
+
+				            <div id="pum_popup_title_3048" class="pum-title popmake-title">
+				Go Beyond the snow and ice			</div>
+		
+
+		
+
+				<div class="pum-content popmake-content">
+			<p><script type="text/javascript">
+			console.log('test');
+		//window.attachEvent('onmessage',receiveMessage);
+		window.addEventListener("message", receiveMessage, false);
+		function receiveMessage(event)
+		{
+		if(event.data == 'yey'){setTimeout(function(){
+ jQuery('.popmake-close').click();
+}, 5000);}
+		}
+		</script></p>
+<div class="popup-container">
+<div class="header-container"><img src="https://pyeongchang.olympicchannel.com/wp-content/uploads/2018/02/header.jpg" alt="" width="1005" height="526" class="alignnone size-full wp-image-3050" /></div>
+<div class="form-container">
+<div class="form-message">
+<h3>Sign Up now and receive daily highlights<br /> and medal tables from pyeongchang 2018<br /> straight to your inbox!</h3>
+</div>
+<div class="form">
+<iframe id="form-iframe" width="90%" height="150"src="https://pub.s7.exacttarget.com/4d41nu41pk5">
+</iframe></div>
+</div>
+</div>
+		</div>
+
+
+				
+
+				            <button type="button" class="pum-close popmake-close" aria-label="Close">
+			×            </button>
+		
+	</div>
+
+</div>
+ <script type="text/javascript">
+  analytics.track("Viewed Home Page", {"noninteraction":true}, {"library":"analytics-wordpress"});
+    
+</script>
+<div class="sidepanel-overlay"></div>
+<div class="sidepanel">
+    <div class="sidepanel-wrapper">
+        <div class="sidepanel-content-area">
+        <div class="menu-side-menu-container"><ul id="menu-side-menu" class="menu"><li id="menu-item-2728" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-4 current_page_item menu-item-2728"><a href="https://pyeongchang.olympicchannel.com/">Home</a></li>
+<li id="menu-item-2749" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-2749"><a href="https://pyeongchang.olympicchannel.com/schedule/">Schedule</a></li>
+<li id="menu-item-2729" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-2729"><a href="https://pyeongchang.olympicchannel.com/results/">Results</a></li>
+<li id="menu-item-2730" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-2730"><a href="https://pyeongchang.olympicchannel.com/medals/">Medals</a></li>
+<li id="menu-item-2731" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2731"><a href="https://articles.olympicchannel.com/">Articles</a></li>
+<li id="menu-item-2732" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2732"><a href="https://www.olympicchannel.com/en/features/">Features</a></li>
+<li id="menu-item-2735" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2735"><a href="https://www.olympicchannel.com/en/tv/">TV</a></li>
+</ul></div>            
+        </div>
+    </div>
+    <div class="sidepanel-close">X</div>
+</div>
+<script>
+  jQuery( document ).ready( function() {
+    
+  });
+</script>
+	<div style="display:none">
+	</div>
+<script data-cfasync="false" type="text/javascript">if (window.addthis_product === undefined) { window.addthis_product = "wpp"; } if (window.wp_product_version === undefined) { window.wp_product_version = "wpp-6.1.1"; } if (window.wp_blog_version === undefined) { window.wp_blog_version = "4.9.4"; } if (window.addthis_share === undefined) { window.addthis_share = {}; } if (window.addthis_config === undefined) { window.addthis_config = {"data_track_clickback":true,"ui_atversion":"300"}; } if (window.addthis_plugin_info === undefined) { window.addthis_plugin_info = {"info_status":"enabled","cms_name":"WordPress","plugin_name":"Share Buttons by AddThis","plugin_version":"6.1.1","plugin_mode":"AddThis","anonymous_profile_id":"wp-64492679ca7f83e2b197213f9a7b4eab","page_info":{"template":"home","post_type":""},"sharing_enabled_on_post_via_metabox":false}; } 
+                    (function() {
+                      var first_load_interval_id = setInterval(function () {
+                        if (typeof window.addthis !== 'undefined') {
+                          window.clearInterval(first_load_interval_id);
+                          if (typeof window.addthis_layers !== 'undefined' && Object.getOwnPropertyNames(window.addthis_layers).length > 0) {
+                            window.addthis.layers(window.addthis_layers);
+                          }
+                          if (Array.isArray(window.addthis_layers_tools)) {
+                            for (i = 0; i < window.addthis_layers_tools.length; i++) {
+                              window.addthis.layers(window.addthis_layers_tools[i]);
+                            }
+                          }
+                        }
+                     },1000)
+                    }());
+                </script><script type='text/javascript' src='https://s0.wp.com/wp-content/js/devicepx-jetpack.js?ver=201807'></script>
+<script type='text/javascript' src='https://s7.addthis.com/js/300/addthis_widget.js?ver=4.9.4#pubid=ra-59df4b06b221a7e9'></script>
+<script type='text/javascript' src='https://secure.gravatar.com/js/gprofiles.js?ver=2018Febaa'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var WPGroHo = {"my_hash":""};
+/* ]]> */
+</script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var pum_vars = {"ajaxurl":"https:\/\/pyeongchang.olympicchannel.com\/wp-admin\/admin-ajax.php","restapi":"https:\/\/pyeongchang.olympicchannel.com\/wp-json\/pum\/v1","rest_nonce":null,"default_theme":"3042","debug_mode":"","disable_open_tracking":""};
+var pum_debug_vars = {"debug_mode_enabled":"Popup Maker Debug Mode Enabled","debug_started_at":"Debug started at:","debug_more_info":"For more information on how to use this information visit http:\/\/docs.wppopupmaker.com\/?utm_medium=js-debug-info&utm_campaign=ContextualHelp&utm_source=browser-console&utm_content=more-info","global_info":"Global Information","localized_vars":"Localized variables","popups_initializing":"Popups Initializing","popups_initialized":"Popups Initialized","single_popup_label":"Popup: #","theme_id":"Theme ID: ","label_method_call":"Method Call:","label_method_args":"Method Arguments:","label_popup_settings":"Settings","label_triggers":"Triggers","label_cookies":"Cookies","label_delay":"Delay:","label_conditions":"Conditions","label_cookie":"Cookie:","label_settings":"Settings:","label_selector":"Selector:","label_mobile_disabled":"Mobile Disabled:","label_tablet_disabled":"Tablet Disabled:","label_display_settings":"Display Settings:","label_close_settings":"Close Settings:","label_event_before_open":"Event: Before Open","label_event_after_open":"Event: After Open","label_event_open_prevented":"Event: Open Prevented","label_event_setup_close":"Event: Setup Close","label_event_close_prevented":"Event: Close Prevented","label_event_before_close":"Event: Before Close","label_event_after_close":"Event: After Close","label_event_before_reposition":"Event: Before Reposition","label_event_after_reposition":"Event: After Reposition","label_event_checking_condition":"Event: Checking Condition","triggers":{"click_open":{"name":"Click Open","modal_title":"Click Trigger Settings","settings_column":"<strong>Extra Selectors<\/strong>: {{data.extra_selectors}}"},"auto_open":{"name":"Auto Open","modal_title":"Auto Open Settings","settings_column":"<strong>Delay<\/strong>: {{data.delay}}"}},"cookies":{"on_popup_open":{"name":"On Popup Open","modal_title":"On Popup Open Settings"},"on_popup_close":{"name":"On Popup Close","modal_title":"On Popup Close Settings"},"manual":{"name":"Manual JavaScript","modal_title":"Click Trigger Settings"}}};
+var ajaxurl = "https:\/\/pyeongchang.olympicchannel.com\/wp-admin\/admin-ajax.php";
+var popmake_default_theme = "3042";
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://pyeongchang.olympicchannel.com/_static/??-eJx9jtEKwjAMRX/IWiYO5oP4LbPNZru1iU1C8e+twsAXB3lILveeG1vJOMwCWWxSQ6vOIbONIDS6xSb0ugLbSnPBBx4jH9puQnar+qbHNk+F8rIarMMCxxTyvouQgwTMv87tg62ekJRMGhcodmQG+TJa7i+/nZDu4PeoTlkwGalBBIqZADwbKvjJO5lMDX5uVS1+S9eu74Zz35+GS3wD9aNsJA=='></script>
+<script type='text/javascript' src='https://stats.wp.com/e-201807.js' async='async' defer='defer'></script>
+<script type='text/javascript'>
+	_stq = window._stq || [];
+	_stq.push([ 'view', {v:'ext',j:'1:5.8',blog:'141711190',post:'4',tz:'0',srv:'pyeongchang.olympicchannel.com'} ]);
+	_stq.push([ 'clickTrackerInit', '141711190', '4' ]);
+</script>
+<script src="//static.vilynx.com/gallery/vpg.3.7.0.min.js" publickey="21b1e9d4f3765e384991275b50351227" redirect="true" resizetoimage="true" redirect="true" nomobile="true" divignore=".play-icon"></script>
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"31a8abca58","applicationID":"83712441","transactionName":"ZFEBNUICCEUHUUFfXl0bIgJECglYSVpaW1RDVQQEHRcRGxJXWEZdUkAG","queueTime":0,"applicationTime":187,"atts":"SBYWQwoYGxpEUxcMSk5J","errorBeacon":"bam.nr-data.net","agent":""}</script></body>
+</html>

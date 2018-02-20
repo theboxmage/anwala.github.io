@@ -1,0 +1,11 @@
+#Occurance, Filename, Number of Words, URL
+1,62.txt,322,https://www.wired.com/story/olympic-support/
+2,89.txt,189,http://www.businessinsider.com/winter-olympics-figure-skating-arena-empty-nbc-time-zone-2018-2
+3,27.txt,146,http://www.bbc.co.uk/news/blogs-trending-43003630?ocid=socialflow_twitter
+2,400.txt,295,http://www.huffingtonpost.ca/2018/02/09/olympic-mom-commercial-pg_a_23357319/?ncid=tweetlnkcahpmg00000002
+2,401.txt,284,https://www.billboard.com/articles/columns/pop/8098906/winter-olympics-2018-opening-ceremony-psy-bts-skating-oasis-ed-sheeran?utm_source=twitter
+7,260.txt,1154,https://www.cnet.com/how-to/winter-olympics-2018-when-they-start-how-to-stream-and-more/#ftag=CADf328eec
+7,725.txt,1348,https://www.nytimes.com/2018/02/07/watching/winter-olympics-guide-how-to-watch.html?smid=tw-nytimes&smtyp=cur
+14,939.txt,355,https://www.hulu.com/nbc-winter-olympics-2018
+15,991.txt,1063,http://www.sheknows.com/entertainment/articles/1138091/best-olympics-ice-skating-moments-through-the-years
+36,617.txt,1992,https://www.nbcnews.com/storyline/winter-olympics-2018/think-olympic-figure-skating-judges-are-biased-data-says-they-n844886

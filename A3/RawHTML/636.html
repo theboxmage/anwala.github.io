@@ -1,0 +1,1389 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML+RDFa 1.1//EN">
+<html lang="en" dir="ltr" version="HTML+RDFa 1.1"
+  xmlns:content="http://purl.org/rss/1.0/modules/content/"
+  xmlns:dc="http://purl.org/dc/terms/"
+  xmlns:foaf="http://xmlns.com/foaf/0.1/"
+  xmlns:og="http://ogp.me/ns#"
+  xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+  xmlns:sioc="http://rdfs.org/sioc/ns#"
+  xmlns:sioct="http://rdfs.org/sioc/types#"
+  xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+  xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+  xmlns:fb="http://ogp.me/ns/fb#"
+  xmlns:article="http://ogp.me/ns/article#"
+  xmlns:book="http://ogp.me/ns/book#"
+  xmlns:profile="http://ogp.me/ns/profile#"
+  xmlns:video="http://ogp.me/ns/video#">
+<head profile="http://www.w3.org/1999/xhtml/vocab">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><script type="text/javascript">(window.NREUM||(NREUM={})).loader_config={xpid:"UwEPUFdACQEAXFNUAwI="};window.NREUM||(NREUM={}),__nr_require=function(t,n,e){function r(e){if(!n[e]){var o=n[e]={exports:{}};t[e][0].call(o.exports,function(n){var o=t[e][1][n];return r(o||n)},o,o.exports)}return n[e].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<e.length;o++)r(e[o]);return r}({1:[function(t,n,e){function r(t){try{s.console&&console.log(t)}catch(n){}}var o,i=t("ee"),a=t(15),s={};try{o=localStorage.getItem("__nr_flags").split(","),console&&"function"==typeof console.log&&(s.console=!0,o.indexOf("dev")!==-1&&(s.dev=!0),o.indexOf("nr_dev")!==-1&&(s.nrDev=!0))}catch(c){}s.nrDev&&i.on("internal-error",function(t){r(t.stack)}),s.dev&&i.on("fn-err",function(t,n,e){r(e.stack)}),s.dev&&(r("NR AGENT IN DEVELOPMENT MODE"),r("flags: "+a(s,function(t,n){return t}).join(", ")))},{}],2:[function(t,n,e){function r(t,n,e,r,s){try{p?p-=1:o(s||new UncaughtException(t,n,e),!0)}catch(f){try{i("ierr",[f,c.now(),!0])}catch(d){}}return"function"==typeof u&&u.apply(this,a(arguments))}function UncaughtException(t,n,e){this.message=t||"Uncaught error with no additional information",this.sourceURL=n,this.line=e}function o(t,n){var e=n?null:c.now();i("err",[t,e])}var i=t("handle"),a=t(16),s=t("ee"),c=t("loader"),f=t("gos"),u=window.onerror,d=!1,l="nr@seenError",p=0;c.features.err=!0,t(1),window.onerror=r;try{throw new Error}catch(h){"stack"in h&&(t(8),t(7),"addEventListener"in window&&t(5),c.xhrWrappable&&t(9),d=!0)}s.on("fn-start",function(t,n,e){d&&(p+=1)}),s.on("fn-err",function(t,n,e){d&&!e[l]&&(f(e,l,function(){return!0}),this.thrown=!0,o(e))}),s.on("fn-end",function(){d&&!this.thrown&&p>0&&(p-=1)}),s.on("internal-error",function(t){i("ierr",[t,c.now(),!0])})},{}],3:[function(t,n,e){t("loader").features.ins=!0},{}],4:[function(t,n,e){function r(t){}if(window.performance&&window.performance.timing&&window.performance.getEntriesByType){var o=t("ee"),i=t("handle"),a=t(8),s=t(7),c="learResourceTimings",f="addEventListener",u="resourcetimingbufferfull",d="bstResource",l="resource",p="-start",h="-end",m="fn"+p,w="fn"+h,v="bstTimer",y="pushState",g=t("loader");g.features.stn=!0,t(6);var b=NREUM.o.EV;o.on(m,function(t,n){var e=t[0];e instanceof b&&(this.bstStart=g.now())}),o.on(w,function(t,n){var e=t[0];e instanceof b&&i("bst",[e,n,this.bstStart,g.now()])}),a.on(m,function(t,n,e){this.bstStart=g.now(),this.bstType=e}),a.on(w,function(t,n){i(v,[n,this.bstStart,g.now(),this.bstType])}),s.on(m,function(){this.bstStart=g.now()}),s.on(w,function(t,n){i(v,[n,this.bstStart,g.now(),"requestAnimationFrame"])}),o.on(y+p,function(t){this.time=g.now(),this.startPath=location.pathname+location.hash}),o.on(y+h,function(t){i("bstHist",[location.pathname+location.hash,this.startPath,this.time])}),f in window.performance&&(window.performance["c"+c]?window.performance[f](u,function(t){i(d,[window.performance.getEntriesByType(l)]),window.performance["c"+c]()},!1):window.performance[f]("webkit"+u,function(t){i(d,[window.performance.getEntriesByType(l)]),window.performance["webkitC"+c]()},!1)),document[f]("scroll",r,{passive:!0}),document[f]("keypress",r,!1),document[f]("click",r,!1)}},{}],5:[function(t,n,e){function r(t){for(var n=t;n&&!n.hasOwnProperty(u);)n=Object.getPrototypeOf(n);n&&o(n)}function o(t){s.inPlace(t,[u,d],"-",i)}function i(t,n){return t[1]}var a=t("ee").get("events"),s=t(18)(a,!0),c=t("gos"),f=XMLHttpRequest,u="addEventListener",d="removeEventListener";n.exports=a,"getPrototypeOf"in Object?(r(document),r(window),r(f.prototype)):f.prototype.hasOwnProperty(u)&&(o(window),o(f.prototype)),a.on(u+"-start",function(t,n){var e=t[1],r=c(e,"nr@wrapped",function(){function t(){if("function"==typeof e.handleEvent)return e.handleEvent.apply(e,arguments)}var n={object:t,"function":e}[typeof e];return n?s(n,"fn-",null,n.name||"anonymous"):e});this.wrapped=t[1]=r}),a.on(d+"-start",function(t){t[1]=this.wrapped||t[1]})},{}],6:[function(t,n,e){var r=t("ee").get("history"),o=t(18)(r);n.exports=r,o.inPlace(window.history,["pushState","replaceState"],"-")},{}],7:[function(t,n,e){var r=t("ee").get("raf"),o=t(18)(r),i="equestAnimationFrame";n.exports=r,o.inPlace(window,["r"+i,"mozR"+i,"webkitR"+i,"msR"+i],"raf-"),r.on("raf-start",function(t){t[0]=o(t[0],"fn-")})},{}],8:[function(t,n,e){function r(t,n,e){t[0]=a(t[0],"fn-",null,e)}function o(t,n,e){this.method=e,this.timerDuration=isNaN(t[1])?0:+t[1],t[0]=a(t[0],"fn-",this,e)}var i=t("ee").get("timer"),a=t(18)(i),s="setTimeout",c="setInterval",f="clearTimeout",u="-start",d="-";n.exports=i,a.inPlace(window,[s,"setImmediate"],s+d),a.inPlace(window,[c],c+d),a.inPlace(window,[f,"clearImmediate"],f+d),i.on(c+u,r),i.on(s+u,o)},{}],9:[function(t,n,e){function r(t,n){d.inPlace(n,["onreadystatechange"],"fn-",s)}function o(){var t=this,n=u.context(t);t.readyState>3&&!n.resolved&&(n.resolved=!0,u.emit("xhr-resolved",[],t)),d.inPlace(t,y,"fn-",s)}function i(t){g.push(t),h&&(x?x.then(a):w?w(a):(E=-E,O.data=E))}function a(){for(var t=0;t<g.length;t++)r([],g[t]);g.length&&(g=[])}function s(t,n){return n}function c(t,n){for(var e in t)n[e]=t[e];return n}t(5);var f=t("ee"),u=f.get("xhr"),d=t(18)(u),l=NREUM.o,p=l.XHR,h=l.MO,m=l.PR,w=l.SI,v="readystatechange",y=["onload","onerror","onabort","onloadstart","onloadend","onprogress","ontimeout"],g=[];n.exports=u;var b=window.XMLHttpRequest=function(t){var n=new p(t);try{u.emit("new-xhr",[n],n),n.addEventListener(v,o,!1)}catch(e){try{u.emit("internal-error",[e])}catch(r){}}return n};if(c(p,b),b.prototype=p.prototype,d.inPlace(b.prototype,["open","send"],"-xhr-",s),u.on("send-xhr-start",function(t,n){r(t,n),i(n)}),u.on("open-xhr-start",r),h){var x=m&&m.resolve();if(!w&&!m){var E=1,O=document.createTextNode(E);new h(a).observe(O,{characterData:!0})}}else f.on("fn-end",function(t){t[0]&&t[0].type===v||a()})},{}],10:[function(t,n,e){function r(t){var n=this.params,e=this.metrics;if(!this.ended){this.ended=!0;for(var r=0;r<d;r++)t.removeEventListener(u[r],this.listener,!1);if(!n.aborted){if(e.duration=a.now()-this.startTime,4===t.readyState){n.status=t.status;var i=o(t,this.lastSize);if(i&&(e.rxSize=i),this.sameOrigin){var c=t.getResponseHeader("X-NewRelic-App-Data");c&&(n.cat=c.split(", ").pop())}}else n.status=0;e.cbTime=this.cbTime,f.emit("xhr-done",[t],t),s("xhr",[n,e,this.startTime])}}}function o(t,n){var e=t.responseType;if("json"===e&&null!==n)return n;var r="arraybuffer"===e||"blob"===e||"json"===e?t.response:t.responseText;return h(r)}function i(t,n){var e=c(n),r=t.params;r.host=e.hostname+":"+e.port,r.pathname=e.pathname,t.sameOrigin=e.sameOrigin}var a=t("loader");if(a.xhrWrappable){var s=t("handle"),c=t(11),f=t("ee"),u=["load","error","abort","timeout"],d=u.length,l=t("id"),p=t(14),h=t(13),m=window.XMLHttpRequest;a.features.xhr=!0,t(9),f.on("new-xhr",function(t){var n=this;n.totalCbs=0,n.called=0,n.cbTime=0,n.end=r,n.ended=!1,n.xhrGuids={},n.lastSize=null,p&&(p>34||p<10)||window.opera||t.addEventListener("progress",function(t){n.lastSize=t.loaded},!1)}),f.on("open-xhr-start",function(t){this.params={method:t[0]},i(this,t[1]),this.metrics={}}),f.on("open-xhr-end",function(t,n){"loader_config"in NREUM&&"xpid"in NREUM.loader_config&&this.sameOrigin&&n.setRequestHeader("X-NewRelic-ID",NREUM.loader_config.xpid)}),f.on("send-xhr-start",function(t,n){var e=this.metrics,r=t[0],o=this;if(e&&r){var i=h(r);i&&(e.txSize=i)}this.startTime=a.now(),this.listener=function(t){try{"abort"===t.type&&(o.params.aborted=!0),("load"!==t.type||o.called===o.totalCbs&&(o.onloadCalled||"function"!=typeof n.onload))&&o.end(n)}catch(e){try{f.emit("internal-error",[e])}catch(r){}}};for(var s=0;s<d;s++)n.addEventListener(u[s],this.listener,!1)}),f.on("xhr-cb-time",function(t,n,e){this.cbTime+=t,n?this.onloadCalled=!0:this.called+=1,this.called!==this.totalCbs||!this.onloadCalled&&"function"==typeof e.onload||this.end(e)}),f.on("xhr-load-added",function(t,n){var e=""+l(t)+!!n;this.xhrGuids&&!this.xhrGuids[e]&&(this.xhrGuids[e]=!0,this.totalCbs+=1)}),f.on("xhr-load-removed",function(t,n){var e=""+l(t)+!!n;this.xhrGuids&&this.xhrGuids[e]&&(delete this.xhrGuids[e],this.totalCbs-=1)}),f.on("addEventListener-end",function(t,n){n instanceof m&&"load"===t[0]&&f.emit("xhr-load-added",[t[1],t[2]],n)}),f.on("removeEventListener-end",function(t,n){n instanceof m&&"load"===t[0]&&f.emit("xhr-load-removed",[t[1],t[2]],n)}),f.on("fn-start",function(t,n,e){n instanceof m&&("onload"===e&&(this.onload=!0),("load"===(t[0]&&t[0].type)||this.onload)&&(this.xhrCbStart=a.now()))}),f.on("fn-end",function(t,n){this.xhrCbStart&&f.emit("xhr-cb-time",[a.now()-this.xhrCbStart,this.onload,n],n)})}},{}],11:[function(t,n,e){n.exports=function(t){var n=document.createElement("a"),e=window.location,r={};n.href=t,r.port=n.port;var o=n.href.split("://");!r.port&&o[1]&&(r.port=o[1].split("/")[0].split("@").pop().split(":")[1]),r.port&&"0"!==r.port||(r.port="https"===o[0]?"443":"80"),r.hostname=n.hostname||e.hostname,r.pathname=n.pathname,r.protocol=o[0],"/"!==r.pathname.charAt(0)&&(r.pathname="/"+r.pathname);var i=!n.protocol||":"===n.protocol||n.protocol===e.protocol,a=n.hostname===document.domain&&n.port===e.port;return r.sameOrigin=i&&(!n.hostname||a),r}},{}],12:[function(t,n,e){function r(){}function o(t,n,e){return function(){return i(t,[f.now()].concat(s(arguments)),n?null:this,e),n?void 0:this}}var i=t("handle"),a=t(15),s=t(16),c=t("ee").get("tracer"),f=t("loader"),u=NREUM;"undefined"==typeof window.newrelic&&(newrelic=u);var d=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],l="api-",p=l+"ixn-";a(d,function(t,n){u[n]=o(l+n,!0,"api")}),u.addPageAction=o(l+"addPageAction",!0),u.setCurrentRouteName=o(l+"routeName",!0),n.exports=newrelic,u.interaction=function(){return(new r).get()};var h=r.prototype={createTracer:function(t,n){var e={},r=this,o="function"==typeof n;return i(p+"tracer",[f.now(),t,e],r),function(){if(c.emit((o?"":"no-")+"fn-start",[f.now(),r,o],e),o)try{return n.apply(this,arguments)}catch(t){throw c.emit("fn-err",[arguments,this,t],e),t}finally{c.emit("fn-end",[f.now()],e)}}}};a("setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(t,n){h[n]=o(p+n)}),newrelic.noticeError=function(t){"string"==typeof t&&(t=new Error(t)),i("err",[t,f.now()])}},{}],13:[function(t,n,e){n.exports=function(t){if("string"==typeof t&&t.length)return t.length;if("object"==typeof t){if("undefined"!=typeof ArrayBuffer&&t instanceof ArrayBuffer&&t.byteLength)return t.byteLength;if("undefined"!=typeof Blob&&t instanceof Blob&&t.size)return t.size;if(!("undefined"!=typeof FormData&&t instanceof FormData))try{return JSON.stringify(t).length}catch(n){return}}}},{}],14:[function(t,n,e){var r=0,o=navigator.userAgent.match(/Firefox[\/\s](\d+\.\d+)/);o&&(r=+o[1]),n.exports=r},{}],15:[function(t,n,e){function r(t,n){var e=[],r="",i=0;for(r in t)o.call(t,r)&&(e[i]=n(r,t[r]),i+=1);return e}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],16:[function(t,n,e){function r(t,n,e){n||(n=0),"undefined"==typeof e&&(e=t?t.length:0);for(var r=-1,o=e-n||0,i=Array(o<0?0:o);++r<o;)i[r]=t[n+r];return i}n.exports=r},{}],17:[function(t,n,e){n.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],18:[function(t,n,e){function r(t){return!(t&&t instanceof Function&&t.apply&&!t[a])}var o=t("ee"),i=t(16),a="nr@original",s=Object.prototype.hasOwnProperty,c=!1;n.exports=function(t,n){function e(t,n,e,o){function nrWrapper(){var r,a,s,c;try{a=this,r=i(arguments),s="function"==typeof e?e(r,a):e||{}}catch(f){l([f,"",[r,a,o],s])}u(n+"start",[r,a,o],s);try{return c=t.apply(a,r)}catch(d){throw u(n+"err",[r,a,d],s),d}finally{u(n+"end",[r,a,c],s)}}return r(t)?t:(n||(n=""),nrWrapper[a]=t,d(t,nrWrapper),nrWrapper)}function f(t,n,o,i){o||(o="");var a,s,c,f="-"===o.charAt(0);for(c=0;c<n.length;c++)s=n[c],a=t[s],r(a)||(t[s]=e(a,f?s+o:o,i,s))}function u(e,r,o){if(!c||n){var i=c;c=!0;try{t.emit(e,r,o,n)}catch(a){l([a,e,r,o])}c=i}}function d(t,n){if(Object.defineProperty&&Object.keys)try{var e=Object.keys(t);return e.forEach(function(e){Object.defineProperty(n,e,{get:function(){return t[e]},set:function(n){return t[e]=n,n}})}),n}catch(r){l([r])}for(var o in t)s.call(t,o)&&(n[o]=t[o]);return n}function l(n){try{t.emit("internal-error",n)}catch(e){}}return t||(t=o),e.inPlace=f,e.flag=a,e}},{}],ee:[function(t,n,e){function r(){}function o(t){function n(t){return t&&t instanceof r?t:t?c(t,s,i):i()}function e(e,r,o,i){if(!l.aborted||i){t&&t(e,r,o);for(var a=n(o),s=h(e),c=s.length,f=0;f<c;f++)s[f].apply(a,r);var d=u[y[e]];return d&&d.push([g,e,r,a]),a}}function p(t,n){v[t]=h(t).concat(n)}function h(t){return v[t]||[]}function m(t){return d[t]=d[t]||o(e)}function w(t,n){f(t,function(t,e){n=n||"feature",y[e]=n,n in u||(u[n]=[])})}var v={},y={},g={on:p,emit:e,get:m,listeners:h,context:n,buffer:w,abort:a,aborted:!1};return g}function i(){return new r}function a(){(u.api||u.feature)&&(l.aborted=!0,u=l.backlog={})}var s="nr@context",c=t("gos"),f=t(15),u={},d={},l=n.exports=o();l.backlog=u},{}],gos:[function(t,n,e){function r(t,n,e){if(o.call(t,n))return t[n];var r=e();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(t,n,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return t[n]=r,r}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],handle:[function(t,n,e){function r(t,n,e,r){o.buffer([t],r),o.emit(t,n,e)}var o=t("ee").get("handle");n.exports=r,r.ee=o},{}],id:[function(t,n,e){function r(t){var n=typeof t;return!t||"object"!==n&&"function"!==n?-1:t===window?0:a(t,i,function(){return o++})}var o=1,i="nr@id",a=t("gos");n.exports=r},{}],loader:[function(t,n,e){function r(){if(!x++){var t=b.info=NREUM.info,n=l.getElementsByTagName("script")[0];if(setTimeout(u.abort,3e4),!(t&&t.licenseKey&&t.applicationID&&n))return u.abort();f(y,function(n,e){t[n]||(t[n]=e)}),c("mark",["onload",a()+b.offset],null,"api");var e=l.createElement("script");e.src="https://"+t.agent,n.parentNode.insertBefore(e,n)}}function o(){"complete"===l.readyState&&i()}function i(){c("mark",["domContent",a()+b.offset],null,"api")}function a(){return E.exists&&performance.now?Math.round(performance.now()):(s=Math.max((new Date).getTime(),s))-b.offset}var s=(new Date).getTime(),c=t("handle"),f=t(15),u=t("ee"),d=window,l=d.document,p="addEventListener",h="attachEvent",m=d.XMLHttpRequest,w=m&&m.prototype;NREUM.o={ST:setTimeout,SI:d.setImmediate,CT:clearTimeout,XHR:m,REQ:d.Request,EV:d.Event,PR:d.Promise,MO:d.MutationObserver};var v=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1071.min.js"},g=m&&w&&w[p]&&!/CriOS/.test(navigator.userAgent),b=n.exports={offset:s,now:a,origin:v,features:{},xhrWrappable:g};t(12),l[p]?(l[p]("DOMContentLoaded",i,!1),d[p]("load",r,!1)):(l[h]("onreadystatechange",o),d[h]("onload",r)),c("mark",["firstbyte",s],null,"api");var x=0,E=t(17)},{}]},{},["loader",2,10,4,3]);</script>
+<meta property="twitter:site" content="@ap" />
+<meta property="twitter:title" content="The Latest: Wellinger withstands cold to win Olympic gold" />
+<meta property="twitter:image" content="https://mapi.associatedpress.com/v1/items/1657500b138b4c2b8c46b3f326fac37d/preview/preview.jpg?s=460x" />
+<meta property="twitter:card" content="summary_large_image" />
+<meta property="twitter:description" content="PYEONGCHANG, South Korea (AP) — The Latest on the Pyeongchang Olympics (all times local): 12:30 a.m. Andreas Wellinger withstood frigid temperatures and windy conditions to claim the gold medal in normal hill ski jumping.…" />
+<meta property="article:publisher" content="https://www.facebook.com/APNews" />
+<meta property="og:image" content="https://mapi.associatedpress.com/v1/items/1657500b138b4c2b8c46b3f326fac37d/preview/preview.jpg?s=460x" />
+<meta property="fb:app_id" content="118162278248556" />
+<meta property="og:locale" content="en_US" />
+<meta property="twitter:image:alt" content="Pyeongchang Olympics Ski Jumping Men" />
+<meta property="twitter:url" content="https://wintergames.ap.org/article/latest-shiffrin-definite-slalom-and-giant-slalom?utm_campaign=SocialFlow&amp;utm_source=Twitter&amp;utm_medium=AP_Sports" />
+<meta name="twitter:app:name:googleplay" content="AP News" />
+<meta name="twitter:app:id:googleplay" content="mnn.Android" />
+<meta name="twitter:app:url:googleplay" content="apmobile://article/64dc154f1e2d48a296998775106d9f6c" />
+<link href="https://wintergames.ap.org/profiles/ap/themes/ap_wintergames/touch-icon.png" rel="apple-touch-icon" />
+<meta name="twitter:app:url:ipad" content="apmobile://article/64dc154f1e2d48a296998775106d9f6c" />
+<meta name="twitter:app:id:ipad" content="364677107" />
+<meta name="twitter:app:name:iphone" content="AP News" />
+<meta name="twitter:app:id:iphone" content="364677107" />
+<meta name="twitter:app:url:iphone" content="apmobile://article/64dc154f1e2d48a296998775106d9f6c" />
+<meta name="twitter:app:name:ipad" content="AP News" />
+<meta property="al:web:url" content="https://wintergames.ap.org/article/latest-shiffrin-definite-slalom-and-giant-slalom?utm_campaign=SocialFlow&amp;utm_source=Twitter&amp;utm_medium=AP_Sports" />
+<meta property="al:android:app_name" content="AP News" />
+<script type="text/javascript">(function(b,r,a,n,c,h,_,s,d,k){if(!b[n]||!b[n]._q){for(;s<_.length;)c(h,_[s++]);d=r.createElement(a);d.async=1;d.src="https://cdn.branch.io/branch-latest.min.js";k=r.getElementsByTagName(a)[0];k.parentNode.insertBefore(d,k);b[n]=h}})(window,document,"script","branch",function(b,r){b[r]=function(){b._q.push([r,arguments])}},{_q:[],_v:1},"addListener applyCode banner closeBanner creditHistory credits data deepview deepviewCta first getCode init link logout redeem referrals removeListener sendSMS setBranchViewData setIdentity track validateCode".split(" "), 0);
+    branch.init(‘key_live_ndufC8VAc2V3dnaX3lenvdhkvAc3rs4S’, function(err, data) {
+        // callback to handle err or data
+    });</script>
+<link rel="shortcut icon" href="https://wintergames.ap.org/profiles/ap/themes/ap_wintergames/favicon.ico" type="image/vnd.microsoft.icon" />
+<link href="https://cdn.relaymedia.com/amp/wintergames.ap.org/article/latest-wellinger-withstands-cold-win-olympic-gold" rel="amphtml" />
+<meta property="al:android:package" content="mnn.Android" />
+<meta property="al:ios:url" content="apnews://64dc154f1e2d48a296998775106d9f6c" />
+<meta name="ap-news-app" content="" app-id="364677107" app-argument="https://apnews.com/64dc154f1e2d48a296998775106d9f6c" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no" />
+<meta property="al:ios:app_name" content="AP News" />
+<meta property="al:android:url" content="apmobile://article/64dc154f1e2d48a296998775106d9f6c" />
+<meta property="al:ios:app_store_id" content="364677107" />
+<meta name="description" content="PYEONGCHANG, South Korea (AP) — The Latest on the Pyeongchang Olympics (all times local): 12:30 a.m." />
+<meta name="generator" content="Drupal 7 (http://drupal.org)" />
+<link rel="canonical" href="https://wintergames.ap.org/falmouth/article/latest-wellinger-withstands-cold-win-olympic-gold" />
+<link rel="shortlink" href="https://wintergames.ap.org/node/204308" />
+<meta property="og:site_name" content="2018 Winter Olympics" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://wintergames.ap.org/falmouth/article/latest-wellinger-withstands-cold-win-olympic-gold" />
+<meta property="og:title" content="The Latest: Wellinger withstands cold to win Olympic gold" />
+<meta property="og:description" content="PYEONGCHANG, South Korea (AP) — The Latest on the Pyeongchang Olympics (all times local): 12:30 a.m." />
+<meta property="og:updated_time" content="2018-02-10T10:38:30-05:00" />
+<meta property="article:published_time" content="2018-02-10T10:37:08-05:00" />
+<meta property="article:modified_time" content="2018-02-10T10:38:30-05:00" />
+  <title>The Latest: Wellinger withstands cold to win Olympic gold</title>
+    <style type="text/css" media="all">
+@import url("https://wintergames.ap.org/modules/system/system.base.css?p47ige");
+@import url("https://wintergames.ap.org/modules/system/system.menus.css?p47ige");
+@import url("https://wintergames.ap.org/modules/system/system.messages.css?p47ige");
+@import url("https://wintergames.ap.org/modules/system/system.theme.css?p47ige");
+</style>
+<style type="text/css" media="all">
+@import url("https://wintergames.ap.org/profiles/ap/modules/custom/core/ap_boxes/css/flyout.css?p47ige");
+@import url("https://wintergames.ap.org/profiles/ap/modules/contrib/date/date_api/date.css?p47ige");
+@import url("https://wintergames.ap.org/profiles/ap/modules/contrib/date/date_popup/themes/datepicker.1.7.css?p47ige");
+@import url("https://wintergames.ap.org/modules/field/theme/field.css?p47ige");
+@import url("https://wintergames.ap.org/modules/node/node.css?p47ige");
+@import url("https://wintergames.ap.org/modules/search/search.css?p47ige");
+@import url("https://wintergames.ap.org/modules/user/user.css?p47ige");
+@import url("https://wintergames.ap.org/profiles/ap/modules/contrib/views/css/views.css?p47ige");
+</style>
+<style type="text/css" media="all">
+@import url("https://wintergames.ap.org/profiles/ap/modules/contrib/ctools/css/ctools.css?p47ige");
+</style>
+<style type="text/css" media="all">
+<!--/*--><![CDATA[/*><!--*/
+#boxes-box-homepage_curated .node-ap-display-position-4 .field-name-field-thumbnail{height:-593px;overflow:hidden;}
+
+/*]]>*/-->
+</style>
+<style type="text/css" media="all">
+@import url("https://wintergames.ap.org/profiles/ap/modules/custom/core/ap_misc/vertical-specific/wtg/css/ap_misc_widget.css?p47ige");
+@import url("https://wintergames.ap.org/profiles/ap/modules/custom/core/ap_microformats/ap_microformats.css?p47ige");
+@import url("https://wintergames.ap.org/profiles/ap/modules/custom/optional/ap_wintergames/ap_wintergames_medals/css/flag-icon.min.css?p47ige");
+@import url("https://wintergames.ap.org/profiles/ap/modules/custom/optional/ap_wintergames/ap_wintergames_medals/css/ap_wintergames_medals.css?p47ige");
+</style>
+<style type="text/css" media="all">
+@import url("https://wintergames.ap.org/profiles/ap/themes/vpp_default/css/fonts.css?p47ige");
+@import url("https://wintergames.ap.org/profiles/ap/themes/ap_wintergames/font-awesome-4.4.0/css/font-awesome.min.css?p47ige");
+@import url("https://wintergames.ap.org/profiles/ap/themes/ap_wintergames/css/normalize.css?p47ige");
+@import url("https://wintergames.ap.org/profiles/ap/themes/ap_wintergames/css/drawer.css?p47ige");
+@import url("https://wintergames.ap.org/profiles/ap/themes/ap_wintergames/css/app.css?p47ige");
+@import url("https://wintergames.ap.org/profiles/ap/themes/ap_wintergames/ap-wintergames-icons/ap-wintergames-icons.css?p47ige");
+</style>
+<style type="text/css" media="all">
+@import url("https://wintergames.ap.org/profiles/ap/themes/omega/alpha/css/alpha-reset.css?p47ige");
+@import url("https://wintergames.ap.org/profiles/ap/themes/omega/alpha/css/alpha-mobile.css?p47ige");
+@import url("https://wintergames.ap.org/profiles/ap/themes/omega/alpha/css/alpha-alpha.css?p47ige");
+@import url("https://wintergames.ap.org/profiles/ap/themes/omega/omega/css/omega-text.css?p47ige");
+@import url("https://wintergames.ap.org/profiles/ap/themes/omega/omega/css/omega-branding.css?p47ige");
+@import url("https://wintergames.ap.org/profiles/ap/themes/omega/omega/css/omega-menu.css?p47ige");
+@import url("https://wintergames.ap.org/profiles/ap/themes/omega/omega/css/omega-visuals.css?p47ige");
+</style>
+<style type="text/css" media="print">
+@import url("https://wintergames.ap.org/profiles/ap/themes/ap_wintergames/css/print.css?p47ige");
+</style>
+<style type="text/css" media="screen">
+@import url("https://wintergames.ap.org/profiles/ap/themes/ap_wintergames/css/global.css?p47ige");
+</style>
+
+<!--[if (lt IE 9)&(!IEMobile)]>
+<style type="text/css" media="all">
+@import url("https://wintergames.ap.org/profiles/ap/themes/vpp_default/css/vpp-default-alpha-default.css?p47ige");
+@import url("https://wintergames.ap.org/profiles/ap/themes/vpp_default/css/vpp-default-alpha-default-normal.css?p47ige");
+@import url("https://wintergames.ap.org/profiles/ap/themes/omega/alpha/css/grid/alpha_default/normal/alpha-default-normal-12.css?p47ige");
+</style>
+<![endif]-->
+
+<!--[if gte IE 9]><!-->
+<style type="text/css" media="screen and (min-width: 740px) and (min-device-width: 740px), (max-device-width: 800px) and (min-width: 740px) and (orientation:landscape)">
+@import url("https://wintergames.ap.org/profiles/ap/themes/vpp_default/css/vpp-default-alpha-default.css?p47ige");
+@import url("https://wintergames.ap.org/profiles/ap/themes/vpp_default/css/vpp-default-alpha-default-narrow.css?p47ige");
+@import url("https://wintergames.ap.org/profiles/ap/themes/omega/alpha/css/grid/alpha_default/narrow/alpha-default-narrow-12.css?p47ige");
+</style>
+<!--<![endif]-->
+
+<!--[if gte IE 9]><!-->
+<style type="text/css" media="screen and (min-width: 1040px) and (min-device-width: 1040px), all and (max-device-width: 1024px) and (min-width: 1024px) and (orientation:landscape)">
+@import url("https://wintergames.ap.org/profiles/ap/themes/vpp_default/css/vpp-default-alpha-default.css?p47ige");
+@import url("https://wintergames.ap.org/profiles/ap/themes/vpp_default/css/vpp-default-alpha-default-normal.css?p47ige");
+@import url("https://wintergames.ap.org/profiles/ap/themes/omega/alpha/css/grid/alpha_default/normal/alpha-default-normal-12.css?p47ige");
+</style>
+<!--<![endif]-->
+  <script type="text/javascript">
+<!--//--><![CDATA[//><!--
+window.google_analytics_uacct = "UA-27590430-12";
+//--><!]]>
+</script>
+<script type="text/javascript" src="https://wintergames.ap.org/profiles/ap/modules/contrib/jquery_update/replace/jquery/1.10/jquery.min.js?v=1.10.2"></script>
+<script type="text/javascript" src="https://wintergames.ap.org/misc/jquery.once.js?v=1.2"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+var googletag = googletag || {};
+googletag.cmd = googletag.cmd || [];
+googletag.slots = googletag.slots || {};
+//--><!]]>
+</script>
+<script type="text/javascript" src="https://www.googletagservices.com/tag/js/gpt.js"></script>
+<script type="text/javascript" src="https://wintergames.ap.org/misc/drupal.js?p47ige"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+googletag.cmd.push(function() {
+googletag.slots["leaderboard"] = googletag.defineSlot("/15786418/WinterGames/AP/site/node/204308", [[970, 250], [970, 90], [728, 90], []], "dfp-ad-leaderboard")
+  .addService(googletag.pubads())
+});
+//--><!]]>
+</script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+googletag.cmd.push(function() {
+googletag.slots["mobileleaderboard"] = googletag.defineSlot("/15786418/WinterGames/AP/site/node/204308", [[300, 50], [320, 50]], "dfp-ad-mobileleaderboard")
+  .addService(googletag.pubads())
+});
+//--><!]]>
+</script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+googletag.cmd.push(function() {
+googletag.slots["mediumrectangle"] = googletag.defineSlot("/15786418/WinterGames/AP/site/node/204308", [300, 250], "dfp-ad-mediumrectangle")
+  .addService(googletag.pubads())
+});
+//--><!]]>
+</script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+googletag.cmd.push(function() {
+googletag.slots["menusponsor"] = googletag.defineSlot("/15786418/WinterGames/AP/node/204308", [88, 31], "dfp-ad-menusponsor")
+  .addService(googletag.pubads())
+});
+//--><!]]>
+</script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+googletag.cmd.push(function() {
+googletag.slots["leaderboard"] = googletag.defineSlot("/15786418//15786418/WinterGames/AP/site/node/204308", [[[[970], [250]], [[970], [90]], [[728], [90]], [[]]]], "dfp-ad-leaderboard")
+  .addService(googletag.pubads())
+});
+//--><!]]>
+</script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+googletag.cmd.push(function() {
+googletag.slots["mobileleaderboard"] = googletag.defineSlot("/15786418//15786418/WinterGames/AP/site/node/204308", [[[[300], [50]], [[320], [50]]]], "dfp-ad-mobileleaderboard")
+  .addService(googletag.pubads())
+});
+//--><!]]>
+</script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+googletag.cmd.push(function() {
+googletag.slots["mediumrectangle2"] = googletag.defineSlot("/15786418/wintergames/AP/site/node/204308", [300, 250], "dfp-ad-mediumrectangle2")
+  .addService(googletag.pubads())
+});
+//--><!]]>
+</script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+var _comscore = _comscore || [];
+_comscore.push({ c1: "2", c2: "11304492" });(function() { var s = document.createElement("script"), el = document.getElementsByTagName("script")[0]; s.async = true; s.src = (document.location.protocol == "https:" ? "https://sb" : "http://b") + ".scorecardresearch.com/beacon.js"; el.parentNode.insertBefore(s, el); })();
+//--><!]]>
+</script>
+<script type="text/javascript" src="https://wintergames.ap.org/profiles/ap/modules/custom/core/ap_boxes/js/jquery.hoverIntent.minified.js?p47ige"></script>
+<script type="text/javascript" src="https://wintergames.ap.org/profiles/ap/modules/custom/core/ap_boxes/js/jquery.masonry.min.js?p47ige"></script>
+<script type="text/javascript" src="https://wintergames.ap.org/profiles/ap/modules/custom/core/ap_boxes/js/ap_boxes.js?p47ige"></script>
+<script type="text/javascript" src="https://wintergames.ap.org/profiles/ap/modules/custom/core/ap_boxes/js/ap_boxes_masonry.js?p47ige"></script>
+<script type="text/javascript" src="https://wintergames.ap.org/profiles/ap/modules/custom/core/ap_boxes/js/ap_boxes_flyout.js?p47ige"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+googletag.cmd.push(function() {
+  googletag.pubads().enableAsyncRendering();
+  googletag.pubads().enableSingleRequest();
+  googletag.pubads().collapseEmptyDivs();
+googletag.enableServices();});
+
+//--><!]]>
+</script>
+<script type="text/javascript" src="https://wintergames.ap.org/profiles/ap/modules/custom/optional/ap_wintergames/js/scrolldepth.js?p47ige"></script>
+<script type="text/javascript" src="https://wintergames.ap.org/profiles/ap/modules/custom/optional/ap_wintergames/js/ap_wintergames_ga.js?p47ige"></script>
+<script type="text/javascript" src="https://wintergames.ap.org/profiles/ap/modules/custom/core/ap_article/js/dynamic-carousel.js?p47ige"></script>
+<script type="text/javascript" src="https://wintergames.ap.org/profiles/ap/modules/custom/core/ap_article/js/jquery.wmuslider.js?p47ige"></script>
+<script type="text/javascript" src="https://wintergames.ap.org/profiles/ap/modules/custom/core/ap_article/js/ap_carousel.js?p47ige"></script>
+<script type="text/javascript" src="https://wintergames.ap.org/profiles/ap/modules/custom/optional/responsive_dfp_box/js/responsive_dfp.js?p47ige"></script>
+<script type="text/javascript" src="https://wintergames.ap.org/profiles/ap/modules/custom/core/ap_article/js/ap_article_WG.js?p47ige"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+window.CKEDITOR_BASEPATH = '/profiles/ap/libraries/ckeditor/'
+//--><!]]>
+</script>
+<script type="text/javascript" src="https://wintergames.ap.org/profiles/ap/modules/contrib/google_analytics/googleanalytics.js?p47ige"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+(function(i,s,o,g,r,a,m){i["GoogleAnalyticsObject"]=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,"script","//www.google-analytics.com/analytics.js","ga");ga("create", "UA-27590430-12", "auto");ga("send", "pageview");
+//--><!]]>
+</script>
+<script type="text/javascript" src="https://use.typekit.com/uta3cck.js"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+try{Typekit.load();}catch(e){}
+//--><!]]>
+</script>
+<script type="text/javascript" src="https://wintergames.ap.org/profiles/ap/modules/custom/optional/ap_wintergames/ap_wintergames_medals/js/ap_wintergames_medals_2.js?p47ige"></script>
+<script type="text/javascript" src="https://wintergames.ap.org/profiles/ap/themes/ap_wintergames/js/mondernizr.custom.min.js?p47ige"></script>
+<script type="text/javascript" src="https://wintergames.ap.org/profiles/ap/themes/ap_wintergames/js/libs/jquery.browser.min.js?p47ige"></script>
+<script type="text/javascript" src="https://wintergames.ap.org/profiles/ap/themes/ap_wintergames/js/libs/iscroll.min.js?p47ige"></script>
+<script type="text/javascript" src="https://wintergames.ap.org/profiles/ap/themes/ap_wintergames/js/libs/drawer.min.js?p47ige"></script>
+<script type="text/javascript" src="https://wintergames.ap.org/profiles/ap/themes/ap_wintergames/js/libs/dropdown.min.js?p47ige"></script>
+<script type="text/javascript" src="https://wintergames.ap.org/profiles/ap/themes/ap_wintergames/js/app.js?p47ige"></script>
+<script type="text/javascript" src="https://wintergames.ap.org/profiles/ap/themes/ap_wintergames/js/read-more.js?p47ige"></script>
+<script type="text/javascript" src="https://wintergames.ap.org/profiles/ap/themes/omega/omega/js/omega-mediaqueries.js?p47ige"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+jQuery.extend(Drupal.settings, {"basePath":"\/","pathPrefix":"","ajaxPageState":{"theme":"ap_wintergames","theme_token":"iadHS5GSHtaNA5oO45iA_vzKMV7FwiyVdHeYwOb9luE","js":{"0":1,"profiles\/ap\/modules\/contrib\/jquery_update\/replace\/jquery\/1.10\/jquery.min.js":1,"misc\/jquery.once.js":1,"1":1,"https:\/\/www.googletagservices.com\/tag\/js\/gpt.js":1,"misc\/drupal.js":1,"2":1,"3":1,"4":1,"5":1,"6":1,"7":1,"8":1,"9":1,"profiles\/ap\/modules\/custom\/core\/ap_boxes\/js\/jquery.hoverIntent.minified.js":1,"profiles\/ap\/modules\/custom\/core\/ap_boxes\/js\/jquery.masonry.min.js":1,"profiles\/ap\/modules\/custom\/core\/ap_boxes\/js\/ap_boxes.js":1,"profiles\/ap\/modules\/custom\/core\/ap_boxes\/js\/ap_boxes_masonry.js":1,"profiles\/ap\/modules\/custom\/core\/ap_boxes\/js\/ap_boxes_flyout.js":1,"10":1,"profiles\/ap\/modules\/custom\/optional\/ap_wintergames\/js\/scrolldepth.js":1,"profiles\/ap\/modules\/custom\/optional\/ap_wintergames\/js\/ap_wintergames_ga.js":1,"profiles\/ap\/modules\/custom\/core\/ap_article\/js\/dynamic-carousel.js":1,"profiles\/ap\/modules\/custom\/core\/ap_article\/js\/jquery.wmuslider.js":1,"profiles\/ap\/modules\/custom\/core\/ap_article\/js\/ap_carousel.js":1,"profiles\/ap\/modules\/custom\/optional\/responsive_dfp_box\/js\/responsive_dfp.js":1,"profiles\/ap\/modules\/custom\/core\/ap_article\/js\/ap_article_WG.js":1,"11":1,"profiles\/ap\/modules\/contrib\/google_analytics\/googleanalytics.js":1,"12":1,"https:\/\/use.typekit.com\/uta3cck.js":1,"13":1,"profiles\/ap\/modules\/custom\/optional\/ap_wintergames\/ap_wintergames_medals\/js\/ap_wintergames_medals_2.js":1,"profiles\/ap\/themes\/ap_wintergames\/js\/mondernizr.custom.min.js":1,"profiles\/ap\/themes\/ap_wintergames\/js\/libs\/jquery.browser.min.js":1,"profiles\/ap\/themes\/ap_wintergames\/js\/libs\/iscroll.min.js":1,"profiles\/ap\/themes\/ap_wintergames\/js\/libs\/drawer.min.js":1,"profiles\/ap\/themes\/ap_wintergames\/js\/libs\/dropdown.min.js":1,"profiles\/ap\/themes\/ap_wintergames\/js\/app.js":1,"profiles\/ap\/themes\/ap_wintergames\/js\/read-more.js":1,"profiles\/ap\/themes\/omega\/omega\/js\/omega-mediaqueries.js":1},"css":{"modules\/system\/system.base.css":1,"modules\/system\/system.menus.css":1,"modules\/system\/system.messages.css":1,"modules\/system\/system.theme.css":1,"profiles\/ap\/modules\/custom\/core\/ap_boxes\/css\/flyout.css":1,"profiles\/ap\/modules\/contrib\/date\/date_api\/date.css":1,"profiles\/ap\/modules\/contrib\/date\/date_popup\/themes\/datepicker.1.7.css":1,"modules\/field\/theme\/field.css":1,"modules\/node\/node.css":1,"modules\/search\/search.css":1,"modules\/user\/user.css":1,"profiles\/ap\/modules\/contrib\/views\/css\/views.css":1,"profiles\/ap\/modules\/contrib\/ctools\/css\/ctools.css":1,"0":1,"profiles\/ap\/modules\/custom\/core\/ap_misc\/vertical-specific\/wtg\/css\/ap_misc_widget.css":1,"profiles\/ap\/modules\/custom\/core\/ap_microformats\/ap_microformats.css":1,"profiles\/ap\/modules\/custom\/optional\/ap_wintergames\/ap_wintergames_medals\/css\/flag-icon.min.css":1,"profiles\/ap\/modules\/custom\/optional\/ap_wintergames\/ap_wintergames_medals\/css\/ap_wintergames_medals.css":1,"profiles\/ap\/themes\/vpp_default\/css\/fonts.css":1,"profiles\/ap\/themes\/ap_wintergames\/font-awesome-4.4.0\/css\/font-awesome.min.css":1,"profiles\/ap\/themes\/ap_wintergames\/css\/normalize.css":1,"profiles\/ap\/themes\/ap_wintergames\/css\/drawer.css":1,"profiles\/ap\/themes\/ap_wintergames\/css\/app.css":1,"profiles\/ap\/themes\/ap_wintergames\/ap-wintergames-icons\/ap-wintergames-icons.css":1,"profiles\/ap\/themes\/omega\/alpha\/css\/alpha-reset.css":1,"profiles\/ap\/themes\/omega\/alpha\/css\/alpha-mobile.css":1,"profiles\/ap\/themes\/omega\/alpha\/css\/alpha-alpha.css":1,"profiles\/ap\/themes\/omega\/omega\/css\/omega-text.css":1,"profiles\/ap\/themes\/omega\/omega\/css\/omega-branding.css":1,"profiles\/ap\/themes\/omega\/omega\/css\/omega-menu.css":1,"profiles\/ap\/themes\/omega\/omega\/css\/omega-visuals.css":1,"profiles\/ap\/themes\/ap_wintergames\/css\/print.css":1,"profiles\/ap\/themes\/ap_wintergames\/css\/global.css":1,"ie::normal::profiles\/ap\/themes\/vpp_default\/css\/vpp-default-alpha-default.css":1,"ie::normal::profiles\/ap\/themes\/vpp_default\/css\/vpp-default-alpha-default-normal.css":1,"ie::normal::profiles\/ap\/themes\/omega\/alpha\/css\/grid\/alpha_default\/normal\/alpha-default-normal-12.css":1,"narrow::profiles\/ap\/themes\/vpp_default\/css\/vpp-default-alpha-default.css":1,"narrow::profiles\/ap\/themes\/vpp_default\/css\/vpp-default-alpha-default-narrow.css":1,"profiles\/ap\/themes\/omega\/alpha\/css\/grid\/alpha_default\/narrow\/alpha-default-narrow-12.css":1,"normal::profiles\/ap\/themes\/vpp_default\/css\/vpp-default-alpha-default.css":1,"normal::profiles\/ap\/themes\/vpp_default\/css\/vpp-default-alpha-default-normal.css":1,"profiles\/ap\/themes\/omega\/alpha\/css\/grid\/alpha_default\/normal\/alpha-default-normal-12.css":1}},"responsive_dfp_box":{"responsive_leaderboard":{"desktop":"\n\u003Cdiv  id=\u0022dfp-ad-leaderboard\u0022 class=\u0022dfp-tag-wrapper\u0022\u003E\n    \u003Cscript type=\u0022text\/javascript\u0022\u003E\n    googletag.cmd.push(function() {\n      googletag.display(\u0022dfp-ad-leaderboard\u0022);\n    });\n  \u003C\/script\u003E\n\u003C\/div\u003E\n","mobile":"\n\u003Cdiv  id=\u0022dfp-ad-mobileleaderboard\u0022 class=\u0022dfp-tag-wrapper\u0022\u003E\n    \u003Cscript type=\u0022text\/javascript\u0022\u003E\n    googletag.cmd.push(function() {\n      googletag.display(\u0022dfp-ad-mobileleaderboard\u0022);\n    });\n  \u003C\/script\u003E\n\u003C\/div\u003E\n"}},"query_builder_dev":{"sidebar_curated":{"before_alter":{"template":"homepage_top","count":5,"photo_used":false,"processed":false,"column_height":-505,"left_height":0},"after_alter":{"template":"homepage_top","count":5,"photo_used":false,"processed":true,"column_height":-505,"left_height":0}}},"googleanalytics":{"trackOutbound":1,"trackMailto":1,"trackDownload":1,"trackDownloadExtensions":"7z|aac|arc|arj|asf|asx|avi|bin|csv|doc|exe|flv|gif|gz|gzip|hqx|jar|jpe?g|js|mp(2|3|4|e?g)|mov(ie)?|msi|msp|pdf|phps|png|ppt|qtm?|ra(m|r)?|sea|sit|tar|tgz|torrent|txt|wav|wma|wmv|wpd|xls|xml|z|zip"},"urlIsAjaxTrusted":{"\/article\/latest-shiffrin-definite-slalom-and-giant-slalom?utm_campaign=SocialFlow\u0026utm_source=Twitter\u0026utm_medium=AP_Sports":true},"omega":{"layouts":{"primary":"normal","order":["narrow","normal"],"queries":{"narrow":"screen and (min-width: 740px) and (min-device-width: 740px), (max-device-width: 800px) and (min-width: 740px) and (orientation:landscape)","normal":"screen and (min-width: 1040px) and (min-device-width: 1040px), all and (max-device-width: 1024px) and (min-width: 1024px) and (orientation:landscape)"}}}});
+//--><!]]>
+</script>
+  <!--[if lt IE 9]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+<script type="text/javascript">
+  window._taboola = window._taboola || [];
+  _taboola.push({article:'auto'});
+  !function (e, f, u, i) {
+    if (!document.getElementById(i)){
+      e.async = 1;
+      e.src = u;
+      e.id = i;
+      f.parentNode.insertBefore(e, f);
+    }
+  }(document.createElement('script'),
+  document.getElementsByTagName('script')[0],
+  '//cdn.taboola.com/libtrc/associatedpress-wintergames/loader.js',
+  'tb_loader_script');
+  if(window.performance && typeof window.performance.mark == 'function')
+    {window.performance.mark('tbl_ic');}
+</script>
+
+  <script type="text/javascript">
+    function toggleMenuStyle(clicked_id) {
+        var wTile = document.getElementById(clicked_id);
+        if (wTile.className.indexOf('sections-menu-link')) {
+            wTile.className = 'sections-menu-link';
+        } else {
+            wTile.className = ' sections-menu-link-down';
+        }
+    };
+  </script>
+
+</head>
+<body class="html not-front not-logged-in page-node page-node- page-node-204308 node-type-ap-article context-article">
+    
+<div class="page-frame">
+
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) {return;}
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+<script type="text/javascript" src="https://use.typekit.com/uta3cck.js"></script>
+<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+
+  <div id="skip-link">
+    <a href="#main-content" class="element-invisible element-focusable">Skip to main content</a>
+  </div>  
+  <div class="region region-page-top" id="region-page-top">
+  <div class="region-inner region-page-top-inner">
+      </div>
+</div>
+  
+
+  <div class="page clearfix" id="page">
+      <header id="section-header" class="section section-header">
+  <div id="zone-user-wrapper" class="zone-wrapper zone-user-wrapper clearfix">  
+  <div id="zone-user" class="zone zone-user clearfix container-12">
+    <header class="header-desktop">
+  <div class="header-top">
+    <div class="member-nav-wrapper" >
+      <div class="container-12">
+        <div class="color-bar">
+          <div class="color-part color-part-01"></div>
+          <div class="color-part color-part-02"></div>
+          <div class="color-part color-part-03"></div>
+          <div class="color-part color-part-04"></div>
+          <div class="color-part color-part-05"></div>
+        </div>
+      </div>
+      <div class="container-12">
+        <nav id="wl-basic-menu"><ul class="member-nav item-list"></ul></nav>
+      </div>
+    </div>
+    <div class="masthead">
+      <div class="logo-wrap container-12">
+        <div class="logo">
+        <!--<img src="http://dummyimage.com/300x99/333333/fcbe09&text=Logo (300 x 99)" alt="">-->
+
+                      
+                              <a href="https://wintergames.ap.org/"><img border="0" src="https://wintergames.ap.org/sites/wintergames/files/WG_Logo.png" alt="2018 Winter Olympics " /></a>              
+                      
+        </div>
+        <div class="header-right-wrap">
+          <img border="0" src="/profiles/ap/themes/ap_wintergames/images/header-right-title.png">
+          <img border="0" src="/profiles/ap/themes/ap_wintergames/images/header-right-medal.png">
+        </div>
+      </div>
+    </div> <!-- END masthead-->
+  </div>
+  <div class="nav-wrap-desktop container-12">
+    <nav>
+      <ul class="main-nav">
+        <li id="branch-journeys-top"><div class="branch-journeys-top"></div></li>
+        <li class="main-nav-search">
+          <!--  <form class="search">
+              <input class="searchTerm" placeholder="Search &hellip;" /><input class="searchButton" type="submit" />
+            </form>
+          -->
+        </li>
+      </ul>
+    </nav>
+    <div class="ad-placeholder"></div>
+  </div>
+</header>
+<div class="nav-wrap-mobile container-12">
+  <header class="header-mobile drawer drawer--right" role="banner">
+
+    <div class="logo">
+    <!-- <img src="http://dummyimage.com/150x55/333333/fcbe09&text=Logo (150 x 55)" alt=""> -->
+              
+                      <a href="https://wintergames.ap.org/"><img border="0" src="https://wintergames.ap.org/sites/wintergames/files/WG_Logo.png" alt="2018 Winter Olympics " /></a>          
+              
+    </div>
+
+    <div class="search-toggle">
+      <i class="fa fa-search"></i>
+    </div>
+    <button type="button" class="drawer-toggle drawer-hamburger">
+      <span class="sr-only">toggle navigation</span>
+      <span class="drawer-hamburger-icon"></span>
+    </button>
+
+    <nav class="drawer-nav" role="navigation">
+      <ul class="drawer-menu">
+        <li class="main-nav-brand"><a class="drawer-brand">Main Nav</a></li>
+
+        <li class="member-nav-brand"><a class="drawer-brand">Member Nav</a></li>
+        <span id="member-nav-items-slot"></span>
+
+      </ul>
+    </nav>
+    <div class="header-top-mobile"> 
+
+      <div class="header-right-wrap-mobile-l pull-left">
+        <img  border="0" src="/profiles/ap/themes/ap_wintergames/images/header-right-title-mobile.png">
+      </div>
+      <div class="header-right-wrap-mobile-r pull-right">
+        <img src="/profiles/ap/themes/ap_wintergames/images/header-right-wg-title-mobile.png">
+      </div>
+
+    </div>
+    <!--<img class="masthead-mobile" src="/profiles/ap/themes/ap_wintergames/images/wg-header-bg-mobile.png" alt="">-->
+    <div class="search-mobile"></div>
+    <div class="ad-placeholder"></div>
+  </header> <!-- END header-mobile (1024 and below) -->
+</div>  </div>
+</div><div id="zone-branding-wrapper" class="zone-wrapper zone-branding-wrapper clearfix">  
+  <div id="zone-branding" class="zone zone-branding clearfix container-12">
+    <div class="grid-12 region region-vertical-branding" id="region-vertical-branding">
+  <div class="region-inner region-vertical-branding-inner">
+    
+        <div class="branding-data clearfix">
+                        <hgroup class="site-name-slogan">        
+                        <h1 class="site-name"><a href="/" rel="home" title="Home"><span class="first">2018</span> Winter Olympics </a></h1>
+              </hgroup>
+          </div>
+        
+      </div>
+</div>
+  </div>
+</div><div id="zone-menu-wrapper" class="zone-wrapper zone-menu-wrapper clearfix">    <div class="menu-zone-inner-wrapper">
+	  <div id="zone-menu" class="zone zone-menu clearfix container-12"  style="display:none">
+	    <div class="grid-12 region region-menu" id="region-menu">
+  <div class="region-inner region-menu-inner">
+    <nav class="navigation">
+      <div class="block block-search block-form block-search-form odd block-without-title" id="block-search-form">
+  <div class="block-inner clearfix">
+                        
+    <div class="content clearfix"  >
+    <form action="/article/latest-shiffrin-definite-slalom-and-giant-slalom?utm_campaign=SocialFlow&amp;utm_source=Twitter&amp;utm_medium=AP_Sports" method="post" id="search-block-form" accept-charset="UTF-8"><div><div class="container-inline">
+      <h2 class="element-invisible">Search form</h2>
+    <div class="form-item form-type-textfield form-item-search-block-form">
+  <label class="element-invisible" for="edit-search-block-form--2">Search </label>
+ <input title="Enter the terms you wish to search for." placeholder="Search " type="text" id="edit-search-block-form--2" name="search_block_form" value="" size="15" maxlength="128" class="form-text" />
+</div>
+<div class="form-actions form-wrapper" id="edit-actions"><input type="submit" id="edit-submit" name="op" value="Search" class="form-submit" /></div><input type="hidden" name="form_build_id" value="form-PLwimkTr6tJtNvIMCANXY6fbdtp2ZMavXbjS1mGVnr8" />
+<input type="hidden" name="form_id" value="search_block_form" />
+</div>
+</div></form>    </div>
+  </div>
+
+</div><h4 class="sections-menu"><a href="#" id="sections-menu-link1" class="sections-menu-link" onclick="toggleMenuStyle(this.id)">Menu</a></h4><ul class="menu"><li class="main-nav-item drawer-dropdown"><a class="drawer-menu-item" aria-expanded="false" role="button" data-toggle="dropdown" href="#">News<span class="drawer-caret"></span></a><ul class="menu"><li class="first leaf drawer-dropdown-menu-item main-nav-item"><a href="/articles" title="">Latest News</a></li>
+<li class="leaf drawer-dropdown-menu-item main-nav-item"><a href="/galleries" title="">Photos</a></li>
+<li class="leaf drawer-dropdown-menu-item main-nav-item"><a href="/videos" title="">Videos</a></li>
+<li class="leaf drawer-dropdown-menu-item main-nav-item"><a href="https://wintergames.ap.org/tags/podcast" title="">Podcast</a></li>
+<li class="last leaf drawer-dropdown-menu-item main-nav-item"><a href="/interactives" title="">Interactives</a></li>
+</ul></li>
+<li class="leaf main-nav-item"><a href="/medals">Medals</a></li>
+<li class="leaf main-nav-item"><a href="/schedule" title="">Schedule</a></li>
+<li class="leaf main-nav-item"><a href="/inside-the-games" title="">Inside the Games</a></li>
+<li class="leaf main-nav-item"><a href="/the-olympians" title="">The Olympians</a></li>
+<li class="leaf main-nav-item"><a href="https://www.podcastone.com/ap-sports-special-events" title="">Podcast</a></li>
+<li class="main-nav-item"><a href="https://wintergames.ap.org/daily-draw" title="">Daily Draw</a>
+<div  id="dfp-ad-menusponsor" class="dfp-tag-wrapper">
+    <script type="text/javascript">
+    googletag.cmd.push(function() {
+      googletag.display("dfp-ad-menusponsor");
+    });
+  </script>
+</div>
+</li>
+</ul>    </nav>
+  </div>
+</div>
+	  </div>
+  </div>
+</div></header>    
+      <section id="section-content" class="section section-content">
+  <div id="zone-content-wrapper" class="zone-wrapper zone-content-wrapper clearfix">  
+  <div id="zone-content" class="zone zone-content clearfix container-12">    
+        
+        <div class="grid-8 region region-content" id="region-content">
+  <div class="region-inner region-content-inner">
+    <a id="main-content"></a>
+                <div class="tabs clearfix"></div>        <div class="block block-dfp block-leaderboard block-dfp-leaderboard odd block-without-title" id="block-dfp-leaderboard">
+  <div class="block-inner clearfix">
+                        
+    <div class="content clearfix"  >
+    <div id="dfp-ad-leaderboard-wrapper" class="dfp-tag-wrapper"><div class="slug">Advertisement</div>
+<div  id="dfp-ad-leaderboard" class="dfp-tag-wrapper">
+    <script type="text/javascript">
+    googletag.cmd.push(function() {
+      googletag.display("dfp-ad-leaderboard");
+    });
+  </script>
+</div>
+</div>    </div>
+  </div>
+
+</div><div class="block block-dfp block-mobileleaderboard block-dfp-mobileleaderboard even block-without-title" id="block-dfp-mobileleaderboard">
+  <div class="block-inner clearfix">
+                        
+    <div class="content clearfix"  >
+    <div id="dfp-ad-mobileleaderboard-wrapper" class="dfp-tag-wrapper"><div class="slug">Advertisement</div>
+<div  id="dfp-ad-mobileleaderboard" class="dfp-tag-wrapper">
+    <script type="text/javascript">
+    googletag.cmd.push(function() {
+      googletag.display("dfp-ad-mobileleaderboard");
+    });
+  </script>
+</div>
+</div>    </div>
+  </div>
+
+</div><div class="block block-system block-main block-system-main even block-without-title" id="block-system-main">
+  <div class="block-inner clearfix">
+                        
+    <div class="content clearfix"  >
+    <img src="https://cdn.relaymedia.com/ping?url=wintergames.ap.org/article/latest-wellinger-withstands-cold-win-olympic-gold" width=1 height=1>
+<article data-itemid="64dc154f1e2d48a296998775106d9f6c" data-slug="BC-OLY--Pyeongchang Olympics-The Latest" class="node node-ap-article hnews hentry item node-published node-not-promoted node-not-sticky author-winteradmin even clearfix" id="node-ap-article-204308" rel="wicked dude">
+    <header>
+                            <h1 class="entry-title title node-title title" rel="bookmark" id="page-title">The Latest: Wellinger withstands cold to win Olympic gold</h1>
+                        <div class="article-data">
+                        <span  class="updated" title="2018-02-10T10:37:08-05:00">Feb. 10 2018 10:37 AM EST</span>        </div>
+    </header>
+    <h2 class="element-invisible">You are here</h2><div class="breadcrumb"><a href="/">Home</a> &raquo; <a href="/tags/south-korea">South Korea</a> &raquo; The Latest: Wellinger withstands cold to win Olympic gold</div>    <div class="node-body clearfix">
+        <div class="block block-ap-misc block-ap-social-media block-ap-misc-ap-social-media odd block-without-title" id="block-ap-misc-ap-social-media">
+  <div class="block-inner clearfix">
+                        
+    <div class="content clearfix"  >
+    
+<div class="ap-article-social clearfix">
+	<h2 class="block-title">Share</h2>
+	<div class="social-widgets clearfix">
+				<div class="social-fbook social-share">
+			<div class="_li">
+				<div class="pluginSkinLight pluginFontLucida">
+					<div>
+						<table class="_51mz" cellspacing="0" cellpadding="0">
+							<tbody>
+								<tr class="_51mx">
+									<td class="_51mw">
+										<div>
+											<div class="pluginCountBox">
+												<div>
+													<i class="pluginCountBoxIcon" style="display: none"></i>
+													<span>
+														<span class="pluginCountTextConnected">1</span>
+														<span class="pluginCountTextDisconnected">0</span>
+													</span>
+												</div>
+											</div>
+											<div class="pluginCountBoxNub">
+												<s></s>
+												<i></i>
+											</div>
+										</div>
+									</td>
+								</tr>
+								<tr class="_51mx">
+									<td class="_51m- hCent _51mw">
+										<div>
+											<div class="pluginButton pluginButtonSmall pluginConnectButtonDisconnected" title="Share">
+												<div>
+													<div class="pluginButtonContainer" onclick="open_window()">
+														<i class="pluginButtonIcon img sp_plugin-button sx_plugin-button_favblue"></i>
+														<span class="pluginButtonLabel">Share</span>
+													</div>
+												</div>
+											</div>
+										</div>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+
+					</div>
+				</div>
+			</div>
+		</div>
+		
+				<div class="social-twitter social-share">
+		<a href="https://twitter.com/share" class="twitter-share-button" data-count="vertical">Tweet</a><script type="text/javascript" src="//platform.twitter.com/widgets.js"></script>
+		</div>
+		
+				<div class="social-linkedin social-share">
+		<script src="https://platform.linkedin.com/in.js" type="text/javascript"></script>
+		<script type="IN/Share" data-counter="top"></script>
+		</div>
+				<div class="social-gplus social-share">
+		<!-- Place this tag where you want the +1 button to render -->
+		<g:plusone size="tall"></g:plusone>
+		<!-- Place this render call where appropriate -->
+		<script type="text/javascript">
+		  (function() {
+		    var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+		    po.src = 'https://apis.google.com/js/plusone.js';
+		    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+		  })();
+		</script>
+		</div>
+				<div class="social-reddit social-share-wide">
+		<script type="text/javascript">reddit_newwindow='1'</script>
+		<script type="text/javascript" src="https://www.reddit.com/static/button/button1.js"></script>
+		</div>
+				<div class="social-tumblr social-share-wide">
+		<a href="https://www.tumblr.com/share" title="Share on Tumblr" style="display:inline-block; text-indent:-9999px; overflow:hidden; width:129px; height:20px; background:url('https://platform.tumblr.com/v1/share_3.png') top left no-repeat transparent;">Tumblr</a>
+		</div>
+	</div>
+</div>
+<script type="text/javascript">
+	function open_window(){
+
+		var location_url=window.location.protocol+"//"+window.location.host+window.location.pathname;
+
+		var first_paragraph = false;
+
+		jQuery('div.field-item').find('p').each(function(index, elem){
+			if(jQuery(elem).text().length > 0){
+
+				if(first_paragraph == false && jQuery(elem).text().length > 0)
+					first_paragraph = jQuery(elem).text();
+			}
+		});
+
+		var data={
+			url:encodeURIComponent(location_url),
+			title:encodeURIComponent(jQuery('h1.entry-title').text()),
+			excerpt:encodeURIComponent(first_paragraph)};
+
+			var timestamp=new Date().getTime();
+			var url_no_cache=data.url+encodeURIComponent('?nc='+timestamp);
+
+			window.open('https://www.facebook.com/sharer/sharer.php?m2w=1&s=100&p[url]='+url_no_cache+'&p[title]='+data.title+'&p[summary]='+data.excerpt,this.target,'width=600,height=400,resizable=1,scrollbars=1');
+			return false;
+		}</script>	
+		<script type="text/javascript">
+
+		jQuery(document).ready(function(){
+
+			jQuery.ajax({
+				type:"GET",
+				url:"https://graph.facebook.com/",
+				data:{id: window.location.href},
+				success: function(response){
+
+					var qty = 0;
+
+					if(response.shares == undefined) {
+
+						response.shares = 0;
+					}
+
+					qty = response.shares;
+
+					if(qty>999999) {
+
+						qty=Math.round(qty/100000)/10+'M';
+					}
+
+					if(qty>999) {
+
+						qty=Math.round(qty/100)/10+'k';
+					}
+
+					jQuery('.pluginCountTextDisconnected')
+						.hide('fast',function(){
+							jQuery('.pluginCountTextConnected').text(qty).show();
+						});
+					}
+			})
+		});
+		</script>
+    </div>
+  </div>
+
+</div>        <div class="node-content">
+            <div id="expandable">
+                
+                                    <div class="slideshow">
+                        <div class="clearfix">
+                            <ul id="article-slider" class="photo-slideshow clearfix">
+                                                                    <li class="photo-item">
+                                                                                    <div class="photo-wrap"><div class="field-name-field-thumbnail"><img src="https://mapi.associatedpress.com/v1/items/1657500b138b4c2b8c46b3f326fac37d/preview/preview.jpg?s=460x" alt="Pyeongchang Olympics Ski Jumping Men" title="Pyeongchang Olympics Ski Jumping Men" /></div></div>
+                                            <span
+                                                class="photo-credit">&nbsp;</span>
+                                                                                            <div class="photo-caption">
+                                                    <div class="inner">
+                                                        <div class="field-name-caption"><block><p>Andreas Wellinger, of Germany, soars through the air during the men's normal hill individual ski jumping competition at the 2018 Winter Olympics in Pyeongchang, South Korea, Saturday, Feb. 10, 2018. (AP Photo/Matthias Schrader)</p></div>                                                    </div>
+                                                </div>
+                                                                                                                        </li>
+                                                                    <li class="photo-item">
+                                                                                    <div class="photo-wrap"><div class="field-name-field-thumbnail"><img src="https://mapi.associatedpress.com/v1/items/1386f0999eef4cdebb018da1fc8e2232/preview/preview.jpg?s=460x" alt="Laura Dahlmeier" title="Laura Dahlmeier" /></div></div>
+                                            <span
+                                                class="photo-credit">&nbsp;</span>
+                                                                                            <div class="photo-caption">
+                                                    <div class="inner">
+                                                        <div class="field-name-caption"><block><p>Gold medalist Laura Dahlmeier, of Germany, looks at the target during the women's 7.5km biathlon sprint at the 2018 Winter Olympics in Pyeongchang, South Korea, Saturday, Feb. 10, 2018. (AP Photo/Gregorio Borgia)</p></div>                                                    </div>
+                                                </div>
+                                                                                                                        </li>
+                                                                    <li class="photo-item">
+                                                                                    <div class="photo-wrap"><div class="field-name-field-thumbnail"><img src="https://mapi.associatedpress.com/v1/items/8e42a64a6ef9481e920c36193cfa3313/preview/preview.jpg?s=460x" alt="Pyeongchang Olympics Ice Hockey Women" title="Pyeongchang Olympics Ice Hockey Women" /></div></div>
+                                            <span
+                                                class="photo-credit">&nbsp;</span>
+                                                                                            <div class="photo-caption">
+                                                    <div class="inner">
+                                                        <div class="field-name-caption"><block><p>Evelina Raselli (14), of Switzerland, and South Korea's Chaelin Park (15), of the combined Koreas team, battle for the puck during the second period of the preliminary round of the women's hockey game at the 2018 Winter Olympics in Gangneung, South Korea, Saturday, Feb. 10, 2018. (AP Photo/Frank Franklin II)</p></div>                                                    </div>
+                                                </div>
+                                                                                                                        </li>
+                                                                    <li class="photo-item">
+                                                                                    <div class="photo-wrap"><div class="field-name-field-thumbnail"><img src="https://mapi.associatedpress.com/v1/items/3f713c3b7bba492eb6112d77d096e9ab/preview/preview.jpg?s=460x" alt="Pyeongchang Olympics Ice Hockey Women" title="Pyeongchang Olympics Ice Hockey Women" /></div></div>
+                                            <span
+                                                class="photo-credit">&nbsp;</span>
+                                                                                            <div class="photo-caption">
+                                                    <div class="inner">
+                                                        <div class="field-name-caption"><block><p>Kim Yo Jong, sister of North Korean leader Kim Jong Un, right, and North Korea's nominal head of state Kim Yong Nam, second right, sit next to Thomas Bach, President of the International Olympic Committee and South Korean President Moon Jae-in, left, as they arrive to watch the preliminary round of the women's hockey game between Switzerland and the combined Koreas at the 2018 Winter Olympics in Gangneung, South Korea, Saturday, Feb. 10, 2018. (AP Photo/Felipe Dana)</p></div>                                                    </div>
+                                                </div>
+                                                                                                                        </li>
+                                                                    <li class="photo-item">
+                                                                                    <div class="photo-wrap"><div class="field-name-field-thumbnail"><img src="https://mapi.associatedpress.com/v1/items/2289e989a25e4ae392b9c136b07edb03/preview/preview.jpg?s=460x" alt="Pyeongchang Olympics Ice Hockey Women" title="Pyeongchang Olympics Ice Hockey Women" /></div></div>
+                                            <span
+                                                class="photo-credit">&nbsp;</span>
+                                                                                            <div class="photo-caption">
+                                                    <div class="inner">
+                                                        <div class="field-name-caption"><block><p>Livia Altmann, of Switzerland, and South Korea's Randi Heesoo Griffin, of the combined Koreas team, battle for the puck during the first period of the preliminary round of the women's hockey game at the 2018 Winter Olympics in Gangneung, South Korea, Saturday, Feb. 10, 2018. (AP Photo/Frank Franklin II)</p></div>                                                    </div>
+                                                </div>
+                                                                                                                        </li>
+                                                                    <li class="photo-item">
+                                                                                    <div class="photo-wrap"><div class="field-name-field-thumbnail"><img src="https://mapi.associatedpress.com/v1/items/95552fdf6cef4c0c9ce1d45db47bc5c2/preview/preview.jpg?s=460x" alt="Carlijn Achtereekte" title="Carlijn Achtereekte" /></div></div>
+                                            <span
+                                                class="photo-credit">&nbsp;</span>
+                                                                                            <div class="photo-caption">
+                                                    <div class="inner">
+                                                        <div class="field-name-caption"><block><p>Carlijn Achtereekte of The Netherlands celebrates after the women's 3,000 meters race at the Gangneung Oval at the 2018 Winter Olympics in Gangneung, South Korea, Saturday, Feb. 10, 2018. (AP Photo/John Locher)</p></div>                                                    </div>
+                                                </div>
+                                                                                                                        </li>
+                                                                    <li class="photo-item">
+                                                                                    <div class="photo-wrap"><div class="field-name-field-thumbnail"><img src="https://mapi.associatedpress.com/v1/items/b37f5eee847c4c9b87e49530089f2c4e/preview/preview.jpg?s=460x" alt="Laura Dahlmeier" title="Laura Dahlmeier" /></div></div>
+                                            <span
+                                                class="photo-credit">&nbsp;</span>
+                                                                                            <div class="photo-caption">
+                                                    <div class="inner">
+                                                        <div class="field-name-caption"><block><p>Laura Dahlmeier, of Germany, reacts after crossing the finish line during the women's 7.5km biathlon sprint at the 2018 Winter Olympics in Pyeongchang, South Korea, Saturday, Feb. 10, 2018. (AP Photo/Andrew Medichini)</p></div>                                                    </div>
+                                                </div>
+                                                                                                                        </li>
+                                                                    <li class="photo-item">
+                                                                                    <div class="photo-wrap"><div class="field-name-field-thumbnail"><img src="https://mapi.associatedpress.com/v1/items/bca8730ebe3c44dfa2d442fedf5e1e99/preview/preview.jpg?s=460x" alt="Charles Hamelin" title="Charles Hamelin" /></div></div>
+                                            <span
+                                                class="photo-credit">&nbsp;</span>
+                                                                                            <div class="photo-caption">
+                                                    <div class="inner">
+                                                        <div class="field-name-caption"><block><p>Canada's Charles Hamelin competes in the men's 1,500 meters short track speedskating in the Gangneung Ice Arena at the 2018 Winter Olympics in Gangneung, South Korea, Saturday, Feb. 10, 2018. (Paul Chiasson/The Canadian Press via AP)</p></div>                                                    </div>
+                                                </div>
+                                                                                                                        </li>
+                                                                    <li class="photo-item">
+                                                                                    <div class="photo-wrap"><div class="field-name-field-thumbnail"><img src="https://mapi.associatedpress.com/v1/items/1d720f26c64b4f8cb12d16ce2481c3dc/preview/preview.jpg?s=460x" alt="Pyeongchang Olympics Ice Hockey Women" title="Pyeongchang Olympics Ice Hockey Women" /></div></div>
+                                            <span
+                                                class="photo-credit">&nbsp;</span>
+                                                                                            <div class="photo-caption">
+                                                    <div class="inner">
+                                                        <div class="field-name-caption"><block><p>Spectators line up outside for the preliminary round of the women's hockey game between Switzerland and the combined Koreas at the 2018 Winter Olympics in Gangneung, South Korea, Saturday, Feb. 10, 2018. (AP Photo/Jae C. Hong)</p></div>                                                    </div>
+                                                </div>
+                                                                                                                        </li>
+                                                                    <li class="photo-item">
+                                                                                    <div class="photo-wrap"><div class="field-name-field-thumbnail"><img src="https://mapi.associatedpress.com/v1/items/746267b8c13345b481a9888da258f9e9/preview/preview.jpg?s=460x" alt="Pyeongchang Olympics Luge Women" title="Pyeongchang Olympics Luge Women" /></div></div>
+                                            <span
+                                                class="photo-credit">&nbsp;</span>
+                                                                                            <div class="photo-caption">
+                                                    <div class="inner">
+                                                        <div class="field-name-caption"><block><p>German President Frank-Walter Steinmeier, 2nd right, and his wife Elke Buedenbender, 2nd left, pose for the media as they meet German women's luge athletes Natalie Geisenberger, left, Tatjana Huefner, center, and Dajana Eitberger, right, at the 2018 Winter Olympics in Pyeongchang, South Korea, Saturday, Feb. 10, 2018. (AP Photo/Michael Sohn)</p></div>                                                    </div>
+                                                </div>
+                                                                                                                        </li>
+                                                                    <li class="photo-item">
+                                                                                    <div class="photo-wrap"><div class="field-name-field-thumbnail"><img src="https://mapi.associatedpress.com/v1/items/80b3ec46670e4af283e689d566ce59d2/preview/preview.jpg?s=460x" alt="Pyeongchang Olympics Short Track Speed Skating Women" title="Pyeongchang Olympics Short Track Speed Skating Women" /></div></div>
+                                            <span
+                                                class="photo-credit">&nbsp;</span>
+                                                                                            <div class="photo-caption">
+                                                    <div class="inner">
+                                                        <div class="field-name-caption"><block><p>United States' Vice President Mike Pence, centre left and South Korean President Moon Jae-in attend the ladies' 500 meters short-track speedskating in the Gangneung Ice Arena at the 2018 Winter Olympics in Gangneung, South Korea, Saturday, Feb. 10, 2018. (AP Photo/Bernat Armangue)</p></div>                                                    </div>
+                                                </div>
+                                                                                                                        </li>
+                                                                    <li class="photo-item">
+                                                                                    <div class="photo-wrap"><div class="field-name-field-thumbnail"><img src="https://mapi.associatedpress.com/v1/items/67c27684b59d4a96bf2667040a54fb14/preview/preview.jpg?s=460x" alt="Pyeongchang Olympics Short Track Speed Skating Women" title="Pyeongchang Olympics Short Track Speed Skating Women" /></div></div>
+                                            <span
+                                                class="photo-credit">&nbsp;</span>
+                                                                                            <div class="photo-caption">
+                                                    <div class="inner">
+                                                        <div class="field-name-caption"><block><p>Maame Biney of the United States in action during the ladies' 500 meters short-track speedskating in the Gangneung Ice Arena at the 2018 Winter Olympics in Gangneung, South Korea, Saturday, Feb. 10, 2018. (AP Photo/Bernat Armangue)</p></div>                                                    </div>
+                                                </div>
+                                                                                                                        </li>
+                                                                    <li class="photo-item">
+                                                                                    <div class="photo-wrap"><div class="field-name-field-thumbnail"><img src="https://mapi.associatedpress.com/v1/items/a88ce64979724ffa867c250cbc74fcd9/preview/preview.jpg?s=460x" alt="Pyeongchang Olympics Short Track Speed Skating Women" title="Pyeongchang Olympics Short Track Speed Skating Women" /></div></div>
+                                            <span
+                                                class="photo-credit">&nbsp;</span>
+                                                                                            <div class="photo-caption">
+                                                    <div class="inner">
+                                                        <div class="field-name-caption"><block><p>United States' Vice President Mike Pence, second left and South Korean President Moon Jae-in centre right, attend the ladies' 500 meters short-track speedskating event in the Gangneung Ice Arena at the 2018 Winter Olympics in Gangneung, South Korea, Saturday, Feb. 10, 2018. (AP Photo/Bernat Armangue)</p></div>                                                    </div>
+                                                </div>
+                                                                                                                        </li>
+                                                                    <li class="photo-item">
+                                                                                    <div class="photo-wrap"><div class="field-name-field-thumbnail"><img src="https://mapi.associatedpress.com/v1/items/347c35c94ad34d38bb30b3917440ed5b/preview/preview.jpg?s=460x" alt="Pyeongchang Olympics Short Track Speed Skating Men" title="Pyeongchang Olympics Short Track Speed Skating Men" /></div></div>
+                                            <span
+                                                class="photo-credit">&nbsp;</span>
+                                                                                            <div class="photo-caption">
+                                                    <div class="inner">
+                                                        <div class="field-name-caption"><block><p>John-Henry Krueger of the United States leads Thibaut Fauconnet of France during the men's 1500 meters short track speed skating heat in the Gangneung Ice Arena at the 2018 Winter Olympics in Gangneung, South Korea, Saturday, Feb. 10, 2018. (AP Photo/Bernat Armangue)</p></div>                                                    </div>
+                                                </div>
+                                                                                                                        </li>
+                                                                    <li class="photo-item">
+                                                                                    <div class="photo-wrap"><div class="field-name-field-thumbnail"><img src="https://mapi.associatedpress.com/v1/items/fb877f5c64ad4936b7708c903cf1af1e/preview/preview.jpg?s=460x" alt="Pyeongchang Olympics Short Track Speed Skating Men" title="Pyeongchang Olympics Short Track Speed Skating Men" /></div></div>
+                                            <span
+                                                class="photo-credit">&nbsp;</span>
+                                                                                            <div class="photo-caption">
+                                                    <div class="inner">
+                                                        <div class="field-name-caption"><block><p>United States' Vice President Mike Pence and his wife Karen attend the men's 1500 meters in the Gangneung Ice Arena at the 2018 Winter Olympics in Gangneung, South Korea, Saturday, Feb. 10, 2018. (AP Photo/David J. Phillip)</p></div>                                                    </div>
+                                                </div>
+                                                                                                                        </li>
+                                                                    <li class="photo-item">
+                                                                                    <div class="photo-wrap"><div class="field-name-field-thumbnail"><img src="https://mapi.associatedpress.com/v1/items/be2cfc9e04d1415683e4430025bbf063/preview/preview.jpg?s=460x" alt="Pyeongchang Olympics Medals Ceremony Cross Country Women" title="Pyeongchang Olympics Medals Ceremony Cross Country Women" /></div></div>
+                                            <span
+                                                class="photo-credit">&nbsp;</span>
+                                                                                            <div class="photo-caption">
+                                                    <div class="inner">
+                                                        <div class="field-name-caption"><block><p>Women's cross-country 7.5/7.5km skiathlon gold medalist Charlotte Kalla, of Sweden, center, applauds as silver medalist Marit Bjoergen, of Norway, reacts during their medals ceremony at the 2018 Winter Olympics in Pyeongchang, South Korea, Saturday, Feb. 10, 2018. (AP Photo/Morry Gash)</p></div>                                                    </div>
+                                                </div>
+                                                                                                                        </li>
+                                                                    <li class="photo-item">
+                                                                                    <div class="photo-wrap"><div class="field-name-field-thumbnail"><img src="https://mapi.associatedpress.com/v1/items/55d1bef52ffb49e69d5296148492f3c5/preview/preview.jpg?s=460x" alt="Pyeongchang Olympics Ice Hockey Women" title="Pyeongchang Olympics Ice Hockey Women" /></div></div>
+                                            <span
+                                                class="photo-credit">&nbsp;</span>
+                                                                                            <div class="photo-caption">
+                                                    <div class="inner">
+                                                        <div class="field-name-caption"><block><p>Anna Borgqvist (18), of Sweden, checks Yurie Adachi (11), of Japan, during the third period of the preliminary round of the women's hockey game at the 2018 Winter Olympics in Gangneung, South Korea, Saturday, Feb. 10, 2018. (AP Photo/Jae C. Hong)</p></div>                                                    </div>
+                                                </div>
+                                                                                                                        </li>
+                                                                    <li class="photo-item">
+                                                                                    <div class="photo-wrap"><div class="field-name-field-thumbnail"><img src="https://mapi.associatedpress.com/v1/items/cf381d8c15d74651b55bf2afa5950c9e/preview/preview.jpg?s=460x" alt="Pyeongchang Olympics Opening Ceremony" title="Pyeongchang Olympics Opening Ceremony" /></div></div>
+                                            <span
+                                                class="photo-credit">&nbsp;</span>
+                                                                                            <div class="photo-caption">
+                                                    <div class="inner">
+                                                        <div class="field-name-caption"><block><p>Fireworks explode behind the Olympic flame during the opening ceremony of the 2018 Winter Olympics in Pyeongchang, South Korea, Friday, Feb. 9, 2018. (AP Photo/David J. Phillip,Pool)</p></div>                                                    </div>
+                                                </div>
+                                                                                                                        </li>
+                                                            </ul>
+                        </div>
+                        <div class="slider-controls clearfix">
+                            <ul class="slidecontrols">
+                                <li><a href="#article-slider" class="prev">Prev</a></li>
+                                <li class="slider-position"></li>
+                                <li><a href="#article-slider" class="next">Next</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                
+                <div class="content clearfix article-body article-body">
+                    <div  class="hnews-hidden"><span  class="dateline">PYEONGCHANG, South Korea</span><a  rel="item-license" id="license-554742d5c50659d1948288edbd1e8ed3" href="#license-554742d5c50659d1948288edbd1e8ed3">Copyright 2018 The Associated Press. All rights reserved. This material may not be published, broadcast, rewritten or redistributed.</a><div  class="geo hnews-geo"><span  class="latitude">37.3682</span><span  class="longitude">128.395</span></div></div><div class="field field-name-body field-type-text-with-summary field-label-hidden entry-content"><div class="field-items"><div class="field-item even"><p><block><p>PYEONGCHANG, South Korea (AP) — The Latest on the Pyeongchang Olympics (all times local):</p>
+<p>12:30 a.m.</p>
+<p>Andreas Wellinger withstood frigid temperatures and windy conditions to claim the gold medal in normal hill ski jumping.</p>
+<p>High winds at the Alpensia Ski Jumping center during Saturday's first round resulted in a 30-minute delay of the final. The temperature was minus-11 Celsius (12 Fahrenheit) but it felt a lot colder with the wind chill.</p>
+<p>The wind continued in the final round and there were numerous delays before the 22-year German nailed a jump of 113.5 meters to secure the gold with 259.3 points.</p>
+<p>Johann Andre Forfang took the silver ahead of fellow Norwegian Robert Johansson.</p>
+<p>Defending Olympic champion Kamil Stoch of Poland was fourth</p>
+<p>Wellinger is third in the overall World Cup standings this season and was competing in his second Olympics.</p>
+<p>____</p>
+<p>12:00 a.m.</p>
+<p>So maybe Laura Dahlmeier isn't quite perfect after all.</p>
+<p>After the German biathlete won her first gold in what she deemed a "perfect race" — she hit all 10 targets with her rifle — the 24-year-old showed she's human, too. As she approached a group of her German teammates after the race she began running with outstretched arms toward them but promptly slipped on a patch of ice.</p>
+<p>Her teammates helped her up and they all had a good chuckle before continuing celebrating Germany's first medal of the 2018 Olympic Games.</p>
+<p>___</p>
+<p>11:25 p.m.</p>
+<p>Alina Muller scored a hat trick in the first period and added a fourth goal 1:26 into the second as Switzerland shut out Korea 8-0 for a big dose of hockey reality for the Koreans' extraordinary Olympic debut.</p>
+<p>The first combined Korean team at any Olympics did not dim fans' enthusiasm for a team dressing three North Koreans.</p>
+<p>Bolstered by North Korean cheerleaders, fans yelled "Bear up" on each shot attempt. They also shouted "We are one" with the powerful sister of North Korean leader Kim Jong Un, South Korean President Moon Jae-in and North Korea's nominal head of state, Kim Yong Nam, watching at the Kwandong Hockey Center.</p>
+<p>Korea just missed an early lead when Han Soojin's shot hit the crossbar.</p>
+<p>Switzerland is ranked sixth in the world.</p>
+<p>___</p>
+<p>10:10 p.m.</p>
+<p>The Koreans managed all of three shots in the first 20 minutes of their historic women's hockey game in the Olympics, and a North Korean had one of them.</p>
+<p>And fans roared encouragement and approval each time the Koreans touched the puck.</p>
+<p>Han Soojin had a shot that went off the crossbar, just missing a chance to give Korea a lead in a scoreless game. North Korean Jong Su Hyon had a shot smothered by the Swiss goalie, and Choi Jiyeon had another shot late in the period.</p>
+<p>It wasn't nearly enough against Switzerland, ranked sixth in the world and winner of bronze in 2014 at Sochi. Alina Muller provided all the scoring the Swiss needed with a hat trick in the first period, the third goal coming with 12 seconds left in the period.</p>
+<p>___</p>
+<p>10 p.m.</p>
+<p>The powerful sister of North Korean leader Kim Jong Un is watching a joint Korean hockey team's historic first match against Switzerland at the Olympics with South Korean President Moon Jae-in.</p>
+<p>Moon's office says Moon; Kim's sister, Kim Yo Jong; and North Korea's nominal head of state, Kim Yong Nam, are at the Kwandong Hockey Center on Saturday to watch the game.</p>
+<p>Kim Yo Jong and Kim Yong Nam are on an unprecedented visit to South Korea amid an abrupt reconciliation mood between the rival Koreas for the Pyeongchang Games.</p>
+<p>The North Koreans earlier Saturday invited Moon to visit Pyongyang in what would be the Koreas' third summit talks since their 1945 division.</p>
+<p>___</p>
+<p>9:50 p.m.</p>
+<p>Lim Hyo-jun has given the host country its first gold medal of the Pyeongchang Olympics.</p>
+<p>The South Korean crossed the line first in the men's 1,500-meter short track, setting off a huge roar from the capacity crowd at Gangneung Ice Arena.</p>
+<p>Defending Olympic champion Charles Hamelin of Canada was penalized for impeding and finished far back anyway.</p>
+<p>Lim surged past Sjinkie Knegt of the Netherlands and finished about two blade lengths ahead in an Olympic-record time of 2 minutes, 10.485 seconds.</p>
+<p>Knegt settled for the silver medal, while the bronze went to Semen Elistratov, who became Russia's first medalist of the games.</p>
+<p>Russia was banned from the Olympics for a massive doping scheme, but Elistratov is among 168 competitors allowed in as "Olympic Athletes From Russia."</p>
+<p>___</p>
+<p>9:45 p.m.</p>
+<p>The Koreans have made Olympic history with the puck dropping in their first Olympic game with their women's hockey lineup featuring three North Koreans under an unprecedented agreement.</p>
+<p>And a North Korean forward nearly gave the historic combined team a lead.</p>
+<p>Jong Su Hyon shot the puck from the left circle on a power play in the first period only to catch the crossbar, glancing off harmlessly.</p>
+<p>Then Switzerland responded by jumping out to a 2-0 lead, scoring 61 seconds apart midway through the period</p>
+<p>Trailing didn't dampen the enthusiasm of home fans, who kept chanting in support with the North Korean cheerleaders rinkside leading the cheers. During a timeout, the cheerleaders tried to start fans doing the wave only to see that trickle out as play resumed.</p>
+<p>___</p>
+<p>9:40 p.m.</p>
+<p>The Dutch resumed where they left off four years ago, dominating the Olympic speedskating Oval and getting a clean sweep of medals in the women's 3,000 meters, with outsider Carlijn Achtereekte leading the way.</p>
+<p>Achtereekte raced in the first half of the program with the also-rans, but her time of 3 minutes, 59.21 seconds was good as gold as double 3,000-meter Olympic champion Ireen Wust finished .08 seconds behind.</p>
+<p>Bronze went to Antoinette de Jong for the amazing Dutch sweep.</p>
+<p>In Sochi four years ago, the Netherlands won 23 of 36 medals. They've started 3 for 3 at the Pyeongchang Games.</p>
+<p>___</p>
+<p>9:25 p.m.</p>
+<p>Germany's Laura Dahlmeier wasn't just good. She was perfect.</p>
+<p>The 24-year-old budding biathlon star hit all 10 targets to win her first gold medal in the women's 7.5-kilometer sprint on Saturday night at the Pyeongchang Games.</p>
+<p>Dahlmeier had won five of six possible medals at last year's World Championships. Coincidentally, the one event she didn't win was this one.</p>
+<p>She appeared exhausted as she finished, falling to the ground, her face inches from the snow and her skis spread apart in a frog-like position.</p>
+<p>Only three women out of 86 competitors hit all 10 targets on a cold and blustery night. However, the other two failed to crack the top 15 because they took too long to shoot those targets.</p>
+<p>Norway's Marte Olsbu captured the silver medal and Veronika Vitkova from the Czech Republic took home the bronze.</p>
+<p>___</p>
+<p>9:20 p.m.</p>
+<p>South Korea recovered from a crash to earn a place in the women's 3,000-meter relay final at short-track speedskating.</p>
+<p>The South Koreans won their semifinal heat on Saturday night, drawing wild cheers from the home crowd at the packed Gangneung Ice Arena.</p>
+<p>Canada also advanced to Tuesday's final, along with China and Italy.</p>
+<p>The U.S. women didn't qualify for the event.</p>
+<p>___</p>
+<p>9:15 p.m.</p>
+<p>The field is set for the men's 1,500-meter short-track speedskating final.</p>
+<p>After the crash-filled semifinals, nine skaters advanced to the final later Saturday night.</p>
+<p>Among them is defending Olympic champion Charles Hamelin of Canada.</p>
+<p>American J.R. Celski finished sixth and last in his semifinal heat and didn't advance after being penalized. Joining Celski on the sidelines was his teammate John-Henry Krueger, who also got penalized.</p>
+<p>World record holder Sjinkie Knegt will try to become the first Dutch short-track speedskater to win an Olympic title in the chaotic sport.</p>
+<p>Among others in the 1,500 final are Liu Shaolin Sandor of Hungary, Lim Hyo-jun and Hwang Dae-heon, both of South Korea, and Semen Elistratov, a Russian skater who is competing under the Olympic flag at the games.</p>
+<p>___</p>
+<p>9:05 p.m.</p>
+<p>Coach Sarah Murray is playing three North Korean forwards as required in the deal creating the first combined Korean team in Olympic history.</p>
+<p>The women's hockey coach faced some tough decisions after negotiations led to 12 North Korean players being added to her roster on Jan. 25. She had to scratch three of her South Korean players for Saturday's game against Switzerland at the Kwandong Hockey Center.</p>
+<p>The North Korean forwards are Kim Un Hyang, Jong Su Hyon and Hwang Chung Gum.</p>
+<p>Neither country has played women's ice hockey in the Olympics before. South Korea only received a berth as a host country.</p>
+<p>Fans cheered as the Koreans took the ice for pregame warmups.</p>
+<p>But the cheers might have been louder if not for a backup outside the arena getting fans through the gates.</p>
+<p>___</p>
+<p>8:50 p.m.</p>
+<p>German President Frank-Walter Steinmeier says there's hope the "tender dialogue" between the Koreas at Pyeongchang will foster an improvement in diplomatic relations beyond the Olympics.</p>
+<p>Steinmeier visited the German House in Pyeongchang as medal competition was getting was underway.</p>
+<p>He says only months ago there were doubts over North Korea's participation in the Olympics. He says, "Certainly three weeks ago no one would have thought that there would be a united team which entered the stadium together."</p>
+<p>The rare invitation to Pyongyang for South Korean President Moon Jae-in, delivered by Kim Jong Un's sister, has accelerated the diplomatic warming.</p>
+<p>By those measures, Steinmeier say, "What we're seeing right now is at least a sign." He says he's not sure it can hold long term but notes, "At least you can have hope."</p>
+<p>___</p>
+<p>8:40 p.m.</p>
+<p>U.S. Vice President Mike Pence and South Korean President Moon Jae-in are chatting while watching Olympic speedskaters compete just hours after Moon received a historic invitation to visit North Korea.</p>
+<p>Aides did not immediately say whether the invitation was discussed as the two sat next to each other viewing several heats Saturday.</p>
+<p>They were seated not far from a section of North Korean cheerleaders who attended the Olympics in a sign of warming ties between the two Koreas that Pence and other U.S. officials have warned against.</p>
+<p>Moon and North Korea's 90-year-old ceremonial head of state will jointly attend the unified Korean women's ice hockey team's first match later Saturday evening with Pence.</p>
+<p>___</p>
+<p>8:30 p.m.</p>
+<p>American teenager Maame Biney is safely through to the quarterfinals of the 500 meters in her short-track Olympic debut.</p>
+<p>The 18-year-old speedskater finished second in her heat behind China's Fan Kexin on Saturday night. Biney was born in Ghana and moved to the U.S. as a 5-year-old.</p>
+<p>The other American, Lana Gehring, was eliminated after finishing third in her heat. Only the top two skaters in each heat advance.</p>
+<p>Among the big names moving on to Tuesday's quarterfinals are Canadian teammates Kim Boutin and Marianne St-Gelais, Italy's Arianna Fontana, Britain's Elise Christie and South Korea's Choi Min-jeong.</p>
+<p>Shim Suk-hee of South Korea was a three-time medalist at the Sochi Games but was eliminated Saturday after finishing third in her heat.</p>
+<p>___</p>
+<p>8:10 p.m.</p>
+<p>Korean fans are very, very excited about making history with their combined women's hockey team at the Pyeongchang Games.</p>
+<p>Hundreds of fans <a href="https://www.youtube.com/channel/UCOxoMiQgUz_DXaUo5pnyMZg/videos">waved flags</a> with many featuring the Korean Peninsula, and they chanted while waiting outside in gusting winds for officials to open the doors at the Kwandong Hockey Center 90 minutes before Korea plays Switzerland.</p>
+<p>A capacity crowd of 6,000 is expected for the game, with South Korean President Moon Jae-in and North Korea's 90-year-old nominal head of state, Kim Yong Nam, among them.</p>
+<p>The men boarded a train for Gangneung after lunch in Seoul with Kim Yo Jong, sister of Kim Jong Un.</p>
+<p>It's unclear if she will be joining the leaders to watch a roster featuring 12 North Koreans.</p>
+<p>___</p>
+<p>7:55 p.m.</p>
+<p>The first night of short-track speedskating is underway at the Pyeongchang Olympics.</p>
+<p>All three Americans have advanced to the semifinals of the men's 1,500 meters. Three-time Olympian J.R. Celski and John-Henry Krueger nearly fell in their heats, while a crash involving two skaters allowed Aaron Tran to move on in the 13 ½-lap race.</p>
+<p>South Korea's three skaters — Hwang Dae-heon, Lim Hyo-jun and Seo Yira — also qualified for the semis to the delight of the home crowd, which roared any time one of their skaters was in the lead. Short track is hugely popular in the host country.</p>
+<p>World record holder Sjinkie Knegt of the Netherlands safely moved on, as did defending Olympic champion Charles Hamelin of Canada.</p>
+<p>U.S. Vice President Mike Pence and his wife Karen are in the crowd.</p>
+<p>___</p>
+<p>7:35 p.m.</p>
+<p>Vice President Mike Pence is cheering on U.S. speedskaters at the Winter Olympics before departing South Korea for Washington.</p>
+<p>Pence and his wife are viewing the short-track competition Saturday with South Korean President Moon Jae-in and his wife. Eight Americans are participating in the event.</p>
+<p>It's the final stop on a six-day trip that Pence hoped would increase pressure on North Korea as it seeks to use the games to pursue an opening with the South.</p>
+<p>Pence's efforts to keep the spotlight on North Korea's nuclear program and human rights abuses have taken a back seat to the widely viewed images of the two Koreas marching under one flag during Friday night's opening ceremony — and to the invitation by dictator Kim Jong Un for South Korean President Moon Jae-in to visit the North.</p>
+<p>___</p>
+<p>7:25 p.m.</p>
+<p>Norwegian cross-country skiing star Marit Bjoergen says this will be her final Olympics.</p>
+<p>Bjoergen has won her 11th Olympic medal, taking silver in the 15-kilometer skiathlon, making her the most decorated female Winter Olympian ever.</p>
+<p>The 37-year-old is still hoping to pass biathlete Ole Einar Bjoerndalen, who has 13 podium finishes, before the end of these Olympic Games. She won't say how many races she plans to participate in in Pyeongchang, only that she will participate in the women's sprint on Tuesday.</p>
+<p>"I haven't thought about that. For sure it's my last Olympics, but for me, I have to focus on doing good races," Bjoergen said. "I think when I'm finished with the Olympics I can look behind me and see how many medals I have. For me it's important to do the race and have the focus there."</p>
+<p>___</p>
+<p>7:10 p.m.</p>
+<p>Swedish Prime Minister Stefan Lofven is hailing Charlotte Kalla, who won the first gold medal of the Pyeongchang Olympics.</p>
+<p>Lofven wrote on Instagram "Sweden's first gold hero at the Olympic Games! Congratulations Kalla."</p>
+<p>Kalla won gold ahead of Norwegian cross-country skier Marit Bjoergen in the women's 15-kilometer skiathlon.</p>
+<p>___</p>
+<p>7:05 p.m.</p>
+<p>Sara Hjalmarsson scored 1:53 into the third period and Sweden held off Japan 2-1 in a thrilling game to open the preliminary round for women's ice hockey at the Pyeongchang Games.</p>
+<p>This was only Japan's third appearance in the Olympics for women's ice hockey, and they had to start off pool play against a country that took home silver in 2006 and bronze in 2002.</p>
+<p>Sweden took a 1-0 lead 2:21 into the game when Fanny Rask scored from a tough angle, squeezing the puck between Nana Fujimoto's head and the post.</p>
+<p>The Japanese tied it up with 3:08 left in the second period.</p>
+<p>The Swedes took the lead back thanks to a great takeaway by Erika Grahm who then passed the puck backward to Hjalmarsson in the slot for the go-ahead goal.</p>
+<p>___</p>
+<p>6:55 p.m.</p>
+<p>U.S. Vice President Mike Pence is not directly addressing news that North Korean dictator Kim Jong Un has invited South Korean President Moon Jae-in for a visit, as the two Koreas use the Olympics as an opportunity for renewing ties amid concerns over North Korea's nuclear capabilities.</p>
+<p>Pence spokeswoman Alyssa Farah says, "The vice president is grateful that President Moon reaffirmed his strong commitment to the global maximum pressure campaign and for his support for continued sanctions."</p>
+<p>Kim's sister, Kim Yo Jong, delivered the invitation to Moon on Saturday.</p>
+<p>Pence has meant to use his trip to the Olympics to caution the South against "falling for" the North's overtures, which in the past have been used as stall tactics to allow for continued development of its nuclear program.</p>
+<p>___</p>
+<p>More AP Olympic coverage: <a href="https://wintergames.ap.org">https://wintergames.ap.org</a></p>
+</block></p></div></div></div>                </div>
+            </div>
+            <div class="loadMore disabled">
+                <div class="fadeOver"></div>
+                <button>SEE FULL ARTICLE</button>
+            </div>
+            <div class="clearfix share-block">
+                
+<div class="ap-article-social clearfix">
+	<h2 class="block-title">Share</h2>
+	<div class="social-widgets clearfix">
+				<div class="social-fbook social-share">
+			<div class="_li">
+				<div class="pluginSkinLight pluginFontLucida">
+					<div>
+						<table class="_51mz" cellspacing="0" cellpadding="0">
+							<tbody>
+								<tr class="_51mx">
+									<td class="_51mw">
+										<div>
+											<div class="pluginCountBox">
+												<div>
+													<i class="pluginCountBoxIcon" style="display: none"></i>
+													<span>
+														<span class="pluginCountTextConnected">1</span>
+														<span class="pluginCountTextDisconnected">0</span>
+													</span>
+												</div>
+											</div>
+											<div class="pluginCountBoxNub">
+												<s></s>
+												<i></i>
+											</div>
+										</div>
+									</td>
+								</tr>
+								<tr class="_51mx">
+									<td class="_51m- hCent _51mw">
+										<div>
+											<div class="pluginButton pluginButtonSmall pluginConnectButtonDisconnected" title="Share">
+												<div>
+													<div class="pluginButtonContainer" onclick="open_window()">
+														<i class="pluginButtonIcon img sp_plugin-button sx_plugin-button_favblue"></i>
+														<span class="pluginButtonLabel">Share</span>
+													</div>
+												</div>
+											</div>
+										</div>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+
+					</div>
+				</div>
+			</div>
+		</div>
+		
+				<div class="social-twitter social-share">
+		<a href="https://twitter.com/share" class="twitter-share-button" data-count="vertical">Tweet</a><script type="text/javascript" src="//platform.twitter.com/widgets.js"></script>
+		</div>
+		
+				<div class="social-linkedin social-share">
+		<script src="https://platform.linkedin.com/in.js" type="text/javascript"></script>
+		<script type="IN/Share" data-counter="top"></script>
+		</div>
+				<div class="social-gplus social-share">
+		<!-- Place this tag where you want the +1 button to render -->
+		<g:plusone size="tall"></g:plusone>
+		<!-- Place this render call where appropriate -->
+		<script type="text/javascript">
+		  (function() {
+		    var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+		    po.src = 'https://apis.google.com/js/plusone.js';
+		    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+		  })();
+		</script>
+		</div>
+				<div class="social-reddit social-share-wide">
+		<script type="text/javascript">reddit_newwindow='1'</script>
+		<script type="text/javascript" src="https://www.reddit.com/static/button/button1.js"></script>
+		</div>
+				<div class="social-tumblr social-share-wide">
+		<a href="https://www.tumblr.com/share" title="Share on Tumblr" style="display:inline-block; text-indent:-9999px; overflow:hidden; width:129px; height:20px; background:url('https://platform.tumblr.com/v1/share_3.png') top left no-repeat transparent;">Tumblr</a>
+		</div>
+	</div>
+</div>
+<script type="text/javascript">
+	function open_window(){
+
+		var location_url=window.location.protocol+"//"+window.location.host+window.location.pathname;
+
+		var first_paragraph = false;
+
+		jQuery('div.field-item').find('p').each(function(index, elem){
+			if(jQuery(elem).text().length > 0){
+
+				if(first_paragraph == false && jQuery(elem).text().length > 0)
+					first_paragraph = jQuery(elem).text();
+			}
+		});
+
+		var data={
+			url:encodeURIComponent(location_url),
+			title:encodeURIComponent(jQuery('h1.entry-title').text()),
+			excerpt:encodeURIComponent(first_paragraph)};
+
+			var timestamp=new Date().getTime();
+			var url_no_cache=data.url+encodeURIComponent('?nc='+timestamp);
+
+			window.open('https://www.facebook.com/sharer/sharer.php?m2w=1&s=100&p[url]='+url_no_cache+'&p[title]='+data.title+'&p[summary]='+data.excerpt,this.target,'width=600,height=400,resizable=1,scrollbars=1');
+			return false;
+		}</script>	
+		<script type="text/javascript">
+
+		jQuery(document).ready(function(){
+
+			jQuery.ajax({
+				type:"GET",
+				url:"https://graph.facebook.com/",
+				data:{id: window.location.href},
+				success: function(response){
+
+					var qty = 0;
+
+					if(response.shares == undefined) {
+
+						response.shares = 0;
+					}
+
+					qty = response.shares;
+
+					if(qty>999999) {
+
+						qty=Math.round(qty/100000)/10+'M';
+					}
+
+					if(qty>999) {
+
+						qty=Math.round(qty/100)/10+'k';
+					}
+
+					jQuery('.pluginCountTextDisconnected')
+						.hide('fast',function(){
+							jQuery('.pluginCountTextConnected').text(qty).show();
+						});
+					}
+			})
+		});
+		</script>
+            </div>
+        </div>
+    </div>
+</article>    </div>
+  </div>
+
+</div><div class="block block-ap-wintergames-taboola block-taboola-article-thumb block-ap-wintergames-taboola-taboola-article-thumb odd block-without-title" id="block-ap-wintergames-taboola-taboola-article-thumb">
+  <div class="block-inner clearfix">
+                        
+    <div class="content clearfix"  >
+    <div id="taboola-below-article-thumbnails"></div>
+<script type="text/javascript">
+  window._taboola = window._taboola || [];
+  _taboola.push({
+    mode: 'thumbnails-a',
+    container: 'taboola-below-article-thumbnails',
+    placement: 'Below Article Thumbnails',
+    target_type: 'mix'
+  });
+</script>    </div>
+  </div>
+
+</div>      </div>
+</div><aside class="grid-4 region region-sidebar-first" id="region-sidebar-first">
+  <div class="region-inner region-sidebar-first-inner">
+    <div class="block block-ap-wintergames-taboola block-taboola-article-rightrail-thumb block-ap-wintergames-taboola-taboola-article-rightrail-thumb odd block-without-title" id="block-ap-wintergames-taboola-taboola-article-rightrail-thumb">
+  <div class="block-inner clearfix">
+                        
+    <div class="content clearfix"  >
+    <div id="taboola-right-rail-thumbnails"></div>
+<script type="text/javascript">
+  window._taboola = window._taboola || [];
+  _taboola.push({
+    mode: 'thumbnails-b',
+    container: 'taboola-right-rail-thumbnails',
+    placement: 'Right Rail Thumbnails',
+    target_type: 'mix'
+  });
+</script>    </div>
+  </div>
+
+</div><section class="block block-boxes block-ap-recent-articles block-boxes-curated block-sidebar-curated block-boxes-sidebar-curated even" id="block-boxes-sidebar-curated">
+  <div class="block-inner clearfix">
+                      <h2 class="block-title">Inside the Games</h2>
+            
+    <div class="content clearfix"   data-vr-zone='Inside the Games'>
+    <div id='boxes-box-sidebar_curated' class='boxes-box'><div class="boxes-box-content"><div class="curated-box-colandrows clearfix"><div class="curated-col1 clearfix">
+<article data-itemid="4a0a25e4eda948bf9a9f4932c1560dbe" class="node node-ap-article hnews hentry item node-published node-not-promoted node-not-sticky author-winteradmin odd clearfix node-ap-display-position-1 node-ap-display-position-1" id="node-ap-article-214281">
+	<div class="article-list-node-content clearfix">
+		<div class="field field-name-field-ap-photo-ref field-type-ap-photo-ref field-label-hidden"><div class="field-items"><div class="field-item even"><div class="field-name-field-thumbnail"><a href="/article/latest-switzerlands-hoefflin-wins-womens-slopestyle"><img src="https://mapi.associatedpress.com/v1/items/84982ea173ab43cebab35fd6907ed62b/preview/preview.jpg?s=380x" alt="Pyeongchang Olympics Freestyle Skiing Women" title="Pyeongchang Olympics Freestyle Skiing Women" /></a></div></div></div></div>		<div class="article-list-header">
+						<h4 class="entry-title title node-title title" rel="bookmark"><a href="/article/latest-switzerlands-hoefflin-wins-womens-slopestyle">The Latest: Switzerland&#039;s Hoefflin wins women&#039;s slopestyle</a></h4>
+					</div>
+
+		<div class="article-list-body">
+			<div  class="hnews-hidden"><span  class="dateline">PYEONGCHANG, South Korea</span><a  rel="item-license" id="license-343afce4adf22fa70116617d82c75d41" href="#license-343afce4adf22fa70116617d82c75d41">Copyright 2018 The Associated Press. All rights reserved. This material may not be published, broadcast, rewritten or redistributed.</a><div  class="geo hnews-geo"><span  class="latitude">37.3682</span><span  class="longitude">128.395</span></div></div><p>PYEONGCHANG, South Korea (AP) &#x2014; The Latest on the Pyeongchang Olympics (all times local):</p><p>2:45 p.m.</p><p>Switzerland's Sarah Hoefflin is the Olympic champion in women's slopestyle skiing.</p><p>The 27-year-old put together an electric final run down the demanding course at Phoenix Snow Park on Saturday, posting a score of 91.20 to edge teammate Mathilde Gremaud for gold. Gremaud scored 88.00 on the first of her three runs in the finals but couldn't top Hoefflin.</p>		</div>
+
+		<footer>
+			<div class="article-data">
+				<span  class="updated" title="2018-02-17T00:43:23-05:00">4 minutes ago </span>			</div>
+		</footer>
+	</div>
+</article>
+<article data-itemid="1544c0b3054448278744e96e98a51832" class="node node-ap-article hnews hentry item node-published node-not-promoted node-not-sticky author-winteradmin even clearfix node-ap-display-position-2 node-ap-display-position-2" id="node-ap-article-214495">
+	<div class="article-list-node-content clearfix">
+				<div class="article-list-header">
+						<h4 class="entry-title title node-title title" rel="bookmark"><a href="/article/what-watch-pyeongchang-olympics-day-8">What to watch from the Pyeongchang Olympics on Day 8</a></h4>
+					</div>
+
+		<div class="article-list-body">
+			<div  class="hnews-hidden"><span  class="dateline">PYEONGCHANG, South Korea</span><a  rel="item-license" id="license-1e4631f8f773c2848723d552d901c444" href="#license-1e4631f8f773c2848723d552d901c444">Copyright 2018 The Associated Press. All rights reserved. This material may not be published, broadcast, rewritten or redistributed.</a><div  class="geo hnews-geo"><span  class="latitude">37.3682</span><span  class="longitude">128.395</span></div></div>		</div>
+
+		<footer>
+			<div class="article-data">
+				<span  class="updated" title="2018-02-16T22:02:42-05:00">3 hours ago </span>			</div>
+		</footer>
+	</div>
+</article></div><div class="curated-row1 clearfix">
+<article data-itemid="d63e11d7746d4893bdaf3389601b7e20" class="node node-ap-article hnews hentry item node-published node-not-promoted node-not-sticky author-winteradmin odd clearfix node-ap-display-position-3 node-ap-display-position-3" id="node-ap-article-214812">
+	<div class="article-list-node-content clearfix">
+		<div class="field field-name-field-ap-photo-ref field-type-ap-photo-ref field-label-hidden"><div class="field-items"><div class="field-item even"><div class="field-name-field-thumbnail"><a href="/article/ledecka-wins-surprise-olympic-super-g-title-late-charge"><img src="https://mapi.associatedpress.com/v1/items/009466c5cc984b8493267cb67c62265e/preview/preview.jpg?s=300x" alt="Pyeongchang Olympics Alpine Skiing" title="Pyeongchang Olympics Alpine Skiing" /></a></div></div></div></div>		<div class="article-list-header">
+						<h4 class="entry-title title node-title title" rel="bookmark"><a href="/article/ledecka-wins-surprise-olympic-super-g-title-late-charge">Ledecka wins surprise Olympic super-G title with late charge</a></h4>
+					</div>
+
+		<div class="article-list-body">
+			<div  class="hnews-hidden"><span  class="dateline">JEONGSEON, South Korea</span><a  rel="item-license" id="license-0b17f3712fb86fe108f8b67b363a3797" href="#license-0b17f3712fb86fe108f8b67b363a3797">Copyright 2018 The Associated Press. All rights reserved. This material may not be published, broadcast, rewritten or redistributed.</a><div  class="geo hnews-geo"><span  class="latitude">37.3891</span><span  class="longitude">128.73</span></div></div><p>JEONGSEON, South Korea (AP) &#x2014; Ester Ledecka of the Czech Republic made a stunning run from back in the pack to take the Olympic super-G title on Saturday, with a mistake costing Lindsey Vonn a spot on the podium.</p>		</div>
+
+		<footer>
+			<div class="article-data">
+				<span  class="updated" title="2018-02-16T23:51:30-05:00">56 minutes ago </span>			</div>
+		</footer>
+	</div>
+</article>
+<article data-itemid="2f2ef6d1c5f44422aaa7297298f46128" class="node node-ap-article hnews hentry item node-published node-not-promoted node-not-sticky author-winteradmin even clearfix node-ap-display-position-4 node-ap-display-position-4" id="node-ap-article-214609">
+	<div class="article-list-node-content clearfix">
+		<div class="field field-name-field-ap-photo-ref field-type-ap-photo-ref field-label-hidden"><div class="field-items"><div class="field-item even"><div class="field-name-field-thumbnail"><a href="/article/us-skater-nathan-chen-dazzles-after-poor-short-program"><img src="https://mapi.associatedpress.com/v1/items/910a194ba15141adb906cb20f277f80c/preview/preview.jpg?s=220x" alt="Pyeongchang Olympics Figure Skating Men" title="Pyeongchang Olympics Figure Skating Men" /></a></div></div></div></div>		<div class="article-list-header">
+						<h4 class="entry-title title node-title title" rel="bookmark"><a href="/article/us-skater-nathan-chen-dazzles-after-poor-short-program">US skater Nathan Chen dazzles after poor short program</a></h4>
+					</div>
+
+		<div class="article-list-body">
+			<div  class="hnews-hidden"><span  class="dateline">GANGNEUNG, South Korea</span><a  rel="item-license" id="license-947648c9faf08223d11b56acc808c62f" href="#license-947648c9faf08223d11b56acc808c62f">Copyright 2018 The Associated Press. All rights reserved. This material may not be published, broadcast, rewritten or redistributed.</a><div  class="geo hnews-geo"><span  class="latitude">37.7556</span><span  class="longitude">128.896</span></div></div>		</div>
+
+		<footer>
+			<div class="article-data">
+				<span  class="updated" title="2018-02-17T00:15:28-05:00">32 minutes ago </span>			</div>
+		</footer>
+	</div>
+</article></div><div class="curated-lower"><div class="curated-col2 clearfix">
+<article data-itemid="caacfdfd9da84f79b3fc70b6d9239706" class="node node-ap-article hnews hentry item node-published node-not-promoted node-not-sticky author-winteradmin odd clearfix node-ap-display-position-5 last-item node-ap-display-position-5 last-item" id="node-ap-article-214276">
+	<div class="article-list-node-content clearfix">
+				<div class="article-list-header">
+						<h4 class="entry-title title node-title title" rel="bookmark"><a href="/article/humble-kind-and-fair-can-curling-cure-our-troubled-world">Humble, kind and fair: Can curling cure our troubled world?</a></h4>
+					</div>
+
+		<div class="article-list-body">
+			<div  class="hnews-hidden"><span  class="dateline">GANGNEUNG, South Korea</span><a  rel="item-license" id="license-452d4b21e295cb674e84c2bb05a812a6" href="#license-452d4b21e295cb674e84c2bb05a812a6">Copyright 2018 The Associated Press. All rights reserved. This material may not be published, broadcast, rewritten or redistributed.</a><div  class="geo hnews-geo"><span  class="latitude">37.7556</span><span  class="longitude">128.896</span></div></div>		</div>
+
+		<footer>
+			<div class="article-data">
+				<span  class="updated" title="2018-02-16T15:36:05-05:00">Yesterday</span>			</div>
+		</footer>
+	</div>
+</article><div class="block block-dfp block-mediumrectangle block-dfp-mediumrectangle odd block-without-title" id="block-dfp-mediumrectangle">
+  <div class="block-inner clearfix">
+                        
+    <div class="content clearfix"  >
+    <div id="dfp-ad-mediumrectangle-wrapper" class="dfp-tag-wrapper"><div class="slug">Advertisement</div>
+<div  id="dfp-ad-mediumrectangle" class="dfp-tag-wrapper">
+    <script type="text/javascript">
+    googletag.cmd.push(function() {
+      googletag.display("dfp-ad-mediumrectangle");
+    });
+  </script>
+</div>
+</div>    </div>
+  </div>
+
+</div></div><div class="curated-col3 clearfix"></div></div>  </div></div></div>    </div>
+  </div>
+
+</section><div class="block block-dfp block-mediumrectangle2 block-dfp-mediumrectangle2 odd block-without-title" id="block-dfp-mediumrectangle2">
+  <div class="block-inner clearfix">
+                        
+    <div class="content clearfix"  >
+    <div id="dfp-ad-mediumrectangle2-wrapper" class="dfp-tag-wrapper"><div class="slug">Advertisement</div>
+<div  id="dfp-ad-mediumrectangle2" class="dfp-tag-wrapper">
+    <script type="text/javascript">
+    googletag.cmd.push(function() {
+      googletag.display("dfp-ad-mediumrectangle2");
+    });
+  </script>
+</div>
+</div>    </div>
+  </div>
+
+</div><section class="block block-ap-wintergames-medals block-medals-widget block-ap-wintergames-medals-medals-widget even" id="block-ap-wintergames-medals-medals-widget">
+  <div class="block-inner clearfix">
+                      <h2 class="block-title">Medal Count</h2>
+            
+    <div class="content clearfix"   data-vr-zone='Medal Count'>
+    <p class="medal-updated-date">Last Updated: 17 minutes ago </p><div class="item-list"><ul class="medals-list medals-table-multiple"><li class="first"><table class="medals-table-header">
+ <tr><th class="rank"><span>#</span></th><th class="countryname">Team</th><th class="gold medal">G</th><th class="silver medal">S</th><th class="bronze medal">B</th><th class="total">Total</th></tr>
+</table>
+</li><li><table class="medals-table">
+ <tr><th class="rank"><span>1</span></th><th class="germany countryname"><span class="flag-icon flag-icon-germany"></span><a href="/olympic-team/germany-olympic-team" class="medal-icon-lnk-name">Germany</a></th><th class="medals gold">9</th><th class="medals silver">2</th><th class="medals bronze">4</th><th class="total">15</th></tr>
+</table>
+</li><li><table class="medals-table">
+ <tr><th class="rank"><span>2</span></th><th class="norway countryname"><span class="flag-icon flag-icon-norway"></span><a href="/olympic-team/norway-olympic-team" class="medal-icon-lnk-name">Norway</a></th><th class="medals gold">6</th><th class="medals silver">8</th><th class="medals bronze">5</th><th class="total">19</th></tr>
+</table>
+</li><li><table class="medals-table">
+ <tr><th class="rank"><span>3</span></th><th class="netherlands countryname"><span class="flag-icon flag-icon-netherlands"></span><a href="/olympic-team/netherlands-olympic-team" class="medal-icon-lnk-name">Netherlands</a></th><th class="medals gold">6</th><th class="medals silver">5</th><th class="medals bronze">2</th><th class="total">13</th></tr>
+</table>
+</li><li><table class="medals-table">
+ <tr><th class="rank"><span>4</span></th><th class="unitedstates countryname"><span class="flag-icon flag-icon-unitedstates"></span><a href="/olympic-team/united-states-olympic-team" class="medal-icon-lnk-name">United States</a></th><th class="medals gold">5</th><th class="medals silver">1</th><th class="medals bronze">2</th><th class="total">8</th></tr>
+</table>
+</li><li><table class="medals-table">
+ <tr><th class="rank"><span>5</span></th><th class="canada countryname"><span class="flag-icon flag-icon-canada"></span><a href="/olympic-team/canada-olympic-team" class="medal-icon-lnk-name">Canada</a></th><th class="medals gold">4</th><th class="medals silver">5</th><th class="medals bronze">4</th><th class="total">13</th></tr>
+</table>
+</li><li><table class="medals-table">
+ <tr><th class="rank"><span>6</span></th><th class="sweden countryname"><span class="flag-icon flag-icon-sweden"></span><a href="/olympic-team/sweden-olympic-team" class="medal-icon-lnk-name">Sweden</a></th><th class="medals gold">4</th><th class="medals silver">2</th><th class="medals bronze">0</th><th class="total">6</th></tr>
+</table>
+</li><li><table class="medals-table">
+ <tr><th class="rank"><span>7</span></th><th class="austria countryname"><span class="flag-icon flag-icon-austria"></span><a href="/olympic-team/austria-olympic-team" class="medal-icon-lnk-name">Austria</a></th><th class="medals gold">3</th><th class="medals silver">2</th><th class="medals bronze">4</th><th class="total">9</th></tr>
+</table>
+</li><li><table class="medals-table">
+ <tr><th class="rank"><span>8</span></th><th class="france countryname"><span class="flag-icon flag-icon-france"></span><a href="/olympic-team/france-olympic-team" class="medal-icon-lnk-name">France</a></th><th class="medals gold">3</th><th class="medals silver">2</th><th class="medals bronze">2</th><th class="total">7</th></tr>
+</table>
+</li><li><table class="medals-table">
+ <tr><th class="rank"><span>9</span></th><th class="switzerland countryname"><span class="flag-icon flag-icon-switzerland"></span><a href="/olympic-team/switzerland-olympic-team" class="medal-icon-lnk-name">Switzerland</a></th><th class="medals gold">2</th><th class="medals silver">4</th><th class="medals bronze">1</th><th class="total">7</th></tr>
+</table>
+</li><li class="last"><table class="medals-table">
+ <tr><th class="rank"><span>10</span></th><th class="italy countryname"><span class="flag-icon flag-icon-italy"></span><a href="/olympic-team/italy-olympic-team" class="medal-icon-lnk-name">Italy</a></th><th class="medals gold">2</th><th class="medals silver">1</th><th class="medals bronze">3</th><th class="total">6</th></tr>
+</table>
+</li></ul></div><div class="medals-view-more"><a href="/medals">Full Medal Standing</a></div>    </div>
+  </div>
+
+</section>  </div>
+</aside>  </div>
+</div></section>    
+  
+      <footer id="section-footer" class="section section-footer">
+  <div id="zone-footer-wrapper" class="zone-wrapper zone-footer-wrapper clearfix">  
+  <div id="zone-footer" class="zone zone-footer clearfix container-12">
+    <div class="grid-12 region region-footer-second" id="region-footer-second">
+  <div class="region-inner region-footer-second-inner">
+    <div id="copyright">AP Sports <span class="pipe">|</span> &#169; 2018 Associated Press</div><ul class="menu"><li class="leaf"><a href="/privacy-policy" title="Privacy Policy">Privacy Policy</a></li>
+<li class="leaf"><a href="/terms-use" title="Terms of Use">Terms of Use</a></li>
+<li class="leaf"><a href="http://www.apimages.com" title="AP Images">AP Images</a></li>
+<li class="last leaf"><a href="http://www.ap.org" title="AP">ap.org</a></li>
+</ul>  </div>
+</div>  </div>
+</div></footer>  </div><div class="page-frame-wrapper">      
+  <div class="region region-page-bottom" id="region-page-bottom">
+  <div class="region-inner region-page-bottom-inner">
+    <noscript><img src="http://b.scorecardresearch.com/p?c1=2&c2=11304492&cv=2.0&cj=1" /></noscript>  </div>
+</div>  
+      
+<script type="text/javascript" src="https://platform.tumblr.com/v1/share.js"></script>
+<script type="text/javascript">
+  window._taboola = window._taboola || [];
+  _taboola.push({flush: true});
+</script> 
+
+    </div>
+  </div>
+</body>
+</html>

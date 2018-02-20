@@ -1,0 +1,1665 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en" dir="ltr"
+		xmlns:og="http://ogp.me/ns#"
+		xmlns:article="http://ogp.me/ns/article#"
+		xmlns:book="http://ogp.me/ns/book#"
+		xmlns:profile="http://ogp.me/ns/profile#"
+		xmlns:video="http://ogp.me/ns/video#"
+		xmlns:product="http://ogp.me/ns/product#">
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,n,t){function r(t){if(!n[t]){var o=n[t]={exports:{}};e[t][0].call(o.exports,function(n){var o=e[t][1][n];return r(o||n)},o,o.exports)}return n[t].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<t.length;o++)r(t[o]);return r}({1:[function(e,n,t){function r(){}function o(e,n,t){return function(){return i(e,[c.now()].concat(u(arguments)),n?null:this,t),n?void 0:this}}var i=e("handle"),a=e(2),u=e(3),f=e("ee").get("tracer"),c=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],d="api-",l=d+"ixn-";a(p,function(e,n){s[n]=o(d+n,!0,"api")}),s.addPageAction=o(d+"addPageAction",!0),s.setCurrentRouteName=o(d+"routeName",!0),n.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,n){var t={},r=this,o="function"==typeof n;return i(l+"tracer",[c.now(),e,t],r),function(){if(f.emit((o?"":"no-")+"fn-start",[c.now(),r,o],t),o)try{return n.apply(this,arguments)}finally{f.emit("fn-end",[c.now()],t)}}}};a("setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,n){m[n]=o(l+n)}),newrelic.noticeError=function(e){"string"==typeof e&&(e=new Error(e)),i("err",[e,c.now()])}},{}],2:[function(e,n,t){function r(e,n){var t=[],r="",i=0;for(r in e)o.call(e,r)&&(t[i]=n(r,e[r]),i+=1);return t}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],3:[function(e,n,t){function r(e,n,t){n||(n=0),"undefined"==typeof t&&(t=e?e.length:0);for(var r=-1,o=t-n||0,i=Array(o<0?0:o);++r<o;)i[r]=e[n+r];return i}n.exports=r},{}],4:[function(e,n,t){n.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,n,t){function r(){}function o(e){function n(e){return e&&e instanceof r?e:e?f(e,u,i):i()}function t(t,r,o,i){if(!d.aborted||i){e&&e(t,r,o);for(var a=n(o),u=m(t),f=u.length,c=0;c<f;c++)u[c].apply(a,r);var p=s[y[t]];return p&&p.push([b,t,r,a]),a}}function l(e,n){v[e]=m(e).concat(n)}function m(e){return v[e]||[]}function w(e){return p[e]=p[e]||o(t)}function g(e,n){c(e,function(e,t){n=n||"feature",y[t]=n,n in s||(s[n]=[])})}var v={},y={},b={on:l,emit:t,get:w,listeners:m,context:n,buffer:g,abort:a,aborted:!1};return b}function i(){return new r}function a(){(s.api||s.feature)&&(d.aborted=!0,s=d.backlog={})}var u="nr@context",f=e("gos"),c=e(2),s={},p={},d=n.exports=o();d.backlog=s},{}],gos:[function(e,n,t){function r(e,n,t){if(o.call(e,n))return e[n];var r=t();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,n,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return e[n]=r,r}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],handle:[function(e,n,t){function r(e,n,t,r){o.buffer([e],r),o.emit(e,n,t)}var o=e("ee").get("handle");n.exports=r,r.ee=o},{}],id:[function(e,n,t){function r(e){var n=typeof e;return!e||"object"!==n&&"function"!==n?-1:e===window?0:a(e,i,function(){return o++})}var o=1,i="nr@id",a=e("gos");n.exports=r},{}],loader:[function(e,n,t){function r(){if(!x++){var e=h.info=NREUM.info,n=d.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&n))return s.abort();c(y,function(n,t){e[n]||(e[n]=t)}),f("mark",["onload",a()+h.offset],null,"api");var t=d.createElement("script");t.src="https://"+e.agent,n.parentNode.insertBefore(t,n)}}function o(){"complete"===d.readyState&&i()}function i(){f("mark",["domContent",a()+h.offset],null,"api")}function a(){return E.exists&&performance.now?Math.round(performance.now()):(u=Math.max((new Date).getTime(),u))-h.offset}var u=(new Date).getTime(),f=e("handle"),c=e(2),s=e("ee"),p=window,d=p.document,l="addEventListener",m="attachEvent",w=p.XMLHttpRequest,g=w&&w.prototype;NREUM.o={ST:setTimeout,SI:p.setImmediate,CT:clearTimeout,XHR:w,REQ:p.Request,EV:p.Event,PR:p.Promise,MO:p.MutationObserver};var v=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1044.min.js"},b=w&&g&&g[l]&&!/CriOS/.test(navigator.userAgent),h=n.exports={offset:u,now:a,origin:v,features:{},xhrWrappable:b};e(1),d[l]?(d[l]("DOMContentLoaded",i,!1),p[l]("load",r,!1)):(d[m]("onreadystatechange",o),p[m]("onload",r)),f("mark",["firstbyte",u],null,"api");var x=0,E=e(4)},{}]},{},["loader"]);</script>
+<link rel="shortcut icon" href="http://www.nbcolympics.com/profiles/olympics/themes/nbcolympics/favicon.ico" type="image/vnd.microsoft.icon" />
+<meta name="generator" content="Drupal 7 (http://drupal.org)" />
+<meta name="google-site-verification" content="YMOQcHa3IccGjoo5z-QW1NfOxazTM_qyhCBtdouryCc" />
+<meta name="MobileOptimized" content="width">
+<meta name="HandheldFriendly" content="true">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta http-equiv="cleartype" content="on">
+<title>Olympics 2018 | NBC Olympics</title>
+<script>
+	if (document.domain.indexOf('nbcolympics.com') != -1) {
+		document.domain="nbcolympics.com";
+	}
+</script>
+<link type="text/css" rel="stylesheet" href="http://www.nbcolympics.com/sites/default/files/wrapper/0.css" media="all" />
+<link type="text/css" rel="stylesheet" href="http://www.nbcolympics.com/sites/default/files/wrapper/1.css" media="all" />
+<link type="text/css" rel="stylesheet" href="http://www.nbcolympics.com/sites/default/files/wrapper/2.css" media="all" />
+<link type="text/css" rel="stylesheet" href="http://www.nbcolympics.com/sites/default/files/wrapper/3.css" media="all" />
+<script type="text/javascript" src="http://www.nbcolympics.com/sites/default/files/wrapper/0.js"></script>
+<script type="text/javascript">
+	<!--//--><![CDATA[//><!--
+	jQuery.migrateMute=true;jQuery.migrateTrace=false;
+	//--><!]]>
+</script>
+<script type="text/javascript" src="http://www.nbcolympics.com/sites/default/files/wrapper/1.js"></script>
+<script type="text/javascript">
+	<!--//--><![CDATA[//><!--
+	var mpscall = {"site":"olympics-web","path":"\/wrapper","title":"Olympics 2018","is_content":"0","type":"other"}
+	var mpsopts = {"host":"mps.nbcuni.com","updatecorrelator":"1"}
+	var mps=mps||{};mps._ext=mps._ext||{};mps._adsheld=[];mps._queue=mps._queue||{};mps._queue.gptloaded=mps._queue.gptloaded||[];mps.__timer=Date.now();mps.__intcode="v2"; "function"!=typeof mps.getAd&&(mps.getAd=function(a){if("string"!=typeof a)return!1;var b="mps-getad-"+a.replace(/\W/g,"");mps._ext&&mps._ext.loaded||(mps._queue.gptloaded.push(function(){"function"==typeof mps._gptfirst&&mps._gptfirst();mps.insertAd("#"+b,a)}),mps._adsheld.push(a));return'<div id="'+b+'" class="mps-wrapper" data-mps-fill-slot="'+a+'"></div>'});(function(){head=document.head||document.getElementsByTagName("head")[0];mpsload=document.createElement("script");mpsload.src="//"+mpsopts.host+"/fetch/ext/load-"+mpscall.site+".js?nowrite=2";mpsload.id="mps-load";head.insertBefore(mpsload,head.firstChild)})();
+	//--><!]]>
+</script>
+<script type="text/javascript" src="http://www.nbcolympics.com/sites/default/files/wrapper/2.js"></script>
+<script type="text/javascript" src="http://www.nbcolympics.com/sites/default/files/wrapper/3.js"></script>
+<script type="text/javascript" src="http://www.nbcolympics.com/sites/default/files/wrapper/4.js"></script>
+<script type="text/javascript">
+	<!--//--><![CDATA[//><!--
+	var s_account = window.location.hostname.match(/^stream\./) ? "nbcusportsgeneric,nbcusportsgroupglobal" : "nbcusportsgenericdev";
+	//var s_account = 'nbcuolympics2018mtkg';
+	//--><!]]>
+</script>
+<script type="text/javascript">
+	<!--//--><![CDATA[//><!--
+	var nbcs = {};
+	//--><!]]>
+</script>
+<script type="text/javascript" src="http://www.nbcolympics.com/sites/default/files/wrapper/5.js"></script>
+<script type="text/javascript">
+	<!--//--><![CDATA[//><!--
+	jQuery.extend(Drupal.settings, {"basePath":"\/","pathPrefix":"","ajaxPageState":{"theme":"nbcolympics","theme_token":"eMno5ovaetVEmIolMl4Jy5oruwk7x1AJgF6hF_3ogH8","js":{"profiles\/olympics\/modules\/contrib\/jquery_update\/replace\/jquery\/1.11\/jquery.min.js":1,"0":1,"profiles\/olympics\/modules\/contrib\/jquery_update\/replace\/jquery-migrate\/1.2.1\/jquery-migrate.min.js":1,"misc\/jquery.once.js":1,"misc\/drupal.js":1,"1":1,"profiles\/olympics\/modules\/contrib\/jquery_update\/replace\/ui\/external\/jquery.cookie.js":1,"profiles\/olympics\/themes\/nbcolympics\/js\/moment.min.js":1,"profiles\/olympics\/modules\/custom\/olympics_medals\/js\/velocity.min.js":1,"profiles\/olympics\/themes\/nbcolympics\/js\/user_geolocation.js":1,"profiles\/olympics\/libraries\/angularjs\/angular.min.js":1,"2":1,"3":1,"profiles\/olympics\/libraries\/sidr\/dist\/jquery.sidr.js":1,"profiles\/olympics\/themes\/nbcolympics\/js\/d_global.js":1,"profiles\/olympics\/modules\/custom\/olympics_core\/js\/app.js":1,"profiles\/olympics\/modules\/custom\/olympics_core\/js\/angular-utils\/dirPagination.js":1,"profiles\/olympics\/modules\/custom\/olympics_core\/js\/angular-utils\/angular-szn-autocomplete.js":1,"profiles\/olympics\/modules\/custom\/olympics_native_apps\/js\/olympics_native_apps.js":1,"4":1,"profiles\/olympics\/modules\/custom\/olympics_breaking_news\/js\/olympics_breaking_news.js":1,"profiles\/olympics\/modules\/custom\/olympics_analytics\/js\/olympic_analytics_behaviours.js":1,"profiles\/olympics\/libraries\/popupoverlay\/jquery.popupoverlay.js":1,"profiles\/olympics\/modules\/custom\/olympics_main_menu\/js\/olympics_main_menu.js":1,"profiles\/olympics\/modules\/custom\/olympics_postup\/js\/remind_me.js":1,"profiles\/olympics\/modules\/custom\/olympics_medals\/js\/medals.js":1,"profiles\/olympics\/modules\/custom\/olympics_main_menu\/js\/search-autocomplete-ang.js":1,"profiles\/olympics\/themes\/nbcolympics\/js\/d_search-autocomplete.js":1,"profiles\/olympics\/modules\/custom\/olympics_main_menu\/js\/olympics-dynamic-menu.js":1,"5":1,"6":1,"7":1,"profiles\/olympics\/modules\/contrib\/jquery_update\/replace\/ui\/ui\/minified\/jquery.ui.core.min.js":1,"profiles\/olympics\/modules\/contrib\/jquery_update\/replace\/ui\/ui\/minified\/jquery.ui.widget.min.js":1,"profiles\/olympics\/modules\/contrib\/jquery_update\/replace\/ui\/ui\/minified\/jquery.ui.button.min.js":1,"profiles\/olympics\/modules\/contrib\/jquery_update\/replace\/ui\/ui\/minified\/jquery.ui.mouse.min.js":1,"profiles\/olympics\/modules\/contrib\/jquery_update\/replace\/ui\/ui\/minified\/jquery.ui.draggable.min.js":1,"profiles\/olympics\/modules\/contrib\/jquery_update\/replace\/ui\/ui\/minified\/jquery.ui.position.min.js":1,"profiles\/olympics\/modules\/contrib\/jquery_update\/replace\/ui\/ui\/minified\/jquery.ui.resizable.min.js":1,"profiles\/olympics\/modules\/contrib\/jquery_update\/replace\/ui\/ui\/minified\/jquery.ui.dialog.min.js":1,"8":1,"9":1,"misc\/jquery.cookie.js":1},"css":{"modules\/system\/system.base.css":1,"modules\/system\/system.menus.css":1,"modules\/system\/system.messages.css":1,"misc\/ui\/jquery.ui.core.css":1,"misc\/ui\/jquery.ui.theme.css":1,"misc\/ui\/jquery.ui.button.css":1,"misc\/ui\/jquery.ui.resizable.css":1,"misc\/ui\/jquery.ui.dialog.css":1,"profiles\/olympics\/modules\/contrib\/date\/date_api\/date.css":1,"profiles\/olympics\/modules\/contrib\/date\/date_popup\/themes\/datepicker.1.7.css":1,"profiles\/olympics\/modules\/contrib\/entityreference_live_preview\/entityreference_live_preview.css":1,"modules\/field\/theme\/field.css":1,"modules\/node\/node.css":1,"modules\/user\/user.css":1,"profiles\/olympics\/modules\/contrib\/views\/css\/views.css":1,"profiles\/olympics\/modules\/contrib\/ckeditor\/css\/ckeditor.css":1,"sites\/default\/files\/compass\/nbcolympics.css":1,"profiles\/olympics\/themes\/nbcolympics\/css\/nbc-olympics-icons.css":1,"profiles\/olympics\/modules\/contrib\/ctools\/css\/ctools.css":1,"profiles\/olympics\/modules\/custom\/olympics_native_apps\/css\/olympics_native_apps.css":1,"profiles\/olympics\/modules\/contrib\/node_embed\/plugins\/node_embed\/node_embed.css":1}},"olympicsNativeApps":{"display":"liveExtra","url":{"highlights":{"ios":"https:\/\/itunes.apple.com\/us\/app\/nbc-sports-scores\/id1123078102?mt=8","android":"https:\/\/play.google.com\/store\/apps\/details?id=com.nbcsports.news\u0026hl=en"},"liveExtra":{"ios":"https:\/\/itunes.apple.com\/us\/app\/nbc-sports-live-extra\/id542511686?mt=8","android":"https:\/\/play.google.com\/store\/apps\/details?id=air.com.nbcuni.com.nbcsports.liveextra\u0026hl=en","windows":"https:\/\/www.microsoft.com\/en-us\/store\/apps\/nbc-sports-live-extra\/9wzdncrfjcl3"}},"images":{"liveExtra":"http:\/\/www.nbcolympics.com\/sites\/default\/files\/app_icons\/OLY-ICON.png","highlights":"\/profiles\/olympics\/modules\/custom\/olympics_native_apps\/images\/NBCSports_Scores.svg"}},"nbcolympics":{"timezone_cookie":"timezone","geolocation_cookie":"geolocation","geolocation_complete_event":"geolocation_complete","timestamp_localization_event":"timestamp_localization_completed","supported_timezones":{"et":"est","ct":"cst","mt":"mst","pt":"pst","mst":"phoenix","akt":"akst","hast":"hst","sst":"sst","ast":"ast","chst":"chst"},"nbc_geo_service_host":"http:\/\/geo.nbcsports.com","nbc_geo_service_callback":"geolocationService","prevent_page_scaling_for_tablets":false,"domains_exempt_from_page_scaling":[],"urls_exempt_from_page_scaling":[],"olympics_active_mode":"winter"},"userIsLoggedIn":0,"olympicsCore":{"angularTemplatesPath":"profiles\/olympics\/modules\/custom\/olympics_core\/angular-templates"},"olympicsBreakingNews":{"showContextual":false,"apiPath":"api\/v1\/breaking_news"},"olympicsMainMenu":{"sportExplorerApiPath":"http:\/\/www.nbcolympics.com\/api\/v1\/sport_explorer","angularTemplatesPath":"profiles\/olympics\/modules\/custom\/olympics_main_menu\/angular-templates"},"olympicsSearchAutocomplete":{"apiPath":"http:\/\/www.nbcolympics.com\/api\/v1\/search"},"olympicsDynamicMenu":{"service_path":"api\/v1\/dynamic_sports"},"olympicsBasePath":"http:\/\/www.nbcolympics.com","olympicsPostUp":{"defaultIframeSrc":"https:\/\/pub.s1.exacttarget.com\/t4mis54dl15?pid="},"password":{"strengthTitle":"Password compliance:"},"type":"setting"});
+	//--><!]]>
+</script>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge,requiresActiveX=true" />
+<title>NBC Primetime: Opening Ceremony (Standard)</title>
+<meta name="title" content="NBC Primetime: Opening Ceremony (Standard)" />
+
+<meta name="description" content="Coverage of the Opening Ceremony, celebrating the official start of the XXIII Olympic Winter Games in PyeongChang.">
+
+
+<meta property="og:title" content="NBC Primetime: Opening Ceremony (Standard)"/>
+
+
+<meta property="og:description" content="Coverage of the Opening Ceremony, celebrating the official start of the XXIII Olympic Winter Games in PyeongChang."/>
+
+
+<meta property="og:image" content="http://images.nbcolympics.com/www.nbcolympics.com/204030.jpg" />
+
+
+<link rel="icon" type="image/ico" href="http://api.nbcolympics.com/profiles/olympics/themes/nbcolympics/favicon.ico"/>
+<link rel="shortcut icon" type="image/ico" href="http://api.nbcolympics.com/profiles/olympics/themes/nbcolympics/favicon.ico" />
+
+<meta property="twitter:title" content="NBC Primetime: Opening Ceremony (Standard)"/>
+
+
+<meta property="twitter:description" content="Coverage of the Opening Ceremony, celebrating the official start of the XXIII Olympic Winter Games in PyeongChang."/>
+
+
+<meta name="twitter:image:src" content="http://images.nbcolympics.com/www.nbcolympics.com/204030.jpg">
+
+
+<meta name="twitter:card" content="summary_large_image"/>
+
+
+
+
+
+
+
+
+<script type="text/javascript">
+	Drupal.settings.olympicsNewsFeed = {angularTemplatesPath: 'assets/page/olympics/angular'};
+	window.globalFlashVars = {};
+	var olympicsDomain = 'http://www.nbcolympics.com';
+	window.isOlympics = true;
+	window.adTags = {
+		level1: 'olympics2018',
+		level2: 'liveextra',
+		level3: 'cer',
+		additionalTargeting: {"lang":"en"}
+	};
+
+	var matches = window.location.search.match(/\blang=(es|en)\b/);
+	if (matches) {
+		window.adTags.additionalTargeting.lang = matches[1];
+	}
+	window.globalFlashVars.lang = window.adTags.additionalTargeting.lang;
+	matches = window.location.search.match(/\bchrcontext=([^&]+)\b/)
+	if (matches) {
+		window.adTags.additionalTargeting.chrcontext = matches[1];
+		window.globalFlashVars.chrcontext = matches[1];
+	}
+
+	(function() {
+		if (!window.location.hostname.match(/^stream\./)) {
+			var adTagParams = {
+				ad_tag_1: 'level1',
+				ad_tag_2: 'level2',
+				ad_tag_3: 'level3'
+			}
+			for (var param in adTagParams) {
+				var matches = window.location.search.match(new RegExp('\\b' + param + '=([^&]+)'));
+				if (matches) {
+					adTags[adTagParams[param]] = matches[1];
+				}
+			}
+		}
+	})();
+</script>
+
+<link rel="stylesheet" type="text/css" href="/assets/page/layouts/olympics.css?v=1518730057354" />
+<script language="JavaScript" type="text/javascript" src="/assets/page/static-js/nbc.omni.js?v=1518730062018"></script>
+
+
+<!-- Start: GPT Async -->
+<script type="text/javascript">
+	var gptadslots=[];
+	var googletag = googletag || {};
+	googletag.cmd = googletag.cmd || [];
+	(function() {
+		var gads = document.createElement("script");
+		gads.async = true;
+		gads.type = "text/javascript";
+		var useSSL = "https:" == document.location.protocol;
+		gads.src = (useSSL ? "https:" : "http:") + "//www.googletagservices.com/tag/js/gpt.js";
+		var node =document.getElementsByTagName("script")[0];
+		node.parentNode.insertBefore(gads, node);
+	})();
+</script>
+<!-- End: GPT -->
+
+
+<script type="text/javascript">
+	window.adSlots = {};
+	googletag.cmd.push(function() {
+		var slot;
+		
+		var leaderboardMapping = googletag.sizeMapping().addSize([320, 320], [[300, 50],[320,50]]).addSize([1004, 200], [728, 90]).build(),
+			sideMapping = googletag.sizeMapping().addSize([320, 320], [[300, 50],[320,50]]).addSize([1004, 200], [300, 250]).build(),
+			sponsorMapping = googletag.sizeMapping().addSize([0, 0], []).addSize([1004, 200], [140, 40]).build();
+		
+
+		slot = '/2620/' + adTags.level1 + '/' + adTags.level2 + '/' + adTags.level3;
+
+		googletag.pubads().setCategoryExclusion('headerbid');
+
+		window.adSlots.gpt_ad1 = {
+			slot: googletag.defineSlot(slot, [1, 1], "div-gpt-ad-1").addService(googletag.pubads()).setCategoryExclusion(adTags.level2).setCategoryExclusion(adTags.level3),
+			id: 'div-gpt-ad-1'
+		};
+		
+		window.adSlots.gpt_ad728 = {
+			slot: googletag.defineSlot(slot,[728,90], "div-gpt-ad-2").defineSizeMapping(leaderboardMapping).addService(googletag.pubads()).setCategoryExclusion(adTags.level2).setCategoryExclusion(adTags.level3),
+			id: 'div-gpt-ad-2',
+			refreshViewable: true
+		};
+		
+		
+		
+		
+		
+		
+
+		for (var level in adTags.additionalTargeting) {
+			googletag.pubads().setTargeting(level, adTags.additionalTargeting[level]);
+		}
+
+		googletag.pubads().disableInitialLoad();
+		googletag.pubads().enableAsyncRendering();
+		googletag.pubads().collapseEmptyDivs();
+		googletag.enableServices();
+		
+		
+	});
+</script>
+
+<style type="text/css">
+	
+	
+	
+</style>
+</head>
+<body class="html not-front not-logged-in no-sidebars page-wrapper live-extra-video page-type-standard network-nbc"  ng-app="olympicsApp">
+
+
+	<script type="text/ng-template" id="static/html/templates/accessenablerui.html">
+	<div id="accessEnablerUI" style="display: none;">
+		<div id="contentAccessEnabler"></div>
+		<div id="contentAccessEnablerWrapper" class="loading">
+			<div class="page-dimmer"></div>
+			<div class="loading-msg">Please wait while we check your authentication...</div>
+			<div class="authorised-msg">Waiting for authentication data...</div>
+			<div class="get-flash">
+				You currently do not have the latest version of Adobe Flash Player installed.<br />
+				You will need Flash Player 19.0.0.245 or higher in order to view this site.<br /><br />
+				<a href="http://get.adobe.com/flashplayer" target="_blank">Get the latest version of Flash Player</a>
+			</div>
+			<div id="contentAccessEnablerContent">
+				<div id="video-player">
+					<h2 class="accessenabler-title"><span class="live-extra-logo">NBC Sports</span></h2>
+					<div class="accessenabler-subtitle">Access to live streams and full-event replays requires a simple, one-time authentication process.</div>
+					<span id="accessEnablerLogin" class="getstarted"><a href="javascript:void();" class="video-container-button">Verify Now</a></span>
+				</div>
+				<div class="provider-selector">
+					<div class="authentication-header">
+						<a href="#" id="auth-cancel-button">&times;</a>
+						<div class="games-logo">Pyeongchang 2018</div>
+						<div class="watch-live">Watch the Olympics live!</div>
+						<div class="authentication-steps">
+							<div class="authentication-step authentication-step-1 active">
+								<div class="step-number">1</div>
+								Select TV Provider
+							</div>
+							<div class="authentication-step-divider"></div>
+							<div class="authentication-step authentication-step-2">
+								<div class="step-number">2</div>
+								Verify
+							</div>
+							<div class="authentication-step-divider"></div>
+							<div class="authentication-step authentication-step-3">
+								<div class="step-number">3</div>
+								Watch
+							</div>
+						</div>
+					</div>
+					<div id="picker-logos"></div>
+					<div class="authentication-provider-information">
+						<div class="military-note">
+							Streaming access is available via Exchange to those who serve the US Military, by NBCUniversal in partnership with your local paid TV service providers.
+						</div>
+						<div class="mvpd-picker-wrapper">
+							Select from full list:
+							<select id="mvpd-picker" class="custom">
+								<option value="">Select Provider</option>
+							</select>
+						</div>
+						<div>
+							<a href="http://www.nbcolympics.com/WatchLive">Don&#39;t see your cable / satellite / telco provider above?</a>
+						</div>
+					</div>
+					<div id="mvpddivwrapper">
+						<iframe id="mvpdframe" name="mvpdframe" src=""></iframe>
+					</div>
+					<div id="moreinfo" class="overlay">
+						<h3>{{config.settings.entity}} is currently not available from your television provider.</h3>
+						<p>{{config.settings.entity}} is only available through participating TV providers. Contact your provider and ask for {{config.settings.entity}}.</p>
+						<p>We&#39;re working on adding new TV providers, please check back soon to see if we&#39;ve added yours to our list.</p>
+						<p>If you&#39;d like to be notified when {{config.settings.entity}} is available through your TV provider, <a href="http://www.nbcsports.com/cable-provider-survey" target="_blank">click here</a>.</p>
+						<p class="right"><button id="close-moreinfo">OK</button></p>
+					</div>
+					<div class="authentication-footer">
+						<p>NBC Olympics does not have access to your username, password, or any other information related to your TV provider subscription. Please contact your TV service provider if you need assistance.</p>
+						<ul class="authentication-footer-links">
+							<li><a href="http://www.nbcolympics.com/WatchLive" target="_blank">FAQ</a></li>
+							<li><a href="mailto:support@nbctve.zendesk.com">Help</a></li>
+							<li><a href="http://nbcsports.com/privacy-policy" target="_blank">Privacy Policy</a></li>
+							<li><a href="#" class="mvpd-login-help" target="_blank">Login Help</a></li>
+						</ul>
+					</div>
+				</div>
+				<div id="errors" class="overlay">
+					<div class="error-header">
+						<button class="error-header-cancel">&times;</button>
+						<div class="error-logo"></div>
+						<div class="error-text">
+							<h3 class="title">Error:</h3>
+							<p></p>
+							<p class="message">We&#39;re working on adding new TV providers, please check back soon to see if we&#39;ve added yours to our list.</p>
+						</div>
+						<p class="right normal-error">
+							<button class="accessenabler-button" id="close-authentication-error">OK</button>
+						</p>
+					</div>
+					<div class="logout-error-bottom">
+						<a href="{{provider.logOutUrl}}" class="error-contact-provider" ng-hide="!provider || !provider.logOutUrl">Contact Your Provider</a>
+						<ul class="error-bottom-links">
+							<li><a href="http://www.nbcolympics.com/WatchLive">FAQ</a></li>
+							<li><a href="mailto:support@nbctve.zendesk.com">Help</a></li>
+						</ul>
+						<button class="accessenabler-button" id="close-authentication-error">Sign out</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</script>
+
+
+	<script type="text/ng-template" id="/assets/page/olympics/angular/news-feed-social-links.html">
+	<div class="social-links card-share--social-links"
+			data-assetid="{{story.data.analytics.assetid}}"
+			data-assettitle="{{story.data.analytics.assettitle}}"
+			data-athlete="{{story.data.analytics.athlete}}"
+			data-sport="{{story.data.analytics.sport}}"
+			data-contenttype="{{story.data.analytics.contenttype}}"
+			data-contentcat="{{story.data.analytics.topic}}">
+		<span class="social-links--title"><i class="icon-share"></i> <span class="social-links--title-text">Share</span> <i class="icon-close"></i></span>
+		<ul class="social-links--list">
+			<li class="social-links--item"><a href="#" data-share-link="http://www.facebook.com/sharer.php?u={{story.data.url}}"><span class="icon-facebook" title="Facebook"></span></a></li>
+			<li class="social-links--item"><a href="#" data-share-link="https://twitter.com/share?url={{story.data.url}}&amp;text={{story.data.title}}"><span class="icon-twitter" title="Twitter"></span></a></li>
+			<li class="social-links--item"><a href="mailto:?subject={{story.data.title}}&amp;body={{story.data.url}}"><span class=" icon-email" title="Email"></span></a></li>
+			<li class="social-links--item"><a href="#" data-share-link="http://www.tumblr.com/share/link?url={{story.data.url}}&amp;title={{story.data.title}}"><span class=" icon-tumblr" title="Tumblr"></span></a></li>
+		</ul>
+	</div>
+</script>
+
+<script type="text/ng-template" id="/assets/page/olympics/angular/news-feed-cards/article-image.html">
+	<div class="card-wrapper card-article">
+		<div class="card-info">
+			<div class="card-time">
+				<h5>Story</h5>
+			</div>
+			<div class="card-share">
+				<data-news-feed-social-links></data-news-feed-social-links>
+			</div>
+		</div>
+		<div class="card-content">
+			<div class="item-row">
+				<div class="picture">
+					<a ng-href="{{story.data.url}}" target="_blank">
+						<img ng-src="{{story.data.image}}" alt="{{story.data.title}}">
+					</a>
+				</div>
+				<div class="item-info">
+					<h2 class="title"><a ng-href="{{story.data.url}}" target="_blank">{{story.data.title}}</a></h2>
+					<div class="editorial-text">{{story.data.body}}</div>
+					<a class="read-more" ng-href="{{story.data.url}}" target="_blank">Read More +</a>
+				</div>
+				<div data-ng-if="story.data.producerNotes" class="producer-note card-article--producer-note">
+					<strong class="producer-note--title">Producer note</strong>
+					<p class="producer-note--text">
+						{{story.data.producerNotes}}
+					</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</script>
+
+<script type="text/ng-template" id="/assets/page/olympics/angular/news-feed-cards/article.html">
+	<div class="card-wrapper card-article">
+		<div class="card-info">
+			<div class="card-time">
+				<h5>Story</h5>
+			</div>
+			<div class="card-share">
+				<data-news-feed-social-links></data-news-feed-social-links>
+			</div>
+		</div>
+		<div class="card-content">
+			<div class="item-row">
+				<div class="item-info">
+					<h2 class="title"><a ng-href="{{story.data.url}}" target="_blank">{{story.data.title}}</a></h2>
+					<div class="editorial-text"><a ng-href="{{story.data.url}}" target="_blank">{{story.data.body}}</a></div>
+					<a class="read-more" ng-href="{{story.data.url}}" target="_blank">Read More +</a>
+				</div>
+				<div data-ng-if="story.data.producerNotes" class="producer-note card-article--producer-note">
+					<strong class="producer-note--title">Producer note</strong>
+					<p class="producer-note--text">
+						{{story.data.producerNotes}}
+					</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</script>
+
+<script type="text/ng-template" id="/assets/page/olympics/angular/news-feed-cards/fact-text.html">
+	<div class="card-wrapper card-fact-text" ng-class="{'card-sport-fact': story.data.fact_type == 'sport'}">
+		<div class="card-info">
+			<div class="card-time">
+				<h5>Fact</h5>
+			</div>
+			<div class="card-share">
+				<data-news-feed-social-links></data-news-feed-social-links>
+			</div>
+		</div>
+		<div class="card-content" ng-class="{'with-pictogram': story.data.sports.length > 0 && story.data.fact_type == 'sport'}">
+			<div class="card-pictogram">
+				<div class="icon">
+					<i class="icon-l_{{story.data.sports[0].toLowerCase()}}"></i>
+				</div>
+			</div>
+			<div class="item-row">
+				<div class="item-info">
+					<h2 class="title" ng-show="story.data.fact_header"><a ng-show="story.data.fact_cta" ng-href="{{story.data.fact_cta.url}}" target="_blank">{{story.data.fact_header}}</a><span ng-show="!story.data.fact_cta">{{story.data.fact_header}}</span></h2>
+					<div class="editorial-text" ng-bind-html="story.data.escaped_body"></div>
+					<a class="read-more" ng-show="story.data.fact_cta" ng-href="{{story.data.fact_cta.url}}" target="_blank">{{story.data.fact_cta.title}}</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</script>
+
+<script type="text/ng-template" id="/assets/page/olympics/angular/news-feed-cards/timeline.html">
+	<a href=#" class="card-wrapper card-timeline" ng-class="{teaser: story.data.teaser}" ng-click="goToTimestamp(story.timestamp); $event.preventDefault();">
+		<div class="card-info">
+			<div class="card-time">
+				<h5>Key<br />Moment</h5>
+			</div>
+			<div class="card-timestamp" ng-if="!story.data.teaser">
+				{{story.timestamp * 1000 | newsFeedTimeAgo}} ago
+			</div>
+			<div class="card-coming-soon" ng-if="story.data.teaser">
+				Coming Up
+			</div>
+			<div class="card-share">
+				<data-news-feed-social-links></data-news-feed-social-links>
+			</div>
+		</div>
+		<div class="card-content">
+			<div class="item-row">
+				<div class="click-to-view"></div>
+				<div class="item-info">
+					<div class="title-text">{{story.data.title}}<span ng-if="story.data.teamID" class="team-id team-id-{{story.data.teamID.toLowerCase()}}">({{story.data.teamID}})</span></div>
+					<div class="description-text">{{story.data.description}}</div>
+				</div>
+			</div>
+		</div>
+		<div class="hover-overlay">Click to Watch</div>
+	</a>
+</script>
+
+<script type="text/ng-template" id="/assets/page/olympics/angular/news-feed-cards/gallery.html">
+	<div class="card-wrapper card-gallery card-type-gallery">
+		<div class="card-info">
+			<div class="card-time">
+				<h5>Gallery</h5>
+			</div>
+			<div class="card-share">
+				<data-news-feed-social-links></data-news-feed-social-links>
+			</div>
+		</div>
+		<div class="card-content">
+			<div class="item-row">
+				<div class="picture">
+					<a class="view-gallery-fs" ng-href="{{story.data.url}}" target="_blank">
+						<span class="view-gallery" ng-href="{{story.data.url}}"></span>
+						<img ng-src="{{story.data.image}}" alt="{{story.data.title}}">
+						<div class="item-info">
+							<h2 class="title">{{story.data.title}}</h2>
+							<div class="editorial-text">{{story.data.description}}</div>
+						</div>
+					</a>
+				</div>
+				<div data-ng-if="story.data.producerNotes" class="producer-note card-gallery--producer-note">
+					<strong class="producer-note--title">Producer note</strong>
+					<p class="producer-note--text">
+						{{story.data.producerNotes}}
+					</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</script>
+
+<script type="text/ng-template" id="/assets/page/olympics/angular/news-feed-cards/results-widget.html">
+	<div class="card-wrapper card-results-widget">
+		<div class="card-info">
+			<div class="card-time">
+				<h5>Results</h5>
+			</div>
+		</div>
+		<div class="card-content">
+			<div class="item-row">
+				<div class="item-info">
+					<h2 class="title">{{story.data.title}}</h2>
+					<div class="embed-code" data-ng-if="story.data.targetContainer && story.data.body">
+						<div id="{{story.data.targetContainer}}" data-d3-results-widget-json="{{story.data.body}}"></div>
+					</div>
+				</div>
+				<div data-ng-if="story.data.producerNotes" class="producer-note card-results-widget--producer-note">
+					<strong class="producer-note--title">Producer note</strong>
+					<p class="producer-note--text">
+						{{story.data.producerNotes}}
+					</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</script>
+
+<script type="text/ng-template" id="/assets/page/olympics/angular/news-feed-cards/upcoming.html">
+	<div class="card-wrapper card-upcoming">
+		<div class="card-info">
+			<div class="card-time">
+				<h5>Upcoming</h5>
+			</div>
+			<div class="card-share">
+				<data-news-feed-social-links></data-news-feed-social-links>
+			</div>
+		</div>
+		<div class="card-content">
+			<div class="item-row">
+				<div class="picture">
+					<a ng-href="{{story.data.url}}" target="_blank">
+						<img ng-src="{{story.data.image}}" alt="{{story.data.title}}">
+					</a>
+				</div>
+				<div class="item-info">
+					<div class="headline">
+						<h4 class="event-time" data-card="story.data" data-upcoming-video-start-text> {{story.data.start_time * 1000 | date:'h:mma'}}</h4>
+						<h3 class="roofline-text">{{story.data.roofline_text}}</h3>
+					</div>
+					<h2 class="title"><a ng-href="{{story.data.url}}" target="_blank">{{story.data.title}}</a></h2>
+					<div class="editorial-text"><a ng-href="{{story.data.url}}" target="_blank">{{story.data.supporting_text}}</a></div>
+				</div>
+				<div class="reminder-btn"><a href="javascript:;" class="remind-me-btn icon-bell"></a></div>
+				<div data-ng-if="story.data.producerNotes" class="producer-note card-upcoming--producer-note">
+					<strong class="producer-note--title">Producer note</strong>
+					<p class="producer-note--text">
+						{{story.data.producerNotes}}
+					</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</script>
+
+<script type="text/ng-template" id="/assets/page/olympics/angular/news-feed-cards/video.html">
+	<div class="card-wrapper card-video">
+		<div class="card-info">
+			<div class="card-time">
+				<h5>Video</h5>
+			</div>
+			<div class="card-share">
+				<data-news-feed-social-links></data-news-feed-social-links>
+			</div>
+		</div>
+		<div class="card-content">
+			<div class="item-row">
+				<a class="click-to-view" ng-href="{{story.data.url}}" target="_blank"></a>
+				<div class="picture">
+					<a ng-href="{{story.data.url}}" target="_blank">
+						<img ng-src="{{story.data.image}}" alt="{{story.data.title}}">
+					</a>
+					<h2 class="pic-header"><a ng-href="{{story.data.url}}" target="_blank">{{story.data.title}}</a></h2>
+				</div>
+				<div class="item-info">
+					<div class="editorial-text">{{story.data.description}}</div>
+				</div>
+				<div data-ng-if="story.data.producerNotes" class="producer-note card-video--producer-note">
+					<strong class="producer-note--title">Producer note</strong>
+					<p class="producer-note--text">
+						{{story.data.producerNotes}}
+					</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</script>
+
+
+
+<div class="mobile-overflow-wrapper">
+	<a href="#main-content" class="element-invisible element-focusable">Skip to main content</a>
+	<!-- START HEADER -->
+	<header class="site-header header" role="banner">
+		<!-- START  Navigation and Breaking news -->
+		<div class="region region-header">
+			<section class="block block-olympics-main-menu" id="block-olympics-main-menu-olympics-global-navigation">
+				<nav class="nav wrapper clearfix">
+					<div class="mobile-header left">
+						<a id="responsive-main-menu-button" class="icon-menu" href="#sidr-main"><span class="element-invisible">Menu</span></a>
+						<a class="close-menu"><span class="icon-close"></span><span class="element-invisible">Close menu</span></a>
+					</div>
+					<!-- logo -->
+					<a target="_parent" href="http://www.nbcolympics.com/" class="logo-wrapper"><img class="nav-logo left" src="http://www.nbcolympics.com/profiles/olympics/themes/nbcolympics/images/logo.svg" alt="NBC Olympics logo"></a>
+					<div class="mobile-header right">
+						<span class="mobile-search-toggler icon-search"><span class="element-invisible">Search</span></span>
+					</div>
+					<div class="nav-top">
+						<div class="nav-main left">
+							<ul class="links"><li class="menu-1026 first"><a href="http://www.nbcolympics.com/live-stream-schedule" title="Schedule Page content" target="_parent">Schedule</a></li>
+								<li class="menu-4011"><a href="http://www.nbcolympics.com/video" target="_parent">Watch</a></li>
+								<li class="menu-4016"><a href="http://www.nbcolympics.com/medals" target="_parent">Medals Race</a></li>
+								<li class="menu-4021"><a href="http://results.nbcolympics.com" target="_parent" class="results-main-menu">Results</a></li>
+								<li class="menu-19566"><a href="http://www.nbcolympics.com/news-feed" target="_parent">News Feed</a></li>
+								<li class="menu-4226"><a href="http://www.nbcolympics.com/team-usa" target="_parent">Team USA</a></li>
+								<li class="menu-4231 last"><a href="http://www.nbcolympics.com/athletes" target="_parent">Athletes</a></li>
+							</ul>
+							<div class="menu-notify right"><a target="_parent" href="http://www.nbcolympics.com/newsletters"><i class="icon-bell"><span>Alerts</span></i></a></div>
+						</div>
+						<button class="serarch-area-placeholder right">
+							<span class="nav-search-text">Search</span> <span class="nav-search-submit"><i class="icon is--visible icon-search"></i></span>
+						</button>
+					</div>
+
+					<div class="mobile-search--in-nav">
+						<form class="mobile-search-form--in-nav" action="/search/results/" method="get" id="olympics-main-menu-search-form" accept-charset="UTF-8">
+							<label for="edit-search-text" class="element-invisible">Search Field:</label>
+							<input placeholder="Search" class="nav-search-text form-text" type="text" id="edit-search-text" name="search_term" value="" size="60" maxlength="128">
+							<button class="nav-search-submit form-submit" id="edit-submit"><i class="icon icon-search"></i><span class="hide">Search</span></button>
+						</form>
+					</div>
+
+					<div class="nav-second">
+						<span class="menu-icon left icon"><i>&#xe801;</i></span>
+
+
+						<ul class="nav-secondary left"><li class="sub-menu-sport"><a href="#">All Sports</a><ul class="sport-list"><li class="first leaf"><a href="http://www.nbcolympics.com/archery">Archery</a></li>
+									<li class="leaf"><a href="http://www.nbcolympics.com/badminton">Badminton</a></li>
+									<li class="leaf"><a href="http://www.nbcolympics.com/basketball">Basketball</a></li>
+									<li class="leaf"><a href="http://www.nbcolympics.com/beach-volleyball">Beach Volleyball</a></li>
+									<li class="leaf"><a href="http://www.nbcolympics.com/boxing">Boxing</a></li>
+									<li class="leaf"><a href="http://www.nbcolympics.com/canoe-kayak">Canoe/Kayak</a></li>
+									<li class="leaf"><a href="http://www.nbcolympics.com/cycling">Cycling</a></li>
+									<li class="leaf"><a href="http://www.nbcolympics.com/diving">Diving</a></li>
+									<li class="leaf"><a href="http://www.nbcolympics.com/equestrian">Equestrian</a></li>
+									<li class="leaf"><a href="http://www.nbcolympics.com/fencing">Fencing</a></li>
+									<li class="leaf"><a href="http://www.nbcolympics.com/field-hockey">Field Hockey</a></li>
+									<li class="leaf"><a href="http://www.nbcolympics.com/golf">Golf</a></li>
+									<li class="leaf"><a href="http://www.nbcolympics.com/gymnastics">Gymnastics</a></li>
+									<li class="leaf"><a href="http://www.nbcolympics.com/handball">Handball</a></li>
+									<li class="leaf"><a href="http://www.nbcolympics.com/judo">Judo</a></li>
+									<li class="leaf"><a href="http://www.nbcolympics.com/modern-pentathlon">Modern Pentathlon</a></li>
+									<li class="leaf"><a href="http://www.nbcolympics.com/rhythmic-gymnastics">Rhythmic Gymnastics</a></li>
+									<li class="leaf"><a href="http://www.nbcolympics.com/rowing">Rowing</a></li>
+									<li class="leaf"><a href="http://www.nbcolympics.com/rugby">Rugby</a></li>
+									<li class="leaf"><a href="http://www.nbcolympics.com/sailing">Sailing</a></li>
+									<li class="leaf"><a href="http://www.nbcolympics.com/shooting">Shooting</a></li>
+									<li class="leaf"><a href="http://www.nbcolympics.com/soccer">Soccer</a></li>
+									<li class="leaf"><a href="http://www.nbcolympics.com/swimming">Swimming</a></li>
+									<li class="leaf"><a href="http://www.nbcolympics.com/synchronized-swimming">Synchronized Swimming</a></li>
+									<li class="leaf"><a href="http://www.nbcolympics.com/table-tennis">Table Tennis</a></li>
+									<li class="leaf"><a href="http://www.nbcolympics.com/taekwondo">Taekwondo</a></li>
+									<li class="leaf"><a href="http://www.nbcolympics.com/tennis">Tennis</a></li>
+									<li class="leaf"><a href="http://www.nbcolympics.com/track-and-field">Track and Field</a></li>
+									<li class="leaf"><a href="http://www.nbcolympics.com/trampoline">Trampoline</a></li>
+									<li class="leaf"><a href="http://www.nbcolympics.com/triathlon">Triathlon</a></li>
+									<li class="leaf"><a href="http://www.nbcolympics.com/volleyball">Volleyball</a></li>
+									<li class="leaf"><a href="http://www.nbcolympics.com/water-polo">Water Polo</a></li>
+									<li class="leaf"><a href="http://www.nbcolympics.com/weightlifting">Weightlifting</a></li>
+									<li class="leaf"><a href="http://www.nbcolympics.com/wrestling">Wrestling</a></li>
+									<li class="leaf"><a href="http://www.nbcolympics.com/alpine-skiing">Alpine Skiing</a></li>
+									<li class="leaf"><a href="http://www.nbcolympics.com/bobsled">Bobsled</a></li>
+									<li class="leaf"><a href="http://www.nbcolympics.com/biathlon">Biathlon</a></li>
+									<li class="leaf"><a href="http://www.nbcolympics.com/cross-country">Cross-Country</a></li>
+									<li class="leaf"><a href="http://www.nbcolympics.com/curling">Curling</a></li>
+									<li class="leaf"><a href="http://www.nbcolympics.com/freestyle-skiing">Freestyle Skiing</a></li>
+									<li class="leaf"><a href="http://www.nbcolympics.com/figure-skating">Figure Skating</a></li>
+									<li class="leaf"><a href="http://www.nbcolympics.com/hockey">Hockey</a></li>
+									<li class="leaf"><a href="http://www.nbcolympics.com/luge">Luge</a></li>
+									<li class="leaf"><a href="http://www.nbcolympics.com/nordic-combined">Nordic Combined</a></li>
+									<li class="leaf"><a href="http://www.nbcolympics.com/snowboarding">Snowboarding</a></li>
+									<li class="leaf"><a href="http://www.nbcolympics.com/ski-jumping">Ski Jumping</a></li>
+									<li class="leaf"><a href="http://www.nbcolympics.com/skeleton">Skeleton</a></li>
+									<li class="leaf"><a href="http://www.nbcolympics.com/speed-skating">Speed Skating</a></li>
+									<li class="last leaf"><a href="http://www.nbcolympics.com/short-track">Short Track</a></li>
+								</ul></li><li class="dynamic-menu-wrapper"></li></ul>
+
+						<div
+								data-ng-cloak
+								data-ng-controller="SportExplorerCtrl as sportExplorer"
+								class="sport-exp-overlay active-mode-winter">
+							<div class="wrapper">
+								<button aria-hidden="true" class="sport-exp-overlay--all-sports-label element-invisible">All sports</button>
+								<ul class="sport-list">
+									<li class="sport-item"
+											data-ng-repeat="sport in sportExplorer.sports"
+											data-ng-show="sport.noSportEvents === false"
+											data-ng-class="[sport.isWinterSport === true ? 'sport-winter' : 'sport-summer']"
+											data-sport-explorer-show-overlay
+									>
+										<a target="_parent" href="http://www.nbcolympics.com/{{ ::sport.sport_hub_alias }}">
+											<div class="icon"><i ng-bind-html="renderHtml(sport.iconHtml)"></i></div>
+											<div class="title">{{::sport.name}}</div>
+											<i data-ng-if="sport.noCoverage === false && sport.sportStarted === true && sport.sportEnded === false" data-ng-repeat="event in sport.schedule | sportExplorerLiveSport:sportExplorer | limitTo:1"
+													class="tag yellow">LIVE</i>
+										</a>
+
+										<!-- Begin Sport Explorer Tooltip -->
+										<!--
+
+										<div
+										  data-ng-if="sport.noCoverage === false && sport.sportStarted === true && sport.sportEnded === false"
+										  data-ng-class="[sport.medalEvents != '' ? 'medals-overlay' : '',
+													 sport.mustSeeHeadline.length == '0' ? 'day-no-state' : '',
+													 sport.schedule.length == '0' ? 'must-see' : '']"
+										  class="overlay-block">
+											  <div
+												data-ng-show="sport.schedule"
+												class="sport-block">
+												<h5 class="sport-title">{{::sport.name}}</h5>
+												<div data-ng-show="sport.eventsToday" class="occurrences-type">
+												  <span data-ng-if="sport.eventsTodayVenery">{{::sport.eventsTodayVenery}}</span>
+												  <h1>{{::sport.eventsToday}}</h1>
+												  <a target="_parent" href="{{::sportExplorer.dayInfo.liveStreamUrl}}" ng-bind-html="sportExplorer.dayInfo.liveStreamText">{{::sportExplorer.dayInfo.liveStreamText}}</a>
+												</div>
+												<div data-ng-show="sport.medalEvents" class="occurrences-type">
+												  Medal <span data-ng-if="sport.medalEventsVenery">{{::sport.medalEventsVenery}}</span>
+												  <h1>{{::sport.medalEvents}}</h1>
+												</div>
+												<a data-ng-repeat="event in sport.schedule | sportExplorerLiveSport:sportExplorer | limitTo:1"
+												  href="{{::event.url}}" target="_parent" class="live-btn icon-play">Live</a>
+											  </div>
+											  <div
+												data-ng-show="sport.mustSeeHeadline.title"
+												class="must-see-event-block">
+												<div ng-if="!iOS" class="time-stamp to-right">
+												  <span data-ng-if="sport.mustSeeHeadline.start > sportExplorer.now">Starting</span>
+												  <span data-ng-if="sport.mustSeeHeadline.start < sportExplorer.now">Started</span>
+												  at {{::sport.mustSeeHeadline.start * 1000 | date:'shortTime'}}
+												</div>
+												<h5>Must See</h5>
+												<div class="editorial-title-text">
+												  {{::sport.mustSeeHeadline.title}}
+												</div>
+												<div class="phase-text">{{::sport.mustSeeHeadline.shortTitle}}</div>
+												<a class="remind-me-btn icon-bell" href="#" data-live-stream-id="{{::sport.mustSeeHeadline.pid}}">Remind Me</a>
+												<div class="icon"><i ng-bind-html="renderHtml(sport.iconHtml)"></i></div>
+											  </div>
+											  <a target="_parent" class="see-full-btn" href="http://www.nbcolympics.com/{{ ::sport.sport_hub_alias }}">See full coverage <span class="icon-right-open"></span></a>
+										</div>
+										<div
+										  data-ng-if="sport.noCoverage === true || sport.sportStarted === false || sport.sportEnded === true"
+										  data-ng-class="[sport.noCoverage === true || sport.sportEnded === true ? 'day-no-state' : '',
+													 sport.sportStarted === false && sport.mustSeeHeadline.title != null ? 'must-see' : 'day-no-state']"
+										  class="overlay-block">
+										  <div
+											data-ng-if="sport.noCoverage === true || sport.sportEnded === true"
+											class="sport-block">
+											<h5 class="sport-title">{{::sport.name}}</h5>
+											<div class="occurrences-type">
+											  <span data-ng-if="sport.eventsTodayVenery && sport.noCoverage">{{::sport.eventsTodayVenery}}</span>
+											  <span data-ng-if="sport.eventsTodayVenery && sport.sportEnded">Sport coverage<br>has concluded</span>
+											  <h1 data-ng-if="sport.noCoverage === true">{{::sport.eventsToday}}</h1>
+											  <a class="full-results-btn" target="_parent" href="http://www.nbcolympics.com/{{ ::sport.sport_video_hub_alias }}">Full Results</a>
+											</div>
+										  </div>
+										  <div
+											data-ng-if="sport.sportStarted === false && sport.mustSeeHeadline.title != null"
+											class="must-see-event-block">
+											<div ng-if="!iOS" class="time-stamp to-right">
+											  <span data-ng-if="sport.mustSeeHeadline.notStartedStateDate">{{::sport.mustSeeHeadline.notStartedStateDate}}</span>
+											  at {{::sport.mustSeeHeadline.start * 1000 | date:'shortTime'}}
+											</div>
+											<h5>Must See</h5>
+											<div class="editorial-title-text">
+											  {{::sport.mustSeeHeadline.title}}
+											</div>
+											<div class="phase-text">{{::sport.mustSeeHeadline.shortTitle}}</div>
+											<a class="remind-me-btn icon-bell" href="#" data-live-stream-id="{{::sport.mustSeeHeadline.pid}}">Remind Me</a>
+											<div class="icon"><i ng-bind-html="renderHtml(sport.iconHtml)"></i></div>
+										  </div>
+										  <div
+											data-ng-if="sport.sportStarted === false && sport.mustSeeHeadline.title == null"
+											class="sport-block">
+											<h5 class="sport-title">{{::sport.name}}</h5>
+											<div class="occurrences-type">
+											  <span data-ng-if="sport.eventsTodayVenery && sport.noCoverage">{{::sport.eventsTodayVenery}}</span>
+											  <h1 data-ng-if="sport.noCoverage === true">{{::sport.eventsToday}}</h1>
+											  <a class="remind-me-btn icon-bell" href="#" data-live-stream-id="{{::sport.sportEarliestPid}}">Remind Me</a>
+											</div>
+										  </div>
+										  <a class="see-full-btn" target="_parent" href="http://www.nbcolympics.com/{{ ::sport.sport_hub_alias }}">See full coverage <span class="icon-right-open"></span></a>
+										</div>
+
+										-->
+										<!-- End sport explorer tooltip -->
+
+									</li>
+								</ul>
+								<button title="Close" class="sport-exp-overlay--close-btn close-btn-square"><i class="replaced">Close</i> <i class="icon icon-close"></i></button>
+							</div>
+						</div>
+						<div class="m-all-sports">
+							<a href="#" class="m-all-sports-trigger">Sports</a>
+						</div>
+						<div class="m-menu-wrapper">
+							<div class="xfinity-ad right"><div id="xfinitylogo"></div></div>
+						</div>
+						<div class="menu-live right">
+							<a target="_parent" href="http://www.nbcolympics.com/live-stream-schedule" class="live-now-header live-counter-wrapper"><span class="live-counter"></span> Live Now</a>
+						</div>
+
+					</div>
+				</nav>
+			</section>
+			<section class="block block-olympics-breaking-news" id="block-olympics-breaking-news-breaking-news">
+
+				<div class="breaking"></div></section>
+		</div>
+		<!-- END Navigation and Breaking news -->
+		<!-- optionally take snippet for nav menu from Zen -->
+		<!-- TODO: Mobile nav -->
+		<!-- TODO: Breaking Newss -->
+	</header>
+	<!-- END  HEADER -->
+
+	<!-- START: Extended Search Box -->
+	<section class="block block-olympics-main-menu" role="search" id="block-olympics-main-menu-olympics-search">
+
+		<div class="exp-search-block">
+			<div class="wrapper clearfix">
+				<div data-ng-controller="AutoSearchCtrl as autoSearch">
+					<form class="exp-search-block--form" data-ng-submit="autoSearch.formSubmit(query)">
+						<div class="exp-search-block--form-elements">
+							<label class="element-invisible" for="extended-search-input">Search query:</label>
+							<input class="exp-search-block--input-text" type="search" name="search_term" placeholder="Start typing" data-ng-model="query" data-szn-autocomplete="options">
+							<button class="exp-search-block--submit" title="Search"><span class="replaced">Search</span> <i class="icon icon-search"></i></button>
+						</div>
+					</form>
+					<div class="exp-search-block--data-holder">
+						<div data-ng-if="autoSearch.show" class="exp-search-block--suggestions">
+							<h5 class="exp-search-block--suggestions-title">{{autoSearch.preSuggestions.title}}</h5>
+							<ul class="exp-search-block--suggestions-list">
+								<li class="list-item" data-ng-repeat="result in autoSearch.preSuggestions.items">
+									<a target="_parent" href="{{result.link}}">{{result.value}}</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<button title="close" class="exp-search-block--close-btn close-btn-square"><i class="replaced">Close</i> <i class="icon icon-close"></i></button>
+			</div>
+		</div>
+	</section>
+	<!-- END: Extended Search Box -->
+
+	<!-- START  MAIN CONTENT -->
+	<script type="text/javascript" src="/assets/page/olympics/settings.js?v=1518730058158"></script>
+	<script type="text/javascript">
+		window.startTimestamp = new Date('2018-02-09 20:00:00.000');
+		window.obsSessionId = 'feb9';
+		if (window.videoSettings && window.videoSettings.disableDivaOverlays) {
+			window.globalFlashVars.overlays = 0;
+		}
+		window.setPreGameMode = function() {
+			jQuery('body').addClass('pre-game-mode').removeClass('live-extra-video');
+			function startAds() {
+				if (typeof NBC_AdModule !== 'undefined') {
+					NBC_AdModule.setNoVideoPlayer();
+				} else {
+					setTimeout(startAds, 500);
+				}
+			}
+			startAds();
+			setTimeout(function() {
+				window.location.reload();
+			}, 600000);
+		}
+	</script>
+	<script type="text/javascript" src="/assets/page/scripts/libs-olympics.js?v=1518730061986"></script>
+	<script type="text/javascript" src="/assets/page/scripts/olympics.js?v=1518733113450"></script>
+	<script type="text/javascript" src="/assets/page/static-js/providers-master.js?v=1518730062022"></script>
+	<main id="main-content" class="site-main-content-section clearfix">
+		<h1>Olympics 2018</h1>
+		<div class="region region-content">
+			<section class="block block-system" id="block-system-main">
+				
+<span class='banner-1-1' id='ad-1-1'>
+	<div id="div-gpt-ad-1">
+		<script type="text/javascript">
+			googletag.cmd.push(function() { googletag.display('div-gpt-ad-1'); });
+		</script>
+	</div>
+</span>
+
+
+				<div id="video-outer-container">
+					<div id="video-container">
+						
+						<accessenabler></accessenabler>
+						
+						<div id="leaderboard-ad-container">
+							
+<div class="banner728-ad" id="ad-728-90">
+	<div id="div-gpt-ad-2" class="gpt-ad">
+		<script type="text/javascript">
+			googletag.cmd.push(function() { googletag.display('div-gpt-ad-2'); });
+		</script>
+	</div>
+</div>
+
+
+						</div>
+						<div id="remind-me-message">
+							<h2 class="message-header">Get ready to watch live!</h2>
+							<div class="message-text"><span class="mobile-break-line">Coverage starts February 9, 2018</span> at 8pm ET / 5pm PT</div>
+							
+						</div>
+						<script type="text/javascript">
+	
+
+	// Module settings for this page
+	var pageModulesConfig = {
+	"livePolling": true,
+	"page": {
+		"visibility": {}
+	}
+};
+
+	// Set up PID
+	var qString = secondthought.UrlHelper.getQueryString(location.search);
+	var pid = 204030;
+	
+	if (qString.pid && (typeof parseInt(qString.pid) == 'number') && (parseInt(qString.pid) % 1 == 0)) {
+		pid = qString.pid;
+	}
+	
+
+	// Set up Flash use
+	var useFlash = false;
+	
+	if (navigator.userAgent.match(/(iPhone|iP[ao]d|Android|Windows Phone)/i) ) {
+		useFlash = false;
+	}
+	
+	if (qString.html5 === "1" || qString.html === "1") {
+		useFlash = false;
+	} else if (qString.html5 === "0" || qString.html === "0") {
+		useFlash = true;
+	}
+
+	
+	var resource = '<rss version="2.0" xmlns:media="http://search.yahoo.com/mrss/"><channel><title>NBCOlympics</title><item><title>NBC Primetime: Opening Ceremony (Standard)</title><guid>' + pid + '</guid></item></channel></rss>';
+	
+	
+	var requestorID = 'NBCOlympics';
+	
+
+	// Set up flash vars
+	var dartRefreshInterval = 30000;
+	var defaultFlashVars = {
+		
+		APResource: encodeURI(resource),
+		
+		autoLoad: false,
+		pageVersion: 'OL-2wo-00001',
+		assetBase: '/assets/page/swf/assets',
+		dartRefreshInterval: dartRefreshInterval,
+		pid: pid,
+		token: 1234,
+		reserveMaxBitrate: 1,
+		fsbCompanionAlign: '',
+		fsBrandStretchMid: 0,
+		maxLiveDelay: 45,
+		maxLiveCatchup: 0,
+		
+		initialBuffer: 2,
+		
+		
+		'hlsjs.liveSyncDurationCount': 5,
+		
+		
+		'overlays': '1',
+		
+		'hideVidLabel': '1',
+		
+		'dontFadeControls': '1',
+		
+		'olympics': '1',
+		
+		'isOlympics': '1',
+		
+		'loadErrorMsg': 'This video is not available due to location restrictions or authorization failures.<br><font color=\'#ffcc33\'><a href= \'http://www.nbcolympics.com/live-stream-schedule\'><u>Click here</u></a> to return to the online listings to see available content.</font>',
+		
+		'loadErrorSlate': 'http://liveextrastream.nbcsports.com/images/Rio2016_ErrorSlate.swf',
+		
+		'dss': 'scheduled',
+		
+		'dsl': '1',
+		
+		'pip': '0',
+		
+		'poster': '',
+		
+		'enableHeartbeat': 1,
+		
+		'enableBrightline': 1,
+		
+		goLiveLabel: 'Go Live',
+		liveLabel: 'Live',
+		shareLabelTitle: 'Share This Video',
+		shareSubTitle1: 'Post this link on one of these sites',
+		shareSubTitle2: 'Or copy the URI to your clipboard',
+		adPlayingLabel: 'Ad Playing',
+		useHLSv4Url: 1,
+		hlsToken: '/../token/olympicswildcard.dat'
+	};
+	if (window.globalFlashVars) {
+		jQuery.extend(true, defaultFlashVars, window.globalFlashVars);
+	}
+	var flashVars = jQuery.extend(true, defaultFlashVars, qString);
+
+	var referrer = qString.p ? qString.p : null;
+	if (referrer) {
+		flashVars.referrer = '_' + referrer;
+	} else {
+		flashVars.referrer = '';
+	}
+
+	// Player setup
+	var swfUrl = '/assets/page/swf/NBCSportsPlayer-hls.swf?v=1518730062026';
+	
+	if (qString.player && !window.location.hostname.match(/^stream\./)) {
+		var matches = qString.player.match(/[^\/]+\.swf$/);
+		if (matches) {
+			swfUrl = '/assets/page/swf/' + matches[0];
+		}
+	}
+	var xiSwfUrlStr = '/assets/page/swf/expressInstall.swf';
+	var NBC_player = new secondthoughtnbc.Player({
+		swfUrl: swfUrl,
+		flashvars: flashVars,
+		useNativeFullScreen: false,
+		xiSwfUrlStr: xiSwfUrlStr,
+		forceLive: false,
+		useFlash: useFlash,
+		
+		suppressFSB: true,
+		slateVars: {"sport":"","title":"NBC Primetime: Opening Ceremony (Standard)","dateTitle":"Coverage Starts","dateTime":"FEB 9 • 8pm ET / 5pm PT"},
+		
+		
+		
+		rab: true,
+		
+		
+		forceLinearPlayer: false
+	});
+
+	
+	// Ad module setup
+	var NBC_AdModule = new secondthoughtnbc.AdModuleGeneric({
+		player: NBC_player,
+		networkId: '2620',
+		adUnitLevel1: adTags.level1,
+		adUnitLevel2: adTags.level2,
+		adUnitLevel3: adTags.level3,
+		linearPlayer: false,
+		checkViewability: false,
+		additionalTargeting: adTags.additionalTargeting,
+		dartRefreshInterval: dartRefreshInterval,
+		noPrerollDetectionTimeout: 30000,
+		referrer: referrer,
+		
+		hasPencilUnit: false,
+		forceCameraIndex: 1
+	});
+	
+
+	var config = qString.configUrl ? qString.configUrl : '/data/event_config_#PID#.json';
+	
+	config = config.replace('#PID#', pid);
+	
+
+	
+	// Access enabler setup
+	var NBC_AccessEnabler = new secondthoughtnbc.AccessEnabler({
+		AccessEnablerLocation: 'http://entitlement.auth.adobe.com/entitlement/js/AccessEnabler.js',
+		whiteListProvidedByProviderInfo: true,
+		useFlash: useFlash,
+		authenticatedMode: true,
+		providerDefaults: {
+			selectPassword: 'Select Your TV Provider',
+			selectNewAccount: 'Select Your TV Provider'
+		},
+		uiConfig: {
+			settings: {
+				entity: 'NBC Sports',
+				getStartedLink: true
+			},
+			title: 'Welcome to #ENTITY#',
+			subtitle: 'Sign-In with the Username or Email address and Password you use with your cable, satellite, or telco TV provider. There is no additional charge.',
+			getStarted: 'CONTINUE>>',
+			faqUrl: 'http://www.nbcsports.com/live-faq'
+		},
+		xiSwfUrlStr: xiSwfUrlStr,
+		tracking: {
+			trackingFunction: trackAuth
+		},
+		
+		
+		
+		checkConfig: config,
+		
+		requestorID: requestorID,
+		
+		
+		resource: resource,
+		
+		
+		
+		'cancelButtonId': 'auth-cancel-button',
+		
+		'pickerLogoBasePath': '/assets/page/olympics/picker/',
+		
+		'optimizedPickerService': 'http://olyapi.nbcsports.com/ipop.asmx/CheckProvider?callback=?',
+		
+		
+		noPlayerModes: ["upcoming"],
+		
+		providerInfo: providerInfoExternal,
+		useTempPass: true,
+		tempPassInfo: tempPassInfoExternal
+	});
+	
+
+	var serviceFormat = qString.serviceFormat ? qString.serviceFormat : 'json';
+	var configFormat = qString.configFormat ? qString.configFormat : serviceFormat;
+
+	// Page details setup
+	var NBC_page = new secondthoughtnbc.Page({
+		pid: pid,
+		livePolling: true,
+		endpointsMeta: {
+			defaultFormat: serviceFormat,
+			faultRetryInterval: '00:00:05',
+			cache: false
+		},
+		dataSources: [
+			{name: 'config', updateInterval: '00:00:-01', url: config, format: configFormat},
+			{name: 'dma', format: 'jsonp'}
+		],
+		player: NBC_player,
+		
+		adModule: NBC_AdModule,
+		
+		initPlayer: true,
+		initAdModule: true,
+		autoplayVod: true,
+		allowChallenge: true,
+		anvatoDomain: 'tkx-cable-prod.nbc.anvato.net',
+		anvatoAck: 'nbcu_nbcsn_nbcsn_web_prod_54ef1d22d97fc806627b6d55fafa79e3e4ec0f30',
+		
+		noPlayerModes: ["upcoming"],
+		
+		
+		
+		initAccessEnabler: true,
+		accessEnabler: NBC_AccessEnabler,
+		
+		
+		
+		foilAdBlockers: true,
+		
+		
+		'noVideoPlayerCallback': setPreGameMode,
+		
+		modulesConfig: pageModulesConfig
+	});
+	NBC_page.initialise(window);
+	secondthought.UrlHelper.initNewWindowLinks();
+</script>
+
+						<script type="text/javascript">
+							jQuery('#main-remind-me').data('liveStreamId', pid);
+						</script>
+						<div class="main-wrapper ng-cloak" ng-cloak>
+							<div id="player-wrapper">
+								<div id="sticky-player-wrapper">
+									<div id="sticky-player-inner-wrapper">
+										<a href="#" id="sticky-player-back-to-top">Back to Top &uarr;</a>
+											<div  id="flash-content-wrapper">
+		<div id="flash-content">
+			<span class="get-flash" >
+				You currently do not have the latest version of Adobe Flash Player installed.<br />
+				You will need Flash Player 19.0.0.245 or higher in order to view this site.<br /><br />
+				<a href="http://get.adobe.com/flashplayer" target="_blank">Get the latest version of Flash Player</a>
+			</span>
+		</div>
+		<button is="google-cast-button" id="re-googlecast" style="visibility: hidden; position: absolute;">Cast</button>
+<nbc-app-root id="html5-player" class="hideDuringAccessEnabler">Loading...</nbc-app-root>
+
+<div id="script-container"></div>
+
+<!-- Only load in HTML5 player if not using Flash ### saving to work out later -->
+<script type="text/javascript">
+	var html5ScriptCount = 3,
+		html5ScriptPaths = {
+			main: '/assets/page/player/html5-player-main.js?v=1518730058886',
+			inline: '/assets/page/player/html5-player-inline.js?v=1518730058162',
+			polyfills: '/assets/page/player/html5-player-polyfills.js?v=1518730058994',
+			scripts: '/assets/page/player/html5-player-scripts.js?v=1518730059234',
+			vendor: '/assets/page/player/html5-player-vendor.js?v=1518730061490'
+		};
+	var hv;
+	if (qString && qString.hv) {
+		hv = qString.hv;
+	}
+	if (hv) {
+		html5ScriptPaths = {
+			main: '/assets/page/player/html5-player-main.' + hv + '.js',
+			inline: '/assets/page/player/html5-player-inline.' + hv + '.js',
+			polyfills: '/assets/page/player/html5-player-polyfills.' + hv + '.js',
+			scripts: '/assets/page/player/html5-player-scripts.' + hv + '.js',
+			vendor: '/assets/page/player/html5-player-vendor.' + hv + '.js'
+		};
+	}
+	function loadScript(container, url, callback){
+
+	    var script = document.createElement("script")
+	    script.type = "text/javascript";
+
+	    if (script.readyState){  //IE
+	        script.onreadystatechange = function(){
+	            if (script.readyState == "loaded" ||
+	                    script.readyState == "complete"){
+	                script.onreadystatechange = null;
+	                callback();
+	            }
+	        };
+	    } else {  //Others
+	        script.onload = function(){
+	            callback();
+	        };
+	    }
+
+	    script.src = url;
+	    container.appendChild(script);
+	}
+
+	function onScriptReady() {
+		html5ScriptCount--;
+		if (html5ScriptCount <= 0) {
+			loadScript( container, html5ScriptPaths.main, function(){
+
+			 	console.log('### all HTML5 scripts loaded');
+				jQuery.holdReady(false);
+			} );
+		}
+	}
+	var container = document.getElementById( 'script-container' );
+	if ( !useFlash ) {
+		jQuery.holdReady(true);
+		// Load webpackJsonp first
+		loadScript( container, html5ScriptPaths.inline, function(){
+			loadScript( container, html5ScriptPaths.polyfills, onScriptReady );
+			loadScript( container, html5ScriptPaths.scripts, onScriptReady );
+			loadScript( container, html5ScriptPaths.vendor, onScriptReady );
+		});
+	}
+</script>
+
+
+
+	</div>
+
+	
+										<div id="sticky-player-metadata">
+											<h4 class="roofline-text">NBC Primetime</h4>
+											<hr />
+											<h5 class="video-title">NBC Primetime: Opening Ceremony (Standard)</h5>
+										</div>
+									</div>
+								</div>
+								
+								<div id="mobile-flow-choice-block" class="unauthorized-mobile">
+									<div class="mobile-flow-header"><span class="temp-pass-message">Your temporary access to LIVE streams and full replays has expired. </span>Please verify your cable, satellite, or telco subscription now, either on the NBC Sports App or stay here on the Mobile Web.</div>
+									<div class="mobile-flow-message">For the best Olympics viewing experience,<br />please use the NBC Sports app.</div>
+									<a href="#" id="mobile-flow-app-link">NBC Sports App</a>
+									<a href="#" id="mobile-flow-browser-link">Mobile Web</a>
+								</div>
+								
+							</div>
+						</div>
+						<div id="data-switch-container">
+							<a href="#" id="data-switch">
+								<span class="data-switch-toggle"></span>
+								<span class="data-switch-ad-message">Ad Playing</span>
+								<span class="data-switch-status"></span>
+							</a>
+							<div class="data-switch-help-text">Enhanced Data Mode</div>
+						</div>
+					</div>
+				</div>
+				
+				<div id="video-data-container">
+					<div id="video-container-size-link-div">
+						<a href="#" id="video-container-size-link">Hide Details</a>
+					</div>
+					<div id="video-container-expanding">
+						<div id="video-metadata">
+							<h4 class="roofline-text">NBC Primetime</h4>
+							<hr />
+							<h5 class="video-title">NBC Primetime: Opening Ceremony (Standard)</h5>
+							<div class="mobile-data-links">
+								<div id="mobile-sharing-strip">
+									<a href="#" id="mobile-sharing-link"><span class="icon-share"></span></a>
+									<ul class="sharing-logos">
+										<li><a target="_blank" href="http://www.facebook.com/sharer.php?u=http%3A%2F%2Fstream.nbcolympics.com%2F2018-winter-olympics-primetime-show-feb-9-standard"><span class="icon-facebook" title="Facebook"></span><span class="element-invisible">Facebook</span></a></li>
+										<li><a target="_blank" href="https://twitter.com/share?url=http%3A%2F%2Fstream.nbcolympics.com%2F2018-winter-olympics-primetime-show-feb-9-standard&amp;text=NBC%20Primetime%3A%20Opening%20Ceremony%20(Standard)"><span class="icon-twitter" title="Twitter"></span><span class="element-invisible">Twitter</span></a></li>
+										<li><a href="mailto:?subject=NBC%20Primetime%3A%20Opening%20Ceremony%20(Standard)&amp;body=http%3A%2F%2Fstream.nbcolympics.com%2F2018-winter-olympics-primetime-show-feb-9-standard"><span class="icon-email" title="Email"></span><span class="element-invisible">Email</span></a></li>
+									</ul>
+								</div>
+
+							</div>
+							<div class="video-description">Let the Games begin! Coverage of the Opening Ceremony celebrates the official start of the XXIII Olympic Winter Games in PyeongChang.</div>
+							
+						</div>
+						<div id="video-data-logos">
+							<div class="network-logo"></div>
+							<!--<div class="live-extra-logo">NBC Sports</div>-->
+							<div class="social-sharing">
+								<div class="share-this">Share this</div>
+								<ul class="sharing-logos">
+									<li><a target="_blank" href="http://www.facebook.com/sharer.php?u=http%3A%2F%2Fstream.nbcolympics.com%2F2018-winter-olympics-primetime-show-feb-9-standard"><span class="icon-facebook" title="Facebook"></span><span class="element-invisible">Facebook</span></a></li>
+									<li><a target="_blank" href="https://twitter.com/share?url=http%3A%2F%2Fstream.nbcolympics.com%2F2018-winter-olympics-primetime-show-feb-9-standard&amp;text=NBC%20Primetime%3A%20Opening%20Ceremony%20(Standard)"><span class="icon-twitter" title="Twitter"></span><span class="element-invisible">Twitter</span></a></li>
+									<li><a href="mailto:?subject=NBC%20Primetime%3A%20Opening%20Ceremony%20(Standard)&amp;body=http%3A%2F%2Fstream.nbcolympics.com%2F2018-winter-olympics-primetime-show-feb-9-standard"><span class="icon-email" title="Email"></span><span class="element-invisible">Email</span></a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div id="right-side-module">
+						<div class="login-info">
+							<div class="network-logo-wrapper">
+								<div class="network-logo"></div>
+							</div>
+							<div class="mvpd-authorized">
+								<a href="#" class="mvpd-cobrand-logo" target="_blank" rel="noopener noreferrer"></a>
+								<a href="#" id="accessEnablerLogout" class="authentication-button">Sign out</a>
+								<div class="links">
+									<a href="http://www.nbcolympics.com/watch-live" target="_blank">FAQ</a>
+									<a href="mailto:support@nbctve.zendesk.com">Support</a>
+								</div>
+								<div id="logoutConfirm" class="overlay">
+									Are you sure you want to log out?<br/>
+									<button id="logoutOK">OK</button>&nbsp;&nbsp;&nbsp;&nbsp;
+									<button id="logoutCancel">Cancel</button>
+								</div>
+							</div>
+							<div class="unauthorized">
+								<p class="authentication-note">Your temporary access to LIVE streams and full replays has expired. Authenticate now to continue watching or enjoy <a href="http://www.nbcolympics.com/video">highlights and more</a>.</p>
+								<div class="links">
+									<a href="http://www.nbcolympics.com/watch-live" target="_blank">FAQ</a>
+									<a href="mailto:support@nbctve.zendesk.com">Support</a>
+								</div>
+							</div>
+							<div class="unauthorized-mobile">
+								<!--
+								<p class="authentication-note">To continue watching LIVE streams and full replays go to the NBC Sports app</p>
+								<a href="#" class="mobile-auth-button go-to-app authentication-button">Go to App</a>
+								-->
+								<div class="links">
+									<a href="http://www.nbcolympics.com/watch-live" target="_blank">FAQ</a>
+									<a href="mailto:support@nbctve.zendesk.com">Support</a>
+								</div>
+							</div>
+							
+							<div id="temp-pass" class="active">
+								<p class="authentication-note">Your access to LIVE streams and full replays will expire in</p>
+								<div id="countdown">
+									<div class="digits">
+										<span id="temp-pass-minutes">--</span>
+										<label>Mins</label>
+									</div>
+									<div class="colon">:</div>
+									<div class="digits">
+										<span id="temp-pass-seconds">--</span>
+										<label>Secs</label>
+									</div>
+								</div>
+								<br />
+								<a id="temp-pass-login" class="authentication-button" href="#">Verify Now</a>
+								
+								<a href="#" class="mobile-auth-button temp-pass-login authentication-button">Verify Now</a>
+								
+								<div class="links">
+									<a href="http://www.nbcolympics.com/watch-live" target="_blank">FAQ</a>
+									<a href="mailto:support@nbctve.zendesk.com">Support</a>
+								</div>
+							</div>
+							
+						</div>
+					</div>
+				</div>
+			</section>
+		</div>
+		<div id="tab-section" class="live-feed-active">
+			<ul id="tab-select">
+				<li><a href="#" id="live-feed-tab-select">Live Feed</a></li>
+				
+				<li><a href="#" id="schedule-tab-select">Stream Schedule</a></li>
+			</ul>
+			<div id="live-feed-tab" class="activity-active">
+				<div id="live-feed">
+					<div class="news-feed--left-bar--inner" ng-cloak ng-controller="NewsFeedMainCtrl">
+	<div class="news-feed--stories-list">
+		<div ng-repeat="story in stories | reverse:reverse | limitTo:limit:(reverse ? 0 : new)" data-init-gallery-image-video>
+			<div class="news-feed" ng-switch="story.type">
+				<div ng-switch-when="gallery">
+					<news-feed-gallery-card></news-feed-gallery-card>
+				</div>
+				<div ng-switch-when="video">
+					<news-feed-video-card></news-feed-video-card>
+				</div>
+				<div ng-switch-when="upcoming">
+					<news-feed-upcoming-card></news-feed-upcoming-card>
+				</div>
+				<div ng-switch-when="article">
+					<news-feed-article-card></news-feed-article-card>
+				</div>
+				<div ng-switch-when="article_image">
+					<news-feed-article-image-card></news-feed-article-image-card>
+				</div>
+				<div ng-switch-when="results_widget">
+					<news-feed-results-widget-card></news-feed-results-widget-card>
+				</div>
+				<div ng-switch-when="fact_text">
+					<news-feed-fact-text-card></news-feed-fact-text-card>
+				</div>
+				<div ng-switch-when="timeline">
+					<news-feed-timeline-card></news-feed-timeline-card>
+				</div>
+			</div>
+		</div>
+		<div class="news-feed--no-results" ng-if="!stories.length">
+			<div class="news-feed--no-results-sports">
+				<h3 class="news-feed--no-results-title">There is no active feed today</h3>
+			</div>
+		</div>
+		<div class="load-more-button">
+			<a data-ng-show="hasMore(stories.length)" data-ng-click="showMore()" class="load-more-button--btn" href="">+</a>
+		</div>
+	</div>
+</div>
+
+				</div>
+				<!--
+				<div id="social-feed">
+					<h3 id="social-feed-title">Latest Social</h3>
+					<div class="mr-space" id="mr-space_cer" data-space-id="nbc-sports/cer" style="min-height: 500px;"></div>
+					<script>!function(a,b,c,d,e,f,g,h,i,j,k){h=a[d]=a[d]||{},h.ui=h.ui||[],i=a[e]=a[e]||{},i[f]||(j=b.getElementsByTagName(c)[0],k=b.createElement(c),k.src="//platform.massrelevance.com/js/massrel.js",j.parentNode.insertBefore(k,j),i[f]=function(){h.ui.push([].slice.call(arguments))}),i[f]("load",{el:b.getElementById(g)})}(window,document,"script","massrel","spredfast","exp","mr-space_cer");</script>
+
+				</div>
+				-->
+			</div>
+			<div id="schedule-tab">
+				<iframe class="schedule-tab-iframe"></iframe>
+			</div>
+		</div>
+
+	</main>
+	<!-- END  MAIN CONTENT -->
+
+	<!-- START footer -->
+	<footer class="footer" id="footer">
+		<div class="region region-footer">
+			<section class="block block-olympics-footer" id="block-olympics-footer-olympics-footer">
+
+				<div class="wrapper">
+					<!--   Footer columns -->
+					<div class="footer-columns clearfix">
+						<!--     Social media links -->
+						<div class="footer-link-box footer-social">
+							<ul class="footer-social-links">
+								<li><a target="_blank" href="https://www.facebook.com/nbcolympics"><span class="icon-facebook" title="Facebook"></span><span class="element-invisible">Facebook</span></a></li>
+								<li><a target="_blank" href="https://twitter.com/nbcolympics"><span class="icon-twitter" title="Twitter"></span><span class="element-invisible">Twitter</span></a></li>
+								<li><a target="_blank" href="https://instagram.com/nbcolympics"><span class="icon-instagram" title="Instagram"></span><span class="element-invisible">Instagram</span></a></li>
+								<li><a target="_blank" href="https://www.snapchat.com/add/nbcolympics"><span class="icon-snap-chat" title="Snapchat"></span><span class="element-invisible">Snapchat</span></a></li>
+							</ul>
+							<p>Get the latest sports news and commentary by following NBC Sports.</p>
+							<p></p>
+						</div>
+						<!--     Link stack 1 -->
+						<div class="footer-link-box footer-link-stack-1">
+							<ul>
+								<li>
+									<a href="http://www.nbcolympics.com/faq-olympics-live-extra">FAQ</a>
+								</li>
+								<li><a href="http://www.nbcolympics.com/contact-us">Contact Us</a></li>
+								<li><a href="http://www.nbcunicareers.com/">Jobs</a></li>
+								<li><a href="http://www.nbcolympics.com/site-map">Site Map</a></li>
+							</ul>
+						</div>
+						<!--     Link Stack 2 -->
+						<div class="footer-link-box footer-link-stack-2">
+							<ul class="footer-links">
+								<li><a href="http://www.nbcuniversal.com/privacy">Privacy Policy</a></li>
+								<li><a href="http://www.nbcolympics.com/terms-of-use">Terms Of Use</a></li>
+								<li>
+									<!--
+									  Ghostery Inc tag
+									  cid: 908
+									  pid: 221
+									-->
+									<a id="_bapw-link" href="//info.evidon.com/pub_info/221?v=1&amp;nt=0&amp;nw=false" target="_blank"><img id="_bapw-icon" style="border:0 !important;display:inline !important;vertical-align:middle !important;padding-right:5px !important;" src="//c.betrad.com/pub/icon1.png"><span style="vertical-align:middle !important">AdChoices</span></a>
+								</li>
+								<li><a href="http://shop.nbcsports.com/NBC_Olympics">NBCUniversal Olympics Store</a></li>
+								<li><a href="http://corporate.comcast.com/news-information/nbcuniversal-transaction/independent-programming">Independent Programming</a></li>
+							</ul>
+						</div>
+						<!--     Partner Logos -->
+						<div class="footer-link-box footer-partner-logos">
+							<a target="_blank" href="http://www.olympic.org/"><img class="footer-olympics-ico" src="http://www.nbcolympics.com/profiles/olympics/themes/nbcolympics/images/Olympics-ico.svg" alt="Olympics"></a>
+							<a target="_blank" href="http://www.pyeongchang2018.com"><img class="footer-rio2016-ico" src="http://www.nbcolympics.com/profiles/olympics/themes/nbcolympics/images/pyeongchange2018.svg" alt="PyeongChang 2018"></a>
+							<a target="_blank" href="http://nbcolympics.com/"><img class="footer-nbc-olympics-ico" src="http://www.nbcolympics.com/profiles/olympics/themes/nbcolympics/images/nbc-olympics-ico.svg" alt="NBC Universal"></a>
+							<a target="_blank" href="http://www.teamusa.org/"><img class="footer-team-usa-ico restrict-height" src="http://www.nbcolympics.com/profiles/olympics/themes/nbcolympics/images/team_usa.svg" alt="Team USA"></a>
+							<a target="_blank" href="http://www.nbcsports.com/"><img class="footer-nbcsports-ico" src="http://www.nbcolympics.com/profiles/olympics/themes/nbcolympics/images/NBCSports-ico.svg" alt="NBC Sports"></a>
+							<a target="_blank" href="https://www.sportsengine.com"><img class="footer-goldmap-ico restrict-height" src="http://www.nbcolympics.com/profiles/olympics/themes/nbcolympics/images/sports_engine.svg" alt="Sports Engine"></a>
+							<a target="_blank" href="http://playmaker.media/" class="footer-playmaker-ico"><img src="http://www.nbcolympics.com/profiles/olympics/themes/nbcolympics/images/playmaker-ico.svg" alt="PlayMaker"></a>
+							<a target="_blank" href="https://www.olympicchannel.com" class="footer-olympics-channel-ico"><img src="http://www.nbcolympics.com/profiles/olympics/themes/nbcolympics/images/olympics_channel_logo.svg" alt="Olympics Channel"></a>
+						</div>
+					</div>
+					<!--   Legal Text -->
+					<div class="footer-legal">
+						&copy;2018 NBCUniversal. All rights reserved. Any use, reproduction, modification, distribution, display or performance of this material without NBC Universal's prior written consent is prohibited. Use of the Website signifies your agreement to the Terms of Service and Privacy Policy. &copy; IOC 2018 Official Results powered by Atos. Timing and results management by Omega.
+					</div>
+				</div>
+			</section>
+		</div>
+	</footer>
+	<!-- END footer -->
+
+	<!-- START Remind Me modal -->
+	<div id="remind-me-modal"></div>    <!-- END Remind Me modal -->
+</div>
+<!-- Gallery overlay elements -->
+<div id="gallery-overlay"></div>
+<div id="gallery-popup-content"></div>
+<div class="region region-page-bottom">
+	<!-- SiteCatalyst code version: H.20.3.
+Copyright 1996-2017 Adobe, Inc. -->
+	<script language="JavaScript" type="text/javascript">
+		//var s_account = 'nbcuolympics2018mtkg';
+		var s_account = window.location.hostname.match(/^stream\./) ? "nbcuolympics2018mtkg" : "nbcuolympics2018mtkgdev";
+		var s_linkInternalFilters = "javascript:,nbcolympics.com,nbcsports.com";
+		var s_pageName = "NBC Olympics Live Extra";
+		var s_channel = '';
+		var s_override = {pageName: "NBC Olympics Live Extra"};
+	</script>
+	<script language="JavaScript" type="text/javascript" src="http://www.nbcsports.com/sites/all/modules/custom/nbcs_sitecatalyst/js/nbcs_adobe.js"></script>
+	<script language="JavaScript" type="text/javascript" src="/assets/page/static-js/VideoHeartbeat.min.js?v=1518730062018"></script>
+	<script type="text/javascript"><!--
+		/**
+		 * Custome JS code to define Olympics custom context vars.
+		 */
+		// Set localstation context data var.
+		if ( s.Util.cookieRead('local_channels') !== '' && JSON.parse(s.Util.cookieRead('local_channels')).local_affiliate !== undefined ) {
+			s.contextData['nbcs.localstation'] = JSON.parse(s.Util.cookieRead('local_channels')).local_affiliate.call_letters || '';
+		}
+		else {
+			if (s.Util.cookieRead('local_station_auto') !== '') {
+				s.contextData['nbcs.localstation'] = s.Util.cookieRead('local_station_auto');
+			}
+		}
+
+		s.pageName="NBC Olympics Live Extra";
+		s.prop2="NBC Olympics Extra";
+		s.eVar2= "NBC Olympics Extra";
+		var OMNI_TYPE = 'NBCOlympics';
+		var OMNI_CHANNEL = 'NBCOlympics';
+		/************* DO NOT ALTER ANYTHING BELOW THIS LINE ! **************/
+		var s_code=s.t();if(s_code)document.write(s_code)//--></script>
+	<script type="text/javascript"><!--
+		if(navigator.appVersion.indexOf('MSIE')>=0)document.write(unescape('%3C')+'\!-'+'-')
+		//--></script>
+	<noscript><img src="http://examplecom.112.2O7.net/b/ss/examplecom/1/H.20.3--NS/0/7049512" height="1" width="1" alt=""></noscript>
+	<!--/DO NOT REMOVE/-->
+	<!-- End SiteCatalyst code version: H.20.3. -->
+</div>
+<script type="text/javascript" src="http://www.nbcolympics.com/sites/default/files/wrapper/6.js"></script>
+<script type="text/javascript">
+	<!--//--><![CDATA[//><!--
+
+	var geolocationService = function(physicalLocation) {
+		Drupal.nbcolympics_save_user_geolocation_info(physicalLocation);
+	}
+
+	//--><!]]>
+</script>
+<script type="text/javascript" src="http://www.nbcolympics.com/sites/default/files/wrapper/7.js"></script>
+<div class="hide-tracking"></div>
+
+
+
+
+
+
+
+<!--<script type="text/javascript" src="http://results.nbcolympics.com/widgets/widgetsFramework.js"></script>-->
+<script type="text/javascript" src="/assets/page/scripts/olympics-angular.js?v=1518730061998"></script>
+
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"4a4f8e0bcc","applicationID":"41202656","transactionName":"Z11aZkYHVkYFV0wPWl4XeVFAD1dbS1tUH1hAUVtBawtZXAprVQNbRWdPQFUWSFAWa0gHUlU=","queueTime":0,"applicationTime":170,"atts":"SxpZEA4dRUg=","errorBeacon":"bam.nr-data.net","agent":""}</script>
+<script type="text/javascript">
+(function() {
+	if (typeof window.performMobileRedirect !== 'function') {
+		window.performMobileRedirect = function(url) {
+			if (url) {
+				window.location.replace(url);
+			}
+		};
+	}
+
+	window.doMobileRedirect = function() {
+		
+		function getAppParams() {
+			var params = 'brand/nbc-olympics/';
+
+			if (parseInt(window.pid)) {
+				params += 'pid/' + parseInt(window.pid) + '/';
+			}
+
+			
+
+			return params;
+		}
+		
+
+		
+		if (navigator.userAgent.match(/iPhone|iP[ao]d/i) ) {
+			window.performMobileRedirect('https://itunes.apple.com/us/app/nbc-sports-live-extra/id542511686?mt=8&sports-mobile-apps;#https://itunes.apple.com/us/app/nbc-sports-live-extra/id542511686?mt=8&sports-mobile-apps');
+		}
+		
+		
+		if (navigator.userAgent.match(/Android/i)) {
+			window.performMobileRedirect('air.com.nbcuni.com.nbcsports.liveextra://' + getAppParams());
+			
+			this.timer = setTimeout(function() {
+				window.performMobileRedirect('https://play.google.com/store/apps/details?id=air.com.nbcuni.com.nbcsports.liveextra&hl=en&sports-mobile-apps;#https://play.google.com/store/apps/details?id=air.com.nbcuni.com.nbcsports.liveextra&hl=en&sports-mobile-apps');
+			}, 1000);
+			
+		}
+		
+		
+		if( navigator.userAgent.match(/Windows Phone/i) ) {
+			window.performMobileRedirect('https://www.microsoft.com/en-us/store/apps/nbc-sports-live-extra/9wzdncrfjcl3;#https://www.microsoft.com/en-us/store/apps/nbc-sports-live-extra/9wzdncrfjcl3');
+		}
+		
+	}
+
+	
+
+	
+	if (NBC_page) {
+		NBC_page.allowMobileChoice();
+	}
+	
+})();
+</script>
+
+</body>
+</html>
+

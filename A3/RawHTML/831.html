@@ -1,0 +1,2145 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" xmlns:article="http://ogp.me/ns/article#" xmlns:book="http://ogp.me/ns/book#" xmlns:product="http://ogp.me/ns/product#" xmlns:profile="http://ogp.me/ns/profile#" xmlns:video="http://ogp.me/ns/video#" prefix="content: http://purl.org/rss/1.0/modules/content/  dc: http://purl.org/dc/terms/  foaf: http://xmlns.com/foaf/0.1/  og: http://ogp.me/ns#  rdfs: http://www.w3.org/2000/01/rdf-schema#  schema: http://schema.org/  sioc: http://rdfs.org/sioc/ns#  sioct: http://rdfs.org/sioc/types#  skos: http://www.w3.org/2004/02/skos/core#  xsd: http://www.w3.org/2001/XMLSchema#  fb: http://ogp.me/ns/fb# article: http://ogp.me/ns/article#" xmlns:fb="http://www.facebook.com/2008/fbml">
+  <head>
+          <meta charset="utf-8" /><script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,t,n){function r(n){if(!t[n]){var o=t[n]={exports:{}};e[n][0].call(o.exports,function(t){var o=e[n][1][t];return r(o||t)},o,o.exports)}return t[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({1:[function(e,t,n){function r(){}function o(e,t,n){return function(){return i(e,[f.now()].concat(u(arguments)),t?null:this,n),t?void 0:this}}var i=e("handle"),a=e(2),u=e(3),c=e("ee").get("tracer"),f=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],d="api-",l=d+"ixn-";a(p,function(e,t){s[t]=o(d+t,!0,"api")}),s.addPageAction=o(d+"addPageAction",!0),s.setCurrentRouteName=o(d+"routeName",!0),t.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,t){var n={},r=this,o="function"==typeof t;return i(l+"tracer",[f.now(),e,n],r),function(){if(c.emit((o?"":"no-")+"fn-start",[f.now(),r,o],n),o)try{return t.apply(this,arguments)}catch(e){throw c.emit("fn-err",[arguments,this,e],n),e}finally{c.emit("fn-end",[f.now()],n)}}}};a("setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,t){m[t]=o(l+t)}),newrelic.noticeError=function(e){"string"==typeof e&&(e=new Error(e)),i("err",[e,f.now()])}},{}],2:[function(e,t,n){function r(e,t){var n=[],r="",i=0;for(r in e)o.call(e,r)&&(n[i]=t(r,e[r]),i+=1);return n}var o=Object.prototype.hasOwnProperty;t.exports=r},{}],3:[function(e,t,n){function r(e,t,n){t||(t=0),"undefined"==typeof n&&(n=e?e.length:0);for(var r=-1,o=n-t||0,i=Array(o<0?0:o);++r<o;)i[r]=e[t+r];return i}t.exports=r},{}],4:[function(e,t,n){t.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,t,n){function r(){}function o(e){function t(e){return e&&e instanceof r?e:e?c(e,u,i):i()}function n(n,r,o,i){if(!d.aborted||i){e&&e(n,r,o);for(var a=t(o),u=m(n),c=u.length,f=0;f<c;f++)u[f].apply(a,r);var p=s[y[n]];return p&&p.push([b,n,r,a]),a}}function l(e,t){v[e]=m(e).concat(t)}function m(e){return v[e]||[]}function w(e){return p[e]=p[e]||o(n)}function g(e,t){f(e,function(e,n){t=t||"feature",y[n]=t,t in s||(s[t]=[])})}var v={},y={},b={on:l,emit:n,get:w,listeners:m,context:t,buffer:g,abort:a,aborted:!1};return b}function i(){return new r}function a(){(s.api||s.feature)&&(d.aborted=!0,s=d.backlog={})}var u="nr@context",c=e("gos"),f=e(2),s={},p={},d=t.exports=o();d.backlog=s},{}],gos:[function(e,t,n){function r(e,t,n){if(o.call(e,t))return e[t];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,t,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return e[t]=r,r}var o=Object.prototype.hasOwnProperty;t.exports=r},{}],handle:[function(e,t,n){function r(e,t,n,r){o.buffer([e],r),o.emit(e,t,n)}var o=e("ee").get("handle");t.exports=r,r.ee=o},{}],id:[function(e,t,n){function r(e){var t=typeof e;return!e||"object"!==t&&"function"!==t?-1:e===window?0:a(e,i,function(){return o++})}var o=1,i="nr@id",a=e("gos");t.exports=r},{}],loader:[function(e,t,n){function r(){if(!x++){var e=h.info=NREUM.info,t=d.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&t))return s.abort();f(y,function(t,n){e[t]||(e[t]=n)}),c("mark",["onload",a()+h.offset],null,"api");var n=d.createElement("script");n.src="https://"+e.agent,t.parentNode.insertBefore(n,t)}}function o(){"complete"===d.readyState&&i()}function i(){c("mark",["domContent",a()+h.offset],null,"api")}function a(){return E.exists&&performance.now?Math.round(performance.now()):(u=Math.max((new Date).getTime(),u))-h.offset}var u=(new Date).getTime(),c=e("handle"),f=e(2),s=e("ee"),p=window,d=p.document,l="addEventListener",m="attachEvent",w=p.XMLHttpRequest,g=w&&w.prototype;NREUM.o={ST:setTimeout,SI:p.setImmediate,CT:clearTimeout,XHR:w,REQ:p.Request,EV:p.Event,PR:p.Promise,MO:p.MutationObserver};var v=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1071.min.js"},b=w&&g&&g[l]&&!/CriOS/.test(navigator.userAgent),h=t.exports={offset:u,now:a,origin:v,features:{},xhrWrappable:b};e(1),d[l]?(d[l]("DOMContentLoaded",i,!1),p[l]("load",r,!1)):(d[m]("onreadystatechange",o),p[m]("onload",r)),c("mark",["firstbyte",u],null,"api");var x=0,E=e(4)},{}]},{},["loader"]);</script>
+<meta itemprop="acquia_lift:content_title" content="Meet the Military Athletes Competing for Team USA at the Winter Olympics" />
+<meta itemprop="acquia_lift:content_type" content="article" />
+<meta itemprop="acquia_lift:page_type" content="node page" />
+<meta itemprop="acquia_lift:content_section" content="" />
+<meta itemprop="acquia_lift:content_keywords" content="" />
+<meta itemprop="acquia_lift:post_id" content="115356" />
+<meta itemprop="acquia_lift:content_uuid" content="25950131-00cc-430b-8644-c2d2b140f641" />
+<meta itemprop="acquia_lift:published_date" content="1518102400" />
+<meta itemprop="acquia_lift:persona" content="" />
+<meta itemprop="acquia_lift:engagement_score" content="1" />
+<meta itemprop="acquia_lift:author" content="jbarber" />
+<meta itemprop="acquia_lift:account_id" content="MILITARYCOM" />
+<meta itemprop="acquia_lift:site_id" content="militaryprod" />
+<meta itemprop="acquia_lift:contentOrigin" content="a0297b24-aa6c-4c7a-55d7-1cb12c38042a" />
+<meta itemprop="acquia_lift:liftAssetsURL" content="https://lift3assets.lift.acquia.com/stable" />
+<meta itemprop="acquia_lift:contentReplacementMode" content="trusted" />
+<script src="https://lift3assets.lift.acquia.com/stable/lift.js" async="true"></script>
+<meta name="title" content="Meet the Military Athletes Competing for Team USA at the Winter Olympics | Military.com" />
+<meta name="twitter:card" content="summary_large_image" />
+<link rel="canonical" href="https://www.military.com/undertheradar/2018/02/08/meet-military-athletes-competing-team-usa-winter-olympics.html" />
+<meta property="og:site_name" content="Military.com" />
+<meta name="description" content="Seven U.S. military athletes are competing in the 2018 Winter Olympics." />
+<meta name="twitter:site" content="@militarydotcom" />
+<meta property="fb:app_id" content="140586622674265" />
+<meta name="twitter:description" content="Seven U.S. military athletes are competing in the 2018 Winter Olympics." />
+<meta property="og:type" content="article" />
+<meta name="twitter:title" content="Meet the Military Athletes Competing for Team USA at the Winter Olympics" />
+<meta name="twitter:site:id" content="14692385" />
+<meta property="og:url" content="https://www.military.com/undertheradar/2018/02/08/meet-military-athletes-competing-team-usa-winter-olympics.html" />
+<link rel="image_src" href="https://images01.military.com/sites/default/files/2018-02/2010bobsledteam.jpg" />
+<meta name="twitter:creator" content="@militarydotcom" />
+<meta name="twitter:creator:id" content="14692385" />
+<meta property="og:title" content="Meet the Military Athletes Competing for Team USA at the Winter Olympics" />
+<meta name="twitter:url" content="https://www.military.com/undertheradar/2018/02/08/meet-military-athletes-competing-team-usa-winter-olympics.html" />
+<meta property="og:description" content="Seven U.S. military athletes are competing in the 2018 Winter Olympics." />
+<meta name="twitter:image:alt" content="Meet the Military Athletes Competing for Team USA at the Winter Olympics" />
+<meta name="twitter:image" content="https://images01.military.com/sites/default/files/2018-02/2010bobsledteam.jpg" />
+<meta name="twitter:image:width" content="1500" />
+<meta name="twitter:image:height" content="1000" />
+<meta property="og:image" content="https://images01.military.com/sites/default/files/2018-02/2010bobsledteam.jpg" />
+<meta property="og:image:secure_url" content="https://images01.military.com/sites/default/files/2018-02/2010bobsledteam.jpg" />
+<meta property="og:image:type" content="image/jpeg" />
+<meta property="og:image:width" content="1500" />
+<meta property="og:image:height" content="1000" />
+<meta property="og:updated_time" content="2018-02-08T04:00:00-08:00" />
+<meta property="article:publisher" content="https://www.facebook.com/Militarydotcom" />
+<meta property="article:section" content="Under the Radar" />
+<meta property="article:tag" content="Under the Radar, Entertainment" />
+<meta property="article:published_time" content="2018-02-08T04:00:00-08:00" />
+<meta property="article:modified_time" content="2018-02-08T04:00:00-08:00" />
+<script>oasKeywords = 'Under the Radar,Entertainment,Under the Radar';</script>
+<script>oasPositions = ['x88', 'x63', 'Position2', 'Position3', 'Bottom1', 'Right3', 'x42', 'Right', 'x45', 'Position1', 'Bottom', 'x30', 'x29', 'x89'];</script>
+<link rel="amphtml" href="https://www.military.com/undertheradar/2018/02/08/meet-military-athletes-competing-team-usa-winter-olympics.html/amp" />
+<meta name="Generator" content="Drupal 8 (https://www.drupal.org)" />
+<meta name="MobileOptimized" content="width" />
+<meta name="HandheldFriendly" content="true" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="shortcut icon" href="/themes/military/favicon.ico" type="image/vnd.microsoft.icon" />
+<link rel="revision" href="/undertheradar/2018/02/08/meet-military-athletes-competing-team-usa-winter-olympics.html" />
+<script src="//images02.military.com/sites/default/files/google_tag/google_tag.script.js?p49mau" async="true"></script>
+
+      <title>Meet the Military Athletes Competing for Team USA at the Winter Olympics | Military.com</title>
+      <link rel="stylesheet" href="//images02.military.com/sites/default/files/css/css_J8SQhYpvWdE86PwejinkBxDyrs5DcTFGgoo1hsNasWg.css?p49mau" media="all" />
+<link rel="stylesheet" href="//images04.military.com/sites/default/files/css/css_Ig_t-6zrsUwRyF-YAaiJ4TgPpj9zgTyyOK8vGz1P9BM.css?p49mau" media="all" />
+<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Roboto+Condensed:300,400,700|Roboto:300,300i,400,500,700,700i" media="all" />
+<link rel="stylesheet" href="//images02.military.com/sites/default/files/css/css_7KgSA18epYTHlxnkouk5glbJIoFos-i6UbG7w5sBcs0.css?p49mau" media="all" />
+
+      
+<!--[if lte IE 8]>
+<script src="//images01.military.com/sites/default/files/js/js_SdaoTghI3EIlQOWhAvyr5O2jMcbe-X41sI7Lok6Iaf4.js"></script>
+<![endif]-->
+<script src="//images04.military.com/core/assets/vendor/modernizr/modernizr.min.js?v=3.3.1"></script>
+<script src="//images05.military.com/sites/default/files/js/js_DreHua_bVt8W4l0wnai5iyvIcOP0M6x7vJFvgvdnJUY.js"></script>
+<script src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js" async></script>
+
+      </head>
+  <body class="path--node path--undertheradar path--undertheradar20180208meet-military-athletes-competing-team-usa-winter-olympicshtml page-node-type-article variant--desktop">
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TJK2CRM" height="0" width="0"></iframe></noscript>
+    
+
+
+<div class="page">
+      
+
+<header>
+  <div class="container-fluid">
+            
+
+<section class="header--mobile">
+      <a href="/" class="branding">
+      <img src="//images.military.com/themes/military/logo.svg" onerror="this.onerror=null; this.src='//images.military.com/themes/military/logo.png'"/>
+    </a>
+  
+      
+
+
+
+<a href=/ class="button button--icon button--icon--bars" data-target="">
+  
+<i class="icon icon-bars"></i>
+</a>
+  
+      
+
+
+
+<a href=/ class="button button--icon button--icon--close" data-target="">
+  
+<i class="icon icon-close"></i>
+</a>
+  
+  
+
+
+
+      <nav class="block block--system-menu-block-main">
+    
+    
+
+      
+
+
+
+
+        <ul class="menu menu--main">
+              <li class="menu--account__anonymous--mobile">
+        <a href="http://www.military.com/member-reg/login.html?vlv_redir=http%3A%2F%2Fwww.military.com%2F">Login</a>
+      </li>
+      <li class="menu--account__authenticated--mobile">
+        <a href="http://www.military.com/profile/member-profile.html">Profile</a>
+        <ul>
+  <li><a href="https://www.military.com/profile/member-profile.html">Profile</a></li>
+  <li><a href="https://www.military.com/resumes/">Resumes</a></li>
+  <li><a href="https://www.military.com/CoverLetters/">Cover Letters</a></li>
+  <li><a href="https://www.military.com/applicationHistory/">Jobs I've Applied To</a></li>
+  <li><a href="https://www.military.com/SavedJobs/">Saved Jobs</a></li>
+  <li><a href="https://www.military.com/SavedSearches/">Saved Searches</a></li>
+  <li><a href="https://www.military.com/profile/messages-inbox.html">Messages</a></li>
+  <li><a href="https://www.military.com/profile/friends.html">Friends</a></li>
+  <li><a href="https://www.military.com/Membership/MembershipPage/">Page Manager</a></li>
+  <li><a href="https://www.military.com/profile/member-profile-newsletter-settings.html">Subscriptions</a></li>
+  <li><a id="user-menu-logout-link" href="https://www.military.com/member-reg/logout.html?vlv_redir=">Log out</a></li>
+</ul>
+      </li>
+      <li class="menu--account__anonymous--mobile menu--account__authenticated--mobile">
+        <a href="/">Home</a>
+      </li>
+                        <li>
+                  <a href="/benefits" target="_self" rel="" data-drupal-link-system-path="node/206">Benefits</a>
+                                <ul>
+                    <li>
+                  <a href="/benefits" target="_self" rel="" data-drupal-link-system-path="node/206">Benefits Home</a>
+                        </li>
+                <li>
+                  <a href="/benefits/directory" target="_self" rel="" data-drupal-link-system-path="node/1011">Benefits Directory</a>
+                        </li>
+                <li>
+                  <a href="/benefits/military-pay" target="_self" rel="" data-drupal-link-system-path="node/3671">Military Pay</a>
+                        </li>
+                <li>
+                  <a href="/education" target="_self" rel="" data-drupal-link-system-path="node/1136">Education</a>
+                        </li>
+                <li>
+                  <a href="/benefits/veteran-benefits" target="_self" rel="" data-drupal-link-system-path="node/1056">Veteran Benefits</a>
+                        </li>
+                <li>
+                  <a href="/benefits/veterans-health-care" target="_self" rel="" data-drupal-link-system-path="node/3816">Veteran Health Care</a>
+                        </li>
+                <li>
+                  <a href="/benefits/tricare" target="_self" rel="" data-drupal-link-system-path="node/3736">TRICARE</a>
+                        </li>
+                <li>
+                  <a href="/education/gi-bill" target="_self" rel="" data-drupal-link-system-path="node/1206">GI Bill</a>
+                        </li>
+                <li>
+                  <a href="/money/va-loans" target="_self" rel="" data-drupal-link-system-path="node/1941">VA Loans</a>
+                        </li>
+                <li>
+                  <a href="/money/retirement" target="_self" rel="" data-drupal-link-system-path="node/2511">Retirement</a>
+                        </li>
+        </ul>
+    
+                        </li>
+                <li>
+                  <a href="/daily-news" target="_self" rel="" data-drupal-link-system-path="node/1251">News</a>
+                                <ul>
+                    <li>
+                  <a href="/daily-news" target="_self" rel="" data-drupal-link-system-path="node/1251">News Home</a>
+                        </li>
+                <li>
+                  <a href="/daily-news/opinion" target="_self" rel="" data-drupal-link-system-path="node/99241">Opinion</a>
+                        </li>
+                <li>
+                  <a href="/daily-news/events" target="_self" rel="" data-drupal-link-system-path="node/5306">Events</a>
+                        </li>
+                <li>
+                  <a href="/army" data-drupal-link-system-path="node/3241">Army</a>
+                        </li>
+                <li>
+                  <a href="/marine-corps" target="_self" rel="" data-drupal-link-system-path="node/3256">Marine Corps</a>
+                        </li>
+                <li>
+                  <a href="/navy" data-drupal-link-system-path="node/3271">Navy</a>
+                        </li>
+                <li>
+                  <a href="/air-force" target="_self" rel="" data-drupal-link-system-path="node/3231">Air Force</a>
+                        </li>
+                <li>
+                  <a href="/coast-guard" target="_self" rel="" data-drupal-link-system-path="node/3251">Coast Guard</a>
+                        </li>
+                <li>
+                  <a href="/dodbuzz" target="_self" rel="" data-drupal-link-system-path="node/2641">Procurement</a>
+                        </li>
+                <li>
+                  <a href="/defensetech" target="_self" rel="" data-drupal-link-system-path="node/3291">Technology</a>
+                        </li>
+                <li>
+                  <a href="/kitup" target="_self" rel="" data-drupal-link-system-path="node/2646">Gear</a>
+                        </li>
+                <li>
+                  <a href="/military-report" target="_self" rel="" data-drupal-link-system-path="node/2061">Military Report</a>
+                        </li>
+        </ul>
+    
+                        </li>
+                <li>
+                  <a href="/veteran-jobs" target="_self" rel="" data-drupal-link-system-path="node/1746">Veteran Jobs</a>
+                                <ul>
+                    <li>
+                  <a href="/veteran-jobs" target="_self" rel="" data-drupal-link-system-path="node/1746">Veteran Jobs Home</a>
+                        </li>
+                <li>
+                  <a href="/hiring-veterans" target="_self" rel="" data-drupal-link-system-path="node/1911">Hiring Veterans</a>
+                        </li>
+                <li>
+                  <a href="/veteran-jobs" target="_self" rel="" data-drupal-link-system-path="node/1746">Job Search</a>
+                        </li>
+                <li>
+                  <a href="/veteran-jobs/career-discovery" target="_self" rel="" data-drupal-link-system-path="node/2571">Career Discovery</a>
+                        </li>
+                <li>
+                  <a href="/military-transition" target="_self" rel="" data-drupal-link-system-path="node/1986">Transition Center</a>
+                        </li>
+                <li>
+                  <a href="/veteran-jobs/security-clearance-jobs" data-drupal-link-system-path="node/2171">Security Clearance Jobs</a>
+                        </li>
+                <li>
+                  <a href="/veteran-jobs/skills-translator" target="_self" rel="" data-drupal-link-system-path="node/99441">Skills Translator</a>
+                        </li>
+                <li>
+                  <a href="/veteran-jobs/career-advice" target="_self" rel="" data-drupal-link-system-path="node/2201">Career Advice</a>
+                        </li>
+                <li>
+                  <a href="/veteran-jobs/career-advice/job-hunting/upcoming-job-fairs" target="_self" rel="" title="Veteran Job Fairs" data-drupal-link-system-path="node/2191">Job Fairs</a>
+                        </li>
+                <li>
+                  <a href="/veteran-employers" target="_self" rel="" data-drupal-link-system-path="node/1016">Veteran Employers</a>
+                        </li>
+        </ul>
+    
+                        </li>
+                <li>
+                  <a href="/military-life" target="_self" rel="" data-drupal-link-system-path="node/1791">Military Life</a>
+                                <ul>
+                    <li>
+                  <a href="/military-life" target="_self" rel="" data-drupal-link-system-path="node/1791">Military Life Home</a>
+                        </li>
+                <li>
+                  <a href="/join-armed-forces" data-drupal-link-system-path="node/2291">Join the Military</a>
+                        </li>
+                <li>
+                  <a href="/military-fitness" target="_self" rel="" data-drupal-link-system-path="node/1991">Fitness</a>
+                        </li>
+                <li>
+                  <a href="http://www.military.com/base-guide/" target="_self" rel="">Base Guides</a>
+                        </li>
+                <li>
+                  <a href="/money" target="_self" rel="" data-drupal-link-system-path="node/2401">Money</a>
+                        </li>
+                <li>
+                  <a href="/spouse" target="_self" rel="" data-drupal-link-system-path="node/3621">Spouse and Family</a>
+                        </li>
+                <li>
+                  <a href="/special-operations" target="_self" rel="" data-drupal-link-system-path="node/2396">Special Operations</a>
+                        </li>
+                <li>
+                  <a href="/equipment" target="_self" rel="" data-drupal-link-system-path="node/2346">Equipment Guide</a>
+                        </li>
+                <li>
+                  <a href="/off-duty" target="_self" rel="" data-drupal-link-system-path="node/2241">Entertainment</a>
+                        </li>
+                <li>
+                  <a href="/community" target="_self" rel="" data-drupal-link-system-path="node/4221">Community</a>
+                        </li>
+                <li>
+                  <a href="/money/pcs-dity-move" target="_self" rel="" data-drupal-link-system-path="node/2506">PCS &amp; Relocation</a>
+                        </li>
+                <li>
+                  <a href="/money/home-ownership" target="_self" rel="" data-drupal-link-system-path="node/2436">Home Ownership</a>
+                        </li>
+                <li>
+                  <a href="/deployment" target="_self" rel="" data-drupal-link-system-path="node/4226">Deployment</a>
+                        </li>
+        </ul>
+    
+                        </li>
+                <li>
+                  <a href="http://www.military.com/video/" target="" rel="">Videos</a>
+                                <ul>
+                    <li>
+                  <a href="http://www.military.com/video/" target="" rel="">Video Home</a>
+                        </li>
+                <li>
+                  <a href="http://www.military.com/video/shock-and-awe/" target="" rel="">Shock &amp; Awe</a>
+                        </li>
+                <li>
+                  <a href="http://www.military.com/video/militarydotcom/" target="" rel="">Military.com Originals</a>
+                        </li>
+                <li>
+                  <a href="http://www.military.com/video/editors-picks/" target="" rel="">Editor&#039;s Picks</a>
+                        </li>
+                <li>
+                  <a href="http://www.military.com/video/most-popular" target="" rel="">Most Popular</a>
+                        </li>
+                <li>
+                  <a href="http://www.military.com/video/shock-and-awe/flir" target="" rel="">FLIR</a>
+                        </li>
+                <li>
+                  <a href="http://www.military.com/video/shock-and-awe/guns-weapons" target="" rel="">Guns &amp; Weapons</a>
+                        </li>
+                <li>
+                  <a href="http://www.military.com/video/shock-and-awe/sniper-kills" target="" rel="">Snipers</a>
+                        </li>
+                <li>
+                  <a href="http://www.military.com/video/shock-and-awe/special-operations" target="" rel="">Special Operations</a>
+                        </li>
+                <li>
+                  <a href="http://www.military.com/video/shock-and-awe/equipment" target="" rel="">Equipment</a>
+                        </li>
+        </ul>
+    
+                        </li>
+                <li>
+                  <a href="/discounts" target="" rel="" data-drupal-link-system-path="node/1086">Discounts</a>
+                                <ul>
+                    <li>
+                  <a href="/discounts" target="" rel="" data-drupal-link-system-path="node/1086">Discounts Home</a>
+                        </li>
+                <li>
+                  <a href="/discounts/category" target="_self" rel="" data-drupal-link-system-path="node/4666">Categories</a>
+                        </li>
+                <li>
+                  <a href="/discounts/merchants" target="_self" rel="" data-drupal-link-system-path="node/4631">Merchants</a>
+                        </li>
+                <li>
+                  <a href="/discounts/hot-deals" target="_self" rel="" data-drupal-link-system-path="taxonomy/term/1551">Discounts of the Month</a>
+                        </li>
+                <li>
+                  <a href="/discounts/travel" target="_self" rel="" data-drupal-link-system-path="taxonomy/term/1626">Travel</a>
+                        </li>
+                <li>
+                  <a href="/discounts/apparel-and-accessories" target="_self" rel="" data-drupal-link-system-path="taxonomy/term/1411">Apparel &amp; Accessories</a>
+                        </li>
+                <li>
+                  <a href="/discounts/freebies" target="_self" rel="" data-drupal-link-system-path="taxonomy/term/1521">Freebies</a>
+                        </li>
+                <li>
+                  <a href="/discounts/lodging" target="_self" rel="" data-drupal-link-system-path="taxonomy/term/1651">Lodgings</a>
+                        </li>
+                <li>
+                  <a href="/discounts/ski-resorts" target="_self" rel="" data-drupal-link-system-path="taxonomy/term/1461">Ski Resorts</a>
+                        </li>
+        </ul>
+    
+                        </li>
+              <li class="menu--account__anonymous--mobile menu--account__authenticated--mobile">
+        <a href="javascript:window.FreshWidget.show();">Help & Feedback</a>
+      </li>
+    </ul>
+    
+
+
+        </nav>
+  
+
+      
+
+
+
+<a href=/ class="button button--icon button--icon--search" data-target="">
+  
+<i class="icon icon-search"></i>
+</a>
+
+        <div class="block--search--mobile">
+      <div>
+        
+
+
+
+<a href=/ class="button button--icon button--icon--close" data-target="">
+  
+<i class="icon icon-close"></i>
+</a>
+
+        <form name="gs" method="GET" action="//search.military.com/search">
+          <input type="hidden" name="site" value="military">
+          <input type="hidden" name="client" value="military">
+          <input type="hidden" name="proxystylesheet" value="military_mobile">
+          <input type="hidden" name="output" value="xml_no_dtd">
+          <input type="hidden" name="access" value="p">
+          <input type="hidden" name="filter" value="1">
+          <input type="hidden" name="entqr" value="3">
+          <input type="hidden" name="tabname" value="military">
+
+          <div class="search-wrapper">
+            <input type="search" name="q" value="" class="searchInput" placeholder="Search Military.com">
+          </div>
+
+          <button class="button">Search</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+          
+
+
+
+      <div class="block block--mil-oas-ad-block">
+    
+    
+
+      <div class="oas-ad-block x89" id="oas-ad-block-x89" data-oasposition="x89"><script type="text/javascript">try { OAS_AD("x89"); } catch(e) {} </script></div>
+        </div>
+  
+
+
+
+      <div class="block block--system-branding-block">
+    
+    
+
+        <a href="/" title="Home" rel="home">
+            <img src="//images.military.com/themes/military/logo.svg" class="logo" alt="Home" onerror="this.onerror=null; this.src='/themes/military/logo.png'"/>
+    </a>
+      
+      </div>
+  
+
+
+
+      <nav class="block block--system-menu-block-main">
+    
+    
+
+      
+
+
+
+
+        <ul class="menu menu--main">
+              <li class="menu--account__anonymous--mobile">
+        <a href="http://www.military.com/member-reg/login.html?vlv_redir=http%3A%2F%2Fwww.military.com%2F">Login</a>
+      </li>
+      <li class="menu--account__authenticated--mobile">
+        <a href="http://www.military.com/profile/member-profile.html">Profile</a>
+        <ul>
+  <li><a href="https://www.military.com/profile/member-profile.html">Profile</a></li>
+  <li><a href="https://www.military.com/resumes/">Resumes</a></li>
+  <li><a href="https://www.military.com/CoverLetters/">Cover Letters</a></li>
+  <li><a href="https://www.military.com/applicationHistory/">Jobs I've Applied To</a></li>
+  <li><a href="https://www.military.com/SavedJobs/">Saved Jobs</a></li>
+  <li><a href="https://www.military.com/SavedSearches/">Saved Searches</a></li>
+  <li><a href="https://www.military.com/profile/messages-inbox.html">Messages</a></li>
+  <li><a href="https://www.military.com/profile/friends.html">Friends</a></li>
+  <li><a href="https://www.military.com/Membership/MembershipPage/">Page Manager</a></li>
+  <li><a href="https://www.military.com/profile/member-profile-newsletter-settings.html">Subscriptions</a></li>
+  <li><a id="user-menu-logout-link" href="https://www.military.com/member-reg/logout.html?vlv_redir=">Log out</a></li>
+</ul>
+      </li>
+      <li class="menu--account__anonymous--mobile menu--account__authenticated--mobile">
+        <a href="/">Home</a>
+      </li>
+                        <li>
+                  <a href="/benefits" target="_self" rel="" data-drupal-link-system-path="node/206">Benefits</a>
+                                <ul>
+                    <li>
+                  <a href="/benefits" target="_self" rel="" data-drupal-link-system-path="node/206">Benefits Home</a>
+                        </li>
+                <li>
+                  <a href="/benefits/directory" target="_self" rel="" data-drupal-link-system-path="node/1011">Benefits Directory</a>
+                        </li>
+                <li>
+                  <a href="/benefits/military-pay" target="_self" rel="" data-drupal-link-system-path="node/3671">Military Pay</a>
+                        </li>
+                <li>
+                  <a href="/education" target="_self" rel="" data-drupal-link-system-path="node/1136">Education</a>
+                        </li>
+                <li>
+                  <a href="/benefits/veteran-benefits" target="_self" rel="" data-drupal-link-system-path="node/1056">Veteran Benefits</a>
+                        </li>
+                <li>
+                  <a href="/benefits/veterans-health-care" target="_self" rel="" data-drupal-link-system-path="node/3816">Veteran Health Care</a>
+                        </li>
+                <li>
+                  <a href="/benefits/tricare" target="_self" rel="" data-drupal-link-system-path="node/3736">TRICARE</a>
+                        </li>
+                <li>
+                  <a href="/education/gi-bill" target="_self" rel="" data-drupal-link-system-path="node/1206">GI Bill</a>
+                        </li>
+                <li>
+                  <a href="/money/va-loans" target="_self" rel="" data-drupal-link-system-path="node/1941">VA Loans</a>
+                        </li>
+                <li>
+                  <a href="/money/retirement" target="_self" rel="" data-drupal-link-system-path="node/2511">Retirement</a>
+                        </li>
+        </ul>
+    
+                        </li>
+                <li>
+                  <a href="/daily-news" target="_self" rel="" data-drupal-link-system-path="node/1251">News</a>
+                                <ul>
+                    <li>
+                  <a href="/daily-news" target="_self" rel="" data-drupal-link-system-path="node/1251">News Home</a>
+                        </li>
+                <li>
+                  <a href="/daily-news/opinion" target="_self" rel="" data-drupal-link-system-path="node/99241">Opinion</a>
+                        </li>
+                <li>
+                  <a href="/daily-news/events" target="_self" rel="" data-drupal-link-system-path="node/5306">Events</a>
+                        </li>
+                <li>
+                  <a href="/army" data-drupal-link-system-path="node/3241">Army</a>
+                        </li>
+                <li>
+                  <a href="/marine-corps" target="_self" rel="" data-drupal-link-system-path="node/3256">Marine Corps</a>
+                        </li>
+                <li>
+                  <a href="/navy" data-drupal-link-system-path="node/3271">Navy</a>
+                        </li>
+                <li>
+                  <a href="/air-force" target="_self" rel="" data-drupal-link-system-path="node/3231">Air Force</a>
+                        </li>
+                <li>
+                  <a href="/coast-guard" target="_self" rel="" data-drupal-link-system-path="node/3251">Coast Guard</a>
+                        </li>
+                <li>
+                  <a href="/dodbuzz" target="_self" rel="" data-drupal-link-system-path="node/2641">Procurement</a>
+                        </li>
+                <li>
+                  <a href="/defensetech" target="_self" rel="" data-drupal-link-system-path="node/3291">Technology</a>
+                        </li>
+                <li>
+                  <a href="/kitup" target="_self" rel="" data-drupal-link-system-path="node/2646">Gear</a>
+                        </li>
+                <li>
+                  <a href="/military-report" target="_self" rel="" data-drupal-link-system-path="node/2061">Military Report</a>
+                        </li>
+        </ul>
+    
+                        </li>
+                <li>
+                  <a href="/veteran-jobs" target="_self" rel="" data-drupal-link-system-path="node/1746">Veteran Jobs</a>
+                                <ul>
+                    <li>
+                  <a href="/veteran-jobs" target="_self" rel="" data-drupal-link-system-path="node/1746">Veteran Jobs Home</a>
+                        </li>
+                <li>
+                  <a href="/hiring-veterans" target="_self" rel="" data-drupal-link-system-path="node/1911">Hiring Veterans</a>
+                        </li>
+                <li>
+                  <a href="/veteran-jobs" target="_self" rel="" data-drupal-link-system-path="node/1746">Job Search</a>
+                        </li>
+                <li>
+                  <a href="/veteran-jobs/career-discovery" target="_self" rel="" data-drupal-link-system-path="node/2571">Career Discovery</a>
+                        </li>
+                <li>
+                  <a href="/military-transition" target="_self" rel="" data-drupal-link-system-path="node/1986">Transition Center</a>
+                        </li>
+                <li>
+                  <a href="/veteran-jobs/security-clearance-jobs" data-drupal-link-system-path="node/2171">Security Clearance Jobs</a>
+                        </li>
+                <li>
+                  <a href="/veteran-jobs/skills-translator" target="_self" rel="" data-drupal-link-system-path="node/99441">Skills Translator</a>
+                        </li>
+                <li>
+                  <a href="/veteran-jobs/career-advice" target="_self" rel="" data-drupal-link-system-path="node/2201">Career Advice</a>
+                        </li>
+                <li>
+                  <a href="/veteran-jobs/career-advice/job-hunting/upcoming-job-fairs" target="_self" rel="" title="Veteran Job Fairs" data-drupal-link-system-path="node/2191">Job Fairs</a>
+                        </li>
+                <li>
+                  <a href="/veteran-employers" target="_self" rel="" data-drupal-link-system-path="node/1016">Veteran Employers</a>
+                        </li>
+        </ul>
+    
+                        </li>
+                <li>
+                  <a href="/military-life" target="_self" rel="" data-drupal-link-system-path="node/1791">Military Life</a>
+                                <ul>
+                    <li>
+                  <a href="/military-life" target="_self" rel="" data-drupal-link-system-path="node/1791">Military Life Home</a>
+                        </li>
+                <li>
+                  <a href="/join-armed-forces" data-drupal-link-system-path="node/2291">Join the Military</a>
+                        </li>
+                <li>
+                  <a href="/military-fitness" target="_self" rel="" data-drupal-link-system-path="node/1991">Fitness</a>
+                        </li>
+                <li>
+                  <a href="http://www.military.com/base-guide/" target="_self" rel="">Base Guides</a>
+                        </li>
+                <li>
+                  <a href="/money" target="_self" rel="" data-drupal-link-system-path="node/2401">Money</a>
+                        </li>
+                <li>
+                  <a href="/spouse" target="_self" rel="" data-drupal-link-system-path="node/3621">Spouse and Family</a>
+                        </li>
+                <li>
+                  <a href="/special-operations" target="_self" rel="" data-drupal-link-system-path="node/2396">Special Operations</a>
+                        </li>
+                <li>
+                  <a href="/equipment" target="_self" rel="" data-drupal-link-system-path="node/2346">Equipment Guide</a>
+                        </li>
+                <li>
+                  <a href="/off-duty" target="_self" rel="" data-drupal-link-system-path="node/2241">Entertainment</a>
+                        </li>
+                <li>
+                  <a href="/community" target="_self" rel="" data-drupal-link-system-path="node/4221">Community</a>
+                        </li>
+                <li>
+                  <a href="/money/pcs-dity-move" target="_self" rel="" data-drupal-link-system-path="node/2506">PCS &amp; Relocation</a>
+                        </li>
+                <li>
+                  <a href="/money/home-ownership" target="_self" rel="" data-drupal-link-system-path="node/2436">Home Ownership</a>
+                        </li>
+                <li>
+                  <a href="/deployment" target="_self" rel="" data-drupal-link-system-path="node/4226">Deployment</a>
+                        </li>
+        </ul>
+    
+                        </li>
+                <li>
+                  <a href="http://www.military.com/video/" target="" rel="">Videos</a>
+                                <ul>
+                    <li>
+                  <a href="http://www.military.com/video/" target="" rel="">Video Home</a>
+                        </li>
+                <li>
+                  <a href="http://www.military.com/video/shock-and-awe/" target="" rel="">Shock &amp; Awe</a>
+                        </li>
+                <li>
+                  <a href="http://www.military.com/video/militarydotcom/" target="" rel="">Military.com Originals</a>
+                        </li>
+                <li>
+                  <a href="http://www.military.com/video/editors-picks/" target="" rel="">Editor&#039;s Picks</a>
+                        </li>
+                <li>
+                  <a href="http://www.military.com/video/most-popular" target="" rel="">Most Popular</a>
+                        </li>
+                <li>
+                  <a href="http://www.military.com/video/shock-and-awe/flir" target="" rel="">FLIR</a>
+                        </li>
+                <li>
+                  <a href="http://www.military.com/video/shock-and-awe/guns-weapons" target="" rel="">Guns &amp; Weapons</a>
+                        </li>
+                <li>
+                  <a href="http://www.military.com/video/shock-and-awe/sniper-kills" target="" rel="">Snipers</a>
+                        </li>
+                <li>
+                  <a href="http://www.military.com/video/shock-and-awe/special-operations" target="" rel="">Special Operations</a>
+                        </li>
+                <li>
+                  <a href="http://www.military.com/video/shock-and-awe/equipment" target="" rel="">Equipment</a>
+                        </li>
+        </ul>
+    
+                        </li>
+                <li>
+                  <a href="/discounts" target="" rel="" data-drupal-link-system-path="node/1086">Discounts</a>
+                                <ul>
+                    <li>
+                  <a href="/discounts" target="" rel="" data-drupal-link-system-path="node/1086">Discounts Home</a>
+                        </li>
+                <li>
+                  <a href="/discounts/category" target="_self" rel="" data-drupal-link-system-path="node/4666">Categories</a>
+                        </li>
+                <li>
+                  <a href="/discounts/merchants" target="_self" rel="" data-drupal-link-system-path="node/4631">Merchants</a>
+                        </li>
+                <li>
+                  <a href="/discounts/hot-deals" target="_self" rel="" data-drupal-link-system-path="taxonomy/term/1551">Discounts of the Month</a>
+                        </li>
+                <li>
+                  <a href="/discounts/travel" target="_self" rel="" data-drupal-link-system-path="taxonomy/term/1626">Travel</a>
+                        </li>
+                <li>
+                  <a href="/discounts/apparel-and-accessories" target="_self" rel="" data-drupal-link-system-path="taxonomy/term/1411">Apparel &amp; Accessories</a>
+                        </li>
+                <li>
+                  <a href="/discounts/freebies" target="_self" rel="" data-drupal-link-system-path="taxonomy/term/1521">Freebies</a>
+                        </li>
+                <li>
+                  <a href="/discounts/lodging" target="_self" rel="" data-drupal-link-system-path="taxonomy/term/1651">Lodgings</a>
+                        </li>
+                <li>
+                  <a href="/discounts/ski-resorts" target="_self" rel="" data-drupal-link-system-path="taxonomy/term/1461">Ski Resorts</a>
+                        </li>
+        </ul>
+    
+                        </li>
+              <li class="menu--account__anonymous--mobile menu--account__authenticated--mobile">
+        <a href="javascript:window.FreshWidget.show();">Help & Feedback</a>
+      </li>
+    </ul>
+    
+
+
+        </nav>
+  
+
+
+
+      <div class="block block--gsa-search-box">
+    
+    
+
+                      
+
+
+
+<button class="button button--icon button--icon--close" data-target="">
+  
+<i class="icon icon-close"></i>
+</button>
+    
+
+
+
+<form class="gsa-search-form form--gsa-search-form" data-drupal-selector="gsa-search-form-2" action="//search.military.com/search" method="get" id="gsa-search-form--2" accept-charset="UTF-8">
+      <input data-drupal-selector="edit-site" type="hidden" name="site" value="military" />
+<input data-drupal-selector="edit-client" type="hidden" name="client" value="military" />
+<input data-drupal-selector="edit-proxystylesheet" type="hidden" name="proxystylesheet" value="military" />
+<input data-drupal-selector="edit-output" type="hidden" name="output" value="xml_no_dtd" />
+<input data-drupal-selector="edit-access" type="hidden" name="access" value="p" />
+<input data-drupal-selector="edit-filter" type="hidden" name="filter" value="1" />
+<input data-drupal-selector="edit-entqr" type="hidden" name="entqr" value="3" />
+<input data-drupal-selector="edit-tabname" type="hidden" name="tabname" value="military" />
+<div class="form__item form__item--q form--no-label js-form-item js-form-type-search js-form-item-q">
+        <input data-drupal-selector="edit-q" type="search" id="edit-q--2" name="q" value="" size="60" maxlength="128" placeholder="Search Military.com" class="form-search required" required="required" aria-required="true" />
+
+        </div>
+
+
+<div data-drupal-selector="edit-actions" class="form-actions form__actions form__wrapper js-form-wrapper" id="edit-actions--2">
+
+
+
+<button class="button button--icon button--icon--search" data-target="">
+  
+<i class="icon icon-search"></i>
+</button>
+</div>
+
+  </form>
+
+        </div>
+  
+
+
+
+      <div class="block block--user--nav">
+    
+    
+
+      
+
+<nav class="menu menu--account menu--account__anonymous">
+  <a id="user-menu-login-link" href="https://www.military.com/member-reg/login.html?vlv_redir=https://www.military.com/undertheradar/2018/02/08/meet-military-athletes-competing-team-usa-winter-olympics.html">Login</a>
+</nav>
+
+<nav class="menu menu--account menu--account__authenticated">
+  
+
+
+
+<a href=# class="button button--icon button--icon--user" data-target="">
+  
+<i class="icon icon-user"></i>
+</a>
+  <div class="menu--account__dropdown">
+    <div class="info">
+      <div class="name"></div>
+      <small class="email"></small>
+    </div>
+    <ul>
+  <li><a href="https://www.military.com/profile/member-profile.html">Profile</a></li>
+  <li><a href="https://www.military.com/resumes/">Resumes</a></li>
+  <li><a href="https://www.military.com/CoverLetters/">Cover Letters</a></li>
+  <li><a href="https://www.military.com/applicationHistory/">Jobs I've Applied To</a></li>
+  <li><a href="https://www.military.com/SavedJobs/">Saved Jobs</a></li>
+  <li><a href="https://www.military.com/SavedSearches/">Saved Searches</a></li>
+  <li><a href="https://www.military.com/profile/messages-inbox.html">Messages</a></li>
+  <li><a href="https://www.military.com/profile/friends.html">Friends</a></li>
+  <li><a href="https://www.military.com/Membership/MembershipPage/">Page Manager</a></li>
+  <li><a href="https://www.military.com/profile/member-profile-newsletter-settings.html">Subscriptions</a></li>
+  <li><a id="user-menu-logout-link" href="https://www.military.com/member-reg/logout.html?vlv_redir=https://www.military.com/undertheradar/2018/02/08/meet-military-athletes-competing-team-usa-winter-olympics.html">Log out</a></li>
+</ul>
+  </div>
+</nav>
+
+
+        </div>
+  
+
+        </div>
+</header>
+  
+  <section class="page__top">
+    <div class="page__promo-wrapper container">
+              <div class="page__promo page__promo--left" data-position="left">
+            
+
+
+
+      <div class="block block--mil-oas-ad-block">
+    
+    
+
+      <div class="oas-ad-block x29" id="oas-ad-block-x29" data-oasposition="x29"><script type="text/javascript">try { OAS_AD("x29"); } catch(e) {} </script></div>
+        </div>
+  
+
+        </div>
+      
+              <div class="page__promo page__promo--right" data-position="right">
+            
+
+
+
+      <div class="block block--mil-oas-ad-block">
+    
+    
+
+      <div class="oas-ad-block x30" id="oas-ad-block-x30" data-oasposition="x30"><script type="text/javascript">try { OAS_AD("x30"); } catch(e) {} </script></div>
+        </div>
+  
+
+        </div>
+          </div>
+
+      
+
+
+
+      <div class="block block--ad--masthead">
+    
+    
+
+      
+        </div>
+  
+
+
+
+      <div class="block block--mil-oas-ad-block">
+    
+    
+
+      <div class="oas-ad-block bottom" id="oas-ad-block-bottom" data-oasposition="Bottom"><script type="text/javascript">try { OAS_AD("Bottom"); } catch(e) {} </script></div>
+        </div>
+  
+
+
+
+      <div class="block block--mil-oas-ad-block">
+    
+    
+
+      <div class="oas-ad-block position1" id="oas-ad-block-position1" data-oasposition="Position1"><script type="text/javascript">try { OAS_AD("Position1"); } catch(e) {} </script></div>
+        </div>
+  
+
+    
+  </section>
+
+  <main class="content container">
+    <div class="content__wrapper">
+        
+
+
+
+
+                        <div class="row">
+            <div id="bodyContent" class="page__content col-md-8">
+                  
+
+
+
+      <div class="block block--blog--header">
+    
+    
+
+      
+
+
+
+
+  <div class="field field--blog field--label-hidden">
+            
+
+
+<article about="/taxonomy/term/65066" class="term--blogs term--blogs--default">
+  
+  
+
+      
+
+
+
+
+  <div class="field field--image field--label-hidden">
+            
+
+<figure>
+    
+
+
+
+
+  <div class="field field--image field--label-hidden">
+              <img src="//images03.military.com/sites/default/files/2017-10/blog-logo-under-the-radar.png" width="311" height="42" alt="Under the Radar" typeof="foaf:Image" />
+
+
+        </div>
+
+  </figure>
+
+        </div>
+
+  </article>
+
+        </div>
+
+        </div>
+  
+
+    
+
+
+
+      <div class="block block--breadcrumb">
+    
+    
+
+        
+
+<nav class="breadcrumb">
+  <ol>
+          <li>
+                  <a href="/off-duty">Entertainment</a>
+              </li>
+          <li>
+                  <a href="/undertheradar">Under the Radar</a>
+              </li>
+      </ol>
+</nav>
+
+        </div>
+  
+
+
+
+      <div class="block block--node-flexible-above-fold">
+    
+    
+
+      
+        </div>
+  
+
+
+
+      <div class="block block--page--title">
+    
+    
+
+      
+  <h1><span property="schema:name">Meet the Military Athletes Competing for Team USA at the Winter Olympics</span>
+</h1>
+
+
+      </div>
+  
+
+
+
+      <div class="block block--addthis">
+    
+    
+
+      
+
+<div class="addthis_toolbox addthis_default_style addthis_32x32_style">
+  <a class="addthis_button_facebook" title="Facebook" href="#"><img src="/themes/military/assets/images/icons/social-icons_facebook.svg" width="32" height="32"></a>
+  <a class="addthis_button_twitter" title="Tweet" href="#"><img src="/themes/military/assets/images/icons/social-icons_twitter.svg" width="32" height="32"></a>
+  <a class="addthis_button_google_plusone_share" title="Google+" href="#"><img src="/themes/military/assets/images/icons/social-icons_gplus.svg" width="32" height="32"></a>
+  <a class="addthis_button_pinterest_share" title="Pinterest" href="#"><img src="/themes/military/assets/images/icons/social-icons_pinterest.svg" width="32" height="32"></a>
+  <a class="addthis_button_email" target="_blank" title="Email" href="#"><img src="/themes/military/assets/images/icons/social-icons_email.svg" width="32" height="32"></a>
+  <a class="addthis_button_more" title="More"><img src="/themes/military/assets/images/icons/social-icons_more.svg" width="32" height="32"></a>
+</div>
+
+        </div>
+  
+
+
+
+
+<article role="article" about="/undertheradar/2018/02/08/meet-military-athletes-competing-team-usa-winter-olympics.html" typeof="schema:Article" class="node node--article node--article--full">
+  
+    <span property="schema:name" content="Meet the Military Athletes Competing for Team USA at the Winter Olympics" class="hidden"></span>
+
+
+  
+        
+
+
+
+
+  <div class="field field--image field--label-hidden">
+            
+
+<figure>
+    
+
+
+
+
+  <div class="field field--image field--label-hidden">
+              <img src="//images01.military.com/sites/default/files/styles/full/public/2018-02/2010bobsledteam.jpg?itok=_KVwEzsz" width="621" height="414" alt="" title="Former U.S. Army World Class Athlete Program bobsledder Steven Holcomb (front right) leads &quot;The Night Train&quot; team of Sgt. Justin Olsen, Steve Mesler and Curtis Tomasevicz to a start time of 4.77 seconds in the third heat of the Olympic four-man bobsled event. The quartet won an Olympic gold medal in bobsleigh for Team USA for the first time in 62 years at the 2010 Winter Olympics. (Photo Credit: U.S. Army photo by Tim Hipps, IMCOM Public Affairs)" typeof="foaf:Image" />
+
+
+
+        </div>
+
+      <figcaption>Former U.S. Army World Class Athlete Program bobsledder Steven Holcomb (front right) leads &quot;The Night Train&quot; team of Sgt. Justin Olsen, Steve Mesler and Curtis Tomasevicz to a start time of 4.77 seconds in the third heat of the Olympic four-man bobsled event. The quartet won an Olympic gold medal in bobsleigh for Team USA for the first time in 62 years at the 2010 Winter Olympics. (Photo Credit: U.S. Army photo by Tim Hipps, IMCOM Public Affairs)</figcaption>
+  </figure>
+
+          </>
+        </div>
+
+
+  
+    
+    
+  
+  
+  
+
+<div class="byline">
+        <span>8 Feb 2018</span>
+        <span>By James Barber</span>
+  </div>
+
+  
+
+  <div class="article__body">
+    
+
+
+
+
+            <p>Seven U.S. military athletes are competing in the 2018 Winter Olympics, which begin today in PyeongChang, South Korea. For the first time, NBC is airing every event live and giving up on trying to create prime time suspense for events that may have taken place 12 hours ago.</p>
+
+<p>That doesn't mean you won't get to settle in a watch a highly-produced package of flashy events every evening. It just means NBC will quit pretending that everyone didn't already get the results on Twitter and they're going to show the event in real time, either on one of its multitude of cable channels or streaming online.</p><div class="oas-ad-block x45" id="oas-ad-block-x45"><script type="text/javascript">
+<!--//--><![CDATA[// ><!--
+try { OAS_AD("x45"); } catch(e) {} 
+//--><!]]>
+</script></div>
+
+<p>NBC has even created an <a href="http://www.nbcolympics.com/full-schedule" target="_blank">easy-to-read calendar</a> that links each event to TV listings and the browser stream of the events. It's a whole new world for Olympic junkies this year.</p>
+
+<p>American military athletes are competing in bobsled and luge events. Luge events start tomorrow, February 9th, and run through February 16th. Bobsled takes over the track on Saturday, February 17th and continues until February 25th.</p>
+
+<p>All the athletes are member's of the <a href="https://www.armymwr.com" target="_blank">Army MWR</a> World Class Athlete Program, designed to allow service men and women to train for international athletic competition while serving full-time in the U.S. Army.</p>
+
+<p>Here are the WCAP athletes competing in South Korea.</p>
+
+<h2>Nick Cunningham</h2>
+
+
+<figure role="group" class="embedded-entity"><article><figure><div class="field field--image field--label-hidden">
+              <img alt="" height="349" src="//images04.military.com/sites/default/files/styles/full/public/2018-02/bobsled-nick-cunningham-usatsi_10310218-1024.jpg?itok=rBG_d7aW" title="Nick Cunningham (NBC Olympics)" typeof="foaf:Image" width="621" /></div>
+
+  </figure></article><figcaption>(NBC Olympics)</figcaption></figure><p>Sgt. Nick Cunningham will compete in the two-man and four-man bobsled as a driver. He was a member of Team USA in 2010 and 2014 but he'll be going for his first medal in PyeongChang. Nick grew up in Monterey, CA and joined the Army in 2011.</p>
+
+<p>MOS: 12W, Construction / Masonry Engineer</p>
+
+<h2>Chris Fogt</h2>
+
+
+<article class="embedded-entity"><figure><div class="field field--image field--label-hidden">
+              <img src="//images05.military.com/sites/default/files/styles/full/public/2017-12/8448488_chris_boblseigh_10-10-49-12.jpeg?itok=4Ykv0J1-" width="621" height="349" alt="" title="Courtesy Olympic Channel" typeof="foaf:Image" /></div>
+
+  </figure></article><p>Cpt. Chris Fogt will compete in the two-man and four-man bobsled as a brakeman. He competed on Team USA in 2010 and won a silver medal as a member of the 4-man team at the 2014 Sochi games. Chris comes from Alpine, Utah and joined the Army in March 2009.</p>
+
+<p>We first met Chris back in December when he was profiled on the Olympic Channel's series "Day Jobs." You can read more about him and watch the episode <a href="https://www.military.com/undertheradar/2017/11/30/day-jobs-us-armys-chris-fogt-trains-olympic-bobsled-team.html">here</a>.</p>
+
+<p>MOS: 35A, Military Intelligence Officer</p>
+
+<h2>Taylor Morris</h2>
+
+
+<figure role="group" class="embedded-entity"><article><figure><div class="field field--image field--label-hidden">
+              <img alt="" height="414" src="//images01.military.com/sites/default/files/styles/full/public/2018-02/taylormorris.jpg?itok=eqRtTB6Z" title="Sgt. Taylor Morris is all smiles after qualifying for his first Olympics. Morris has been training with the USA Luge program for 16 years. (Photo Credit: U.S. Army photo by Spc. Angel Vasquez)" typeof="foaf:Image" width="621" /></div>
+
+  </figure></article><figcaption>Sgt. Taylor Morris is all smiles after qualifying for his first Olympics. (Photo Credit: U.S. Army photo by Spc. Angel Vasquez)</figcaption></figure><p>Sgt. Taylor Morris will participate in the men's singles luge event. This will be his first time to compete as a member of Team USA but he was an alternate in 2014. Taylor hails from South Jordan, Utah and joined the Army in July 2011.</p>
+
+<p>MOS: 42A, Human Resource Specialist</p>
+
+<h2>Matthew Mortensen</h2>
+
+
+<figure role="group" class="embedded-entity"><article><figure><div class="field field--image field--label-hidden">
+              <img alt="" height="414" src="//images04.military.com/sites/default/files/styles/full/public/2018-02/matthewmortensen.jpg?itok=zljaNzxA" title="Sgt. Matt Mortensen gives a &quot;thumbs up&quot; to the home fans at the 2017 World Cup competition in Lake Placid, New York, Dec. 16. (Photo Credit: U.S. Army photo by Spc. Jennily Leon)" typeof="foaf:Image" width="621" /></div>
+
+  </figure></article><figcaption>Sgt. Matt Mortensen gives a "thumbs up" to the home fans in Lake Placid, NY (Photo Credit: U.S. Army photo by Spc. Jennily Leon)</figcaption></figure><p>Sgt. Matthew Mortensen will compete in the men's doubles luge event. He was a member of Team USA in 2014 and is going for his first medal in PyeongChang. Matthew comes from Huntington Station, NY and joined the Army in February 2010.</p>
+
+<p>MOS: 12R, Interior Electrician </p>
+
+<h2>Justin Olsen</h2>
+
+
+<article class="embedded-entity"><figure><div class="field field--image field--label-hidden">
+              <img src="//images01.military.com/sites/default/files/styles/full/public/2018-02/justin_olsen_olympic_bobsled_team.jpeg?itok=pR3IBKdy" width="621" height="414" alt="Justin Olsen Olympic bobsled team" typeof="foaf:Image" /></div>
+
+  </figure></article><p>Sgt. Justin Olsen will compete in the two-man and four-man bobsled as a pushman. He was part of the 4-man team that won gold in Vancouver 2010, the first American medal in bobsled in 62 years. He also competed in the 2014 Winter Olympics. Justin joined the Army in June 2011 and hails from San Antonio, TX.</p>
+
+<p>Justin had <a href="https://www.military.com/off-duty/2018/02/06/soldier-athlete-gets-appendix-removed-south-korea-just-olympics.html">emergency surgery to remove his appendix</a> just after arriving in South Korea, so there's some question whether he'll be able to compete. A February 7th story in the Denver Post says he's made <a href="https://www.denverpost.com/2018/02/07/olympic-bobsled-driver-justin-olsen-plan/" target="_blank">remarkable progress</a> and is aiming rejoin his teammates before competition begins on Saturday, February 17th.</p>
+
+<p>MOS: 42A, Human Resource Specialist</p>
+
+<h2>Emily Sweeney</h2>
+
+
+<figure role="group" class="embedded-entity"><article><figure><div class="field field--image field--label-hidden">
+              <img alt="" height="414" src="//images04.military.com/sites/default/files/styles/full/public/2018-02/emilysweeney.jpg?itok=JXYW5bRH" title="Sgt. Emily Sweeney qualified for her first Olympics after not making the 2010 and 2014 teams. (Photo Credit: U.S. Army photo by Spc. Jennily Leon)" typeof="foaf:Image" width="621" /></div>
+
+  </figure></article><figcaption>Sgt. Emily Sweeney qualified for her first Olympics in Lake Placid, NY. (Photo Credit: U.S. Army photo by Spc. Jennily Leon)</figcaption></figure><p>Sgt. Emily Sweeney will compete in the women's singles luge event. The Connecticut native joined the Army in December 2011 and will be participating in her first Olympics.</p>
+
+<p>MOS: 31B, Military Police</p>
+
+<h2>Nathan Weber</h2>
+
+
+<figure role="group" class="embedded-entity"><article><figure><div class="field field--image field--label-hidden">
+              <img alt="" height="350" src="//images03.military.com/sites/default/files/styles/full/public/2018-02/nathanweber.jpg?itok=BAwU_9fK" title="(Photo credit: Molly Choma)" typeof="foaf:Image" width="621" /></div>
+
+  </figure></article><figcaption>(Photo credit: Molly Choma)</figcaption></figure><p>SFC Nathan Weber will compete in the 4-man bobsled as a pushman in PyeongChang. The first-time Olympian is also an active-duty Green Beret. He joined the Army in 2005 and grew up in Denver, CO.</p>
+
+<p>MOS – 18D, Special Forces Medic </p>
+      
+    <a class="button hidden-lg-up button-expand" href="javascript:void();">Show Full Article</a>
+  </div>
+
+  
+
+
+
+
+  <div class="field field--keywords field--label-inline">
+      <h3>Related Topics</h3>
+            <a href="/topics/undertheradar" hreflang="en">Under the Radar</a>
+          </>
+              <a href="/topics/entertainment" hreflang="en">Entertainment</a>
+          </>
+        </div>
+
+
+  
+
+
+
+<div class="copyright">
+  &copy; Copyright 2018 Military.com. All rights reserved. This material may not be published, broadcast, rewritten or redistributed.</div>
+
+      <div class="sponsor-ads">
+      <!-- see theme preprocess for this ad -->
+      <div class="oas-ad-block x88" id="oas-ad-block-x88" data-oasposition="x88">
+        <script type="text/javascript">try { OAS_AD("x88"); } catch(e) {} </script>
+      </div>
+      <div class="oas-ad-block x63" id="oas-ad-block-x63" data-oasposition="x63">
+        <script type="text/javascript">try { OAS_AD("x63"); } catch(e) {} </script>
+      </div>
+    </div>
+  
+  
+
+  
+
+      <div class="below-body-ads">
+      <!-- see theme preprocess for this ad -->
+      <div class="oas-ad-block position2" id="oas-ad-block-position2" data-oasposition="Position2">
+        <script type="text/javascript">try { OAS_AD("Position2"); } catch(e) {} </script>
+      </div>
+    </div>
+  
+</article>
+
+
+
+    
+
+
+
+      <div class="block block--articles--related">
+    
+      <h2 class="block__title">You May Also Like</h2>
+    
+
+      
+
+
+
+
+<div class="view view--articles view--articles--block-you-may-also-like view-id-articles view-display-id-block_you_may_also_like js-view-dom-id-481b97bf61cd0969cd6377623d29d440bef31b5c1d2b1164da295161491a8823">
+  
+    
+      
+      <div class="view__content">
+      <div class="list-view">
+      
+
+
+
+
+<article role="article" about="/undertheradar/2018/02/16/how-john-wayne-got-rid-kgb-agents-hired-kill-him.html" typeof="schema:Article" class="node node--article node--article--thumbnail-large">
+  
+    <span property="schema:name" content="How John Wayne Got Rid of the KGB Agents Hired to Kill Him" class="hidden"></span>
+
+
+    
+
+
+<div class="thumbnail--large">
+  <div class="thumbnail--large__image">
+    <a href="/undertheradar/2018/02/16/how-john-wayne-got-rid-kgb-agents-hired-kill-him.html">
+      
+<div class="image">
+  
+<i class="icon icon-photo_size_select_actual"></i>
+  
+
+<figure>
+    
+
+
+
+
+  <div class="field field--image field--label-hidden">
+                <picture>
+                <!--[if IE 9]><video style="display: none;"><![endif]-->
+              <source srcset="//images03.military.com/sites/default/files/styles/thumbnail_large/public/2018-02/hack-john-wayne.jpg?itok=fieVyKfF 1x" media="(min-width: 1200px)" type="image/jpeg"/>
+              <source srcset="//images03.military.com/sites/default/files/styles/thumbnail_large/public/2018-02/hack-john-wayne.jpg?itok=fieVyKfF 1x" media="(min-width: 992px) and (max-width: 1199px)" type="image/jpeg"/>
+              <source srcset="//images03.military.com/sites/default/files/styles/thumbnail_large/public/2018-02/hack-john-wayne.jpg?itok=fieVyKfF 1x" media="(min-width: 768px) and (max-width: 991px)" type="image/jpeg"/>
+              <source srcset="//images03.military.com/sites/default/files/styles/thumbnail_large_xs/public/2018-02/hack-john-wayne.jpg?itok=yGSCWjc- 1x" media="(max-width: 767px)" type="image/jpeg"/>
+            <!--[if IE 9]></video><![endif]-->
+            <img src="//images03.military.com/sites/default/files/styles/thumbnail_large/public/2018-02/hack-john-wayne.jpg?itok=fieVyKfF" alt="" typeof="foaf:Image" />
+
+  </picture>
+
+
+        </div>
+
+  </figure>
+
+</div>
+    </a>
+  </div>
+
+  <div class="thumbnail--large__content">
+    <h3>
+      <a href="/undertheradar/2018/02/16/how-john-wayne-got-rid-kgb-agents-hired-kill-him.html"><span property="schema:name">How John Wayne Got Rid of the KGB Agents Hired to Kill Him</span>
+</a>
+    </h3>
+
+          <div class="text--small thumbnail--large__blurb">
+        
+
+
+
+
+  <div class="field field--summary field--label-hidden">
+            When Stalin saw John Wayne’s power as an virulent anti-Communist, he sent (allegedly) more than one hit squad to kill him.
+        </div>
+
+      </div>
+      </div>
+</div>
+</article>
+
+      
+
+
+
+
+<article role="article" about="/off-duty/2018/02/16/95-year-old-world-war-ii-veteran-gets-birthday-balloon-ride.html" typeof="schema:Article" class="node node--article node--article--thumbnail-large">
+  
+    <span property="schema:name" content="95-Year-Old World War II Veteran Gets Birthday Balloon Ride" class="hidden"></span>
+
+
+    
+
+
+<div class="thumbnail--large">
+  <div class="thumbnail--large__image">
+    <a href="/off-duty/2018/02/16/95-year-old-world-war-ii-veteran-gets-birthday-balloon-ride.html">
+      
+<div class="image">
+  
+<i class="icon icon-photo_size_select_actual"></i>
+  
+
+<figure>
+    
+
+
+
+
+  <div class="field field--image field--label-hidden">
+                <picture>
+                <!--[if IE 9]><video style="display: none;"><![endif]-->
+              <source srcset="//images04.military.com/sites/default/files/styles/thumbnail_large/public/2018-02/world_war_ii_veteran_gets_birthday_balloon_ride_in_sequim.png?itok=bF6tCWhm 1x" media="(min-width: 1200px)" type="image/png"/>
+              <source srcset="//images04.military.com/sites/default/files/styles/thumbnail_large/public/2018-02/world_war_ii_veteran_gets_birthday_balloon_ride_in_sequim.png?itok=bF6tCWhm 1x" media="(min-width: 992px) and (max-width: 1199px)" type="image/png"/>
+              <source srcset="//images04.military.com/sites/default/files/styles/thumbnail_large/public/2018-02/world_war_ii_veteran_gets_birthday_balloon_ride_in_sequim.png?itok=bF6tCWhm 1x" media="(min-width: 768px) and (max-width: 991px)" type="image/png"/>
+              <source srcset="//images04.military.com/sites/default/files/styles/thumbnail_large_xs/public/2018-02/world_war_ii_veteran_gets_birthday_balloon_ride_in_sequim.png?itok=bbpgdOAB 1x" media="(max-width: 767px)" type="image/png"/>
+            <!--[if IE 9]></video><![endif]-->
+            <img src="//images04.military.com/sites/default/files/styles/thumbnail_large/public/2018-02/world_war_ii_veteran_gets_birthday_balloon_ride_in_sequim.png?itok=bF6tCWhm" alt="World War II veteran gets birthday balloon ride in Sequim" title="
+              Tom McKeown, 95, a U.S. Marine Corps veteran of World War II, takes a teathered balloon ride with Capt. Crystal Stout, executive director of Dream Catcher Balloon, on Saturday, Feb. 10, 2018, at Sequim Valley Airport near Sequim, Wash. After his short ride of up to about 25 feet above the ground, McKeown said the experience was something he had always dreamed of. &quot;It&#039;s the last one on my bucket list,&quot; he said.   (Keith Thorpe/The Peninsula Daily News via AP)
+             -- The Associated Press" typeof="foaf:Image" />
+
+  </picture>
+
+
+        </div>
+
+  </figure>
+
+</div>
+    </a>
+  </div>
+
+  <div class="thumbnail--large__content">
+    <h3>
+      <a href="/off-duty/2018/02/16/95-year-old-world-war-ii-veteran-gets-birthday-balloon-ride.html"><span property="schema:name">95-Year-Old World War II Veteran Gets Birthday Balloon Ride</span>
+</a>
+    </h3>
+
+          <div class="text--small thumbnail--large__blurb">
+        
+
+
+
+
+  <div class="field field--summary field--label-hidden">
+            Tom McKeown Sr. took a tethered balloon ride as an early birthday present. He turns 96 on May 7.
+        </div>
+
+      </div>
+      </div>
+</div>
+</article>
+
+      
+
+
+
+
+<article role="article" about="/off-duty/2018/02/15/street-fighter-v-one-weve-been-waiting-review.html" typeof="schema:Article" class="node node--article node--article--thumbnail-large">
+  
+    <span property="schema:name" content="Street Fighter V Arcade is the Version We&#039;ve Been Waiting For: Review" class="hidden"></span>
+
+
+    
+
+
+<div class="thumbnail--large">
+  <div class="thumbnail--large__image">
+    <a href="/off-duty/2018/02/15/street-fighter-v-one-weve-been-waiting-review.html">
+      
+<div class="image">
+  
+<i class="icon icon-photo_size_select_actual"></i>
+  
+
+<figure>
+    
+
+
+
+
+  <div class="field field--image field--label-hidden">
+                <picture>
+                <!--[if IE 9]><video style="display: none;"><![endif]-->
+              <source srcset="//images02.military.com/sites/default/files/styles/thumbnail_large/public/2018-02/street_fighter_v.jpeg?itok=gYvRiyGm 1x" media="(min-width: 1200px)" type="image/jpeg"/>
+              <source srcset="//images02.military.com/sites/default/files/styles/thumbnail_large/public/2018-02/street_fighter_v.jpeg?itok=gYvRiyGm 1x" media="(min-width: 992px) and (max-width: 1199px)" type="image/jpeg"/>
+              <source srcset="//images02.military.com/sites/default/files/styles/thumbnail_large/public/2018-02/street_fighter_v.jpeg?itok=gYvRiyGm 1x" media="(min-width: 768px) and (max-width: 991px)" type="image/jpeg"/>
+              <source srcset="//images02.military.com/sites/default/files/styles/thumbnail_large_xs/public/2018-02/street_fighter_v.jpeg?itok=1VtwK4Km 1x" media="(max-width: 767px)" type="image/jpeg"/>
+            <!--[if IE 9]></video><![endif]-->
+            <img src="//images02.military.com/sites/default/files/styles/thumbnail_large/public/2018-02/street_fighter_v.jpeg?itok=gYvRiyGm" alt="Street Fighter V" typeof="foaf:Image" />
+
+  </picture>
+
+
+        </div>
+
+  </figure>
+
+</div>
+    </a>
+  </div>
+
+  <div class="thumbnail--large__content">
+    <h3>
+      <a href="/off-duty/2018/02/15/street-fighter-v-one-weve-been-waiting-review.html"><span property="schema:name">Street Fighter V Arcade is the Version We&#039;ve Been Waiting For: Review</span>
+</a>
+    </h3>
+
+          <div class="text--small thumbnail--large__blurb">
+        
+
+
+
+
+  <div class="field field--summary field--label-hidden">
+            Two years later, we finally have the Street Fighter V we always wanted.
+        </div>
+
+      </div>
+      </div>
+</div>
+</article>
+
+      
+
+
+
+
+<article role="article" about="/off-duty/2018/02/15/black-panther-royally-imaginative-standout-marvel-cinematic-universe.html" typeof="schema:Article" class="node node--article node--article--thumbnail-large">
+  
+    <span property="schema:name" content="&#039;Black Panther&#039; is a Royally Imaginative Standout in the Marvel Cinematic Universe" class="hidden"></span>
+
+
+    
+
+
+<div class="thumbnail--large">
+  <div class="thumbnail--large__image">
+    <a href="/off-duty/2018/02/15/black-panther-royally-imaginative-standout-marvel-cinematic-universe.html">
+      
+<div class="image">
+  
+<i class="icon icon-photo_size_select_actual"></i>
+  
+
+<figure>
+    
+
+
+
+
+  <div class="field field--image field--label-hidden">
+                <picture>
+                <!--[if IE 9]><video style="display: none;"><![endif]-->
+              <source srcset="//images04.military.com/sites/default/files/styles/thumbnail_large/public/2018-02/black_panther_marvel.jpeg?itok=UdCjEzag 1x" media="(min-width: 1200px)" type="image/jpeg"/>
+              <source srcset="//images04.military.com/sites/default/files/styles/thumbnail_large/public/2018-02/black_panther_marvel.jpeg?itok=UdCjEzag 1x" media="(min-width: 992px) and (max-width: 1199px)" type="image/jpeg"/>
+              <source srcset="//images04.military.com/sites/default/files/styles/thumbnail_large/public/2018-02/black_panther_marvel.jpeg?itok=UdCjEzag 1x" media="(min-width: 768px) and (max-width: 991px)" type="image/jpeg"/>
+              <source srcset="//images04.military.com/sites/default/files/styles/thumbnail_large_xs/public/2018-02/black_panther_marvel.jpeg?itok=KuNIqr3c 1x" media="(max-width: 767px)" type="image/jpeg"/>
+            <!--[if IE 9]></video><![endif]-->
+            <img src="//images04.military.com/sites/default/files/styles/thumbnail_large/public/2018-02/black_panther_marvel.jpeg?itok=UdCjEzag" alt="Black Panther Marvel" typeof="foaf:Image" />
+
+  </picture>
+
+
+        </div>
+
+  </figure>
+
+</div>
+    </a>
+  </div>
+
+  <div class="thumbnail--large__content">
+    <h3>
+      <a href="/off-duty/2018/02/15/black-panther-royally-imaginative-standout-marvel-cinematic-universe.html"><span property="schema:name">&#039;Black Panther&#039; is a Royally Imaginative Standout in the Marvel Cinematic Universe</span>
+</a>
+    </h3>
+
+          <div class="text--small thumbnail--large__blurb">
+        
+
+
+
+
+  <div class="field field--summary field--label-hidden">
+            The wait for a film like "Black Panther" has been way longer than it should have been.
+        </div>
+
+      </div>
+      </div>
+</div>
+</article>
+
+  </div>
+
+    </div>
+  
+        </div>
+
+
+        </div>
+  
+
+
+            </div>
+            <div id="bodySidebar" class="page__sidebar col-md-4">
+                
+
+
+
+    
+    
+
+      
+
+
+
+
+
+            
+
+
+<div id="paragraph-19081" class="paragraph paragraph--list-view paragraph--default">
+      
+
+
+
+
+  <h2 class="field field--title field--label-hidden paragraph__title">
+            Entertainment
+        </h2>
+
+
+
+
+
+            
+
+
+
+
+<div class="list-view list-view--two-col-bullet">
+      <div class="row">
+          <div class="col-sm-6">
+        <ul>
+                      <li class="text--title"><a href="/off-duty" hreflang="en">Entertainment</a></li>
+                      <li class="text--title"><a href="/off-duty/movies" hreflang="en">Movies</a></li>
+                      <li class="text--title"><a href="/off-duty/games" hreflang="en">Games</a></li>
+                      <li class="text--title"><a href="/off-duty/autos" hreflang="en">Autos</a></li>
+                      <li class="text--title"><a href="/off-duty/music" hreflang="en">Music</a></li>
+                      <li class="text--title"><a href="/off-duty/television" hreflang="en">Television</a></li>
+                      <li class="text--title"><a href="/off-duty/off-beat" hreflang="en">Off Beat</a></li>
+                      <li class="text--title"><a href="/off-duty/books" hreflang="en">Books</a></li>
+                  </ul>
+      </div>
+          <div class="col-sm-6">
+        <ul>
+                      <li class="text--title"><a href="/military-fitness" hreflang="en">Military Fitness</a></li>
+                      <li class="text--title"><a href="/equipment" hreflang="en">Military Equipment</a></li>
+                      <li class="text--title"><a href="/trivia" hreflang="en">Military Trivia Game</a></li>
+                      <li class="text--title"><a href="/outdoor-guide" hreflang="en">Outdoor Guide</a></li>
+                      <li class="text--title"><a href="/history" hreflang="en">Military History</a></li>
+                      <li class="text--title"><a href="/travel" hreflang="en">Travel</a></li>
+                      <li class="text--title"><a href="/undertheradar" hreflang="en">Under The Radar</a></li>
+                  </ul>
+      </div>
+      </div>
+  </div>
+
+      
+  </div>
+
+          </>
+              
+
+
+<div id="paragraph-11051" class="paragraph paragraph--block paragraph--default">
+      
+
+
+
+
+  <div class="field field--block field--label-hidden">
+            
+
+
+
+      <div class="block block--mil-oas-ad-block">
+    
+    
+
+      <div class="oas-ad-block right" id="oas-ad-block-right" data-oasposition="Right"><script type="text/javascript">try { OAS_AD("Right"); } catch(e) {} </script></div>
+        </div>
+  
+        </div>
+
+  </div>
+
+          </>
+              
+
+
+<div id="paragraph-11056" class="paragraph paragraph--block paragraph--default">
+      
+
+
+
+
+  <div class="field field--block field--label-hidden">
+            
+
+
+
+      <div class="block block--mil-auth-my-membership">
+    
+      <h2 class="block__title">My Membership</h2>
+    
+
+      
+
+<div class="my-membership-block-wrapper">
+  <div id="selectServiceWrapper">
+    <div class="component">
+      <h2 id="selectServiceTitle" style="display: block;">Select Service</h2>
+      <h2 id="myMembershipTitle" style="display: none;">My Membership</h2>
+      <div class="myService" id="noServiceSelected" style="display: block;">
+        <ul id="serviceList">
+          <li class="service army"><a href="https://www.military.com/newmembers/army">Army</a></li>
+          <li class="service marine"><a href="https://www.military.com/newmembers/marines">Marines</a></li>
+          <li class="service navy"><a href="https://www.military.com/newmembers/navy">Navy</a></li>
+          <li class="service airfrc"><a href="https://www.military.com/newmembers/airforce">Air Force</a></li>
+        </ul>
+        <ul id="serviceList">
+          <li class="service ngres"><a href="https://www.military.com/newmembers/guard">National Guard</a></li>
+          <li class="service coastg"><a href="https://www.military.com/newmembers/coastguard">Coast Guard</a></li>
+          <li class="service spouse"><a href="https://www.military.com/newmembers/spouse">Spouse</a></li>
+        </ul>
+        <div class="login clearfix">
+          Member? <a href="https://www.military.com/member-reg/login.html" title="Login">Login</a>
+        </div>
+      </div>
+      <div class="myService" id="armyServiceSelected">
+        <a class="logo army" href="https://www.military.com/army"><span>army</span></a>
+        <div class="links">
+          <a href="https://www.military.com/profile/member-profile.html">My Profile</a>
+          <a href="https://www.military.com/army">Army Home Page</a>
+        </div>
+      </div>
+      <div class="myService" id="navyServiceSelected">
+        <a class="logo navy" href="https://www.military.com/navy"><span>navy</span></a>
+        <div class="links">
+          <a href="https://www.military.com/profile/member-profile.html">My Profile</a>
+          <a href="https://www.military.com/navy">Navy Home Page</a>
+        </div>
+      </div>
+      <div class="myService" id="airfrcServiceSelected">
+        <a class="logo airforce" href="https://www.military.com/air-force"><span>air force</span></a>
+        <div class="links">
+          <a href="https://www.military.com/profile/member-profile.html">My Profile</a>
+          <a href="https://www.military.com/air-force">Air Force Home Page</a>
+        </div>
+      </div>
+      <div class="myService" id="marineServiceSelected">
+        <a class="logo marines" href="https://www.military.com/marine-corps"><span>marines</span></a>
+        <div class="links">
+          <a href="https://www.military.com/profile/member-profile.html">My Profile</a>
+          <a href="https://www.military.com/marine-corps">Marines Home Page</a>
+        </div>
+      </div>
+      <div class="myService" id="coastgServiceSelected">
+        <a class="logo coastguard" href="https://www.military.com/coast-guard"><span>coast guard</span></a>
+        <div class="links">
+          <a href="https://www.military.com/profile/member-profile.html">My Profile</a>
+          <a href="https://www.military.com/coast-guard">Coast Guard Home Page</a>
+        </div>
+      </div>
+      <div class="myService" id="ngServiceSelected">
+        <a class="logo nationalguard" href="https://www.military.com/national-guard"><span>national guard</span></a>
+        <div class="links">
+          <a href="https://www.military.com/profile/member-profile.html">My Profile</a>
+          <a href="https://www.military.com/national-guard">National Guard Home Page</a>
+        </div>
+      </div>
+      <div class="myService" id="spouseServiceSelected">
+        <a class="logo spouse" href="https://www.military.com/spouse"><span>Spouse</span></a>
+        <div class="links">
+          <a href="https://www.military.com/profile/member-profile.html">My Profile</a>
+          <a href="https://www.military.com/spouse">Spouse Home Page</a>
+        </div>
+      </div>
+      <div class="myService" id="otherServiceSelected">
+        <a class="logo military" href="https://www.military.com/daily-news"><span>&nbsp;</span></a>
+        <div class="links">
+          <a href="https://www.military.com/profile/member-profile.html">My Profile</a>
+          <a href="https://www.military.com/daily-news">News Home Page</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+        </div>
+  
+        </div>
+
+  </div>
+
+          </>
+              
+
+
+<div id="paragraph-11061" class="paragraph paragraph--block paragraph--default">
+      
+
+
+
+
+  <div class="field field--block field--label-hidden">
+            
+
+
+
+      <div class="block block--mil-oas-ad-block">
+    
+    
+
+      <div class="oas-ad-block x42" id="oas-ad-block-x42" data-oasposition="x42"><script type="text/javascript">try { OAS_AD("x42"); } catch(e) {} </script></div>
+        </div>
+  
+        </div>
+
+  </div>
+
+          </>
+              
+
+
+<div id="paragraph-11041" class="paragraph paragraph--list-view paragraph--default">
+      
+
+
+
+
+  <h2 class="field field--title field--label-hidden paragraph__title">
+            Most Recent in Under The Radar
+        </h2>
+
+
+
+
+<div class="list-view list-view--one-col">
+      <ul>
+          <li class="text--title"><a href="/undertheradar/2018/02/16/how-john-wayne-got-rid-kgb-agents-hired-kill-him.html">How John Wayne Got Rid of the KGB Agents Hired to Kill Him</a></li>
+          <li class="text--title"><a href="/undertheradar/2018/02/14/9-photos-marines-hating-boot-camp.html">9 Photos of Marines Hating Boot Camp</a></li>
+          <li class="text--title"><a href="/undertheradar/2018/02/14/13-funniest-military-memes-week-2-14-18.html">The 13 Funniest Military Memes of the Week 2/14/18</a></li>
+          <li class="text--title"><a href="/undertheradar/2018/02/14/pbs-great-escape-dunkirk-aims-explode-myths-about-rafs-role-evacuation.html">PBS&#039; &#039;Great Escape at Dunkirk&#039; Aims to Explode Myths About the RAF&#039;s Role in the Evacuation</a></li>
+          <li class="text--title"><a href="/undertheradar/2018/02/12/army-chaplain-timothy-mallard-remembers-events-9-11-new-pbs-series.html">Army Chaplain Timothy Mallard Remembers the Events of 9/11 on New PBS Series</a></li>
+          <li class="text--title"><a href="/undertheradar/2018/02/12/chain-command-ice-special-agent-eddy-dolan-panama.html">&#039;Chain of Command&#039; - ICE Special Agent Eddy Dolan in Panama</a></li>
+          <li class="text--title"><a href="/undertheradar/2018/02/08/home-video-suburbicon.html">Home Video: &#039;Suburbicon&#039;</a></li>
+          <li class="text--title"><a href="/undertheradar/2018/02/09/celebrate-its-77th-anniversary-here-are-7-uso-photos-youve-never-seen.html">To Celebrate Its 77th Anniversary, Here Are 7 USO Photos You’ve Never Seen Before</a></li>
+          <li class="text--title"><a href="/undertheradar/2018/02/09/6-reasons-why-coffee-lifeblood-military.html">6 Reasons Why Coffee Is the Lifeblood of the Military</a></li>
+          <li class="text--title"><a href="/undertheradar/2018/02/09/tom-hanks-wants-veterans-audition-his-next-war-movie.html">Tom Hanks Wants Veterans to Audition for His Next War Movie</a></li>
+      </ul>
+      
+
+  <a href="/topics/undertheradar" class="view__more-link" title="View more">View more</a>
+  </div>
+
+  </div>
+
+          </>
+              
+
+
+<div id="paragraph-11066" class="paragraph paragraph--block paragraph--default">
+      
+
+
+
+
+  <div class="field field--block field--label-hidden">
+            
+
+
+
+      <div class="block block--mil-oas-ad-block">
+    
+    
+
+      <div class="oas-ad-block right3" id="oas-ad-block-right3" data-oasposition="Right3"><script type="text/javascript">try { OAS_AD("Right3"); } catch(e) {} </script></div>
+        </div>
+  
+        </div>
+
+  </div>
+
+          </>
+      
+
+    
+
+            </div>
+          </div>
+              
+        
+
+
+
+      <div class="block block--mil-adsense">
+    
+    
+
+      <!-- Global Military.com Responsive Ad -->
+<ins class="adsbygoogle"
+     style="display:inline-block;min-width:320px;max-width:1200px;width:100%;height:300px"
+     data-ad-client="ca-pub-0218990756745158"
+     data-ad-slot="6328647708"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+        </div>
+  
+
+
+
+      <div class="block block--comments-block">
+    
+    
+
+      
+
+  <div id="comments-app-container" class="comments-container" data-entity-id="115356" data-origin=https://www.military.com></div>
+
+        </div>
+  
+
+    </div>
+  </main>
+
+      
+<footer>
+  <div class="container">
+              
+
+
+
+      <div class="block block--mil-oas-ad-block-footer">
+    
+    
+
+      <div class="oas-ad-block bottom1" id="oas-ad-block-bottom1" data-oasposition="Bottom1"><script type="text/javascript">try { OAS_AD("Bottom1"); } catch(e) {} </script></div>
+        </div>
+  
+
+
+
+      <div class="block block--mil-oas-ad-block">
+    
+    
+
+      <div class="oas-ad-block position3" id="oas-ad-block-position3" data-oasposition="Position3"><script type="text/javascript">try { OAS_AD("Position3"); } catch(e) {} </script></div>
+        </div>
+  
+
+
+
+      <nav class="block block--system-menu-block-footer">
+    
+    
+
+      
+
+
+
+
+        <ul class="menu menu--footer">
+                            <li>
+                  <span target="" rel="" data-drupal-link-system-path="&lt;front&gt;">Military.com Network:</span>
+                                <ul>
+                    <li>
+                  <a href="/defensetech" target="_self" rel="" data-drupal-link-system-path="node/3291">Defense Tech</a>
+                        </li>
+                <li>
+                  <a href="/dodbuzz" target="_self" rel="" data-drupal-link-system-path="node/2641">Dod Buzz</a>
+                        </li>
+                <li>
+                  <a href="/spousebuzz" target="_self" rel="" data-drupal-link-system-path="node/3301">SpouseBuzz</a>
+                        </li>
+        </ul>
+    
+                        </li>
+                <li>
+                  <span target="" rel="" data-drupal-link-system-path="&lt;front&gt;">Services:</span>
+                                <ul>
+                    <li>
+                  <a href="/air-force" target="_self" rel="" data-drupal-link-system-path="node/3231">Air Force</a>
+                        </li>
+                <li>
+                  <a href="/army" target="_self" rel="" data-drupal-link-system-path="node/3241">Army</a>
+                        </li>
+                <li>
+                  <a href="/coast-guard" target="_self" rel="" data-drupal-link-system-path="node/3251">Coast Guard</a>
+                        </li>
+                <li>
+                  <a href="/marine-corps" target="_self" rel="" data-drupal-link-system-path="node/3256">Marine Corps</a>
+                        </li>
+                <li>
+                  <a href="/national-guard" target="_self" rel="" data-drupal-link-system-path="node/3266">National Guard</a>
+                        </li>
+                <li>
+                  <a href="/navy" target="_self" rel="" data-drupal-link-system-path="node/3271">Navy</a>
+                        </li>
+        </ul>
+    
+                        </li>
+                <li>
+                  <span target="" rel="" data-drupal-link-system-path="&lt;front&gt;">About Military.com:</span>
+                                <ul>
+                    <li>
+                  <a href="/about-us" target="_self" rel="" data-drupal-link-system-path="node/4771">About Us &amp; Press Room</a>
+                        </li>
+                <li>
+                  <a href="/about-us/faqs" target="_self" rel="" data-drupal-link-system-path="node/1786">FAQ</a>
+                        </li>
+                <li>
+                  <a href="/about-us/help-and-feedback" target="_self" rel="" data-drupal-link-system-path="node/4791">Help &amp; Feedback</a>
+                        </li>
+                <li>
+                  <a href="/about-us/advertising-and-sales" target="_self" rel="" data-drupal-link-system-path="node/4786">Advertise With Us</a>
+                        </li>
+                <li>
+                  <a href="/daily-news/military-rss-feeds.html" target="_self" rel="" data-drupal-link-system-path="node/46207">RSS</a>
+                        </li>
+                <li>
+                  <a href="/about-us/apps" target="_self" rel="" data-drupal-link-system-path="node/1761">Mobile Apps</a>
+                        </li>
+                <li>
+                  <a href="/about-us/user-agreement" target="_self" rel="" data-drupal-link-system-path="node/4796">User Agreement</a>
+                        </li>
+                <li>
+                  <a href="/about-us/privacy-policy" target="_self" rel="" data-drupal-link-system-path="node/4801">Privacy Policy</a>
+                        </li>
+                <li>
+                  <a href="/sitemap" target="_self" rel="" data-drupal-link-system-path="node/3891">Site Map</a>
+                        </li>
+        </ul>
+    
+                        </li>
+        </ul>
+    
+
+
+        </nav>
+  
+
+
+
+      <nav class="block block--system-menu-block-social">
+    
+    
+
+      
+
+
+
+
+        <ul class="menu menu--social">
+                            <li>
+                  <a href="http://www.facebook.com/militarydotcom" class="link--facebook">
+            
+<i class="icon icon-facebook"></i>
+          </a>
+              </li>
+                <li>
+                  <a href="https://plus.google.com/+MilitaryDotCom" class="link--google-plus">
+            
+<i class="icon icon-google-plus"></i>
+          </a>
+              </li>
+                <li>
+                  <a href="http://instagram.com/militarydotcom" class="link--instagram">
+            
+<i class="icon icon-instagram"></i>
+          </a>
+              </li>
+                <li>
+                  <a href="http://pinterest.com/Militarydotcom/" class="link--pinterest">
+            
+<i class="icon icon-pinterest"></i>
+          </a>
+              </li>
+                <li>
+                  <a href="http://www.twitter.com/militarydotcom" class="link--twitter">
+            
+<i class="icon icon-twitter"></i>
+          </a>
+              </li>
+                <li>
+                  <a href="https://www.youtube.com/user/MilcomVids" class="link--youtube">
+            
+<i class="icon icon-youtube"></i>
+          </a>
+              </li>
+        </ul>
+    
+
+
+        </nav>
+  
+
+
+
+      <div class="block block--copyright">
+    
+    
+
+      <p class="text--small">© 2018 Military Advantage</p>
+<div class="text--small"><a href="//preferences-mgr.truste.com/?pid=monster01&amp;aid=military_PublisherSolution&amp;type=military" target="_blank" title="AdChoices" class="adchoices"><span class="adchoices-icon">AdChoices <img src="//images.military.com/media/shared/css-global/adchoices-icon.png" /></span></a></div>
+
+        </div>
+  
+
+        </div>
+</footer>
+  </div>
+
+<!-- Begin AdDaptive Code -->
+<script>
+  (function()
+    { var d=document,h=d.getElementsByTagName('head')[0],s=d.createElement('script'),
+      sc = 'https:' == document.location.protocol ?
+        'https://' : 'http://'; s.type='text/javascript';
+      s.async=true; s.src=sc+'s.dpmsrv.com/dpm_2a2b47bf21a372f267deccbb420567f3d450b3c0.min.js';
+      h.appendChild(s); }
+
+  )();
+</script>
+<!-- End AdDaptive Code -->
+<!-- Begin Monetate ExpressTag Sync v8.1. Place at start of document head. DO NOT ALTER. -->
+<script type="text/javascript">
+  if(!/[?&]monetate=false/.test(location.search)){
+    var monetateT = new Date().getTime();
+    var monetate_script = document.createElement('script');
+    monetate_script.setAttribute('src','//se.monetate.net/js/2/a-328a525b/p/military.com/entry.js');
+    document.head.appendChild(monetate_script);
+  }
+</script>
+<!-- End Monetate tag. -->
+  
+
+<!-- Begin FreshDesk. Place at start of document head. DO NOT ALTER.-->
+<script type="text/javascript" src="https://assets.freshdesk.com/widget/freshwidget.js"></script>
+<script type="text/javascript">
+  if (typeof FreshWidget !== 'undefined') {
+    FreshWidget.init("", {
+      "queryString": "&widgetType=popup&formTitle=Help+%26+Feedback",
+      "utf8": "?",
+      "widgetType": "popup",
+      "buttonType": "text",
+      "buttonText": "Help & Feedback",
+      "buttonColor": "white",
+      "buttonBg": "#00529b",
+      "alignment": "3",
+      "offset": "100%",
+      "formHeight": "500px",
+      "url": "https://militarycom.freshdesk.com"
+    });
+  }
+</script>
+<!-- End FreshDesk tag. -->
+
+
+    
+    <script type="application/json" data-drupal-selector="drupal-settings-json">{"path":{"baseUrl":"\/","scriptPath":null,"pathPrefix":"","currentPath":"node\/115356","currentPathIsAdmin":false,"isFront":false,"currentLanguage":"en"},"pluralDelimiter":"\u0003","mil_ads":{"positions":{"x88":"x88","x63":"x63","Position2":"Position2","Position3":"Position3","Bottom1":"Bottom1","Right3":"Right3","x42":"x42","Right":"Right","x45":"x45","Position1":"Position1","Bottom":"Bottom","x30":"x30","x29":"x29","x89":"x89"}},"ajaxTrustedUrl":{"\/\/search.military.com\/search":true},"user":{"uid":0,"permissionsHash":"dae8d67118ec42f7ef257aeed86d201fad8bcea73d87b8685430bd3ca2fd9101"}}</script>
+<script src="//images02.military.com/sites/default/files/js/js_4PxtKsNCzUBKrigodmsNzN9_vo3yBHQniGtQqcz52Bw.js"></script>
+<script src="//s7.addthis.com/js/250/addthis_widget.js#pubid=ra-584b1b3a3c91df08"></script>
+<script src="//images01.military.com/sites/default/files/js/js_spfgGYBFb8o_U3Np-Nzvctjwcz8iPx1G3u8j20yZJIE.js"></script>
+
+          <!-- Extract Meta -->
+
+      <!-- Begin SiteCatalyst code -->
+      <script type="text/javascript">
+        var siteCatURL = (("https:" == document.location.protocol) ? "https://securemedia.newjobs.com/js/global/at_1.5.js"
+        : "http://media.newjobs.com/js/global/at_1.5.js");
+        document.write(unescape("%3Cscript src='" + siteCatURL
+        + "' type='text/javascript'%3E%3C/script%3E"));
+      </script>
+
+
+      <script type="text/javascript">
+        var DYNAMIC_S_ACCOUNT = 'newjobsmilitary';
+        _m.ATM.properties = {
+        "eVar27" : sr,
+        "eVar28" : st,
+        "eVar29" : z,
+        "eVar30" : paygrade,
+        "eVar31" : a,
+        "eVar33" : securityClearance,
+        "eVar40" : sepYear,
+        "prop9" : contentSource,
+        "prop10" : contentAuthor,
+        "prop11" : contentDate
+        };
+        //<![CDATA[
+        var amc = amc || {};
+        if (!amc.on) {
+          amc.on = amc.call = function() {}
+        };
+        document
+        .write("<scr"+"ipt type='text/javascript' src='//www.adobetag.com/d1/v2/ZDEtbW9uc3RlcmpvYnMtMTI4ODgtMjMzNy0=/amc.js'></sc"+"ript>");
+        //]]>
+        window.load = _m.ATM.initFromOnReady();
+        _m.ATM.countryID = 164;
+        _m.ATM.appID = '';
+        _m.ATM.runOnLoad = true;
+      </script>
+      <!-- End SiteCatalyst code -->
+
+      <script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"c3ba172f92","applicationID":"51798329","transactionName":"MQQHYEBQD0NYUE0NXwhOJFdGWA5eFndLEUAHDTl3XUMEbHRWVxFsIgQDVUddFX1cXUwoWQgKMUZXVCxRV1pJEVwHFQpGQRxfV1xdXBZREgQsWlZUGXFXV2oLQhI=","queueTime":0,"applicationTime":2355,"atts":"HUMEFghKHE0=","errorBeacon":"bam.nr-data.net","agent":""}</script></body>
+</html>

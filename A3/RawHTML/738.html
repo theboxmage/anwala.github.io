@@ -1,0 +1,1193 @@
+<!DOCTYPE html>
+<html lang="en-US" prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb#">
+
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="x-ua-compatible" content="ie=edge"><script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,t,n){function r(n){if(!t[n]){var o=t[n]={exports:{}};e[n][0].call(o.exports,function(t){var o=e[n][1][t];return r(o||t)},o,o.exports)}return t[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({1:[function(e,t,n){function r(){}function o(e,t,n){return function(){return i(e,[f.now()].concat(u(arguments)),t?null:this,n),t?void 0:this}}var i=e("handle"),a=e(2),u=e(3),c=e("ee").get("tracer"),f=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],d="api-",l=d+"ixn-";a(p,function(e,t){s[t]=o(d+t,!0,"api")}),s.addPageAction=o(d+"addPageAction",!0),s.setCurrentRouteName=o(d+"routeName",!0),t.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,t){var n={},r=this,o="function"==typeof t;return i(l+"tracer",[f.now(),e,n],r),function(){if(c.emit((o?"":"no-")+"fn-start",[f.now(),r,o],n),o)try{return t.apply(this,arguments)}catch(e){throw c.emit("fn-err",[arguments,this,e],n),e}finally{c.emit("fn-end",[f.now()],n)}}}};a("setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,t){m[t]=o(l+t)}),newrelic.noticeError=function(e){"string"==typeof e&&(e=new Error(e)),i("err",[e,f.now()])}},{}],2:[function(e,t,n){function r(e,t){var n=[],r="",i=0;for(r in e)o.call(e,r)&&(n[i]=t(r,e[r]),i+=1);return n}var o=Object.prototype.hasOwnProperty;t.exports=r},{}],3:[function(e,t,n){function r(e,t,n){t||(t=0),"undefined"==typeof n&&(n=e?e.length:0);for(var r=-1,o=n-t||0,i=Array(o<0?0:o);++r<o;)i[r]=e[t+r];return i}t.exports=r},{}],4:[function(e,t,n){t.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,t,n){function r(){}function o(e){function t(e){return e&&e instanceof r?e:e?c(e,u,i):i()}function n(n,r,o,i){if(!d.aborted||i){e&&e(n,r,o);for(var a=t(o),u=m(n),c=u.length,f=0;f<c;f++)u[f].apply(a,r);var p=s[y[n]];return p&&p.push([b,n,r,a]),a}}function l(e,t){v[e]=m(e).concat(t)}function m(e){return v[e]||[]}function w(e){return p[e]=p[e]||o(n)}function g(e,t){f(e,function(e,n){t=t||"feature",y[n]=t,t in s||(s[t]=[])})}var v={},y={},b={on:l,emit:n,get:w,listeners:m,context:t,buffer:g,abort:a,aborted:!1};return b}function i(){return new r}function a(){(s.api||s.feature)&&(d.aborted=!0,s=d.backlog={})}var u="nr@context",c=e("gos"),f=e(2),s={},p={},d=t.exports=o();d.backlog=s},{}],gos:[function(e,t,n){function r(e,t,n){if(o.call(e,t))return e[t];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,t,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return e[t]=r,r}var o=Object.prototype.hasOwnProperty;t.exports=r},{}],handle:[function(e,t,n){function r(e,t,n,r){o.buffer([e],r),o.emit(e,t,n)}var o=e("ee").get("handle");t.exports=r,r.ee=o},{}],id:[function(e,t,n){function r(e){var t=typeof e;return!e||"object"!==t&&"function"!==t?-1:e===window?0:a(e,i,function(){return o++})}var o=1,i="nr@id",a=e("gos");t.exports=r},{}],loader:[function(e,t,n){function r(){if(!x++){var e=h.info=NREUM.info,t=d.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&t))return s.abort();f(y,function(t,n){e[t]||(e[t]=n)}),c("mark",["onload",a()+h.offset],null,"api");var n=d.createElement("script");n.src="https://"+e.agent,t.parentNode.insertBefore(n,t)}}function o(){"complete"===d.readyState&&i()}function i(){c("mark",["domContent",a()+h.offset],null,"api")}function a(){return E.exists&&performance.now?Math.round(performance.now()):(u=Math.max((new Date).getTime(),u))-h.offset}var u=(new Date).getTime(),c=e("handle"),f=e(2),s=e("ee"),p=window,d=p.document,l="addEventListener",m="attachEvent",w=p.XMLHttpRequest,g=w&&w.prototype;NREUM.o={ST:setTimeout,SI:p.setImmediate,CT:clearTimeout,XHR:w,REQ:p.Request,EV:p.Event,PR:p.Promise,MO:p.MutationObserver};var v=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1071.min.js"},b=w&&g&&g[l]&&!/CriOS/.test(navigator.userAgent),h=t.exports={offset:u,now:a,origin:v,features:{},xhrWrappable:b};e(1),d[l]?(d[l]("DOMContentLoaded",i,!1),p[l]("load",r,!1)):(d[m]("onreadystatechange",o),p[m]("onload",r)),c("mark",["firstbyte",u],null,"api");var x=0,E=e(4)},{}]},{},["loader"]);</script>
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+<script>
+var _0x4fb0=["\x44\x46\x50","\x6C\x6F\x63\x61\x74\x69\x6F\x6E","\x70\x61\x72\x65\x6E\x74","\x72\x65\x66\x65\x72\x72\x65\x72","\x68\x72\x65\x66","\x75\x6E\x64\x65\x66\x69\x6E\x65\x64","\x34","\x35","\x61\x64\x73","\x44\x46\x50\x20\x53\x74\x61\x72\x74","\x6C\x65\x6E\x67\x74\x68","\x64\x69\x6D\x65\x6E\x73\x69\x6F\x6E","\x2C","\x6A\x6F\x69\x6E","\x70\x75\x73\x68","\x73\x74\x61\x72\x74","\x65\x6E\x64","\x6C\x6F\x61\x64\x5F\x74\x69\x6D\x65","\x20\x6C\x6F\x61\x64\x20\x74\x69\x6D\x65","\x48\x42\x20\x73\x65\x6E\x64\x69\x6E\x67\x20\x74\x6F\x20\x47\x41\x3A","\x6C\x6F\x67","\x68\x62\x2E\x73\x65\x6E\x64","\x74\x69\x6D\x69\x6E\x67","\x66\x6F\x72\x45\x61\x63\x68","\x74\x72\x61\x63\x6B\x69\x6E\x67\x49\x64","\x67\x65\x74","\x67\x65\x74\x41\x6C\x6C","\x63\x72\x65\x61\x74\x65","\x61\x75\x74\x6F","\x68\x62","\x67\x65\x74\x54\x69\x6D\x65","\x72\x65\x73\x70\x6F\x6E\x73\x65\x53\x74\x61\x72\x74","\x70\x65\x72\x66\x6F\x72\x6D\x61\x6E\x63\x65","\x6D\x69\x6E","\x73\x6F\x72\x74","","\x73\x65\x6C\x66","\x74\x6F\x70","\x7C","\x20\x65\x72\x72\x6F\x72\x3A\x20","\x6D\x65\x73\x73\x61\x67\x65","\x49\x4E\x44\x58\x57","\x4F\x50\x45\x4E\x58","\x59\x4C\x44\x42\x54","\x50\x42\x4D\x54\x43","\x52\x55\x42\x49","\x41\x4F\x4C","\x53\x56\x52\x4E","\x49\x4E\x44\x58","\x46\x42","\x53\x48\x54\x48","\x33\x4C\x49\x46\x54","\x59\x49\x45\x4C\x44","\x53\x4F\x56\x52","\x69\x6E\x64\x65\x78\x4F\x66","\x2E\x2A","\x74\x65\x73\x74","\x6F\x70\x65\x6E","\x70\x72\x6F\x74\x6F\x74\x79\x70\x65","\x73\x65\x6E\x64","\x74\x69\x6D\x65\x6F\x75\x74","\x68\x62\x54\x69\x6D\x65\x6F\x75\x74\x44\x65\x62\x75\x67","\x4F\x76\x65\x72\x72\x69\x64\x69\x6E\x67\x20\x58\x48\x52\x20\x74\x69\x6D\x65\x6F\x75\x74\x20\x66\x72\x6F\x6D\x20","\x20\x74\x6F\x20","\x20\x66\x6F\x72\x20","\x66\x61\x69\x6C\x65\x64\x20\x74\x6F\x20\x6F\x76\x65\x72\x72\x69\x64\x65\x20\x74\x69\x6D\x65\x6F\x75\x74\x20\x66\x6F\x72\x20","\x61\x70\x70\x6C\x79","\x45\x72\x72\x6F\x72\x20\x72\x75\x6E\x6E\x69\x6E\x67\x20\x48\x42\x20\x6F\x70\x65\x6E","\x6F\x6E\x72\x65\x61\x64\x79\x73\x74\x61\x74\x65\x63\x68\x61\x6E\x67\x65","\x72\x65\x61\x64\x79\x53\x74\x61\x74\x65","\x73\x74\x61\x74\x75\x73","\x72\x65\x73\x70\x6F\x6E\x73\x65\x55\x52\x4C","\x48\x42\x20\x44\x46\x50\x20\x73\x65\x6E\x64\x69\x6E\x67\x20\x74\x69\x6D\x69\x6E\x67\x73\x20\x66\x72\x6F\x6D\x20\x6D\x75\x74\x61\x69\x6F\x6E\x20\x6F\x62\x6A\x65\x63\x74","\x48\x42\x20\x53\x54\x41\x54\x45\x3A\x20","\x20\x63\x6F\x64\x65\x3A","\x20","\x20\x62\x69\x64\x64\x65\x72\x3A","\x45\x72\x72\x6F\x72\x20\x72\x75\x6E\x6E\x69\x6E\x67\x20\x48\x42\x20\x73\x65\x6E\x64","\x61\x64\x64\x65\x64\x4E\x6F\x64\x65\x73","\x73\x72\x63","\x6F\x6E\x6C\x6F\x61\x64","\x48\x42\x20","\x20\x73\x63\x72\x69\x70\x74\x20\x6C\x6F\x61\x64\x65\x64\x20","\x68\x65\x61\x64","\x6F\x62\x73\x65\x72\x76\x65","\x66\x75\x6E\x63\x74\x69\x6F\x6E","\x45\x72\x72\x6F\x72\x20\x67\x61\x74\x68\x65\x72\x69\x6E\x67\x20\x68\x65\x61\x64\x65\x72\x20\x62\x69\x64\x64\x65\x72\x20\x73\x74\x61\x74\x73"];try{var DEBUG=false;var DFP_ID=_0x4fb0[0];var bidders={};var hb_timings_sent=false;var hb_onload_run=false;var MAX_MILLIS=20000;var MAX_XHR_MILLIS=2000;var getIFrameURL=function(){return (window[_0x4fb0[1]]!= window[_0x4fb0[2]][_0x4fb0[1]])?document[_0x4fb0[3]]:document[_0x4fb0[1]][_0x4fb0[4]]};var hb_track_hb=function(_0x9d4axa,_0x9d4axb,_0x9d4axc,_0x9d4axd){var _0x9d4axe=bidders[_0x9d4axa][_0x9d4axb];if(_0x9d4axe&& _0x9d4axe> 0&& _0x9d4axe<= MAX_MILLIS){if( typeof hbDFPdim=== _0x4fb0[5]){hbDFPdim= _0x4fb0[6]};if( typeof hbFRAMEdim=== _0x4fb0[5]){hbFRAMEdim= _0x4fb0[7]};var _0x9d4axf={timingCategory:_0x4fb0[8],timingVar:_0x4fb0[0],timingValue:_0x9d4axe,timingLabel:_0x4fb0[9]};if(_0x9d4axc[_0x4fb0[10]]> 0){_0x9d4axf[_0x4fb0[11]+ hbDFPdim]= _0x9d4axc[_0x4fb0[13]](_0x4fb0[12])};if(_0x9d4axd){_0x9d4axf[_0x4fb0[11]+ hbFRAMEdim]= _0x9d4axd};var _0x9d4ax10=[];_0x9d4ax10[_0x4fb0[14]](_0x9d4axf);for(i= 0;i< toMonitor[_0x4fb0[10]];i++){var _0x9d4ax11=toMonitor[i];var _0x9d4ax12=bidders[_0x9d4ax11][_0x4fb0[15]];var _0x9d4ax13=bidders[_0x9d4ax11][_0x4fb0[16]];if(_0x9d4ax12&& _0x9d4ax13&& _0x9d4ax12> 0&& _0x9d4ax13> 0){var _0x9d4ax14=_0x9d4ax13- _0x9d4ax12;if(_0x9d4ax14<= MAX_MILLIS){_0x9d4axf= {timingCategory:_0x4fb0[17],timingVar:_0x9d4ax11,timingValue:_0x9d4ax14,timingLabel:_0x9d4ax11+ _0x4fb0[18]};_0x9d4ax10[_0x4fb0[14]](_0x9d4axf)}}};if(DEBUG){console[_0x4fb0[20]](_0x4fb0[19]);console[_0x4fb0[20]](_0x9d4ax10)}else {_0x9d4ax10[_0x4fb0[23]](function(_0x9d4axf){ga(_0x4fb0[21],_0x4fb0[22],_0x9d4axf)})};return true};return false};var hb_log_timings=function(){if(hb_timings_sent){return};hb_timings_sent= true;var _0x9d4ax16=ga[_0x4fb0[26]]()[0][_0x4fb0[25]](_0x4fb0[24]);ga(_0x4fb0[27],{trackingId:_0x9d4ax16,cookieDomain:_0x4fb0[28],name:_0x4fb0[29],siteSpeedSampleRate:1});var _0x9d4axc=[];for(bidder in bidders){if(bidder== DFP_ID){continue};if(!bidders[bidder][_0x4fb0[16]]){bidders[bidder][_0x4fb0[16]]= Math[_0x4fb0[33]](( new Date())[_0x4fb0[30]]()- window[_0x4fb0[32]][_0x4fb0[22]][_0x4fb0[31]],MAX_MILLIS)};if(bidders[bidder][_0x4fb0[16]]- bidders[DFP_ID][_0x4fb0[15]]> 0){_0x9d4axc[_0x4fb0[14]](bidder)}};_0x9d4axc[_0x4fb0[34]]();var _0x9d4axd=_0x4fb0[35];try{if(window[_0x4fb0[36]]!== window[_0x4fb0[37]]){var _0x9d4ax17=null;if(window[_0x4fb0[36]]&& window[_0x4fb0[36]][_0x4fb0[1]]){_0x9d4ax17= window[_0x4fb0[36]][_0x4fb0[1]][_0x4fb0[4]]};var _0x9d4ax18=null;if(window[_0x4fb0[37]]&& window[_0x4fb0[37]][_0x4fb0[1]]){_0x9d4ax18= window[_0x4fb0[37]][_0x4fb0[1]][_0x4fb0[4]]};if(_0x9d4ax17!= _0x9d4ax18){_0x9d4axd= getIFrameURL();_0x9d4axd= _0x9d4axd+ _0x4fb0[38]+ _0x9d4ax17+ _0x4fb0[38]+ _0x9d4ax18}}}catch(err){_0x9d4axd= getIFrameURL()+ _0x4fb0[39]+ err[_0x4fb0[40]]};hb_track_hb(DFP_ID,_0x4fb0[15],_0x9d4axc,_0x9d4axd)};var toMonitor=[_0x4fb0[41]];var jsRegexp={"\x2E\x64\x6F\x75\x62\x6C\x65\x63\x6C\x69\x63\x6B\x2E\x6E\x65\x74\x2F\x67\x61\x6D\x70\x61\x64\x2F\x61\x64\x73":_0x4fb0[0],"\x2E\x6F\x70\x65\x6E\x78\x2E\x6E\x65\x74\x2F\x77\x2F\x31\x2E\x30\x2F\x61\x63\x6A":_0x4fb0[42],"\x2E\x79\x6C\x64\x62\x74\x2E\x63\x6F\x6D\x2F\x6D\x2F\x2E\x2A\x69\x6E\x69\x74":_0x4fb0[43],"\x2E\x79\x6C\x64\x62\x74\x2E\x63\x6F\x6D\x2F\x6D\x2F\x2E\x2A\x69\x6E\x69\x74":_0x4fb0[43],"\x2F\x70\x62\x2E\x6A\x73":_0x4fb0[41]};var xhrRegexp={"\x2E\x70\x75\x62\x6D\x61\x74\x69\x63\x2E\x63\x6F\x6D\x2F\x41\x64\x53\x65\x72\x76\x65\x72\x2F\x41\x64\x43\x61\x6C\x6C\x41\x67\x67\x72\x65\x67\x61\x74\x6F\x72":_0x4fb0[44],"\x2E\x70\x75\x62\x6D\x61\x74\x69\x63\x2E\x63\x6F\x6D\x2F\x41\x64\x53\x65\x72\x76\x65\x72\x2F\x41\x64\x53\x65\x72\x76\x65\x72\x53\x65\x72\x76\x6C\x65\x74":_0x4fb0[44],"\x2E\x72\x75\x62\x69\x63\x6F\x6E\x70\x72\x6F\x6A\x65\x63\x74\x2E\x63\x6F\x6D\x2F\x61\x2F\x61\x70\x69\x2F\x66\x61\x73\x74\x6C\x61\x6E\x65\x2E\x6A\x73\x6F\x6E":_0x4fb0[45],"\x2E\x61\x64\x74\x65\x63\x68\x2E\x2A\x2E\x61\x64\x76\x65\x72\x74\x69\x73\x69\x6E\x67\x2E\x63\x6F\x6D\x2F\x70\x75\x62\x61\x70\x69\x2E\x2A\x63\x6D\x64\x3D\x62\x69\x64":_0x4fb0[46],"\x2E\x6C\x69\x6A\x69\x74\x2E\x63\x6F\x6D\x2F\x72\x74\x62\x2F\x62\x69\x64":_0x4fb0[47],"\x2E\x63\x61\x73\x61\x6C\x65\x6D\x65\x64\x69\x61\x2E\x63\x6F\x6D\x2F\x63\x79\x67\x6E\x75\x73":_0x4fb0[48],"\x66\x61\x63\x65\x62\x6F\x6F\x6B\x2E\x63\x6F\x6D\x2E\x2A\x70\x6C\x61\x63\x65\x6D\x65\x6E\x74\x62\x69\x64\x2E\x6A\x73\x6F\x6E":_0x4fb0[49],"\x62\x74\x6C\x72\x2E\x73\x68\x61\x72\x65\x74\x68\x72\x6F\x75\x67\x68\x2E\x2A\x68\x65\x61\x64\x65\x72\x2D\x62\x69\x64\x2F":_0x4fb0[50],"\x74\x6C\x78\x2E\x33\x6C\x69\x66\x74\x2E\x63\x6F\x6D\x2E\x2A\x61\x75\x63\x74\x69\x6F\x6E":_0x4fb0[51],"\x61\x64\x73\x2E\x2A\x79\x6C\x64\x62\x74\x2E\x63\x6F\x6D\x2F\x6D\x2F":_0x4fb0[52],"\x2E\x6C\x69\x6A\x69\x74\x2E\x63\x6F\x6D\x2F\x72\x74\x62\x2E\x2A\x2F\x62\x69\x64":_0x4fb0[53]};function url2bidder(_0x9d4ax1d,_0x9d4ax1e){if(!_0x9d4ax1d){return};for(var _0x9d4ax1f in _0x9d4ax1e?xhrRegexp:jsRegexp){if(_0x9d4ax1d[_0x4fb0[54]](_0x9d4ax1f)!=  -1){return _0x9d4ax1e?xhrRegexp[_0x9d4ax1f]:jsRegexp[_0x9d4ax1f]};if(_0x9d4ax1f[_0x4fb0[54]](_0x4fb0[55])!=  -1){var _0x9d4ax20= new RegExp(_0x9d4ax1f);if(_0x9d4ax20[_0x4fb0[56]](_0x9d4ax1d)){return _0x9d4ax1e?xhrRegexp[_0x9d4ax1f]:jsRegexp[_0x9d4ax1f]}}}}var open_original=XMLHttpRequest[_0x4fb0[58]][_0x4fb0[57]];var send_original=XMLHttpRequest[_0x4fb0[58]][_0x4fb0[59]];XMLHttpRequest[_0x4fb0[58]][_0x4fb0[57]]= function(_0x9d4ax23,_0x9d4ax1d,_0x9d4ax24,_0x9d4ax25,_0x9d4ax26){try{if( typeof hbTimeout!== _0x4fb0[5]&& hbTimeout){try{if( typeof this[_0x4fb0[60]]== _0x4fb0[5]||  !this[_0x4fb0[60]]|| this[_0x4fb0[60]]> MAX_XHR_MILLIS){if(window[_0x4fb0[1]][_0x4fb0[4]]&& window[_0x4fb0[1]][_0x4fb0[4]][_0x4fb0[54]](_0x4fb0[61])!==  -1){console[_0x4fb0[20]](_0x4fb0[62]+ this[_0x4fb0[60]]+ _0x4fb0[63]+ MAX_XHR_MILLIS+ _0x4fb0[64]+ _0x9d4ax1d)};this[_0x4fb0[60]]= MAX_XHR_MILLIS}}catch(te){console[_0x4fb0[20]](_0x4fb0[65]+ _0x9d4ax1d);console[_0x4fb0[20]](te)}};var _0x9d4axa=url2bidder(_0x9d4ax1d,true);if(!_0x9d4axa|| bidders[_0x9d4axa]){return open_original[_0x4fb0[66]](this,arguments)};bidders[_0x9d4axa]= {start:( new Date())[_0x4fb0[30]]()- window[_0x4fb0[32]][_0x4fb0[22]][_0x4fb0[31]]}}catch(e_open){console[_0x4fb0[20]](_0x4fb0[67]);console[_0x4fb0[20]](e_open)}finally{return open_original[_0x4fb0[66]](this,arguments)}};XMLHttpRequest[_0x4fb0[58]][_0x4fb0[59]]= function(_0x9d4ax27){try{var _0x9d4ax28=this[_0x4fb0[68]];this[_0x4fb0[68]]= function(){if(this[_0x4fb0[69]]!= 4|| this[_0x4fb0[70]]!= 200){if(_0x9d4ax28){return _0x9d4ax28[_0x4fb0[66]](this,arguments)}else {return}};var _0x9d4ax1d=this[_0x4fb0[71]];var _0x9d4axa=url2bidder(_0x9d4ax1d,true);if(!_0x9d4axa||  !bidders[_0x9d4axa][_0x4fb0[15]] || bidders[_0x9d4axa][_0x4fb0[16]]){if(_0x9d4ax28){return _0x9d4ax28[_0x4fb0[66]](this,arguments)}else {return}};bidders[_0x9d4axa][_0x4fb0[16]]= ( new Date())[_0x4fb0[30]]()- window[_0x4fb0[32]][_0x4fb0[22]][_0x4fb0[31]];if(_0x9d4axa== DFP_ID){if(hb_onload_run&&  !hb_timings_sent){if(DEBUG){console[_0x4fb0[20]](_0x4fb0[72])};hb_log_timings()}};if(DEBUG){console[_0x4fb0[20]](_0x4fb0[73]+ this[_0x4fb0[69]]+ _0x4fb0[74]+ this[_0x4fb0[70]]+ _0x4fb0[75]+ _0x9d4ax1d+ _0x4fb0[76]+ _0x9d4axa+ _0x4fb0[75]+ bidders[_0x9d4axa][_0x4fb0[15]]+ _0x4fb0[75]+ bidders[_0x9d4axa][_0x4fb0[16]])};if(_0x9d4ax28){return _0x9d4ax28[_0x4fb0[66]](this,arguments)}else {return}}}catch(e_send){console[_0x4fb0[20]](_0x4fb0[77]);console[_0x4fb0[20]](e_send)}finally{return send_original[_0x4fb0[66]](this,arguments)}};var observer= new MutationObserver(function(_0x9d4ax2a){_0x9d4ax2a[_0x4fb0[23]](function(_0x9d4ax2b){for(var _0x9d4ax2c=0;_0x9d4ax2c< _0x9d4ax2b[_0x4fb0[78]][_0x4fb0[10]];_0x9d4ax2c++){if(_0x9d4ax2b[_0x4fb0[78]][_0x9d4ax2c] instanceof  HTMLScriptElement){var _0x9d4ax1d=_0x9d4ax2b[_0x4fb0[78]][_0x9d4ax2c][_0x4fb0[79]];var _0x9d4axa=url2bidder(_0x9d4ax1d,false);if(!_0x9d4axa&& _0x9d4axa!= DFP_ID){continue};if(bidders[_0x9d4axa]&& bidders[_0x9d4axa][_0x4fb0[15]]){continue};bidders[_0x9d4axa]= {start:( new Date())[_0x4fb0[30]]()- window[_0x4fb0[32]][_0x4fb0[22]][_0x4fb0[31]]};_0x9d4ax2b[_0x4fb0[78]][_0x9d4ax2c][_0x4fb0[80]]= function(){bidders[_0x9d4axa][_0x4fb0[16]]= ( new Date())[_0x4fb0[30]]()- window[_0x4fb0[32]][_0x4fb0[22]][_0x4fb0[31]];if(_0x9d4axa== DFP_ID){if(hb_onload_run&&  !hb_timings_sent){if(DEBUG){console[_0x4fb0[20]](_0x4fb0[72])};hb_log_timings()}};if(DEBUG){console[_0x4fb0[20]](_0x4fb0[81]+ _0x9d4axa+ _0x4fb0[82]+ _0x9d4ax1d+ _0x4fb0[75]+ bidders[_0x9d4axa][_0x4fb0[15]]+ _0x4fb0[75]+ bidders[_0x9d4axa][_0x4fb0[16]])}}}}})});observer[_0x4fb0[84]](document[_0x4fb0[83]],{childList:true});var oldonload=window[_0x4fb0[80]];window[_0x4fb0[80]]= function(){hb_onload_run= true;if( typeof oldonload== _0x4fb0[85]){oldonload()};if(!bidders[DFP_ID]||  !bidders[DFP_ID][_0x4fb0[16]]){return};hb_log_timings()}}catch(e){console[_0x4fb0[20]](_0x4fb0[86]);console[_0x4fb0[20]](e)}
+</script>
+
+		<title>2018 Winter Olympics Opening Ceremony: Everything You Need to Know</title>
+<!-- Jetpack Site Verification Tags -->
+<meta name="google-site-verification" content="FM3U8Tf3K0sD7N-PDfpCNb9_qa1a8dYOlnEZyhQnNsE" />
+<script type="text/javascript">
+    var googletag = googletag || {};
+        googletag.cmd = googletag.cmd || [];
+		window.pb_host = "usmagazine";
+        pbjs = window.pbjs || { que: [] }; // if prebid is not already defined, define it
+          (function() { var gads = document.createElement("script");
+            gads.async = true;
+            gads.type = "text/javascript";
+            var useSSL = "https:" == document.location.protocol;
+            gads.src = (useSSL ? "https:" : "http:") + "//www.googletagservices.com/tag/js/gpt.js";
+            var node =document.getElementsByTagName("script")[0];
+            node.parentNode.insertBefore(gads, node);
+            })();
+
+			window.gptAdsWindowWidth = function() {
+				var w = window,
+					d = document,
+					e = d.documentElement,
+					x = Math.max(e.scrollWidth,e.offsetWidth,e.clientWidth);
+				return x;
+			}
+    </script>
+<script>var utag_data = {"canonical_url":"\/entertainment\/news\/2018-winter-olympics-opening-ceremony\/","page_category":"post","node_id":"1177752","content_type":"article","node_category":["Entertainment"],"node_tags":["Olympics"],"content_updated_date":"2018\/02\/08","content_publish_date":"2018\/02\/08","page_title":"2018 Winter Olympics Opening Ceremony: Everything You Need to Know","sponsorship_name":"none","comments":"on","author":"Karla Rodriguez","celebrity":["Katie Couric"],"show":"none","sponsored":"on","instant_article":"off","hulu_video":"off","jwplayer_video":"off","swoop":"off","taboola":"off","vimeo_video":"off","vuble":"off","vupulse":"on","skimlink":"off","wibbitz":"off","youtube_video":"off","zergnet_timeline":"off"};
+function parseUrlParams(val) {
+					var result = "none",
+						tmp = [];
+					var items = location.search.substr(1).split("&");
+					for (var index = 0; index < items.length; index++) {
+						tmp = items[index].split("=");
+						if (tmp[0] === val) result = decodeURIComponent(tmp[1]);
+					}
+					return result;
+				}
+		if(window.innerWidth < 768) {
+			utag_data.site_display_format = 'mobile';
+		} else if(window.innerWidth >= 768 && window.innerWidth <= 1024) {
+			utag_data.site_display_format = 'tablet';
+		} else {
+			utag_data.site_display_format = 'desktop';
+		}
+		
+		utag_data.referrer = document.referrer;
+		utag_data.utm_source = parseUrlParams('utm_source');
+		utag_data.utm_medium = parseUrlParams('utm_medium');
+		utag_data.utm_campaign = parseUrlParams('utm_campaign');
+		
+			if(parseUrlParams("test") !== "none") {
+				console.log(utag_data);
+			}function tealiumOnLoad() {
+			utag_data.event_name = 'onLoad';
+			utag.view(utag_data);
+			if(parseUrlParams("test") !== "none") {
+				console.log("tealium onload");
+			}
+			}window.addEventListener("load", tealiumOnLoad);</script>
+<!-- This site is optimized with the Yoast SEO plugin v6.0 - https://yoast.com/wordpress/plugins/seo/ -->
+<meta name="description" content="Find out how to watch and what to expect during the 2018 Winter Olympics Opening Ceremony taking place in PyeongChang, South Korea on Friday, February 9 — details"/>
+<meta name="keywords" content="2018 Winter Olympics Opening Ceremony, Winter Olympics Opening Ceremony, Open Ceremony, What time is the opening ceremony, when is the opening ceremony, when is the olympics opening ceremony, how to watch the opening ceremony, Winter Olympics Opening Ceremony watch, what channel is airing the Winter Olympics Opening Ceremony, Winter Olympics Opening Ceremony NBC, who is carrying the US flag, Erin Hamlin, Katie Couric, Mike Tirico, who is hosting the opening ceremony"/>
+<link rel="canonical" href="https://www.usmagazine.com/entertainment/news/2018-winter-olympics-opening-ceremony/" />
+<meta property="og:locale" content="en_US" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="2018 Winter Olympics Opening Ceremony: Everything You Need to Know" />
+<meta property="og:description" content="Find out how to watch and what to expect during the 2018 Winter Olympics Opening Ceremony taking place in PyeongChang, South Korea on Friday, February 9 — details" />
+<meta property="og:url" content="https://www.usmagazine.com/entertainment/news/2018-winter-olympics-opening-ceremony/" />
+<meta property="og:site_name" content="Us Weekly" />
+<meta property="article:publisher" content="https://www.facebook.com/UsWeekly" />
+<meta property="article:tag" content="Olympics" />
+<meta property="article:section" content="Entertainment" />
+<meta property="article:published_time" content="2018-02-08T12:43:24-05:00" />
+<meta property="article:modified_time" content="2018-02-08T12:43:48-05:00" />
+<meta property="og:updated_time" content="2018-02-08T12:43:48-05:00" />
+<meta property="fb:app_id" content="1785612128341436" />
+<meta property="og:image" content="https://i2.wp.com/www.usmagazine.com/wp-content/uploads/2018/02/winter-olympics-2018-in-pyeongchang-opening-ceremony.jpg?crop=0px%2C69px%2C1800px%2C945px&#038;resize=1200%2C630&#038;ssl=1" />
+<meta property="og:image:secure_url" content="https://i2.wp.com/www.usmagazine.com/wp-content/uploads/2018/02/winter-olympics-2018-in-pyeongchang-opening-ceremony.jpg?crop=0px%2C69px%2C1800px%2C945px&#038;resize=1200%2C630&#038;ssl=1" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:description" content="Find out how to watch and what to expect during the 2018 Winter Olympics Opening Ceremony taking place in PyeongChang, South Korea on Friday, February 9 — details" />
+<meta name="twitter:title" content="2018 Winter Olympics Opening Ceremony: Everything You Need to Know" />
+<meta name="twitter:site" content="@usweekly" />
+<meta name="twitter:image" content="https://i2.wp.com/www.usmagazine.com/wp-content/uploads/2018/02/winter-olympics-2018-in-pyeongchang-opening-ceremony.jpg?crop=0px%2C69px%2C1800px%2C945px&#038;resize=1200%2C630&#038;ssl=1" />
+<meta name="twitter:creator" content="@usweekly" />
+<script type='application/ld+json'>{"@context":"http:\/\/schema.org","@type":"WebSite","@id":"#website","url":"https:\/\/www.usmagazine.com\/","name":"Us Weekly","publisher":{"@id":"https:\/\/www.usmagazine.com\/entertainment\/news\/2018-winter-olympics-opening-ceremony\/#organization"}}</script>
+<script type='application/ld+json'>{"@context":"http:\/\/schema.org","@type":"Organization","url":"https:\/\/www.usmagazine.com\/","sameAs":["https:\/\/www.facebook.com\/UsWeekly","https:\/\/instagram.com\/usweekly\/","https:\/\/www.youtube.com\/user\/UsWeekly","https:\/\/www.pinterest.com\/usweekly\/","https:\/\/twitter.com\/usweekly","http:\/\/usweekly.tumblr.com\/","http:\/\/www.stumbleupon.com\/channel\/UsWeekly","https:\/\/en.wikipedia.org\/wiki\/Us_Weekly"],"@id":"#organization","name":"Us Weekly","logo":{"@type":"ImageObject","url":"https:\/\/www.usmagazine.com\/wp-content\/uploads\/heidi-montag-spencer-pratt-gunner-cover-9a33ae39-7cf3-49ae-b311-e6d98b570712.jpg","width":1329,"height":1800},"telephone":"212-545-4800","address":{"@type":"PostalAddress","streetAddress":"4 New York Plaza","addressLocality":"New York","addressRegion":"NY","addressCountry":"US","postalCode":"10004"}}</script>
+<script type="application/ld+json">{"@context":"http:\/\/schema.org","@type":"WebPage","@id":"https:\/\/www.usmagazine.com\/entertainment\/news\/2018-winter-olympics-opening-ceremony\/#webpage","publisher":{"@id":"https:\/\/www.usmagazine.com\/entertainment\/news\/2018-winter-olympics-opening-ceremony\/#organization"},"isPartOf":{"@id":"https:\/\/www.usmagazine.com\/entertainment\/news\/2018-winter-olympics-opening-ceremony\/#website"}}</script>
+<script type="application/ld+json">{"@context":"http:\/\/schema.org","@type":"Article","@id":"https:\/\/www.usmagazine.com\/entertainment\/news\/2018-winter-olympics-opening-ceremony\/#article","mainEntityOfPage":"https:\/\/www.usmagazine.com\/entertainment\/news\/2018-winter-olympics-opening-ceremony\/","publisher":{"@id":"https:\/\/www.usmagazine.com\/entertainment\/news\/2018-winter-olympics-opening-ceremony\/#organization"},"headline":"2018 Winter Olympics Opening Ceremony: Everything You Need to Know","datePublished":"2018-02-08T12:43:24+00:00","dateModified":"2018-02-08T12:43:48+00:00","author":[{"@type":"Person","name":"Karla Rodriguez"}],"description":"Find out how to watch and what to expect during the 2018 Winter Olympics Opening Ceremony taking place in PyeongChang, South Korea on Friday, February 9 \u2014 details","articleBody":"The 2018 Winter Olympics are here! The games will be held in PyeongChang, South Korea, for the first time and will kick off on Friday, February 9, with the Opening Ceremony.\r\n\r\n[ami-related id=\"1172597\" url=\"https:\/\/www.usmagazine.com\/?p=1172597\" title=\"Meet Team USA: These Athletes Are Representing the United States at the Winter Olympics in PyeongChang\" target=\"\" inset=\"true\"]\r\n\r\nUs Weekly has rounded up the details about how and when to watch the big event, and everything else you need to know about the 2018 Winter Olympics Opening Ceremony.\r\n\r\nWhen Does It Start?\r\n\r\nThe 2018 Winter Olympics Opening Ceremony will start at 8 p.m.\u00a0in PyeongChang, which is 6 a.m. ET on Friday, February 9, a day after the first official events take place. Viewers in the United States who wake up early will be able to stream the ceremony on NBCOlympics.com or on the NBC Sports app. NBC will also be airing the taped opening ceremony at 8 p.m. ET.\r\n\r\nWho Is Hosting the Opening Ceremony?\r\n\r\nKatie Couric and Mike Tirico are set to host the event for NBC. Couric headed to PyeongChang last week and has been posting Instagram updates on their preparations for the big show. She shared a behind-the-scenes photo of herself and her cohost at rehearsals on Saturday, February 3. \u201cRehearsing for the Opening Ceremony. Can\u2019t post anything from it, but if tonight is any indication, it\u2019s going to be spectacularly beautiful,\" she captioned the snap. \"Meanwhile so excited to sit next to these two pros!@miketiriconbc and Joshua Cooper Ramo.\u201d\r\n\r\nhttps:\/\/www.instagram.com\/p\/BevCUzRgZPW\/?taken-by=katiecouric\r\n\r\nWho Is Carrying the Flag for the USA?\r\n\r\nOlympic bronze medalist Erin Hamlin will be the flag bearer for Team USA during the opening ceremony for the 2018 PyeongChang Olympics' Parade of Nations. \"It was a pretty big shock,\" Hamlin told NBC about learning that she was voted by her teammates to carry the flag. \"But it is an honor and a privilege to be recognized by all of Team USA.\" This will be the 31-year-old\u2019s fourth trip to the Olympics, and she will be leading 244 American athletes who will be competing during the games. It was also announced in January that North and South Korea agreed to march together under a \"unified Korea\" flag to symbolize unity between the two feuding nations.\r\n\r\n[ami-related id=\"1167371\" url=\"https:\/\/www.usmagazine.com\/?p=1167371\" title=\"Celebrities Who Love The Olympics\" target=\"\" inset=\"true\"]\r\n\r\nWhere Will the Opening Ceremony Take Place?\r\n\r\nThe opening and closing ceremonies will both take place at the PyeongChang Olympic Stadium.\u00a0The closing ceremony will air on Sunday, February 25. Viewers can watch it on NBC at 8 p.m. ET.\r\n\r\nWhat Is Team USA Wearing During the Opening Ceremony?\r\n\r\nTeam USA unveiled its Ralph Lauren-designed uniforms for the opening ceremony in January. The fashion designer, who is known for his \u201cAll-American\u201d style, designed a red, white and blue uniform for the athletes that will consist of a parka and a bomber jacket, with heating elements that last for up to 11 hours. The look also includes slim jeans with moto-inspired seaming, an intarsia-knit wool sweater, a navy wool hat, a USA bandanna, a leather belt, brown suede gloves and brown suede mountaineering boots with red laces.\r\n\r\n[ami-related id=\"1777\" url=\"https:\/\/www.usmagazine.com\/celebrity-news\/news\/olympic-athletes-where-are-they-now-2013104\/\" title=\"Olympic Athletes: Where Are They Now?\" target=\"\" inset=\"true\"]\r\n\r\nWhat\u2019s the Schedule Like for the Opening Ceremony?\r\n\r\nThe Telegraph reported that the opening ceremony is set to follow a similar schedule to that of the 2014 Winter Olympics Opening Ceremony in Sochi, Russia. See below for what to expect during the big event:\r\n\r\n \tEntry by the head of state\r\n \tPlaying of the national anthem\r\n \tThe parade of participants\r\n \tThe symbolic release of pigeons\r\n \tThe head of state declares the Games open\r\n \tRaising the Olympic flag and playing the Olympic anthem\r\n \tThe taking of the Olympic oath by an athlete\r\n \tThe taking of the Olympic oath by an official\r\n \tThe taking of the Olympic oath by a coach\r\n \tThe Olympic flame and the torch relay\r\n \tThe artistic program\r\n\r\nTo learn more about Team USA, visit teamusa.org.","isPartOf":{"@id":"https:\/\/www.usmagazine.com\/entertainment\/news\/2018-winter-olympics-opening-ceremony\/#webpage"},"image":["https:\/\/i2.wp.com\/www.usmagazine.com\/wp-content\/uploads\/2018\/02\/winter-olympics-2018-in-pyeongchang-opening-ceremony.jpg?crop=158px%2C0px%2C1201px%2C1201px&resize=800%2C800&ssl=1","https:\/\/i2.wp.com\/www.usmagazine.com\/wp-content\/uploads\/2018\/02\/winter-olympics-2018-in-pyeongchang-opening-ceremony.jpg?crop=0px%2C47px%2C1800px%2C1018px&resize=800%2C450&ssl=1"],"mentions":[{"@type":"Person","name":"Katie Couric","sameAs":"https:\/\/www.usmagazine.com\/celebrities\/katie-couric\/"}]}</script>
+<!-- / Yoast SEO plugin. -->
+
+<link rel='dns-prefetch' href='//acdn.adnxs.com' />
+<link rel='dns-prefetch' href='//s0.wp.com' />
+<link rel='dns-prefetch' href='//s.w.org' />
+<link rel="alternate" type="text/xml" title="Us Weekly &raquo; Feed" href="https://www.usmagazine.com/feed/" />
+		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/2.4\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/2.4\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/www.usmagazine.com\/wp-includes\/js\/wp-emoji-release.min.js?ver=4.9.4"}};
+			!function(a,b,c){function d(a,b){var c=String.fromCharCode;l.clearRect(0,0,k.width,k.height),l.fillText(c.apply(this,a),0,0);var d=k.toDataURL();l.clearRect(0,0,k.width,k.height),l.fillText(c.apply(this,b),0,0);var e=k.toDataURL();return d===e}function e(a){var b;if(!l||!l.fillText)return!1;switch(l.textBaseline="top",l.font="600 32px Arial",a){case"flag":return!(b=d([55356,56826,55356,56819],[55356,56826,8203,55356,56819]))&&(b=d([55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447],[55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447]),!b);case"emoji":return b=d([55357,56692,8205,9792,65039],[55357,56692,8203,9792,65039]),!b}return!1}function f(a){var c=b.createElement("script");c.src=a,c.defer=c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var g,h,i,j,k=b.createElement("canvas"),l=k.getContext&&k.getContext("2d");for(j=Array("flag","emoji"),c.supports={everything:!0,everythingExceptFlag:!0},i=0;i<j.length;i++)c.supports[j[i]]=e(j[i]),c.supports.everything=c.supports.everything&&c.supports[j[i]],"flag"!==j[i]&&(c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&c.supports[j[i]]);c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&!c.supports.flag,c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.everything||(h=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",h,!1),a.addEventListener("load",h,!1)):(a.attachEvent("onload",h),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),g=c.source||{},g.concatemoji?f(g.concatemoji):g.wpemoji&&g.twemoji&&(f(g.twemoji),f(g.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+<link rel='stylesheet' id='all-css-0' href='https://www.usmagazine.com/_static/??-eJyVj9EKwjAMRX/IGodT9EH8FKlt6OLSdiwtY39vJ1MQ9zDf7oVzLgkMnTIxJAwJUoMeBbKoAbHlEbQIJgEjApYkgeN417wtfQPFo2A4W5wBLQ2VJdl6Ch9k9bTuExnG/0UfbWaUH9Fn1XF2FAQemDpt2jcK0ugerbZ2fEUKbo19K++CREOaFUcX5assfr2wMt095wm/+kt1qE71cb871089rJQm' type='text/css' media='all' />
+<script type='text/javascript' src='//acdn.adnxs.com/prebid/c/1287.usmag/pb.js.2018_01_18_16_00_38'></script>
+<script type='text/javascript' src='https://www.usmagazine.com/_static/??/wp-includes/js/jquery/jquery.js,/wp-includes/js/jquery/jquery-migrate.min.js,/wp-content/themes/us-weekly/assets/js/dist/lightbox2.bundle.js?m=1517951436j'></script>
+<link rel='https://api.w.org/' href='https://www.usmagazine.com/wp-json/' />
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://www.usmagazine.com/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://www.usmagazine.com/wp-includes/wlwmanifest.xml" /> 
+<meta name="generator" content="WordPress 4.9.4" />
+<link rel='shortlink' href='https://www.usmagazine.com/?p=1177752' />
+<link rel="alternate" type="application/json+oembed" href="https://www.usmagazine.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.usmagazine.com%2Fentertainment%2Fnews%2F2018-winter-olympics-opening-ceremony%2F" />
+<link rel="alternate" type="text/xml+oembed" href="https://www.usmagazine.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.usmagazine.com%2Fentertainment%2Fnews%2F2018-winter-olympics-opening-ceremony%2F&#038;format=xml" />
+<style type='text/css'>img#wpstats{display:none}</style>
+	<!-- DFP Slots -->
+	<script>
+	var dfpSlots   = {},
+		gpt   = gpt || {},
+		mapping    = [];
+	gpt.slotsToRefresh = ["sponsor-1177752","teads","gumgum","leader-top","sharethrough-box"],
+	gpt.slotsFired = [];
+	gpt.initialLoadSlots = [];
+
+	window.gptIsMobile = function() {
+		if ( window.gptAdsWindowWidth() < 1024 ) {
+			return true;
+		}
+		return false;
+	};
+
+	window.gptIsTablet = function() {
+		if ( window.gptAdsWindowWidth() >= 768 && window.gptAdsWindowWidth() < 1024 ) {
+			return true;
+		}
+		return false;
+	};
+
+	googletag.cmd.push( function() {
+		mapping["topLeaderMapping"] = googletag.sizeMapping().addSize([0, 0], [[320, 50],[320,100], [320, 150]]).addSize([768, 200], [728, 90]).addSize([1050, 200], [[728, 90],[970, 250],[970, 90], [970, 66], [970, 125]]).build();
+		
+		mapping["inlineLeaderMapping"] = googletag.sizeMapping().addSize([0, 0], [[300, 250],[320, 50],[320,100], [320, 150]]).addSize([768, 200], [[728, 90]]).addSize([1050, 200], [[728, 90],[970, 250],[970, 90], [970, 66], [970, 125]]).build();
+		
+		mapping["bottomLeaderMapping"] = googletag.sizeMapping().addSize([0, 0], [[300, 250]]).addSize([768, 200], [[728, 90]]).addSize([1050, 200], [[728, 90]]).build();
+		
+		mapping["stickyLeaderMapping"] = googletag.sizeMapping().addSize([0, 0], [[320, 50], [320, 100]]).build();
+		
+		mapping["boxMapping"] = googletag.sizeMapping().addSize([0, 0], [[300, 250], [320, 50], [320,100], [320, 150]]).addSize([768, 200], [[300, 250]]).addSize([1050, 200], [[300, 250], [300, 600]]).build();
+		
+		mapping["boxWidgetMapping"] = googletag.sizeMapping().addSize([0, 0], [[0, 0]]).addSize([768, 200], [[0, 0]]).addSize([1024, 200], [[300, 250], [300, 600]]).build();
+		
+		mapping["postBoxMapping"] = googletag.sizeMapping().addSize([0, 0], [[300, 250], [320, 50], [320,100], [320, 150]]).addSize([768, 200], [[300, 250]]).addSize([1050, 200], [[300, 250], [300, 600], [300, 1050]]).build();
+		
+			dfpSlots["sponsor-1177752"] = googletag.defineSlot("/4216/usweekly/sponsor", [[80, 40], [140,40], [40,40]], "sponsor-1177752").addService(googletag.pubads()).setTargeting( "sponsor", "olympics" );
+				gpt.slotsFired["sponsor-1177752"] = dfpSlots["sponsor-1177752"];
+		
+					gpt.initialLoadSlots.push("sponsor-1177752");
+			
+			if ( window.gptIsTablet() || ! window.gptIsMobile() ) {
+			dfpSlots["leader-top"] = googletag.defineSlot("/4216/usweekly/leaderboard", [[970, 250], [320, 50], [970, 90], [970, 125], [728, 90], [970, 66], [320, 150], [320, 100]], "leader-top").defineSizeMapping(mapping["topLeaderMapping"]).addService(googletag.pubads()).setTargeting( "pos", "leader" );
+				gpt.slotsFired["leader-top"] = dfpSlots["leader-top"];
+		
+					gpt.initialLoadSlots.push("leader-top");
+				}
+			
+			if ( ! window.gptIsMobile() ) {
+			dfpSlots["leader-bottom"] = googletag.defineSlot("/4216/usweekly/leaderboard", [[728, 90], [320, 100], [970, 250], [300, 250], [320, 50], [970, 90], [1,1]], "leader-bottom").defineSizeMapping(mapping["bottomLeaderMapping"]).addService(googletag.pubads()).setTargeting( "pos", "bottom" );
+				gpt.slotsFired["leader-bottom"] = dfpSlots["leader-bottom"];
+		
+					gpt.initialLoadSlots.push("leader-bottom");
+				}
+			
+				if ( window.gptIsMobile() ) {
+			dfpSlots["leader-bottom-mobile"] = googletag.defineSlot("/4216/usweekly/leaderboard", [[728, 90], [320, 100], [970, 250], [300, 250], [320, 50], [970, 90], [1,1]], "leader-bottom-mobile").defineSizeMapping(mapping["bottomLeaderMapping"]).addService(googletag.pubads()).setTargeting( "pos", "bottom" );
+				gpt.slotsFired["leader-bottom-mobile"] = dfpSlots["leader-bottom-mobile"];
+		
+					gpt.initialLoadSlots.push("leader-bottom-mobile");
+				}
+			
+				if ( window.innerWidth <= 480 ) {
+			dfpSlots["mobile-sticky"] = googletag.defineSlot("/4216/usweekly/mobile_sticky", [[320, 50], [320, 100]], "mobile-sticky").defineSizeMapping(mapping["stickyLeaderMapping"]).addService(googletag.pubads()).setTargeting( "pos", "bottom" );
+				gpt.slotsFired["mobile-sticky"] = dfpSlots["mobile-sticky"];
+		
+					gpt.initialLoadSlots.push("mobile-sticky");
+				}
+			
+			if ( ! window.gptIsMobile() ) {
+			dfpSlots["box-widget"] = googletag.defineSlot("/4216/usweekly/box", [[300, 1050], [300, 600], [300, 250]], "box-widget").defineSizeMapping(mapping["boxWidgetMapping"]).addService(googletag.pubads()).setTargeting( "pos", "top" );
+				gpt.slotsFired["box-widget"] = dfpSlots["box-widget"];
+		
+					gpt.initialLoadSlots.push("box-widget");
+				}
+			
+			if ( ! window.gptIsMobile() ) {
+			dfpSlots["box-inline"] = googletag.defineSlot("/4216/usweekly/box", [[300, 1050], [300, 600], [300, 250]], "box-inline").defineSizeMapping(mapping["postBoxMapping"]).addService(googletag.pubads()).setTargeting( "pos", "inline" );
+				gpt.slotsFired["box-inline"] = dfpSlots["box-inline"];
+		
+					gpt.initialLoadSlots.push("box-inline");
+				}
+			
+			if ( ! window.gptIsMobile() ) {
+			dfpSlots["interstitial"] = googletag.defineOutOfPageSlot("/4216/usweekly/interstitial", "interstitial").addService(googletag.pubads());
+				gpt.slotsFired["interstitial"] = dfpSlots["interstitial"];
+			}
+			
+			dfpSlots["sharethrough-box"] = googletag.defineSlot("/4216/usweekly/sharethrough_box", [2, 1], "sharethrough-box").addService(googletag.pubads());
+				gpt.slotsFired["sharethrough-box"] = dfpSlots["sharethrough-box"];
+		
+					gpt.initialLoadSlots.push("sharethrough-box");
+			
+				if ( window.gptIsMobile() ) {
+			dfpSlots["yieldmo"] = googletag.defineSlot("/4216/usweekly/yieldmo", [5, 5], "yieldmo").addService(googletag.pubads());
+				gpt.slotsFired["yieldmo"] = dfpSlots["yieldmo"];
+			}
+			
+			dfpSlots["gumgum"] = googletag.defineSlot("/4216/usweekly/gumgum", [4, 4], "gumgum").addService(googletag.pubads());
+				gpt.slotsFired["gumgum"] = dfpSlots["gumgum"];
+		
+					gpt.initialLoadSlots.push("gumgum");
+			
+			dfpSlots["teads"] = googletag.defineSlot("/4216/usweekly/teads", [1, 1], "teads").addService(googletag.pubads());
+				gpt.slotsFired["teads"] = dfpSlots["teads"];
+		
+			if ( ! window.gptIsMobile() ) {
+			dfpSlots["skin"] = googletag.defineOutOfPageSlot("/4216/usweekly/skin", "skin").addService(googletag.pubads());
+				gpt.slotsFired["skin"] = dfpSlots["skin"];
+			}
+			
+				if ( window.gptIsMobile() ) {
+			dfpSlots["sled"] = googletag.defineOutOfPageSlot("/4216/usweekly/sled", "sled").addService(googletag.pubads());
+				gpt.slotsFired["sled"] = dfpSlots["sled"];
+		
+					gpt.initialLoadSlots.push("sled");
+				}
+			
+			googletag.pubads().setTargeting( "category", "entertainment" );
+			googletag.pubads().setTargeting( "ctype", "article" );
+			googletag.pubads().setTargeting( "topic", "Katie Couric, Olympics, Olympics" );
+			googletag.pubads().setTargeting( "pid", "1177752" );
+			googletag.pubads().setTargeting( "env", "production" );
+		googletag.pubads().enableSingleRequest();
+		googletag.pubads().disableInitialLoad();
+		googletag.pubads().enableAsyncRendering();
+		googletag.pubads().collapseEmptyDivs();
+		googletag.enableServices();
+		googletag.pubads().refresh([gpt.slotsFired["interstitial"], gpt.slotsFired["teads"], gpt.slotsFired["skin"]], { changeCorrelator: false } );
+		} );
+			if( window.pbjs ) {
+				pbjs.que.push( function () {
+					pbjs.refreshAds( gpt.initialLoadSlots );
+				} );
+			} else {
+				googletag.cmd.push( function() {
+					googletag.pubads().refresh( [gpt.slotsFired], { changeCorrelator: false } );
+				} );
+			}
+		
+	</script><script>
+		googletag.cmd.push(function() {
+			googletag.pubads().setTargeting( 'sponsor', "olympics" );
+		});
+		</script>
+<link rel="amphtml" href="https://www.usmagazine.com/entertainment/news/2018-winter-olympics-opening-ceremony/amp/" /><link rel="icon" href="https://www.usmagazine.com/wp-content/uploads/2017/10/cropped-Us-512x512.png?w=32" sizes="32x32" />
+<link rel="icon" href="https://www.usmagazine.com/wp-content/uploads/2017/10/cropped-Us-512x512.png?w=192" sizes="192x192" />
+<link rel="apple-touch-icon-precomposed" href="https://www.usmagazine.com/wp-content/uploads/2017/10/cropped-Us-512x512.png?w=180" />
+<meta name="msapplication-TileImage" content="https://www.usmagazine.com/wp-content/uploads/2017/10/cropped-Us-512x512.png?w=270" />
+	</head>
+
+	<body class="post-template-default single single-post postid-1177752 single-format-standard" >
+
+	
+		<div id="sled" class="sled">
+			<script>
+				if ( window.gptIsMobile() ) {
+			googletag.cmd.push(function() {
+				googletag.display('sled');
+			});
+			}
+			</script>
+		</div><!-- Loading script asynchronously -->
+<script type="text/javascript">
+ (function(a,b,c,d){
+ a='https://tags.tiqcdn.com/utag/ami/usmagazine/prod/utag.js';
+ b=document;c='script';d=b.createElement(c);d.src=a;d.type='text/java'+c;d.async=true;
+ a=b.getElementsByTagName(c)[0];a.parentNode.insertBefore(d,a);
+ })();
+</script>
+<!-- END: T-WP -->
+
+	<header id="header" class="header">
+
+		<div class="container-full">
+
+			<a
+				href="https://www.usmagazine.com/"
+				class="header-logo"
+				data-track-category="Global Nav"
+				data-track-action="Go to HP"
+			>
+								<svg class="us-logo" viewBox="34 70 470 395">
+					<defs xmlns="http://www.w3.org/2000/svg">
+						<filter id="dropshadow-u" height="130%">
+							<feGaussianBlur in="SourceAlpha" stdDeviation="5"></feGaussianBlur>
+							<feOffset dx="1" dy="1" result="offsetblur"></feOffset>
+							<feComponentTransfer>
+								<feFuncA type="linear" slope="0.5"></feFuncA>
+							</feComponentTransfer>
+							<feMerge>
+								<feMergeNode></feMergeNode>
+								<feMergeNode in="SourceGraphic"></feMergeNode>
+							</feMerge>
+						</filter>
+						<filter id="dropshadow-s" height="130%">
+							<feGaussianBlur in="SourceAlpha" stdDeviation="13"></feGaussianBlur>
+							<feOffset dx="-15" dy="2" result="offsetblur"></feOffset>
+							<feComponentTransfer>
+								<feFuncA type="linear" slope="0.5"></feFuncA>
+							</feComponentTransfer>
+							<feMerge>
+								<feMergeNode></feMergeNode>
+								<feMergeNode in="SourceGraphic"></feMergeNode>
+							</feMerge>
+						</filter>
+					</defs>
+					<path class="letter-u color-theme-logo" filter="url(#dropshadow-u)" d="M227.7 74v198.6c0 42.6-15.8 68.8-53.5 68.8-37.6 0-54.5-26.2-54.5-68.8V74h-98v198.6c0 109.9 63.9 153.5 151 153.5s153-43.6 153-153.5V74h-98z"></path>
+					<path fill="#001722" d="M283.1 112.8h179.1v42.5H283.1z"></path>
+					<path fill="#FFFFFF" d="M313.6 144.4H308l-1-4.7c-.7-3.4-1.4-7.4-1.5-9-.1 1.6-.8 5.7-1.5 9l-1 4.7h-5.5l-5.2-21.8h6.2l.6 3.6c.5 3.1 1.1 6.9 1.3 9.4.2-2.6.9-6.3 1.6-9.4l.7-3.7h5.5l.7 3.7c.7 3.1 1.4 6.9 1.6 9.4.2-2.6.8-6.4 1.3-9.4l.6-3.6h6.2l-5 21.8zM328.4 144.4v-21.8H345v5.1h-10.6v2.9h6.4v5h-6.4v3.7h10.9v5.1M355.3 144.4v-21.8H372v5.1h-10.7v2.9h6.4v5h-6.4v3.7h10.9v5.1M395.2 144.4l-4.5-9.3-2.2 2.7v6.6h-6.1v-21.8h6.1v2.5c0 1.8 0 3.8-.1 5.4.9-1.4 2.8-3.9 4.2-5.7l1.7-2.2h7.3l-6.6 7.7 7.3 14.1h-7.1zM411.3 144.4v-21.8h6.1v16.5h9.6v5.3M444.7 136.3v8.1h-6.1v-8l-8.1-13.7h7l1.7 3.3c1.2 2.3 2.1 4.4 2.5 5.6.4-1.3 1.3-3.4 2.5-5.6l1.7-3.3h6.9l-8.1 13.6z"></path>
+					<path class="letter-s color-theme-logo" filter="url(#dropshadow-s)" d="M375.3 250.2c-22.8-6.9-25.8-9.9-25.8-17.8S354 221 371.3 221c22.8 0 48.5 6.9 82.7 21.8l19.8-68.8c-34.7-12.4-60.9-18.8-100-18.8-70.8 0-106 31.7-106 85.2 0 54 27.7 70.3 107.9 91.6 16.8 4.5 20.8 7.9 20.8 16.3 0 7.9-6.4 11.9-23.8 11.9-22.8 0-58.4-8.9-89.6-22.8l-20.8 67.3c33.2 12.9 70.3 21.3 108.4 21.3 66.3 0 107.4-27.7 107.4-87.6.2-51.5-29.5-68.8-102.8-88.2"></path>
+				</svg>
+				
+				<span>Us Weekly Magazine</span>
+
+			</a>
+
+			<nav class="header-nav-primary">
+
+				<div class="header-nav-primary"><ul id="header-nav-primary-list" class="nav"><li id="menu-item-47871" class="menu-item menu-item-type-post_type menu-item-object-hub menu-item-47871"><a href="https://www.usmagazine.com/celebrity-news/">News</a></li>
+<li id="menu-item-48016" class="menu-item menu-item-type-post_type menu-item-object-hub menu-item-48016"><a href="https://www.usmagazine.com/stylish/">Stylish</a></li>
+<li id="menu-item-1153208" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1153208"><a href="https://www.usmagazine.com/royal-family/">Royals</a></li>
+<li id="menu-item-48382" class="menu-item menu-item-type-post_type menu-item-object-hub menu-item-48382"><a href="https://www.usmagazine.com/entertainment/">Entertainment</a></li>
+<li id="menu-item-48524" class="menu-item menu-item-type-post_type menu-item-object-hub menu-item-48524"><a href="https://www.usmagazine.com/celebrity-pets/">Pets</a></li>
+<li id="menu-item-1156184" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1156184"><a href="https://www.usmagazine.com/olympics">Olympics</a></li>
+<li id="menu-item-1198468" class="menu-item menu-item-type-post_type menu-item-object-hub menu-item-1198468"><a href="https://www.usmagazine.com/celebrity-video/">Video</a></li>
+</ul></div>
+				<div class="header-nav-more show-more mouseover" id="header-nav-more">
+
+					<a href="#">More</a>
+
+					<div class="header-nav-sub"><ul id="menu-full-menu" class="nav"><li id="menu-item-50955" class="menu-item menu-item-type-post_type menu-item-object-hub menu-item-50955"><a href="https://www.usmagazine.com/celebrity-news/">News</a></li>
+<li id="menu-item-51062" class="menu-item menu-item-type-post_type menu-item-object-hub menu-item-51062"><a href="https://www.usmagazine.com/stylish/">Stylish</a></li>
+<li id="menu-item-53813" class="menu-item menu-item-type-post_type menu-item-object-hub menu-item-53813"><a href="https://www.usmagazine.com/royal-family/">Royals</a></li>
+<li id="menu-item-51329" class="menu-item menu-item-type-post_type menu-item-object-hub menu-item-51329"><a href="https://www.usmagazine.com/entertainment/">Entertainment</a></li>
+<li id="menu-item-51451" class="menu-item menu-item-type-post_type menu-item-object-hub menu-item-51451"><a href="https://www.usmagazine.com/celebrity-pets/">Pets</a></li>
+<li id="menu-item-54456" class="menu-item menu-item-type-post_type menu-item-object-hub menu-item-54456"><a href="https://www.usmagazine.com/olympics/">Olympics</a></li>
+<li id="menu-item-51545" class="menu-item menu-item-type-post_type menu-item-object-hub menu-item-51545"><a href="https://www.usmagazine.com/celebrity-video/">Video</a></li>
+<li id="menu-item-1170697" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1170697"><a href="https://www.usmagazine.com/grammys/">Grammys</a></li>
+<li id="menu-item-1168779" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1168779"><a href="https://www.usmagazine.com/celebrity-moms/">Celebrity Moms</a></li>
+<li id="menu-item-51980" class="menu-item menu-item-type-post_type menu-item-object-hub menu-item-51980"><a href="https://www.usmagazine.com/celebrity-body/">Celebrity Body</a></li>
+<li id="menu-item-1177518" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1177518"><a href="https://www.usmagazine.com/food/">Food</a></li>
+<li id="menu-item-52319" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-52319"><a href="https://www.usmagazine.com/celebrities/a/">Celebrity Directory</a></li>
+<li id="menu-item-52539" class="menu-item menu-item-type-post_type menu-item-object-hub menu-item-52539"><a href="https://www.usmagazine.com/celebrity-pictures/">Photos</a></li>
+<li id="menu-item-731177" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-731177"><a href="https://www.usmagazine.com/hot-pics/">Hot Pics</a></li>
+<li id="menu-item-59561" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-59561"><a href="https://www.usmagazine.com/newsletter-signup/">Newsletter Signup</a></li>
+<li id="menu-item-55050" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-55050"><a href="https://www.usmagazine.com/subscribe">Subscribe</a></li>
+<li id="menu-item-51741" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-51741"><a href="/givegift">Give a Gift</a></li>
+<li id="menu-item-733565" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-733565"><a href="https://w1.buysub.com/pubs/SR/STA/eCare_Login.jsp?cds_page_id=204577&#038;cds_mag_code=STA&#038;id=1506973345502&#038;lsid=72751437176042431&#038;vid=2">Subscriber Service</a></li>
+</ul></div>
+				</div>
+
+			</nav>
+
+			
+			<a href="https://www.usmagazine.com/sub-circ-spot-a" class="header-subscribe ">
+
+								<img src="https://www.usmagazine.com/wp-content/themes/us-weekly/assets/img/bg-subscribe.png" alt="Subscribe Now">
+
+				<span>Subscribe Now</span>
+				
+			</a>
+
+		</div>
+
+	</header>
+
+	<main id="main" class="main">
+
+	<section class="module-trending-bar">
+	<div class="module-trending-bar-container">
+
+	</div>
+</section>
+
+	<div class="ad-slot banner top-banner has-stuck">
+
+		<div class="ad-container" id="top-ad-slot-0">
+			
+		<div id="leader-top" class="advertisement">
+			<script>
+			if ( ! window.gptIsMobile() || window.gptIsTablet() ) {
+		
+			googletag.cmd.push(function() {
+				googletag.display('leader-top');
+			});
+			}
+			</script>
+		</div>		</div>
+
+	</div>
+
+	
+<article
+	class="article-main"
+	data-category-slug="entertainment"
+	data-ctype="article"
+	data-tags="Olympics"
+	data-post-id="1177752"
+>
+
+	<header class="content-head site-container article-head">
+
+		<div class="article-type">
+
+							<span class="content-label">
+					Olympics				</span>
+			
+		</div>
+
+		<h1 class="content-title">2018 Winter Olympics Opening Ceremony: Everything You Need to Know</h1>
+		<div class="content-head-info">
+
+			<div class="content-byline">
+				By <a href="https://www.usmagazine.com/author/karla-rodriguez/" title="Posts by Karla Rodriguez" class="author url fn" rel="author">Karla Rodriguez</a>			</div>
+
+			<time class="content-published-date">February 8, 2018</time>
+
+		</div>
+
+		<!-- /4216/usweekly/sponsor -->
+		<div id="sponsor-1177752" class="ad-sponsor">
+			<script>
+				googletag.cmd.push(function() {
+					googletag.display( "sponsor-1177752" );
+				});
+			</script>
+		</div>		<span class="record-trigger"></span>
+	</header>
+
+	
+	<div class="grid content lead">
+
+		<section class="content-rail">
+
+			
+			<div class="lead-container">
+				<div class="lead">
+					<figure class="article-body-content-main-photo wp-caption img-fit" itemprop="image" itemscope itemtype="http://schema.org/ImageObject">
+			<div class="img-fit__image-contain"><img src="https://i2.wp.com/www.usmagazine.com/wp-content/uploads/2018/02/winter-olympics-2018-in-pyeongchang-opening-ceremony.jpg?crop=0px%2C47px%2C1800px%2C1018px&#038;resize=200%2C113&#038;ssl=1" srcset="https://i2.wp.com/www.usmagazine.com/wp-content/uploads/2018/02/winter-olympics-2018-in-pyeongchang-opening-ceremony.jpg?crop=0px%2C47px%2C1800px%2C1018px&amp;resize=200%2C113&amp;ssl=1 200w, https://i2.wp.com/www.usmagazine.com/wp-content/uploads/2018/02/winter-olympics-2018-in-pyeongchang-opening-ceremony.jpg?crop=0px%2C47px%2C1800px%2C1018px&amp;resize=300%2C169&amp;ssl=1 300w, https://i2.wp.com/www.usmagazine.com/wp-content/uploads/2018/02/winter-olympics-2018-in-pyeongchang-opening-ceremony.jpg?crop=0px%2C47px%2C1800px%2C1018px&amp;resize=400%2C225&amp;ssl=1 400w, https://i2.wp.com/www.usmagazine.com/wp-content/uploads/2018/02/winter-olympics-2018-in-pyeongchang-opening-ceremony.jpg?crop=0px%2C47px%2C1800px%2C1018px&amp;resize=600%2C338&amp;ssl=1 600w, https://i2.wp.com/www.usmagazine.com/wp-content/uploads/2018/02/winter-olympics-2018-in-pyeongchang-opening-ceremony.jpg?crop=0px%2C47px%2C1800px%2C1018px&amp;resize=800%2C450&amp;ssl=1 800w, https://i2.wp.com/www.usmagazine.com/wp-content/uploads/2018/02/winter-olympics-2018-in-pyeongchang-opening-ceremony.jpg?crop=0px%2C47px%2C1800px%2C1018px&amp;resize=1000%2C563&amp;ssl=1 1000w, https://i2.wp.com/www.usmagazine.com/wp-content/uploads/2018/02/winter-olympics-2018-in-pyeongchang-opening-ceremony.jpg?crop=0px%2C47px%2C1800px%2C1018px&amp;resize=1200%2C675&amp;ssl=1 1200w, https://i2.wp.com/www.usmagazine.com/wp-content/uploads/2018/02/winter-olympics-2018-in-pyeongchang-opening-ceremony.jpg?crop=0px%2C47px%2C1800px%2C1018px&amp;resize=1600%2C900&amp;ssl=1 1600w" sizes="(max-width: 800px) calc(100vw - 1.25rem), (max-width: 1280) 55vw, 43.75rem" alt="Winter-Olympics-2018-in-Pyeongchang-opening-ceremony" data-fallback-img="https://www.usmagazine.com/wp-content/uploads/2018/02/winter-olympics-2018-in-pyeongchang-opening-ceremony.jpg"></div>
+			<figcaption class="credit"><span class="caption">Action gets underway in South Korea, for the 2018 Winter Olympics.</span>&nbsp;<span class="credit">MediaPunch / BACKGRID</span></figcaption>
+		</figure>				</div>
+			</div>
+
+			
+			<div class="content-column">
+
+				<aside class="left-rail">
+
+					<div class="content-info">
+
+						<aside class="module-social-sharing">
+
+							
+							<a class="social-comments" href="#" data-lightbox-comments="lightbox-comments">
+								<svg x="0px" y="0px" enable-background="new 12 12 16 16" xml:space="preserve">
+									<use class="icon-comments" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-icon-comments">
+										<svg id="svg-icon-comments" width="100%" height="100%">
+											<path class="icon-symbol" d="M28,19c0-3.9-3.6-7-8-7s-8,3.1-8,7s3.6,7,8,7c0.5,0,1,0,1.5-0.1l0,0L25,28v-3.5l0,0C26.8,23.2,28,21.2,28,19z"></path>
+										</svg>
+									</use>
+								</svg>
+							</a>
+
+							
+						<div class="sharedaddy sd-sharing-enabled"><div class="robots-nocontent sd-block sd-social sd-social-icon sd-sharing"><div class="sd-content"><ul><li class="share-facebook"><a rel="nofollow" data-shared="sharing-facebook-1177752" class="share-facebook sd-button share-icon no-text" href="https://www.usmagazine.com/entertainment/news/2018-winter-olympics-opening-ceremony/?share=facebook" target="_blank" title="Click to share on Facebook"><span></span><span class="sharing-screen-reader-text">Click to share on Facebook (Opens in new window)</span></a></li><li class="share-twitter"><a rel="nofollow" data-shared="sharing-twitter-1177752" class="share-twitter sd-button share-icon no-text" href="https://www.usmagazine.com/entertainment/news/2018-winter-olympics-opening-ceremony/?share=twitter" target="_blank" title="Click to share on Twitter"><span></span><span class="sharing-screen-reader-text">Click to share on Twitter (Opens in new window)</span></a></li><li class="share-end"></li></ul></div></div></div>
+						</aside>
+
+					</div>
+
+					
+
+	<div id="module-more-news">
+		<h3 class="module-header">More News</h3>
+		<div class="article-list">
+							<div class="article-list-item">
+					<a
+						href="https://www.usmagazine.com/celebrity-news/news/sally-field-wants-her-son-sam-to-date-olympic-skater-adam-rippon/"
+						class="article-list-item__img-contain img-fit"
+						data-track-category="Article Page"
+						data-track-action="Tap More Module"
+						data-track-label="0 - /entertainment/news/2018-winter-olympics-opening-ceremony/"
+					>
+						<div class="img-fit__image-contain"><picture class="article-list-item__img"><source media="(min-width: 1023px)" srcset="https://i0.wp.com/www.usmagazine.com/wp-content/uploads/2018/02/sally-field-sam-greisman-olympics-crush-adam-rippon.jpg?crop=0px%2C51px%2C1527px%2C644px&amp;resize=180%2C76&amp;ssl=1 180w, https://i0.wp.com/www.usmagazine.com/wp-content/uploads/2018/02/sally-field-sam-greisman-olympics-crush-adam-rippon.jpg?crop=0px%2C51px%2C1527px%2C644px&amp;resize=360%2C152&amp;ssl=1 360w, https://i0.wp.com/www.usmagazine.com/wp-content/uploads/2018/02/sally-field-sam-greisman-olympics-crush-adam-rippon.jpg?crop=0px%2C51px%2C1527px%2C644px&amp;resize=720%2C304&amp;ssl=1 720w" sizes="180px" data-src-fallback="https://i0.wp.com/www.usmagazine.com/wp-content/uploads/2018/02/sally-field-sam-greisman-olympics-crush-adam-rippon.jpg?crop=0px%2C51px%2C1527px%2C644px&#038;resize=180%2C76&#038;ssl=1"/><img src="https://i0.wp.com/www.usmagazine.com/wp-content/uploads/2018/02/sally-field-sam-greisman-olympics-crush-adam-rippon.jpg?crop=0px%2C0px%2C1527px%2C1527px&#038;resize=100%2C100&#038;ssl=1" srcset="https://i0.wp.com/www.usmagazine.com/wp-content/uploads/2018/02/sally-field-sam-greisman-olympics-crush-adam-rippon.jpg?crop=0px%2C0px%2C1527px%2C1527px&amp;resize=100%2C100&amp;ssl=1 100w, https://i0.wp.com/www.usmagazine.com/wp-content/uploads/2018/02/sally-field-sam-greisman-olympics-crush-adam-rippon.jpg?crop=0px%2C0px%2C1527px%2C1527px&amp;resize=200%2C200&amp;ssl=1 200w, https://i0.wp.com/www.usmagazine.com/wp-content/uploads/2018/02/sally-field-sam-greisman-olympics-crush-adam-rippon.jpg?crop=0px%2C0px%2C1527px%2C1527px&amp;resize=300%2C300&amp;ssl=1 300w, https://i0.wp.com/www.usmagazine.com/wp-content/uploads/2018/02/sally-field-sam-greisman-olympics-crush-adam-rippon.jpg?crop=0px%2C0px%2C1527px%2C1527px&amp;resize=400%2C400&amp;ssl=1 400w, https://i0.wp.com/www.usmagazine.com/wp-content/uploads/2018/02/sally-field-sam-greisman-olympics-crush-adam-rippon.jpg?crop=0px%2C0px%2C1527px%2C1527px&amp;resize=600%2C600&amp;ssl=1 600w, https://i0.wp.com/www.usmagazine.com/wp-content/uploads/2018/02/sally-field-sam-greisman-olympics-crush-adam-rippon.jpg?crop=0px%2C0px%2C1527px%2C1527px&amp;resize=800%2C800&amp;ssl=1 800w, https://i0.wp.com/www.usmagazine.com/wp-content/uploads/2018/02/sally-field-sam-greisman-olympics-crush-adam-rippon.jpg?crop=0px%2C0px%2C1527px%2C1527px&amp;resize=1000%2C1000&amp;ssl=1 1000w, https://i0.wp.com/www.usmagazine.com/wp-content/uploads/2018/02/sally-field-sam-greisman-olympics-crush-adam-rippon.jpg?crop=0px%2C0px%2C1527px%2C1527px&amp;resize=1200%2C1200&amp;ssl=1 1200w" sizes="200px" alt="Sally Field, Sam Greisman, Olympics, Crush, Adam Rippon" data-fallback-img="https://i0.wp.com/www.usmagazine.com/wp-content/uploads/2018/02/sally-field-sam-greisman-olympics-crush-adam-rippon.jpg?crop=0px%2C0px%2C1527px%2C1527px&#038;resize=200%2C200&#038;ssl=1"></picture></div>					</a>
+					<article class="more-news-article">
+						<a
+							href="https://www.usmagazine.com/celebrity-news/news/sally-field-wants-her-son-sam-to-date-olympic-skater-adam-rippon/"
+							data-track-category="Article Page"
+							data-track-action="Tap More Module"
+							data-track-label="0 - /entertainment/news/2018-winter-olympics-opening-ceremony/"
+						>
+							Sally Field Wants Her Son to Date Olympic Skater Adam Rippon						</a>
+					</article>
+				</div>
+							<div class="article-list-item">
+					<a
+						href="https://www.usmagazine.com/celebrity-news/news/paul-fentz-uses-got-theme-song-for-performance-at-winter-olympics/"
+						class="article-list-item__img-contain img-fit"
+						data-track-category="Article Page"
+						data-track-action="Tap More Module"
+						data-track-label="1 - /entertainment/news/2018-winter-olympics-opening-ceremony/"
+					>
+						<div class="img-fit__image-contain"><picture class="article-list-item__img"><source media="(min-width: 1023px)" srcset="https://i0.wp.com/www.usmagazine.com/wp-content/uploads/2018/02/paul-fentz-game-of-thrones-free-skate-germany-pyeongchang-2018-winter-olympic-games.jpg?crop=0px%2C16px%2C2000px%2C843px&amp;resize=180%2C76&amp;ssl=1 180w, https://i0.wp.com/www.usmagazine.com/wp-content/uploads/2018/02/paul-fentz-game-of-thrones-free-skate-germany-pyeongchang-2018-winter-olympic-games.jpg?crop=0px%2C16px%2C2000px%2C843px&amp;resize=360%2C152&amp;ssl=1 360w, https://i0.wp.com/www.usmagazine.com/wp-content/uploads/2018/02/paul-fentz-game-of-thrones-free-skate-germany-pyeongchang-2018-winter-olympic-games.jpg?crop=0px%2C16px%2C2000px%2C843px&amp;resize=720%2C304&amp;ssl=1 720w" sizes="180px" data-src-fallback="https://i0.wp.com/www.usmagazine.com/wp-content/uploads/2018/02/paul-fentz-game-of-thrones-free-skate-germany-pyeongchang-2018-winter-olympic-games.jpg?crop=0px%2C16px%2C2000px%2C843px&#038;resize=180%2C76&#038;ssl=1"/><img src="https://i0.wp.com/www.usmagazine.com/wp-content/uploads/2018/02/paul-fentz-game-of-thrones-free-skate-germany-pyeongchang-2018-winter-olympic-games.jpg?crop=346px%2C0px%2C1492px%2C1492px&#038;resize=100%2C100&#038;ssl=1" srcset="https://i0.wp.com/www.usmagazine.com/wp-content/uploads/2018/02/paul-fentz-game-of-thrones-free-skate-germany-pyeongchang-2018-winter-olympic-games.jpg?crop=346px%2C0px%2C1492px%2C1492px&amp;resize=100%2C100&amp;ssl=1 100w, https://i0.wp.com/www.usmagazine.com/wp-content/uploads/2018/02/paul-fentz-game-of-thrones-free-skate-germany-pyeongchang-2018-winter-olympic-games.jpg?crop=346px%2C0px%2C1492px%2C1492px&amp;resize=200%2C200&amp;ssl=1 200w, https://i0.wp.com/www.usmagazine.com/wp-content/uploads/2018/02/paul-fentz-game-of-thrones-free-skate-germany-pyeongchang-2018-winter-olympic-games.jpg?crop=346px%2C0px%2C1492px%2C1492px&amp;resize=300%2C300&amp;ssl=1 300w, https://i0.wp.com/www.usmagazine.com/wp-content/uploads/2018/02/paul-fentz-game-of-thrones-free-skate-germany-pyeongchang-2018-winter-olympic-games.jpg?crop=346px%2C0px%2C1492px%2C1492px&amp;resize=400%2C400&amp;ssl=1 400w, https://i0.wp.com/www.usmagazine.com/wp-content/uploads/2018/02/paul-fentz-game-of-thrones-free-skate-germany-pyeongchang-2018-winter-olympic-games.jpg?crop=346px%2C0px%2C1492px%2C1492px&amp;resize=600%2C600&amp;ssl=1 600w, https://i0.wp.com/www.usmagazine.com/wp-content/uploads/2018/02/paul-fentz-game-of-thrones-free-skate-germany-pyeongchang-2018-winter-olympic-games.jpg?crop=346px%2C0px%2C1492px%2C1492px&amp;resize=800%2C800&amp;ssl=1 800w, https://i0.wp.com/www.usmagazine.com/wp-content/uploads/2018/02/paul-fentz-game-of-thrones-free-skate-germany-pyeongchang-2018-winter-olympic-games.jpg?crop=346px%2C0px%2C1492px%2C1492px&amp;resize=1000%2C1000&amp;ssl=1 1000w, https://i0.wp.com/www.usmagazine.com/wp-content/uploads/2018/02/paul-fentz-game-of-thrones-free-skate-germany-pyeongchang-2018-winter-olympic-games.jpg?crop=346px%2C0px%2C1492px%2C1492px&amp;resize=1200%2C1200&amp;ssl=1 1200w" sizes="200px" alt="Paul Fentz, Game of Thrones, Free Skate, Germany, Pyeongchang 2018 Winter Olympic Games" data-fallback-img="https://i0.wp.com/www.usmagazine.com/wp-content/uploads/2018/02/paul-fentz-game-of-thrones-free-skate-germany-pyeongchang-2018-winter-olympic-games.jpg?crop=346px%2C0px%2C1492px%2C1492px&#038;resize=200%2C200&#038;ssl=1"></picture></div>					</a>
+					<article class="more-news-article">
+						<a
+							href="https://www.usmagazine.com/celebrity-news/news/paul-fentz-uses-got-theme-song-for-performance-at-winter-olympics/"
+							data-track-category="Article Page"
+							data-track-action="Tap More Module"
+							data-track-label="1 - /entertainment/news/2018-winter-olympics-opening-ceremony/"
+						>
+							German Figure Skater Paul Fentz Performs to ‘Game of Thrones’ Theme Song						</a>
+					</article>
+				</div>
+							<div class="article-list-item">
+					<a
+						href="https://www.usmagazine.com/celebrity-news/news/gus-kenworthy-reveals-he-met-boyfriend-matthew-wilkas-on-instagram/"
+						class="article-list-item__img-contain img-fit"
+						data-track-category="Article Page"
+						data-track-action="Tap More Module"
+						data-track-label="2 - /entertainment/news/2018-winter-olympics-opening-ceremony/"
+					>
+						<div class="img-fit__image-contain"><picture class="article-list-item__img"><source media="(min-width: 1023px)" srcset="https://i0.wp.com/www.usmagazine.com/wp-content/uploads/2018/02/gus-kenworthy-matthew-wilkas.jpg?crop=0px%2C0px%2C1800px%2C759px&amp;resize=180%2C76&amp;ssl=1 180w, https://i0.wp.com/www.usmagazine.com/wp-content/uploads/2018/02/gus-kenworthy-matthew-wilkas.jpg?crop=0px%2C0px%2C1800px%2C759px&amp;resize=360%2C152&amp;ssl=1 360w, https://i0.wp.com/www.usmagazine.com/wp-content/uploads/2018/02/gus-kenworthy-matthew-wilkas.jpg?crop=0px%2C0px%2C1800px%2C759px&amp;resize=720%2C304&amp;ssl=1 720w" sizes="180px" data-src-fallback="https://i0.wp.com/www.usmagazine.com/wp-content/uploads/2018/02/gus-kenworthy-matthew-wilkas.jpg?crop=0px%2C0px%2C1800px%2C759px&#038;resize=180%2C76&#038;ssl=1"/><img src="https://www.usmagazine.com/wp-content/uploads/2018/02/gus-kenworthy-matthew-wilkas.jpg?w=100&#038;h=100&#038;crop=1" srcset="https://www.usmagazine.com/wp-content/uploads/2018/02/gus-kenworthy-matthew-wilkas.jpg?w=100&amp;h=100&amp;crop=1 100w, https://www.usmagazine.com/wp-content/uploads/2018/02/gus-kenworthy-matthew-wilkas.jpg?w=200&amp;h=200&amp;crop=1 200w, https://www.usmagazine.com/wp-content/uploads/2018/02/gus-kenworthy-matthew-wilkas.jpg?w=300&amp;h=300&amp;crop=1 300w, https://www.usmagazine.com/wp-content/uploads/2018/02/gus-kenworthy-matthew-wilkas.jpg?w=400&amp;h=400&amp;crop=1 400w, https://www.usmagazine.com/wp-content/uploads/2018/02/gus-kenworthy-matthew-wilkas.jpg?w=600&amp;h=600&amp;crop=1 600w, https://www.usmagazine.com/wp-content/uploads/2018/02/gus-kenworthy-matthew-wilkas.jpg?w=800&amp;h=800&amp;crop=1 800w, https://www.usmagazine.com/wp-content/uploads/2018/02/gus-kenworthy-matthew-wilkas.jpg?w=1000&amp;h=1000&amp;crop=1 1000w, https://www.usmagazine.com/wp-content/uploads/2018/02/gus-kenworthy-matthew-wilkas.jpg?w=1200&amp;h=1200&amp;crop=1 1200w, https://www.usmagazine.com/wp-content/uploads/2018/02/gus-kenworthy-matthew-wilkas.jpg?w=1600&amp;h=1600&amp;crop=1 1600w" sizes="200px" alt="Gus-Kenworthy-Matthew-Wilkas" data-fallback-img="https://www.usmagazine.com/wp-content/uploads/2018/02/gus-kenworthy-matthew-wilkas.jpg?w=200&#038;h=200&#038;crop=1"></picture></div>					</a>
+					<article class="more-news-article">
+						<a
+							href="https://www.usmagazine.com/celebrity-news/news/gus-kenworthy-reveals-he-met-boyfriend-matthew-wilkas-on-instagram/"
+							data-track-category="Article Page"
+							data-track-action="Tap More Module"
+							data-track-label="2 - /entertainment/news/2018-winter-olympics-opening-ceremony/"
+						>
+							The Way Gus Kenworthy Met His Boyfriend Is So Relatable						</a>
+					</article>
+				</div>
+						<a class="more-link tracked-offpage" data-track-category="Article Page" data-track-action="Tap More Module"
+			data-track-label="All Stories" href="/celebrity-news">
+			More News		</a>
+	</div>
+</div>
+
+				</aside>
+
+				<main class="center-rail">
+
+					<div class="article-content">
+
+						<p>The <a href="https://www.usmagazine.com/olympics/">2018 Winter Olympics</a> are here! The games will be held in PyeongChang, South Korea, for the first time and will kick off on Friday, February 9, with the Opening Ceremony.</p>
+		<aside class="inset-related-content">
+			<a
+				href="https://www.usmagazine.com/?p=1172597"
+				target=""
+				data-track-category="Article Page"
+				data-track-action="Tap Interstitial Link"
+				data-track-label="https://www.usmagazine.com/?p=1172597"
+			>
+			Meet Team USA: These Athletes Are Representing the United States at the Winter Olympics in PyeongChang			</a>
+		</aside>
+	
+<p><em>Us Weekly</em> has rounded up the details about how and when to watch the big event, and everything else you need to know about the 2018 Winter Olympics Opening Ceremony.</p>
+<p><strong>When Does It Start?</strong></p>
+<p>The 2018 Winter Olympics Opening Ceremony will start at 8 p.m. in PyeongChang, which is 6 a.m. ET on Friday, February 9, a day after the first official events take place. Viewers in the United States who wake up early will be able to stream the ceremony on NBCOlympics.com or on the NBC Sports app. NBC will also be airing the taped opening ceremony at 8 p.m. ET.</p>
+<p><strong>Who Is Hosting the Opening Ceremony?</strong></p>
+<p><a href="https://www.usmagazine.com/celebrities/katie-couric/"><strong>Katie Couric</strong></a> and <strong>Mike Tirico</strong> are set to host the event for NBC. Couric headed to PyeongChang last week and has been posting Instagram updates on their preparations for the big show. She shared a behind-the-scenes photo of herself and her cohost at rehearsals on Saturday, February 3. “Rehearsing for the Opening Ceremony. Can’t post anything from it, but if tonight is any indication, it’s going to be spectacularly beautiful,&#8221; she captioned the snap. &#8220;Meanwhile so excited to sit next to these two pros!@miketiriconbc and Joshua Cooper Ramo.”</p>
+<blockquote class="instagram-media" data-instgrm-captioned data-instgrm-permalink="https://www.instagram.com/p/BevCUzRgZPW/" data-instgrm-version="8" style=" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:658px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);">
+<div style="padding:8px;">
+<div style=" background:#F8F8F8; line-height:0; margin-top:40px; padding:50.0% 0; text-align:center; width:100%;">
+<div style=" background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACwAAAAsCAMAAAApWqozAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAMUExURczMzPf399fX1+bm5mzY9AMAAADiSURBVDjLvZXbEsMgCES5/P8/t9FuRVCRmU73JWlzosgSIIZURCjo/ad+EQJJB4Hv8BFt+IDpQoCx1wjOSBFhh2XssxEIYn3ulI/6MNReE07UIWJEv8UEOWDS88LY97kqyTliJKKtuYBbruAyVh5wOHiXmpi5we58Ek028czwyuQdLKPG1Bkb4NnM+VeAnfHqn1k4+GPT6uGQcvu2h2OVuIf/gWUFyy8OWEpdyZSa3aVCqpVoVvzZZ2VTnn2wU8qzVjDDetO90GSy9mVLqtgYSy231MxrY6I2gGqjrTY0L8fxCxfCBbhWrsYYAAAAAElFTkSuQmCC); display:block; height:44px; margin:0 auto -44px; position:relative; top:-22px; width:44px;"></div>
+</div>
+<p style=" margin:8px 0 0 0; padding:0 4px;"> <a href="https://www.instagram.com/p/BevCUzRgZPW/" style=" color:#000; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px; text-decoration:none; word-wrap:break-word;" target="_blank">Rehearsing for the Opening Ceremony. Can’t post anything from it, but if tonight is any indication, it’s going to be spectacularly beautiful. Meanwhile so excited to sit next to these two pros!@miketiriconbc and Joshua Cooper Ramo. #winterolympics #pyeongchang2018 @nbcolympics @pyeongchang2018</a></p>
+<p style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; line-height:17px; margin-bottom:0; margin-top:8px; overflow:hidden; padding:8px 0 7px; text-align:center; text-overflow:ellipsis; white-space:nowrap;">A post shared by <a href="https://www.instagram.com/katiecouric/" style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px;" target="_blank"> Katie Couric</a> (@katiecouric) on <time style=" font-family:Arial,sans-serif; font-size:14px; line-height:17px;" datetime="2018-02-03T12:42:41+00:00">Feb 3, 2018 at 4:42am PST</time></p>
+</div>
+</blockquote>
+<p><script async defer src="//www.instagram.com/embed.js"></script></p>
+<p><strong>Who Is Carrying the Flag for the USA?</strong></p>
+<p>Olympic bronze medalist<a href="https://www.usmagazine.com/celebrity-news/news/olympian-erin-hamlin-introduces-us-to-her-team-of-pets/"><strong> Erin Hamlin</strong> </a>will be the flag bearer for Team USA during the opening ceremony for the 2018 PyeongChang Olympics&#8217; Parade of Nations. &#8220;It was a pretty big shock,&#8221; Hamlin told NBC about learning that she was voted by her teammates to carry the flag. &#8220;But it is an honor and a privilege to be recognized by all of Team USA.&#8221; This will be the 31-year-old’s fourth trip to the Olympics, and she will be leading 244 American athletes who will be competing during the games. It was also announced in January that North and South Korea agreed to march together under a &#8220;unified Korea&#8221; flag to symbolize unity between the two feuding nations.</p>
+		<aside class="inset-related-content">
+			<a
+				href="https://www.usmagazine.com/?p=1167371"
+				target=""
+				data-track-category="Article Page"
+				data-track-action="Tap Interstitial Link"
+				data-track-label="https://www.usmagazine.com/?p=1167371"
+			>
+			Celebrities Who Love The Olympics			</a>
+		</aside>
+	
+<p><strong>Where Will the Opening Ceremony Take Place?</strong></p>
+<p>The opening and closing ceremonies will both take place at the PyeongChang Olympic Stadium. The closing ceremony will air on Sunday, February 25. Viewers can watch it on NBC at 8 p.m. ET.</p>
+<p><strong>What Is Team USA Wearing During the Opening Ceremony?</strong></p>
+<p>Team USA unveiled its<a href="https://www.usmagazine.com/stylish/pictures/winter-olympics-2018-ralph-lauren-team-usa-uniform-designs/"> Ralph Lauren-designed uniforms</a> for the opening ceremony in January. The fashion designer, who is known for his “All-American” style, designed a red, white and blue uniform for the athletes that will consist of a parka and a bomber jacket, with heating elements that last for up to 11 hours. The look also includes slim jeans with moto-inspired seaming, an intarsia-knit wool sweater, a navy wool hat, a USA bandanna, a leather belt, brown suede gloves and brown suede mountaineering boots with red laces.</p>
+		<aside class="inset-related-content">
+			<a
+				href="https://www.usmagazine.com/celebrity-news/news/olympic-athletes-where-are-they-now-2013104/"
+				target=""
+				data-track-category="Article Page"
+				data-track-action="Tap Interstitial Link"
+				data-track-label="https://www.usmagazine.com/celebrity-news/news/olympic-athletes-where-are-they-now-2013104/"
+			>
+			Olympic Athletes: Where Are They Now?			</a>
+		</aside>
+	
+<p><strong>What’s the Schedule Like for the Opening Ceremony?</strong></p>
+<p>The <em>Telegraph</em><a href="http://www.telegraph.co.uk/winter-olympics/0/winter-olympics-2018-opening-ceremony-date-time-does-start-tv/"> reported</a> that the opening ceremony is set to follow a similar schedule to that of the 2014 Winter Olympics Opening Ceremony in Sochi, Russia. See below for what to expect during the big event:</p>
+<ol>
+<li>Entry by the head of state</li>
+<li>Playing of the national anthem</li>
+<li>The parade of participants</li>
+<li>The symbolic release of pigeons</li>
+<li>The head of state declares the Games open</li>
+<li>Raising the Olympic flag and playing the Olympic anthem</li>
+<li>The taking of the Olympic oath by an athlete</li>
+<li>The taking of the Olympic oath by an official</li>
+<li>The taking of the Olympic oath by a coach</li>
+<li>The Olympic flame and the torch relay</li>
+<li>The artistic program</li>
+</ol>
+<p>To learn more about Team USA, visit <a href="https://www.teamusa.org/">teamusa.org</a>.</p>
+
+						<p>
+	<strong>
+		<em>
+			<a href="/newsletter-signup" target="_blank">Sign up now for the Us Weekly newsletter</a> to get breaking celebrity news, hot pics and more delivered straight to your inbox!		</em>
+	</strong>
+</p>
+						
+						<div class="module-more-news-center">
+							
+
+	<div id="module-more-news">
+		<h3 class="module-header">More News</h3>
+		<div class="article-list">
+							<div class="article-list-item">
+					<a
+						href="https://www.usmagazine.com/celebrity-news/news/sally-field-wants-her-son-sam-to-date-olympic-skater-adam-rippon/"
+						class="article-list-item__img-contain img-fit"
+						data-track-category="Article Page"
+						data-track-action="Tap More Module"
+						data-track-label="0 - /entertainment/news/2018-winter-olympics-opening-ceremony/"
+					>
+						<div class="img-fit__image-contain"><picture class="article-list-item__img"><source media="(min-width: 1023px)" srcset="https://i0.wp.com/www.usmagazine.com/wp-content/uploads/2018/02/sally-field-sam-greisman-olympics-crush-adam-rippon.jpg?crop=0px%2C51px%2C1527px%2C644px&amp;resize=180%2C76&amp;ssl=1 180w, https://i0.wp.com/www.usmagazine.com/wp-content/uploads/2018/02/sally-field-sam-greisman-olympics-crush-adam-rippon.jpg?crop=0px%2C51px%2C1527px%2C644px&amp;resize=360%2C152&amp;ssl=1 360w, https://i0.wp.com/www.usmagazine.com/wp-content/uploads/2018/02/sally-field-sam-greisman-olympics-crush-adam-rippon.jpg?crop=0px%2C51px%2C1527px%2C644px&amp;resize=720%2C304&amp;ssl=1 720w" sizes="180px" data-src-fallback="https://i0.wp.com/www.usmagazine.com/wp-content/uploads/2018/02/sally-field-sam-greisman-olympics-crush-adam-rippon.jpg?crop=0px%2C51px%2C1527px%2C644px&#038;resize=180%2C76&#038;ssl=1"/><img src="https://i0.wp.com/www.usmagazine.com/wp-content/uploads/2018/02/sally-field-sam-greisman-olympics-crush-adam-rippon.jpg?crop=0px%2C0px%2C1527px%2C1527px&#038;resize=100%2C100&#038;ssl=1" srcset="https://i0.wp.com/www.usmagazine.com/wp-content/uploads/2018/02/sally-field-sam-greisman-olympics-crush-adam-rippon.jpg?crop=0px%2C0px%2C1527px%2C1527px&amp;resize=100%2C100&amp;ssl=1 100w, https://i0.wp.com/www.usmagazine.com/wp-content/uploads/2018/02/sally-field-sam-greisman-olympics-crush-adam-rippon.jpg?crop=0px%2C0px%2C1527px%2C1527px&amp;resize=200%2C200&amp;ssl=1 200w, https://i0.wp.com/www.usmagazine.com/wp-content/uploads/2018/02/sally-field-sam-greisman-olympics-crush-adam-rippon.jpg?crop=0px%2C0px%2C1527px%2C1527px&amp;resize=300%2C300&amp;ssl=1 300w, https://i0.wp.com/www.usmagazine.com/wp-content/uploads/2018/02/sally-field-sam-greisman-olympics-crush-adam-rippon.jpg?crop=0px%2C0px%2C1527px%2C1527px&amp;resize=400%2C400&amp;ssl=1 400w, https://i0.wp.com/www.usmagazine.com/wp-content/uploads/2018/02/sally-field-sam-greisman-olympics-crush-adam-rippon.jpg?crop=0px%2C0px%2C1527px%2C1527px&amp;resize=600%2C600&amp;ssl=1 600w, https://i0.wp.com/www.usmagazine.com/wp-content/uploads/2018/02/sally-field-sam-greisman-olympics-crush-adam-rippon.jpg?crop=0px%2C0px%2C1527px%2C1527px&amp;resize=800%2C800&amp;ssl=1 800w, https://i0.wp.com/www.usmagazine.com/wp-content/uploads/2018/02/sally-field-sam-greisman-olympics-crush-adam-rippon.jpg?crop=0px%2C0px%2C1527px%2C1527px&amp;resize=1000%2C1000&amp;ssl=1 1000w, https://i0.wp.com/www.usmagazine.com/wp-content/uploads/2018/02/sally-field-sam-greisman-olympics-crush-adam-rippon.jpg?crop=0px%2C0px%2C1527px%2C1527px&amp;resize=1200%2C1200&amp;ssl=1 1200w" sizes="200px" alt="Sally Field, Sam Greisman, Olympics, Crush, Adam Rippon" data-fallback-img="https://i0.wp.com/www.usmagazine.com/wp-content/uploads/2018/02/sally-field-sam-greisman-olympics-crush-adam-rippon.jpg?crop=0px%2C0px%2C1527px%2C1527px&#038;resize=200%2C200&#038;ssl=1"></picture></div>					</a>
+					<article class="more-news-article">
+						<a
+							href="https://www.usmagazine.com/celebrity-news/news/sally-field-wants-her-son-sam-to-date-olympic-skater-adam-rippon/"
+							data-track-category="Article Page"
+							data-track-action="Tap More Module"
+							data-track-label="0 - /entertainment/news/2018-winter-olympics-opening-ceremony/"
+						>
+							Sally Field Wants Her Son to Date Olympic Skater Adam Rippon						</a>
+					</article>
+				</div>
+							<div class="article-list-item">
+					<a
+						href="https://www.usmagazine.com/celebrity-news/news/paul-fentz-uses-got-theme-song-for-performance-at-winter-olympics/"
+						class="article-list-item__img-contain img-fit"
+						data-track-category="Article Page"
+						data-track-action="Tap More Module"
+						data-track-label="1 - /entertainment/news/2018-winter-olympics-opening-ceremony/"
+					>
+						<div class="img-fit__image-contain"><picture class="article-list-item__img"><source media="(min-width: 1023px)" srcset="https://i0.wp.com/www.usmagazine.com/wp-content/uploads/2018/02/paul-fentz-game-of-thrones-free-skate-germany-pyeongchang-2018-winter-olympic-games.jpg?crop=0px%2C16px%2C2000px%2C843px&amp;resize=180%2C76&amp;ssl=1 180w, https://i0.wp.com/www.usmagazine.com/wp-content/uploads/2018/02/paul-fentz-game-of-thrones-free-skate-germany-pyeongchang-2018-winter-olympic-games.jpg?crop=0px%2C16px%2C2000px%2C843px&amp;resize=360%2C152&amp;ssl=1 360w, https://i0.wp.com/www.usmagazine.com/wp-content/uploads/2018/02/paul-fentz-game-of-thrones-free-skate-germany-pyeongchang-2018-winter-olympic-games.jpg?crop=0px%2C16px%2C2000px%2C843px&amp;resize=720%2C304&amp;ssl=1 720w" sizes="180px" data-src-fallback="https://i0.wp.com/www.usmagazine.com/wp-content/uploads/2018/02/paul-fentz-game-of-thrones-free-skate-germany-pyeongchang-2018-winter-olympic-games.jpg?crop=0px%2C16px%2C2000px%2C843px&#038;resize=180%2C76&#038;ssl=1"/><img src="https://i0.wp.com/www.usmagazine.com/wp-content/uploads/2018/02/paul-fentz-game-of-thrones-free-skate-germany-pyeongchang-2018-winter-olympic-games.jpg?crop=346px%2C0px%2C1492px%2C1492px&#038;resize=100%2C100&#038;ssl=1" srcset="https://i0.wp.com/www.usmagazine.com/wp-content/uploads/2018/02/paul-fentz-game-of-thrones-free-skate-germany-pyeongchang-2018-winter-olympic-games.jpg?crop=346px%2C0px%2C1492px%2C1492px&amp;resize=100%2C100&amp;ssl=1 100w, https://i0.wp.com/www.usmagazine.com/wp-content/uploads/2018/02/paul-fentz-game-of-thrones-free-skate-germany-pyeongchang-2018-winter-olympic-games.jpg?crop=346px%2C0px%2C1492px%2C1492px&amp;resize=200%2C200&amp;ssl=1 200w, https://i0.wp.com/www.usmagazine.com/wp-content/uploads/2018/02/paul-fentz-game-of-thrones-free-skate-germany-pyeongchang-2018-winter-olympic-games.jpg?crop=346px%2C0px%2C1492px%2C1492px&amp;resize=300%2C300&amp;ssl=1 300w, https://i0.wp.com/www.usmagazine.com/wp-content/uploads/2018/02/paul-fentz-game-of-thrones-free-skate-germany-pyeongchang-2018-winter-olympic-games.jpg?crop=346px%2C0px%2C1492px%2C1492px&amp;resize=400%2C400&amp;ssl=1 400w, https://i0.wp.com/www.usmagazine.com/wp-content/uploads/2018/02/paul-fentz-game-of-thrones-free-skate-germany-pyeongchang-2018-winter-olympic-games.jpg?crop=346px%2C0px%2C1492px%2C1492px&amp;resize=600%2C600&amp;ssl=1 600w, https://i0.wp.com/www.usmagazine.com/wp-content/uploads/2018/02/paul-fentz-game-of-thrones-free-skate-germany-pyeongchang-2018-winter-olympic-games.jpg?crop=346px%2C0px%2C1492px%2C1492px&amp;resize=800%2C800&amp;ssl=1 800w, https://i0.wp.com/www.usmagazine.com/wp-content/uploads/2018/02/paul-fentz-game-of-thrones-free-skate-germany-pyeongchang-2018-winter-olympic-games.jpg?crop=346px%2C0px%2C1492px%2C1492px&amp;resize=1000%2C1000&amp;ssl=1 1000w, https://i0.wp.com/www.usmagazine.com/wp-content/uploads/2018/02/paul-fentz-game-of-thrones-free-skate-germany-pyeongchang-2018-winter-olympic-games.jpg?crop=346px%2C0px%2C1492px%2C1492px&amp;resize=1200%2C1200&amp;ssl=1 1200w" sizes="200px" alt="Paul Fentz, Game of Thrones, Free Skate, Germany, Pyeongchang 2018 Winter Olympic Games" data-fallback-img="https://i0.wp.com/www.usmagazine.com/wp-content/uploads/2018/02/paul-fentz-game-of-thrones-free-skate-germany-pyeongchang-2018-winter-olympic-games.jpg?crop=346px%2C0px%2C1492px%2C1492px&#038;resize=200%2C200&#038;ssl=1"></picture></div>					</a>
+					<article class="more-news-article">
+						<a
+							href="https://www.usmagazine.com/celebrity-news/news/paul-fentz-uses-got-theme-song-for-performance-at-winter-olympics/"
+							data-track-category="Article Page"
+							data-track-action="Tap More Module"
+							data-track-label="1 - /entertainment/news/2018-winter-olympics-opening-ceremony/"
+						>
+							German Figure Skater Paul Fentz Performs to ‘Game of Thrones’ Theme Song						</a>
+					</article>
+				</div>
+							<div class="article-list-item">
+					<a
+						href="https://www.usmagazine.com/celebrity-news/news/gus-kenworthy-reveals-he-met-boyfriend-matthew-wilkas-on-instagram/"
+						class="article-list-item__img-contain img-fit"
+						data-track-category="Article Page"
+						data-track-action="Tap More Module"
+						data-track-label="2 - /entertainment/news/2018-winter-olympics-opening-ceremony/"
+					>
+						<div class="img-fit__image-contain"><picture class="article-list-item__img"><source media="(min-width: 1023px)" srcset="https://i0.wp.com/www.usmagazine.com/wp-content/uploads/2018/02/gus-kenworthy-matthew-wilkas.jpg?crop=0px%2C0px%2C1800px%2C759px&amp;resize=180%2C76&amp;ssl=1 180w, https://i0.wp.com/www.usmagazine.com/wp-content/uploads/2018/02/gus-kenworthy-matthew-wilkas.jpg?crop=0px%2C0px%2C1800px%2C759px&amp;resize=360%2C152&amp;ssl=1 360w, https://i0.wp.com/www.usmagazine.com/wp-content/uploads/2018/02/gus-kenworthy-matthew-wilkas.jpg?crop=0px%2C0px%2C1800px%2C759px&amp;resize=720%2C304&amp;ssl=1 720w" sizes="180px" data-src-fallback="https://i0.wp.com/www.usmagazine.com/wp-content/uploads/2018/02/gus-kenworthy-matthew-wilkas.jpg?crop=0px%2C0px%2C1800px%2C759px&#038;resize=180%2C76&#038;ssl=1"/><img src="https://www.usmagazine.com/wp-content/uploads/2018/02/gus-kenworthy-matthew-wilkas.jpg?w=100&#038;h=100&#038;crop=1" srcset="https://www.usmagazine.com/wp-content/uploads/2018/02/gus-kenworthy-matthew-wilkas.jpg?w=100&amp;h=100&amp;crop=1 100w, https://www.usmagazine.com/wp-content/uploads/2018/02/gus-kenworthy-matthew-wilkas.jpg?w=200&amp;h=200&amp;crop=1 200w, https://www.usmagazine.com/wp-content/uploads/2018/02/gus-kenworthy-matthew-wilkas.jpg?w=300&amp;h=300&amp;crop=1 300w, https://www.usmagazine.com/wp-content/uploads/2018/02/gus-kenworthy-matthew-wilkas.jpg?w=400&amp;h=400&amp;crop=1 400w, https://www.usmagazine.com/wp-content/uploads/2018/02/gus-kenworthy-matthew-wilkas.jpg?w=600&amp;h=600&amp;crop=1 600w, https://www.usmagazine.com/wp-content/uploads/2018/02/gus-kenworthy-matthew-wilkas.jpg?w=800&amp;h=800&amp;crop=1 800w, https://www.usmagazine.com/wp-content/uploads/2018/02/gus-kenworthy-matthew-wilkas.jpg?w=1000&amp;h=1000&amp;crop=1 1000w, https://www.usmagazine.com/wp-content/uploads/2018/02/gus-kenworthy-matthew-wilkas.jpg?w=1200&amp;h=1200&amp;crop=1 1200w, https://www.usmagazine.com/wp-content/uploads/2018/02/gus-kenworthy-matthew-wilkas.jpg?w=1600&amp;h=1600&amp;crop=1 1600w" sizes="200px" alt="Gus-Kenworthy-Matthew-Wilkas" data-fallback-img="https://www.usmagazine.com/wp-content/uploads/2018/02/gus-kenworthy-matthew-wilkas.jpg?w=200&#038;h=200&#038;crop=1"></picture></div>					</a>
+					<article class="more-news-article">
+						<a
+							href="https://www.usmagazine.com/celebrity-news/news/gus-kenworthy-reveals-he-met-boyfriend-matthew-wilkas-on-instagram/"
+							data-track-category="Article Page"
+							data-track-action="Tap More Module"
+							data-track-label="2 - /entertainment/news/2018-winter-olympics-opening-ceremony/"
+						>
+							The Way Gus Kenworthy Met His Boyfriend Is So Relatable						</a>
+					</article>
+				</div>
+						<a class="more-link tracked-offpage" data-track-category="Article Page" data-track-action="Tap More Module"
+			data-track-label="All Stories" href="/celebrity-news">
+			More News		</a>
+	</div>
+</div>
+						</div>
+
+					</div>
+
+				</main>
+
+			</div>
+
+			<div class="ad-slot banner bottom-banner">
+
+				<div class="ad-container" id="bottom-ad-slot-0">
+					
+		<div id="leader-bottom" class="advertisement js-leader-bottom">
+			<script>
+			googletag.cmd.push(function() {
+				googletag.display('leader-bottom');
+			});
+			</script>
+		</div>				</div>
+
+			</div>
+
+		</section>
+
+	<aside class="right-rail">
+
+					<div class="non-sticky-rail">
+				<div class="ad-container" id="right-rail-ad-slot-content-top">
+
+					
+		<div id="box-widget" class="advertisement">
+			<script>
+			if ( ! window.gptIsMobile() ) {
+			googletag.cmd.push(function() {
+				googletag.display('box-widget');
+			});
+			}
+			</script>
+		</div>
+					<div id="zergnet-2" class="widget "><div class="widget-zergnet"><div id="zergnet-widget-60947"></div></div></div>
+				</div>
+			</div>
+
+			<div class="ad-slot banner bottom-banner-mobile">
+				<div class="ad-container" id="bottom-ad-slot-0">
+					
+		<div id="leader-bottom-mobile" class="advertisement js-leader-bottom">
+			<script>
+				if ( window.gptIsMobile() ) {
+			googletag.cmd.push(function() {
+				googletag.display('leader-bottom-mobile');
+			});
+			}
+			</script>
+		</div>				</div>
+			</div>
+
+			<div id="nativeAdArticle">
+				
+		<div id="sharethrough-box" class="advertisement js-sharethrough-box">
+			<script>
+			googletag.cmd.push(function() {
+				googletag.display('sharethrough-box');
+			});
+			</script>
+		</div>			</div>
+
+			<div class="ad-slot sticky-rail rail" data-timed-refresh>
+
+				<div class="ad-container" id="right-rail-ad-slot-tall-0">
+					
+		<div id="box-inline" class="advertisement js-box-inline">
+			<script>
+			if ( ! window.gptIsMobile() ) {
+			googletag.cmd.push(function() {
+				googletag.display('box-inline');
+			});
+			}
+			</script>
+		</div>				</div>
+
+			</div>
+		
+	</aside>
+
+	</div>
+
+</article>
+
+<script type="text/html" id="tmpl-comments">
+	<section class="module-comments">
+		<div
+			class="spot-im-frame-inpage"
+			data-spotim-module="spotim-launcher"
+			data-post-id="1177752"
+			data-post-url="http://www.usmagazine.com/entertainment/news/2018-winter-olympics-opening-ceremony"
+			data-disqus-url="http://www.usmagazine.com/entertainment/news/2018-winter-olympics-opening-ceremony"
+			data-disqus-identifier="http://www.usmagazine.com/entertainment/news/2018-winter-olympics-opening-ceremony"
+		>
+		</div>
+	</section>
+</script>
+
+	
+<section id="content-card-footer" class="content-card-footer">
+	<div class="grid content">
+				<div id="card-container" class="content-rail">
+
+		</div>
+	</div>
+</section>
+
+	</main>
+
+	<footer class="footer">
+
+		<nav class="menu-footer-container"><ul id="menu-footer" class="nav"><li>© American Media, Inc. 2017</li><li id="menu-item-60486" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-60486"><a href="https://www.usmagazine.com/services-privacypolicy/">Privacy Policy</a></li>
+<li id="menu-item-60642" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-60642"><a href="https://www.usmagazine.com/services-adchoices/">Ad Choices</a></li>
+<li id="menu-item-60788" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-60788"><a href="https://www.usmagazine.com/services-datapolicy/">Data Policy</a></li>
+<li id="menu-item-61056" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-61056"><a href="http://www.americanmediainc.com/terms-and-conditions">Terms of Use</a></li>
+<li id="menu-item-723110" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-723110"><a href="https://www.usmagazine.com/services-contactus/">Contact Us</a></li>
+<li id="menu-item-723109" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-723109"><a href="http://www.americanmediainc.com/brands/us-weekly">Media Kits</a></li>
+<li id="menu-item-61992" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-61992"><a href="https://www.usmagazine.com/services-faq/">FAQ</a></li>
+<li id="menu-item-62285" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-62285"><a href="https://www.usmagazine.com/subscribe">Subscribe</a></li>
+<li id="menu-item-731181" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-731181"><a href="https://www.usmagazine.com/sitemap/">Sitemap</a></li>
+<li id="menu-item-723108" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-723108"><a href="https://www.usmagazine.com/digital-access/">Digital Access</a></li>
+<li id="menu-item-62893" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-62893"><a href="/givegift">Give a Gift</a></li>
+</ul></nav>
+		<p>Part of the American Media Inc. Celebrity News Network.<br>Powered by <a href="https://vip.wordpress.com/?utm_source=vip_powered_wpcom&#038;utm_medium=web&#038;utm_campaign=VIP%20Footer%20Credit&#038;utm_term=www.usmagazine.com" rel="generator nofollow" class="powered-by-wpcom">WordPress.com VIP</a></p>
+
+	</footer>
+	<div id="lightbox-comments" class="lightbox-comments">
+		<div class="lightbox-close"></div>
+	</div>
+
+	<div class="mobile-footer-ad closed">
+		<button class="close"><span aria-hidden="true">Close</span></button>
+
+		
+		<div id="mobile-sticky" class="advertisement js-leader-sticky">
+			<script>
+				if ( window.innerWidth <= 480 ) {
+			googletag.cmd.push(function() {
+				googletag.display('mobile-sticky');
+			});
+			}
+			</script>
+		</div>	</div>
+
+	
+		<div id="interstitial" class="1x1">
+			<script>
+			if ( ! window.gptIsMobile() ) {
+			googletag.cmd.push(function() {
+				googletag.display('interstitial');
+			});
+			}
+			</script>
+		</div>
+		<div id="teads" class="teads">
+			<script>
+			googletag.cmd.push(function() {
+				googletag.display('teads');
+			});
+			</script>
+		</div>
+		<div id="gumgum" class="gumgum">
+			<script>
+			googletag.cmd.push(function() {
+				googletag.display('gumgum');
+			});
+			</script>
+		</div>
+		<div id="skin" class="skin">
+			<script>
+			if ( ! window.gptIsMobile() ) {
+			googletag.cmd.push(function() {
+				googletag.display('skin');
+			});
+			}
+			</script>
+		</div>	<script type="text/html" id="tmpl-trending-article">
+		<article class="module-trending-bar-article">
+			<a
+				href="{{ data.link }}"
+				class="article-link tracked-offpage"
+				data-track-category="Article Page"
+				data-track-label="{{ data.count + 1 }} - https://www.usmagazine.com/entertainment/news/2018-winter-olympics-opening-ceremony/"
+				data-track-action="Tap Trending"
+			>
+				<!-- @todo include video srcset in image url -->
+				<span class="article-image">
+					<figure class="article-image--trending img-fit" itemprop="image" itemscope="" itemtype="http://schema.org/ImageObject">
+					<# if ( data.image ) { #>
+						<img src="{{ data.image.square.fallback }}" srcset="{{ data.image.square.srcset }}" alt="" sizes="100px">
+					<# } #>
+					</figure>
+				</span>
+				<div class="article-title">
+					<!-- @todo include single category name in rest response -->
+					<p class="article-title-label">
+						<# if ( data.category_name ) { #>
+							{{ data.category_name }}
+						<# } #>
+					</p>
+					<p class="article-title-text">
+						{{{ data.title_truncated_top5 }}}
+					</p>
+				</div>
+			</a>
+		</article>
+	</script>
+		<script type="text/html" id="tmpl-content-card">
+		<article class="content-card card-container-outside">
+			<a
+				href="{{ data.link }}"
+				class="content-card-link"
+				data-track-category="HP Page"
+				data-track-action="Tap Editorial"
+				data-track-label="{{data.pageCount}} - {{data.count}} - {{data.link}}"
+			>
+				<# if ( 'video' === data.format && data.video['jwp-id'] ) { #>
+					<span
+						class="content-card-image content-card-video"
+						data-video-id="{{ data.video['jwp-id'] }}"
+						data-video-player="{{ data.video['jwp-player'] }}"
+					>
+						<span class="play-button large"></span>
+				<# } else { #>
+					<span class="content-card-image">
+				<# } #>
+					<# if ( data.image && data.image.landscape.fallback ) { #>
+						<img src="{{ data.image.landscape.fallback }}" srcset="{{ data.image.landscape.srcset }}" alt="">
+					<# } #>
+				</span>
+				<div class="content-card-body">
+					<!--  @todo include category name in rest response -->
+					<# if ( data.category_name ) { #>
+						<div class="content-card-tag">
+							<span class="content-card-label">{{ data.category_name }}</span>
+						</div>
+					<# } #>
+					<div class="content-card-title">{{{ data.title.rendered }}}</div>
+						<span class="content-card-timestamp">
+							<span class="clock"></span>
+						</span>
+						<# if ( data.sponsors && data.sponsors.length ) { #>
+							<div class="ad-sponsor" id="{{ data.sponsorDivID }}"></div>
+						<# } #>
+					</div>
+				</div>
+			</a>
+		</article>
+	</script>
+		<script type="text/html" id="tmpl-global-alert">
+		<div class="alert {{ data.theme }}" data-alert="{{ data.id }}" id="alert">
+			<# if( data.url ) {  #>
+			<a href="{{ data.url }}" class="alert-link">
+			<#  } #>
+				<p class="alert-hed">
+				  <span class="alert-hed-title">{{ data.text }}</span>
+				  <span class="time-ago">{{ data.timeAgo }} Ago</span>
+				</p>
+			<# if( data.url ) { #>
+			</a>
+			<# } #>
+			<a href="#" id="alert-close" class="alert-close"></a>
+		</div>
+	</script>
+	
+<script type="text/html" id="tmpl-posts">
+
+	<article class="celebrity-news-article article-box">
+		<a
+			class="celebrity-news-article-link"
+			href="{{ data.link }}"
+			data-track-category="Celebrities"
+			data-track-action="Go to News Article"
+			data-track-label="{{ data.category_name }} News Page | {{ data.link }}"
+		>
+
+			<div class="article-box-image">
+
+					<figure class="celebrity-image--rect img-fit" itemprop="image" itemscope="" itemtype="http://schema.org/ImageObject">
+						<div class="img-fit__image-contain">
+							<# if ( data.image && data.image.landscape.fallback ) { #>
+								<img
+									src="{{ data.image.landscape.fallback }}"
+									srcset="{{ data.image.landscape.srcset }}"
+									sizes="100vw"
+									alt="{{ data.title.rendered }}"
+									data-fallback-img="{{ data.image.landscape.fallback }}">
+							<# } #>
+						</div>
+					</figure>
+
+			</div>
+
+			<div class="article-box-content">
+				<div class="article-box-content-inner">
+					<span class="article-box-tag">{{ data.category_name }}</span>
+					<h3 class="article-box-title">{{ data.title.rendered }}</h3>
+				</div>
+			</div>
+		</a>
+	</article>
+
+</script>
+<script type="text/html" id="tmpl-photos">
+
+	<article class="celebrity-photos-article article-box">
+		<a
+			class="celebrity-news-article-link"
+			href="{{ data.link }}"
+			data-track-category="Celebrities"
+			data-track-action="Go to Photos Article"
+			data-track-label="{{ data.category_name }} Photos Page | {{ data.link }}"
+		>
+
+			<div class="article-box-image">
+
+					<figure class="celebrity-image--rect img-fit" itemprop="image" itemscope="" itemtype="http://schema.org/ImageObject">
+						<div class="img-fit__image-contain">
+							<# if ( data.image && data.image.landscape.fallback ) { #>
+								<img
+									src="{{ data.image.landscape.fallback }}"
+									srcset="{{ data.image.landscape.srcset }}"
+									sizes="100vw"
+									alt="{{ data.title.rendered }}"
+									data-fallback-img="{{ data.image.landscape.fallback }}">
+							<# } #>
+						</div>
+					</figure>
+
+			</div>
+
+			<div class="article-box-content">
+				<div class="article-box-content-inner">
+					<span class="article-box-tag">Photos</span>
+					<h3 class="article-box-title">{{ data.title.rendered }}</h3>
+				</div>
+			</div>
+		</a>
+	</article>
+
+</script>
+<script type="text/html" id="tmpl-video-overlay">
+		<header class="video-overlay-header">
+			<h1>
+				<a
+					class="tracked-offpage"
+					data-track-category="Video Overlay"
+					data-track-action="Go To Content"
+					data-track-label="{{ data.link }}"
+					href="{{ data.link }}"
+				>
+					{{ data.title }}
+				</a>
+			</h1>
+		</header>
+		<ul class="video-overlay-social nav">
+			<li>
+				<a
+					class="social-icon social-icon-facebook tracked-onpage"
+					href="{{ data.link }}"
+					data-track-category="HP"
+					data-track-action="Share Facebook"
+					data-track-label="Video Overlay"
+					data-share-type="facebook"
+				>
+					Share
+				</a>
+			</li>
+			<li>
+				<a
+					class="social-icon social-icon-twitter tracked-onpage"
+					href="{{ data.link }}"
+					data-tweet-text="{{ data.title }}"
+					data-tweet-via="UsWeekly"
+					data-share-type="twitter"
+					data-track-category="HP"
+					data-track-action="Share Twitter"
+					data-track-label="Video Overlay"
+				>
+					Tweet
+				</a>
+			</li>
+
+			<li>
+				<a
+					class="social-icon social-icon-email tracked-onpage"
+					data-track-category="HP"
+					data-track-action="Share Email"
+					data-track-label="Video Overlay"
+					href="mailto:?to=&amp;subject=Us Weekly: {{ data.title }}&amp;body=Hey, I saw this on Us Weekly and thought you’d be interested in it: {{ data.link }}?utm_source%3Demail%26utm_medium%3Dsocial%26utm_campaign%3Demailshare"
+				>
+					Email
+				</a>
+			</li>
+		</ul>
+</script>
+
+	<script type="text/javascript">
+		window.WPCOM_sharing_counts = {"https:\/\/www.usmagazine.com\/entertainment\/news\/2018-winter-olympics-opening-ceremony\/":1177752};
+	</script>
+<script type='text/javascript' src='https://s0.wp.com/wp-content/js/devicepx-jetpack.js?ver=201807'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var _wpUtilSettings = {"ajax":{"url":"\/wp-admin\/admin-ajax.php"}};
+/* ]]> */
+</script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var uswl10n = {"rest_endpoint":"https:\/\/www.usmagazine.com\/wp-json\/wp\/v2\/","category":"9","limit_recirculation":"","text_Top5":"Top 5","text_Stories":"Stories","current_post_id":"1177752","server_timezone":"-5","time_increments":{"second":"second","minute":"minute","hour":"hour","day":"day","week":"week","month":"month","year":"year","pluralizer":"s"}};
+var gptNetwork = {"ID":"\/4216\/usweekly\/"};
+var recirculationSettings = {"zergnet_id":"49505","zergnet_wrap":"","has_ads":"1","sharethrough":"1","sharethrough_repeat":"1","box_inline":"1","teads":"1"};
+var iframeURL = "https:\/\/www.usmagazine.com\/iframe\/";
+/* ]]> */
+</script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var recircl10n = {"rest_endpoint":"https:\/\/www.usmagazine.com\/wp-json\/wp\/v2\/","category":"9","limit_recirculation":"","text_Top5":"Top 5","text_Stories":"Stories","current_post_id":"1177752"};
+/* ]]> */
+</script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var agal10n = {"rest_endpoint_alerts":"https:\/\/www.usmagazine.com\/wp-json\/ami\/v1\/global-alerts","server_timezone":"-5","time_increments":{"second":"second","minute":"minute","hour":"hour","day":"day","week":"week","month":"month","year":"year","pluralizer":"s"}};
+/* ]]> */
+</script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var sharing_js_options = {"lang":"en","counts":"1"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://www.usmagazine.com/_static/??-eJylj00KwkAMhS9kG4pWcSHiSWR+Qk3NTMskQ/H2DtpFGdy5SkLe+14Cy9xQdJw9CowCOXpM4qaEbaDYjrKDSlHGrMTbtZuiYlTQB4YiytIsiE9+gRFB/bg8icLAkzXc2hLCWJsdUylNyM3MeaAoIA+T0NeQhI6Sy2yUpvgn63vQjTGpVKjqZQwW/a+fNxkj6mzcE+7FCzYT+zXWeP/6tBSHlXENl67vTue+O+yP4xvh0ZDR'></script>
+<script type='text/javascript'>
+var windowOpen;
+			jQuery( document.body ).on( 'click', 'a.share-facebook', function() {
+				// If there's another sharing window open, close it.
+				if ( 'undefined' !== typeof windowOpen ) {
+					windowOpen.close();
+				}
+				windowOpen = window.open( jQuery( this ).attr( 'href' ), 'wpcomfacebook', 'menubar=1,resizable=1,width=600,height=400' );
+				return false;
+			});
+var windowOpen;
+			jQuery( document.body ).on( 'click', 'a.share-twitter', function() {
+				// If there's another sharing window open, close it.
+				if ( 'undefined' !== typeof windowOpen ) {
+					windowOpen.close();
+				}
+				windowOpen = window.open( jQuery( this ).attr( 'href' ), 'wpcomtwitter', 'menubar=1,resizable=1,width=600,height=350' );
+				return false;
+			});
+</script>
+<script type='text/javascript' src='https://stats.wp.com/e-201807.js' async='async' defer='defer'></script>
+<script type='text/javascript'>
+	_stq = window._stq || [];
+	_stq.push([ 'view', {v:'ext',j:'1:5.8',blog:'135406237',post:'1177752',tz:'-5',srv:'www.usmagazine.com'} ]);
+	_stq.push([ 'clickTrackerInit', '135406237', '1177752' ]);
+</script>
+
+	<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"6f7d4f2036","applicationID":"62887297","transactionName":"Zl1bZUYFC0cCBUxdX18XeFJADQpaTBVRWlddXQ==","queueTime":0,"applicationTime":143,"atts":"ShpMEw4fGBhBBxoOS0xF","errorBeacon":"bam.nr-data.net","agent":""}</script></body>
+</html>

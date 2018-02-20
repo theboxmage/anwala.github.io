@@ -1,0 +1,1451 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML+RDFa 1.1//EN">
+<html lang="en" dir="ltr" version="HTML+RDFa 1.1"
+  xmlns:content="http://purl.org/rss/1.0/modules/content/"
+  xmlns:dc="http://purl.org/dc/terms/"
+  xmlns:foaf="http://xmlns.com/foaf/0.1/"
+  xmlns:og="http://ogp.me/ns#"
+  xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+  xmlns:sioc="http://rdfs.org/sioc/ns#"
+  xmlns:sioct="http://rdfs.org/sioc/types#"
+  xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+  xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+  xmlns:fb="http://ogp.me/ns/fb#"
+  xmlns:article="http://ogp.me/ns/article#"
+  xmlns:book="http://ogp.me/ns/book#"
+  xmlns:profile="http://ogp.me/ns/profile#"
+  xmlns:video="http://ogp.me/ns/video#">
+<head profile="http://www.w3.org/1999/xhtml/vocab">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><script type="text/javascript">(window.NREUM||(NREUM={})).loader_config={xpid:"UwEPUFdACQEAXFNUAwI="};window.NREUM||(NREUM={}),__nr_require=function(t,n,e){function r(e){if(!n[e]){var o=n[e]={exports:{}};t[e][0].call(o.exports,function(n){var o=t[e][1][n];return r(o||n)},o,o.exports)}return n[e].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<e.length;o++)r(e[o]);return r}({1:[function(t,n,e){function r(t){try{s.console&&console.log(t)}catch(n){}}var o,i=t("ee"),a=t(15),s={};try{o=localStorage.getItem("__nr_flags").split(","),console&&"function"==typeof console.log&&(s.console=!0,o.indexOf("dev")!==-1&&(s.dev=!0),o.indexOf("nr_dev")!==-1&&(s.nrDev=!0))}catch(c){}s.nrDev&&i.on("internal-error",function(t){r(t.stack)}),s.dev&&i.on("fn-err",function(t,n,e){r(e.stack)}),s.dev&&(r("NR AGENT IN DEVELOPMENT MODE"),r("flags: "+a(s,function(t,n){return t}).join(", ")))},{}],2:[function(t,n,e){function r(t,n,e,r,s){try{p?p-=1:o(s||new UncaughtException(t,n,e),!0)}catch(f){try{i("ierr",[f,c.now(),!0])}catch(d){}}return"function"==typeof u&&u.apply(this,a(arguments))}function UncaughtException(t,n,e){this.message=t||"Uncaught error with no additional information",this.sourceURL=n,this.line=e}function o(t,n){var e=n?null:c.now();i("err",[t,e])}var i=t("handle"),a=t(16),s=t("ee"),c=t("loader"),f=t("gos"),u=window.onerror,d=!1,l="nr@seenError",p=0;c.features.err=!0,t(1),window.onerror=r;try{throw new Error}catch(h){"stack"in h&&(t(8),t(7),"addEventListener"in window&&t(5),c.xhrWrappable&&t(9),d=!0)}s.on("fn-start",function(t,n,e){d&&(p+=1)}),s.on("fn-err",function(t,n,e){d&&!e[l]&&(f(e,l,function(){return!0}),this.thrown=!0,o(e))}),s.on("fn-end",function(){d&&!this.thrown&&p>0&&(p-=1)}),s.on("internal-error",function(t){i("ierr",[t,c.now(),!0])})},{}],3:[function(t,n,e){t("loader").features.ins=!0},{}],4:[function(t,n,e){function r(t){}if(window.performance&&window.performance.timing&&window.performance.getEntriesByType){var o=t("ee"),i=t("handle"),a=t(8),s=t(7),c="learResourceTimings",f="addEventListener",u="resourcetimingbufferfull",d="bstResource",l="resource",p="-start",h="-end",m="fn"+p,w="fn"+h,v="bstTimer",y="pushState",g=t("loader");g.features.stn=!0,t(6);var b=NREUM.o.EV;o.on(m,function(t,n){var e=t[0];e instanceof b&&(this.bstStart=g.now())}),o.on(w,function(t,n){var e=t[0];e instanceof b&&i("bst",[e,n,this.bstStart,g.now()])}),a.on(m,function(t,n,e){this.bstStart=g.now(),this.bstType=e}),a.on(w,function(t,n){i(v,[n,this.bstStart,g.now(),this.bstType])}),s.on(m,function(){this.bstStart=g.now()}),s.on(w,function(t,n){i(v,[n,this.bstStart,g.now(),"requestAnimationFrame"])}),o.on(y+p,function(t){this.time=g.now(),this.startPath=location.pathname+location.hash}),o.on(y+h,function(t){i("bstHist",[location.pathname+location.hash,this.startPath,this.time])}),f in window.performance&&(window.performance["c"+c]?window.performance[f](u,function(t){i(d,[window.performance.getEntriesByType(l)]),window.performance["c"+c]()},!1):window.performance[f]("webkit"+u,function(t){i(d,[window.performance.getEntriesByType(l)]),window.performance["webkitC"+c]()},!1)),document[f]("scroll",r,{passive:!0}),document[f]("keypress",r,!1),document[f]("click",r,!1)}},{}],5:[function(t,n,e){function r(t){for(var n=t;n&&!n.hasOwnProperty(u);)n=Object.getPrototypeOf(n);n&&o(n)}function o(t){s.inPlace(t,[u,d],"-",i)}function i(t,n){return t[1]}var a=t("ee").get("events"),s=t(18)(a,!0),c=t("gos"),f=XMLHttpRequest,u="addEventListener",d="removeEventListener";n.exports=a,"getPrototypeOf"in Object?(r(document),r(window),r(f.prototype)):f.prototype.hasOwnProperty(u)&&(o(window),o(f.prototype)),a.on(u+"-start",function(t,n){var e=t[1],r=c(e,"nr@wrapped",function(){function t(){if("function"==typeof e.handleEvent)return e.handleEvent.apply(e,arguments)}var n={object:t,"function":e}[typeof e];return n?s(n,"fn-",null,n.name||"anonymous"):e});this.wrapped=t[1]=r}),a.on(d+"-start",function(t){t[1]=this.wrapped||t[1]})},{}],6:[function(t,n,e){var r=t("ee").get("history"),o=t(18)(r);n.exports=r,o.inPlace(window.history,["pushState","replaceState"],"-")},{}],7:[function(t,n,e){var r=t("ee").get("raf"),o=t(18)(r),i="equestAnimationFrame";n.exports=r,o.inPlace(window,["r"+i,"mozR"+i,"webkitR"+i,"msR"+i],"raf-"),r.on("raf-start",function(t){t[0]=o(t[0],"fn-")})},{}],8:[function(t,n,e){function r(t,n,e){t[0]=a(t[0],"fn-",null,e)}function o(t,n,e){this.method=e,this.timerDuration=isNaN(t[1])?0:+t[1],t[0]=a(t[0],"fn-",this,e)}var i=t("ee").get("timer"),a=t(18)(i),s="setTimeout",c="setInterval",f="clearTimeout",u="-start",d="-";n.exports=i,a.inPlace(window,[s,"setImmediate"],s+d),a.inPlace(window,[c],c+d),a.inPlace(window,[f,"clearImmediate"],f+d),i.on(c+u,r),i.on(s+u,o)},{}],9:[function(t,n,e){function r(t,n){d.inPlace(n,["onreadystatechange"],"fn-",s)}function o(){var t=this,n=u.context(t);t.readyState>3&&!n.resolved&&(n.resolved=!0,u.emit("xhr-resolved",[],t)),d.inPlace(t,y,"fn-",s)}function i(t){g.push(t),h&&(x?x.then(a):w?w(a):(E=-E,O.data=E))}function a(){for(var t=0;t<g.length;t++)r([],g[t]);g.length&&(g=[])}function s(t,n){return n}function c(t,n){for(var e in t)n[e]=t[e];return n}t(5);var f=t("ee"),u=f.get("xhr"),d=t(18)(u),l=NREUM.o,p=l.XHR,h=l.MO,m=l.PR,w=l.SI,v="readystatechange",y=["onload","onerror","onabort","onloadstart","onloadend","onprogress","ontimeout"],g=[];n.exports=u;var b=window.XMLHttpRequest=function(t){var n=new p(t);try{u.emit("new-xhr",[n],n),n.addEventListener(v,o,!1)}catch(e){try{u.emit("internal-error",[e])}catch(r){}}return n};if(c(p,b),b.prototype=p.prototype,d.inPlace(b.prototype,["open","send"],"-xhr-",s),u.on("send-xhr-start",function(t,n){r(t,n),i(n)}),u.on("open-xhr-start",r),h){var x=m&&m.resolve();if(!w&&!m){var E=1,O=document.createTextNode(E);new h(a).observe(O,{characterData:!0})}}else f.on("fn-end",function(t){t[0]&&t[0].type===v||a()})},{}],10:[function(t,n,e){function r(t){var n=this.params,e=this.metrics;if(!this.ended){this.ended=!0;for(var r=0;r<d;r++)t.removeEventListener(u[r],this.listener,!1);if(!n.aborted){if(e.duration=a.now()-this.startTime,4===t.readyState){n.status=t.status;var i=o(t,this.lastSize);if(i&&(e.rxSize=i),this.sameOrigin){var c=t.getResponseHeader("X-NewRelic-App-Data");c&&(n.cat=c.split(", ").pop())}}else n.status=0;e.cbTime=this.cbTime,f.emit("xhr-done",[t],t),s("xhr",[n,e,this.startTime])}}}function o(t,n){var e=t.responseType;if("json"===e&&null!==n)return n;var r="arraybuffer"===e||"blob"===e||"json"===e?t.response:t.responseText;return h(r)}function i(t,n){var e=c(n),r=t.params;r.host=e.hostname+":"+e.port,r.pathname=e.pathname,t.sameOrigin=e.sameOrigin}var a=t("loader");if(a.xhrWrappable){var s=t("handle"),c=t(11),f=t("ee"),u=["load","error","abort","timeout"],d=u.length,l=t("id"),p=t(14),h=t(13),m=window.XMLHttpRequest;a.features.xhr=!0,t(9),f.on("new-xhr",function(t){var n=this;n.totalCbs=0,n.called=0,n.cbTime=0,n.end=r,n.ended=!1,n.xhrGuids={},n.lastSize=null,p&&(p>34||p<10)||window.opera||t.addEventListener("progress",function(t){n.lastSize=t.loaded},!1)}),f.on("open-xhr-start",function(t){this.params={method:t[0]},i(this,t[1]),this.metrics={}}),f.on("open-xhr-end",function(t,n){"loader_config"in NREUM&&"xpid"in NREUM.loader_config&&this.sameOrigin&&n.setRequestHeader("X-NewRelic-ID",NREUM.loader_config.xpid)}),f.on("send-xhr-start",function(t,n){var e=this.metrics,r=t[0],o=this;if(e&&r){var i=h(r);i&&(e.txSize=i)}this.startTime=a.now(),this.listener=function(t){try{"abort"===t.type&&(o.params.aborted=!0),("load"!==t.type||o.called===o.totalCbs&&(o.onloadCalled||"function"!=typeof n.onload))&&o.end(n)}catch(e){try{f.emit("internal-error",[e])}catch(r){}}};for(var s=0;s<d;s++)n.addEventListener(u[s],this.listener,!1)}),f.on("xhr-cb-time",function(t,n,e){this.cbTime+=t,n?this.onloadCalled=!0:this.called+=1,this.called!==this.totalCbs||!this.onloadCalled&&"function"==typeof e.onload||this.end(e)}),f.on("xhr-load-added",function(t,n){var e=""+l(t)+!!n;this.xhrGuids&&!this.xhrGuids[e]&&(this.xhrGuids[e]=!0,this.totalCbs+=1)}),f.on("xhr-load-removed",function(t,n){var e=""+l(t)+!!n;this.xhrGuids&&this.xhrGuids[e]&&(delete this.xhrGuids[e],this.totalCbs-=1)}),f.on("addEventListener-end",function(t,n){n instanceof m&&"load"===t[0]&&f.emit("xhr-load-added",[t[1],t[2]],n)}),f.on("removeEventListener-end",function(t,n){n instanceof m&&"load"===t[0]&&f.emit("xhr-load-removed",[t[1],t[2]],n)}),f.on("fn-start",function(t,n,e){n instanceof m&&("onload"===e&&(this.onload=!0),("load"===(t[0]&&t[0].type)||this.onload)&&(this.xhrCbStart=a.now()))}),f.on("fn-end",function(t,n){this.xhrCbStart&&f.emit("xhr-cb-time",[a.now()-this.xhrCbStart,this.onload,n],n)})}},{}],11:[function(t,n,e){n.exports=function(t){var n=document.createElement("a"),e=window.location,r={};n.href=t,r.port=n.port;var o=n.href.split("://");!r.port&&o[1]&&(r.port=o[1].split("/")[0].split("@").pop().split(":")[1]),r.port&&"0"!==r.port||(r.port="https"===o[0]?"443":"80"),r.hostname=n.hostname||e.hostname,r.pathname=n.pathname,r.protocol=o[0],"/"!==r.pathname.charAt(0)&&(r.pathname="/"+r.pathname);var i=!n.protocol||":"===n.protocol||n.protocol===e.protocol,a=n.hostname===document.domain&&n.port===e.port;return r.sameOrigin=i&&(!n.hostname||a),r}},{}],12:[function(t,n,e){function r(){}function o(t,n,e){return function(){return i(t,[f.now()].concat(s(arguments)),n?null:this,e),n?void 0:this}}var i=t("handle"),a=t(15),s=t(16),c=t("ee").get("tracer"),f=t("loader"),u=NREUM;"undefined"==typeof window.newrelic&&(newrelic=u);var d=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],l="api-",p=l+"ixn-";a(d,function(t,n){u[n]=o(l+n,!0,"api")}),u.addPageAction=o(l+"addPageAction",!0),u.setCurrentRouteName=o(l+"routeName",!0),n.exports=newrelic,u.interaction=function(){return(new r).get()};var h=r.prototype={createTracer:function(t,n){var e={},r=this,o="function"==typeof n;return i(p+"tracer",[f.now(),t,e],r),function(){if(c.emit((o?"":"no-")+"fn-start",[f.now(),r,o],e),o)try{return n.apply(this,arguments)}catch(t){throw c.emit("fn-err",[arguments,this,t],e),t}finally{c.emit("fn-end",[f.now()],e)}}}};a("setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(t,n){h[n]=o(p+n)}),newrelic.noticeError=function(t){"string"==typeof t&&(t=new Error(t)),i("err",[t,f.now()])}},{}],13:[function(t,n,e){n.exports=function(t){if("string"==typeof t&&t.length)return t.length;if("object"==typeof t){if("undefined"!=typeof ArrayBuffer&&t instanceof ArrayBuffer&&t.byteLength)return t.byteLength;if("undefined"!=typeof Blob&&t instanceof Blob&&t.size)return t.size;if(!("undefined"!=typeof FormData&&t instanceof FormData))try{return JSON.stringify(t).length}catch(n){return}}}},{}],14:[function(t,n,e){var r=0,o=navigator.userAgent.match(/Firefox[\/\s](\d+\.\d+)/);o&&(r=+o[1]),n.exports=r},{}],15:[function(t,n,e){function r(t,n){var e=[],r="",i=0;for(r in t)o.call(t,r)&&(e[i]=n(r,t[r]),i+=1);return e}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],16:[function(t,n,e){function r(t,n,e){n||(n=0),"undefined"==typeof e&&(e=t?t.length:0);for(var r=-1,o=e-n||0,i=Array(o<0?0:o);++r<o;)i[r]=t[n+r];return i}n.exports=r},{}],17:[function(t,n,e){n.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],18:[function(t,n,e){function r(t){return!(t&&t instanceof Function&&t.apply&&!t[a])}var o=t("ee"),i=t(16),a="nr@original",s=Object.prototype.hasOwnProperty,c=!1;n.exports=function(t,n){function e(t,n,e,o){function nrWrapper(){var r,a,s,c;try{a=this,r=i(arguments),s="function"==typeof e?e(r,a):e||{}}catch(f){l([f,"",[r,a,o],s])}u(n+"start",[r,a,o],s);try{return c=t.apply(a,r)}catch(d){throw u(n+"err",[r,a,d],s),d}finally{u(n+"end",[r,a,c],s)}}return r(t)?t:(n||(n=""),nrWrapper[a]=t,d(t,nrWrapper),nrWrapper)}function f(t,n,o,i){o||(o="");var a,s,c,f="-"===o.charAt(0);for(c=0;c<n.length;c++)s=n[c],a=t[s],r(a)||(t[s]=e(a,f?s+o:o,i,s))}function u(e,r,o){if(!c||n){var i=c;c=!0;try{t.emit(e,r,o,n)}catch(a){l([a,e,r,o])}c=i}}function d(t,n){if(Object.defineProperty&&Object.keys)try{var e=Object.keys(t);return e.forEach(function(e){Object.defineProperty(n,e,{get:function(){return t[e]},set:function(n){return t[e]=n,n}})}),n}catch(r){l([r])}for(var o in t)s.call(t,o)&&(n[o]=t[o]);return n}function l(n){try{t.emit("internal-error",n)}catch(e){}}return t||(t=o),e.inPlace=f,e.flag=a,e}},{}],ee:[function(t,n,e){function r(){}function o(t){function n(t){return t&&t instanceof r?t:t?c(t,s,i):i()}function e(e,r,o,i){if(!l.aborted||i){t&&t(e,r,o);for(var a=n(o),s=h(e),c=s.length,f=0;f<c;f++)s[f].apply(a,r);var d=u[y[e]];return d&&d.push([g,e,r,a]),a}}function p(t,n){v[t]=h(t).concat(n)}function h(t){return v[t]||[]}function m(t){return d[t]=d[t]||o(e)}function w(t,n){f(t,function(t,e){n=n||"feature",y[e]=n,n in u||(u[n]=[])})}var v={},y={},g={on:p,emit:e,get:m,listeners:h,context:n,buffer:w,abort:a,aborted:!1};return g}function i(){return new r}function a(){(u.api||u.feature)&&(l.aborted=!0,u=l.backlog={})}var s="nr@context",c=t("gos"),f=t(15),u={},d={},l=n.exports=o();l.backlog=u},{}],gos:[function(t,n,e){function r(t,n,e){if(o.call(t,n))return t[n];var r=e();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(t,n,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return t[n]=r,r}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],handle:[function(t,n,e){function r(t,n,e,r){o.buffer([t],r),o.emit(t,n,e)}var o=t("ee").get("handle");n.exports=r,r.ee=o},{}],id:[function(t,n,e){function r(t){var n=typeof t;return!t||"object"!==n&&"function"!==n?-1:t===window?0:a(t,i,function(){return o++})}var o=1,i="nr@id",a=t("gos");n.exports=r},{}],loader:[function(t,n,e){function r(){if(!x++){var t=b.info=NREUM.info,n=l.getElementsByTagName("script")[0];if(setTimeout(u.abort,3e4),!(t&&t.licenseKey&&t.applicationID&&n))return u.abort();f(y,function(n,e){t[n]||(t[n]=e)}),c("mark",["onload",a()+b.offset],null,"api");var e=l.createElement("script");e.src="https://"+t.agent,n.parentNode.insertBefore(e,n)}}function o(){"complete"===l.readyState&&i()}function i(){c("mark",["domContent",a()+b.offset],null,"api")}function a(){return E.exists&&performance.now?Math.round(performance.now()):(s=Math.max((new Date).getTime(),s))-b.offset}var s=(new Date).getTime(),c=t("handle"),f=t(15),u=t("ee"),d=window,l=d.document,p="addEventListener",h="attachEvent",m=d.XMLHttpRequest,w=m&&m.prototype;NREUM.o={ST:setTimeout,SI:d.setImmediate,CT:clearTimeout,XHR:m,REQ:d.Request,EV:d.Event,PR:d.Promise,MO:d.MutationObserver};var v=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1071.min.js"},g=m&&w&&w[p]&&!/CriOS/.test(navigator.userAgent),b=n.exports={offset:s,now:a,origin:v,features:{},xhrWrappable:g};t(12),l[p]?(l[p]("DOMContentLoaded",i,!1),d[p]("load",r,!1)):(l[h]("onreadystatechange",o),d[h]("onload",r)),c("mark",["firstbyte",s],null,"api");var x=0,E=t(17)},{}]},{},["loader",2,10,4,3]);</script>
+<link rel="shortcut icon" href="https://wintergames.ap.org/profiles/ap/themes/ap_wintergames/favicon.ico" type="image/vnd.microsoft.icon" />
+<meta name="ap-news-app" content="" app-id="364677107" app-argument="https://apnews.com/" />
+<script type="text/javascript">(function(b,r,a,n,c,h,_,s,d,k){if(!b[n]||!b[n]._q){for(;s<_.length;)c(h,_[s++]);d=r.createElement(a);d.async=1;d.src="https://cdn.branch.io/branch-latest.min.js";k=r.getElementsByTagName(a)[0];k.parentNode.insertBefore(d,k);b[n]=h}})(window,document,"script","branch",function(b,r){b[r]=function(){b._q.push([r,arguments])}},{_q:[],_v:1},"addListener applyCode banner closeBanner creditHistory credits data deepview deepviewCta first getCode init link logout redeem referrals removeListener sendSMS setBranchViewData setIdentity track validateCode".split(" "), 0);
+    branch.init(‘key_live_ndufC8VAc2V3dnaX3lenvdhkvAc3rs4S’, function(err, data) {
+        // callback to handle err or data
+    });</script>
+<meta property="al:ios:url" content="apnews://" />
+<meta name="description" content="The latest PyeongChang 2018 Winter Olympics news, photos, results, schedule and medal count from the Associated Press." />
+<meta name="keyword" content="PyeongChang Olympics, 2018 Winter Olympics, Latest News, Photos, Highlights, TV Schedule, Real-Time Results, Medals, Opening Ceremony, Athletes, Photos" />
+<meta name="msvalidate.01" content="97FF823CBF8983D19E2F1571F322BF93" />
+<meta name="title" content="2018 Winter Olympics" />
+<link href="https://wintergames.ap.org/profiles/ap/themes/ap_wintergames/touch-icon.png" rel="apple-touch-icon" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no" />
+<meta name="generator" content="Drupal 7 (http://drupal.org)" />
+<link rel="canonical" href="https://wintergames.ap.org/wtop" />
+<link rel="shortlink" href="https://wintergames.ap.org/wtop" />
+<meta property="og:site_name" content="2018 Winter Olympics" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://wintergames.ap.org/wtop" />
+<meta property="og:title" content="2018 Winter Olympics" />
+<meta property="og:description" content="The latest PyeongChang 2018 Winter Olympics news, photos, results, schedule and medal count from the Associated Press" />
+  <title>2018 Winter Olympics  |  The latest PyeongChang 2018 Winter Olympics news, photos, results, schedule and medal count from the Associated Press</title>
+  <style type="text/css" media="all">@import url("");</style>  <style type="text/css" media="all">
+@import url("https://wintergames.ap.org/modules/system/system.base.css?p47ige");
+@import url("https://wintergames.ap.org/modules/system/system.menus.css?p47ige");
+@import url("https://wintergames.ap.org/modules/system/system.messages.css?p47ige");
+@import url("https://wintergames.ap.org/modules/system/system.theme.css?p47ige");
+</style>
+<style type="text/css" media="all">
+@import url("https://wintergames.ap.org/profiles/ap/modules/custom/core/ap_boxes/css/flyout.css?p47ige");
+@import url("https://wintergames.ap.org/profiles/ap/modules/contrib/date/date_api/date.css?p47ige");
+@import url("https://wintergames.ap.org/profiles/ap/modules/contrib/date/date_popup/themes/datepicker.1.7.css?p47ige");
+@import url("https://wintergames.ap.org/modules/field/theme/field.css?p47ige");
+@import url("https://wintergames.ap.org/modules/node/node.css?p47ige");
+@import url("https://wintergames.ap.org/modules/search/search.css?p47ige");
+@import url("https://wintergames.ap.org/modules/user/user.css?p47ige");
+@import url("https://wintergames.ap.org/profiles/ap/modules/contrib/views/css/views.css?p47ige");
+</style>
+<style type="text/css" media="all">
+@import url("https://wintergames.ap.org/profiles/ap/modules/contrib/ctools/css/ctools.css?p47ige");
+@import url("https://wintergames.ap.org/profiles/ap/modules/contrib/twitter_pull/twitter-pull-listing.css?p47ige");
+@import url("https://wintergames.ap.org/profiles/ap/modules/custom/core/ap_twitter/css/ap_twitter_wtg.css?p47ige");
+</style>
+<style type="text/css" media="all">
+<!--/*--><![CDATA[/*><!--*/
+#boxes-box-homepage_curated .node-ap-display-position-4 .field-name-field-thumbnail{height:-612px;overflow:hidden;}
+
+/*]]>*/-->
+</style>
+<style type="text/css" media="all">
+@import url("https://wintergames.ap.org/profiles/ap/modules/custom/optional/ap_wintergames/ap_wintergames_schedule/css/ap_wintergames_schedule_events.css?p47ige");
+</style>
+<style type="text/css" media="all">
+<!--/*--><![CDATA[/*><!--*/
+.boxes-box-controls{display:none;}
+#wl-basic-menu .item-list li a{background-color:#b2b2b2 !important}#wl-basic-menu .item-list li a{color:#bf0000 !important}.member-nav-wrapper{background:rgba(219,212,212,1)!important}#wl-basic-menu .item-list li a:hover{color:#ffffff !important;}#wl-basic-menu .item-list li a:hover{background-color:#e2ddcf !important;}
+#wl-basic-menu .item-list li a{background-color:#b2b2b2 !important}#wl-basic-menu .item-list li a{color:#bf0000 !important}.member-nav-wrapper{background:rgba(219,212,212,1)!important}#wl-basic-menu .item-list li a:hover{color:#ffffff !important;}#wl-basic-menu .item-list li a:hover{background-color:#e2ddcf !important;}
+.boxes-box-controls{display:none;}
+
+/*]]>*/-->
+</style>
+<style type="text/css" media="all">
+@import url("https://wintergames.ap.org/profiles/ap/modules/custom/optional/ap_wintergames/ap_wintergames_medals/css/flag-icon.min.css?p47ige");
+@import url("https://wintergames.ap.org/profiles/ap/modules/custom/optional/ap_wintergames/ap_wintergames_medals/css/ap_wintergames_medals.css?p47ige");
+</style>
+<style type="text/css" media="all">
+<!--/*--><![CDATA[/*><!--*/
+.boxes-box-controls{display:none;}
+.boxes-box-controls{display:none;}
+.boxes-box-controls{display:none;}
+.boxes-box-controls{display:none;}
+.boxes-box-controls{display:none;}
+
+/*]]>*/-->
+</style>
+<style type="text/css" media="all">
+@import url("https://wintergames.ap.org/profiles/ap/modules/custom/core/ap_microformats/ap_microformats.css?p47ige");
+</style>
+<style type="text/css" media="all">
+<!--/*--><![CDATA[/*><!--*/
+.boxes-box-controls{display:none;}
+
+/*]]>*/-->
+</style>
+<style type="text/css" media="all">
+@import url("https://wintergames.ap.org/profiles/ap/themes/vpp_default/css/fonts.css?p47ige");
+@import url("https://wintergames.ap.org/profiles/ap/themes/ap_wintergames/font-awesome-4.4.0/css/font-awesome.min.css?p47ige");
+@import url("https://wintergames.ap.org/profiles/ap/themes/ap_wintergames/css/normalize.css?p47ige");
+@import url("https://wintergames.ap.org/profiles/ap/themes/ap_wintergames/css/drawer.css?p47ige");
+@import url("https://wintergames.ap.org/profiles/ap/themes/ap_wintergames/css/app.css?p47ige");
+@import url("https://wintergames.ap.org/profiles/ap/themes/ap_wintergames/ap-wintergames-icons/ap-wintergames-icons.css?p47ige");
+</style>
+<style type="text/css" media="all">
+@import url("https://wintergames.ap.org/profiles/ap/themes/omega/alpha/css/alpha-reset.css?p47ige");
+@import url("https://wintergames.ap.org/profiles/ap/themes/omega/alpha/css/alpha-mobile.css?p47ige");
+@import url("https://wintergames.ap.org/profiles/ap/themes/omega/alpha/css/alpha-alpha.css?p47ige");
+@import url("https://wintergames.ap.org/profiles/ap/themes/omega/omega/css/omega-text.css?p47ige");
+@import url("https://wintergames.ap.org/profiles/ap/themes/omega/omega/css/omega-branding.css?p47ige");
+@import url("https://wintergames.ap.org/profiles/ap/themes/omega/omega/css/omega-menu.css?p47ige");
+@import url("https://wintergames.ap.org/profiles/ap/themes/omega/omega/css/omega-visuals.css?p47ige");
+</style>
+<style type="text/css" media="print">
+@import url("https://wintergames.ap.org/profiles/ap/themes/ap_wintergames/css/print.css?p47ige");
+</style>
+<style type="text/css" media="screen">
+@import url("https://wintergames.ap.org/profiles/ap/themes/ap_wintergames/css/global.css?p47ige");
+</style>
+
+<!--[if (lt IE 9)&(!IEMobile)]>
+<style type="text/css" media="all">
+@import url("https://wintergames.ap.org/profiles/ap/themes/vpp_default/css/vpp-default-alpha-default.css?p47ige");
+@import url("https://wintergames.ap.org/profiles/ap/themes/vpp_default/css/vpp-default-alpha-default-normal.css?p47ige");
+@import url("https://wintergames.ap.org/profiles/ap/themes/omega/alpha/css/grid/alpha_default/normal/alpha-default-normal-12.css?p47ige");
+</style>
+<![endif]-->
+
+<!--[if gte IE 9]><!-->
+<style type="text/css" media="screen and (min-width: 740px) and (min-device-width: 740px), (max-device-width: 800px) and (min-width: 740px) and (orientation:landscape)">
+@import url("https://wintergames.ap.org/profiles/ap/themes/vpp_default/css/vpp-default-alpha-default.css?p47ige");
+@import url("https://wintergames.ap.org/profiles/ap/themes/vpp_default/css/vpp-default-alpha-default-narrow.css?p47ige");
+@import url("https://wintergames.ap.org/profiles/ap/themes/omega/alpha/css/grid/alpha_default/narrow/alpha-default-narrow-12.css?p47ige");
+</style>
+<!--<![endif]-->
+
+<!--[if gte IE 9]><!-->
+<style type="text/css" media="screen and (min-width: 1040px) and (min-device-width: 1040px), all and (max-device-width: 1024px) and (min-width: 1024px) and (orientation:landscape)">
+@import url("https://wintergames.ap.org/profiles/ap/themes/vpp_default/css/vpp-default-alpha-default.css?p47ige");
+@import url("https://wintergames.ap.org/profiles/ap/themes/vpp_default/css/vpp-default-alpha-default-normal.css?p47ige");
+@import url("https://wintergames.ap.org/profiles/ap/themes/omega/alpha/css/grid/alpha_default/normal/alpha-default-normal-12.css?p47ige");
+</style>
+<!--<![endif]-->
+  <script type="text/javascript">
+<!--//--><![CDATA[//><!--
+window.google_analytics_uacct = "UA-27590430-12";
+//--><!]]>
+</script>
+<script type="text/javascript" src="https://wintergames.ap.org/profiles/ap/modules/contrib/jquery_update/replace/jquery/1.10/jquery.min.js?v=1.10.2"></script>
+<script type="text/javascript" src="https://wintergames.ap.org/misc/jquery.once.js?v=1.2"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+var googletag = googletag || {};
+googletag.cmd = googletag.cmd || [];
+googletag.slots = googletag.slots || {};
+//--><!]]>
+</script>
+<script type="text/javascript" src="https://www.googletagservices.com/tag/js/gpt.js"></script>
+<script type="text/javascript" src="https://wintergames.ap.org/misc/drupal.js?p47ige"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+googletag.cmd.push(function() {
+googletag.slots["highimpact"] = googletag.defineSlot("/15786418/Wintergames/standardspeaker/site/home/HighImpact", [1, 1], "dfp-ad-highimpact")
+  .addService(googletag.pubads())
+});
+//--><!]]>
+</script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+googletag.cmd.push(function() {
+googletag.slots["leaderboard"] = googletag.defineSlot("/15786418/WinterGames/standardspeaker/site/home", [[970, 250], [970, 90], [728, 90], []], "dfp-ad-leaderboard")
+  .addService(googletag.pubads())
+});
+//--><!]]>
+</script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+googletag.cmd.push(function() {
+googletag.slots["mobileleaderboard"] = googletag.defineSlot("/15786418/WinterGames/standardspeaker/site/home", [[300, 50], [320, 50]], "dfp-ad-mobileleaderboard")
+  .addService(googletag.pubads())
+});
+//--><!]]>
+</script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+googletag.cmd.push(function() {
+googletag.slots["mediumrectangle"] = googletag.defineSlot("/15786418/WinterGames/standardspeaker/site/home", [300, 250], "dfp-ad-mediumrectangle")
+  .addService(googletag.pubads())
+});
+//--><!]]>
+</script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+googletag.cmd.push(function() {
+googletag.slots["menusponsor"] = googletag.defineSlot("/15786418/WinterGames/standardspeaker/home", [88, 31], "dfp-ad-menusponsor")
+  .addService(googletag.pubads())
+});
+//--><!]]>
+</script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+googletag.cmd.push(function() {
+googletag.slots["leaderboard"] = googletag.defineSlot("/15786418//15786418/WinterGames/standardspeaker/site/home", [[[[970], [250]], [[970], [90]], [[728], [90]], [[]]]], "dfp-ad-leaderboard")
+  .addService(googletag.pubads())
+});
+//--><!]]>
+</script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+googletag.cmd.push(function() {
+googletag.slots["mobileleaderboard"] = googletag.defineSlot("/15786418//15786418/WinterGames/standardspeaker/site/home", [[[[300], [50]], [[320], [50]]]], "dfp-ad-mobileleaderboard")
+  .addService(googletag.pubads())
+});
+//--><!]]>
+</script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+var _comscore = _comscore || [];
+_comscore.push({ c1: "2", c2: "11304492" });(function() { var s = document.createElement("script"), el = document.getElementsByTagName("script")[0]; s.async = true; s.src = (document.location.protocol == "https:" ? "https://sb" : "http://b") + ".scorecardresearch.com/beacon.js"; el.parentNode.insertBefore(s, el); })();
+//--><!]]>
+</script>
+<script type="text/javascript" src="https://wintergames.ap.org/profiles/ap/modules/custom/core/ap_boxes/js/jquery.hoverIntent.minified.js?p47ige"></script>
+<script type="text/javascript" src="https://wintergames.ap.org/profiles/ap/modules/custom/core/ap_boxes/js/jquery.masonry.min.js?p47ige"></script>
+<script type="text/javascript" src="https://wintergames.ap.org/profiles/ap/modules/custom/core/ap_boxes/js/ap_boxes.js?p47ige"></script>
+<script type="text/javascript" src="https://wintergames.ap.org/profiles/ap/modules/custom/core/ap_boxes/js/ap_boxes_masonry.js?p47ige"></script>
+<script type="text/javascript" src="https://wintergames.ap.org/profiles/ap/modules/custom/core/ap_boxes/js/ap_boxes_flyout.js?p47ige"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+googletag.cmd.push(function() {
+  googletag.pubads().enableAsyncRendering();
+  googletag.pubads().enableSingleRequest();
+  googletag.pubads().collapseEmptyDivs();
+googletag.enableServices();});
+
+//--><!]]>
+</script>
+<script type="text/javascript" src="https://wintergames.ap.org/profiles/ap/modules/custom/optional/ap_wintergames/js/scrolldepth.js?p47ige"></script>
+<script type="text/javascript" src="https://wintergames.ap.org/profiles/ap/modules/custom/optional/ap_wintergames/js/ap_wintergames_ga.js?p47ige"></script>
+<script type="text/javascript" src="https://wintergames.ap.org/profiles/ap/modules/custom/optional/responsive_dfp_box/js/responsive_dfp.js?p47ige"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
+//--><!]]>
+</script>
+<script type="text/javascript" src="//platform.twitter.com/widgets.js"></script>
+<script type="text/javascript" src="https://wintergames.ap.org/profiles/ap/modules/custom/optional/ap_wintergames/ap_wintergames_schedule/js/ap_wintergames_schedule.js?p47ige"></script>
+<script type="text/javascript" src="https://wintergames.ap.org/profiles/ap/modules/custom/core/ap_article/js/ap_article_WG.js?p47ige"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+window.CKEDITOR_BASEPATH = '/profiles/ap/libraries/ckeditor/'
+//--><!]]>
+</script>
+<script type="text/javascript" src="https://wintergames.ap.org/profiles/ap/modules/contrib/google_analytics/googleanalytics.js?p47ige"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+(function(i,s,o,g,r,a,m){i["GoogleAnalyticsObject"]=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,"script","//www.google-analytics.com/analytics.js","ga");ga("create", "UA-27590430-12", "auto");ga("send", "pageview");
+//--><!]]>
+</script>
+<script type="text/javascript" src="https://use.typekit.com/uta3cck.js"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+try{Typekit.load();}catch(e){}
+//--><!]]>
+</script>
+<script type="text/javascript" src="https://wintergames.ap.org/profiles/ap/modules/custom/optional/ap_wintergames/ap_wintergames_medals/js/ap_wintergames_medals_2.js?p47ige"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+(function($) { 
+          $(window).load(function() {
+            if (window._gat) {
+              var wlTracker = window._gat._getTracker("UA-1579614-9"); // whitelabel only
+              wlTracker._trackPageview();
+            }else if (window.ga && ga.loaded){
+              ga("create", "UA-1579614-9", "auto", "whitelabel"); // whitelabel only
+              ga("whitelabel.send", "pageview");  
+            }
+          });
+        })(jQuery);
+//--><!]]>
+</script>
+<script type="text/javascript" src="https://wintergames.ap.org/profiles/ap/themes/ap_wintergames/js/mondernizr.custom.min.js?p47ige"></script>
+<script type="text/javascript" src="https://wintergames.ap.org/profiles/ap/themes/ap_wintergames/js/libs/jquery.browser.min.js?p47ige"></script>
+<script type="text/javascript" src="https://wintergames.ap.org/profiles/ap/themes/ap_wintergames/js/libs/iscroll.min.js?p47ige"></script>
+<script type="text/javascript" src="https://wintergames.ap.org/profiles/ap/themes/ap_wintergames/js/libs/drawer.min.js?p47ige"></script>
+<script type="text/javascript" src="https://wintergames.ap.org/profiles/ap/themes/ap_wintergames/js/libs/dropdown.min.js?p47ige"></script>
+<script type="text/javascript" src="https://wintergames.ap.org/profiles/ap/themes/ap_wintergames/js/app.js?p47ige"></script>
+<script type="text/javascript" src="https://wintergames.ap.org/profiles/ap/themes/ap_wintergames/js/read-more.js?p47ige"></script>
+<script type="text/javascript" src="https://wintergames.ap.org/profiles/ap/themes/omega/omega/js/omega-mediaqueries.js?p47ige"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+jQuery.extend(Drupal.settings, {"basePath":"\/","pathPrefix":"","ajaxPageState":{"theme":"ap_wintergames","theme_token":"Lz3NBuTyd9_ztEXMjStohNfFf0ak05x2WxfyWF57Vgs","js":{"0":1,"profiles\/ap\/modules\/contrib\/jquery_update\/replace\/jquery\/1.10\/jquery.min.js":1,"misc\/jquery.once.js":1,"1":1,"https:\/\/www.googletagservices.com\/tag\/js\/gpt.js":1,"misc\/drupal.js":1,"2":1,"3":1,"4":1,"5":1,"6":1,"7":1,"8":1,"9":1,"profiles\/ap\/modules\/custom\/core\/ap_boxes\/js\/jquery.hoverIntent.minified.js":1,"profiles\/ap\/modules\/custom\/core\/ap_boxes\/js\/jquery.masonry.min.js":1,"profiles\/ap\/modules\/custom\/core\/ap_boxes\/js\/ap_boxes.js":1,"profiles\/ap\/modules\/custom\/core\/ap_boxes\/js\/ap_boxes_masonry.js":1,"profiles\/ap\/modules\/custom\/core\/ap_boxes\/js\/ap_boxes_flyout.js":1,"10":1,"profiles\/ap\/modules\/custom\/optional\/ap_wintergames\/js\/scrolldepth.js":1,"profiles\/ap\/modules\/custom\/optional\/ap_wintergames\/js\/ap_wintergames_ga.js":1,"profiles\/ap\/modules\/custom\/optional\/responsive_dfp_box\/js\/responsive_dfp.js":1,"11":1,"\/\/platform.twitter.com\/widgets.js":1,"profiles\/ap\/modules\/custom\/optional\/ap_wintergames\/ap_wintergames_schedule\/js\/ap_wintergames_schedule.js":1,"profiles\/ap\/modules\/custom\/core\/ap_article\/js\/ap_article_WG.js":1,"12":1,"profiles\/ap\/modules\/contrib\/google_analytics\/googleanalytics.js":1,"13":1,"https:\/\/use.typekit.com\/uta3cck.js":1,"14":1,"profiles\/ap\/modules\/custom\/optional\/ap_wintergames\/ap_wintergames_medals\/js\/ap_wintergames_medals_2.js":1,"15":1,"profiles\/ap\/themes\/ap_wintergames\/js\/mondernizr.custom.min.js":1,"profiles\/ap\/themes\/ap_wintergames\/js\/libs\/jquery.browser.min.js":1,"profiles\/ap\/themes\/ap_wintergames\/js\/libs\/iscroll.min.js":1,"profiles\/ap\/themes\/ap_wintergames\/js\/libs\/drawer.min.js":1,"profiles\/ap\/themes\/ap_wintergames\/js\/libs\/dropdown.min.js":1,"profiles\/ap\/themes\/ap_wintergames\/js\/app.js":1,"profiles\/ap\/themes\/ap_wintergames\/js\/read-more.js":1,"profiles\/ap\/themes\/omega\/omega\/js\/omega-mediaqueries.js":1},"css":{"modules\/system\/system.base.css":1,"modules\/system\/system.menus.css":1,"modules\/system\/system.messages.css":1,"modules\/system\/system.theme.css":1,"profiles\/ap\/modules\/custom\/core\/ap_boxes\/css\/flyout.css":1,"profiles\/ap\/modules\/contrib\/date\/date_api\/date.css":1,"profiles\/ap\/modules\/contrib\/date\/date_popup\/themes\/datepicker.1.7.css":1,"modules\/field\/theme\/field.css":1,"modules\/node\/node.css":1,"modules\/search\/search.css":1,"modules\/user\/user.css":1,"profiles\/ap\/modules\/contrib\/views\/css\/views.css":1,"profiles\/ap\/modules\/contrib\/ctools\/css\/ctools.css":1,"profiles\/ap\/modules\/contrib\/twitter_pull\/twitter-pull-listing.css":1,"profiles\/ap\/modules\/custom\/core\/ap_twitter\/css\/ap_twitter_wtg.css":1,"0":1,"profiles\/ap\/modules\/custom\/optional\/ap_wintergames\/ap_wintergames_schedule\/css\/ap_wintergames_schedule_events.css":1,"1":1,"2":1,"3":1,"4":1,"profiles\/ap\/modules\/custom\/optional\/ap_wintergames\/ap_wintergames_medals\/css\/flag-icon.min.css":1,"profiles\/ap\/modules\/custom\/optional\/ap_wintergames\/ap_wintergames_medals\/css\/ap_wintergames_medals.css":1,"5":1,"6":1,"7":1,"8":1,"9":1,"profiles\/ap\/modules\/custom\/core\/ap_microformats\/ap_microformats.css":1,"10":1,"profiles\/ap\/themes\/vpp_default\/css\/fonts.css":1,"profiles\/ap\/themes\/ap_wintergames\/font-awesome-4.4.0\/css\/font-awesome.min.css":1,"profiles\/ap\/themes\/ap_wintergames\/css\/normalize.css":1,"profiles\/ap\/themes\/ap_wintergames\/css\/drawer.css":1,"profiles\/ap\/themes\/ap_wintergames\/css\/app.css":1,"profiles\/ap\/themes\/ap_wintergames\/ap-wintergames-icons\/ap-wintergames-icons.css":1,"profiles\/ap\/themes\/omega\/alpha\/css\/alpha-reset.css":1,"profiles\/ap\/themes\/omega\/alpha\/css\/alpha-mobile.css":1,"profiles\/ap\/themes\/omega\/alpha\/css\/alpha-alpha.css":1,"profiles\/ap\/themes\/omega\/omega\/css\/omega-text.css":1,"profiles\/ap\/themes\/omega\/omega\/css\/omega-branding.css":1,"profiles\/ap\/themes\/omega\/omega\/css\/omega-menu.css":1,"profiles\/ap\/themes\/omega\/omega\/css\/omega-visuals.css":1,"profiles\/ap\/themes\/ap_wintergames\/css\/print.css":1,"profiles\/ap\/themes\/ap_wintergames\/css\/global.css":1,"ie::normal::profiles\/ap\/themes\/vpp_default\/css\/vpp-default-alpha-default.css":1,"ie::normal::profiles\/ap\/themes\/vpp_default\/css\/vpp-default-alpha-default-normal.css":1,"ie::normal::profiles\/ap\/themes\/omega\/alpha\/css\/grid\/alpha_default\/normal\/alpha-default-normal-12.css":1,"narrow::profiles\/ap\/themes\/vpp_default\/css\/vpp-default-alpha-default.css":1,"narrow::profiles\/ap\/themes\/vpp_default\/css\/vpp-default-alpha-default-narrow.css":1,"profiles\/ap\/themes\/omega\/alpha\/css\/grid\/alpha_default\/narrow\/alpha-default-narrow-12.css":1,"normal::profiles\/ap\/themes\/vpp_default\/css\/vpp-default-alpha-default.css":1,"normal::profiles\/ap\/themes\/vpp_default\/css\/vpp-default-alpha-default-normal.css":1,"profiles\/ap\/themes\/omega\/alpha\/css\/grid\/alpha_default\/normal\/alpha-default-normal-12.css":1}},"responsive_dfp_box":{"responsive_leaderboard":{"desktop":"\n\u003Cdiv  id=\u0022dfp-ad-leaderboard\u0022 class=\u0022dfp-tag-wrapper\u0022\u003E\n    \u003Cscript type=\u0022text\/javascript\u0022\u003E\n    googletag.cmd.push(function() {\n      googletag.display(\u0022dfp-ad-leaderboard\u0022);\n    });\n  \u003C\/script\u003E\n\u003C\/div\u003E\n","mobile":"\n\u003Cdiv  id=\u0022dfp-ad-mobileleaderboard\u0022 class=\u0022dfp-tag-wrapper\u0022\u003E\n    \u003Cscript type=\u0022text\/javascript\u0022\u003E\n    googletag.cmd.push(function() {\n      googletag.display(\u0022dfp-ad-mobileleaderboard\u0022);\n    });\n  \u003C\/script\u003E\n\u003C\/div\u003E\n"}},"query_builder_dev":{"homepage_curated":{"before_alter":{"template":"homepage_top","count":9,"photo_used":false,"processed":false,"column_height":-524,"left_height":0},"after_alter":{"template":"homepage_top","count":9,"photo_used":false,"processed":true,"column_height":-524,"left_height":0}},"sochi_live":{"before_alter":{"template":"four_columns_thumbs","count":11,"photo_used":true,"processed":false,"column_height":0,"left_height":0},"after_alter":{"template":"four_columns_thumbs","count":11,"photo_used":true,"processed":true,"column_height":0,"left_height":0},"template":"four_columns_thumbs","limit":12,"more_text":"View More","min_height":380,"left_width":220,"right_width":220,"left_title_line_height":14,"left_title_chars_per_line":37,"left_title_margin_padding":20,"left_misc_extra_height":14,"teaser_line_height":16,"teaser_chars_per_line":35,"p_margin_padding":20,"right_misc_extra_height":34,"right_title_line_height":14,"right_title_chars_per_line":24,"right_title_margin_padding":20,"result_count":180,"display_count":11,"nodes_loaded":11,"nodes_nids":[215965,215898,215853,215417,215411,215283,215262,215211,215198,215195,215178,"#sorted"]},"taxonomy_3":{"before_alter":{"template":"two_columns_thumbs","count":8,"photo_used":true,"processed":false,"column_height":326,"left_height":277},"after_alter":{"template":"two_columns_thumbs","count":8,"photo_used":true,"processed":true,"column_height":326,"left_height":277},"template":"two_columns_thumbs","limit":8,"more_text":"View More","min_height":380,"left_width":220,"right_width":220,"left_title_line_height":14,"left_title_chars_per_line":37,"left_title_margin_padding":20,"left_misc_extra_height":14,"teaser_line_height":16,"teaser_chars_per_line":35,"p_margin_padding":20,"right_misc_extra_height":34,"right_title_line_height":14,"right_title_chars_per_line":24,"right_title_margin_padding":20,"result_count":128,"display_count":3,"nodes_loaded":8,"nodes_nids":[214277,214281,215732,214812,215144,215206,214714,214280,"#sorted"]},"topic_1":{"before_alter":{"template":"two_columns_topic","count":4,"photo_used":true,"processed":false,"column_height":278,"left_height":338},"after_alter":{"template":"two_columns_topic","count":4,"photo_used":true,"processed":true,"column_height":374,"left_height":338},"template":"two_columns_topic","limit":4,"more_text":"View More","min_height":380,"left_width":220,"right_width":220,"left_title_line_height":14,"left_title_chars_per_line":37,"left_title_margin_padding":20,"left_misc_extra_height":14,"teaser_line_height":16,"teaser_chars_per_line":35,"p_margin_padding":20,"right_misc_extra_height":34,"right_title_line_height":14,"right_title_chars_per_line":24,"right_title_margin_padding":20,"result_count":98,"display_count":4,"nodes_loaded":4,"nodes_nids":[214277,216057,214281,215732,"#sorted"]}},"googleanalytics":{"trackOutbound":1,"trackMailto":1,"trackDownload":1,"trackDownloadExtensions":"7z|aac|arc|arj|asf|asx|avi|bin|csv|doc|exe|flv|gif|gz|gzip|hqx|jar|jpe?g|js|mp(2|3|4|e?g)|mov(ie)?|msi|msp|pdf|phps|png|ppt|qtm?|ra(m|r)?|sea|sit|tar|tgz|torrent|txt|wav|wma|wmv|wpd|xls|xml|z|zip"},"urlIsAjaxTrusted":{"\/standardspeaker":true},"omega":{"layouts":{"primary":"normal","order":["narrow","normal"],"queries":{"narrow":"screen and (min-width: 740px) and (min-device-width: 740px), (max-device-width: 800px) and (min-width: 740px) and (orientation:landscape)","normal":"screen and (min-width: 1040px) and (min-device-width: 1040px), all and (max-device-width: 1024px) and (min-width: 1024px) and (orientation:landscape)"}}}});
+//--><!]]>
+</script>
+  <!--[if lt IE 9]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+<script type="text/javascript">
+  window._taboola = window._taboola || [];
+  _taboola.push({article:'auto'});
+  !function (e, f, u, i) {
+    if (!document.getElementById(i)){
+      e.async = 1;
+      e.src = u;
+      e.id = i;
+      f.parentNode.insertBefore(e, f);
+    }
+  }(document.createElement('script'),
+  document.getElementsByTagName('script')[0],
+  '//cdn.taboola.com/libtrc/associatedpress-wintergames/loader.js',
+  'tb_loader_script');
+  if(window.performance && typeof window.performance.mark == 'function')
+    {window.performance.mark('tbl_ic');}
+</script>
+
+  <script type="text/javascript">
+    function toggleMenuStyle(clicked_id) {
+        var wTile = document.getElementById(clicked_id);
+        if (wTile.className.indexOf('sections-menu-link')) {
+            wTile.className = 'sections-menu-link';
+        } else {
+            wTile.className = ' sections-menu-link-down';
+        }
+    };
+  </script>
+
+</head>
+<body class="html front not-logged-in page-home onwl">
+    
+<div class="page-frame">
+
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) {return;}
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+<script type="text/javascript" src="https://use.typekit.com/uta3cck.js"></script>
+<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+
+  <div id="skip-link">
+    <a href="#main-content" class="element-invisible element-focusable">Skip to main content</a>
+  </div>  
+  <div class="region region-page-top" id="region-page-top">
+  <div class="region-inner region-page-top-inner">
+      </div>
+</div>
+  
+
+  <div class="page clearfix" id="page">
+      <header id="section-header" class="section section-header">
+  <div id="zone-user-wrapper" class="zone-wrapper zone-user-wrapper clearfix">  
+  <div id="zone-user" class="zone zone-user clearfix container-12">
+    <header class="header-desktop">
+  <div class="header-top">
+    <div class="member-nav-wrapper" >
+      <div class="container-12">
+        <div class="color-bar">
+          <div class="color-part color-part-01"></div>
+          <div class="color-part color-part-02"></div>
+          <div class="color-part color-part-03"></div>
+          <div class="color-part color-part-04"></div>
+          <div class="color-part color-part-05"></div>
+        </div>
+      </div>
+      <div class="container-12">
+        <nav id="wl-basic-menu"><ul class="member-nav item-list"></ul></nav>
+      </div>
+    </div>
+    <div class="masthead">
+      <div class="logo-wrap container-12">
+        <div class="logo">
+        <!--<img src="http://dummyimage.com/300x99/333333/fcbe09&text=Logo (300 x 99)" alt="">-->
+
+                      
+                              <a href="http://standardspeaker.com"><img border="0" src="https://wintergames.ap.org/sites/wintergames/files/white_label/logos/5a5f91876ae77_logo_ss_white.png" alt="Scranton (Standard-Speaker)" title="Scranton (Standard-Speaker)" /></a>              
+                      
+        </div>
+        <div class="header-right-wrap">
+          <img border="0" src="/profiles/ap/themes/ap_wintergames/images/header-right-title.png">
+          <img border="0" src="/profiles/ap/themes/ap_wintergames/images/header-right-medal.png">
+        </div>
+      </div>
+    </div> <!-- END masthead-->
+  </div>
+  <div class="nav-wrap-desktop container-12">
+    <nav>
+      <ul class="main-nav">
+        <li id="branch-journeys-top"><div class="branch-journeys-top"></div></li>
+        <li class="main-nav-search">
+          <!--  <form class="search">
+              <input class="searchTerm" placeholder="Search &hellip;" /><input class="searchButton" type="submit" />
+            </form>
+          -->
+        </li>
+      </ul>
+    </nav>
+    <div class="ad-placeholder"></div>
+  </div>
+</header>
+<div class="nav-wrap-mobile container-12">
+  <header class="header-mobile drawer drawer--right" role="banner">
+
+    <div class="logo">
+    <!-- <img src="http://dummyimage.com/150x55/333333/fcbe09&text=Logo (150 x 55)" alt=""> -->
+              
+                      <a href="http://standardspeaker.com"><img border="0" src="https://wintergames.ap.org/sites/wintergames/files/white_label/logos/5a5f91876ae77_logo_ss_white.png" alt="Scranton (Standard-Speaker)" title="Scranton (Standard-Speaker)" /></a>          
+              
+    </div>
+
+    <div class="search-toggle">
+      <i class="fa fa-search"></i>
+    </div>
+    <button type="button" class="drawer-toggle drawer-hamburger">
+      <span class="sr-only">toggle navigation</span>
+      <span class="drawer-hamburger-icon"></span>
+    </button>
+
+    <nav class="drawer-nav" role="navigation">
+      <ul class="drawer-menu">
+        <li class="main-nav-brand"><a class="drawer-brand">Main Nav</a></li>
+
+        <li class="member-nav-brand"><a class="drawer-brand">Member Nav</a></li>
+        <span id="member-nav-items-slot"></span>
+
+      </ul>
+    </nav>
+    <div class="header-top-mobile"> 
+
+      <div class="header-right-wrap-mobile-l pull-left">
+        <img  border="0" src="/profiles/ap/themes/ap_wintergames/images/header-right-title-mobile.png">
+      </div>
+      <div class="header-right-wrap-mobile-r pull-right">
+        <img src="/profiles/ap/themes/ap_wintergames/images/header-right-wg-title-mobile.png">
+      </div>
+
+    </div>
+    <!--<img class="masthead-mobile" src="/profiles/ap/themes/ap_wintergames/images/wg-header-bg-mobile.png" alt="">-->
+    <div class="search-mobile"></div>
+    <div class="ad-placeholder"></div>
+  </header> <!-- END header-mobile (1024 and below) -->
+</div>  </div>
+</div><div id="zone-branding-wrapper" class="zone-wrapper zone-branding-wrapper clearfix">  
+  <div id="zone-branding" class="zone zone-branding clearfix container-12">
+    <div class="grid-12 region region-vertical-branding" id="region-vertical-branding">
+  <div class="region-inner region-vertical-branding-inner">
+    
+        <div class="branding-data clearfix">
+                        <hgroup class="site-name-slogan">        
+                        <h1 class="site-name"><a href="/standardspeaker" rel="home" title="Home" class="active"><span class="first">2018</span> Winter Olympics </a></h1>
+              </hgroup>
+          </div>
+        
+      </div>
+</div>
+  </div>
+</div><div id="zone-menu-wrapper" class="zone-wrapper zone-menu-wrapper clearfix">    <div id="whitelabel_header" class="clearfix">
+    <div id="wl-basic-menu"><nav class="drawer-nav" style="display:none" role="navigation"><ul class="drawer-menu item-list"><li class="member-nav-brand"><a class="drawer-brand">Member Nav</a></li><li class="member-nav-item"><a href="http://standardspeaker.com/">Home</a></li><li class="member-nav-item"><a href="http://standardspeaker.com/news">News</a></li><li class="member-nav-item"><a href="http://standardspeaker.com/sports">Sports</a></li><li class="member-nav-item"><a href="http://standardspeaker.com/opinion">Opinion</a></li><li class="member-nav-item"><a href="http://standardspeaker.com/community">Community</a></li><li class="member-nav-item"><a href="http://referlocal.com/classifieds">Classifieds</a></li><li class="member-nav-item"><a href="http://standardspeaker.com/customer-service">Customer Service</a></li></ul></nav></div>  </div>
+    <div class="menu-zone-inner-wrapper">
+	  <div id="zone-menu" class="zone zone-menu clearfix container-12"  style="display:none">
+	    <div class="grid-12 region region-menu" id="region-menu">
+  <div class="region-inner region-menu-inner">
+    <nav class="navigation">
+      <div class="block block-search block-form block-search-form odd block-without-title" id="block-search-form">
+  <div class="block-inner clearfix">
+                        
+    <div class="content clearfix"  >
+    <form action="/standardspeaker" method="post" id="search-block-form" accept-charset="UTF-8"><div><div class="container-inline">
+      <h2 class="element-invisible">Search form</h2>
+    <div class="form-item form-type-textfield form-item-search-block-form">
+  <label class="element-invisible" for="edit-search-block-form--2">Search </label>
+ <input title="Enter the terms you wish to search for." placeholder="Search " type="text" id="edit-search-block-form--2" name="search_block_form" value="" size="15" maxlength="128" class="form-text" />
+</div>
+<div class="form-actions form-wrapper" id="edit-actions"><input type="submit" id="edit-submit" name="op" value="Search" class="form-submit" /></div><input type="hidden" name="form_build_id" value="form-Jb9US3JZMnSVGjkAExZecNeTebYrNnvo0aP41qhj2ng" />
+<input type="hidden" name="form_id" value="search_block_form" />
+</div>
+</div></form>    </div>
+  </div>
+
+</div><h4 class="sections-menu"><a href="#" id="sections-menu-link1" class="sections-menu-link" onclick="toggleMenuStyle(this.id)">Menu</a></h4><ul class="menu"><li class="main-nav-item drawer-dropdown"><a class="drawer-menu-item" aria-expanded="false" role="button" data-toggle="dropdown" href="#">News<span class="drawer-caret"></span></a><ul class="menu"><li class="first leaf drawer-dropdown-menu-item main-nav-item"><a href="/standardspeaker/articles" title="">Latest News</a></li>
+<li class="leaf drawer-dropdown-menu-item main-nav-item"><a href="/standardspeaker/galleries" title="">Photos</a></li>
+<li class="leaf drawer-dropdown-menu-item main-nav-item"><a href="/standardspeaker/videos" title="">Videos</a></li>
+<li class="leaf drawer-dropdown-menu-item main-nav-item"><a href="https://wintergames.ap.org/tags/podcast" title="">Podcast</a></li>
+<li class="last leaf drawer-dropdown-menu-item main-nav-item"><a href="/standardspeaker/interactives" title="">Interactives</a></li>
+</ul></li>
+<li class="leaf main-nav-item"><a href="/standardspeaker/medals">Medals</a></li>
+<li class="leaf main-nav-item"><a href="/standardspeaker/schedule" title="">Schedule</a></li>
+<li class="leaf main-nav-item"><a href="/standardspeaker/inside-the-games" title="">Inside the Games</a></li>
+<li class="leaf main-nav-item"><a href="/standardspeaker/the-olympians" title="">The Olympians</a></li>
+<li class="leaf main-nav-item"><a href="https://www.podcastone.com/ap-sports-special-events" title="">Podcast</a></li>
+<li class="main-nav-item"><a href="https://wintergames.ap.org/daily-draw" title="">Daily Draw</a>
+<div  id="dfp-ad-menusponsor" class="dfp-tag-wrapper">
+    <script type="text/javascript">
+    googletag.cmd.push(function() {
+      googletag.display("dfp-ad-menusponsor");
+    });
+  </script>
+</div>
+</li>
+</ul>    </nav>
+  </div>
+</div>
+	  </div>
+  </div>
+</div><div id="zone-header-wrapper" class="zone-wrapper zone-header-wrapper clearfix">  
+  <div id="zone-header" class="zone zone-header clearfix container-12">
+    <div class="grid-12 region region-header-first" id="region-header-first">
+  <div class="region-inner region-header-first-inner">
+    <section class="block block-boxes block-boxes-curated block-homepage-curated block-boxes-homepage-curated odd clearfix clearfix" id="block-boxes-homepage-curated">
+  <div class="block-inner clearfix">
+                      <h2 class="block-title">Top News</h2>
+            
+    <div class="content clearfix"   data-vr-zone='Top News'>
+    <div id='boxes-box-homepage_curated' class='boxes-box'><div class="boxes-box-content"><div class="curated-box-colandrows clearfix"><div class="curated-col1 clearfix">
+
+<article data-itemid="3a8bfa652adf4946be5c7f15a616880c" class="node node-ap-article hnews hentry item node-published node-not-promoted node-not-sticky author-winteradmin odd clearfix node-ap-display-position-1 node-ap-display-position-1" id="node-ap-article-216057">
+  <div class="article-list-node-content">
+	  <div class="field field-name-field-ap-photo-ref field-type-ap-photo-ref field-label-hidden"><div class="field-items"><div class="field-item even"><div class="field-name-field-thumbnail"><a href="/standardspeaker/article/self-proclaimed-icon-adam-rippon-takes-final-olympic-skate"><img src="https://mapi.associatedpress.com/v1/items/dddf34ae080245a8a571261ad357190c/preview/preview.jpg?s=380x" alt="Pyeongchang Olympics Figure Skating Men" title="Pyeongchang Olympics Figure Skating Men" /></a></div></div></div></div>	  <div class="article-list-header">
+	    		    <h4 class="entry-title title node-title title" rel="bookmark"><a href="/standardspeaker/article/self-proclaimed-icon-adam-rippon-takes-final-olympic-skate">Self-proclaimed &#039;icon&#039; Adam Rippon takes final Olympic skate</a></h4>
+		  		</div>  
+	  
+	  <div class="article-list-body">
+	    <div  class="hnews-hidden"><span  class="dateline">GANGNEUNG, South Korea</span><a  rel="item-license" id="license-06d2cbdc6bdfd079125b1213f7a943b8" href="#license-06d2cbdc6bdfd079125b1213f7a943b8">Copyright 2018 The Associated Press. All rights reserved. This material may not be published, broadcast, rewritten or redistributed.</a><div  class="geo hnews-geo"><span  class="latitude">37.7556</span><span  class="longitude">128.896</span></div></div><p>GANGNEUNG, South Korea (AP) &#x2014; Adam Rippon put his hands over his face and let the cheers wash over. He waved and smiled, and when the crowd kept clapping, he jumped where he stood and swung his arms to egg them on.</p><p>Ever the showman, and with his trademark grace and flair, Rippon took his final skate of the Pyeongchang Olympics on Saturday. He <a href='https://twitter.com/NBCOlympics/status/964713771607478272'>finished 10th,</a> a fine result for a 28-year-old who was never expected to medal against a field populated by younger, higher-flying competition.</p><p>The self-proclaimed "icon" didn't need that hardware to leave his mark on these games.</p><p>Or for the Olympics to leave its mark on him.</p>	  </div>
+		
+		<footer>
+		  <div class="article-data clearfix">
+		    <div class="time"><span  class="updated" title="2018-02-17T16:52:07-05:00">2 hours ago </span></div>
+		    <div class="readmore"><a href="/standardspeaker/article/self-proclaimed-icon-adam-rippon-takes-final-olympic-skate">Read More</a></div>
+		  </div>
+	  </footer>
+  </div>
+</article>
+
+
+
+<article data-itemid="54642f5cf13949de8989678dcb35e642" class="node node-ap-article hnews hentry item node-published node-not-promoted node-not-sticky author-winteradmin even clearfix node-ap-display-position-2 node-ap-display-position-2" id="node-ap-article-214924">
+  <div class="article-list-node-content">
+	  	  <div class="article-list-header">
+	    		    <h4 class="entry-title title node-title title" rel="bookmark"><a href="/standardspeaker/article/hanyu-defends-olympic-gold-medal-mens-figure-skating">Hanyu defends Olympic gold medal in men&#039;s figure skating</a></h4>
+		  		</div>  
+	  
+	  <div class="article-list-body">
+	    <div  class="hnews-hidden"><span  class="dateline">GANGNEUNG, South Korea</span><a  rel="item-license" id="license-8e27904f5092f0bdf313910fe5eacf4c" href="#license-8e27904f5092f0bdf313910fe5eacf4c">Copyright 2018 The Associated Press. All rights reserved. This material may not be published, broadcast, rewritten or redistributed.</a><div  class="geo hnews-geo"><span  class="latitude">37.7556</span><span  class="longitude">128.896</span></div></div><p>GANGNEUNG, South Korea (AP) &#x2014; Yuzuru Hanyu was introduced as the Olympic gold medalist, skated over to the podium and jumped high onto it. With a perfect landing, naturally.</p>	  </div>
+		
+		<footer>
+		  <div class="article-data clearfix">
+		    <div class="time"><span  class="updated" title="2018-02-17T04:18:13-05:00">Today</span></div>
+		    <div class="readmore"><a href="/standardspeaker/article/hanyu-defends-olympic-gold-medal-mens-figure-skating">Read More</a></div>
+		  </div>
+	  </footer>
+  </div>
+</article>
+
+</div><div class="curated-row1 clearfix">
+
+<article data-itemid="072ee98b72654f588f686689a21a4602" class="node node-ap-article hnews hentry item node-published node-not-promoted node-not-sticky author-winteradmin odd clearfix node-ap-display-position-3 node-ap-display-position-3" id="node-ap-article-215982">
+  <div class="article-list-node-content">
+	  <div class="field field-name-field-ap-photo-ref field-type-ap-photo-ref field-label-hidden"><div class="field-items"><div class="field-item even"><div class="field-name-field-thumbnail"><a href="/standardspeaker/article/kovalchuk-scores-twice-russians-outclass-us-4-0-olympics"><img src="https://mapi.associatedpress.com/v1/items/11c523ab89384317b2f78b057ba984c0/preview/preview.jpg?s=300x" alt="Pyeongchang Olympics Ice Hockey Men" title="Pyeongchang Olympics Ice Hockey Men" /></a></div></div></div></div>	  <div class="article-list-header">
+	    		    <h4 class="entry-title title node-title title" rel="bookmark"><a href="/standardspeaker/article/kovalchuk-scores-twice-russians-outclass-us-4-0-olympics">Kovalchuk scores twice, Russians outclass US 4-0 at Olympics</a></h4>
+		  		</div>  
+	  
+	  <div class="article-list-body">
+	    <div  class="hnews-hidden"><span  class="dateline">GANGNEUNG, South Korea</span><a  rel="item-license" id="license-5b8c3e1de24957db687ded5702ecd714" href="#license-5b8c3e1de24957db687ded5702ecd714">Copyright 2018 The Associated Press. All rights reserved. This material may not be published, broadcast, rewritten or redistributed.</a><div  class="geo hnews-geo"><span  class="latitude">37.7556</span><span  class="longitude">128.896</span></div></div><p>GANGNEUNG, South Korea (AP) &#x2014; The blistering pace on the ice and the atmosphere in the arena was reminiscent of the epic showdown between the United States and Russia in Sochi four years ago.</p><p>That's where the similarities end.</p>	  </div>
+		
+		<footer>
+		  <div class="article-data clearfix">
+		    <div class="time"><span  class="updated" title="2018-02-17T11:40:35-05:00">Today</span></div>
+		    <div class="readmore"><a href="/standardspeaker/article/kovalchuk-scores-twice-russians-outclass-us-4-0-olympics">Read More</a></div>
+		  </div>
+	  </footer>
+  </div>
+</article>
+
+<section class="block block-ap-wintergames-schedule block-schedule-homepage block-ap-wintergames-schedule-schedule-homepage odd" id="block-ap-wintergames-schedule-schedule-homepage">
+  <div class="block-inner clearfix">
+                      <h2 class="block-title">Upcoming Events</h2>
+            
+    <div class="content clearfix"   data-vr-zone='Upcoming Events'>
+    <div class="item-list"><ul class="events"><li class="event curling first"><a href="/standardspeaker/schedule">Curling<br>Men's Round Robin Session 7 Game 4</span><div class="time-row row"><span class="date">Feb. 17 7:05 p.m. EST</span></div></a></li><li class="event curling"><a href="/standardspeaker/schedule">Curling<br>Men's Round Robin Session 7 Game 1</span><div class="time-row row"><span class="date">Feb. 17 7:05 p.m. EST</span></div></a></li><li class="event curling"><a href="/standardspeaker/schedule">Curling<br>Men's Round Robin Session 7 Game 2</span><div class="time-row row"><span class="date">Feb. 17 7:05 p.m. EST</span></div></a></li><li class="event curling"><a href="/standardspeaker/schedule">Curling<br>Men's Round Robin Session 7 Game 3</span><div class="time-row row"><span class="date">Feb. 17 7:05 p.m. EST</span></div></a></li><li class="event freestyleskiing last"><a href="/standardspeaker/schedule">Freestyle Skiing<br>Men's Ski Slopestyle Qualification</span><div class="time-row row"><span class="date">Feb. 17 9:05 p.m. EST</span></div></a></li></ul></div><div class="full-schedule-link clearfix"><a href="/standardspeaker/schedule">View Full Schedule</a></div>    </div>
+  </div>
+
+</section></div><div class="curated-lower"><div class="curated-col2 clearfix">
+
+<article data-itemid="377ec6f732034fb084daaf6aca96dc05" class="node node-ap-article hnews hentry item node-published node-not-promoted node-not-sticky author-winteradmin even clearfix node-ap-display-position-4 node-ap-display-position-4" id="node-ap-article-214277">
+  <div class="article-list-node-content">
+	  <div class="field field-name-field-ap-photo-ref field-type-ap-photo-ref field-label-hidden"><div class="field-items"><div class="field-item even"><div class="field-name-field-thumbnail"><a href="/standardspeaker/article/oops-dont-forget-miracles-can-happen-sports"><img src="https://mapi.associatedpress.com/v1/items/0376caaf60f24c149203f4dc616ac0e7/preview/preview.jpg?s=220x" alt="Pyeongchang Olympics Medals Ceremony Alpine Skiing" title="Pyeongchang Olympics Medals Ceremony Alpine Skiing" /></a></div></div></div></div>	  <div class="article-list-header">
+	    		    <h4 class="entry-title title node-title title" rel="bookmark"><a href="/standardspeaker/article/oops-dont-forget-miracles-can-happen-sports">Oops! Don&#039;t forget that miracles can happen in sports</a></h4>
+		  		</div>  
+	  
+	  <div class="article-list-body">
+	    <div  class="hnews-hidden"><span  class="dateline">NEW YORK</span><a  rel="item-license" id="license-d578617f2e848b2a3690b3a961240912" href="#license-d578617f2e848b2a3690b3a961240912">Copyright 2018 The Associated Press. All rights reserved. This material may not be published, broadcast, rewritten or redistributed.</a><div  class="geo hnews-geo"><span  class="latitude">40.7143</span><span  class="longitude">-74.006</span></div></div>	  </div>
+		
+		<footer>
+		  <div class="article-data clearfix">
+		    <div class="time"><span  class="updated" title="2018-02-17T18:24:42-05:00">1 minute ago </span></div>
+		    <div class="readmore"></div>
+		  </div>
+	  </footer>
+  </div>
+</article>
+
+
+
+<article data-itemid="2f2ef6d1c5f44422aaa7297298f46128" class="node node-ap-article hnews hentry item node-published node-not-promoted node-not-sticky author-winteradmin odd clearfix node-ap-display-position-5 node-ap-display-position-5" id="node-ap-article-214609">
+  <div class="article-list-node-content">
+	  	  <div class="article-list-header">
+	    		    <h4 class="entry-title title node-title title" rel="bookmark"><a href="/standardspeaker/article/us-skater-nathan-chen-dazzles-after-poor-short-program">US skater Nathan Chen dazzles after poor short program</a></h4>
+		  		</div>  
+	  
+	  <div class="article-list-body">
+	    <div  class="hnews-hidden"><span  class="dateline">GANGNEUNG, South Korea</span><a  rel="item-license" id="license-947648c9faf08223d11b56acc808c62f" href="#license-947648c9faf08223d11b56acc808c62f">Copyright 2018 The Associated Press. All rights reserved. This material may not be published, broadcast, rewritten or redistributed.</a><div  class="geo hnews-geo"><span  class="latitude">37.7556</span><span  class="longitude">128.896</span></div></div>	  </div>
+		
+		<footer>
+		  <div class="article-data clearfix">
+		    <div class="time"><span  class="updated" title="2018-02-17T00:15:28-05:00">Today</span></div>
+		    <div class="readmore"></div>
+		  </div>
+	  </footer>
+  </div>
+</article>
+
+</div><div class="curated-col3 clearfix"><div class="block block-dfp block-mediumrectangle block-dfp-mediumrectangle even block-without-title" id="block-dfp-mediumrectangle">
+  <div class="block-inner clearfix">
+                        
+    <div class="content clearfix"  >
+    <div id="dfp-ad-mediumrectangle-wrapper" class="dfp-tag-wrapper"><div class="slug">Advertisement</div>
+<div  id="dfp-ad-mediumrectangle" class="dfp-tag-wrapper">
+    <script type="text/javascript">
+    googletag.cmd.push(function() {
+      googletag.display("dfp-ad-mediumrectangle");
+    });
+  </script>
+</div>
+</div>    </div>
+  </div>
+
+</div>
+
+<article data-itemid="d63e11d7746d4893bdaf3389601b7e20" class="node node-ap-article hnews hentry item node-published node-not-promoted node-not-sticky author-winteradmin even clearfix node-ap-display-position-6 node-ap-display-position-6" id="node-ap-article-214812">
+  <div class="article-list-node-content">
+	  	  <div class="article-list-header">
+	    		    <h4 class="entry-title title node-title title" rel="bookmark"><a href="/standardspeaker/article/kind-mistake-snowboarder-wins-alpine-gold">&#039;Is this a kind of mistake?&#039; Snowboarder wins Alpine gold</a></h4>
+		  		</div>  
+	  
+	  <div class="article-list-body">
+	    <div  class="hnews-hidden"><span  class="dateline">JEONGSEON, South Korea</span><a  rel="item-license" id="license-0b17f3712fb86fe108f8b67b363a3797" href="#license-0b17f3712fb86fe108f8b67b363a3797">Copyright 2018 The Associated Press. All rights reserved. This material may not be published, broadcast, rewritten or redistributed.</a><div  class="geo hnews-geo"><span  class="latitude">37.3891</span><span  class="longitude">128.73</span></div></div>	  </div>
+		
+		<footer>
+		  <div class="article-data clearfix">
+		    <div class="time"><span  class="updated" title="2018-02-17T06:49:38-05:00">Today</span></div>
+		    <div class="readmore"></div>
+		  </div>
+	  </footer>
+  </div>
+</article>
+
+
+
+<article data-itemid="8bfded9e46db48659e79e0cdfd4a8f2a" class="node node-ap-article hnews hentry item node-published node-not-promoted node-not-sticky author-winteradmin odd clearfix node-ap-display-position-7 node-ap-display-position-7" id="node-ap-article-215206">
+  <div class="article-list-node-content">
+	  	  <div class="article-list-header">
+	    		    <h4 class="entry-title title node-title title" rel="bookmark"><a href="/standardspeaker/article/anna-veith-hits-back-bode-miller-olympic-silver">Anna Veith hits back at Bode Miller with Olympic silver</a></h4>
+		  		</div>  
+	  
+	  <div class="article-list-body">
+	    <div  class="hnews-hidden"><span  class="dateline">JEONGSEON, South Korea</span><a  rel="item-license" id="license-467d299fb0f7dba54ec1747133e1fc14" href="#license-467d299fb0f7dba54ec1747133e1fc14">Copyright 2018 The Associated Press. All rights reserved. This material may not be published, broadcast, rewritten or redistributed.</a><div  class="geo hnews-geo"><span  class="latitude">37.3891</span><span  class="longitude">128.73</span></div></div>	  </div>
+		
+		<footer>
+		  <div class="article-data clearfix">
+		    <div class="time"><span  class="updated" title="2018-02-17T03:37:19-05:00">Today</span></div>
+		    <div class="readmore"></div>
+		  </div>
+	  </footer>
+  </div>
+</article>
+
+</div></div>  </div></div></div>    </div>
+  </div>
+
+</section>  </div>
+</div>  </div>
+</div></header>    
+      <section id="section-content" class="section section-content">
+  <div id="zone-preface-wrapper" class="zone-wrapper zone-preface-wrapper clearfix">  
+  <div id="zone-preface" class="zone zone-preface clearfix container-12">
+    <div class="grid-4 region region-preface-first" id="region-preface-first">
+  <div class="region-inner region-preface-first-inner">
+    <section class="block block-ap-wintergames-medals block-medals-homepage block-ap-wintergames-medals-medals-homepage odd" id="block-ap-wintergames-medals-medals-homepage">
+  <div class="block-inner clearfix">
+                      <h2 class="block-title">Medal Count</h2>
+            
+    <div class="content clearfix"   data-vr-zone='Medal Count'>
+    <p class="medal-updated-date">Last Updated: Today</p><div class="item-list"><ul class="medals-list medals-table-multiple"><li class="first"><table class="medals-table-header">
+ <tr><th class="rank"><span>#</span></th><th class="countryname">Team</th><th class="gold medal">G</th><th class="silver medal">S</th><th class="bronze medal">B</th><th class="total">Total</th></tr>
+</table>
+</li><li><table class="medals-table">
+ <tr><th class="rank"><span>1</span></th><th class="germany countryname"><span class="flag-icon flag-icon-germany"></span><a href="/standardspeaker/olympic-team/germany-olympic-team" class="medal-icon-lnk-name">Germany</a></th><th class="medals gold">9</th><th class="medals silver">4</th><th class="medals bronze">4</th><th class="total">17</th></tr>
+</table>
+</li><li><table class="medals-table">
+ <tr><th class="rank"><span>2</span></th><th class="norway countryname"><span class="flag-icon flag-icon-norway"></span><a href="/standardspeaker/olympic-team/norway-olympic-team" class="medal-icon-lnk-name">Norway</a></th><th class="medals gold">7</th><th class="medals silver">8</th><th class="medals bronze">7</th><th class="total">22</th></tr>
+</table>
+</li><li><table class="medals-table">
+ <tr><th class="rank"><span>3</span></th><th class="netherlands countryname"><span class="flag-icon flag-icon-netherlands"></span><a href="/standardspeaker/olympic-team/netherlands-olympic-team" class="medal-icon-lnk-name">Netherlands</a></th><th class="medals gold">6</th><th class="medals silver">5</th><th class="medals bronze">2</th><th class="total">13</th></tr>
+</table>
+</li><li><table class="medals-table">
+ <tr><th class="rank"><span>4</span></th><th class="canada countryname"><span class="flag-icon flag-icon-canada"></span><a href="/standardspeaker/olympic-team/canada-olympic-team" class="medal-icon-lnk-name">Canada</a></th><th class="medals gold">5</th><th class="medals silver">5</th><th class="medals bronze">5</th><th class="total">15</th></tr>
+</table>
+</li><li><table class="medals-table">
+ <tr><th class="rank"><span>5</span></th><th class="unitedstates countryname"><span class="flag-icon flag-icon-unitedstates"></span><a href="/standardspeaker/olympic-team/united-states-olympic-team" class="medal-icon-lnk-name">United States</a></th><th class="medals gold">5</th><th class="medals silver">2</th><th class="medals bronze">2</th><th class="total">9</th></tr>
+</table>
+</li><li><table class="medals-table">
+ <tr><th class="rank"><span>6</span></th><th class="sweden countryname"><span class="flag-icon flag-icon-sweden"></span><a href="/standardspeaker/olympic-team/sweden-olympic-team" class="medal-icon-lnk-name">Sweden</a></th><th class="medals gold">4</th><th class="medals silver">3</th><th class="medals bronze">0</th><th class="total">7</th></tr>
+</table>
+</li><li><table class="medals-table">
+ <tr><th class="rank"><span>7</span></th><th class="austria countryname"><span class="flag-icon flag-icon-austria"></span><a href="/standardspeaker/olympic-team/austria-olympic-team" class="medal-icon-lnk-name">Austria</a></th><th class="medals gold">3</th><th class="medals silver">2</th><th class="medals bronze">4</th><th class="total">9</th></tr>
+</table>
+</li><li><table class="medals-table">
+ <tr><th class="rank"><span>8</span></th><th class="france countryname"><span class="flag-icon flag-icon-france"></span><a href="/standardspeaker/olympic-team/france-olympic-team" class="medal-icon-lnk-name">France</a></th><th class="medals gold">3</th><th class="medals silver">2</th><th class="medals bronze">2</th><th class="total">7</th></tr>
+</table>
+</li><li><table class="medals-table">
+ <tr><th class="rank"><span>9</span></th><th class="southkorea countryname"><span class="flag-icon flag-icon-southkorea"></span><a href="/standardspeaker/olympic-team/south-korea-olympic-team" class="medal-icon-lnk-name">South Korea</a></th><th class="medals gold">3</th><th class="medals silver">0</th><th class="medals bronze">2</th><th class="total">5</th></tr>
+</table>
+</li><li class="last"><table class="medals-table">
+ <tr><th class="rank"><span>10</span></th><th class="switzerland countryname"><span class="flag-icon flag-icon-switzerland"></span><a href="/standardspeaker/olympic-team/switzerland-olympic-team" class="medal-icon-lnk-name">Switzerland</a></th><th class="medals gold">2</th><th class="medals silver">4</th><th class="medals bronze">1</th><th class="total">7</th></tr>
+</table>
+</li></ul></div><div class="medals-view-more"><a href="/standardspeaker/medals">Full Medal Standing</a></div>    </div>
+  </div>
+
+</section>  </div>
+</div><div class="grid-8 region region-preface-second" id="region-preface-second">
+  <div class="region-inner region-preface-second-inner">
+    <section class="block block-boxes block-boxes-list inside-games-block block-sochi-live block-boxes-sochi-live odd" id="block-boxes-sochi-live">
+  <div class="block-inner clearfix">
+                      <h2 class="block-title">Inside the Games <a href="inside-the-games">View All</a></h2>
+            
+    <div class="content clearfix"   data-vr-zone='Inside the Games <a href="inside-the-games">View All</a>'>
+    <div id='boxes-box-sochi_live' class='boxes-box'><div class="boxes-box-content"><div class="box-list-content four_columns_thumbs clearfix">
+
+<article data-itemid="" class="node node-ap-article hnews hentry item node-published node-not-promoted node-not-sticky author-sreed even clearfix node-ap-display-position-1 node-ap-display-position-1" id="node-ap-article-215965">
+  <div class="article-list-node-content">
+	  <div class="field field-name-field-thumbnail field-type-image field-label-hidden"><div class="field-items"><div class="field-item even"><a href="/standardspeaker/article/king-anxious-see-bjoergen-break-his-winter-games-medal-record"><img src="https://wintergames.ap.org/sites/wintergames/files/styles/ap_box_220/public/Marit%20tie_0.jpg?itok=tf6VIuKK" alt="" /></a></div></div></div>	  <div class="article-list-header">
+	    		    <h4 class="entry-title title node-title title" rel="bookmark"><a href="/standardspeaker/article/king-anxious-see-bjoergen-break-his-winter-games-medal-record">&#039;The King&#039; anxious to see Bjoergen break his Winter Games medal record</a></h4>
+		  		</div>  
+	  
+	  <div class="article-list-body">
+	    <div  class="hnews-hidden"><a  rel="item-license" id="license-a2f952a3b58114994e450b150f5fbc62" href="#license-a2f952a3b58114994e450b150f5fbc62">Copyright 2018 The Associated Press. All rights reserved. This material may not be published, broadcast, rewritten or redistributed.</a></div>	  </div>
+		
+		<footer>
+		  <div class="article-data clearfix">
+		    <div class="time"><span  class="updated" title="2018-02-17T09:29:52-05:00">Today</span></div>
+		    <div class="readmore"></div>
+		  </div>
+	  </footer>
+  </div>
+</article>
+
+
+
+<article data-itemid="" class="node node-ap-article hnews hentry item node-published node-not-promoted node-not-sticky author-epells odd clearfix node-ap-display-position-2 node-ap-display-position-2" id="node-ap-article-215898">
+  <div class="article-list-node-content">
+	  	  <div class="article-list-header">
+	    		    <h4 class="entry-title title node-title title" rel="bookmark"><a href="/standardspeaker/article/finger-lickin-gold">Finger lickin&#039; gold</a></h4>
+		  		</div>  
+	  
+	  <div class="article-list-body">
+	    <div  class="hnews-hidden"><a  rel="item-license" id="license-085425eeda855d0a1585028ba23cb09f" href="#license-085425eeda855d0a1585028ba23cb09f">Copyright 2018 The Associated Press. All rights reserved. This material may not be published, broadcast, rewritten or redistributed.</a></div>	  </div>
+		
+		<footer>
+		  <div class="article-data clearfix">
+		    <div class="time"><span  class="updated" title="2018-02-17T09:00:10-05:00">Today</span></div>
+		    <div class="readmore"></div>
+		  </div>
+	  </footer>
+  </div>
+</article>
+
+
+
+<article data-itemid="" class="node node-ap-article hnews hentry item node-published node-not-promoted node-not-sticky author-dbrandt even clearfix node-ap-display-position-3 node-ap-display-position-3" id="node-ap-article-215853">
+  <div class="article-list-node-content">
+	  <div class="field field-name-field-thumbnail field-type-image field-label-hidden"><div class="field-items"><div class="field-item even"><a href="/standardspeaker/article/lindsey-vonn-gets-twitter-backlash-after-sixth-place-finish-super-g"><img src="https://wintergames.ap.org/sites/wintergames/files/styles/ap_box_220/public/Vonn.jpg?itok=1UXh5Rn4" alt="" /></a></div></div></div>	  <div class="article-list-header">
+	    		    <h4 class="entry-title title node-title title" rel="bookmark"><a href="/standardspeaker/article/lindsey-vonn-gets-twitter-backlash-after-sixth-place-finish-super-g">Lindsey Vonn gets Twitter backlash after sixth-place finish in super-G</a></h4>
+		  		</div>  
+	  
+	  <div class="article-list-body">
+	    <div  class="hnews-hidden"><a  rel="item-license" id="license-3b30cce6f9c79f39c1545c30cba9b003" href="#license-3b30cce6f9c79f39c1545c30cba9b003">Copyright 2018 The Associated Press. All rights reserved. This material may not be published, broadcast, rewritten or redistributed.</a></div>	  </div>
+		
+		<footer>
+		  <div class="article-data clearfix">
+		    <div class="time"><span  class="updated" title="2018-02-17T08:28:44-05:00">Today</span></div>
+		    <div class="readmore"></div>
+		  </div>
+	  </footer>
+  </div>
+</article>
+
+
+
+<article data-itemid="" class="node node-ap-photo node-published node-not-promoted node-not-sticky author-hrumberg odd clearfix node-ap-display-position-4 node-ap-display-position-4" id="node-ap-photo-215417">
+  <div class="article-list-node-content">
+	  	  <div class="article-list-header">
+	    		    <h4 class="title node-title title"><a href="/standardspeaker/photo/daily-draw-how-toe-pick-transformed-skating">THE DAILY DRAW: How the Toe Pick Transformed Skating</a></h4>
+		  		</div>  
+	  
+	  <div class="article-list-body">
+	    	  </div>
+		
+		<footer>
+		  <div class="article-data clearfix">
+		    <div class="time">Today</div>
+		    <div class="readmore"></div>
+		  </div>
+	  </footer>
+  </div>
+</article>
+
+
+
+<article data-itemid="" class="node node-ap-article hnews hentry item node-published node-not-promoted node-not-sticky author-hrumberg even clearfix node-ap-display-position-5 node-ap-display-position-5" id="node-ap-article-215411">
+  <div class="article-list-node-content">
+	  <div class="field field-name-field-thumbnail field-type-image field-label-hidden"><div class="field-items"><div class="field-item even"><a href="/standardspeaker/article/daily-draw-how-toe-pick-transformed-skating"><img src="https://wintergames.ap.org/sites/wintergames/files/styles/ap_box_220/public/toepick-01-01.jpg?itok=csf3AeI4" alt="" /></a></div></div></div>	  <div class="article-list-header">
+	    		    <h4 class="entry-title title node-title title" rel="bookmark"><a href="/standardspeaker/article/daily-draw-how-toe-pick-transformed-skating">THE DAILY DRAW: How the Toe Pick Transformed Skating</a></h4>
+		  		</div>  
+	  
+	  <div class="article-list-body">
+	    <div  class="hnews-hidden"><a  rel="item-license" id="license-4b7ffb0c70a4ac9257830c818e8ef569" href="#license-4b7ffb0c70a4ac9257830c818e8ef569">Copyright 2018 The Associated Press. All rights reserved. This material may not be published, broadcast, rewritten or redistributed.</a></div>	  </div>
+		
+		<footer>
+		  <div class="article-data clearfix">
+		    <div class="time"><span  class="updated" title="2018-02-17T05:51:44-05:00">Today</span></div>
+		    <div class="readmore"></div>
+		  </div>
+	  </footer>
+  </div>
+</article>
+
+
+
+<article data-itemid="" class="node node-ap-article hnews hentry item node-published node-not-promoted node-not-sticky author-wgraves odd clearfix node-ap-display-position-6 node-ap-display-position-6" id="node-ap-article-215283">
+  <div class="article-list-node-content">
+	  	  <div class="article-list-header">
+	    		    <h4 class="entry-title title node-title title" rel="bookmark"><a href="/standardspeaker/article/ouch-bro">Ouch Bro</a></h4>
+		  		</div>  
+	  
+	  <div class="article-list-body">
+	    <div  class="hnews-hidden"><span  class="dateline">PYEONGCHANG, South Korea</span><a  rel="item-license" id="license-154d3e6b4e602f1c182142e86acb15e8" href="#license-154d3e6b4e602f1c182142e86acb15e8">Copyright 2018 The Associated Press. All rights reserved. This material may not be published, broadcast, rewritten or redistributed.</a></div>	  </div>
+		
+		<footer>
+		  <div class="article-data clearfix">
+		    <div class="time"><span  class="updated" title="2018-02-17T04:51:48-05:00">Today</span></div>
+		    <div class="readmore"></div>
+		  </div>
+	  </footer>
+  </div>
+</article>
+
+
+
+<article data-itemid="" class="node node-ap-article hnews hentry item node-published node-not-promoted node-not-sticky author-dwaszak even clearfix node-ap-display-position-7 node-ap-display-position-7" id="node-ap-article-215262">
+  <div class="article-list-node-content">
+	  	  <div class="article-list-header">
+	    		    <h4 class="entry-title title node-title title" rel="bookmark"><a href="/standardspeaker/article/ap-goes-behind-scenes-international-broadcast-center-pyeongchang">AP goes behind the scenes at the International Broadcast Center in Pyeongchang</a></h4>
+		  		</div>  
+	  
+	  <div class="article-list-body">
+	    <div  class="hnews-hidden"><span  class="dateline">PYEONGCHANG, South Korea</span><a  rel="item-license" id="license-72d5aa867169122947b092c66d0f969f" href="#license-72d5aa867169122947b092c66d0f969f">Copyright 2018 The Associated Press. All rights reserved. This material may not be published, broadcast, rewritten or redistributed.</a></div>	  </div>
+		
+		<footer>
+		  <div class="article-data clearfix">
+		    <div class="time"><span  class="updated" title="2018-02-17T04:26:54-05:00">Today</span></div>
+		    <div class="readmore"></div>
+		  </div>
+	  </footer>
+  </div>
+</article>
+
+
+
+<article data-itemid="" class="node node-ap-article hnews hentry item node-published node-not-promoted node-not-sticky author-cgalofaro odd clearfix node-ap-display-position-8 node-ap-display-position-8" id="node-ap-article-215211">
+  <div class="article-list-node-content">
+	  <div class="field field-name-field-thumbnail field-type-image field-label-hidden"><div class="field-items"><div class="field-item even"><a href="/standardspeaker/article/dispatches-pyeongchang-olympics-super-fan"><img src="https://wintergames.ap.org/sites/wintergames/files/styles/ap_box_220/public/Christine%20with%20tiger.jpg?itok=jT047Kho" alt="" /></a></div></div></div>	  <div class="article-list-header">
+	    		    <h4 class="entry-title title node-title title" rel="bookmark"><a href="/standardspeaker/article/dispatches-pyeongchang-olympics-super-fan">Dispatches from Pyeongchang from an Olympics super-fan </a></h4>
+		  		</div>  
+	  
+	  <div class="article-list-body">
+	    <div  class="hnews-hidden"><span  class="dateline">PYEONGCHANG, South Korea</span><a  rel="item-license" id="license-344abcdf001826bb2f5319a01a86db82" href="#license-344abcdf001826bb2f5319a01a86db82">Copyright 2018 The Associated Press. All rights reserved. This material may not be published, broadcast, rewritten or redistributed.</a></div>	  </div>
+		
+		<footer>
+		  <div class="article-data clearfix">
+		    <div class="time"><span  class="updated" title="2018-02-17T03:46:52-05:00">Today</span></div>
+		    <div class="readmore"></div>
+		  </div>
+	  </footer>
+  </div>
+</article>
+
+
+
+<article data-itemid="" class="node node-ap-article hnews hentry item node-published node-not-promoted node-not-sticky author-epells even clearfix node-ap-display-position-9 last-item node-ap-display-position-9 last-item" id="node-ap-article-215198">
+  <div class="article-list-node-content">
+	  <div class="field field-name-field-thumbnail field-type-image field-label-hidden"><div class="field-items"><div class="field-item even"><a href="/standardspeaker/article/born-usa-bronzed-uk"><img src="https://wintergames.ap.org/sites/wintergames/files/styles/ap_box_220/public/izzy2.jpg?itok=WmCYsUu4" alt="" /></a></div></div></div>	  <div class="article-list-header">
+	    		    <h4 class="entry-title title node-title title" rel="bookmark"><a href="/standardspeaker/article/born-usa-bronzed-uk">Born in the USA, bronzed in the UK</a></h4>
+		  		</div>  
+	  
+	  <div class="article-list-body">
+	    <div  class="hnews-hidden"><a  rel="item-license" id="license-46719f6ac0e7d0d927751af8ef584ced" href="#license-46719f6ac0e7d0d927751af8ef584ced">Copyright 2018 The Associated Press. All rights reserved. This material may not be published, broadcast, rewritten or redistributed.</a></div>	  </div>
+		
+		<footer>
+		  <div class="article-data clearfix">
+		    <div class="time"><span  class="updated" title="2018-02-17T03:24:00-05:00">Today</span></div>
+		    <div class="readmore"></div>
+		  </div>
+	  </footer>
+  </div>
+</article>
+
+
+
+<article data-itemid="" class="node node-ap-article hnews hentry item node-published node-not-promoted node-not-sticky author-dbrandt odd clearfix node-ap-display-position-10 node-ap-display-position-10" id="node-ap-article-215195">
+  <div class="article-list-node-content">
+	  	  <div class="article-list-header">
+	    		    <h4 class="entry-title title node-title title" rel="bookmark"><a href="/standardspeaker/article/dance-party-playlist-olympic-hockey-arena-eclectic-mix">Dance party: Playlist at Olympic hockey arena an eclectic mix</a></h4>
+		  		</div>  
+	  
+	  <div class="article-list-body">
+	    <div  class="hnews-hidden"><a  rel="item-license" id="license-1ec203f85b23834e48b85dbda91fc33d" href="#license-1ec203f85b23834e48b85dbda91fc33d">Copyright 2018 The Associated Press. All rights reserved. This material may not be published, broadcast, rewritten or redistributed.</a></div>	  </div>
+		
+		<footer>
+		  <div class="article-data clearfix">
+		    <div class="time"><span  class="updated" title="2018-02-17T03:21:22-05:00">Today</span></div>
+		    <div class="readmore"></div>
+		  </div>
+	  </footer>
+  </div>
+</article>
+
+
+
+<article data-itemid="" class="node node-ap-article hnews hentry item node-published node-not-promoted node-not-sticky author-treynolds even clearfix node-ap-display-position-11 node-ap-display-position-11" id="node-ap-article-215178">
+  <div class="article-list-node-content">
+	  <div class="field field-name-field-thumbnail field-type-image field-label-hidden"><div class="field-items"><div class="field-item even"><a href="/standardspeaker/article/langton-takes-his-final-2-man-ride"><img src="https://wintergames.ap.org/sites/wintergames/files/styles/ap_box_220/public/langton%20blog.jpg?itok=dnOLp7bx" alt="" /></a></div></div></div>	  <div class="article-list-header">
+	    		    <h4 class="entry-title title node-title title" rel="bookmark"><a href="/standardspeaker/article/langton-takes-his-final-2-man-ride">Langton takes his final 2-man ride</a></h4>
+		  		</div>  
+	  
+	  <div class="article-list-body">
+	    <div  class="hnews-hidden"><span  class="dateline">PYEONGCHANG, South Korea</span><a  rel="item-license" id="license-092a8e07549b45a5970920d2be30b4c2" href="#license-092a8e07549b45a5970920d2be30b4c2">Copyright 2018 The Associated Press. All rights reserved. This material may not be published, broadcast, rewritten or redistributed.</a></div>	  </div>
+		
+		<footer>
+		  <div class="article-data clearfix">
+		    <div class="time"><span  class="updated" title="2018-02-17T03:04:13-05:00">Today</span></div>
+		    <div class="readmore"></div>
+		  </div>
+	  </footer>
+  </div>
+</article>
+
+</div></div></div>    </div>
+  </div>
+
+</section>  </div>
+</div>  </div>
+</div><div id="zone-content-wrapper" class="zone-wrapper zone-content-wrapper clearfix">  
+  <div id="zone-content" class="zone zone-content clearfix container-12">    
+        
+        <div class="grid-8 region region-content" id="region-content">
+  <div class="region-inner region-content-inner">
+    <a id="main-content"></a>
+            <div class="primary-title">
+        <h1  id="page-title" class="title page-title title page-title">Home</h1>
+        </div>
+                <div class="tabs clearfix"></div>        <div class="block block-dfp block-highimpact block-dfp-highimpact odd block-without-title" id="block-dfp-highimpact">
+  <div class="block-inner clearfix">
+                        
+    <div class="content clearfix"  >
+    <div id="dfp-ad-highimpact-wrapper" class="dfp-tag-wrapper">
+<div  id="dfp-ad-highimpact" class="dfp-tag-wrapper">
+    <script type="text/javascript">
+    googletag.cmd.push(function() {
+      googletag.display("dfp-ad-highimpact");
+    });
+  </script>
+</div>
+</div>    </div>
+  </div>
+
+</div><section class="block block-boxes block-boxes-list block-taxonomy-1 block-boxes-taxonomy-1 even" id="block-boxes-taxonomy-1">
+  <div class="block-inner clearfix">
+                      <h2 class="block-title">Adam Rippon</h2>
+            
+    <div class="content clearfix"   data-vr-zone='Adam Rippon'>
+    <div id='boxes-box-taxonomy_1' class='boxes-box'><div class="boxes-box-content"><div class="rss-block four_columns_thumbs"><article class="node"><div class="article-list-header"><h4 class="entry-title node-title title"><a href="http://thetimes-tribune.com/sports/rippon-s-journey-about-more-than-a-medal-1.2303537">Rippon’s journey about more than a medal</a></h4></div><footer><div class="article-data">Feb. 17, 5:13 PM EST</div></footer></article><article class="node"><div class="article-list-header"><h4 class="entry-title node-title title"><a href="http://thetimes-tribune.com/sports/rippon-caps-pyeongchang-with-top-10-finish-1.2303518">Rippon caps Pyeongchang with top-10 finish</a></h4></div><footer><div class="article-data">Feb. 17, 12:50 AM EST</div></footer></article><article class="node"><div class="article-list-header"><h4 class="entry-title node-title title"><a href="http://thetimes-tribune.com/opinion/white-s-gnarly-conduct-1.2303399">White’s gnarly conduct</a></h4></div><footer><div class="article-data">Feb. 17, 12:00 AM EST</div></footer></article><article class="node"><div class="article-list-header"><h4 class="entry-title node-title title"><a href="http://thetimes-tribune.com/sports/olympics-adam-rippon-in-7th-after-short-program-1.2303136">OLYMPICS: Adam Rippon in 7th after short program</a></h4></div><footer><div class="article-data">Feb. 16, 1:04 AM EST</div></footer></article><article class="node"><div class="article-list-header"><h4 class="entry-title node-title title"><a href="http://thetimes-tribune.com/sports/keystone-games-returning-to-luzerne-county-1.2303092">Keystone Games returning to Luzerne County</a></h4></div><footer><div class="article-data">Feb. 16, 12:00 AM EST</div></footer></article><article class="node"><div class="article-list-header"><h4 class="entry-title node-title title"><a href="http://thetimes-tribune.com/sports/collins-rippon-back-on-ice-tonight-1.2302616">COLLINS: Rippon back on ice tonight</a></h4></div><footer><div class="article-data">Feb. 15, 12:00 AM EST</div></footer></article><article class="node"><div class="article-list-header"><h4 class="entry-title node-title title"><a href="http://thetimes-tribune.com/news/kelly-rippon-the-olympian-america-needs-right-now-1.2302151">KELLY: Rippon the Olympian America needs right now</a></h4></div><footer><div class="article-data">Feb. 14, 12:00 AM EST</div></footer></article><article class="node"><div class="article-list-header"><h4 class="entry-title node-title title"><a href="http://thetimes-tribune.com/news/all-eyes-on-adam-rippon-a-hometown-hero-in-clarks-summit-1.2301751">All eyes on Adam Rippon, a hometown hero in Clarks Summit</a></h4></div><footer><div class="article-data">Feb. 13, 12:00 AM EST</div></footer></article><article class="node"><div class="article-list-header"><h4 class="entry-title node-title title"><a href="http://thetimes-tribune.com/news/keeping-up-with-adam-rippon-1.2301539">Keeping up with Adam Rippon</a></h4></div><footer><div class="article-data">Feb. 12, 10:22 AM EST</div></footer></article><article class="node"><div class="article-list-header"><h4 class="entry-title node-title title"><a href="http://thetimes-tribune.com/sports/rippon-nearly-flawless-in-debut-helps-u-s-earn-bronze-1.2301377">Rippon nearly flawless in debut, helps U.S. earn bronze</a></h4></div><footer><div class="article-data">Feb. 12, 12:44 AM EST</div></footer></article><article class="node"><div class="article-list-header"><h4 class="entry-title node-title title"><a href="http://thetimes-tribune.com/sports/watch-adam-rippon-s-olympic-skates-1.2301219">Watch Adam Rippon&#039;s Olympic skates</a></h4></div><footer><div class="article-data">Feb. 11, 12:00 AM EST</div></footer></article><article class="node"><div class="article-list-header"><h4 class="entry-title node-title title"><a href="http://thetimes-tribune.com/sports/still-just-adam-fame-success-hasn-t-changed-rippon-1.2301267">Still just Adam: Fame, success hasn&#039;t changed Rippon</a></h4></div><footer><div class="article-data">Feb. 11, 12:00 AM EST</div></footer></article><article class="node"><div class="article-list-header"><h4 class="entry-title node-title title"><a href="http://thetimes-tribune.com/sports/adam-rippon-stats-1.2301204">Adam Rippon stats</a></h4></div><footer><div class="article-data">Feb. 11, 12:00 AM EST</div></footer></article><article class="node"><div class="article-list-header"><h4 class="entry-title node-title title"><a href="http://thetimes-tribune.com/sports/timeline-adam-rippon-through-the-years-1.2301217">TIMELINE: Adam Rippon through the years</a></h4></div><footer><div class="article-data">Feb. 11, 12:00 AM EST</div></footer></article></div></div></div>    </div>
+  </div>
+
+</section><div class="block block-dfp block-leaderboard block-dfp-leaderboard odd block-without-title" id="block-dfp-leaderboard">
+  <div class="block-inner clearfix">
+                        
+    <div class="content clearfix"  >
+    <div id="dfp-ad-leaderboard-wrapper" class="dfp-tag-wrapper"><div class="slug">Advertisement</div>
+<div  id="dfp-ad-leaderboard" class="dfp-tag-wrapper">
+    <script type="text/javascript">
+    googletag.cmd.push(function() {
+      googletag.display("dfp-ad-leaderboard");
+    });
+  </script>
+</div>
+</div>    </div>
+  </div>
+
+</div><div class="block block-dfp block-mobileleaderboard block-dfp-mobileleaderboard even block-without-title" id="block-dfp-mobileleaderboard">
+  <div class="block-inner clearfix">
+                        
+    <div class="content clearfix"  >
+    <div id="dfp-ad-mobileleaderboard-wrapper" class="dfp-tag-wrapper"><div class="slug">Advertisement</div>
+<div  id="dfp-ad-mobileleaderboard" class="dfp-tag-wrapper">
+    <script type="text/javascript">
+    googletag.cmd.push(function() {
+      googletag.display("dfp-ad-mobileleaderboard");
+    });
+  </script>
+</div>
+</div>    </div>
+  </div>
+
+</div>      </div>
+</div><aside class="grid-4 region region-sidebar-first" id="region-sidebar-first">
+  <div class="region-inner region-sidebar-first-inner">
+    <section class="block block-boxes block-boxes-twitter block-ap-twitter block-boxes-ap-twitter odd" id="block-boxes-ap-twitter">
+  <div class="block-inner clearfix">
+                      <h2 class="block-title">Tweets</h2>
+            
+    <div class="content clearfix"   data-vr-zone='Tweets'>
+    <div id='boxes-box-ap_twitter' class='boxes-box'><div class="boxes-box-content">
+<div class="tweets-pulled-listing">
+
+  
+          
+    <ul class="tweets-pulled-listing">
+          <li>
+        <div class="tweet-author-wrapper clearfix">
+          <div class="tweet-author-info clearfix">
+            <div class="tweet-authorphoto">
+              <a href="https://twitter.com/AP_Sports"><img src="https://pbs.twimg.com/profile_images/2249747844/160X160_LOGO_normal.JPG" alt="AP Sports" /></a>            </div>
+            <div class="tweet-author"><a href="https://twitter.com/AP_Sports">AP Sports</a></div>
+            <div class="tweet-screenname"><a href="https://twitter.com/AP_Sports">@AP_Sports</a></div>
+          </div>
+          <a href="https://twitter.com/AP_Sports" class="twitter-follow-button" data-show-count="false" data-lang="en">Follow @AP_Sports</a>        </div>
+        <div class="tweet-text">Royals' Danny Duffy is hoping to put his rough 2017 behind him, become a clubhouse leader <a href="https://t.co/a2VcKALyet" rel="nofollow" title="https://t.co/a2VcKALyet">t.co/a2VcKALyet</a></div>
+        <div class="tweet-footer">
+          <div class="tweet-time"><a href="http://twitter.com/AP_Sports/status/964996651499876353">31m</a></div>
+          <div class="tweet-actions">
+            <a href="https://twitter.com/intent/tweet?in_reply_to=964996651499876353" class="twitter-reply">Reply</a>            <a href="https://twitter.com/intent/retweet?tweet_id=964996651499876353" class="twitter-retweet">Retweet</a>            <a href="https://twitter.com/intent/favorite?tweet_id=964996651499876353" class="twitter-favorite">Favorite</a>          </div>
+        </div>
+                  <div class="tweet-divider"></div>
+                
+      </li>
+          <li>
+        <div class="tweet-author-wrapper clearfix">
+          <div class="tweet-author-info clearfix">
+            <div class="tweet-authorphoto">
+              <a href="https://twitter.com/AP_Sports"><img src="https://pbs.twimg.com/profile_images/2249747844/160X160_LOGO_normal.JPG" alt="AP Sports" /></a>            </div>
+            <div class="tweet-author"><a href="https://twitter.com/AP_Sports">AP Sports</a></div>
+            <div class="tweet-screenname"><a href="https://twitter.com/AP_Sports">@AP_Sports</a></div>
+          </div>
+          <a href="https://twitter.com/AP_Sports" class="twitter-follow-button" data-show-count="false" data-lang="en">Follow @AP_Sports</a>        </div>
+        <div class="tweet-text">Buster Posey and new Giants teammate Andrew McCutchen go way back <a href="//twitter.com/JanieMcCAP" rel="nofollow" title="@JanieMcCAP">@JanieMcCAP</a> <a href="https://t.co/Dwnx186St6" rel="nofollow" title="https://t.co/Dwnx186St6">t.co/Dwnx186St6</a></div>
+        <div class="tweet-footer">
+          <div class="tweet-time"><a href="http://twitter.com/AP_Sports/status/964994127774605314">41m</a></div>
+          <div class="tweet-actions">
+            <a href="https://twitter.com/intent/tweet?in_reply_to=964994127774605314" class="twitter-reply">Reply</a>            <a href="https://twitter.com/intent/retweet?tweet_id=964994127774605314" class="twitter-retweet">Retweet</a>            <a href="https://twitter.com/intent/favorite?tweet_id=964994127774605314" class="twitter-favorite">Favorite</a>          </div>
+        </div>
+                  <div class="tweet-divider"></div>
+                
+      </li>
+          <li>
+        <div class="tweet-author-wrapper clearfix">
+          <div class="tweet-author-info clearfix">
+            <div class="tweet-authorphoto">
+              <a href="https://twitter.com/AP_Sports"><img src="https://pbs.twimg.com/profile_images/2249747844/160X160_LOGO_normal.JPG" alt="AP Sports" /></a>            </div>
+            <div class="tweet-author"><a href="https://twitter.com/AP_Sports">AP Sports</a></div>
+            <div class="tweet-screenname"><a href="https://twitter.com/AP_Sports">@AP_Sports</a></div>
+          </div>
+          <a href="https://twitter.com/AP_Sports" class="twitter-follow-button" data-show-count="false" data-lang="en">Follow @AP_Sports</a>        </div>
+        <div class="tweet-text">Danica Patrick is showing that she's mentally checked out of <a href="//twitter.com/#!/search?q=%23NASCAR" title="#NASCAR" rel="nofollow">#NASCAR</a> as she nears the final race of her career… <a href="https://t.co/oNh81MfQRa" rel="nofollow" title="https://t.co/oNh81MfQRa">t.co/oNh81MfQRa</a></div>
+        <div class="tweet-footer">
+          <div class="tweet-time"><a href="http://twitter.com/AP_Sports/status/964992333195415552">48m</a></div>
+          <div class="tweet-actions">
+            <a href="https://twitter.com/intent/tweet?in_reply_to=964992333195415552" class="twitter-reply">Reply</a>            <a href="https://twitter.com/intent/retweet?tweet_id=964992333195415552" class="twitter-retweet">Retweet</a>            <a href="https://twitter.com/intent/favorite?tweet_id=964992333195415552" class="twitter-favorite">Favorite</a>          </div>
+        </div>
+                  <div class="tweet-divider"></div>
+                
+      </li>
+          <li>
+        <div class="tweet-author-wrapper clearfix">
+          <div class="tweet-author-info clearfix">
+            <div class="tweet-authorphoto">
+              <a href="https://twitter.com/AP_Sports"><img src="https://pbs.twimg.com/profile_images/2249747844/160X160_LOGO_normal.JPG" alt="AP Sports" /></a>            </div>
+            <div class="tweet-author"><a href="https://twitter.com/AP_Sports">AP Sports</a></div>
+            <div class="tweet-screenname"><a href="https://twitter.com/AP_Sports">@AP_Sports</a></div>
+          </div>
+          <a href="https://twitter.com/AP_Sports" class="twitter-follow-button" data-show-count="false" data-lang="en">Follow @AP_Sports</a>        </div>
+        <div class="tweet-text">Chevy debuts new Camaro in hopes of competing with Toyota, and Ford will be next in <a href="//twitter.com/#!/search?q=%23NASCAR" title="#NASCAR" rel="nofollow">#NASCAR</a> Car Wars <a href="//twitter.com/APMarkLong" rel="nofollow" title="@APMarkLong">@APMarkLong</a> <a href="https://t.co/aqqDYZUlug" rel="nofollow" title="https://t.co/aqqDYZUlug">t.co/aqqDYZUlug</a></div>
+        <div class="tweet-footer">
+          <div class="tweet-time"><a href="http://twitter.com/AP_Sports/status/964975514204164096">2h</a></div>
+          <div class="tweet-actions">
+            <a href="https://twitter.com/intent/tweet?in_reply_to=964975514204164096" class="twitter-reply">Reply</a>            <a href="https://twitter.com/intent/retweet?tweet_id=964975514204164096" class="twitter-retweet">Retweet</a>            <a href="https://twitter.com/intent/favorite?tweet_id=964975514204164096" class="twitter-favorite">Favorite</a>          </div>
+        </div>
+                  <div class="tweet-divider"></div>
+                
+      </li>
+          <li>
+        <div class="tweet-author-wrapper clearfix">
+          <div class="tweet-author-info clearfix">
+            <div class="tweet-authorphoto">
+              <a href="https://twitter.com/AP_Sports"><img src="https://pbs.twimg.com/profile_images/2249747844/160X160_LOGO_normal.JPG" alt="AP Sports" /></a>            </div>
+            <div class="tweet-author"><a href="https://twitter.com/AP_Sports">AP Sports</a></div>
+            <div class="tweet-screenname"><a href="https://twitter.com/AP_Sports">@AP_Sports</a></div>
+          </div>
+          <a href="https://twitter.com/AP_Sports" class="twitter-follow-button" data-show-count="false" data-lang="en">Follow @AP_Sports</a>        </div>
+        <div class="tweet-text">Steve Nash, Jason Kidd and Grant Hill are among the finalists for the Basketball Hall of Fame… <a href="https://t.co/W62QMlFypC" rel="nofollow" title="https://t.co/W62QMlFypC">t.co/W62QMlFypC</a></div>
+        <div class="tweet-footer">
+          <div class="tweet-time"><a href="http://twitter.com/AP_Sports/status/964973252685770752">2h</a></div>
+          <div class="tweet-actions">
+            <a href="https://twitter.com/intent/tweet?in_reply_to=964973252685770752" class="twitter-reply">Reply</a>            <a href="https://twitter.com/intent/retweet?tweet_id=964973252685770752" class="twitter-retweet">Retweet</a>            <a href="https://twitter.com/intent/favorite?tweet_id=964973252685770752" class="twitter-favorite">Favorite</a>          </div>
+        </div>
+                  <div class="tweet-divider"></div>
+                
+      </li>
+          <li>
+        <div class="tweet-author-wrapper clearfix">
+          <div class="tweet-author-info clearfix">
+            <div class="tweet-authorphoto">
+              <a href="https://twitter.com/AP_Sports"><img src="https://pbs.twimg.com/profile_images/2249747844/160X160_LOGO_normal.JPG" alt="AP Sports" /></a>            </div>
+            <div class="tweet-author"><a href="https://twitter.com/AP_Sports">AP Sports</a></div>
+            <div class="tweet-screenname"><a href="https://twitter.com/AP_Sports">@AP_Sports</a></div>
+          </div>
+          <a href="https://twitter.com/AP_Sports" class="twitter-follow-button" data-show-count="false" data-lang="en">Follow @AP_Sports</a>        </div>
+        <div class="tweet-text">Darrell Wallace Jr., the first black driver to start the Daytona 500 since 1969, tops the speed chart in final prac… <a href="https://t.co/sDXVo6zF97" rel="nofollow" title="https://t.co/sDXVo6zF97">t.co/sDXVo6zF97</a></div>
+        <div class="tweet-footer">
+          <div class="tweet-time"><a href="http://twitter.com/AP_Sports/status/964970489092476929">2h</a></div>
+          <div class="tweet-actions">
+            <a href="https://twitter.com/intent/tweet?in_reply_to=964970489092476929" class="twitter-reply">Reply</a>            <a href="https://twitter.com/intent/retweet?tweet_id=964970489092476929" class="twitter-retweet">Retweet</a>            <a href="https://twitter.com/intent/favorite?tweet_id=964970489092476929" class="twitter-favorite">Favorite</a>          </div>
+        </div>
+                
+      </li>
+        </ul>
+  </div>
+
+</div></div>    </div>
+  </div>
+
+</section>  </div>
+</aside>  </div>
+</div><div id="zone-postscript-wrapper" class="zone-wrapper zone-postscript-wrapper clearfix">  
+  <div id="zone-postscript" class="zone zone-postscript clearfix container-12">
+    <div class="grid-6 region region-postscript-first" id="region-postscript-first">
+  <div class="region-inner region-postscript-first-inner">
+    <section class="block block-boxes block-boxes-list block-taxonomy-3 block-boxes-taxonomy-3 odd" id="block-boxes-taxonomy-3">
+  <div class="block-inner clearfix">
+                      <h2 class="block-title">Alpine Skiing <a href="alpine-skiing">View All</a></h2>
+            
+    <div class="content clearfix"   data-vr-zone='Alpine Skiing <a href="alpine-skiing">View All</a>'>
+    <div id='boxes-box-taxonomy_3' class='boxes-box'><div class="boxes-box-content"><div class="box-list-content two_columns_thumbs clearfix">
+
+<article data-itemid="377ec6f732034fb084daaf6aca96dc05" class="node node-ap-article hnews hentry item node-published node-not-promoted node-not-sticky author-winteradmin odd clearfix node-ap-display-position-1 node-ap-display-position-1" id="node-ap-article-214277--2">
+  <div class="article-list-node-content">
+	  <div class="field field-name-field-ap-photo-ref field-type-ap-photo-ref field-label-hidden"><div class="field-items"><div class="field-item even"><div class="field-name-field-thumbnail"><a href="/standardspeaker/article/oops-dont-forget-miracles-can-happen-sports"><img src="https://mapi.associatedpress.com/v1/items/0376caaf60f24c149203f4dc616ac0e7/preview/preview.jpg?s=220x" alt="Pyeongchang Olympics Medals Ceremony Alpine Skiing" title="Pyeongchang Olympics Medals Ceremony Alpine Skiing" /></a></div></div></div></div>	  <div class="article-list-header">
+	    		    <h4 class="entry-title title node-title title" rel="bookmark"><a href="/standardspeaker/article/oops-dont-forget-miracles-can-happen-sports">Oops! Don&#039;t forget that miracles can happen in sports</a></h4>
+		  		</div>  
+	  
+	  <div class="article-list-body">
+	    <div  class="hnews-hidden"><span  class="dateline">NEW YORK</span><a  rel="item-license" id="license-d578617f2e848b2a3690b3a961240912" href="#license-d578617f2e848b2a3690b3a961240912">Copyright 2018 The Associated Press. All rights reserved. This material may not be published, broadcast, rewritten or redistributed.</a><div  class="geo hnews-geo"><span  class="latitude">40.7143</span><span  class="longitude">-74.006</span></div></div><p>NEW YORK (AP) &#x2014; Highlights from media coverage of the Pyeongchang Olympics:</p>	  </div>
+		
+		<footer>
+		  <div class="article-data clearfix">
+		    <div class="time"><span  class="updated" title="2018-02-17T18:24:42-05:00">1 minute ago </span></div>
+		    <div class="readmore"><a href="/standardspeaker/article/oops-dont-forget-miracles-can-happen-sports">Read More</a></div>
+		  </div>
+	  </footer>
+  </div>
+</article>
+
+
+
+<article data-itemid="4a0a25e4eda948bf9a9f4932c1560dbe" class="node node-ap-article hnews hentry item node-published node-not-promoted node-not-sticky author-winteradmin even clearfix node-ap-display-position-2 node-ap-display-position-2" id="node-ap-article-214281">
+  <div class="article-list-node-content">
+	  <div class="field field-name-field-ap-photo-ref field-type-ap-photo-ref field-label-hidden"><div class="field-items"><div class="field-item even"><div class="field-name-field-thumbnail"><a href="/standardspeaker/article/latest-hanyu-yarnold-ledeska-win-gold-olympics"><img src="https://mapi.associatedpress.com/v1/items/b85374a2d89c46d4a8a96cad0744db5d/preview/preview.jpg?s=220x" alt="Yuzuru Hanyu" title="Yuzuru Hanyu" /></a></div></div></div></div>	  <div class="article-list-header">
+	    		    <h4 class="entry-title title node-title title" rel="bookmark"><a href="/standardspeaker/article/latest-hanyu-yarnold-ledeska-win-gold-olympics">The Latest: Hanyu, Yarnold, Ledeska win gold at Olympics</a></h4>
+		  		</div>  
+	  
+	  <div class="article-list-body">
+	    <div  class="hnews-hidden"><span  class="dateline">PYEONGCHANG, South Korea</span><a  rel="item-license" id="license-343afce4adf22fa70116617d82c75d41" href="#license-343afce4adf22fa70116617d82c75d41">Copyright 2018 The Associated Press. All rights reserved. This material may not be published, broadcast, rewritten or redistributed.</a><div  class="geo hnews-geo"><span  class="latitude">37.3682</span><span  class="longitude">128.395</span></div></div>	  </div>
+		
+		<footer>
+		  <div class="article-data clearfix">
+		    <div class="time"><span  class="updated" title="2018-02-17T10:08:09-05:00">Today</span></div>
+		    <div class="readmore"></div>
+		  </div>
+	  </footer>
+  </div>
+</article>
+
+
+
+<article data-itemid="91c4a7764e724f6ab7e3adf21a46122b" class="node node-ap-article hnews hentry item node-published node-not-promoted node-not-sticky author-winteradmin odd clearfix node-ap-display-position-3 node-ap-display-position-3" id="node-ap-article-215732">
+  <div class="article-list-node-content">
+	  	  <div class="article-list-header">
+	    		    <h4 class="entry-title title node-title title" rel="bookmark"><a href="/standardspeaker/article/hanyu-wins-history-making-gold-ledecka-stuns-super-g">Hanyu wins history-making gold, Ledecka stuns in super-G</a></h4>
+		  		</div>  
+	  
+	  <div class="article-list-body">
+	    <div  class="hnews-hidden"><span  class="dateline">PYEONGCHANG, South Korea</span><a  rel="item-license" id="license-649cf86bf7d8cb84ec0cbbea777cf0ad" href="#license-649cf86bf7d8cb84ec0cbbea777cf0ad">Copyright 2018 The Associated Press. All rights reserved. This material may not be published, broadcast, rewritten or redistributed.</a><div  class="geo hnews-geo"><span  class="latitude">37.3682</span><span  class="longitude">128.395</span></div></div>	  </div>
+		
+		<footer>
+		  <div class="article-data clearfix">
+		    <div class="time"><span  class="updated" title="2018-02-17T09:51:04-05:00">Today</span></div>
+		    <div class="readmore"></div>
+		  </div>
+	  </footer>
+  </div>
+</article>
+
+</div></div></div>    </div>
+  </div>
+
+</section>  </div>
+</div><div class="grid-6 region region-postscript-second" id="region-postscript-second">
+  <div class="region-inner region-postscript-second-inner">
+    <section class="block block-boxes block-boxes-list block-topic-1 block-boxes-topic-1 odd" id="block-boxes-topic-1">
+  <div class="block-inner clearfix">
+                      <h2 class="block-title">Figure Skating <a href="figure-skating">View All</a></h2>
+            
+    <div class="content clearfix"   data-vr-zone='Figure Skating <a href="figure-skating">View All</a>'>
+    <div id='boxes-box-topic_1' class='boxes-box'><div class="boxes-box-content"><div class="box-list-content two_columns_topic clearfix">
+
+<article data-itemid="377ec6f732034fb084daaf6aca96dc05" class="node node-ap-article hnews hentry item node-published node-not-promoted node-not-sticky author-winteradmin even clearfix node-ap-display-position-1 node-ap-display-position-1" id="node-ap-article-214277--3">
+  <div class="article-list-node-content">
+	  <div class="field field-name-field-ap-photo-ref field-type-ap-photo-ref field-label-hidden"><div class="field-items"><div class="field-item even"><div class="field-name-field-thumbnail"><a href="/standardspeaker/article/oops-dont-forget-miracles-can-happen-sports"><img src="https://mapi.associatedpress.com/v1/items/0376caaf60f24c149203f4dc616ac0e7/preview/preview.jpg?s=300x" alt="Pyeongchang Olympics Medals Ceremony Alpine Skiing" title="Pyeongchang Olympics Medals Ceremony Alpine Skiing" /></a></div></div></div></div>	  <div class="article-list-header">
+	    		    <h4 class="entry-title title node-title title" rel="bookmark"><a href="/standardspeaker/article/oops-dont-forget-miracles-can-happen-sports">Oops! Don&#039;t forget that miracles can happen in sports</a></h4>
+		  		</div>  
+	  
+	  <div class="article-list-body">
+	    <div  class="hnews-hidden"><span  class="dateline">NEW YORK</span><a  rel="item-license" id="license-d578617f2e848b2a3690b3a961240912" href="#license-d578617f2e848b2a3690b3a961240912">Copyright 2018 The Associated Press. All rights reserved. This material may not be published, broadcast, rewritten or redistributed.</a><div  class="geo hnews-geo"><span  class="latitude">40.7143</span><span  class="longitude">-74.006</span></div></div><p>NEW YORK (AP) &#x2014; Highlights from media coverage of the Pyeongchang Olympics:</p>	  </div>
+		
+		<footer>
+		  <div class="article-data clearfix">
+		    <div class="time"><span  class="updated" title="2018-02-17T18:24:42-05:00">1 minute ago </span></div>
+		    <div class="readmore"><a href="/standardspeaker/article/oops-dont-forget-miracles-can-happen-sports">Read More</a></div>
+		  </div>
+	  </footer>
+  </div>
+</article>
+
+
+
+<article data-itemid="3a8bfa652adf4946be5c7f15a616880c" class="node node-ap-article hnews hentry item node-published node-not-promoted node-not-sticky author-winteradmin odd clearfix node-ap-display-position-2 node-ap-display-position-2" id="node-ap-article-216057--2">
+  <div class="article-list-node-content">
+	  <div class="field field-name-field-ap-photo-ref field-type-ap-photo-ref field-label-hidden"><div class="field-items"><div class="field-item even"><div class="field-name-field-thumbnail"><a href="/standardspeaker/article/self-proclaimed-icon-adam-rippon-takes-final-olympic-skate"><img src="https://mapi.associatedpress.com/v1/items/dddf34ae080245a8a571261ad357190c/preview/preview.jpg?s=220x" alt="Pyeongchang Olympics Figure Skating Men" title="Pyeongchang Olympics Figure Skating Men" /></a></div></div></div></div>	  <div class="article-list-header">
+	    		    <h4 class="entry-title title node-title title" rel="bookmark"><a href="/standardspeaker/article/self-proclaimed-icon-adam-rippon-takes-final-olympic-skate">Self-proclaimed &#039;icon&#039; Adam Rippon takes final Olympic skate</a></h4>
+		  		</div>  
+	  
+	  <div class="article-list-body">
+	    <div  class="hnews-hidden"><span  class="dateline">GANGNEUNG, South Korea</span><a  rel="item-license" id="license-06d2cbdc6bdfd079125b1213f7a943b8" href="#license-06d2cbdc6bdfd079125b1213f7a943b8">Copyright 2018 The Associated Press. All rights reserved. This material may not be published, broadcast, rewritten or redistributed.</a><div  class="geo hnews-geo"><span  class="latitude">37.7556</span><span  class="longitude">128.896</span></div></div>	  </div>
+		
+		<footer>
+		  <div class="article-data clearfix">
+		    <div class="time"><span  class="updated" title="2018-02-17T16:52:07-05:00">2 hours ago </span></div>
+		    <div class="readmore"></div>
+		  </div>
+	  </footer>
+  </div>
+</article>
+
+
+
+<article data-itemid="4a0a25e4eda948bf9a9f4932c1560dbe" class="node node-ap-article hnews hentry item node-published node-not-promoted node-not-sticky author-winteradmin even clearfix node-ap-display-position-3 node-ap-display-position-3" id="node-ap-article-214281--2">
+  <div class="article-list-node-content">
+	  	  <div class="article-list-header">
+	    		    <h4 class="entry-title title node-title title" rel="bookmark"><a href="/standardspeaker/article/latest-hanyu-yarnold-ledeska-win-gold-olympics">The Latest: Hanyu, Yarnold, Ledeska win gold at Olympics</a></h4>
+		  		</div>  
+	  
+	  <div class="article-list-body">
+	    <div  class="hnews-hidden"><span  class="dateline">PYEONGCHANG, South Korea</span><a  rel="item-license" id="license-343afce4adf22fa70116617d82c75d41" href="#license-343afce4adf22fa70116617d82c75d41">Copyright 2018 The Associated Press. All rights reserved. This material may not be published, broadcast, rewritten or redistributed.</a><div  class="geo hnews-geo"><span  class="latitude">37.3682</span><span  class="longitude">128.395</span></div></div>	  </div>
+		
+		<footer>
+		  <div class="article-data clearfix">
+		    <div class="time"><span  class="updated" title="2018-02-17T10:08:09-05:00">Today</span></div>
+		    <div class="readmore"></div>
+		  </div>
+	  </footer>
+  </div>
+</article>
+
+
+
+<article data-itemid="91c4a7764e724f6ab7e3adf21a46122b" class="node node-ap-article hnews hentry item node-published node-not-promoted node-not-sticky author-winteradmin odd clearfix node-ap-display-position-4 node-ap-display-position-4" id="node-ap-article-215732--2">
+  <div class="article-list-node-content">
+	  	  <div class="article-list-header">
+	    		    <h4 class="entry-title title node-title title" rel="bookmark"><a href="/standardspeaker/article/hanyu-wins-history-making-gold-ledecka-stuns-super-g">Hanyu wins history-making gold, Ledecka stuns in super-G</a></h4>
+		  		</div>  
+	  
+	  <div class="article-list-body">
+	    <div  class="hnews-hidden"><span  class="dateline">PYEONGCHANG, South Korea</span><a  rel="item-license" id="license-649cf86bf7d8cb84ec0cbbea777cf0ad" href="#license-649cf86bf7d8cb84ec0cbbea777cf0ad">Copyright 2018 The Associated Press. All rights reserved. This material may not be published, broadcast, rewritten or redistributed.</a><div  class="geo hnews-geo"><span  class="latitude">37.3682</span><span  class="longitude">128.395</span></div></div>	  </div>
+		
+		<footer>
+		  <div class="article-data clearfix">
+		    <div class="time"><span  class="updated" title="2018-02-17T09:51:04-05:00">Today</span></div>
+		    <div class="readmore"></div>
+		  </div>
+	  </footer>
+  </div>
+</article>
+
+</div></div></div>    </div>
+  </div>
+
+</section>  </div>
+</div>  </div>
+</div>  
+  <div id="zone-postscript-row-two" class="zone zone-postscript-row-two clearfix container-12">
+    <div class="grid-6 region region-postscript-third" id="region-postscript-third">
+  <div class="region-inner region-postscript-third-inner">
+    <div class="ap-recent-articles"><section class="block block-ap-misc block-ap-recent-articles block-ap-misc-ap-recent-articles odd" id="block-ap-misc-ap-recent-articles">
+  <div class="block-inner clearfix">
+                      <h2 class="block-title">Latest News</h2>
+            
+    <div class="content clearfix"   data-vr-zone='Latest News'>
+    
+<article data-itemid="377ec6f732034fb084daaf6aca96dc05" class="node node-ap-article hnews hentry item node-published node-not-promoted node-not-sticky author-winteradmin even clearfix node-ap-display-position-1 node-ap-display-position-1" id="node-ap-article-214277--4">
+  <div class="article-list-node-content clearfix">
+	  <div class="field field-name-field-ap-photo-ref field-type-ap-photo-ref field-label-hidden"><div class="field-items"><div class="field-item even"><div class="field-name-field-thumbnail"><a href="/standardspeaker/article/oops-dont-forget-miracles-can-happen-sports"><img src="https://mapi.associatedpress.com/v1/items/0376caaf60f24c149203f4dc616ac0e7/preview/preview.jpg?s=60x" alt="Pyeongchang Olympics Medals Ceremony Alpine Skiing" title="Pyeongchang Olympics Medals Ceremony Alpine Skiing" /></a></div></div></div></div>	  <div class="article-list-header">
+	    		    <h4 class="entry-title title node-title title" rel="bookmark"><a href="/standardspeaker/article/oops-dont-forget-miracles-can-happen-sports" data-slug="BC-OLY--Armchair Olympics,4th Ld-Writethru" data-itemid="377ec6f732034fb084daaf6aca96dc05">Oops! Don&#039;t forget that miracles can happen in sports</a></h4>
+		  		</div>  
+	  
+	  <div class="article-list-body">
+	    <div  class="hnews-hidden"><span  class="dateline">NEW YORK</span><a  rel="item-license" id="license-d578617f2e848b2a3690b3a961240912" href="#license-d578617f2e848b2a3690b3a961240912">Copyright 2018 The Associated Press. All rights reserved. This material may not be published, broadcast, rewritten or redistributed.</a><div  class="geo hnews-geo"><span  class="latitude">40.7143</span><span  class="longitude">-74.006</span></div></div>	  </div>
+		
+		<footer>
+		  <div class="article-data">
+		    <span  class="updated" title="2018-02-17T18:24:42-05:00">1 minute ago </span>		  </div>
+	  </footer>
+  </div>
+</article>
+<article data-itemid="3a8bfa652adf4946be5c7f15a616880c" class="node node-ap-article hnews hentry item node-published node-not-promoted node-not-sticky author-winteradmin odd clearfix node-ap-display-position-2 node-ap-display-position-2" id="node-ap-article-216057--3">
+  <div class="article-list-node-content clearfix">
+	  <div class="field field-name-field-ap-photo-ref field-type-ap-photo-ref field-label-hidden"><div class="field-items"><div class="field-item even"><div class="field-name-field-thumbnail"><a href="/standardspeaker/article/self-proclaimed-icon-adam-rippon-takes-final-olympic-skate"><img src="https://mapi.associatedpress.com/v1/items/dddf34ae080245a8a571261ad357190c/preview/preview.jpg?s=60x" alt="Pyeongchang Olympics Figure Skating Men" title="Pyeongchang Olympics Figure Skating Men" /></a></div></div></div></div>	  <div class="article-list-header">
+	    		    <h4 class="entry-title title node-title title" rel="bookmark"><a href="/standardspeaker/article/self-proclaimed-icon-adam-rippon-takes-final-olympic-skate" data-slug="AP-OLY-FIG-Rippon&#039;s-Last-Skate" data-itemid="3a8bfa652adf4946be5c7f15a616880c">Self-proclaimed &#039;icon&#039; Adam Rippon takes final Olympic skate</a></h4>
+		  		</div>  
+	  
+	  <div class="article-list-body">
+	    <div  class="hnews-hidden"><span  class="dateline">GANGNEUNG, South Korea</span><a  rel="item-license" id="license-06d2cbdc6bdfd079125b1213f7a943b8" href="#license-06d2cbdc6bdfd079125b1213f7a943b8">Copyright 2018 The Associated Press. All rights reserved. This material may not be published, broadcast, rewritten or redistributed.</a><div  class="geo hnews-geo"><span  class="latitude">37.7556</span><span  class="longitude">128.896</span></div></div>	  </div>
+		
+		<footer>
+		  <div class="article-data">
+		    <span  class="updated" title="2018-02-17T16:52:07-05:00">2 hours ago </span>		  </div>
+	  </footer>
+  </div>
+</article>
+<article data-itemid="da20cdbbfc5947e4941f3d85d8bae7e2" class="node node-ap-article hnews hentry item node-published node-not-promoted node-not-sticky author-winteradmin even clearfix" id="node-ap-article-216056">
+  <div class="article-list-node-content clearfix">
+	  <div class="field field-name-field-ap-photo-ref field-type-ap-photo-ref field-label-hidden"><div class="field-items"><div class="field-item even"><div class="field-name-field-thumbnail"><a href="/standardspeaker/article/nash-kidd-hill-among-finalists-basketball-hall-fame"><img src="https://mapi.associatedpress.com/v1/items/175b2ead1bb54a5e93ee885adfc01e4e/preview/preview.jpg?s=60x" alt="Jason Kidd, George Hill" title="Jason Kidd, George Hill" /></a></div></div></div></div>	  <div class="article-list-header">
+	    		    <h4 class="entry-title title node-title title" rel="bookmark"><a href="/standardspeaker/article/nash-kidd-hill-among-finalists-basketball-hall-fame" data-slug="AP-BKN--All-Star-Hall of Fame,2nd Ld-Writethru" data-itemid="da20cdbbfc5947e4941f3d85d8bae7e2">Nash, Kidd, Hill among finalists for basketball Hall of Fame</a></h4>
+		  		</div>  
+	  
+	  <div class="article-list-body">
+	    <div  class="hnews-hidden"><span  class="dateline">LOS ANGELES</span><a  rel="item-license" id="license-697060e60b6c2a4c7b955a309e3ac3d4" href="#license-697060e60b6c2a4c7b955a309e3ac3d4">Copyright 2018 The Associated Press. All rights reserved. This material may not be published, broadcast, rewritten or redistributed.</a><div  class="geo hnews-geo"><span  class="latitude">34.0522</span><span  class="longitude">-118.244</span></div></div>	  </div>
+		
+		<footer>
+		  <div class="article-data">
+		    <span  class="updated" title="2018-02-17T16:13:37-05:00">2 hours ago </span>		  </div>
+	  </footer>
+  </div>
+</article>
+<article data-itemid="072ee98b72654f588f686689a21a4602" class="node node-ap-article hnews hentry item node-published node-not-promoted node-not-sticky author-winteradmin odd clearfix node-ap-display-position-3 node-ap-display-position-3" id="node-ap-article-215982--2">
+  <div class="article-list-node-content clearfix">
+	  <div class="field field-name-field-ap-photo-ref field-type-ap-photo-ref field-label-hidden"><div class="field-items"><div class="field-item even"><div class="field-name-field-thumbnail"><a href="/standardspeaker/article/kovalchuk-scores-twice-russians-outclass-us-4-0-olympics"><img src="https://mapi.associatedpress.com/v1/items/11c523ab89384317b2f78b057ba984c0/preview/preview.jpg?s=60x" alt="Pyeongchang Olympics Ice Hockey Men" title="Pyeongchang Olympics Ice Hockey Men" /></a></div></div></div></div>	  <div class="article-list-header">
+	    		    <h4 class="entry-title title node-title title" rel="bookmark"><a href="/standardspeaker/article/kovalchuk-scores-twice-russians-outclass-us-4-0-olympics" data-slug="AP-OLY-HKO-Russia-US" data-itemid="072ee98b72654f588f686689a21a4602">Kovalchuk scores twice, Russians outclass US 4-0 at Olympics</a></h4>
+		  		</div>  
+	  
+	  <div class="article-list-body">
+	    <div  class="hnews-hidden"><span  class="dateline">GANGNEUNG, South Korea</span><a  rel="item-license" id="license-5b8c3e1de24957db687ded5702ecd714" href="#license-5b8c3e1de24957db687ded5702ecd714">Copyright 2018 The Associated Press. All rights reserved. This material may not be published, broadcast, rewritten or redistributed.</a><div  class="geo hnews-geo"><span  class="latitude">37.7556</span><span  class="longitude">128.896</span></div></div>	  </div>
+		
+		<footer>
+		  <div class="article-data">
+		    <span  class="updated" title="2018-02-17T11:40:35-05:00">Today</span>		  </div>
+	  </footer>
+  </div>
+</article>
+<article data-itemid="bed7cd294bef4958a1a90e9403fb9638" class="node node-ap-article hnews hentry item node-published node-not-promoted node-not-sticky author-winteradmin even clearfix" id="node-ap-article-216054">
+  <div class="article-list-node-content clearfix">
+	  <div class="field field-name-field-ap-photo-ref field-type-ap-photo-ref field-label-hidden"><div class="field-items"><div class="field-item even"><div class="field-name-field-thumbnail"><a href="/standardspeaker/article/king-large-hill-stoch-wins-olympic-gold-ski-jumping"><img src="https://mapi.associatedpress.com/v1/items/20134b619b8b4303aecba3a0625b3f27/preview/preview.jpg?s=60x" alt="Pyeongchang Olympics Ski Jumping Men" title="Pyeongchang Olympics Ski Jumping Men" /></a></div></div></div></div>	  <div class="article-list-header">
+	    		    <h4 class="entry-title title node-title title" rel="bookmark"><a href="/standardspeaker/article/king-large-hill-stoch-wins-olympic-gold-ski-jumping" data-slug="BC-OLY--JUM-Large Hill" data-itemid="bed7cd294bef4958a1a90e9403fb9638">King of large hill, Stoch wins Olympic gold in ski jumping</a></h4>
+		  		</div>  
+	  
+	  <div class="article-list-body">
+	    <div  class="hnews-hidden"><span  class="dateline">PYEONGCHANG, South Korea</span><a  rel="item-license" id="license-98036217e9945a2747e3f1b8d74d811a" href="#license-98036217e9945a2747e3f1b8d74d811a">Copyright 2018 The Associated Press. All rights reserved. This material may not be published, broadcast, rewritten or redistributed.</a><div  class="geo hnews-geo"><span  class="latitude">37.3682</span><span  class="longitude">128.395</span></div></div>	  </div>
+		
+		<footer>
+		  <div class="article-data">
+		    <span  class="updated" title="2018-02-17T10:52:41-05:00">Today</span>		  </div>
+	  </footer>
+  </div>
+</article>    </div>
+  </div>
+
+</section></div>  </div>
+</div><div class="grid-6 region region-postscript-fourth" id="region-postscript-fourth">
+  <div class="region-inner region-postscript-fourth-inner">
+    <section class="block block-boxes block-boxes-list block-taxonomy-2 block-boxes-taxonomy-2 odd" id="block-boxes-taxonomy-2">
+  <div class="block-inner clearfix">
+                      <h2 class="block-title">Hometown Heros</h2>
+            
+    <div class="content clearfix"   data-vr-zone='Hometown Heros'>
+    <div id='boxes-box-taxonomy_2' class='boxes-box'><div class="boxes-box-content"><div class="two_columns_copy clearfix"></div></div></div>    </div>
+  </div>
+
+</section>  </div>
+</div>  </div>
+</section>    
+  
+      <footer id="section-footer" class="section section-footer">
+  <div id="zone-footer-wrapper" class="zone-wrapper zone-footer-wrapper clearfix">  
+  <div id="zone-footer" class="zone zone-footer clearfix container-12">
+    <div class="grid-12 region region-footer-second" id="region-footer-second">
+  <div class="region-inner region-footer-second-inner">
+    <div id="copyright">AP Sports <span class="pipe">|</span> &#169; 2018 Associated Press</div><ul class="menu"><li class="leaf"><a href="/standardspeaker/privacy-policy" title="Privacy Policy">Privacy Policy</a></li>
+<li class="leaf"><a href="/standardspeaker/terms-use" title="Terms of Use">Terms of Use</a></li>
+<li class="leaf"><a href="http://www.apimages.com" title="AP Images">AP Images</a></li>
+<li class="last leaf"><a href="http://www.ap.org" title="AP">ap.org</a></li>
+</ul>  </div>
+</div>  </div>
+</div></footer>  </div><div class="page-frame-wrapper">      
+  <div class="region region-page-bottom" id="region-page-bottom">
+  <div class="region-inner region-page-bottom-inner">
+    <noscript><img src="http://b.scorecardresearch.com/p?c1=2&c2=11304492&cv=2.0&cj=1" /></noscript>  </div>
+</div>  
+      
+<script type="text/javascript" src="https://platform.tumblr.com/v1/share.js"></script>
+<script type="text/javascript">
+  window._taboola = window._taboola || [];
+  _taboola.push({flush: true});
+</script> 
+
+    </div>
+  </div>
+</body>
+</html>

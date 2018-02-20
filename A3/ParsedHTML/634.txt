@@ -1,0 +1,7 @@
+Russian Athletes Denied Chance To Attend Olympics
+posted by Bill Strange -
+1 week ago
+Dozens of Russian athletes are being denied a final bid to attend the Winter Olympics in South Korea. Hours before the opening ceremony, an appeals court ruled that 47 athletes and coaches can't compete in the Winter Games.  The entire Russian delegation was banned from competing in the games because of a state-sponsored doping scandal during the 2014 winter games in Sochi, Russia.  
+{"position1": {"catalog_type": "station", "description": "", "id": 6043, "name": "NBC News Radio", "station": {"call_letters": "INWS-FL", "countries": "US", "description": "The news you want, when you want it", "id": 6043, "name": "NBC News Radio"}, "stations": [{"call_letters": "INWS-FL", "countries": "US", "description": "The news you want, when you want it", "id": 6043, "name": "NBC News Radio"}], "type": "catalog"}}
+However, there are still 169 Russian athletes in the games, but they're not competing under the Russian flag and are instead designated as "Olympic Athletes from Russia."
+Photo: YouTube

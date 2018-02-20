@@ -1,0 +1,31 @@
+Mobile
+How to watch the 2018 Olympics in VR
+Don't watch the 2018 Olympics on a boring TV -- use VR to make it feel as if you are actually at the Opening Ceremony and other events.
+by
+February 8, 2018 9:46 PM PST
+Jason Cipriani/CNET
+With the XXII Winter Olympics nearly underway in PyeongChang, South Korea, live streaming your favorite events is the easiest way to keep up with the medal count and your favorite athletes.
+This year, instead of sitting and staring at a flat TV wondering what it's like to be at the Olympics -- or even just the opening ceremony-- put on a virtual reality headset and watch the event in person. Well, kind of.
+Now Playing: Watch this: How to stream the Winter Olympics on any device
+1:29
+Required hardware
+You don't need a fancy virtual reality headset connected to an overpowered computer to take advantage of watching the Olympics in VR. I mean, that definitely works, but it's a tad overkill.
+NBC will make its VR streaming available to the following headsets:
+Oculus
+Windows Mixed Reality
+Google Cardboard
+Some of the headsets listed above require an iOS or Android phone that acts as the power and the display of your VR experience.
+For Google Daydream, you'll need to have one of the following phones , according to NBC:
+As for Gear VR, as long as you have a Galaxy S6 or newer, or a Galaxy Note 5 or newer, you'll be fine.
+Now Playing: Watch this: Google debuts new Daydream View
+1:58
+Required software
+Screenshot by Jason Cipriani/CNET
+For those headsets that require a phone, such as Google Cardboard or Daydream, you need to download the iOS or Android version of the NBC Sports VR app. Users of an Oculus or Gear VR headset will need to install the NBC Sports VR app from the Oculus store . Finally, those using a Windows Mixed Reality headset, download NBC Sports VR from the Microsoft store.
+Unfortunately, you will need to authenticate your NBC subscription using login info from your cable or satellite company in order to live stream events.
+Now Playing: Watch this: The tech behind Team USA's toasty Opening Ceremony jacket
+3:00
+No VR headset?
+That's OK, too! By installing the NBC Sports VR app on your phone, you can still watch 360-degree videos by holding your phone out in front of you and moving it around. It's not nearly the same, but still impressive!
+Check the schedule
+NBC has posted a schedule of all events it will stream in VR on its website , or you can use the NBC Sports VR app to monitor events and even set it to send you alerts when a specific event starts. The first event available in VR will be the Opening Ceremony , on Friday, Feb. 9.

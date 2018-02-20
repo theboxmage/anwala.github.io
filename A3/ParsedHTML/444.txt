@@ -1,0 +1,4 @@
+リンクを埋め込む
+以下のコードをコピーしてサイトに埋め込むことができます。
+<iframe marginwidth="0" marginheight="0" src="http://b.hatena.ne.jp/entry.parts?url=http%3A%2F%2Fwww.bbc.com%2Fnews%2Fblogs-trending-43003630" scrolling="no" frameborder="0" height="230" width="500"><div class="hatena-bookmark-detail-info"><a href="http://www.bbc.com/news/blogs-trending-43003630">Winter Olympics: Yuri On Ice performed by Japanese skaters - BBC News</a><a href="/entry/www.bbc.com/news/blogs-trending-43003630">はてなブックマーク - Winter Olympics: Yuri On Ice performed by Japanese skaters - BBC News</a></div></iframe>
+プレビュー

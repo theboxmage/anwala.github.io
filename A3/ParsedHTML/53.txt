@@ -1,0 +1,4 @@
+This will be displayed on your public profile
+New password
+Must be at least 4 characters long
+Cancel

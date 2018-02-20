@@ -1,0 +1,403 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script src="/cdn-cgi/apps/head/5sKhtD5hW0lzgqLj4iBBJLpyiuw.js"></script><script async src="https://www.googletagmanager.com/gtag/js?id=UA-23936311-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-23936311-1');
+    </script>
+
+
+    <meta charset="utf-8" /><meta http-equiv="x-ua-compatible" content="ie=edge" /><title>
+	MyAllies Breaking News - Fastest Breaking News Around The Globe
+</title><meta name="viewport" content="width=device-width, initial-scale=1" /><meta name="robots" content="noarchive" /><meta name="description" content="MyAllies Article delivers news from across the globe and information on the latest breaking business and financial news." /><meta name="keywords" content="MyAllies, MyAllies Breaking news, social trading, breaking news, breaking, news, finance, business, science, health, entertainment, news online, UK news, world news, global news, business, money, sports, politics, law, technology, education, travel, health, special reports, autos, developing story" /><meta name="theme-color" content="#1e90ff" /><link href="/favicon.ico" rel="shortcut icon" type="image/x-icon" /><link rel="apple-touch-icon" href="/content/images/icons/icon-144x144.png" /><link rel="manifest" href="/manifest.json" /><link rel="stylesheet" href="/content/css/normalize.min.css" /><link rel="stylesheet" href="/content/css/odometer.css" /><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" /><link rel="stylesheet" href="/content/css/google.material.icons.css" /><link rel="stylesheet" href="https://unpkg.com/material-components-web@latest/dist/material-components-web.css" /><link href="/content/css/display.css?v=12" rel="stylesheet" /></head>
+
+
+<body class="mdc-typography">
+    <header id="myallies-header" class="mdc-toolbar mdc-toolbar--fixed mdc-theme--text-primary-on-background">
+        <div class="mdc-toolbar__row" id="normal-header">
+            <section class="mdc-toolbar__section mdc-toolbar__section--align-start">
+                <a id="myallies-nav-icon" class="material-icons mdc-ripple-surface"
+                    href="#"
+                    aria-label="Click to show the navigation menu"
+                    aria-controls="myallies-nav-menu"
+                    data-mdc-ripple-is-unbounded>menu</a>
+                <div id="main-search-icon-container" onclick="showSearchBox()">
+                    <div id="main-search-icon" class="material-icons mdc-ripple-surface" data-mdc-ripple-is-unbounded>search</div>
+                </div>
+
+                <div id="myallies-logo"
+                    class="mdc-toolbar__title">
+                    <span>MyAllies Breaking News</span>
+                </div>
+            </section>
+        </div>
+        <div class="mdc-toolbar__row" id="company-header" style="display: none;">
+            <div class="material-icons company-details-back" aria-label="Back" name="chevron-left" onclick="companyBack();">
+                <span class="mdc-fab__icon">arrow_back</span>
+            </div>
+            <div style="width: 100%">
+                <div id="company-header-company-name">
+                </div>
+
+                <div id="company-header-company-symbol">
+                </div>
+            </div>
+
+            <div id="company-header-logo">
+                <img></img>
+            </div>
+        </div>
+    </header>
+    <aside id="myallies-nav-menu" class="mdc-drawer mdc-drawer--temporary mdc-typography">
+        <nav class="mdc-drawer__drawer">
+            <header class="mdc-drawer__header">
+                <div class="mdc-drawer__header-content">
+                    <div class="mdc-layout-grid">
+                        <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-1">
+                            <img src="/content/images/icons/icon-192x192.png" style="display: block; margin: 0 auto; width: 40%; cursor: pointer;" onclick="flowVisualControl(AC_CLICK_HOME, null);goHome();drawer.open = false;" />
+                        </div>
+                        <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-1">
+                            <section style="width: 100%">
+                                <div id="drawer-application-name">
+                                    {{ applicationName }}
+                                </div>
+
+                            </section>
+                        </div>
+                    </div>
+                </div>
+
+            </header>
+            <a id="linkUsername" class="mdc-list-item">
+                <img src="/content/images/employee-photo.png" id="imgUsernamePhoto" class="drawer-username-photo mdl-shadow--2dp" />
+            </a>
+            <mdc-list-divider><div class="mdc-list-divider" role="seperator"></div></mdc-list-divider>
+            <nav class="mdc-drawer__content mdc-list">
+                <a class="mdc-list-item mdc-ripple-upgraded" role="listitem" href="#" onclick="drawer.open = false; displayStockNotificationSettingModal();">
+                    <mdc-icon aria-hidden="true" class="material-icons drawer-icon">notifications_active</mdc-icon>
+                    Realtime Alerts
+                </a>
+                <a href="../#" id="linkRegister" class="mdc-list-item mdc-ripple-upgraded" role="listitem" onclick="drawer.open = false; displayUserRegistration();">
+                    <mdc-icon aria-hidden="true" class="material-icons drawer-icon">person_add</mdc-icon>
+                    Signup
+                </a>
+                <a href="../#" id="linkLogin" class="mdc-list-item mdc-ripple-upgraded" role="listitem" onclick="drawer.open = false; displayUserLogin();">
+                    <mdc-icon aria-hidden="true" class="material-icons drawer-icon">person</mdc-icon>
+                    Login
+                </a>
+                <a href="../#" id="linkLogout" class="mdc-list-item mdc-ripple-upgraded" role="listitem" onclick="drawer.open = false; location.href=(&#39;/account/signout?dc=true&#39;);">
+                    <mdc-icon aria-hidden="true" class="material-icons drawer-icon">exit_to_app</mdc-icon>
+                    Logout
+                </a>
+
+
+
+
+                <mdc-list-divider><div class="mdc-list-divider" role="seperator"></div></mdc-list-divider>
+
+
+                <a class="mdc-list-item mdc-ripple-upgraded" role="listitem" href="#" onclick="drawer.open = false;window.open('http://www.myallies.com/api', '_blank');">
+                    <mdc-icon aria-hidden="true" class="material-icons drawer-icon">graphic_eq</mdc-icon>
+                    Realtime API
+                </a>
+
+                <a class="mdc-list-item mdc-ripple-upgraded" role="listitem" href="#" onclick="drawer.open = false;window.open('http://about.myallies.com/', '_blank');">
+                    <mdc-icon aria-hidden="true" class="material-icons drawer-icon">trending_up</mdc-icon>
+                    About MyAllies
+                </a>
+                <mdc-list-divider><div class="mdc-list-divider" role="seperator"></div></mdc-list-divider>
+
+
+                <a class="mdc-list-item mdc-ripple-upgraded" role="listitem" href="#" onclick="drawer.open = false; displayDeveloperOptions();">
+                    <mdc-icon aria-hidden="true" class="material-icons drawer-icon">code</mdc-icon>
+                    Developer Options
+                </a>
+                <mdc-list-divider><div class="mdc-list-divider" role="seperator"></div></mdc-list-divider>
+                <div style="margin: 10px; color: #808080; text-transform: none; font-size: 10px;">Version 0.14</div>
+            </nav>
+        </nav>
+    </aside>
+
+
+
+    <main>
+        <form method="post" action="./pence-did-not-stand-for-korean-delegation-at-olympics-opening-ceremonies-report-797?GeneratedURL=pence-did-not-stand-for-korean-delegation-at-olympics-opening-ceremonies-report-797" id="MainForm">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="euXkfj3GAk1zhXZJUARBMCTb96kjX9/TnEHHbB7YeNdBGGop7kcJvVlR3Qnwxwdi1qVF2Zh1g+hX5KhqCufSV5CLLldo/6sXsTzR346ljJ0=" />
+
+<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="CA0B0334" />
+            
+    <div id="pageContentMaster_mainContainer">
+
+        <aside id="company-details-contents">
+        </aside>
+
+        <aside id="tabbed-contents">
+
+            <nav id="dynamic-tab-bar" class="mdc-tab-bar mdc-tab-bar--indicator-accent mdc-toolbar-fixed-adjust" role="tablist">
+                <a role="tab" aria-controls="news-container" class="mdc-tab mdc-tab--active" href="javascript:void(0)">Top Stories</a>
+                <a role="tab" aria-controls="stocks-container" class="mdc-tab" href="javascript:void(0)">Stocks</a>
+                <a role="tab" aria-controls="stream-article-container" class="mdc-tab" href="javascript:void(0)">Live Updates</a>
+                
+                <span class="mdc-tab-bar__indicator"></span>
+            </nav>
+            <section>
+
+                <div class="panels" style="margin-top: 10px;">
+
+                    <div class="panel active" id="news-container" role="tabpanel" aria-hidden="false">
+
+                        <div class="mdc-layout-grid" id="news-container-headlines">
+                        </div>
+                    </div>
+                    <div class="panel" id="stocks-container" role="tabpanel" aria-hidden="false" style="display: none;">
+                    </div>
+                    <div class="panel" id="stream-article-container" role="tabpanel" aria-hidden="true" style="display: none;">
+                        <div>
+                            <i class="fa fa-circle text-danger blink" style="margin: 10px 0px;"></i>&nbsp; LIVE
+                        </div>
+                    </div>
+                    <div class="panel" id="portfolio-container" role="tabpanel" aria-hidden="true" style="display: none;">
+                        <p class="mdc-text-field-helper-text mdc-text-field-helper-text--persistent mdc-text-field-helper-text--validation-msg">
+                            Must be at least 4 characters long
+                        </p>
+                    </div>
+                </div>
+            </section>
+        </aside>
+
+    </div>
+
+        </form>
+    </main>
+
+    <div class="mdc-snackbar"
+        aria-live="assertive"
+        aria-atomic="true"
+        aria-hidden="true">
+        <div class="mdc-snackbar__text"></div>
+        <div class="mdc-snackbar__action-wrapper">
+            <button type="button" class="mdc-snackbar__action-button"></button>
+        </div>
+    </div>
+
+    
+    <aside id="user-registration-modal"
+        class="mdc-dialog"
+        role="alertdialog"
+        aria-labelledby="my-mdc-dialog-label"
+        aria-describedby="my-mdc-dialog-description">
+        <div class="mdc-dialog__surface">
+            <header class="mdc-dialog__header">
+                <h2 id="my-mdc-dialog-label" class="mdc-dialog__header__title">Register an account
+                </h2>
+            </header>
+            <div class="mdc-dialog__body">
+
+                <section onclick="new mdc.dialog.MDCDialog(document.querySelector('#user-registration-modal')).close(); displayUserLogin();">Already Regsitered? <span class="link-text">Sign In</span></section>
+
+                <section>
+                    <section>
+                        <div class="mdc-text-field" data-mdc-auto-init="MDCTextField">
+                            <input type="text" id="user-registration-email" class="mdc-text-field__input" required>
+                            <label class="mdc-text-field__label" for="user-registration-email">Email address</label>
+                            <div class="mdc-text-field__bottom-line"></div>
+                        </div>
+
+                    </section>
+                    <section>
+                        <div class="mdc-text-field" data-mdc-auto-init="MDCTextField">
+                            <input type="text" id="user-registration-username" class="mdc-text-field__input" aria-controls="username-helptext" required>
+                            <label class="mdc-text-field__label" for="user-registration-username">User name</label>
+                            <div class="mdc-text-field__bottom-line"></div>
+                        </div>
+                        <p class="mdc-text-field-helper-text mdc-text-field-helper-text--persistent mdc-text-field-helper-text--validation-msg" id="pw-user-info-msg">
+                            This will be displayed on your public profile
+                        </p>
+
+                    </section>
+                    <section>
+                        <div class="mdc-text-field" data-mdc-auto-init="MDCTextField">
+                            <input type="password" id="user-registration-password" class="mdc-text-field__input" required minlength="4">
+                            <label class="mdc-text-field__label" for="user-registration-password">New password</label>
+                            <div class="mdc-text-field__bottom-line"></div>
+                        </div>
+                        <p class="mdc-text-field-helper-text mdc-text-field-helper-text--persistent mdc-text-field-helper-text--validation-msg" id="pw-validation-msg">
+                            Must be at least 4 characters long
+                        </p>
+                    </section>
+                </section>
+            </div>
+
+            <footer class="mdc-dialog__footer">
+                <button type="button" class="mdc-button mdc-dialog__footer__button mdc-dialog__footer__button--cancel">Cancel</button>
+                <button type="button" class="mdc-button mdc-dialog__footer__button mdc-dialog__footer__button--accept" onclick="registerUser();  event.stopPropagation();" id="button-register-user">Register</button>
+
+            </footer>
+        </div>
+        <div class="mdc-dialog__backdrop"></div>
+    </aside>
+
+    
+    <aside id="user-login-modal"
+        class="mdc-dialog"
+        role="alertdialog"
+        aria-labelledby="my-mdc-dialog-label"
+        aria-describedby="my-mdc-dialog-description">
+        <div class="mdc-dialog__surface">
+            <header class="mdc-dialog__header">
+                <h2 class="mdc-dialog__header__title">Login to your account
+                </h2>
+            </header>
+            <section id="my-mdc-dialog-description" class="mdc-dialog__body">
+                <section onclick="new mdc.dialog.MDCDialog(document.querySelector('#user-login-modal')).close(); displayUserRegistration();">Not Registered? <span class="link-text">Register here</span> in 10 Seconds </section>
+                <section>
+                    <section>
+                        <div class="mdc-text-field" data-mdc-auto-init="MDCTextField" style="width: 200px;">
+                            <input type="text" id="user-login-email-username" class="mdc-text-field__input" required>
+                            <label class="mdc-text-field__label" for="user-login-email-username">Email address or Username</label>
+                            <div class="mdc-text-field__bottom-line"></div>
+                        </div>
+                    </section>
+                    <section>
+                        <div class="mdc-text-field" data-mdc-auto-init="MDCTextField">
+                            <input type="password" id="user-login-password" class="mdc-text-field__input" required>
+                            <label class="mdc-text-field__label" for="user-login-password">Password</label>
+                            <div class="mdc-text-field__bottom-line"></div>
+                        </div>
+                    </section>
+                </section>
+            </section>
+            <p style="margin-left: 25px;"><a href="/account/reminder/" class="link" style="text-decoration: none;">I forgot my password</a></p>
+            <footer class="mdc-dialog__footer">
+                <button type="button" class="mdc-button mdc-dialog__footer__button mdc-dialog__footer__button--cancel">Cancel</button>
+                <button type="button" class="mdc-button mdc-dialog__footer__button mdc-dialog__footer__button--accept" onclick="loginUser();  event.stopPropagation();" id="button-login-user">Login</button>
+            </footer>
+        </div>
+        <div class="mdc-dialog__backdrop"></div>
+    </aside>
+
+    <!--Stocks Alerts Modal-->
+    <aside id="user-notification-settings-modal"
+        class="mdc-dialog"
+        role="alertdialog"
+        aria-labelledby="my-mdc-dialog-label"
+        aria-describedby="stock-notification-body">
+        <div class="mdc-dialog__surface">
+            <header class="mdc-dialog__header">
+                <h2 id="my-mdc-dialog-label" class="mdc-dialog__header__title">Configure Your Stock Alerts
+                </h2>
+            </header>
+
+            <section class="mdc-dialog__body mdc-dialog__body--scrollable" id="stock-notification-body" style="max-height: 500px;">
+                <section class="mdc-typography mdc-typography--subheading2" style="margin: 30px;">
+                    Before you can receive price alerts you need to enable notification on this site 
+                    <button class="mdc-button mdc-button--raised secondary-filled-button mdc-ripple-upgraded" onclick="askPermission();">
+                        Enable Notification
+                    </button>
+
+                </section>
+                <section>
+                    <ul class="mdc-list" id="stock-notification-container">
+                    </ul>
+                </section>
+                <section>
+                    <button type="button" class="mdc-button mdc-button--raised mdc-ripple-upgraded" onclick="newAlert()" style="margin: 20px 0px;">New Alert</button>
+                </section>
+            </section>
+            <footer class="mdc-dialog__footer">
+                <button type="button" class="mdc-button mdc-dialog__footer__button mdc-dialog__footer__button--cancel">Cancel</button>
+                <button type="button" class="mdc-button mdc-dialog__footer__button mdc-dialog__footer__button--accept" onclick="saveStockAlert();  event.stopPropagation();" id="button-save-alerts">Save</button>
+            </footer>
+        </div>
+        <div class="mdc-dialog__backdrop"></div>
+    </aside>
+
+    <!--Developer Options-->
+    <aside id="developer-options-modal"
+        class="mdc-dialog"
+        role="alertdialog"
+        aria-labelledby="my-mdc-dialog-label"
+        aria-describedby="stock-notification-body">
+        <div class="mdc-dialog__surface">
+            <header class="mdc-dialog__header">
+                <h2 class="mdc-dialog__header__title">Your Deveoper Options
+                </h2>
+            </header>
+            <section class="mdc-typography mdc-typography--subheading2" style="margin: 30px;">
+                Unregister Service Worker 
+            <button class="mdc-button mdc-button--raised secondary-filled-button mdc-ripple-upgraded" onclick="unregisterServiceWorker();">
+                Go
+            </button>
+            </section>
+
+            <footer class="mdc-dialog__footer">
+                <button type="button" class="mdc-button mdc-dialog__footer__button mdc-dialog__footer__button--cancel">Close</button>
+            </footer>
+        </div>
+        <div class="mdc-dialog__backdrop"></div>
+    </aside>
+
+    <!--Search Modal-->
+    <aside id="search-modal" class="mdc-dialog">
+        <div class="mdc-dialog__surface">
+            <section class="mdc-typography mdc-typography--subheading2" style="margin: 10px;">
+                <div class="material-icons search-close" aria-label="Back" name="chevron-left" onclick="closeSearch();return false;">
+                    <span class="mdc-fab__icon">arrow_back</span>
+                </div>
+
+                <input type="text" id="input-search" class="mdc-text-field__input">
+            </section>
+            <section id="search-results">
+            </section>
+        </div>
+        <div class="mdc-dialog__backdrop"></div>
+    </aside>
+
+    
+    
+
+    <script src="https://cdn.jsdelivr.net/npm/vue@latest/dist/vue.js"></script>
+
+    <script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.js"></script>
+    <script src="/content/js/json2.min.js"></script>
+    <script src="/content/js/jquery-3.2.1.min.js"></script>
+    <script src="/content/js/odometer.min.js"></script>
+    <script src="/content/js/odometer-patched.js"></script> 
+    <script src="https://code.highcharts.com/highcharts.js"></script>
+    <script src="/content/js/push.js?v=12"></script>
+
+    <script src="/content/js/constants.js?v=12"></script>
+    <script src="/content/js/vars.js?v=12"></script>
+    <script src="/content/js/helpers.js?v=12"></script>
+    <script src="/content/js/server.js?v=12"></script>
+    <script src="/content/js/init.js?v=12"></script>
+    <script src="/content/js/main.js?v=12"></script>
+    <script src="/content/js/price.js?v=12"></script>
+    <script src="/content/js/story.js?v=12"></script>
+    <script src="/content/js/news.js?v=12"></script>
+    <script src="/content/js/comment.js?v=12"></script>
+    <script src="/content/js/vote.js?v=12"></script>
+    <script src="/content/js/company.js?v=12"></script>
+    <script src="/content/js/notification.js?v=12"></script>
+    <script src="/content/js/search.js?v=12"></script>
+
+    <script>
+        var LandedNews = null;
+        var LandedCompany = null;
+    </script>
+
+
+
+
+    
+</body>
+</html>
+

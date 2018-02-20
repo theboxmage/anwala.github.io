@@ -1,0 +1,1093 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<meta charset="UTF-8"><script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,t,n){function r(n){if(!t[n]){var o=t[n]={exports:{}};e[n][0].call(o.exports,function(t){var o=e[n][1][t];return r(o||t)},o,o.exports)}return t[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({1:[function(e,t,n){function r(){}function o(e,t,n){return function(){return i(e,[f.now()].concat(u(arguments)),t?null:this,n),t?void 0:this}}var i=e("handle"),a=e(2),u=e(3),c=e("ee").get("tracer"),f=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],d="api-",l=d+"ixn-";a(p,function(e,t){s[t]=o(d+t,!0,"api")}),s.addPageAction=o(d+"addPageAction",!0),s.setCurrentRouteName=o(d+"routeName",!0),t.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,t){var n={},r=this,o="function"==typeof t;return i(l+"tracer",[f.now(),e,n],r),function(){if(c.emit((o?"":"no-")+"fn-start",[f.now(),r,o],n),o)try{return t.apply(this,arguments)}catch(e){throw c.emit("fn-err",[arguments,this,e],n),e}finally{c.emit("fn-end",[f.now()],n)}}}};a("setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,t){m[t]=o(l+t)}),newrelic.noticeError=function(e){"string"==typeof e&&(e=new Error(e)),i("err",[e,f.now()])}},{}],2:[function(e,t,n){function r(e,t){var n=[],r="",i=0;for(r in e)o.call(e,r)&&(n[i]=t(r,e[r]),i+=1);return n}var o=Object.prototype.hasOwnProperty;t.exports=r},{}],3:[function(e,t,n){function r(e,t,n){t||(t=0),"undefined"==typeof n&&(n=e?e.length:0);for(var r=-1,o=n-t||0,i=Array(o<0?0:o);++r<o;)i[r]=e[t+r];return i}t.exports=r},{}],4:[function(e,t,n){t.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,t,n){function r(){}function o(e){function t(e){return e&&e instanceof r?e:e?c(e,u,i):i()}function n(n,r,o,i){if(!d.aborted||i){e&&e(n,r,o);for(var a=t(o),u=m(n),c=u.length,f=0;f<c;f++)u[f].apply(a,r);var p=s[y[n]];return p&&p.push([b,n,r,a]),a}}function l(e,t){v[e]=m(e).concat(t)}function m(e){return v[e]||[]}function w(e){return p[e]=p[e]||o(n)}function g(e,t){f(e,function(e,n){t=t||"feature",y[n]=t,t in s||(s[t]=[])})}var v={},y={},b={on:l,emit:n,get:w,listeners:m,context:t,buffer:g,abort:a,aborted:!1};return b}function i(){return new r}function a(){(s.api||s.feature)&&(d.aborted=!0,s=d.backlog={})}var u="nr@context",c=e("gos"),f=e(2),s={},p={},d=t.exports=o();d.backlog=s},{}],gos:[function(e,t,n){function r(e,t,n){if(o.call(e,t))return e[t];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,t,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return e[t]=r,r}var o=Object.prototype.hasOwnProperty;t.exports=r},{}],handle:[function(e,t,n){function r(e,t,n,r){o.buffer([e],r),o.emit(e,t,n)}var o=e("ee").get("handle");t.exports=r,r.ee=o},{}],id:[function(e,t,n){function r(e){var t=typeof e;return!e||"object"!==t&&"function"!==t?-1:e===window?0:a(e,i,function(){return o++})}var o=1,i="nr@id",a=e("gos");t.exports=r},{}],loader:[function(e,t,n){function r(){if(!x++){var e=h.info=NREUM.info,t=d.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&t))return s.abort();f(y,function(t,n){e[t]||(e[t]=n)}),c("mark",["onload",a()+h.offset],null,"api");var n=d.createElement("script");n.src="https://"+e.agent,t.parentNode.insertBefore(n,t)}}function o(){"complete"===d.readyState&&i()}function i(){c("mark",["domContent",a()+h.offset],null,"api")}function a(){return E.exists&&performance.now?Math.round(performance.now()):(u=Math.max((new Date).getTime(),u))-h.offset}var u=(new Date).getTime(),c=e("handle"),f=e(2),s=e("ee"),p=window,d=p.document,l="addEventListener",m="attachEvent",w=p.XMLHttpRequest,g=w&&w.prototype;NREUM.o={ST:setTimeout,SI:p.setImmediate,CT:clearTimeout,XHR:w,REQ:p.Request,EV:p.Event,PR:p.Promise,MO:p.MutationObserver};var v=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1071.min.js"},b=w&&g&&g[l]&&!/CriOS/.test(navigator.userAgent),h=t.exports={offset:u,now:a,origin:v,features:{},xhrWrappable:b};e(1),d[l]?(d[l]("DOMContentLoaded",i,!1),p[l]("load",r,!1)):(d[m]("onreadystatechange",o),p[m]("onload",r)),c("mark",["firstbyte",u],null,"api");var x=0,E=e(4)},{}]},{},["loader"]);</script>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="profile" href="http://gmpg.org/xfn/11">
+<link rel="shortcut icon" href="https://thepointsguy.com/wp-content/themes/tpg-2016/favicon.ico?v=3" />
+<meta name="google-site-verification" content="Ljof3Duwtracp116XX76hDeY-IZn3TnvmYX8PMQIFIw" />
+
+<title>10 Things to Do in South Korea This Winter — Besides Watching the 2018 Olympic Games</title>
+<link rel='dns-prefetch' href='//thepointsguy.com' />
+<link rel='dns-prefetch' href='//cdn.optimizely.com' />
+<link rel='dns-prefetch' href='//s.skimresources.com' />
+<link rel='dns-prefetch' href='//assets.adobedtm.com' />
+<link rel='dns-prefetch' href='//s.w.org' />
+<link rel="alternate" type="application/rss+xml" title="The Points Guy &raquo; Feed" href="https://thepointsguy.com/feed/" />
+<link rel="alternate" type="application/rss+xml" title="The Points Guy &raquo; Comments Feed" href="https://thepointsguy.com/comments/feed/" />
+<link rel="alternate" type="application/rss+xml" title="The Points Guy &raquo; 10 Things to Do in South Korea This Winter Comments Feed" href="https://thepointsguy.com/2018/02/winter-olympics-south-korea-things-to-do/feed/" />
+<meta name='description' content='If you&#039;re planning an upcoming visit to Seoul, be sure to check out some of these exciting activities and attractions.' /><!-- WP SEO -->
+<meta name='keywords' content='seoul,south korea,olympics,olympic games,korea, winter olympics, 2018 winter olympics' /><!-- WP SEO -->
+		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/2.3\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/2.3\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/thepointsguy.com\/wp-includes\/js\/wp-emoji-release.min.js?ver=4.9.2"}};
+			!function(a,b,c){function d(a,b){var c=String.fromCharCode;l.clearRect(0,0,k.width,k.height),l.fillText(c.apply(this,a),0,0);var d=k.toDataURL();l.clearRect(0,0,k.width,k.height),l.fillText(c.apply(this,b),0,0);var e=k.toDataURL();return d===e}function e(a){var b;if(!l||!l.fillText)return!1;switch(l.textBaseline="top",l.font="600 32px Arial",a){case"flag":return!(b=d([55356,56826,55356,56819],[55356,56826,8203,55356,56819]))&&(b=d([55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447],[55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447]),!b);case"emoji":return b=d([55358,56794,8205,9794,65039],[55358,56794,8203,9794,65039]),!b}return!1}function f(a){var c=b.createElement("script");c.src=a,c.defer=c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var g,h,i,j,k=b.createElement("canvas"),l=k.getContext&&k.getContext("2d");for(j=Array("flag","emoji"),c.supports={everything:!0,everythingExceptFlag:!0},i=0;i<j.length;i++)c.supports[j[i]]=e(j[i]),c.supports.everything=c.supports.everything&&c.supports[j[i]],"flag"!==j[i]&&(c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&c.supports[j[i]]);c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&!c.supports.flag,c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.everything||(h=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",h,!1),a.addEventListener("load",h,!1)):(a.attachEvent("onload",h),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),g=c.source||{},g.concatemoji?f(g.concatemoji):g.wpemoji&&g.twemoji&&(f(g.twemoji),f(g.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+<link rel='stylesheet' id='tpg_2016-screen-css'  href='https://thepointsguy.com/wp-content/themes/tpg-2016/static/css/global.5ad3b36073d115c99d3c.min.css?ver=1.1.1' type='text/css' media='all' />
+<link rel='stylesheet' id='wp-parsely-style-css'  href='https://thepointsguy.com/wp-content/mu-plugins/wp-parsely/wp-parsely.css?ver=1518899261' type='text/css' media='all' />
+<link rel='stylesheet' id='social-logos-css'  href='https://thepointsguy.com/wp-content/plugins/jetpack/_inc/social-logos/social-logos.min.css?ver=1' type='text/css' media='all' />
+<link rel='stylesheet' id='jetpack_css-css'  href='https://thepointsguy.com/wp-content/plugins/jetpack/css/jetpack.css?ver=4.4.2' type='text/css' media='all' />
+<script type='text/javascript' src='https://thepointsguy.com/wp-includes/js/jquery/jquery.js?ver=1.12.4'></script>
+<script type='text/javascript' src='https://thepointsguy.com/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.4.1'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var ajax_object = {"ajax_url":"https:\/\/thepointsguy.com\/wp-admin\/admin-ajax.php","base_url":"https:\/\/thepointsguy.com","endpoint_url":"https:\/\/thepointsguy.com\/endpoint","guid":"https:\/\/thepointsguy.com\/?p=431880","post_id":"431880","eventName":"visit","cardID":""};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://thepointsguy.com/wp-content/themes/tpg-2016/static/js/common.24760fb.bundle.min.js?ver=1.1.1'></script>
+<script type='text/javascript' src='https://thepointsguy.com/wp-content/themes/tpg-2016/static/js/webfontLoader.24760fb.bundle.min.js?ver=1.1.1'></script>
+<script type='text/javascript' src='https://cdn.optimizely.com/js/8604721080.js?ver=4.9.2'></script>
+<script type='text/javascript' src='https://assets.adobedtm.com/35c935cd798f6a0634b954c60f0f14c3bb4b481c/satelliteLib-7f82f7455f569d0b577e1e3bab4203c604ae47f7.js'></script>
+<link rel='https://api.w.org/' href='https://thepointsguy.com/wp-json/' />
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://thepointsguy.com/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://thepointsguy.com/wp-includes/wlwmanifest.xml" /> 
+<link rel='prev' title='10x to Life: A Review of the New York EDITION' href='https://thepointsguy.com/2018/02/new-york-edition-hotel-review/' />
+<link rel='next' title='Pebbles the Hamster Finds Watery Death After Spirit Airlines Passenger Flushes Him Down a Toilet' href='https://thepointsguy.com/2018/02/spirit-passenger-flushes-hampster-down-toilet/' />
+<meta name="generator" content="WordPress 4.9.2" />
+<link rel="canonical" href="https://thepointsguy.com/2018/02/winter-olympics-south-korea-things-to-do/" />
+<link rel='shortlink' href='https://thepointsguy.com/?p=431880' />
+<link rel="alternate" type="application/json+oembed" href="https://thepointsguy.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fthepointsguy.com%2F2018%2F02%2Fwinter-olympics-south-korea-things-to-do%2F" />
+<link rel="alternate" type="text/xml+oembed" href="https://thepointsguy.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fthepointsguy.com%2F2018%2F02%2Fwinter-olympics-south-korea-things-to-do%2F&#038;format=xml" />
+<!-- BEGIN wp-parsely Plugin Version 1.11.2 -->
+<meta name='wp-parsely_version' id='wp-parsely_version' content='1.11.2' />
+   <script type="application/ld+json">
+   {"@context":"http:\/\/schema.org","@type":"NewsArticle","mainEntityOfPage":{"@type":"WebPage","@id":"http:\/\/thepointsguy.com\/2018\/02\/winter-olympics-south-korea-things-to-do\/"},"headline":"10 Things to Do in South Korea This Winter","url":"http:\/\/thepointsguy.com\/2018\/02\/winter-olympics-south-korea-things-to-do\/","thumbnailUrl":"https:\/\/i2.wp.com\/thepointsguy.com\/wp-content\/uploads\/2018\/01\/Hallasan-hiking-winter-korea.jpg?fit=1280%2C857px&ssl=1","image":{"@type":"ImageObject","url":"https:\/\/i2.wp.com\/thepointsguy.com\/wp-content\/uploads\/2018\/01\/Hallasan-hiking-winter-korea.jpg?fit=1280%2C857px&ssl=1"},"dateCreated":"2018-02-10T00:00:47Z","datePublished":"2018-02-10T00:00:47Z","dateModified":"2018-02-10T00:00:47Z","articleSection":"News","author":[{"@type":"Person","name":"Natasha Gabrielle"}],"creator":["Natasha Gabrielle"],"publisher":{"@type":"Organization","name":"The Points Guy"},"keywords":["2018 winter olympics","olympics","seoul","south korea"]}   </script>
+    <!-- END wp-parsely Plugin Version 1.11.2 -->
+
+<link rel='dns-prefetch' href='//i0.wp.com'>
+<link rel='dns-prefetch' href='//i1.wp.com'>
+<link rel='dns-prefetch' href='//i2.wp.com'>
+<meta property="og:title" content="10 Things to Do in South Korea This Winter — Besides Watching the 2018 Olympic Games"/><meta property="og:url" content="https://thepointsguy.com/2018/02/winter-olympics-south-korea-things-to-do/?utm_source=PANTHEON_STRIPPED&amp;utm_medium=PANTHEON_STRIPPED&amp;utm_term=PANTHEON_STRIPPED&amp;utm_campaign=PANTHEON_STRIPPED"/><meta property="og:site_name" content="The Points Guy"/><meta property="og:description" content="If you&#039;re planning an upcoming visit to Seoul, be sure to check out some of these exciting activities and attractions."/><meta property="og:image" content="https://i2.wp.com/thepointsguy.com/wp-content/uploads/2018/01/Hallasan-hiking-winter-korea.jpg?fit=1280%2C857px&amp;ssl=1"/><meta property="twitter:card" content="summary_large_image"/><meta property="twitter:title" content="10 Things to Do in South Korea This Winter — Besides Watching the 2018 Olympic Games"/><meta property="twitter:site" content="@thepointsguy"/><meta property="twitter:description" content="If you&#039;re planning an upcoming visit to Seoul, be sure to check out some of these exciting activities and attractions."/><meta property="twitter:image" content="https://i2.wp.com/thepointsguy.com/wp-content/uploads/2018/01/Hallasan-hiking-winter-korea.jpg?fit=1280%2C857px&amp;ssl=1"/>	<script type="text/javascript">
+		window.tpgGlobalVars = {"permalink":"http:\/\/thepointsguy.com\/2018\/02\/winter-olympics-south-korea-things-to-do\/","dsqIdentifierForPost":"http:\/\/thepointsguy.com\/2018\/02\/winter-olympics-south-korea-things-to-do\/"};
+	</script>
+	
+<style type='text/css'>
+	.preampjs [data-preamp],
+	.fusejs [data-fuse] {
+		opacity: 0 !important;
+	}
+</style>
+<script>
+	!function(co,h,e,s,i,o,n){var d='documentElement';var a='className';h[d][a]+=' preampjs fusejs';
+	n.k=e;co._Cohesion=n;co._Preamp={k:s,start:new Date};co._Fuse={k:i};co._Tagular={k:o};
+	[e,s,i,o].map(function(x){co[x]=co[x]||function(){(co[x].q=co[x].q||[]).push([].slice.call(arguments))}});
+	h.addEventListener('DOMContentLoaded',function(){co.setTimeout(function(){
+	var u=h[d][a];h[d][a]=u.replace(/ ?preampjs| ?fusejs/g,'')},3e3);
+	co._Preamp.docReady=co._Fuse.docReady=!0});var z=h.createElement('script');
+	z.async=1;z.src='https://cdn.cohesionapps.com/cohesion/cohesion-latest.min.js';h.head.appendChild(z);}
+	(window,document,'cohesion','preamp','fuse','tagular',{
+		tagular:{apiKey:'8830ce36-13f9-40da-8176-b8cbf73a598c.17a68289-d4ec-4835-a672-712d0d381d34'},
+		preamp:{siteId:'1J0NDsEnrxse6tLymGTyGi'}
+	})
+</script>
+<style>img[data-sizes="auto"] { display: block; width: 100%; }</style></head>
+
+<body class="post-template-default single single-post postid-431880 single-format-standard">
+
+<div class="above-footer">
+	<a class="skip-link screen-reader-text" href="#content">Skip to content</a>
+
+	
+<section class="header-nav">
+	<span class="icon icon-x-close">
+	<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 42.4 42.4" style="enable-background:new 0 0 42.4 42.4;" xml:space="preserve">
+		<rect x="-6.8" y="19.2" transform="matrix(0.7071 -0.7071 0.7071 0.7071 -8.7868 21.2132)" width="56" height="4"/>
+		<rect x="-6.8" y="19.2" transform="matrix(0.7071 0.7071 -0.7071 0.7071 21.2132 -8.7868)" width="56" height="4"/>
+	</svg>
+</span>	<div class="header-nav-wrapper">
+		<div class="logo">
+			<a href="https://thepointsguy.com">
+				<span class="tpg-logo tpg-logo-primary">
+	<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1042.96 769.26">
+	  <path class="cls-1" d="M569,663.07a3.83,3.83,0,0,0-3.65-4H537.48a8.12,8.12,0,0,1-8.09-8.09v-38.5a8.12,8.12,0,0,1,8.09-8.09h78.91a8.12,8.12,0,0,1,8.09,8.09v68c0,48.56-40.87,88.62-96.31,88.62-55.85,0-90.65-40.87-96.32-89.43-4-34-4-79.32,0-113.31,5.67-48.56,40.47-89.43,96.32-89.43s96.31,38.45,96.31,92.27v.41a8.39,8.39,0,0,1-8.09,8.09H576a8.12,8.12,0,0,1-8.09-8.09v-.41c0-16.59-14.16-35.21-39.66-35.21-24.68,0-37.23,14.57-39.26,32.37-4,34-4,79.32,0,113.31,2,17.81,14.57,32.37,39.26,32.37,24.28,0,40.87-13.36,40.87-31.56v-17.4Z" transform="translate(0.04 0)"/>
+	  <path class="cls-1" d="M827.89,679.83c0,49-40.47,89.43-96.32,89.43-55,0-95.5-40.47-95.5-89.43V489.63a8.12,8.12,0,0,1,8.09-8.09H685a8.12,8.12,0,0,1,8.09,8.09v190.2c0,17.81,14.57,32.37,38.44,32.37,24.68,0,39.26-14.57,39.26-32.37V489.63a8.12,8.12,0,0,1,8.09-8.09h40.87a8.12,8.12,0,0,1,8.09,8.09v190.2Z" transform="translate(0.04 0)"/>
+	  <path class="cls-1" d="M936.08,599.7a2.53,2.53,0,0,0,4.86,0l38.85-112.09c1.62-4.45,4-6.07,7.69-6.07H1032c5.26,0,8.9,5.26,6.47,11.33L966.8,673.36v83.36a8.12,8.12,0,0,1-8.09,8.09H918.24a8.12,8.12,0,0,1-8.09-8.09V673.35l-71.6-180.48c-2.43-6.07,1.21-11.33,6.48-11.33h44.51c3.64,0,6.07,1.62,7.69,6.07Z" transform="translate(0.04 0)"/>
+	  <path class="cls-1" d="M101.68,165.89c46.54,0,85,38.44,85,85,0,46.94-38.45,85-85,85H65.26a3.82,3.82,0,0,0-4,3.63q0,.18,0,.37V441.07a8.12,8.12,0,0,1-8.09,8.09H12.65a8.12,8.12,0,0,1-8.09-8.09V174a8.12,8.12,0,0,1,8.09-8.09h89ZM65.26,222.54a3.82,3.82,0,0,0-4,3.63q0,.18,0,.37v48.59a3.82,3.82,0,0,0,3.63,4h36.79a28.33,28.33,0,0,0,1.06-56.65H65.26Z" transform="translate(0.04 0)"/>
+	  <path class="cls-1" d="M390.22,250.87c4,34,4,79.32,0,113.31-5.66,48.56-40.47,89.43-96.31,89.43s-90.65-40.87-96.32-89.43c-4-34-4-79.32,0-113.31,5.67-48.56,40.47-89.43,96.32-89.43S384.55,202.31,390.22,250.87ZM333.16,364.18c4-34,4-79.32,0-113.31-2-17.81-14.57-32.37-39.25-32.37s-37.23,14.57-39.26,32.37c-4,34-4,79.32,0,113.31,2,17.81,14.57,32.37,39.26,32.37S331.13,382,333.16,364.18Z" transform="translate(0.04 0)"/>
+	  <path class="cls-1" d="M459.6,441.07a8.12,8.12,0,0,1-8.09,8.09H411a8.12,8.12,0,0,1-8.09-8.09V174a8.12,8.12,0,0,1,8.09-8.09h40.47A8.12,8.12,0,0,1,459.6,174V441.07Z" transform="translate(0.04 0)"/>
+	  <path class="cls-1" d="M596.08,449.13c-6.88,0-9.71-3.64-10.93-6.88l-55-142c-.81-2.43-3.64-1.62-3.64.81v140a8.12,8.12,0,0,1-8.09,8.09H478a8.12,8.12,0,0,1-8.09-8.09V174a8.12,8.12,0,0,1,8.09-8.09h48.16c6.07,0,8.9,3.64,10.12,7.28L591.68,327c.81,2.43,3.64,1.62,3.64-.81V174a8.12,8.12,0,0,1,8.09-8.09h40.47A8.12,8.12,0,0,1,652,174V441.07a8.12,8.12,0,0,1-8.09,8.09h-47.8Z" transform="translate(0.04 0)"/>
+	  <path class="cls-1" d="M781,226.59V441.07a8.12,8.12,0,0,1-8.09,8.09H732.38a8.12,8.12,0,0,1-8.09-8.09V226.59a3.82,3.82,0,0,0-3.63-4h-51a8.12,8.12,0,0,1-8.09-8.09V174a8.12,8.12,0,0,1,8.09-8.09H835.58a8.12,8.12,0,0,1,8.09,8.09v40.47a8.12,8.12,0,0,1-8.09,8.09H785a3.82,3.82,0,0,0-4,4.05Z" transform="translate(0.04 0)"/>
+	  <path class="cls-1" d="M942.15,332.61C891.57,321.28,851.5,299,851.5,246.82c0-47.75,39.26-85.39,92.67-85.39,54.23,0,93.08,37.63,93.08,85.39v6.07a8.12,8.12,0,0,1-8.09,8.09H988.29a8.12,8.12,0,0,1-8.09-8.09v-6.07c0-16.19-12.95-30.35-36-30.35-22.66,0-35.21,12.14-35.21,28.33,0,15.38,15,25.09,36,29.14,56.25,11.33,97.93,34.8,97.93,91,0,52.61-41.28,88.62-98.74,88.62-55.85,0-96.31-39.26-96.31-88.62V352.85a8.12,8.12,0,0,1,8.09-8.09h40.87a8.12,8.12,0,0,1,8.09,8.09V365c0,18.61,14.16,33.18,39.25,33.18,24.28,0,40.06-14.16,40.06-33.18C984.24,347.59,972.51,339.49,942.15,332.61Z" transform="translate(0.04 0)"/>
+	  <path class="cls-1" d="M0,59.77V44.48A4,4,0,0,1,3.8,40.66h15a1.65,1.65,0,0,0,1.88-1.87V9.51a4,4,0,0,1,3.81-3.82H41.68a4,4,0,0,1,3.81,3.82V38.79a1.65,1.65,0,0,0,1.87,1.87H68.42a4,4,0,0,1,3.84,3.82V59.77a3.72,3.72,0,0,1-1.12,2.66,3.63,3.63,0,0,1-2.71,1.17h-21a1.65,1.65,0,0,0-1.87,1.85V100a11.35,11.35,0,0,0,3.14,8.07A10.94,10.94,0,0,0,57,111.44H70.4a3.66,3.66,0,0,1,2.67,1.18,3.72,3.72,0,0,1,1.17,2.69v16.42a3.72,3.72,0,0,1-1.17,2.69,3.64,3.64,0,0,1-2.66,1.18H57.07q-16.41,0-26.39-9.34t-10-25.85v-35a1.65,1.65,0,0,0-1.88-1.85H3.8A4,4,0,0,1,0,59.77Z" transform="translate(0.04 0)"/>
+	  <path class="cls-1" d="M81.62,131.77V3.82A4,4,0,0,1,85.45,0h17.16a3.74,3.74,0,0,1,2.65,1.13,3.61,3.61,0,0,1,1.17,2.7V36.27A4.46,4.46,0,0,0,108,40q1.54,1.21,4.24.28,2.15-.75,4.62-1.54a23.42,23.42,0,0,1,6.85-.79,36,36,0,0,1,33.39,21.64A33.94,33.94,0,0,1,160,73.48v58.28a4,4,0,0,1-3.83,3.82H139a4,4,0,0,1-3.82-3.82V73.48a10.39,10.39,0,0,0-3.73-8.07q-3.72-3.28-10.62-3.28t-10.63,3.28a10.39,10.39,0,0,0-3.73,8.07v58.28a3.73,3.73,0,0,1-1.12,2.66,3.61,3.61,0,0,1-2.7,1.16H85.45A4,4,0,0,1,81.62,131.77Z" transform="translate(0.04 0)"/>
+	  <path class="cls-1" d="M166.19,95.58q-.18-3.73-.18-7.74t.18-7.71q.19-3.73.56-6.62a47.15,47.15,0,0,1,3.9-13.94,36,36,0,0,1,8-11.24,37.79,37.79,0,0,1,11.9-7.55A41.14,41.14,0,0,1,206.16,38,47.88,47.88,0,0,1,222,40.5a34.3,34.3,0,0,1,12.38,7.37,33.88,33.88,0,0,1,8.07,11.84,41.76,41.76,0,0,1,2.91,16.13V91.69a3.65,3.65,0,0,1-1.18,2.66,3.7,3.7,0,0,1-2.68,1.17H192.22a2.57,2.57,0,0,0-2.9,2.92q0,8.1,5,12.24a17.92,17.92,0,0,0,11.88,4.14,22.39,22.39,0,0,0,9.35-1.75,11.59,11.59,0,0,0,5.8-6.4q1.3-3.32,4.38-3.32h15.85a4.15,4.15,0,0,1,2.66.93c.77.62,1,1.71.6,3.26a41.08,41.08,0,0,1-12.92,21.78q-9.65,8.44-25.73,8.44a41.14,41.14,0,0,1-15.61-2.8,37.78,37.78,0,0,1-11.9-7.55,35.9,35.9,0,0,1-8-11.28,47.65,47.65,0,0,1-3.9-13.9Q166.38,99.32,166.19,95.58Zm23.32-23a1.66,1.66,0,0,0,1.87,1.77h29.18a1.61,1.61,0,0,0,1.87-1.77,10.62,10.62,0,0,0-1.31-5.36,10.09,10.09,0,0,0-3.65-3.68,20.73,20.73,0,0,0-5.28-2.19,23.21,23.21,0,0,0-6-.79q-8.23,0-12.44,3.26a10.53,10.53,0,0,0-4.24,8.73Z" transform="translate(0.04 0)"/>
+	  <path class="cls-2" d="M278.08,491.3A131.71,131.71,0,1,0,409.79,623h0A131.71,131.71,0,0,0,278.08,491.3ZM345.3,662.73a5.08,5.08,0,0,1-1.49,3.59l-24.35,24.35a5.08,5.08,0,0,1-8.67-3.59V626.64c0-3.16-3.46-4.79-6.08-2.17l-69.28,69.28a5.08,5.08,0,0,1-7.18,0h0l-18.56-18.62a5.08,5.08,0,0,1,0-7.18h0l69-69c2.81-2.81.88-6.08-2.17-6.08h-60a5.08,5.08,0,0,1-3.55-8.63l24.43-24.35A5.08,5.08,0,0,1,241,558.4h99.25a5.08,5.08,0,0,1,5.08,5.08h0v99.25Z" transform="translate(0.04 0)"/>
+	</svg>
+</span>
+			</a>
+		</div>
+		<div class="tagline">Maximize your travel.</div>
+
+		<div class="dotted-hr"></div>
+
+		<div class="main-nav">
+			<div class="search-trigger">
+				<span class="search-trigger-label">Search</span>
+				<span class="icon icon-search">
+	<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 222.3 232.6" xml:space="preserve">
+		<path d="M222.3,213.5L177,168.2c15.8-17.9,25.4-41.3,25.4-67C202.4,45.4,157,0,101.2,0S0,45.4,0,101.2C0,157,45.4,202.4,101.2,202.4
+			c20.4,0,39.4-6.1,55.3-16.5l46.7,46.7L222.3,213.5z M27,101.2C27,60.3,60.3,27,101.2,27s74.2,33.3,74.2,74.2s-33.3,74.2-74.2,74.2
+			S27,142.1,27,101.2z"/>
+	</svg>
+</span>				<button>Search Cards, Rewards, Deals…</button>
+			</div>
+			<nav>
+				<a href="https://thepointsguy.com/category/news/">News</a>
+<a href="https://thepointsguy.com/cards/">Top Cards</a>
+<a href="https://thepointsguy.com/category/reviews/">Reviews</a>
+<a href="/guides/">Guides</a>
+<a href="https://thepointsguy.com/category/deals/">Deals</a>
+<a href="https://thepointsguy.com/category/videos/">Videos</a>
+<a href="http://shop.thepointsguy.com">Shop</a>
+			</nav>
+		</div>
+
+
+		
+<div class="social-icons">
+			<a
+			href="https://facebook.com/thepointsguy/"
+			data-html_text="Facebook"
+			data-position-id="top"
+			data-cohesion-attrs="html_text,positionId"
+			class="facebook-icon"
+			title="Like us on Facebook">
+			<span class="icon icon-facebook circle">
+	<svg version="1.1" viewBox="0 0 2048 2048" x="0px" y="0px" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+		<path transform="scale(1, -1) translate(0, -2048)" d="M2048 1011q0 -221 -100 -429t-274 -350q-174 -143 -394 -200v779h219l37 256h-256v225q0 116 112 116h163v238q-76 17 -184 17q-180 1 -275 -91t-95 -249v-256h-233v-256h233v-811q-205 4 -390 87t-319 219t-213 324t-79 395t81 397t219 326q138 138 326 219
+q190 81 398 81t398 -81t326 -219q138 -138 219 -326q81 -190 81 -411z" />
+	</svg>
+</span>			<span class="social_text">Facebook</span>
+		</a>
+	
+			<a
+			href="https://www.instagram.com/thepointsguy/"
+			data-html_text="Instagram"
+			data-position-id="top"
+			data-cohesion-attrs="html_text,positionId"
+			class="instagram-icon"
+			title="Follow us on Instagram">
+			<span class="icon icon-instagram circle">
+	<svg version="1.1" viewBox="0 0 2048 2048" x="0px" y="0px" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+		<path transform="scale(1, -1) translate(0, -2048)" d="M1621 597v854q1 71 -49 121t-121 49h-854q-71 1 -121 -49t-49 -121v-854q-1 -71 49 -121t121 -49h854q71 -1 121 49t49 121zM1024 2048q208 0 398 -81t326 -219q138 -138 219 -326q81 -190 81 -398t-81 -398t-219 -326q-138 -138 -326 -219q-190 -81 -398 -81t-398 81
+t-326 219q-138 138 -219 326q-81 190 -81 398t81 398t219 326q138 138 326 219q190 81 398 81zM1493 1109v-512q-1 -17 -13 -29t-29 -13h-854q-17 1 -29 13t-13 29v512h138q-10 -39 -10 -85q-1 -141 99 -241t242 -100t242 100t99 241q0 46 -10 85h138zM1493 1451v-128
+q-1 -19 -13 -31t-29 -12h-128q-19 0 -31 12t-12 31v128q0 17 12 29t31 13h128q17 -1 29 -13t13 -29zM811 1024q1 88 63 150t150 63q88 -1 150 -63t63 -150q-1 -88 -63 -150t-150 -63q-88 1 -150 63t-63 150z" />
+	</svg>
+</span>			<span class="social_text">Instagram</span>
+		</a>
+	
+			<a
+			href="http://snapchat.com/add/thepointsguy"
+			data-html_text="Snapchat"
+			data-position-id="top"
+			data-cohesion-attrs="html_text,positionId"
+			class="snapchat-icon"
+			title="Add us on Snapchat">
+			<span class="icon icon-snapchat circle">
+	<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 118.9 118.9" style="enable-background:new 0 0 118.9 118.9;" xml:space="preserve">
+		<path d="M59.4,0C26.6,0,0,26.6,0,59.4s26.6,59.4,59.4,59.4s59.4-26.6,59.4-59.4S92.3,0,59.4,0z M99,84.5c-1.9,0.8-4.1,1.2-6,1.9
+		c-1,0.4-2.4,1.1-2.5,1.8c-0.6,3.7-2.9,3.9-5.9,3.5c-5-0.7-9.4,0.6-13.5,3.6c-7.8,5.7-15.7,5.6-23.5-0.2c-4.5-3.3-9.4-4.4-14.8-3.1
+		c-2,0.5-3.6,0.3-3.7-2c-0.2-3-2.1-3.7-4.5-4.1c-0.4-0.1-0.9-0.1-1.2-0.3c-2.1-1.2-4.2-2.5-6.2-3.7c1.8-1.1,3.6-2.4,5.5-3.3
+		c5.7-2.8,9.8-7.1,12.5-12.8c1.5-3.2,0.7-5.4-2.8-6.6c-1.6-0.5-3.3-1.1-4.6-2.2c-0.9-0.7-1.3-2.2-2-3.3c1.3-0.7,2.5-2,3.8-2
+		c2-0.1,4.1,0.6,6.6,1.1c0-3.8,0.1-6.9,0-9.9c-0.4-10.5,5-18.8,14.4-22.1c10.7-3.8,22.5-0.8,28.1,7.8c2.1,3.1,3.1,7.2,3.7,11
+		c0.6,4.1,0.1,8.4,0.1,13.2c2.3-0.4,4.2-1.1,6-1c1.6,0.1,3.1,1.3,4.7,1.9c-0.8,1.3-1.6,2.7-2.5,3.8c-0.4,0.5-1.2,0.7-1.9,0.9
+		c-6.5,2.8-7,4.3-3.2,10.3c3.2,5.1,7.5,8.8,13.2,10.7c1.1,0.4,2,1.6,3,2.5C100.8,82.9,100.1,84.1,99,84.5z"/>
+	</svg>
+</span>			<span class="social_text">Snapchat</span>
+		</a>
+	
+			<a
+			href="https://twitter.com/thepointsguy/"
+			data-html_text="Twitter"
+			data-position-id="top"
+			data-cohesion-attrs="html_text,positionId"
+			class="twitter-icon"
+			title="Follow us on Twitter">
+			<span class="icon icon-twitter circle">
+	<svg version="1.1" viewBox="0 0 2048 2048" x="0px" y="0px" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+		<path transform="scale(1, -1) translate(0, -2048)" d="M1358 1536q-124 0 -207 -85q-84 -85 -84 -207q0 -37 7 -66q-180 9 -336 90t-266 216q-38 -70 -38 -146t34 -140t94 -103q-69 0 -131 36v-3q0 -105 66 -185t167 -102q-31 -9 -67 -9t-64 5q27 -87 101 -141t170 -56q-171 -133 -361 -133q-15 0 -68 5q197 -128 445 -128
+q155 0 291 49q248 89 392 311t144 467v38q78 55 145 150q-81 -34 -168 -46q92 54 125 162q-84 -50 -182 -71q-85 92 -209 92zM1024 2048q208 0 398 -81t327 -218t218 -327t81 -398t-81 -398t-218 -327t-327 -218t-398 -81t-398 81t-327 218t-218 327t-81 398t81 398t218 327
+t327 218t398 81z" />
+	</svg>
+</span>			<span class="social_text">Twitter</span>
+		</a>
+	</div>
+
+		<div class="disclosure">
+			<button>Advertiser Disclosure</button>
+		</div>
+
+	</div>
+</section>
+
+<section class="mobile-nav">
+	<div class="logo">
+		<a href="https://thepointsguy.com">
+			<span class="tpg-logo tpg-logo-secondary">
+	<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1158.45 467.85">
+	  <path class="cls-1" d="M263.43,97.84a6.58,6.58,0,0,1,6.58,6.58V447.61a14.28,14.28,0,0,0,14.22,14.23h63.66A13.15,13.15,0,0,0,361,448.73V285.84a6,6,0,0,1,6-6h58.75a135.19,135.19,0,0,0,67.91-18.6.1.1,0,0,1,.15.09c.66,22.4,2.14,44,4.45,63.42,9.07,77.75,64,143.11,153.37,143.11,88.77,0,153.37-64.21,153.37-142V216.23a11.39,11.39,0,0,0-11.39-11.39H667.47A14.51,14.51,0,0,0,653,219.31V278.5a14.38,14.38,0,0,0,14.34,14.34h44a5.68,5.68,0,0,1,5.68,5.68v27.39c0,29.16-26.11,50.54-65,50.54-39.52,0-59.38-23.33-62.62-51.83-6.48-54.43-6.37-127,.11-181.42,3.24-28.51,22.4-51.83,61.92-51.83,40.82,0,62.57,29.8,62.57,56.37v.55a13.61,13.61,0,0,0,13.57,13.55h66.14c7.13,0,11.29-7,11.29-13.46v-.65C805,61.56,741,0,651.63,0c-53.06,0-93.83,23.4-120.45,58.38a.1.1,0,0,1-.14,0l0,0A135,135,0,0,0,425.74,7.84H13.51A13.55,13.55,0,0,0,0,21.35V84.77A13.1,13.1,0,0,0,13.06,97.84H93.42a6.58,6.58,0,0,1,6.58,6.58V447.61a14.28,14.28,0,0,0,14.23,14.23h64.29A12.48,12.48,0,0,0,191,449.36V104.42a6.58,6.58,0,0,1,6.58-6.58Zm162.32,91H367.54A6.54,6.54,0,0,1,361,182.3h0V104.42a6.58,6.58,0,0,1,6.58-6.58h57.07c26.78,0,48.17,21.92,46.34,48.64a45.63,45.63,0,0,1-45.25,42.36Z" transform="translate(0 -0.01)"/>
+	  <path class="cls-2" d="M996.3,142.95A162.15,162.15,0,1,0,1158.45,305.1,162.15,162.15,0,0,0,996.3,142.95ZM1079.06,354a6.26,6.26,0,0,1-1.83,4.42l-30,30a6.26,6.26,0,0,1-10.68-4.42v-74.4c0-3.89-4.25-5.9-7.48-2.67L943.8,392.19a6.26,6.26,0,0,1-8.85,0l-22.86-22.86a6.26,6.26,0,0,1,0-8.85L997,275.54c3.45-3.45,1.08-7.48-2.67-7.48H920.54a6.26,6.26,0,0,1-4.42-10.69l30.08-30a6.25,6.25,0,0,1,4.42-1.82h122.19a6.26,6.26,0,0,1,6.26,6.26h0V354Z" transform="translate(0 -0.01)"/>
+	  <path class="cls-1" d="M1079.06,354a6.26,6.26,0,0,1-1.83,4.42l-30,30a6.26,6.26,0,0,1-10.68-4.42v-74.4c0-3.89-4.25-5.9-7.48-2.67L943.8,392.19a6.26,6.26,0,0,1-8.85,0l-22.86-22.86a6.26,6.26,0,0,1,0-8.85L997,275.54c3.45-3.45,1.08-7.48-2.67-7.48H920.54a6.26,6.26,0,0,1-4.42-10.69l30.08-30a6.25,6.25,0,0,1,4.42-1.82h122.19a6.26,6.26,0,0,1,6.26,6.26h0V354Z" transform="translate(0 -0.01)"/>
+	</svg>
+</span>		</a>
+	</div>
+
+	<div class="disclosure">
+		<button>Advertiser Disclosure</button>
+	</div>
+
+	<button class="menu">
+		Menu	</button>
+</section>
+
+
+<div id="search" class="search-modal"></div>
+
+<div id="notification-waypoint"></div>
+
+<div class="use-lightbox template-two-columns article-header has-background-image has-overlay">
+	<img width="597" height="400" class="background-image lazyload" alt="" draggable="false" data-sizes="auto" data-srcset="https://i2.wp.com/thepointsguy.com/wp-content/uploads/2018/01/Hallasan-hiking-winter-korea.jpg?resize=2327%2C543px&#038;ssl=1 2327w,https://i2.wp.com/thepointsguy.com/wp-content/uploads/2018/01/Hallasan-hiking-winter-korea.jpg?resize=1200%2C400px&#038;ssl=1 1200w,https://i2.wp.com/thepointsguy.com/wp-content/uploads/2018/01/Hallasan-hiking-winter-korea.jpg?resize=800%2C450px&#038;ssl=1 800w,https://i2.wp.com/thepointsguy.com/wp-content/uploads/2018/01/Hallasan-hiking-winter-korea.jpg?resize=480%2C270px&#038;ssl=1 480w" data-src="https://i2.wp.com/thepointsguy.com/wp-content/uploads/2018/01/Hallasan-hiking-winter-korea.jpg?resize=480%2C270px&#038;ssl=1" />	<div class="article-header-wrapper">
+					<div class="label"><a href="https://thepointsguy.com/category/news/" title="News" >News</a></div>
+				<div class="title"><a href="https://thepointsguy.com/2018/02/winter-olympics-south-korea-things-to-do/" title="10 Things to Do in South Korea This Winter" >10 Things to Do in South Korea This Winter</a></div>
+		<div class="meta">
+			<div class="byline">by&nbsp;<a href="https://thepointsguy.com/author/natashagabrielle/" title="Natasha Gabrielle"><span class="byline-photo"><img width="1367" height="2048" class="attachment-avatar size-avatar lazyload" alt="" draggable="false" data-sizes="auto" data-srcset="https://i1.wp.com/thepointsguy.com/wp-content/uploads/2017/04/14114991_2807594597010_3165277394981758458_o.jpg?resize=60%2C60px&#038;ssl=1 60w,https://i1.wp.com/thepointsguy.com/wp-content/uploads/2017/04/14114991_2807594597010_3165277394981758458_o.jpg?resize=30%2C30px&#038;ssl=1 30w" data-src="https://i1.wp.com/thepointsguy.com/wp-content/uploads/2017/04/14114991_2807594597010_3165277394981758458_o.jpg?resize=30%2C30px&#038;ssl=1" /></span></a>&nbsp;<a href="https://thepointsguy.com/author/natashagabrielle/" title="Natasha Gabrielle">Natasha Gabrielle</a></div>
+			<div class="timestamp">February 10th, 2018</div>
+			<div class="social">
+					<div class="social-sharing">
+		<div class="sharedaddy sd-sharing-enabled"><div class="robots-nocontent sd-block sd-social sd-social-icon sd-sharing"><h3 class="sd-title">Share this:</h3><div class="sd-content"><ul><li class="share-facebook"><a rel="nofollow" data-shared="sharing-facebook-431880" class="share-facebook sd-button share-icon no-text" href="https://thepointsguy.com/2018/02/winter-olympics-south-korea-things-to-do/?share=facebook" target="_blank" title="Click to share on Facebook"><span></span><span class="sharing-screen-reader-text">Click to share on Facebook (Opens in new window)</span></a></li><li class="share-twitter"><a rel="nofollow" data-shared="sharing-twitter-431880" class="share-twitter sd-button share-icon no-text" href="https://thepointsguy.com/2018/02/winter-olympics-south-korea-things-to-do/?share=twitter" target="_blank" title="Click to share on Twitter"><span></span><span class="sharing-screen-reader-text">Click to share on Twitter (Opens in new window)</span></a></li><li class="share-end"></li></ul></div></div></div>	</div>
+	<div class="comments-count with-icon">
+		<a href="https://thepointsguy.com/2018/02/winter-olympics-south-korea-things-to-do/#comments" >
+			<span class="icon icon-comment">
+	<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30.64 27.35">
+		<path d="M26.64,0H4A4,4,0,0,0,0,4V17.55a4,4,0,0,0,4,4H8.17v5.3a0.5,0.5,0,0,0,.83.38l6.56-5.68H26.64a4,4,0,0,0,4-4V4A4,4,0,0,0,26.64,0Z"/>
+	</svg>
+</span>			<span class="counter disqus-comment-count" data-disqus-url="http://thepointsguy.com/2018/02/winter-olympics-south-korea-things-to-do/"></span>
+		</a>
+	</div>
+				</div>
+		</div>
+	</div>
+</div>
+
+	<div class="post-content use-lightbox template-two-columns">
+		<section class="article-content">
+			<div class="article-wrapper">
+
+									<div
+						class="article-body-ad article-body-ad--cohesion"
+																				data-product-id="22105772"
+							data-channel="ce293c61587c41c29a64c5685cb78e40"
+							data-name="Capital One&#174; Venture&#174; Rewards Credit Card (22105772)"
+							data-issuer="Capital One"
+							data-cohesion-attrs="productId,channel,name,issuer"
+												>
+						<p><a href="/apply-banner/capital-one-venture-rewards-credit-card/?tid=leaderboard" target="_blank" rel="noopener"><img class="aligncenter size-full wp-image-282400 lazyload size-full" alt="" style="width:728px" data-sizes="auto" data-src="https://i0.wp.com/thepointsguy.com/wp-content/uploads/2018/01/TPG_728x90_Bonus10x.jpg?fit=2048%2C2048px&#038;ssl=1" data-srcset="https://i0.wp.com/thepointsguy.com/wp-content/uploads/2018/01/TPG_728x90_Bonus10x.jpg?fit=2048%2C2048px&#038;ssl=1 2048w" ></a></p>
+					</div>
+					
+<section class="editorial-disclosure">
+	<p>This post contains references to products from one or more of our advertisers. We may receive compensation when you click on links to those products. For an explanation of our Advertising Policy, visit <a href="/advertising-policy/">this page</a>.</p>
+</section>
+
+				<div class="article-body-content">
+					<p>With the <a href="https://thepointsguy.com/2018/02/points-and-miles-last-minute-to-olympics/" target="_blank" rel="noopener">2018 Winter Olympic Games</a> finally here, many people are thinking about <a href="https://thepointsguy.com/2017/11/things-to-do-in-seoul-south-korea/" target="_blank" rel="noopener">South Korea</a>, the host country this year. If you&#8217;re planning to visit during the games or within the next few weeks, you&#8217;re likely looking for other fun activities to take part in. Luckily, there&#8217;s a lot to see and do — no matter what your interests are. Here are 10 of the top winter activities to enjoy while in <a href="https://thepointsguy.com/2018/02/south-korean-airliner-historic-flight-north-korea/" target="_blank" rel="noopener">South Korea:</a></p>
+<h2><strong>Go Ice Skating</strong></h2>
+<p>Ice skating is a popular pastime in <a href="https://thepointsguy.com/2018/01/new-terminal-2-icn-opens/" target="_blank" rel="noopener">Korea </a>and is a great way to get outside and be active during the colder months. There are a number of ice skating rinks found throughout the country, and a few are well-known. We suggest trying <a href="http://english.visitkorea.or.kr/enu/ATR/SI_EN_3_1_1_1.jsp?cid=686510" target="_blank" rel="noopener">Seoul Plaza Skating Rink</a>, located in Seoul City Hall. Another great rink to skate at is the <a href="http://english.visitkorea.or.kr/enu/ATR/SI_EN_3_1_1_1.jsp?cid=686586" target="_blank" rel="noopener">Olympic Park Ice Skating Rink</a>. This is a great place to visit while you&#8217;re in town for the festivities because it&#8217;s near the 1988 Summer Olympics grounds. Located in Songpa-gu, it&#8217;s also close to the Soma Museum of Art and the Seoul Olympic Museum, so you can easily plan a whole day of adventure in one area.</p>
+<p><strong>Seoul Plaza Skating Rink:</strong> 110, Sejong-daero, Jung-gu, Seoul | 서울특별시 중구 세종대로 110 (태평로1가)</p>
+<p><strong>Olympic Park Ice Skating Rink:</strong> 424, Olympic-ro, Songpa-gu, Seoul | 서울특별시 송파구 올림픽로 424 (방이동)</p>
+<h2>Warm Up with Wintertime Korean Foods</h2>
+<p>Korean cuisine is delicious and flavorful. If you&#8217;re in the mood for a warm and filling lunch or dinner, give <em>tteokbokki</em> a try. This spicy stir-fry dish is made with rice cakes, fish cakes and boiled eggs. Another great lunch or dinner option is <em>juk, </em>a Korean rice porridge served with different flavor add-ins and meats — sure to keep you keep warm even on the coldest of days. If you&#8217;re more in the mood for a snack and enjoy sweets, try <em>hotteok</em>. These treats are mini-filled pancakes that usually have a brown sugar filling and <em>hotteok</em> can be found at almost any street-food stall or cart during the winter months.</p>
+<figure id="attachment_435745" style="max-width: 830px" class="wp-caption aligncenter"><a href="https://thepointsguy.com/wp-content/uploads/2018/01/tteokbokki-winter-korean-food.jpg"><img class="lazyautosizes wp-image-435745 lazyload lazyload size-full" alt="Try a traditional Korean dish of tteokbokki. (Photo by SUNGSU HAN/Getty Images)" style="width:830px" data-sizes="auto" data-src="https://i2.wp.com/thepointsguy.com/wp-content/uploads/2018/01/tteokbokki-winter-korean-food.jpg?fit=2048%2C2048px&#038;ssl=1" data-srcset="https://i2.wp.com/thepointsguy.com/wp-content/uploads/2018/01/tteokbokki-winter-korean-food.jpg?fit=2048%2C2048px&#038;ssl=1 2048w" ></a><figcaption class="wp-caption-text">Try a traditional Korean dish of tteokbokki. (Photo by SUNGSU HAN/Getty Images)</figcaption></figure>
+<h2>Go Ice Fishing</h2>
+<p>Ice fishing is another wintertime activity that is enjoyed by locals and visitors alike in South Korea. Tourists can easily take part in ice fishing festivals, and get firsthand experience at this interesting sport. While you can choose any ice fishing festival, the <a href="http://english.visitkorea.or.kr/enu/ATR/SI_EN_3_2_1.jsp?cid=661861" target="_blank" rel="noopener">Pyeongchang Trout Festival</a> is near the Olympic grounds. Festivalgoers fish, sled, ice skate and participate in various games. There&#8217;s even a restaurant that will cook your freshly caught fish. This is a great activity for visitors young and old. Admission varies based on the activities you wish to take part in, and tools and equipment are available onsite.</p>
+<p><strong>Pyeongchang Trout Festival: </strong>3562, Gyeonggang-ro, Pyeongchang-gun, Gangwon-do | 강원도 평창군 진부면 경강로 3562 (진부면)</p>
+<figure id="attachment_435731" style="max-width: 830px" class="wp-caption aligncenter"><a href="https://thepointsguy.com/wp-content/uploads/2018/01/Pyeongchang-Trout-Festival_credit-Jeon-Han-Republic-of-Koreaflickr.jpg"><img class="lazyautosizes wp-image-435731 lazyload lazyload size-full" alt="Pyeongchang Trout Festival. (Photo by Jeon Han/Republic of Korea/flickr)" style="width:830px" data-sizes="auto" data-src="https://i1.wp.com/thepointsguy.com/wp-content/uploads/2018/01/Pyeongchang-Trout-Festival_credit-Jeon-Han-Republic-of-Koreaflickr.jpg?fit=2048%2C2048px&#038;ssl=1" data-srcset="https://i1.wp.com/thepointsguy.com/wp-content/uploads/2018/01/Pyeongchang-Trout-Festival_credit-Jeon-Han-Republic-of-Koreaflickr.jpg?fit=2048%2C2048px&#038;ssl=1 2048w" ></a><figcaption class="wp-caption-text">Pyeongchang Trout Festival. (Photo by Jeon Han/Republic of Korea/flickr)</figcaption></figure>
+<h2>Enjoy a Day at Everland</h2>
+<p>Are you a fan of amusement parks? If so, you&#8217;ll enjoy spending a day at <a href="http://english.visitkorea.or.kr/enu/ATR/SI_EN_3_1_1_1.jsp?cid=264235" target="_blank" rel="noopener">Everland</a>, Korea&#8217;s largest amusement park. A 30-minute bus ride from the Gangnam area of Seoul, this park is full of fun all year round. You can enjoy live shows, interact with animals at the petting zone and hop on a mix of park rides. You&#8217;ll easily be entertained all day long — even during the winter.</p>
+<p><strong>Everland:</strong> 199, Everland-ro, Pogok-eup, Cheoin-gu, Yongin-si, Gyeonggi-do | 경기도 용인시 처인구 포곡읍 에버랜드로 199 (포곡읍)</p>
+<h2>Watch a Movie on One of the World&#8217;s Largest IMAX Screens</h2>
+<p>If you&#8217;re a movie fan, why not visit <a href="http://www.koreanfilm.or.kr/jsp/news/news.jsp?mode=VIEW&amp;seq=4400" target="_blank" rel="noopener">one of the world&#8217;s largest IMAX screens</a>? At the CGV Yongsan location, you can watch a movie on a screen that is 31 meters x 22.4 meters — about 5x the size of the normal movie theater screen. This will take your typical viewing experience to the next level. In addition to watching a film, you get to experience typical Korean movie snacks such as beer, fried chicken and dried squid — all at an affordable price. Don&#8217;t worry, they have popcorn, too.</p>
+<p><strong>CGV Yongsan:</strong> I’Park Mall 6F, 55, Hangang-daero 23-gil, Yongsan-gu, Seoul | 서울특별시 용산구 한강대로23길 55 (한강로3가,현대아이파크몰)</p>
+<h2>Go Skiing</h2>
+<p>If you enjoy getting outside and being sporty during winter, you&#8217;ll want to hit the slopes in Korea. There are a variety of places to go skiing, but if you want to be close to the action of the winter games, be sure to visit <a href="http://english.visitkorea.or.kr/enu/ATR/SI_EN_3_1_1_1.jsp?cid=266890" target="_blank" rel="noopener">Yongpyong Ski Resort</a>. They&#8217;ll be hosting the technical alpine skiing events for the games, but other slopes will be open to visitors and locals alike.</p>
+<p><strong>Yongpyong Ski Resort: </strong>715, Olympic-ro, Daegwanryeong-myeon, Pyeongchang-gun, Gangwon-do | 강원도 평창군 대관령면 올림픽로 715 (대관령면)</p>
+<h2>Experience a Traditional Korean Spa</h2>
+<p>Going to the spa is part of everyday life in Korea. If you want to step outside your comfort zone, visiting a Korean spa, or <em>jjimjilbang</em>, is a great way to do so. In most cases, you&#8217;ll be given spa-issued pajamas when you first enter. Head to the changing rooms and get down to your birthday suit before enjoying steam rooms, saunas and a mix of hot and cold baths. You can even get a full-body scrub to get rid of dry, dead skin. After adventuring in the spa rooms, put your pajamas on and head to one of the rest-and-relax areas to take a nap, hang out with friends or have a snack. <span style="font-size: 1.8rem;">Korean saunas can be found all over the place, but if it&#8217;s your first visit, <a href="http://english.visitkorea.or.kr/enu/ATR/SI_EN_3_1_1_1.jsp?cid=1542634" target="_blank" rel="noopener">The Spa in Garden 5 and </a><a href="http://www.dragonhillspa.com/en/welcome/admissions-fees/" target="_blank" rel="noopener">Yongsan Dragon Hill Spa</a> are great places to start.</span></p>
+<p><strong>Yongsan Dragon Hill Spa:</strong> 40, Hangang-daero 21na-gil, Yongsan-gu, Seoul | 서울특별시 용산구 한강대로21나길 40 (한강로3가)</p>
+<p><strong>The Spa in Garden 5: </strong>66, Chungmin-ro, Songpa-gu, Seoul | 서울특별시 송파구 충민로 66 (문정동)</p>
+<h2>Take a Winter Hike</h2>
+<p>Hiking is a huge sport and daily activity in South Korea. You&#8217;ll see young children and grandparents alike hiking. If you&#8217;re looking for some beautiful views and also want to burn some calories traveling throughout the country, taking a hike is recommended. While there are many trails to enjoy, Jirisan is a popular mountain located in <a href="http://english.knps.or.kr/Knp/Jirisan/Intro/Introduction.aspx" target="_blank" rel="noopener">Jirisan National Park</a>. If you&#8217;re feeling extra daring, head to Jeju Island and hike the tallest mountain in all of Korea— Hallasan, which is a shield volcano. This can be accessed in <a href="http://english.visitkorea.or.kr/enu/ATR/SI_EN_3_1_1_1.jsp?cid=264172" target="_blank" rel="noopener">Hallasan National Park</a>.</p>
+<p><strong>Jirisan National Park: </strong>320-2, Jirisan-daero, Sancheong-gun, Gyeongsangnam-do | 경상남도 산청군 시천면 지리산대로 320-2</p>
+<p><strong>Hallasan National Park: </strong>2070-61, 1100-ro, Jeju-si, Jeju-do | 제주특별자치도 제주시 1100로 2070-61</p>
+<figure id="attachment_435729" style="max-width: 830px" class="wp-caption aligncenter"><a href="https://thepointsguy.com/wp-content/uploads/2018/01/Hallasan-Mountain-korea-winter.jpg"><img class="lazyautosizes wp-image-435729 lazyload lazyload size-full" alt="Two hikers walking down snow covered trail at top of Mt. Halla in Jeju, South Korea. (Photo by Douglas MacDonald/Getty Images)" style="width:830px" data-sizes="auto" data-src="https://i0.wp.com/thepointsguy.com/wp-content/uploads/2018/01/Hallasan-Mountain-korea-winter.jpg?fit=2048%2C2048px&#038;ssl=1" data-srcset="https://i0.wp.com/thepointsguy.com/wp-content/uploads/2018/01/Hallasan-Mountain-korea-winter.jpg?fit=2048%2C2048px&#038;ssl=1 2048w" ></a><figcaption class="wp-caption-text">Two hikers walking down snow covered trail at top of Mt. Halla in Jeju, South Korea. (Photo by Douglas MacDonald/Getty Images)</figcaption></figure>
+<h2>View the Winter Light Festival at Garden of the Morning Calm</h2>
+<p><a href="http://english.visitkorea.or.kr/enu/ATR/SI_EN_3_2_1.jsp?cid=1866962" target="_blank" rel="noopener">The Garden of the Morning Calm</a> is a popular spot open year-round. In the winter, an incredible light festival is put on here. It&#8217;s the largest light festival in the whole country and is a perfect event for both children and adults. If you&#8217;re looking for a unique outdoor winter activity, this is it.</p>
+<p><strong>Garden of the Morning Calm:</strong> 432, Sumogwon-ro, Gapyeong-gun, Gyeonggi-do | 경기도 가평군 상면 수목원로 432 (상면)</p>
+<figure id="attachment_435737" style="max-width: 830px" class="wp-caption aligncenter"><a href="https://thepointsguy.com/wp-content/uploads/2018/01/Winter-Light-Festival-at-Garden-of-the-Morning-Calm-credit-travel-oriented-flickr.jpg"><img class="lazyautosizes wp-image-435737 lazyload lazyload size-full" alt="The Garden of Morning Calm (아침고요수목원) is a huge garden with a different themes every season. In winter, since there are no flowers, the garden holds the lighting festival where the whole garden is lit up in beautiful, colorful lights. (Photo by travel oriented/Flickr)" style="width:830px" data-sizes="auto" data-src="https://i0.wp.com/thepointsguy.com/wp-content/uploads/2018/01/Winter-Light-Festival-at-Garden-of-the-Morning-Calm-credit-travel-oriented-flickr.jpg?fit=2048%2C2048px&#038;ssl=1" data-srcset="https://i0.wp.com/thepointsguy.com/wp-content/uploads/2018/01/Winter-Light-Festival-at-Garden-of-the-Morning-Calm-credit-travel-oriented-flickr.jpg?fit=2048%2C2048px&#038;ssl=1 2048w" ></a><figcaption class="wp-caption-text">The Garden of Morning Calm (아침고요수목원) is a huge garden with a different themes every season. In winter, since there are no flowers, the garden holds the lighting festival where the whole garden is lit up in beautiful, colorful lights. (Photo by travel oriented/Flickr)</figcaption></figure>
+<h2>Visit a Winter Ice Festival</h2>
+<p>These festivals offer a mix of winter activities such as sledding and ice fishing with the bonus opportunity to view incredible ice sculptures. There&#8217;s also plenty of snacks available to help you keep warm. Be sure to check out the <a href="http://www.korea.net/Events/Festivals/view?articleId=8912" target="_blank" rel="noopener">Chilgapsan Ice Fountain Festival</a>, as it&#8217;s one of the most popular ice festivals.</p>
+<p><strong>Chilgapsan Ice Fountain Festival:</strong> 175-11, Cheonjangho-gil, Cheongyang-gun, Chungcheongnam-do| 충청남도 청양군 정산면 천장호길 175-11</p>
+	<div class="social-sharing">
+		<div class="sharedaddy sd-sharing-enabled"><div class="robots-nocontent sd-block sd-social sd-social-icon sd-sharing"><h3 class="sd-title">Share this:</h3><div class="sd-content"><ul><li class="share-facebook"><a rel="nofollow" data-shared="sharing-facebook-431880" class="share-facebook sd-button share-icon no-text" href="https://thepointsguy.com/2018/02/winter-olympics-south-korea-things-to-do/?share=facebook" target="_blank" title="Click to share on Facebook"><span></span><span class="sharing-screen-reader-text">Click to share on Facebook (Opens in new window)</span></a></li><li class="share-twitter"><a rel="nofollow" data-shared="sharing-twitter-431880" class="share-twitter sd-button share-icon no-text" href="https://thepointsguy.com/2018/02/winter-olympics-south-korea-things-to-do/?share=twitter" target="_blank" title="Click to share on Twitter"><span></span><span class="sharing-screen-reader-text">Click to share on Twitter (Opens in new window)</span></a></li><li class="share-end"></li></ul></div></div></div>	</div>
+
+<section
+	class="card-feature"
+	data-product-id="22125056"
+	data-channel="204650"
+	data-name="Chase Sapphire Preferred&#174; Card (22125056)"
+	data-issuer="Chase"
+	data-location="unknown"
+	data-cohesion-attrs="productId,channel,name,issuer,location">
+
+	<div class="title"></div>
+	<div class="header">The best beginner points and miles card out there.</div>
+	<div class="sub-header">Chase Sapphire Preferred® Card</div>
+
+	<div class="summary-wrapper">
+					<div class="summary">
+				<p>With great travel benefits, 2x points on travel &amp; dining and a 50,000 point sign up bonus, the Chase Sapphire Preferred is a great card for those looking to get into the points and miles game. <a href="/guide/5-reasons-to-get-chase-sapphire-preferred/">Here are the top 5 reasons</a> it should be in your wallet, or <a href="/guide/chase-sapphire-preferred-review/">read our definitive review</a> for more details.</p>
+			</div>
+		
+		<div class="card">
+			<div class="img-wrapper">
+				<a href="https://thepointsguy.com/apply/chase-sapphire-preferred-card/?tid=CARD-FEATURE">
+							<div class="attachment-image size-card">
+			<figure>
+				<img width="500" height="315" class="attachment-card size-card lazyload" alt="" draggable="false" data-sizes="auto" data-srcset="https://i1.wp.com/thepointsguy.com/wp-content/uploads/2017/03/chase-sapphire-preferred-card-110716.png?resize=500%2C312px&#038;ssl=1 500w,https://i1.wp.com/thepointsguy.com/wp-content/uploads/2017/03/chase-sapphire-preferred-card-110716.png?resize=409%2C255px&#038;ssl=1 409w,https://i1.wp.com/thepointsguy.com/wp-content/uploads/2017/03/chase-sapphire-preferred-card-110716.png?resize=254%2C154px&#038;ssl=1 254w,https://i1.wp.com/thepointsguy.com/wp-content/uploads/2017/03/chase-sapphire-preferred-card-110716.png?resize=150%2C94px&#038;ssl=1 150w,https://i1.wp.com/thepointsguy.com/wp-content/uploads/2017/03/chase-sapphire-preferred-card-110716.png?resize=107%2C67px&#038;ssl=1 107w" data-src="https://i1.wp.com/thepointsguy.com/wp-content/uploads/2017/03/chase-sapphire-preferred-card-110716.png?resize=107%2C67px&#038;ssl=1" />			</figure>
+		</div>
+						</a>
+			</div>
+		</div>
+	</div>
+
+	<a href="https://thepointsguy.com/apply/chase-sapphire-preferred-card/?tid=CARD-FEATURE" class="apply">
+		Apply Now	</a>
+
+	
+	<div class="more-things-to-know">
+		<div class="overlay"></div>
+		<div class="sub-header">More Things to Know</div>
+		<div class="card-content">
+			<ul><li>Earn 50,000 bonus points after you spend $4,000 on purchases in the first 3 months from account opening. That's $625 toward travel when you redeem through Chase Ultimate Rewards&reg;</li><li>2X points on travel and dining at restaurants worldwide &amp; 1 point per dollar spent on all other purchases.</li><li>Earn 5,000 bonus points after you add the first authorized user and make a purchase in the first 3 months from account opening</li><li>No foreign transaction fees</li><li>1:1 point transfer to leading airline and hotel loyalty programs</li><li>Get 25% more value when you redeem for airfare, hotels, car rentals and cruises through Chase Ultimate Rewards. For example, 50,000 points are worth $625 toward travel</li><li>No blackout dates or travel restrictions - as long as there's a seat on the flight, you can book it through Chase Ultimate Rewards</li></ul>		</div>
+
+					<div class="terms">
+									<div class="term">
+						<div class="sub-header">Intro APR on Purchases</div>
+						<div class="description">N/A</div>
+					</div>
+									<div class="term">
+						<div class="sub-header">Regular APR</div>
+						<div class="description">17.24% - 24.24% Variable</div>
+					</div>
+									<div class="term">
+						<div class="sub-header">Annual Fee</div>
+						<div class="description">$0 Intro for the First Year, then $95</div>
+					</div>
+									<div class="term">
+						<div class="sub-header">Balance Transfer Fee</div>
+						<div class="description">Either $5 or 5% of the amount of each transfer, whichever is greater.</div>
+					</div>
+									<div class="term">
+						<div class="sub-header">Recommended Credit</div>
+						<div class="description">Excellent Credit</div>
+					</div>
+							</div>
+			</div>
+	<div class="carat-trigger"></div>
+	</section>
+
+<section class="comments-disclosure">
+	<p>Editorial Disclaimer: Opinions expressed here are author&#8217;s alone, not those of any bank, credit card issuer, airlines or hotel chain, and have not been reviewed, approved or otherwise endorsed by any of these entities.</p>
+<p>Disclaimer: The responses below are not provided or commissioned by the bank advertiser. Responses have not been reviewed, approved or otherwise endorsed by the bank advertiser. It is not the bank advertiser&#8217;s responsibility to ensure all posts and/or questions are answered.</p>
+</section>
+
+<div id="comments"></div>
+<div id="disqus_thread"></div>
+				</div>
+			</div>
+		</section>
+					<aside class="sidebar" role="complementary">
+				
+<section class="favorite-cards favorite-cards-shortcode">
+	<div class="favorite-cards-wrapper">
+
+					<div class="favorite-cards-meta">
+				<div class="title">Our Favorite<br> Partner Cards</div>
+							</div>
+		
+		<div class="cards-wrapper">
+			
+<div
+	class="card"
+	data-product-id="221211974"
+	data-channel="221211974"
+	data-name="Ink Business Preferred&#8480; Credit Card (221211974)"
+	data-issuer="Chase"
+	data-location="links"
+	data-html_text="Fav Card Widget"
+	data-cohesion-attrs="productId,channel,name,issuer,location,html_text">
+
+	<div class="img-wrapper">
+		<a href="https://thepointsguy.com/apply/ink-business-preferred%e2%84%a0-credit-card/?tid=FAV-CARD-WIDGET-1">
+					<div class="attachment-image size-card">
+			<figure>
+				<img width="500" height="315" class="attachment-card size-card lazyload" alt="" draggable="false" data-sizes="auto" data-srcset="https://i2.wp.com/thepointsguy.com/wp-content/uploads/2017/03/ink-business-preferred-credit-card-111416-2.png?resize=500%2C312px&#038;ssl=1 500w,https://i2.wp.com/thepointsguy.com/wp-content/uploads/2017/03/ink-business-preferred-credit-card-111416-2.png?resize=409%2C255px&#038;ssl=1 409w,https://i2.wp.com/thepointsguy.com/wp-content/uploads/2017/03/ink-business-preferred-credit-card-111416-2.png?resize=254%2C154px&#038;ssl=1 254w,https://i2.wp.com/thepointsguy.com/wp-content/uploads/2017/03/ink-business-preferred-credit-card-111416-2.png?resize=150%2C94px&#038;ssl=1 150w,https://i2.wp.com/thepointsguy.com/wp-content/uploads/2017/03/ink-business-preferred-credit-card-111416-2.png?resize=107%2C67px&#038;ssl=1 107w" data-src="https://i2.wp.com/thepointsguy.com/wp-content/uploads/2017/03/ink-business-preferred-credit-card-111416-2.png?resize=107%2C67px&#038;ssl=1" />			</figure>
+		</div>
+				</a>
+	</div>
+
+	<div class="meta">
+
+		<div class="title">
+			<a href="https://thepointsguy.com/apply/ink-business-preferred%e2%84%a0-credit-card/?tid=FAV-CARD-WIDGET-1">
+				Ink Business Preferred℠ Credit Card			</a>
+		</div>
+
+					<div class="current-offer">
+				Current Offer			</div>
+
+			<div class="offer">
+				<a href="https://thepointsguy.com/apply/ink-business-preferred%e2%84%a0-credit-card/?tid=FAV-CARD-WIDGET-1">80,000 points</a>
+			</div>
+		
+		<div class="terms">
+			<a href="https://thepointsguy.com/apply/ink-business-preferred%e2%84%a0-credit-card/?tid=FAV-CARD-WIDGET-1">Terms</a>
+		</div>
+
+		
+		
+			</div>
+</div>
+
+<div
+	class="card"
+	data-product-id="22125056"
+	data-channel="204650"
+	data-name="Chase Sapphire Preferred&#174; Card (22125056)"
+	data-issuer="Chase"
+	data-location="links"
+	data-html_text="Fav Card Widget"
+	data-cohesion-attrs="productId,channel,name,issuer,location,html_text">
+
+	<div class="img-wrapper">
+		<a href="https://thepointsguy.com/apply/chase-sapphire-preferred-card/?tid=FAV-CARD-WIDGET-2">
+					<div class="attachment-image size-card">
+			<figure>
+				<img width="500" height="315" class="attachment-card size-card lazyload" alt="" draggable="false" data-sizes="auto" data-srcset="https://i1.wp.com/thepointsguy.com/wp-content/uploads/2017/03/chase-sapphire-preferred-card-110716.png?resize=500%2C312px&#038;ssl=1 500w,https://i1.wp.com/thepointsguy.com/wp-content/uploads/2017/03/chase-sapphire-preferred-card-110716.png?resize=409%2C255px&#038;ssl=1 409w,https://i1.wp.com/thepointsguy.com/wp-content/uploads/2017/03/chase-sapphire-preferred-card-110716.png?resize=254%2C154px&#038;ssl=1 254w,https://i1.wp.com/thepointsguy.com/wp-content/uploads/2017/03/chase-sapphire-preferred-card-110716.png?resize=150%2C94px&#038;ssl=1 150w,https://i1.wp.com/thepointsguy.com/wp-content/uploads/2017/03/chase-sapphire-preferred-card-110716.png?resize=107%2C67px&#038;ssl=1 107w" data-src="https://i1.wp.com/thepointsguy.com/wp-content/uploads/2017/03/chase-sapphire-preferred-card-110716.png?resize=107%2C67px&#038;ssl=1" />			</figure>
+		</div>
+				</a>
+	</div>
+
+	<div class="meta">
+
+		<div class="title">
+			<a href="https://thepointsguy.com/apply/chase-sapphire-preferred-card/?tid=FAV-CARD-WIDGET-2">
+				Chase Sapphire Preferred® Card			</a>
+		</div>
+
+					<div class="current-offer">
+				Current Offer			</div>
+
+			<div class="offer">
+				<a href="https://thepointsguy.com/apply/chase-sapphire-preferred-card/?tid=FAV-CARD-WIDGET-2">50,000 points</a>
+			</div>
+		
+		<div class="terms">
+			<a href="https://thepointsguy.com/apply/chase-sapphire-preferred-card/?tid=FAV-CARD-WIDGET-2">Terms</a>
+		</div>
+
+		
+		
+			</div>
+</div>
+
+<div
+	class="card"
+	data-product-id="22105772"
+	data-channel="ce293c61587c41c29a64c5685cb78e40"
+	data-name="Capital One&#174; Venture&#174; Rewards Credit Card (22105772)"
+	data-issuer="Capital One"
+	data-location="links"
+	data-html_text="Fav Card Widget"
+	data-cohesion-attrs="productId,channel,name,issuer,location,html_text">
+
+	<div class="img-wrapper">
+		<a href="https://thepointsguy.com/apply/capital-one-venture-rewards-credit-card/?tid=FAV-CARD-WIDGET-3">
+					<div class="attachment-image size-card">
+			<figure>
+				<img width="500" height="315" class="attachment-card size-card lazyload" alt="" draggable="false" data-sizes="auto" data-srcset="https://i2.wp.com/thepointsguy.com/wp-content/uploads/2017/03/capital-one-venture-rewards-credit-card-032217.png?resize=500%2C312px&#038;ssl=1 500w,https://i2.wp.com/thepointsguy.com/wp-content/uploads/2017/03/capital-one-venture-rewards-credit-card-032217.png?resize=409%2C255px&#038;ssl=1 409w,https://i2.wp.com/thepointsguy.com/wp-content/uploads/2017/03/capital-one-venture-rewards-credit-card-032217.png?resize=254%2C154px&#038;ssl=1 254w,https://i2.wp.com/thepointsguy.com/wp-content/uploads/2017/03/capital-one-venture-rewards-credit-card-032217.png?resize=150%2C94px&#038;ssl=1 150w,https://i2.wp.com/thepointsguy.com/wp-content/uploads/2017/03/capital-one-venture-rewards-credit-card-032217.png?resize=107%2C67px&#038;ssl=1 107w" data-src="https://i2.wp.com/thepointsguy.com/wp-content/uploads/2017/03/capital-one-venture-rewards-credit-card-032217.png?resize=107%2C67px&#038;ssl=1" />			</figure>
+		</div>
+				</a>
+	</div>
+
+	<div class="meta">
+
+		<div class="title">
+			<a href="https://thepointsguy.com/apply/capital-one-venture-rewards-credit-card/?tid=FAV-CARD-WIDGET-3">
+				Capital One® Venture® Rewards Credit Card			</a>
+		</div>
+
+					<div class="current-offer">
+				Current Offer			</div>
+
+			<div class="offer">
+				<a href="https://thepointsguy.com/apply/capital-one-venture-rewards-credit-card/?tid=FAV-CARD-WIDGET-3">50,000 miles</a>
+			</div>
+		
+		<div class="terms">
+			<a href="https://thepointsguy.com/apply/capital-one-venture-rewards-credit-card/?tid=FAV-CARD-WIDGET-3">Terms</a>
+		</div>
+
+		
+		
+			</div>
+</div>
+
+<div
+	class="card"
+	data-product-id="22504813"
+	data-channel="156 L"
+	data-name="The Platinum Card&#174; from American Express (22504813)"
+	data-issuer="American Express"
+	data-location="links"
+	data-html_text="Fav Card Widget"
+	data-cohesion-attrs="productId,channel,name,issuer,location,html_text">
+
+	<div class="img-wrapper">
+		<a href="https://thepointsguy.com/apply/the-platinum-card-from-american-express/?tid=FAV-CARD-WIDGET-4">
+					<div class="attachment-image size-card">
+			<figure>
+				<img width="500" height="315" class="attachment-card size-card lazyload" alt="" draggable="false" data-sizes="auto" data-srcset="https://i0.wp.com/thepointsguy.com/wp-content/uploads/2017/04/the-platinum-card-from-american-express-033017.png?resize=500%2C312px&#038;ssl=1 500w,https://i0.wp.com/thepointsguy.com/wp-content/uploads/2017/04/the-platinum-card-from-american-express-033017.png?resize=409%2C255px&#038;ssl=1 409w,https://i0.wp.com/thepointsguy.com/wp-content/uploads/2017/04/the-platinum-card-from-american-express-033017.png?resize=254%2C154px&#038;ssl=1 254w,https://i0.wp.com/thepointsguy.com/wp-content/uploads/2017/04/the-platinum-card-from-american-express-033017.png?resize=150%2C94px&#038;ssl=1 150w,https://i0.wp.com/thepointsguy.com/wp-content/uploads/2017/04/the-platinum-card-from-american-express-033017.png?resize=107%2C67px&#038;ssl=1 107w" data-src="https://i0.wp.com/thepointsguy.com/wp-content/uploads/2017/04/the-platinum-card-from-american-express-033017.png?resize=107%2C67px&#038;ssl=1" />			</figure>
+		</div>
+				</a>
+	</div>
+
+	<div class="meta">
+
+		<div class="title">
+			<a href="https://thepointsguy.com/apply/the-platinum-card-from-american-express/?tid=FAV-CARD-WIDGET-4">
+				The Platinum Card® from American Express			</a>
+		</div>
+
+					<div class="current-offer">
+				Current Offer			</div>
+
+			<div class="offer">
+				<a href="https://thepointsguy.com/apply/the-platinum-card-from-american-express/?tid=FAV-CARD-WIDGET-4">60,000 points</a>
+			</div>
+		
+		<div class="terms">
+			<a href="https://thepointsguy.com/apply/the-platinum-card-from-american-express/?tid=FAV-CARD-WIDGET-4">Terms</a>
+		</div>
+
+		
+		
+			</div>
+</div>
+
+<div
+	class="card"
+	data-product-id="220612236"
+	data-channel="220612236"
+	data-name="Bank of America&#174; Premium Rewards&#174; Credit Card (220612236)"
+	data-issuer="Bank of America"
+	data-location="links"
+	data-html_text="Fav Card Widget"
+	data-cohesion-attrs="productId,channel,name,issuer,location,html_text">
+
+	<div class="img-wrapper">
+		<a href="https://thepointsguy.com/apply/bank-of-america-premium-rewards-credit-card/?tid=FAV-CARD-WIDGET-5">
+					<div class="attachment-image size-card">
+			<figure>
+				<img width="500" height="315" class="attachment-card size-card lazyload" alt="" draggable="false" data-sizes="auto" data-srcset="https://i1.wp.com/thepointsguy.com/wp-content/uploads/2017/09/bank-of-america-premium-rewards-credit-card-tpg-091517.png?resize=500%2C312px&#038;ssl=1 500w,https://i1.wp.com/thepointsguy.com/wp-content/uploads/2017/09/bank-of-america-premium-rewards-credit-card-tpg-091517.png?resize=409%2C255px&#038;ssl=1 409w,https://i1.wp.com/thepointsguy.com/wp-content/uploads/2017/09/bank-of-america-premium-rewards-credit-card-tpg-091517.png?resize=254%2C154px&#038;ssl=1 254w,https://i1.wp.com/thepointsguy.com/wp-content/uploads/2017/09/bank-of-america-premium-rewards-credit-card-tpg-091517.png?resize=150%2C94px&#038;ssl=1 150w,https://i1.wp.com/thepointsguy.com/wp-content/uploads/2017/09/bank-of-america-premium-rewards-credit-card-tpg-091517.png?resize=107%2C67px&#038;ssl=1 107w" data-src="https://i1.wp.com/thepointsguy.com/wp-content/uploads/2017/09/bank-of-america-premium-rewards-credit-card-tpg-091517.png?resize=107%2C67px&#038;ssl=1" />			</figure>
+		</div>
+				</a>
+	</div>
+
+	<div class="meta">
+
+		<div class="title">
+			<a href="https://thepointsguy.com/apply/bank-of-america-premium-rewards-credit-card/?tid=FAV-CARD-WIDGET-5">
+				Bank of America® Premium Rewards® Credit Card			</a>
+		</div>
+
+					<div class="current-offer">
+				Current Offer			</div>
+
+			<div class="offer">
+				<a href="https://thepointsguy.com/apply/bank-of-america-premium-rewards-credit-card/?tid=FAV-CARD-WIDGET-5">50,000 points</a>
+			</div>
+		
+		<div class="terms">
+			<a href="https://thepointsguy.com/apply/bank-of-america-premium-rewards-credit-card/?tid=FAV-CARD-WIDGET-5">Terms</a>
+		</div>
+
+		
+		
+			</div>
+</div>
+		</div>
+
+			</div>
+</section>
+<section class="sidebar-widget">			<div class="textwidget"><p><strong>For more Hot Deals, check out our <a href="/guide/top-travel-rewards-credit-cards/?navtid=hot-deals">Top Travel Rewards Cards</a>.</strong></p>
+</div>
+		</section>		<div
+			class="credit-card-widget"
+			data-product-id="221210132"
+			data-channel="220023"
+			data-name="Chase Sapphire Preferred&#174; Card (221210132)"
+			data-issuer="Chase"
+			data-html_text="RG1"
+			data-cohesion-attrs="productId,channel,name,issuer,html_text">
+			<a href="/apply-banner/chase-sapphire-preferred-card/?tid=RG1" target="_blank" rel="noopener"><img src="https://imgsynergy.com/product_creatives/6d6f42cebbdb9802321842b7c3291d3a.gif" alt="Chase Sapphire Preferred" width="300" height="250" border="0" /></a>		</div>
+				<div
+			class="credit-card-widget"
+			data-product-id="22105772"
+			data-channel="ce293c61587c41c29a64c5685cb78e40"
+			data-name="Capital One&#174; Venture&#174; Rewards Credit Card (22105772)"
+			data-issuer="Capital One"
+			data-html_text="RG2"
+			data-cohesion-attrs="productId,channel,name,issuer,html_text">
+			<a href="/apply-banner/capital-one-venture-rewards-credit-card/?tid=RG2" target="_blank" rel="noopener"><img src="https://thepointsguy.com/wp-content/uploads/2018/01/TPG_300x250_10x.jpg" width="300" height="250" border="0" /></a>		</div>
+		<section class="sidebar-widget">			<div class="textwidget"><div class="widget">
+<a href="/guide/beginners/?navtid=beginners-guide" target="_blank"><img class="aligncenter size-full wp-image-282400" src="https://i1.wp.com/thepointsguy.com/wp-content/uploads/2017/04/guide-cta.png?fit=300%2C300px&amp;ssl=1" height="300" width="300" /></a><br />
+<div class="title">The Best<br> Credit Cards</div>
+
+			<div class="link">
+			<a href="/guide/best-starter-travel-rewards-cards/?navtid=best-credit-cards">Best Starter Travel Rewards Cards</a></div>
+			<div class="link">
+			<a href="/guide/battle-of-the-premium-travel-rewards-cards/?navtid=best-credit-cards">Best Premium Cards</a></div>
+			<div class="link">
+			<a href="/guide/top-airline-cards-to-have/?navtid=best-credit-cards">Best Airline Cards</a></div>
+			<div class="link">
+			<a href="/guide/best-hotel-credit-cards/?navtid=best-credit-cards">Best Hotel Cards</a></div>
+			<div class="link">
+			<a href="/guide/top-cards-with-no-foreign-transaction-fees/?navtid=best-credit-cards">Best Cards With No Foreign Transaction Fees</a></div>
+			<div class="link">
+			<a href="/guide/top-5-business-credit-cards/?navtid=best-credit-cards">Best Small Business Cards</a></div>
+			<div class="link">
+			<a href="/guide/best-cash-back-cards/?navtid=best-credit-cards">Best Cash-Back Cards</a></div>
+			<div class="link">
+			<a href="/guide/best-no-fee-credit-cards/?navtid=best-credit-cards">Best No-Fee Cards</a></div>
+</div></div>
+		</section>
+<div class="widget latest-posts ">
+
+	<div class="title">The<br> Latest</div>
+
+			<div class="link">
+			<a href="https://thepointsguy.com/2018/02/sew-good-a-review-of-cotton-house-hotel-in-barcelona/?navtid=Latest-1">		<div class="attachment-image size-16x9">
+			<figure>
+				<img width="768" height="432" class="attachment-16x9 size-16x9 lazyload" alt="" draggable="false" data-sizes="auto" data-srcset="https://i0.wp.com/thepointsguy.com/wp-content/uploads/2018/02/DSC01719.jpg?resize=1280%2C720px&#038;ssl=1 1280w,https://i0.wp.com/thepointsguy.com/wp-content/uploads/2018/02/DSC01719.jpg?resize=468%2C264px&#038;ssl=1 468w,https://i0.wp.com/thepointsguy.com/wp-content/uploads/2018/02/DSC01719.jpg?resize=307%2C173px&#038;ssl=1 307w,https://i0.wp.com/thepointsguy.com/wp-content/uploads/2018/02/DSC01719.jpg?resize=144%2C81px&#038;ssl=1 144w" data-src="https://i0.wp.com/thepointsguy.com/wp-content/uploads/2018/02/DSC01719.jpg?resize=144%2C81px&#038;ssl=1" />			</figure>
+		</div>
+		</a>
+			<a href="https://thepointsguy.com/2018/02/sew-good-a-review-of-cotton-house-hotel-in-barcelona/?navtid=Latest-1" title="Sew Good: A Review of Cotton House Hotel in Barcelona" >Sew Good: A Review of Cotton House Hotel in Barcelona</a>		</div>
+			<div class="link">
+			<a href="https://thepointsguy.com/2018/02/museum-sleepovers-around-the-world/?navtid=Latest-2">		<div class="attachment-image size-16x9">
+			<figure>
+				<img width="768" height="432" class="attachment-16x9 size-16x9 lazyload" alt="" draggable="false" data-sizes="auto" data-srcset="https://i0.wp.com/thepointsguy.com/wp-content/uploads/2018/01/frost_museum-featured.jpg?resize=1280%2C720px&#038;ssl=1 1280w,https://i0.wp.com/thepointsguy.com/wp-content/uploads/2018/01/frost_museum-featured.jpg?resize=468%2C264px&#038;ssl=1 468w,https://i0.wp.com/thepointsguy.com/wp-content/uploads/2018/01/frost_museum-featured.jpg?resize=307%2C173px&#038;ssl=1 307w,https://i0.wp.com/thepointsguy.com/wp-content/uploads/2018/01/frost_museum-featured.jpg?resize=144%2C81px&#038;ssl=1 144w" data-src="https://i0.wp.com/thepointsguy.com/wp-content/uploads/2018/01/frost_museum-featured.jpg?resize=144%2C81px&#038;ssl=1" />			</figure>
+		</div>
+		</a>
+			<a href="https://thepointsguy.com/2018/02/museum-sleepovers-around-the-world/?navtid=Latest-2" title="6 Amazing Museum Sleepovers Around the World" >6 Amazing Museum Sleepovers Around the World</a>		</div>
+			<div class="link">
+			<a href="https://thepointsguy.com/2018/02/15x-miles-presidents-day-shopping-portal/?navtid=Latest-3">		<div class="attachment-image size-16x9">
+			<figure>
+				<img width="768" height="432" class="attachment-16x9 size-16x9 lazyload" alt="" draggable="false" data-sizes="auto" data-srcset="https://i2.wp.com/thepointsguy.com/wp-content/uploads/2016/11/GettyImages-157027870-e1480442855202.jpg?crop=13px%2C0px%2C711px%2C400px&#038;w=1280&#038;ssl=1 1280w,https://i2.wp.com/thepointsguy.com/wp-content/uploads/2016/11/GettyImages-157027870-e1480442855202.jpg?crop=13px%2C0px%2C711px%2C400px&#038;w=468&#038;ssl=1 468w,https://i2.wp.com/thepointsguy.com/wp-content/uploads/2016/11/GettyImages-157027870-e1480442855202.jpg?crop=13px%2C0px%2C711px%2C400px&#038;w=307&#038;ssl=1 307w,https://i2.wp.com/thepointsguy.com/wp-content/uploads/2016/11/GettyImages-157027870-e1480442855202.jpg?crop=13px%2C0px%2C711px%2C400px&#038;w=144&#038;ssl=1 144w" data-src="https://i2.wp.com/thepointsguy.com/wp-content/uploads/2016/11/GettyImages-157027870-e1480442855202.jpg?crop=13px%2C0px%2C711px%2C400px&#038;w=144&#038;ssl=1" />			</figure>
+		</div>
+		</a>
+			<a href="https://thepointsguy.com/2018/02/15x-miles-presidents-day-shopping-portal/?navtid=Latest-3" title="Earn up to 15x Miles This Weekend Through Airline Shopping Portals" >Earn up to 15x Miles This Weekend Through Airline Shopping Portals</a>		</div>
+	
+	<div class="all-newest-posts">
+		<a href="https://thepointsguy.com/all/?navtid=All-Posts">All Newest Posts</a>
+	</div>
+
+</div>
+<section class="sidebar-widget">			<div class="textwidget"><div class="article-body-ad">
+<script type="text/javascript" src="https://g.adspeed.net/ad.php?do=js&zid=62741&oid=10126&wd=-1&ht=-1&target=_blank&noerror=1"></script>
+</div></div>
+		</section>			</aside>
+			</div>
+
+	
+<section class="related-links">
+
+	<div class="related-header">
+		<span>More from the Points Guy</span>
+	</div>
+
+			<div class="related-link">
+			<a href="https://thepointsguy.com/2018/02/deal-alert-nonstop-europe-285/?navtid=More-1">		<div class="attachment-image size-16x9">
+			<figure>
+				<img width="768" height="432" class="attachment-16x9 size-16x9 lazyload" alt="" draggable="false" data-sizes="auto" data-srcset="https://i1.wp.com/thepointsguy.com/wp-content/uploads/2017/06/GettyImages-540372933.jpg?resize=1280%2C720px&#038;ssl=1 1280w,https://i1.wp.com/thepointsguy.com/wp-content/uploads/2017/06/GettyImages-540372933.jpg?resize=468%2C264px&#038;ssl=1 468w,https://i1.wp.com/thepointsguy.com/wp-content/uploads/2017/06/GettyImages-540372933.jpg?resize=307%2C173px&#038;ssl=1 307w,https://i1.wp.com/thepointsguy.com/wp-content/uploads/2017/06/GettyImages-540372933.jpg?resize=144%2C81px&#038;ssl=1 144w" data-src="https://i1.wp.com/thepointsguy.com/wp-content/uploads/2017/06/GettyImages-540372933.jpg?resize=144%2C81px&#038;ssl=1" />			</figure>
+		</div>
+		</a>
+			<div class="meta">
+									<div class="label"><a href="https://thepointsguy.com/category/deals/?navtid=More-1" title="Deals" >Deals</a></div>
+								<div class="title"><a href="https://thepointsguy.com/2018/02/deal-alert-nonstop-europe-285/?navtid=More-1" title="Deal Alert: Nonstop Flights to Europe From $285 Round-Trip" >Deal Alert: Nonstop Flights to Europe From $285 Round-Trip</a></div>
+				<div class="timestamp">6 hours ago</div>
+			</div>
+		</div>
+			<div class="related-link">
+			<a href="https://thepointsguy.com/2018/02/how-to-score-majorly-discounted-lift-tickets-when-you-ski/?navtid=More-2">		<div class="attachment-image size-16x9">
+			<figure>
+				<img width="768" height="432" class="attachment-16x9 size-16x9 lazyload" alt="chairlift on a ski resort" draggable="false" data-sizes="auto" data-srcset="https://i0.wp.com/thepointsguy.com/wp-content/uploads/2018/02/ski-lift-deals.jpg?resize=1280%2C720px&#038;ssl=1 1280w,https://i0.wp.com/thepointsguy.com/wp-content/uploads/2018/02/ski-lift-deals.jpg?resize=468%2C264px&#038;ssl=1 468w,https://i0.wp.com/thepointsguy.com/wp-content/uploads/2018/02/ski-lift-deals.jpg?resize=307%2C173px&#038;ssl=1 307w,https://i0.wp.com/thepointsguy.com/wp-content/uploads/2018/02/ski-lift-deals.jpg?resize=144%2C81px&#038;ssl=1 144w" data-src="https://i0.wp.com/thepointsguy.com/wp-content/uploads/2018/02/ski-lift-deals.jpg?resize=144%2C81px&#038;ssl=1" />			</figure>
+		</div>
+		</a>
+			<div class="meta">
+									<div class="label"><a href="https://thepointsguy.com/category/guides/?navtid=More-2" title="Guides" >Guides</a></div>
+								<div class="title"><a href="https://thepointsguy.com/2018/02/how-to-score-majorly-discounted-lift-tickets-when-you-ski/?navtid=More-2" title="How to Score Majorly Discounted Lift Tickets When You Ski" >How to Score Majorly Discounted Lift Tickets When You Ski</a></div>
+				<div class="timestamp">7 hours ago</div>
+			</div>
+		</div>
+			<div class="related-link">
+			<a href="https://thepointsguy.com/2018/02/tpg-readers-when-should-you-book-awards/?navtid=More-3">		<div class="attachment-image size-16x9">
+			<figure>
+				<img width="768" height="432" class="attachment-16x9 size-16x9 lazyload" alt="" draggable="false" data-sizes="auto" data-srcset="https://i0.wp.com/thepointsguy.com/wp-content/uploads/2018/02/planning-ahead-travel.jpg?resize=1280%2C720px&#038;ssl=1 1280w,https://i0.wp.com/thepointsguy.com/wp-content/uploads/2018/02/planning-ahead-travel.jpg?resize=468%2C264px&#038;ssl=1 468w,https://i0.wp.com/thepointsguy.com/wp-content/uploads/2018/02/planning-ahead-travel.jpg?resize=307%2C173px&#038;ssl=1 307w,https://i0.wp.com/thepointsguy.com/wp-content/uploads/2018/02/planning-ahead-travel.jpg?resize=144%2C81px&#038;ssl=1 144w" data-src="https://i0.wp.com/thepointsguy.com/wp-content/uploads/2018/02/planning-ahead-travel.jpg?resize=144%2C81px&#038;ssl=1" />			</figure>
+		</div>
+		</a>
+			<div class="meta">
+									<div class="label"><a href="https://thepointsguy.com/category/news/?navtid=More-3" title="News" >News</a></div>
+								<div class="title"><a href="https://thepointsguy.com/2018/02/tpg-readers-when-should-you-book-awards/?navtid=More-3" title="TPG Readers Share Tips on When You Should Book Award Travel" >TPG Readers Share Tips on When You Should Book Award Travel</a></div>
+				<div class="timestamp">9 hours ago</div>
+			</div>
+		</div>
+	
+</section>
+</div>
+
+
+<section class="advertiser-disclosure-body">
+	<div class="advertiser-disclosure-heading"><h3>Advertiser Disclosure</h3></div>
+	<span class="icon icon-x-close">
+	<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 42.4 42.4" style="enable-background:new 0 0 42.4 42.4;" xml:space="preserve">
+		<rect x="-6.8" y="19.2" transform="matrix(0.7071 -0.7071 0.7071 0.7071 -8.7868 21.2132)" width="56" height="4"/>
+		<rect x="-6.8" y="19.2" transform="matrix(0.7071 0.7071 -0.7071 0.7071 21.2132 -8.7868)" width="56" height="4"/>
+	</svg>
+</span>	<p>The credit card offers that appear on the website are from credit card companies from which ThePointsGuy.com receives compensation. This compensation may impact how and where products appear on this site (including, for example, the order in which they appear). This site does not include all credit card companies or all available credit card offers. Please view our <a href="/advertising-policy/">advertising policy page</a> for more information.</p>
+<p>Editorial Note: Opinions expressed here are author&#8217;s alone, not those of any bank, credit card issuer, airlines or hotel chain, and have not been reviewed, approved or otherwise endorsed by any of these entities.</p>
+</section>
+<footer class="footer-nav">
+	<section class="footer-nav-wrapper">
+		<div class="column-main">
+			<div class="footer-logo">
+				<span class="tpg-logo tpg-logo-secondary">
+	<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1158.45 467.85">
+	  <path class="cls-1" d="M263.43,97.84a6.58,6.58,0,0,1,6.58,6.58V447.61a14.28,14.28,0,0,0,14.22,14.23h63.66A13.15,13.15,0,0,0,361,448.73V285.84a6,6,0,0,1,6-6h58.75a135.19,135.19,0,0,0,67.91-18.6.1.1,0,0,1,.15.09c.66,22.4,2.14,44,4.45,63.42,9.07,77.75,64,143.11,153.37,143.11,88.77,0,153.37-64.21,153.37-142V216.23a11.39,11.39,0,0,0-11.39-11.39H667.47A14.51,14.51,0,0,0,653,219.31V278.5a14.38,14.38,0,0,0,14.34,14.34h44a5.68,5.68,0,0,1,5.68,5.68v27.39c0,29.16-26.11,50.54-65,50.54-39.52,0-59.38-23.33-62.62-51.83-6.48-54.43-6.37-127,.11-181.42,3.24-28.51,22.4-51.83,61.92-51.83,40.82,0,62.57,29.8,62.57,56.37v.55a13.61,13.61,0,0,0,13.57,13.55h66.14c7.13,0,11.29-7,11.29-13.46v-.65C805,61.56,741,0,651.63,0c-53.06,0-93.83,23.4-120.45,58.38a.1.1,0,0,1-.14,0l0,0A135,135,0,0,0,425.74,7.84H13.51A13.55,13.55,0,0,0,0,21.35V84.77A13.1,13.1,0,0,0,13.06,97.84H93.42a6.58,6.58,0,0,1,6.58,6.58V447.61a14.28,14.28,0,0,0,14.23,14.23h64.29A12.48,12.48,0,0,0,191,449.36V104.42a6.58,6.58,0,0,1,6.58-6.58Zm162.32,91H367.54A6.54,6.54,0,0,1,361,182.3h0V104.42a6.58,6.58,0,0,1,6.58-6.58h57.07c26.78,0,48.17,21.92,46.34,48.64a45.63,45.63,0,0,1-45.25,42.36Z" transform="translate(0 -0.01)"/>
+	  <path class="cls-2" d="M996.3,142.95A162.15,162.15,0,1,0,1158.45,305.1,162.15,162.15,0,0,0,996.3,142.95ZM1079.06,354a6.26,6.26,0,0,1-1.83,4.42l-30,30a6.26,6.26,0,0,1-10.68-4.42v-74.4c0-3.89-4.25-5.9-7.48-2.67L943.8,392.19a6.26,6.26,0,0,1-8.85,0l-22.86-22.86a6.26,6.26,0,0,1,0-8.85L997,275.54c3.45-3.45,1.08-7.48-2.67-7.48H920.54a6.26,6.26,0,0,1-4.42-10.69l30.08-30a6.25,6.25,0,0,1,4.42-1.82h122.19a6.26,6.26,0,0,1,6.26,6.26h0V354Z" transform="translate(0 -0.01)"/>
+	  <path class="cls-1" d="M1079.06,354a6.26,6.26,0,0,1-1.83,4.42l-30,30a6.26,6.26,0,0,1-10.68-4.42v-74.4c0-3.89-4.25-5.9-7.48-2.67L943.8,392.19a6.26,6.26,0,0,1-8.85,0l-22.86-22.86a6.26,6.26,0,0,1,0-8.85L997,275.54c3.45-3.45,1.08-7.48-2.67-7.48H920.54a6.26,6.26,0,0,1-4.42-10.69l30.08-30a6.25,6.25,0,0,1,4.42-1.82h122.19a6.26,6.26,0,0,1,6.26,6.26h0V354Z" transform="translate(0 -0.01)"/>
+	</svg>
+</span>			</div>
+
+			<div class="column-main-content">
+				<section class="row newsletter">
+					<div class="row__header">The TPG Newsletter</div>
+					<div class="newsletter__wrapper">
+						<div class="copy">
+							<b>BE A SMARTER TRAVELER</b>: Get points strategies, customized alerts + more						</div>
+
+						
+<form
+	action="//thepointsguy.us6.list-manage.com/subscribe/post?u=e1deb758a4e775c4e2c02fd28&amp;id=2b0b8ee2b7"
+	method="post"
+	id="mc-embedded-subscribe-form"
+	name="mc-embedded-subscribe-form"
+	class="validate"
+	target="_blank"
+	novalidate
+>
+	<input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email address" required />
+	<button type="submit" name="subscribe" id="mc-embedded-subscribe">Sign Up</button>
+	<!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+	<div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_e1deb758a4e775c4e2c02fd28_2b0b8ee2b7" tabindex="-1" value=""></div>
+</form>
+					</div>
+				</section>
+
+				<section class="row site_links">
+					<div class="row__header">Site</div>
+					<nav class="site__wrapper link_row">
+						<a href="https://thepointsguy.com/about/">About</a>
+<a href="https://thepointsguy.com/jobs/">Jobs at TPG</a>
+<a href="/about-us/">Team</a>
+<a href="https://thepointsguy.com/contact-us/">Contact Us</a>
+<a href="https://thepointsguy.com/guide/beginners/">Beginner&#8217;s Guide</a>
+<a href="https://thepointsguy.com/peace/">Points for Peace</a>
+					</nav>
+				</section>
+				<div class="row site_tools">
+					<div class="site_tools__wrapper">
+						<div class="row__header">Tools</div>
+						<nav class="link_row">
+							<a href="https://thepointsguy.com/download/">TPG To Go</a>
+						</nav>
+					</div>
+				</div>
+
+				
+<section class="footer-disclosure">
+	<p><em>The credit card offers that appear on the website are from credit card companies from which ThePointsGuy.com receives compensation. This compensation may impact how and where products appear on this site (including, for example, the order in which they appear). This site does not include all credit card companies or all available credit card offers. Please view our <a href="/advertising-policy/">advertising policy page</a> for more information.</em></p>
+<p><em>Editorial Note: Opinions expressed here are author&#8217;s alone, not those of any bank, credit card issuer, airlines or hotel chain, and have not been reviewed, approved or otherwise endorsed by any of these entities.</em></p>
+</section>
+
+				<div class="row yatta desktop">
+					<span class="copy">&copy; 2018 THE POINTS GUY, LLC. ALL RIGHTS RESERVED</span>
+					<a href="https://thepointsguy.com/privacy-policy/">PRIVACY POLICY</a> | <a href="https://thepointsguy.com/terms-of-use/">TERMS OF USE</a>
+				</div>
+			</div>
+		</div>
+
+		<div class="footer-social-links">
+			<section class="row">
+				<div class="row__header">TPG Social</div>
+				<nav class="footer_social">
+					@thepointsguy					
+<div class="social-icons">
+			<a
+			href="https://facebook.com/thepointsguy/"
+			data-html_text="Facebook"
+			data-position-id="bottom"
+			data-cohesion-attrs="html_text,positionId"
+			class="facebook-icon"
+			title="Like us on Facebook">
+			<span class="icon icon-facebook">
+	<svg width="20" height="20" xmlns="http://www.w3.org/2000/svg">
+		<path d="M18.86.04H1.14C.534.04.04.534.04 1.14v17.72c0 .607.493 1.1 1.1 1.1h9.54v-7.714H8.084V9.24h2.596V7.023c0-2.573 1.57-3.974 3.866-3.974 1.1 0 2.044.08 2.32.117v2.688h-1.592c-1.248 0-1.49.594-1.49 1.465v1.92h2.977l-.386 3.006h-2.59v7.713h5.076c.607 0 1.1-.494 1.1-1.1V1.14c0-.607-.493-1.1-1.1-1.1" fill-rule="evenodd"/>
+	</svg>
+</span>			<span class="social_text">Facebook</span>
+		</a>
+	
+			<a
+			href="https://www.instagram.com/thepointsguy/"
+			data-html_text="Instagram"
+			data-position-id="bottom"
+			data-cohesion-attrs="html_text,positionId"
+			class="instagram-icon"
+			title="Follow us on Instagram">
+			<span class="icon icon-instagram">
+	<svg width="20" height="20" xmlns="http://www.w3.org/2000/svg">
+		<path d="M17.5 0h-15C1.12 0 0 1.12 0 2.5v15C0 18.88 1.12 20 2.5 20h15c1.38 0 2.5-1.12 2.5-2.5v-15C20 1.12 18.88 0 17.5 0zM6.148 9.585c.004-.04.012-.078.018-.117.013-.096.027-.193.047-.287l.033-.122c.022-.09.046-.18.074-.266l.044-.12c.032-.085.064-.17.1-.25l.018-.044h.004C7.1 7.048 8.44 6.126 10 6.126c1.56 0 2.9.922 3.514 2.25h.004l.017.042c.037.082.07.166.1.25.016.04.032.08.045.122.03.087.052.176.074.266.01.042.024.082.033.125.02.097.034.194.047.29.006.04.014.078.018.117.015.137.023.275.023.415 0 2.14-1.735 3.876-3.875 3.876-2.14 0-3.875-1.735-3.875-3.875 0-.14.008-.277.023-.414zM17.75 16.75c0 .552-.448 1-1 1H3.25c-.552 0-1-.448-1-1V8.375h1.843c-.142.518-.218 1.063-.218 1.625 0 3.383 2.742 6.125 6.125 6.125s6.125-2.742 6.125-6.125c0-.563-.076-1.107-.218-1.625h1.843v8.375zm0-11.5c0 .552-.448 1-1 1h-2c-.552 0-1-.448-1-1v-2c0-.552.448-1 1-1h2c.552 0 1 .447 1 1v2z" fill="#0F1568" fill-rule="evenodd"/>
+	</svg>
+</span>			<span class="social_text">Instagram</span>
+		</a>
+	
+			<a
+			href="http://snapchat.com/add/thepointsguy"
+			data-html_text="Snapchat"
+			data-position-id="bottom"
+			data-cohesion-attrs="html_text,positionId"
+			class="snapchat-icon"
+			title="Add us on Snapchat">
+			<span class="icon icon-snapchat circle">
+	<svg xmlns="http://www.w3.org/2000/svg" width="24" height="23">
+		<path fill-rule="evenodd" d="M11.97 22.742c-.04.003-.08.005-.12.005-1.39 0-2.285-.643-3.15-1.265-.595-.43-1.158-.834-1.822-.947-.324-.054-.646-.082-.957-.082-.56 0-1 .088-1.32.153-.19.04-.36.072-.49.072s-.28-.03-.34-.25c-.05-.19-.09-.375-.13-.554-.1-.46-.17-.743-.36-.772-2.21-.348-2.84-.82-2.98-1.157-.02-.048-.03-.096-.03-.144-.01-.12.08-.24.21-.26 3.396-.57 4.918-4.1 4.98-4.25.215-.44.255-.81.128-1.12-.233-.56-.993-.8-1.495-.96l-.33-.11c-1.005-.4-1.09-.82-1.05-1.03.063-.36.54-.61.92-.61.103 0 .195.02.273.06.45.22.86.33 1.21.33.487 0 .7-.21.725-.232l-.042-.73c-.1-1.633-.23-3.662.28-4.82C7.58.57 10.808.3 11.76.3l.418-.003c1.01 0 4.245.27 5.768 3.744.508 1.16.382 3.19.28 4.83l-.003.07c-.013.23-.027.45-.038.66.024.03.22.22.66.24.333-.01.717-.12 1.14-.32.123-.06.26-.07.353-.07.143 0 .287.03.407.08.35.13.572.37.577.62.003.24-.176.6-1.057.96-.09.04-.208.08-.33.12-.505.16-1.264.407-1.497.966-.127.307-.087.68.12 1.107.07.165 1.59 3.695 4.987 4.264.125.02.215.134.208.263-.002.05-.013.1-.034.143-.14.33-.77.806-2.98 1.15-.18.03-.25.27-.36.77-.04.18-.08.36-.14.55-.05.167-.15.24-.32.24-.15 0-.31-.02-.52-.06-.38-.076-.8-.145-1.33-.145-.32 0-.64.028-.96.08-.66.115-1.23.52-1.82.948-.87.627-1.76 1.27-3.16 1.27-.06 0-.12 0-.18-.004z"/>
+	</svg>
+</span>			<span class="social_text">Snapchat</span>
+		</a>
+	
+			<a
+			href="https://twitter.com/thepointsguy/"
+			data-html_text="Twitter"
+			data-position-id="bottom"
+			data-cohesion-attrs="html_text,positionId"
+			class="twitter-icon"
+			title="Follow us on Twitter">
+			<span class="icon icon-twitter">
+	<svg xmlns="http://www.w3.org/2000/svg" width="25" height="21">
+		<path fill-rule="evenodd" d="M7.71 20c-2.84 0-5.484-.833-7.71-2.26.394.046.794.07 1.2.07 2.357 0 4.526-.804 6.247-2.153-2.2-.04-4.06-1.495-4.7-3.494.308.06.624.09.948.09.46 0 .903-.06 1.325-.176C2.72 11.615.985 9.582.985 7.145V7.08c.678.378 1.454.604 2.28.63-1.35-.902-2.24-2.44-2.24-4.187 0-.92.25-1.786.682-2.528C4.187 4.038 7.895 6.04 12.075 6.25c-.085-.368-.13-.752-.13-1.146 0-2.778 2.252-5.03 5.03-5.03 1.448 0 2.755.61 3.673 1.588 1.145-.225 2.222-.644 3.194-1.22-.376 1.174-1.173 2.16-2.212 2.783 1.018-.122 1.987-.392 2.89-.792-.675 1.008-1.528 1.894-2.51 2.604.01.215.014.432.014.65C22.024 12.335 16.964 20 7.71 20"/>
+	</svg>
+</span>			<span class="social_text">Twitter</span>
+		</a>
+	</div>
+				</nav>
+			</section>
+
+			<div class="yatta mobile">
+				<span class="copy">&copy; 2018 THE POINTS GUY, LLC. ALL RIGHTS RESERVED</span>
+				<a href="https://thepointsguy.com/privacy-policy/">PRIVACY POLICY</a> | <a href="https://thepointsguy.com/terms-of-use/">TERMS OF USE</a>
+			</div>
+		</div>
+
+			</section>
+</footer>
+
+<!-- START Parse.ly Include: Standard -->
+
+<div id="parsely-root" style="display: none">
+    <div id="parsely-cfg" data-parsely-site="thepointsguy.com"></div>
+</div>
+<script data-cfasync="false">
+    (function(s, p, d) {
+        var h=d.location.protocol, i=p+"-"+s,
+            e=d.getElementById(i), r=d.getElementById(p+"-root"),
+            u=h==="https:"?"d1z2jf7jlzjs58.cloudfront.net"
+                :"static."+p+".com";
+        if (e) return;
+        e = d.createElement(s); e.id = i; e.async = true;
+        e.setAttribute('data-cfasync', 'false'); e.src = h+"//"+u+"/p.js"; r.appendChild(e);
+    })("script", "parsely", document);
+</script>
+
+<!-- END Parse.ly Include: Standard -->
+		<!-- Adobe DTM for footer -->
+		<script type="text/javascript">
+
+			// Output analytics data
+			var dtmAnalyticsData = {"channel":"NEWS","url":"\/2018\/02\/winter-olympics-south-korea-things-to-do\/?utm_source=PANTHEON_STRIPPED&utm_medium=PANTHEON_STRIPPED&utm_term=PANTHEON_STRIPPED&utm_campaign=PANTHEON_STRIPPED","pageName":"winter-olympics-south-korea-things-to-do","author":"Natasha Gabrielle","eVar20":"2018 Winter Olympics, Olympics, Seoul, South Korea","eVar21":"02092018","eVar22":0,"eVar23":1231,"eVar24":"1","eVar25":""};
+
+			// Build an array of query vars
+			var queryVars = [],
+				sPageURL = decodeURIComponent(window.location.search.substring(1)),
+				sURLVariables = sPageURL.split('&'),
+				sParameterName,
+				i;
+
+			for (i = 0; i < sURLVariables.length; i++) {
+				sParameterName = sURLVariables[i].split('=');
+
+				if ( undefined !== sParameterName[1] ) {
+					queryVars[sParameterName[0]] = sParameterName[1];
+				}
+			}
+
+			// Buick campaign vars
+			var campaign = [];
+
+			// Collect UTM vars
+			if (undefined !== queryVars['utm_source']) {
+				campaign.push(queryVars['utm_source']);
+			}
+
+			if (undefined !== queryVars['utm_campaign']) {
+				campaign.push(queryVars['utm_campaign']);
+			}
+
+			// Build UTM vars
+			campaign = campaign.join('|');
+
+			if ( campaign === '' ) {
+				if ('' === document.referrer) {
+					campaign = 'direct traffic||||';
+				} else if (document.referrer.indexOf('google.com') >= 0 ) {
+					campaign = 'google|seo|||';
+				}else if ( document.referrer.indexOf('facebook.com') >= 0 ) {
+					campaign = 'facebook||||';
+				} else if ( document.referrer.indexOf('twitter.com') >= 0 || document.referrer.indexOf('t.co') >= 0 ) {
+					campaign = 'twitter||||';
+				}
+			}
+
+			// Append campaign value to analytics data
+			dtmAnalyticsData.campaign = campaign;
+
+			// TID used for offer clicks
+			if (undefined !== queryVars['tid']) {
+				dtmAnalyticsData.tid = queryVars['tid'];
+			}
+
+			// Some TIDs don't persist all the way through to offer clicks
+			// They are replaced by the offer link TIDs themselves
+			// So we are tracking them separately as Navigation TIDs
+			if (undefined !== queryVars['navtid']) {
+				dtmAnalyticsData.navtid = queryVars['navtid'];
+			}
+
+			// Context location
+			if (undefined !== queryVars['context']) {
+				dtmAnalyticsData.eVar7 = queryVars['context'];
+			}
+
+			// Previous page values saved by TrackingCookie, see client/js/classes/TrackingCookie.js
+			dtmAnalyticsData.prevpage = document.cookie.replace(/(?:(?:^|.*; )prevpage=([^;]*).*$)|^.*$/, '$1');
+			dtmAnalyticsData.prevPageName = document.cookie.replace(/(?:(?:^|.*; )prevPageName=([^;]*).*$)|^.*$/, '$1');
+			dtmAnalyticsData.prevChannel = document.cookie.replace(/(?:(?:^|.*; )prevChannel=([^;]*).*$)|^.*$/, '$1');
+
+			// Store OID as purchaseId
+			if (window.oid) {
+				dtmAnalyticsData.purchaseId = window.oid;
+			}
+
+			if (window.optimizely && typeof window.optimizely.get === 'function' && window.optimizely.get('custom/adobeIntegrator')) {
+				// window.optimizely.get('custom/adobeIntegrator').assignCampaigns(dtmAnalyticsData);
+			}
+
+			
+			_satellite.pageBottom();
+		</script>
+		
+	<script type="text/javascript">
+		window.WPCOM_sharing_counts = {"https:\/\/thepointsguy.com\/2018\/02\/winter-olympics-south-korea-things-to-do\/":431880};
+	</script>
+<script>
+	var disqus_config = function () {
+		this.page.url = window.tpgGlobalVars.permalink;
+	};
+	(function() {  // DON'T EDIT BELOW THIS LINE
+		var d = document, s = d.createElement('script');
+
+		s.src = '//thepointsguy.disqus.com/embed.js';
+
+		s.setAttribute('data-timestamp', +new Date());
+		(d.head || d.body).appendChild(s);
+	})();
+</script>
+
+<img style="display:none" id="nanigans-pixel" src="" />
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-16558039-1', 'auto');
+  ga('send', 'pageview');
+</script>
+<script type='text/javascript' src='https://thepointsguy.com/wp-content/themes/tpg-2016/static/js/global.24760fb.bundle.min.js?ver=1.0'></script>
+<script type='text/javascript' src='https://thepointsguy.com/wp-content/themes/tpg-2016/static/js/search.24760fb.bundle.min.js?ver=1.0'></script>
+<script type='text/javascript' src='https://thepointsguy.com/wp-content/themes/tpg-2016/static/js/card-selector.24760fb.bundle.min.js?ver=1.0'></script>
+<script type='text/javascript' src='https://s.skimresources.com/js/108360X1565867.skimlinks.js?ver=1.0'></script>
+<script type='text/javascript' src='https://thepointsguy.com/wp-content/plugins/jetpack/modules/photon/photon.js?ver=20130122'></script>
+<script type='text/javascript' src='https://thepointsguy.com/wp-content/plugins/photonfill/vendor/picturefill.min.js?ver=2.3.1'></script>
+<script type='text/javascript' src='https://thepointsguy.com/wp-content/plugins/photonfill/vendor/lazysizes.min.js?ver=1.2.3rc1'></script>
+<script type='text/javascript' src='https://thepointsguy.com/wp-includes/js/wp-embed.min.js?ver=4.9.2'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var sharing_js_options = {"lang":"en","counts":"1"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://thepointsguy.com/wp-content/plugins/jetpack/modules/sharedaddy/sharing.js?ver=4.4.2'></script>
+<script type='text/javascript'>
+var windowOpen;
+			jQuery( document.body ).on( 'click', 'a.share-facebook', function() {
+				// If there's another sharing window open, close it.
+				if ( 'undefined' !== typeof windowOpen ) {
+					windowOpen.close();
+				}
+				windowOpen = window.open( jQuery( this ).attr( 'href' ), 'wpcomfacebook', 'menubar=1,resizable=1,width=600,height=400' );
+				return false;
+			});
+var windowOpen;
+			jQuery( document.body ).on( 'click', 'a.share-twitter', function() {
+				// If there's another sharing window open, close it.
+				if ( 'undefined' !== typeof windowOpen ) {
+					windowOpen.close();
+				}
+				windowOpen = window.open( jQuery( this ).attr( 'href' ), 'wpcomtwitter', 'menubar=1,resizable=1,width=600,height=350' );
+				return false;
+			});
+</script>
+
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"38cce5be73","applicationID":"39153354","transactionName":"Y1JVYEdVCERZUBEKX1oYdldBXQlZF0QXAkBEUkU=","queueTime":0,"applicationTime":298,"atts":"TxVWFg9PG0o=","errorBeacon":"bam.nr-data.net","agent":""}</script></body>
+</html>

@@ -1,0 +1,273 @@
+
+   
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<!-- import -->
+
+<meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, width=device-width"/>
+<!-- link rel="stylesheet" type="text/css" href="/mob2/css/default.css?20120727" / -->
+<!-- link rel="stylesheet" type="text/css" href="/static/resources/css/mob2/default.css?20160810"/ -->
+<link rel="stylesheet" type="text/css" href="/static/resources/css/mob2/apwk.css?20170731"/>
+<script type="text/javascript" src="/mob2/js/common.js?v=20130313" charset="UTF-8"></script>
+<script type="text/javascript">
+var LoginID = '';
+</script>
+		
+<!--// import -->
+<title>Yonhapnews Agency - Mobile</title>
+<script type="text/javascript" src="http://www.yonhapnews.co.kr/jscript/makePCookie.js"></script>
+<script type="text/javascript">
+var MenuCode = [{depth:"0",domain:"3",ctype:"A",site:"0100000000",name:"Home",tid:""},{depth:"1",domain:"3",ctype:"A",site:"0200000000",name:"All Headlines",tid:""}];
+var Lang = 'en';
+var Domain = '3';
+</script>
+</head>
+<body>
+
+<div id="wrap">
+	<!-- top -->
+	<div id="lyt_top">
+
+<h1 class="mn_en">
+<a href="javascript:Mobile.home('3');" class="lgac_en">
+<span class="tt">Yonhapnews Agency</span>
+<span class="icn"></span>
+</a>
+</h1>
+
+<hr/>
+</div>
+	<!-- //top -->
+	<!-- mid -->
+	<div id="lyt_mid">
+		<!-- location -->
+		<div class="lctn">
+			<h2 class="hdn">Location</h2>
+			<dl id='menu_location'>
+				<dt><a href="#" class="txtls0">Home</a></dt>
+				<dd><a href="#" class="txtls0">National</a>
+				</dd>
+			</dl>
+			<hr/>
+		</div>
+		<!-- location -->
+		<!-- article -->
+				<div class="cts_atctt">
+			<h2 class="atctt">(Olympics) PyeongChang organizers cyber-attacked during opening ceremony</h2>			
+			<p class="pdt">2018-02-10 09:13</p>
+			<div class="fnszbtn en"><a id="fontSize" href="javascript:Mobile.fontSize();" class="fnsz01"><span class="lften">Normal Font</span><span class="rgten">Large Font</span></a></div>
+		</div>
+		
+		
+		<div class="cts_atccts">
+			<div class="pt" id="relation_photo" style="display:none;">
+				<h3 class="hdn">Relative Photo</h3>
+				<p class="imgbx">
+				<img id="photo_url" alt="" name="atcpt"/>
+				<a id="relationLeft" href="javascript:Mobile.relationBack();" class="bf">&lt;</a><a id="relationRight" href="javascript:Mobile.relationForward();" class="nt">&gt;</a>
+				</p>
+
+				<p class="ctbtn"><a href="javascript:Mobile.showCaption();" class="acbx txtls0" id='captionButton'>Caption</a></p>
+				<p class="ctn txtls0" id="caption" style="display:none;"></p>
+				<hr/>
+			</div>
+			<h3 class="hdn">Content of the article</h3>
+			<p id="contentsBody" class="cntsen">&nbsp;&nbsp;&nbsp;&nbsp;  GANGNEUNG, South Korea, Feb. 10 (Yonhap) -- Organizers of the PyeongChang Winter Olympics said Saturday its servers were hacked by an unidentified attacker during the opening ceremony the previous day.<br/><br/>&nbsp;&nbsp;&nbsp;The PyeongChang Organizing Committee for the 2018 Olympic & Paralympic Games (POCOG) said it experienced a cyber attack which caused a malfunction of the Internet protocol televisions (IPTVs) at the Main Press Centre.<br/><br/>            <span class="foreign_articleb_type02 foreign-ad01">
+                <ins class="adsbygoogle" style="display:inline-block;width:336px;height:280px"
+                data-ad-client="ca-pub-1930605407058425" data-ad-slot="8135631657"></ins>
+                <script> (adsbygoogle = window.adsbygoogle || []).push({}); </script>
+            </span><br/>&nbsp;&nbsp;&nbsp;Organizers accordingly shut down the servers to prevent further damage, leading to the closure of the PyeongChang 2018 website.<br/><br/>&nbsp;&nbsp;&nbsp;Due to the shutdown of the website, spectators who purchased tickets to 2018 Winter Games events were unable to print their reservations.<br/><br/>&nbsp;&nbsp;&nbsp;The website was only normalized around 8:00 a.m. on Saturday. Details of where the attack originated remain unknown, the organizers said.<br/><br/>&nbsp;&nbsp;&nbsp;Security experts have warned that major international events such as the Olympics are major targets for hackers.<br/><br/><br/><span class="ctsimg"><img src='http://img.yonhapnews.co.kr/etc/inner/EN/2018/02/10/AEN20180210000500320_01_i.jpg' id='AEN20180210000500320_0101' title='' caption='Shown in the photo provided by a citizen is a notice from the Korean-language website of the PyeongChang Organizing Committee for the 2018 Olympic & Paralympic Games (POCOG), which says the website is suffering a malfunction. (Yonhap)'/></span><br/>  <br/>&nbsp;&nbsp;&nbsp;&nbsp;colin@yna.co.kr<br/>(END)<br/></p>
+			<hr/>
+            <!-- 내장이미지 캡션 처리, 20160518 -->
+            <script>
+                var capArr = new Array();
+                var startIdx;
+                var endIdx;
+                var capTmp;
+                var body;
+                var offset = 0;
+                var tag = document.getElementsByClassName("ctsimg");
+ 
+                if ( tag.length > 0 ) {
+                    body = document.getElementById("contentsBody").innerHTML;
+                    startIdx = body.indexOf("caption=");
+ 
+                    while ( startIdx > -1 ) {
+                        endIdx = body.indexOf("\">", startIdx);
+                        capTmp = body.substring(startIdx + 9, endIdx);
+                        capArr.push(capTmp);
+ 
+                        startIdx = body.indexOf("caption=", endIdx + 1);
+                    }
+ 
+                    for ( var i=0; i<tag.length; i++ ) {
+                        if ( tag[i].getElementsByTagName("img")[0].hasAttribute("caption") ) {
+                            tag[i].insertAdjacentHTML('afterend', '<span class="innercptn">' + capArr[offset] + '</span>');
+                            offset++;
+                        }
+                    }
+                }
+            </script>
+            <!-- 내장이미지 캡션 처리, 20160518 -->
+
+            <!-- MWEB-69 -->
+            <div class="rltn">
+                <h3 class="rltntt">Related Articles</h3>
+                <ul class="rltn_list">
+                    
+                </ul>
+                <hr/>
+            </div>
+            <script>
+                if( document.getElementsByClassName("dev_rel_article").length == 0 ) { 
+                    document.getElementsByClassName("rltn")[0].remove();
+                }
+            </script>
+            <!-- MWEB-69 -->
+
+            <!-- MWEB-99 -->
+            <span class="foreign_articleb_type02 foreign-ad02">
+                <ins class="adsbygoogle" style="display:inline-block;width:336px;height:280px"
+                data-ad-client="ca-pub-1930605407058425" data-ad-slot="9612339537"></ins>
+                <script> (adsbygoogle = window.adsbygoogle || []).push({}); </script>
+            </span>
+
+			<a href="javascript:history.back();" class="blst txtls0">Back to the list</a>
+			<!-- a href="javascript:Mobile.list($query()['page'],'3','A','0200000000');" class="blst txtls0">Back to the list</a -->
+
+            <!-- MWEB-99 -->
+            <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+		</div>
+
+		<hr/>
+
+        <!-- MWEB-99 -->
+        <div class="cts_feat_article cts_feat_en">
+            <p class="fbtn03"><a id="dev_btn_pc" href="#">PC Version</a></p>
+            <script>
+                var cid = (function(){ return 'AEN20180210000500320' })();
+                if( cid ) {
+                    var y = cid.substring(3,7);
+                    var m = cid.substring(7,9);
+                    var d = cid.substring(9,11);
+                    var url = 'http://english.yonhapnews.co.kr/news/'+y+'/'+m+'/'+d+'/0200000000'+cid+'.html?m';
+                    document.getElementById("dev_btn_pc").href=url;
+                }
+            </script>
+        </div>
+		<!-- //article -->
+	</div>
+	<!-- //mid -->
+	<!-- footer -->
+		<div id="lyt_ft">
+		<hr/>
+		<address class="ft_adrs">&copy;&nbsp;Yonhapnews</address>
+		<hr/>
+		<p class="ft_bf">
+		<a href="javascript:history.back();" class="bk"><span>back</span></a>
+		<a href="javascript:window.scrollTo(0,1);" class="top"><span>top</span></a>
+		</p>
+		<!-- AD_FOOTER --><!-- //AD_FOOTER -->
+	</div>
+	<!-- Google Stat -->
+	<script type="text/javascript">
+	var _gaq = _gaq || [];
+	_gaq.push(['_setAccount', 'UA-42288954-1']);
+	_gaq.push(['_trackPageview']);
+	(function() {
+	var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+	ga.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'stats.g.doubleclick.net/dc.js';
+	var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	})();
+	</script>
+	<!-- //Google Stat -->
+
+    <!-- ReferenceInfo EN -->
+    <script type="text/javascript" src="http://m.yna.co.kr/kr/js/jquery-1.8.3.min.js"></script><!-- 신포맷 추가 -->
+    <script type="text/javascript" src="http://www.yonhapnews.co.kr/jscript/lib/YNAReference.min.js"></script>
+    <script>
+        $.noConflict();
+        (function(){
+            var videoTemplate =
+            '<div class="section-video">'+
+                '<div class="video-box"><iframe src="{{EMBED_URL}}" title="youtube" frameborder="0" width="560" height="315"></iframe></div>'+
+                '<div class="caption"><div class="edit-txt"><span class="txt">{{DESCRIPTION}}</span><a class="txt-link" target="_blank" href="{{EMBED_URL}}">Watch on Youtube</a></div><button class="btn-down">&nbsp;</button></div>'+
+            '</div>';
+
+            var mapTemplate =
+            '<div class="section-map">'+
+                '<div class="wrap-map-box">'+
+                    <!-- 지도 id와 동일한 클레스 추가 -->
+                    '<iframe src="{{EMBED_URL}}&amp;language=en" width="650" height="360" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" allowtransparency="true" title="Google Maps"></iframe>'+
+                    '<button class="map-control extend"></button>'+
+                '</div>'+
+                '<div class="caption"><div class="edit-txt"><span class="txt">{{DESCRIPTION}}</span><a class="txt-link" target="_blank" href="{{EMBED_URL}}&amp;language=en">View on Google Maps</a></div><button class="btn-down">&nbsp;</button></div>'+
+            '</div>';
+
+            var hyperTemplate = '<a href="{{URL}}" class="anc-link" target="_blank">{{DESCRIPTION}}</a>';
+
+            //ReferenceInfo Change
+            YNAReference.merge({
+                selector:"#contentsBody",
+                lang : "en",
+                template : {
+                    VIDEO : videoTemplate,
+                    MAP : mapTemplate,
+                    HYPER : hyperTemplate
+                },
+                done : function(data){
+                    //ReferenceInfo event
+                    //유튜브
+                    jQuery('.section-video .caption').each(function(){
+                        var _this = jQuery(this);
+                        var txt = _this.find('.edit-txt .txt');
+                        var editTxt = _this.find('.edit-txt').width();
+                        var editTxt_txt = _this.find('.edit-txt .txt').width();
+                        if(txt.text().length == 0){
+                            txt.text('YouTube');
+                            _this.find('button').css('display','none');
+                        }else if(editTxt >editTxt_txt){
+                            _this.find('button').css('display','none');
+                        }
+                        _this.find('button').on('click', function(){
+                            _this.addClass('open');
+                        });
+                    });
+                    
+                    //신포맷 맵
+                    jQuery('.section-map .caption').each(function(){
+                        var _this = jQuery(this);
+                        var txt = _this.find('.edit-txt .txt');
+                        var editTxt = _this.find('.edit-txt').width();
+                        var editTxt_txt = _this.find('.edit-txt .txt').width();
+                        if(txt.text().length == 0){
+                            txt.text('Google Maps');
+                            _this.find('button').css('display','none');
+                        }else if(editTxt >editTxt_txt){
+                            _this.find('button').css('display','none');
+                        }
+                        _this.find('button').on('click', function(){
+                            _this.addClass('open');
+                        });
+                    });
+                    
+                    //신포맷 맵 리사이즈
+                    jQuery('.section-map .wrap-map-box').each(function(){
+                        var _this = jQuery(this);
+                        _this.find('.map-control').on('click',function(){
+                            _this.toggleClass('open');
+                        });
+                    });
+                }
+            })
+        })();
+    </script>
+    <!-- //ReferenceInfo -->
+
+
+	<!-- //footer -->
+</div>
+</body>
+</html>
