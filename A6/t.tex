@@ -1,0 +1,130 @@
+\documentclass[11pt]{report}
+\usepackage{graphicx}
+\usepackage{tabularx}
+\usepackage{graphicx}
+\usepackage[margin=0.5in]{geometry}
+\usepackage{listings,xcolor}
+\lstset{
+    string=[s]{"}{"},
+    stringstyle=\color{blue},
+    comment=[l]{:},
+    commentstyle=\color{black},
+    breaklines=true,
+}
+\PassOptionsToPackage{hyphens}{url}\usepackage{hyperref}
+\begin{document}
+
+\title{Assignment 6}
+\author{Joshua Graham}
+
+\maketitle
+\pagebreak
+\begin{abstract}
+All Scripts used in the assignment can be found in the A6 folder, if needed.
+
+\end{abstract}
+\section{Problem 1}
+	Question 1 effectivley asks me to make a table to generate the substitute me. Below are the tables of the three users I selected and their favorite and least favorite movies. I chose the users 81, 259, and 923. All of which are 21, male, and a student. 
+\\
+This was all done with commands in bash. To find the inital three users I simple did:
+\begin{lstlisting}[language=bash,caption={Grep out a simple list of users}]
+grep "student" u.user | grep "|21|"
+\end{lstlisting}
+Then I selected the users manually. To find their favorite movies was a little more troubling but still done with a one-liner in bash. The commands I used were:
+\begin{lstlisting}[language=bash,caption={Sort by Rating}]
+grep -E "^81	" u.data | sort -k3 -n
+grep -E "^259	" u.data | sort -k3 -n
+grep -E "^923	" u.data | sort -k3 -n
+
+\end{lstlisting}
+It is important to note that if you wish to recreate these commands, the characters between the user ID and " u.data are tab characters.
+
+The first three rows are their favorite movies, the last three rows are their least favorite. I listed them by ID to keep the able short, but the list of movies will be below by name.
+
+\begin{center}
+\begin{tabular}{c c c}
+\begin{tabular}{|c|c|c|c|}
+\hline
+ User & 81 & 259 & 923 \\ \hline
+\hline
+Most Favorite & 98 & 475 & 741 \\ \hline
+Most Favorite & 79 & 357 & 713 \\ \hline
+Most Favorite & 591 & 317 & 591\\ \hline
+Least Favorite & 1028 & 235 & 1001\\ \hline
+Least Favorite & 412 & 762 & 1\\ \hline
+Least Favorite & 456 & 1074 & 245\\ \hline
+\end{tabular}  &&
+\begin{tabular}{|c|c|}
+\hline
+ Movie ID & Name \\ \hline
+\hline
+1 & Toy Story\\ \hline
+79 & The Fugitive\\ \hline
+98 & Silence of the Lambs\\ \hline
+235 & Mars Attacks!\\ \hline
+245 & The Devil's Own\\ \hline
+317 & In the Name of the Father\\ \hline
+357 & Men in Black\\ \hline
+412 & A Very Brady Sequel\\ \hline
+456 & Beverly Hills Ninja\\ \hline
+475 & Trainspotting\\ \hline
+591 & Primal Fear\\ \hline
+713 & Othello\\ \hline
+741 & The Last Supper\\ \hline
+762 & Beautiful Girls\\ \hline
+1001 & The Stupids\\ \hline
+1028 & Grumpier Old Men\\ \hline
+1074 & Reality Bites\\ \hline
+\end{tabular}
+\end{tabular}
+
+\end{center}
+I chose to use user 259, although my issues with all of the users close to me was that there were a lot of movies I have not seen. I've seen all 3 of them movies in the most favorite of user 259, and did not dislike any of them. However, in the other list I've only seen Beautiful Girls. It was when I was young so I do not remember any of it, so I'll assume for the sake of the assignment that I disliked it.\\
+\pagebreak
+\section{Problem 2}
+\textbf{All Code for question three can be found in the file SimScore.py in the A6 folder. Similarly, the results can be found in the SimScore.txt file.}
+
+Question 2 was done with a python script. I edited very little of the original code from the url \url{https://github.com/arthur-e/Programming-Collective-Intelligence/blob/master/chapter2/recommendations.py}. 
+
+The code I added was:
+ 
+\begin{lstlisting}[language=python,caption={Sort by Recommendations}]
+hold=loadMovieLens('/home/theboxmage/Downloads/zip/ml-100k')
+#print(hold['6'][movies['86']])
+SimScore = {}
+for key, value in hold.items():
+    if key != '86':
+        SimScore[key] = sim_pearson(hold, '86', key)
+        #print(sim_pearson(hold, '86', key))
+for key, value in sorted(SimScore.items(), key=lambda x: x[1]):
+    print("{}  :  {}".format(key, value))
+\end{lstlisting}
+
+The lowest three correlated users were users 630, 756 196, 261, and 396. The highest three users were users 521, 844, 457, 794, and 503. Nothing overall difficult about this problem, the only situation I ran into was misunderstanding the format of the keys. They are strings, not integers.
+\pagebreak
+\section{Problem 3}
+\textbf{The entire list of recommendations can be found in RecommendationsList.txt. A py file with just this question can be found at x}
+The code for question 3 was suspiciously simple. I fully expected to have to code more of this, and check if the user had already watched a movie. But the given code did that implementation for me. Everything worked out of the box, I just had to implement it correctly. The code I used was:
+\begin{lstlisting}[language=python,caption={Sort by Expected Rating}]
+recs=getRecommendations(hold, '86')
+fo = open("RecommendationList.txt", "w+")
+for x in recs:
+    fo.write(str(x) + "\n")
+print("Highest Recommendation")
+for x in range(1, 6):
+    print(recs[x-1])
+print("Lowest Recommednation")
+for x in range(1, 6):
+    print(recs[len(recs)-x])
+\end{lstlisting}
+\begin{tabular}{|c|c|}
+\hline
+ Recommended & Not Recommended \\ \hline
+\hline
+Maya Lin: A Strong Clear Vision (1994) & 1-900 (1994)\\ \hline
+Visitors, The (Visiteurs, Les) (1993) & 3 Ninjas: High Noon At Mega Mountain (1998)\\ \hline
+Two or Three Things I Know About Her (1966) & Alphaville (1965)\\ \hline
+Star Kid (1997) & Amityville 1992: It's About Time (1992)\\ \hline
+Santa with Muscles (1996) & Amityville 3-D (1983)\\ \hline
+\end{tabular}
+\end{document}
