@@ -4,6 +4,8 @@
 \usepackage{graphicx}
 \usepackage[margin=0.5in]{geometry}
 \usepackage{listings,xcolor}
+\usepackage{tcolorbox}
+\tcbuselibrary{listings,skins}
 \lstset{
     string=[s]{"}{"},
     stringstyle=\color{blue},
@@ -11,6 +13,19 @@
     commentstyle=\color{black},
     breaklines=true,
 }
+\lstdefinestyle{mystyle}{
+numbers=left, 
+numberstyle=\small, 
+numbersep=4pt, 
+language=Python
+}
+\newtcblisting{mylisting}[2][]{
+    arc=0pt, outer arc=0pt,
+    listing only, 
+    listing style=mystyle,
+    title=#2,
+    #1
+    }
 \PassOptionsToPackage{hyphens}{url}\usepackage{hyperref}
 \begin{document}
 
@@ -27,16 +42,16 @@ All Scripts used in the assignment can be found in the A6 folder, if needed.
 	Question 1 effectivley asks me to make a table to generate the substitute me. Below are the tables of the three users I selected and their favorite and least favorite movies. I chose the users 81, 259, and 923. All of which are 21, male, and a student. 
 \\
 This was all done with commands in bash. To find the inital three users I simple did:
-\begin{lstlisting}[language=bash,caption={Grep out a simple list of users}]
+\begin{mylisting}[hbox,enhanced,drop shadow]{Grep a list of users}
 grep "student" u.user | grep "|21|"
-\end{lstlisting}
+\end{mylisting}
 Then I selected the users manually. To find their favorite movies was a little more troubling but still done with a one-liner in bash. The commands I used were:
-\begin{lstlisting}[language=bash,caption={Sort by Rating}]
+\begin{mylisting}[hbox,enhanced,drop shadow]{Sort by Rating}
 grep -E "^81	" u.data | sort -k3 -n
 grep -E "^259	" u.data | sort -k3 -n
 grep -E "^923	" u.data | sort -k3 -n
 
-\end{lstlisting}
+\end{mylisting}
 It is important to note that if you wish to recreate these commands, the characters between the user ID and " u.data are tab characters.
 
 The first three rows are their favorite movies, the last three rows are their least favorite. I listed them by ID to keep the able short, but the list of movies will be below by name.
@@ -88,7 +103,7 @@ Question 2 was done with a python script. I edited very little of the original c
 
 The code I added was:
  
-\begin{lstlisting}[language=python,caption={Sort by Recommendations}]
+\begin{mylisting}[hbox,enhanced,drop shadow]{Sort By Program}
 hold=loadMovieLens('/home/theboxmage/Downloads/zip/ml-100k')
 #print(hold['6'][movies['86']])
 SimScore = {}
@@ -98,14 +113,15 @@ for key, value in hold.items():
         #print(sim_pearson(hold, '86', key))
 for key, value in sorted(SimScore.items(), key=lambda x: x[1]):
     print("{}  :  {}".format(key, value))
-\end{lstlisting}
+\end{mylisting }
 
 The lowest three correlated users were users 630, 756 196, 261, and 396. The highest three users were users 521, 844, 457, 794, and 503. Nothing overall difficult about this problem, the only situation I ran into was misunderstanding the format of the keys. They are strings, not integers.
 \pagebreak
 \section{Problem 3}
 \textbf{The entire list of recommendations can be found in RecommendationsList.txt. A py file with just this question can be found at x}
 The code for question 3 was suspiciously simple. I fully expected to have to code more of this, and check if the user had already watched a movie. But the given code did that implementation for me. Everything worked out of the box, I just had to implement it correctly. The code I used was:
-\begin{lstlisting}[language=python,caption={Sort by Expected Rating}]
+
+\begin{mylisting}[hbox,enhanced,drop shadow]{Recommendations Program}
 recs=getRecommendations(hold, '86')
 fo = open("RecommendationList.txt", "w+")
 for x in recs:
@@ -116,8 +132,9 @@ for x in range(1, 6):
 print("Lowest Recommednation")
 for x in range(1, 6):
     print(recs[len(recs)-x])
-\end{lstlisting}
-\begin{tabular}{|c|c|}
+\end{mylisting}
+\begin{center}
+\begin{tabular}{|c||c|}
 \hline
  Recommended & Not Recommended \\ \hline
 \hline
@@ -127,4 +144,6 @@ Two or Three Things I Know About Her (1966) & Alphaville (1965)\\ \hline
 Star Kid (1997) & Amityville 1992: It's About Time (1992)\\ \hline
 Santa with Muscles (1996) & Amityville 3-D (1983)\\ \hline
 \end{tabular}
+\end{center}
+
 \end{document}
