@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2018.1.16)  21 MAR 2018 15:05
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2018.1.16)  21 MAR 2018 17:29
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -709,25 +709,30 @@ l.98 \section
              {Problem 2} [1]
 \openout4 = `t.listing'.
 
- (./t.listing)
-Overfull \hbox (1394.59276pt too wide) in paragraph at lines 134--134
-[][] 
- []
+ (./t.listing) [2]
+\openout4 = `t.listing'.
 
-[2]
+ (./t.listing) [3]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 148.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 148.
  (./t.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 148.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 148.
-Package rerunfilecheck Info: File `t.out' has not changed.
-(rerunfilecheck)             Checksum: 8EE528778E78AF18379A7940979C94F1;92.
+
+
+Package rerunfilecheck Warning: File `t.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `t.out':
+(rerunfilecheck)             Before: 8EE528778E78AF18379A7940979C94F1;92
+(rerunfilecheck)             After:  BDFA6DCE9DEF2AE7B2EC8C116427A310;138.
  ) 
 Here is how much of TeX's memory you used:
- 20004 strings out of 493029
- 393781 string characters out of 6136234
- 648358 words of memory out of 5000000
- 23201 multiletter control sequences out of 15000+600000
+ 19920 strings out of 493029
+ 392835 string characters out of 6136234
+ 545358 words of memory out of 5000000
+ 23121 multiletter control sequences out of 15000+600000
  8672 words of font info for 31 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  54i,12n,83p,834b,1523s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -738,10 +743,10 @@ ve/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texm
 f-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texlive/texmf-dist/
 fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/
 type1/public/amsfonts/cm/cmtt10.pfb>
-Output written on t.pdf (4 pages, 99325 bytes).
+Output written on t.pdf (5 pages, 100413 bytes).
 PDF statistics:
- 109 PDF objects out of 1000 (max. 8388607)
- 95 compressed objects within 1 object stream
- 40 named destinations out of 1000 (max. 500000)
+ 103 PDF objects out of 1000 (max. 8388607)
+ 88 compressed objects within 1 object stream
+ 34 named destinations out of 1000 (max. 500000)
  29 words of extra memory for PDF output out of 10000 (max. 10000000)
 

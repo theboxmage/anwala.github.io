@@ -1,21 +1,3 @@
-hold=loadMovieLens('/home/theboxmage/Downloads/zip/ml-100k')
-#print(hold['6'][movies['86']])
-SimScore = {}
-for key, value in hold.items():
-    if key != '86':
-        SimScore[key] = sim_pearson(hold, '86', key)
-        #print(sim_pearson(hold, '86', key))
-for key, value in sorted(SimScore.items(), key=lambda x: x[1]):
-    print("{}  :  {}".format(key, value))
-\end{mylisting }
-
-The lowest three correlated users were users 630, 756 196, 261, and 396. The highest three users were users 521, 844, 457, 794, and 503. Nothing overall difficult about this problem, the only situation I ran into was misunderstanding the format of the keys. They are strings, not integers.
-\pagebreak
-\section{Problem 3}
-\textbf{The entire list of recommendations can be found in RecommendationsList.txt. A py file with just this question can be found at x}
-The code for question 3 was suspiciously simple. I fully expected to have to code more of this, and check if the user had already watched a movie. But the given code did that implementation for me. Everything worked out of the box, I just had to implement it correctly. The code I used was:
-
-\begin{mylisting}[hbox,enhanced,drop shadow]{Recommendations Program}
 recs=getRecommendations(hold, '86')
 fo = open("RecommendationList.txt", "w+")
 for x in recs:
