@@ -1,0 +1,2 @@
+QApplication: invalid style override passed, ignoring it.
+inotify_add_watch("/home/avacadont/.config/lxqt/lxqt.conf") failed: "No such file or directory"

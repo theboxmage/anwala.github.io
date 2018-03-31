@@ -1,0 +1,4 @@
+ rows, cols, data = readfile("blogdata1.txt")
+ coords=scaledown(data)
+ draw2d(coords,rows, jpeg='blogs2d.jpg')
+
