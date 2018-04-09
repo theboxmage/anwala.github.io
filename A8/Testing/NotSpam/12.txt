@@ -1,0 +1,9 @@
+The following SSH key was added to your account:
+
+Jish
+2b:23:31:98:a6:a3:be:2f:6a:c0:b6:ad:ac:28:24:25
+
+If you believe this key was added in error, you can remove the key and disable
+access at the following location:
+
+https://github.com/settings/keys

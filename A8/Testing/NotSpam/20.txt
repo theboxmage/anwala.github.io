@@ -1,0 +1,13 @@
+Your work was received!
+
+You successfully submitted your coursework. Each time you submit coursework, you receive a unique confirmation ID to verify when your submission was received. You can view your submission receipts on your My Grades page.
+
+Submission details:
+Submission confirmation ID: 48494af7725a45f0919bab1acbf0303b
+Title of course: INFORMATION ASSURANCE
+Course ID: 201720_SPRING_CS465_25618
+Title of coursework: Homework #9
+Date/time of submission: Mar 27, 2018 1:01 PM
+Size of written submission: 0bytes
+Size and name of files received: jgrahaAsn.pdf (387kb)
+Unique Item ID (for administrator use only): _406739_1

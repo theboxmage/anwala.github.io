@@ -1,0 +1,12 @@
+ 	Tutorial 	 
+	Hi Joshua, 	
+	Beginner creators often praise Unity’s detailed documentation. Not only are editor features and functions clearly described, but most provide examples in C#.
+
+As a beginner developer, you have two paths. You can learn visual scripting with editor extensions like Playmaker, where you can create your vision without knowing how to program.
+
+Or, like a majority of Unity game devs, you can learn the powerful C# language. Here are some resources to help you start learning C#: 	
+  	
+	A beginner C# video tutorial made by Adam Buckner, hey wait that’s me!
+	And for you book lovers, there are plenty of choices out there, including Learning C# by Developing Games with Unity 5.x - Second Edition and Unity in Action: Multiplatform Game Development in C# with Unity 5.
+
+Yours in development,

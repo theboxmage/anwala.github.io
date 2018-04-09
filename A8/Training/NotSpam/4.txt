@@ -1,0 +1,17 @@
+    Based on our discussions in class today, here are a few clarifications on assignment 3. These are just clarifications and not the only requirements for the assignment. Everything in the original assignment still holds (except point 1 below).
+
+        You can force users to always provide a name for the check-in.
+        The 30 meters distance is to be measured from the first check-in location.
+        For example, if you check-in at Webb Center 3 times during a day, your database should only have one row for the place (in this case, Webb Center), and all three check-in locations and times must be saved in that row. You can use any of the methods discussed in class today. However, in the list displayed to the user, you should see 3 different rows - one for each check-in.
+        If you are unable to package your database with the app, you must include a screen shot in your report which shows the list of 5 places at ODU where you checked-in.
+
+
+    For the graduate assignment:
+
+        You can log the delay and accuracy of the location using standard Android APIs
+        For plotting the graph: Pick 10 locations (5 indoor and 5 outdoor). Go to each location and record your location on the device (just check-in)- this is the measured location. After that, open Google Maps in a browser on your laptop or desktop computer and click on the exact location where you were, and record the coordinates provided by Google Maps. This is the true location reading. Calculate the distance between the measured location and the true location, and plot them on a graph. The simplest way to do this is to have two columns in Microsoft Excel, one with the places and second with the error. Use the tools provided by Excel to plot this error. Include this in your report. The report should include everything else mentioned in the assignment.
+
+    Email me if you have any other questions.
+
+
+    Shubham

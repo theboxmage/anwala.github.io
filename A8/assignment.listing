@@ -1,0 +1,21 @@
+Filename:  Testing/Spam/18.txt Status:  not spam
+Filename:  Testing/Spam/20.txt Status:  spam
+Filename:  Testing/Spam/3.txt Status:  spam
+Filename:  Testing/Spam/7.txt Status:  spam
+Filename:  Testing/Spam/9.txt Status:  spam
+Filename:  Testing/Spam/12.txt Status:  not spam
+Filename:  Testing/Spam/5.txt Status:  spam
+Filename:  Testing/Spam/14.txt Status:  spam
+Filename:  Testing/Spam/16.txt Status:  spam
+Filename:  Testing/Spam/1.txt Status:  spam
+Testing against regular emails.
+Filename:  Testing/NotSpam/18.txt Status:  not spam
+Filename:  Testing/NotSpam/20.txt Status:  not spam
+Filename:  Testing/NotSpam/3.txt Status:  not spam
+Filename:  Testing/NotSpam/7.txt Status:  not spam
+Filename:  Testing/NotSpam/9.txt Status:  not spam
+Filename:  Testing/NotSpam/12.txt Status:  not spam
+Filename:  Testing/NotSpam/5.txt Status:  not spam
+Filename:  Testing/NotSpam/14.txt Status:  not spam
+Filename:  Testing/NotSpam/16.txt Status:  not spam
+Filename:  Testing/NotSpam/1.txt Status:  not spam
