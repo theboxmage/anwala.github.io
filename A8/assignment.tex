@@ -30,7 +30,7 @@ language=Python
 \PassOptionsToPackage{hyphens}{url}\usepackage{hyperref}
 \begin{document}
 
-\title{Assignment 7}
+\title{Assignment 8}
 \author{Joshua Graham}
 
 \maketitle
@@ -114,4 +114,16 @@ Filename:  Testing/NotSpam/16.txt Status:  not spam
 Filename:  Testing/NotSpam/1.txt Status:  not spam
 \end{mylisting}
 	I think there was a bit of skew because of using someone elses emails. But it correctly represented all but 2 emails. On a larger data set, the error would probably be larger. However, for the given example, it appears to work decently well. 
+\pagebreak
+\section{Problem 3}
+Problem 3 was to create a confusion matrix for the results. The matrix assumes that correctly returning spam is a true positive, and correctly returning not spam is a true negative. It can be shown below:
+
+\begin{tabular}{|c|c|c|}
+\hline
+& Returned Positive & Returned Negative\\\hline
+Expected Positive & 8 or 80\% & 2 or 20\% \\\hline
+
+Expected Negative & 0 or 0\% & 10 or 100\%\\\hline
+
+\end{tabular}
 \end{document}
