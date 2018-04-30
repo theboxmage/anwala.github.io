@@ -1,0 +1,116 @@
+Running F-Measure against k = 1
+Abu Everyday
+
+
+
+Running F-Measure against k = 2
+F-Measure
+Abu Everyday
+
+
+
+Running F-Measure against k = 5
+The World's First Internet Baby
+CardrossManiac2
+SPIN IT RECORDS Moncton 467A Main Street Moncton NB CANADA
+F-Measure
+Abu Everyday
+
+
+
+Running F-Measure against k = 10
+DaveCromwell Writes
+KiDCHAIR
+Did Not Chart
+Revolver USA Distribution & Midheaven mailorder
+Skiptrack music
+The World's First Internet Baby
+CardrossManiac2
+SPIN IT RECORDS Moncton 467A Main Street Moncton NB CANADA
+F-Measure
+Abu Everyday
+
+
+
+Running F-Measure against k = 20
+www.doginasweater.com Live Show Review Archive
+The Power of Independent Trucking
+Steel City Rust
+Subterranean Noise
+Captain Panda's Local & Independent Music Showcase
+Aiming to misbehave
+Pithy Title Here
+Some Call It Noise....
+The Slow Music Movement
+Coyote Doc Music Co-op
+DaveCromwell Writes
+KiDCHAIR
+Did Not Chart
+Revolver USA Distribution & Midheaven mailorder
+Skiptrack music
+The World's First Internet Baby
+CardrossManiac2
+SPIN IT RECORDS Moncton 467A Main Street Moncton NB CANADA
+F-Measure
+Abu Everyday
+
+
+
+Running Web Science and Digital Libraries Research Group against k = 1
+Abu Everyday
+
+
+
+Running Web Science and Digital Libraries Research Group against k = 2
+Web Science and Digital Libraries Research Group
+Abu Everyday
+
+
+
+Running Web Science and Digital Libraries Research Group against k = 5
+unter diesem gesichtspunkt
+Subterranean Noise
+Incarnate Green
+Web Science and Digital Libraries Research Group
+Abu Everyday
+
+
+
+Running Web Science and Digital Libraries Research Group against k = 10
+New Amusements
+macthemost
+Diagnosis: No Radio
+juanbook
+Myopiamuse
+unter diesem gesichtspunkt
+Subterranean Noise
+Incarnate Green
+Web Science and Digital Libraries Research Group
+Abu Everyday
+
+
+
+Running Web Science and Digital Libraries Research Group against k = 20
+Sonology
+PSI LAB
+DaveCromwell Writes
+Steel City Rust
+Mile In Mine
+Morgan's Blog
+Jasmine Hodge
+The Power of Independent Trucking
+Some Call It Noise....
+Pithy Title Here
+New Amusements
+macthemost
+Diagnosis: No Radio
+juanbook
+Myopiamuse
+unter diesem gesichtspunkt
+Subterranean Noise
+Incarnate Green
+Web Science and Digital Libraries Research Group
+Abu Everyday
+
+
+

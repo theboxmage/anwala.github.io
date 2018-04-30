@@ -1,0 +1,126 @@
+\documentclass[11pt]{report}
+\usepackage{graphicx}
+\usepackage{tabularx}
+\usepackage{graphicx}
+\usepackage[margin=0.5in]{geometry}
+\usepackage{listings,xcolor}
+\usepackage{tcolorbox}
+\usepackage{multicol}
+\tcbuselibrary{listings,skins}
+\lstset{
+    string=[s]{"}{"},
+    stringstyle=\color{blue},
+    comment=[l]{:},
+    commentstyle=\color{black},
+    breaklines=true,
+}
+\lstdefinestyle{mystyle}{
+numbers=left, 
+numberstyle=\small, 
+numbersep=4pt, 
+language=Python
+}
+\newtcblisting{mylisting}[2][]{
+    arc=0pt, outer arc=0pt,
+    listing only, 
+    listing style=mystyle,
+    title=#2,
+    #1
+    }
+\PassOptionsToPackage{hyphens}{url}\usepackage{hyperref}
+\begin{document}
+
+\title{Assignment 7}
+\author{Joshua Graham}
+
+\maketitle
+\pagebreak
+\begin{abstract}
+All Scripts used in the assignment can be found in the A9 folder, if needed.
+
+\end{abstract}
+\section{Problem 1 Process}
+	I had a lot of trouble with this assignment. The first hard part I tackled was figuring out how I was going to link name and index. I cannot remember where I saw it, it was probably online but I cannot find the reference I used. I figured out I could do it with:
+\begin{mylisting}[hbox,enhanced,drop shadow]{Linking by index}
+#print(blogs.index("F-Measure"))
+\end{mylisting}
+
+The second tackle I had was fixing numpredict to stop throwing errors on strings. After reading the error dialog, I found I just had to get rid of the section argument in the list inside of numpredict.py. Below is the changed function:\textbf{I believe all that changed was vec2=data[i]}. This previously had a ["title"] argument beside it.
+\begin{mylisting}[hbox,enhanced,drop shadow]{Linking by index}
+def getdistances(data,vec1):
+  distancelist=[]
+
+  # Loop over every item in the dataset
+  for i in range(len(data)):
+    vec2=data[i]
+
+    # Add the distance and the index
+    distancelist.append((cosine(vec1,vec2),i))
+
+  # Sort by distance
+  distancelist.sort()
+  return distancelist
+
+\end{mylisting}
+
+I implemented the cosine function manually instead of using one of the many math pacakges because it was a short method and I'm running off a Virtual Machine after my laptop died. I am not happy with this method, this is where I thought I could get rid of the title matching itself as a neighbor. If the distance on the bottom equaled zero, I believe th entries would all be the same. I assumed from this that the blogs would be the same entry, so I set the distance high. The function is shown below:
+\begin{mylisting}[hbox,enhanced,drop shadow]{Linking by index}
+
+def cosine(v1,v2):
+    sumTop=0.0
+    for i in range(len(v1)):
+        sumTop += v1[i]*v2[i]
+    sumBottom1 = 0.0
+    sumBottom2 = 0.0
+    for i in range(len(v1)):
+        sumBottom1 += v1[i] ** 2
+        sumBottom2 += v2[i] ** 2
+    if(sumBottom1 * sumBottom2 == 0):
+        return 100
+    else:
+        return (sumTop)/((sumBottom1 * sumBottom2)**0.5)
+\end{mylisting}
+
+	Lastly, the code can be run with the run.py script, shown below. I went through several iterations of this trying to figure out what worked best. In the end I went for readability.
+	
+	\begin{mylisting}[hbox,enhanced,drop shadow]{Linking by index}
+import clusters
+import numpredict
+def findNeigh(i, data, k):
+    testing = data[i]
+    neighbors = numpredict.knnestimate(data, testing, k)
+    for i in neighbors:
+        print(blogs[i[1]])
+
+
+blogs, text, data = clusters.readfile("blogdata1.txt")
+#print(blogs.index("F-Measure"))
+#findNeigh(blogs.index("F-Measure"), data, 5)
+for name in "F-Measure", "Web Science and Digital Libraries Research Group":
+    for k in 1, 2, 5, 10, 20:
+        print("Running", name, "against k =", k)
+        findNeigh(blogs.index(name), data, k)
+        print("\n\n")
+
+\end{mylisting}
+\section{Problems with the code}
+
+The code for every example I found, found itself as a neighbor. I could not figure out why it was happening, I understand why in theory, but I could not figure out a way around it. Beyond this, both examples found the same nearest neighbor, other than themselves. I believe this is because the data is bad, not because the code is. If I had to do it again, I'd grab a new dataset.
+
+\section{Example Output}
+
+I've left the entire output in the file output.txt. However, I clipped F-Measure's neighbors with k=5 below.
+
+Running F-Measure against k = 5
+
+The World's First Internet Baby
+
+CardrossManiac2
+
+SPIN IT RECORDS Moncton 467A Main Street Moncton NB CANADA
+
+F-Measure
+
+Abu Everyday
+
+\end{document}
