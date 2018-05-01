@@ -51,7 +51,7 @@ def cosine(v1,v2):
         sumBottom1 += v1[i] ** 2
         sumBottom2 += v2[i] ** 2
     if(sumBottom1 * sumBottom2 == 0):
-        return 100
+        return 0
     else:
         return (sumTop)/((sumBottom1 * sumBottom2)**0.5)
 
@@ -73,7 +73,7 @@ def getdistances(data,vec1):
 def knnestimate(data,vec1,k=5):
   # Get sorted distances
   dlist=getdistances(data,vec1)
-  neighbors = dlist[-k:]
+  neighbors = dlist[-k-1:-1]
   return neighbors
 
 def inverseweight(dist,num=1.0,const=0.1):

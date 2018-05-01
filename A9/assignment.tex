@@ -63,7 +63,7 @@ def getdistances(data,vec1):
 
 \end{mylisting}
 
-I implemented the cosine function manually instead of using one of the many math pacakges because it was a short method and I'm running off a Virtual Machine after my laptop died. I am not happy with this method, this is where I thought I could get rid of the title matching itself as a neighbor. If the distance on the bottom equaled zero, I believe th entries would all be the same. I assumed from this that the blogs would be the same entry, so I set the distance high. The function is shown below:
+I implemented the cosine function manually instead of using one of the many math pacakges because it was a short method and I'm running off a Virtual Machine after my laptop died. I am not happy with this method, this is where I thought I could get rid of the title matching itself as a neighbor.  The function is shown below:
 \begin{mylisting}[hbox,enhanced,drop shadow]{Linking by index}
 
 def cosine(v1,v2):
@@ -76,11 +76,21 @@ def cosine(v1,v2):
         sumBottom1 += v1[i] ** 2
         sumBottom2 += v2[i] ** 2
     if(sumBottom1 * sumBottom2 == 0):
-        return 100
+        return 0
     else:
         return (sumTop)/((sumBottom1 * sumBottom2)**0.5)
 \end{mylisting}
 
+I ended up being able to ignore the specific entry that matches itself by only viewing the second to last k values in the list. I relearned that negative indices are a wonderful tool, and it made my data correctly match the intent of the assignment.
+ 
+\begin{mylisting}[hbox,enhanced,drop shadow]{knnestimate()}
+def knnestimate(data,vec1,k=5):
+  # Get sorted distances
+  dlist=getdistances(data,vec1)
+  neighbors = dlist[-k-1:-1]
+  return neighbors
+
+\end{mylisting}
 	Lastly, the code can be run with the run.py script, shown below. I went through several iterations of this trying to figure out what worked best. In the end I went for readability.
 	
 	\begin{mylisting}[hbox,enhanced,drop shadow]{Linking by index}
@@ -105,7 +115,7 @@ for name in "F-Measure", "Web Science and Digital Libraries Research Group":
 \end{mylisting}
 \section{Problems with the code}
 
-The code for every example I found, found itself as a neighbor. I could not figure out why it was happening, I understand why in theory, but I could not figure out a way around it. Beyond this, both examples found the same nearest neighbor, other than themselves. I believe this is because the data is bad, not because the code is. If I had to do it again, I'd grab a new dataset.
+Both examples found the same nearest neighbor. I believe this is because the data is bad, not because the code is. If I had to do it again, I'd grab a new dataset. Viewing the data for that entry, I discovered that it had a 0 for everything except one word. This led me to believe I did not have the actual contents of the blog downloaded correctly, so I removed it from the dataset. This still left me with over the required amount of blogs. 
 
 \section{Example Output}
 
